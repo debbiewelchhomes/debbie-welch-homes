@@ -47,12 +47,8 @@ const NeighborhoodsSection = () => {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-16">
-          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl">
-            A little local flavor…
-          </p>
-          <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-primary">
-            Explore Neighbourhoods
-          </h2>
+          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl">Let me show you around…</p>
+          <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-primary">Explore Neighborhoods</h2>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">

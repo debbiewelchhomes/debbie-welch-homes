@@ -40,8 +40,10 @@ const HeroSection = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-              Book a Free Consult
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6" asChild>
+              <a href="https://cal.com/debbie-welch-t6p0dm" target="_blank" rel="noopener noreferrer">
+                Book a Free Consult
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6">
               Get the Downsizing Guide

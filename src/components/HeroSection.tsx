@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Parallax Background */}
       <div
         className="absolute inset-0 parallax-section"
@@ -14,18 +14,18 @@ const HeroSection = () => {
       />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-32 text-center">
+      <div className="relative z-10 container mx-auto px-4 py-20 text-center flex items-center justify-center min-h-[85vh]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
-          <p className="font-script text-3xl md:text-4xl text-white mb-6">
+          <p className="font-script text-4xl md:text-5xl lg:text-6xl mb-6" style={{ color: '#6e808e' }}>
             Welcome home…
           </p>
 
-          <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+          <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl text-white mb-6">
             Helping You Home in Snohomish County
           </h1>
 

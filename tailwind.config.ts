@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        script: ['Dancing Script', 'cursive'],
-        heading: ['Playfair Display', 'serif'],
+        script: ['Oooh Baby', 'cursive'],
+        heading: ['Cormorant Garamond', 'serif'],
         body: ['Montserrat', 'sans-serif'],
       },
       colors: {

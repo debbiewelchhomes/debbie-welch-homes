@@ -83,11 +83,15 @@ All colors MUST be HSL.
 
 @layer utilities {
   .font-script {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Oooh Baby', cursive;
+    font-size: 1.15em;
+    line-height: 1.6;
+    color: hsl(var(--secondary));
   }
   
   .font-heading {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
   }
   
   .font-body {

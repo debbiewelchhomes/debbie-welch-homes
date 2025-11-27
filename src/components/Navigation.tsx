@@ -32,18 +32,13 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <a href="/" className="flex flex-col">
-            <span className="font-heading text-xl md:text-2xl font-bold text-primary">
-              Debbie Welch Homes
-            </span>
-            <span className="font-script text-sm text-secondary">
-              Helping You Home
-            </span>
-          </a>
+          {/* Logo Placeholder - Left Side */}
+          <div className="w-48">
+            {/* Future logo space for eXp and personal logo */}
+          </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden lg:flex items-center gap-8 flex-1 justify-center">
             <a href="#home" className="text-foreground hover:text-secondary transition-colors">
               Home
             </a>
@@ -86,10 +81,13 @@ const Navigation = () => {
               Blog
             </a>
 
-            <a href="#about" className="text-foreground hover:text-secondary transition-colors">
-              About
-            </a>
+              <a href="#about" className="text-foreground hover:text-secondary transition-colors">
+                About
+              </a>
+          </div>
 
+          {/* Contact Button - Right Side Desktop */}
+          <div className="hidden lg:block w-48 text-right">
             <Button asChild variant="default" className="bg-secondary hover:bg-secondary/90">
               <a href="#contact">Contact</a>
             </Button>

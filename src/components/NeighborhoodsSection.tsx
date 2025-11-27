@@ -2,57 +2,52 @@ import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-
 const NeighborhoodsSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
-  const neighborhoods = [
-    {
-      name: "Arlington",
-      description: "A blend of small-town main street, newer neighborhoods, and rural acreage with quick access to I-5 and mountain adventures.",
-    },
-    {
-      name: "Bothell & Mill Creek",
-      description: "Highly sought-after schools, established neighborhoods, and strong commuter access toward the Eastside and Seattle.",
-    },
-    {
-      name: "Everett & Mukilteo",
-      description: "Waterfront views, historic homes, and commuter-friendly locations near Paine Field, Naval Station Everett, and major employers.",
-    },
-    {
-      name: "Lake Stevens",
-      description: "Lakeside living, established neighborhoods, and new construction options with a strong community feel and easy access to Everett and Highway 9.",
-    },
-    {
-      name: "Marysville",
-      description: "Growing neighborhoods, convenient shopping, and quick access north and south, with room to stretch out a bit more than the city core.",
-    },
-    {
-      name: "Snohomish",
-      description: "Quaint historic downtown, scenic farmland, and neighborhoods that feel a little slower and more small-town while still being close in.",
-    },
-    {
-      name: "Snohomish County",
-      description: "A mix of charming small towns, established neighborhoods, and rural pockets, all within reach of major job centers and outdoor fun.",
-    },
-    {
-      name: "Stanwood & Camano",
-      description: "Coastal views, island sunsets, and a quieter pace of life for people who want to feel a little more 'away' without being too far from services.",
-    },
-  ];
-
-  return (
-    <section id="neighborhoods" className="py-20 md:py-32 bg-background">
+  const isInView = useInView(ref, {
+    once: true,
+    margin: "-100px"
+  });
+  const neighborhoods = [{
+    name: "Arlington",
+    description: "A blend of small-town main street, newer neighborhoods, and rural acreage with quick access to I-5 and mountain adventures."
+  }, {
+    name: "Bothell & Mill Creek",
+    description: "Highly sought-after schools, established neighborhoods, and strong commuter access toward the Eastside and Seattle."
+  }, {
+    name: "Everett & Mukilteo",
+    description: "Waterfront views, historic homes, and commuter-friendly locations near Paine Field, Naval Station Everett, and major employers."
+  }, {
+    name: "Lake Stevens",
+    description: "Lakeside living, established neighborhoods, and new construction options with a strong community feel and easy access to Everett and Highway 9."
+  }, {
+    name: "Marysville",
+    description: "Growing neighborhoods, convenient shopping, and quick access north and south, with room to stretch out a bit more than the city core."
+  }, {
+    name: "Snohomish",
+    description: "Quaint historic downtown, scenic farmland, and neighborhoods that feel a little slower and more small-town while still being close in."
+  }, {
+    name: "Snohomish County",
+    description: "A mix of charming small towns, established neighborhoods, and rural pockets, all within reach of major job centers and outdoor fun."
+  }, {
+    name: "Stanwood & Camano",
+    description: "Coastal views, island sunsets, and a quieter pace of life for people who want to feel a little more 'away' without being too far from services."
+  }];
+  return <section id="neighborhoods" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <p className="font-script text-3xl md:text-4xl text-secondary mb-6">
+        <motion.div ref={ref} initial={{
+        opacity: 0,
+        y: 30
+      }} animate={isInView ? {
+        opacity: 1,
+        y: 0
+      } : {
+        opacity: 0,
+        y: 30
+      }} transition={{
+        duration: 0.6
+      }} className="text-center mb-16">
+          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl">
             A little local flavor…
           </p>
           <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-primary">
@@ -61,15 +56,19 @@ const NeighborhoodsSection = () => {
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {neighborhoods.map((area, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              animate={
-                isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }
-              }
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-            >
+          {neighborhoods.map((area, index) => <motion.div key={index} initial={{
+          opacity: 0,
+          y: 30
+        }} animate={isInView ? {
+          opacity: 1,
+          y: 0
+        } : {
+          opacity: 0,
+          y: 30
+        }} transition={{
+          duration: 0.5,
+          delay: index * 0.08
+        }}>
               <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-border bg-card group cursor-pointer">
                 <CardContent className="p-6">
                   <div className="h-32 bg-warm-bg rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
@@ -82,12 +81,9 @@ const NeighborhoodsSection = () => {
                   </p>
                 </CardContent>
               </Card>
-            </motion.div>
-          ))}
+            </motion.div>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default NeighborhoodsSection;

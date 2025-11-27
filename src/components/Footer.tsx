@@ -2,17 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { useState } from "react";
-
 const Footer = () => {
   const [email, setEmail] = useState("");
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Newsletter signup:", email);
   };
-
-  return (
-    <footer id="contact" className="bg-primary text-primary-foreground pt-20 pb-8">
+  return <footer id="contact" className="bg-primary text-primary-foreground pt-20 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Contact Column */}
@@ -26,17 +22,12 @@ const Footer = () => {
               </p>
               <p>Serving Snohomish County, Washington</p>
               <p className="pt-4">
-                <strong>Phone:</strong>{" "}
-                <a href="tel:3606318148" className="hover:text-accent transition-colors">
-                  360 631 8148
-                </a>
+                <strong>Call or Text:</strong>{" "}
+                <a href="tel:3606318148" className="hover:text-accent transition-colors">(360) 631-8148</a>
               </p>
               <p>
                 <strong>Email:</strong>{" "}
-                <a
-                  href="mailto:debbie@debbiewelchhomes.com"
-                  className="hover:text-accent transition-colors"
-                >
+                <a href="mailto:debbie@debbiewelchhomes.com" className="hover:text-accent transition-colors">
                   debbie@debbiewelchhomes.com
                 </a>
               </p>
@@ -52,18 +43,8 @@ const Footer = () => {
               Once or twice a month, I share Snohomish County market updates, local events, and practical tips for homeowners, buyers, and downsizers. No spam, no pressure, just helpful info.
             </p>
             <form onSubmit={handleSubmit} className="space-y-3">
-              <Input
-                type="email"
-                placeholder="Your email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="bg-primary-foreground text-primary border-primary-foreground/20"
-              />
-              <Button
-                type="submit"
-                className="w-full bg-secondary hover:bg-secondary/90 text-white"
-              >
+              <Input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} required className="bg-primary-foreground text-primary border-primary-foreground/20" />
+              <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90 text-white">
                 Join the Newsletter
               </Button>
             </form>
@@ -91,33 +72,18 @@ const Footer = () => {
             </ul>
 
             <div className="flex gap-4 mb-6">
-              <a
-                href="#"
-                className="hover:text-accent transition-colors"
-                aria-label="Facebook"
-              >
+              <a href="#" className="hover:text-accent transition-colors" aria-label="Facebook">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a
-                href="#"
-                className="hover:text-accent transition-colors"
-                aria-label="Instagram"
-              >
+              <a href="#" className="hover:text-accent transition-colors" aria-label="Instagram">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a
-                href="#"
-                className="hover:text-accent transition-colors"
-                aria-label="LinkedIn"
-              >
+              <a href="#" className="hover:text-accent transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-6 h-6" />
               </a>
             </div>
 
-            <a
-              href="/privacy"
-              className="text-sm hover:text-accent transition-colors"
-            >
+            <a href="/privacy" className="text-sm hover:text-accent transition-colors">
               Privacy Policy
             </a>
           </div>
@@ -129,8 +95,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

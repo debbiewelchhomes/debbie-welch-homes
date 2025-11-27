@@ -1,27 +1,27 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-home.jpg";
 import { motion } from "framer-motion";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Parallax Background */}
-      <div
-        className="absolute inset-0 parallax-section"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${heroImage})`,
-        }}
-      />
+      <div className="absolute inset-0 parallax-section" style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${heroImage})`
+    }} />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center flex items-center justify-center min-h-[85vh]">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto"
-        >
-          <p className="font-script text-4xl md:text-5xl lg:text-6xl mb-6" style={{ color: '#6e808e' }}>
+      <div className="relative z-10 container mx-auto px-4 py-20 text-center items-center justify-center min-h-[85vh] flex flex-row">
+        <motion.div initial={{
+        opacity: 0,
+        y: 30
+      }} animate={{
+        opacity: 1,
+        y: 0
+      }} transition={{
+        duration: 0.8
+      }} className="max-w-4xl mx-auto">
+          <p className="font-script text-4xl md:text-5xl lg:text-6xl mb-6" style={{
+          color: '#6e808e'
+        }}>
             Welcome home…
           </p>
 
@@ -40,17 +40,10 @@ const HeroSection = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button
-              size="lg"
-              className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6"
-            >
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
               Book a Free Consult
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6"
-            >
+            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6">
               Get the Downsizing Guide
             </Button>
           </div>
@@ -60,8 +53,6 @@ const HeroSection = () => {
           </p>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;

@@ -45,9 +45,7 @@ const HeroSection = () => {
                 Book a Free Consult
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6">
-              Get the Downsizing Guide
-            </Button>
+            
           </div>
 
           <p className="text-sm text-white/80 max-w-2xl mx-auto">

@@ -11,7 +11,7 @@ const BrandPromiseSection = () => {
   const promises = [
     {
       icon: Shield,
-      title: "Clarity over pressure",
+      title: "Clarity Over Pressure",
       description: "I walk you through the 'why' behind every recommendation so you never feel pushed into a decision that does not sit right.",
     },
     {

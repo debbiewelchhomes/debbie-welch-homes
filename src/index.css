@@ -92,10 +92,17 @@ All colors MUST be HSL.
   .font-heading {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
   }
   
   .font-body {
     font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    line-height: 1.15;
+    letter-spacing: -0.02em;
   }
   
   .parallax-section {

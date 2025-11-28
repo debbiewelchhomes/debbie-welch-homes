@@ -9,6 +9,9 @@ const NeighborhoodsSection = () => {
     margin: "-100px"
   });
   const neighborhoods = [{
+    name: "Snohomish County",
+    description: "A mix of charming small towns, established neighborhoods, and rural pockets, all within reach of major job centers and outdoor fun."
+  }, {
     name: "Arlington",
     description: "A blend of small-town main street, newer neighborhoods, and rural acreage with quick access to I-5 and mountain adventures."
   }, {
@@ -26,9 +29,6 @@ const NeighborhoodsSection = () => {
   }, {
     name: "Snohomish",
     description: "Quaint historic downtown, scenic farmland, and neighborhoods that feel a little slower and more small-town while still being close in."
-  }, {
-    name: "Snohomish County",
-    description: "A mix of charming small towns, established neighborhoods, and rural pockets, all within reach of major job centers and outdoor fun."
   }, {
     name: "Stanwood & Camano",
     description: "Coastal views, island sunsets, and a quieter pace of life for people who want to feel a little more 'away' without being too far from services."

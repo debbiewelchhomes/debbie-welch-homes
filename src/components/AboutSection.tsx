@@ -56,7 +56,7 @@ const AboutSection = () => {
                 Having owned multiple personal and investment properties in Snohomish County over the years, I bring both professional expertise and lived experience to the table. My goal is simple: to be your calm, honest guide — someone who will tell you the truth, lay out your options, and help you home in a way that feels steady and doable, not rushed or overwhelming.
               </p>
             </div>
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8">
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8 font-normal text-lg">
               See How We Can Work Together
             </Button>
           </motion.div>

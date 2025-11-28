@@ -35,7 +35,7 @@ const RealTalkSection = () => {
             A lot of people brace themselves for this process to feel stressful and salesy. That is not how I work. I slow things down just enough so you understand your options, the numbers, and the tradeoffs before you make a move. My job is to protect your best interests, keep you informed, and make sure every decision lines up with your real life — not just the market headlines.
           </p>
 
-          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
+          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6 font-normal">
             Let's Talk About Your Next Move
           </Button>
         </motion.div>

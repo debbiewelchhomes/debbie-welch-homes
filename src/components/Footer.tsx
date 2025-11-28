@@ -21,7 +21,7 @@ const Footer = () => {
               <p>Serving Snohomish County, Washington</p>
               <p className="pt-4">
                 <strong>Call or Text:</strong>{" "}
-                <a href="tel:3606318148" className="hover:text-accent transition-colors">(360) 631-8148</a>
+                <a href="tel:3606318148" className="hover:text-accent transition-colors font-medium">(360) 631-8148</a>
               </p>
               <p>
                 <strong>Email:</strong>{" "}

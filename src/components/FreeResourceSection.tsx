@@ -45,7 +45,7 @@ const FreeResourceSection = () => {
 
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
             <Input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} required className="flex-1 h-12 bg-background border-border" />
-            <Button type="submit" size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8">
+            <Button type="submit" size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8 font-normal text-lg">
               Get my report
             </Button>
           </form>

@@ -5,11 +5,11 @@ const HeroSection = () => {
   return <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Parallax Background */}
       <div className="absolute inset-0 parallax-section" style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${heroImage})`
+      backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${heroImage})`
     }} />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center items-center justify-center min-h-[85vh] flex flex-row">
+      <div className="relative z-10 container mx-auto px-4 pt-32 md:pt-40 pb-20 text-center items-center justify-center min-h-[85vh] flex flex-row">
         <motion.div initial={{
         opacity: 0,
         y: 30
@@ -49,7 +49,7 @@ const HeroSection = () => {
           </div>
 
           <p className="text-sm text-white/80 max-w-2xl mx-auto">
-            Serving Snohomish County and surrounding areas, including Arlington, Bothell & Mill Creek, Everett & Mukilteo, Lake Stevens, Marysville, Snohomish, and Stanwood & Camano.
+            Serving Snohomish County and surrounding areas, including Snohomish County, Arlington, Bothell & Mill Creek, Everett & Mukilteo, Lake Stevens, Marysville, Snohomish, and Stanwood & Camano.
           </p>
         </motion.div>
       </div>

@@ -16,27 +16,27 @@ const BrandPromiseSection = () => {
     },
     {
       icon: BookOpen,
-      title: "Education first",
+      title: "Education First",
       description: "You get plain language explanations about the market, pricing, and timelines so you can move forward with confidence.",
     },
     {
       icon: ListChecks,
-      title: "Calm, organized process",
+      title: "Calm, Organized Process",
       description: "Checklists, timelines, and clear next steps keep everyone on track and cut down on last minute surprises.",
     },
     {
       icon: MapPin,
-      title: "Local, boots on the ground insight",
+      title: "Local, Boots on the Ground Insight",
       description: "As a 40+ year Snohomish County local and multi-property owner, I have hands-on knowledge of our neighborhoods, schools, employers, and market cycles — not just what is written in online reports.",
     },
     {
       icon: Heart,
-      title: "Heart led, no nonsense support",
+      title: "Heart-Led, No-Nonsense Support",
       description: "I care deeply about the people behind the transaction and I will always give you honest, straightforward advice.",
     },
     {
       icon: MessageCircle,
-      title: "Steady communication",
+      title: "Steady Communication",
       description: "You will always know what is happening, what is coming next, and what I recommend — no ghosting, no guessing, no being left in the dark.",
     },
   ];

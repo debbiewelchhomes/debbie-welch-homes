@@ -79,6 +79,12 @@ All colors MUST be HSL.
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
   }
+  
+  /* Tighten Montserrat body text spacing */
+  p, .prose p {
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
 }
 
 @layer utilities {

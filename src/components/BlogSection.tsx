@@ -33,7 +33,7 @@ const BlogSection = () => {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-16">
-          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl">
+          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl" aria-hidden="true">
             Stay informed…
           </p>
           <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">

@@ -45,7 +45,7 @@ const ServicesSection = () => {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-16">
-          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl">When it is time to move…</p>
+          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl" aria-hidden="true">When it is time to move…</p>
           <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-primary">
             Here's How We Can Work Together
           </h2>

@@ -4,9 +4,14 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Parallax Background */}
-      <div className="absolute inset-0 parallax-section" style={{
-      backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${heroImage})`
-    }} />
+      <div 
+        className="absolute inset-0 parallax-section" 
+        style={{
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${heroImage})`
+        }}
+        role="img"
+        aria-label="Snohomish County WA home exterior - Debbie Welch local real estate agent"
+      />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-32 md:pt-40 pb-20 text-center items-center justify-center min-h-[85vh] flex flex-row">
@@ -25,15 +30,15 @@ const HeroSection = () => {
             Welcome home…
           </p>
 
-          <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl text-white mb-6">
+          <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-6">
             Helping You Home in Snohomish County
           </h1>
 
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto font-light">
+          <p className="text-xl md:text-2xl text-primary mb-8 max-w-3xl mx-auto font-light">
             Real estate guidance for downsizers, military families, and first time buyers who want less pressure and more clarity.
           </p>
 
-          <div className="prose prose-lg text-white/90 mb-10 max-w-3xl mx-auto">
+          <div className="prose prose-lg text-primary mb-10 max-w-3xl mx-auto">
             <p className="text-lg leading-relaxed">
               If you are like most of my clients, you do not need more hype — you need a clear plan, someone to translate the real estate speak, and a calm voice who will tell you the truth even when it is not convenient. That is the work I do every day for downsizers, military families, and first time buyers across Snohomish County.
             </p>
@@ -48,7 +53,7 @@ const HeroSection = () => {
             
           </div>
 
-          <p className="text-sm text-white/80 max-w-2xl mx-auto">
+          <p className="text-sm text-primary max-w-2xl mx-auto">
             Serving Snohomish County and surrounding areas, including Snohomish County, Arlington, Bothell & Mill Creek, Everett & Mukilteo, Lake Stevens, Marysville, Snohomish, and Stanwood & Camano.
           </p>
         </motion.div>

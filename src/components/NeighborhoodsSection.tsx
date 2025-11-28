@@ -10,28 +10,36 @@ const NeighborhoodsSection = () => {
   });
   const neighborhoods = [{
     name: "Snohomish County",
-    description: "A mix of charming small towns, established neighborhoods, and rural pockets, all within reach of major job centers and outdoor fun."
+    description: "A mix of charming small towns, established neighborhoods, and rural pockets, all within reach of major job centers and outdoor fun.",
+    altText: "Snohomish County WA neighborhoods overview"
   }, {
     name: "Arlington",
-    description: "A blend of small-town main street, newer neighborhoods, and rural acreage with quick access to I-5 and mountain adventures."
+    description: "A blend of small-town main street, newer neighborhoods, and rural acreage with quick access to I-5 and mountain adventures.",
+    altText: "Arlington WA neighborhood homes - real estate"
   }, {
-    name: "Bothell & Mill Creek",
-    description: "Highly sought-after schools, established neighborhoods, and strong commuter access toward the Eastside and Seattle."
+    name: "Bothell &\nMill Creek",
+    description: "Highly sought-after schools, established neighborhoods, and strong commuter access toward the Eastside and Seattle.",
+    altText: "Bothell and Mill Creek WA neighborhoods - homes for sale"
   }, {
     name: "Everett & Mukilteo",
-    description: "Waterfront views, historic homes, and commuter-friendly locations near Paine Field, Naval Station Everett, and major employers."
+    description: "Waterfront views, historic homes, and commuter-friendly locations near Paine Field, Naval Station Everett, and major employers.",
+    altText: "Everett and Mukilteo WA coastline and homes"
   }, {
     name: "Lake Stevens",
-    description: "Lakeside living, established neighborhoods, and new construction options with a strong community feel and easy access to Everett and Highway 9."
+    description: "Lakeside living, established neighborhoods, and new construction options with a strong community feel and easy access to Everett and Highway 9.",
+    altText: "Lake Stevens WA lakefront homes and community"
   }, {
     name: "Marysville",
-    description: "Growing neighborhoods, convenient shopping, and quick access north and south, with room to stretch out a bit more than the city core."
+    description: "Growing neighborhoods, convenient shopping, and quick access north and south, with room to stretch out a bit more than the city core.",
+    altText: "Marysville WA family neighborhoods and parks"
   }, {
     name: "Snohomish",
-    description: "Quaint historic downtown, scenic farmland, and neighborhoods that feel a little slower and more small-town while still being close in."
+    description: "Quaint historic downtown, scenic farmland, and neighborhoods that feel a little slower and more small-town while still being close in.",
+    altText: "Snohomish WA historic homes and downtown"
   }, {
     name: "Stanwood & Camano",
-    description: "Coastal views, island sunsets, and a quieter pace of life for people who want to feel a little more 'away' without being too far from services."
+    description: "Coastal views, island sunsets, and a quieter pace of life for people who want to feel a little more 'away' without being too far from services.",
+    altText: "Stanwood and Camano Island WA coastal homes"
   }];
   return <section id="neighborhoods" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
@@ -47,7 +55,7 @@ const NeighborhoodsSection = () => {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-16">
-          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl">Let me show you around…</p>
+          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl" aria-hidden="true">Let me show you around…</p>
           <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-primary">Explore Neighborhoods</h2>
         </motion.div>
 
@@ -67,8 +75,12 @@ const NeighborhoodsSection = () => {
         }}>
               <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-border bg-card group cursor-pointer">
                 <CardContent className="p-6">
-                  <div className="h-32 bg-warm-bg rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                    <h3 className="font-heading text-xl md:text-2xl font-bold text-primary text-center px-2">
+                  <div 
+                    className="h-32 bg-warm-bg rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300"
+                    role="img"
+                    aria-label={area.altText}
+                  >
+                    <h3 className="font-heading text-xl md:text-2xl font-bold text-primary text-center px-2 whitespace-pre-line">
                       {area.name}
                     </h3>
                   </div>

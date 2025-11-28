@@ -45,7 +45,7 @@ const TestimonialSection = () => {
           <Card className="bg-white/95 backdrop-blur-sm shadow-2xl">
             <CardContent className="p-8 md:p-12">
               <div className="text-center mb-8">
-                <p className="font-script text-3xl md:text-5xl text-secondary mb-4">
+                <p className="font-script text-3xl md:text-5xl text-secondary mb-4" aria-hidden="true">
                   client stories…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">

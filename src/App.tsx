@@ -12,6 +12,7 @@ import Selling from "./pages/Selling";
 import Relocation from "./pages/Relocation";
 import Downsizing from "./pages/Downsizing";
 import Listings from "./pages/Listings";
+import Blog from "./pages/Blog";
 import SnohomishCounty from "./pages/areas/SnohomishCounty";
 import Arlington from "./pages/areas/Arlington";
 import BothellMillCreek from "./pages/areas/BothellMillCreek";
@@ -40,6 +41,7 @@ const App = () => {
             <Route path="/services/relocation" element={<Relocation />} />
             <Route path="/services/downsizing" element={<Downsizing />} />
             <Route path="/listings" element={<Listings />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/areas/snohomish-county" element={<SnohomishCounty />} />
             <Route path="/areas/arlington" element={<Arlington />} />
             <Route path="/areas/bothell-mill-creek" element={<BothellMillCreek />} />

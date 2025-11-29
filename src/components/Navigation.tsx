@@ -95,7 +95,7 @@ const Navigation = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Link to="/" className="text-foreground hover:text-secondary transition-colors">
+            <Link to="/blog" className="text-foreground hover:text-secondary transition-colors">
               Blog
             </Link>
 
@@ -168,7 +168,7 @@ const Navigation = () => {
                   </Link>
                 ))}
               </div>
-              <Link to="/" className="text-foreground hover:text-secondary transition-colors">
+              <Link to="/blog" className="text-foreground hover:text-secondary transition-colors">
                 Blog
               </Link>
               <Link to="/" className="text-foreground hover:text-secondary transition-colors">

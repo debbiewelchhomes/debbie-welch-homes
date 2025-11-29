@@ -14,26 +14,26 @@ const ServicesSection = () => {
   const services = [{
     icon: Home,
     title: "Buying",
-    description: "From first time buyers to seasoned movers, I help you understand the numbers, neighborhoods, and strategy so you do not overpay or second guess your decision.",
-    cta: "Download the Buyer Guide",
+    description: "Looking for your next home in Lake Stevens, Everett, Marysville, Snohomish, or nearby communities? I'll help you understand the numbers, compare neighborhoods, and write offers that make sense for both your budget and your stress levels.",
+    cta: "Explore Buying Services",
     href: "/services/buying"
   }, {
     icon: DollarSign,
     title: "Selling",
-    description: "When it is time to sell, we build a custom plan for pricing, prep, and marketing that respects your timelines and maximizes your net without turning your life upside down.",
-    cta: "Get the Selling Resource",
+    description: "From pricing strategy and home prep to marketing and negotiation, I'll help you position your Snohomish County home so it stands out in today's market—without burning yourself out in the process.",
+    cta: "Explore Selling Services",
     href: "/services/selling"
   }, {
     icon: Plane,
     title: "Relocation",
-    description: "Relocating to or from Snohomish County? I help military families and out-of-area buyers get the lay of the land, match neighborhoods to lifestyle, and coordinate a smooth long-distance move.",
-    cta: "Relocating to Snohomish County Guide",
+    description: "Moving to Snohomish County from out of the area or on military orders? I'll be your on-the-ground partner, sharing honest insight on neighborhoods, commute options, and homes so you can make confident decisions from a distance.",
+    cta: "Explore Relocation Services",
     href: "/services/relocation"
   }, {
     icon: TrendingDown,
     title: "Downsizing",
-    description: "Downsizing is about more than square footage. Together we will plan your timelines, prep your current home, and find the right next place for this season of life.",
-    cta: "Download the Downsizing Guide",
+    description: "If you're entering a new season and your current home no longer fits, I'll help you right-size into something more manageable—step by step—while honoring both the practical and emotional parts of letting go.",
+    cta: "Explore Downsizing Services",
     href: "/services/downsizing"
   }];
   return <section id="services" className="py-20 md:py-32 bg-background">
@@ -50,8 +50,8 @@ const ServicesSection = () => {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-16">
-          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl" aria-hidden="true">When it is time to move…</p>
-          <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-primary">
+          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl" aria-hidden="true">When it's time…</p>
+          <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
             Here's How We Can Work Together
           </h2>
         </motion.div>

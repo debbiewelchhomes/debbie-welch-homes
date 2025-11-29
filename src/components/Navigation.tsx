@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,10 +13,10 @@ const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const services = [
-    { name: "Buying", href: "#buying" },
-    { name: "Selling", href: "#selling" },
-    { name: "Relocation", href: "#relocation" },
-    { name: "Downsizing", href: "#downsizing" },
+    { name: "Buying", href: "/services/buying" },
+    { name: "Selling", href: "/services/selling" },
+    { name: "Relocation", href: "/services/relocation" },
+    { name: "Downsizing", href: "/services/downsizing" },
   ];
 
   const areas = [
@@ -35,9 +36,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Desktop Navigation - Reordered with center logo space */}
           <div className="hidden lg:flex items-center justify-center gap-6 flex-1">
-            <a href="#home" className="text-foreground hover:text-secondary transition-colors">
+            <Link to="/" className="text-foreground hover:text-secondary transition-colors">
               Home
-            </a>
+            </Link>
             
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-secondary transition-colors">
@@ -46,9 +47,9 @@ const Navigation = () => {
               <DropdownMenuContent className="bg-background border-border">
                 {services.map((service) => (
                   <DropdownMenuItem key={service.name}>
-                    <a href={service.href} className="w-full">
+                    <Link to={service.href} className="w-full">
                       {service.name}
-                    </a>
+                    </Link>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
@@ -115,19 +116,19 @@ const Navigation = () => {
             <div className="flex flex-col gap-4">
               <div className="text-center text-xs text-muted-foreground mb-2">Logo</div>
               
-              <a href="#home" className="text-foreground hover:text-secondary transition-colors">
+              <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Home
-              </a>
+              </Link>
               <div className="flex flex-col gap-2 pl-4">
                 <span className="text-sm font-semibold text-muted-foreground">Services</span>
                 {services.map((service) => (
-                  <a
+                  <Link
                     key={service.name}
-                    href={service.href}
+                    to={service.href}
                     className="text-foreground hover:text-secondary transition-colors"
                   >
                     {service.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <a href="#listings" className="text-foreground hover:text-secondary transition-colors">

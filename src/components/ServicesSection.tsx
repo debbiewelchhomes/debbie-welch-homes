@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -14,22 +15,26 @@ const ServicesSection = () => {
     icon: Home,
     title: "Buying",
     description: "From first time buyers to seasoned movers, I help you understand the numbers, neighborhoods, and strategy so you do not overpay or second guess your decision.",
-    cta: "Download the Buyer Guide"
+    cta: "Download the Buyer Guide",
+    href: "/services/buying"
   }, {
     icon: DollarSign,
     title: "Selling",
     description: "When it is time to sell, we build a custom plan for pricing, prep, and marketing that respects your timelines and maximizes your net without turning your life upside down.",
-    cta: "Get the Selling Resource"
+    cta: "Get the Selling Resource",
+    href: "/services/selling"
   }, {
     icon: Plane,
     title: "Relocation",
     description: "Relocating to or from Snohomish County? I help military families and out-of-area buyers get the lay of the land, match neighborhoods to lifestyle, and coordinate a smooth long-distance move.",
-    cta: "Relocating to Snohomish County Guide"
+    cta: "Relocating to Snohomish County Guide",
+    href: "/services/relocation"
   }, {
     icon: TrendingDown,
     title: "Downsizing",
     description: "Downsizing is about more than square footage. Together we will plan your timelines, prep your current home, and find the right next place for this season of life.",
-    cta: "Download the Downsizing Guide"
+    cta: "Download the Downsizing Guide",
+    href: "/services/downsizing"
   }];
   return <section id="services" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
@@ -81,8 +86,8 @@ const ServicesSection = () => {
                   <p className="text-foreground leading-relaxed mb-6">
                     {service.description}
                   </p>
-                  <Button variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-white">
-                    {service.cta}
+                  <Button variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-white" asChild>
+                    <Link to={service.href}>{service.cta}</Link>
                   </Button>
                 </CardContent>
               </Card>

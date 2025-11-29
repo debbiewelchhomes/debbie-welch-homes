@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import calmInterior from "@/assets/calm-interior.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -35,8 +36,8 @@ const RealTalkSection = () => {
             A lot of people brace themselves for this process to feel stressful and salesy. That is not how I work. I slow things down just enough so you understand your options, the numbers, and the tradeoffs before you make a move. My job is to protect your best interests, keep you informed, and make sure every decision lines up with your real life — not just the market headlines.
           </p>
 
-          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-            Let's Talk About Your Next Move
+          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6" asChild>
+            <Link to="/services">Let's Talk About Your Next Move</Link>
           </Button>
         </motion.div>
       </div>

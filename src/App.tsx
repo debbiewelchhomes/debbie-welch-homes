@@ -26,13 +26,6 @@ const queryClient = new QueryClient();
 
 const App = () => {
   useEffect(() => {
-    // Facebook Messenger Chat Plugin - Configuration
-    const chatbox = document.getElementById('fb-customer-chat');
-    if (chatbox) {
-      chatbox.setAttribute("page_id", "102493361706173");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    }
-
     // Facebook Messenger Chat Plugin - SDK
     window.fbAsyncInit = function() {
       window.FB.init({
@@ -48,11 +41,23 @@ const App = () => {
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+
+    // Set attributes on chatbox after mount
+    const chatbox = document.getElementById('fb-customer-chat');
+    if (chatbox) {
+      chatbox.setAttribute("page_id", "102493361706173");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    }
   }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <style>{`
+          .fb-customerchat {
+            z-index: 9999 !important;
+          }
+        `}</style>
         <Toaster />
         <Sonner />
         <BrowserRouter>

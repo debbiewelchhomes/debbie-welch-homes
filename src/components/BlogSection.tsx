@@ -76,7 +76,7 @@ const BlogSection = () => {
         </div>
 
         <div className="text-center">
-          <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-white text-lg">
+          <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-white">
             View All Posts
           </Button>
         </div>

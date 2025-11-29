@@ -81,14 +81,8 @@ const ServicesSection = () => {
                   <p className="text-foreground leading-relaxed mb-6">
                     {service.description}
                   </p>
-                  <Button 
-                    variant="outline" 
-                    className="border-secondary text-secondary hover:bg-secondary hover:text-white"
-                    asChild
-                  >
-                    <a href={index === 0 ? "/buying" : index === 1 ? "/selling" : "#"}>
-                      {service.cta}
-                    </a>
+                  <Button variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-white">
+                    {service.cta}
                   </Button>
                 </CardContent>
               </Card>

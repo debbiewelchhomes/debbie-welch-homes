@@ -99,7 +99,7 @@ const Navigation = () => {
               Blog
             </Link>
 
-            <Link to="/" className="text-foreground hover:text-secondary transition-colors">
+            <Link to="/about" className="text-foreground hover:text-secondary transition-colors">
               About
             </Link>
 
@@ -171,7 +171,7 @@ const Navigation = () => {
               <Link to="/blog" className="text-foreground hover:text-secondary transition-colors">
                 Blog
               </Link>
-              <Link to="/" className="text-foreground hover:text-secondary transition-colors">
+              <Link to="/about" className="text-foreground hover:text-secondary transition-colors">
                 About
               </Link>
               <Link to="/" className="text-foreground hover:text-secondary transition-colors">

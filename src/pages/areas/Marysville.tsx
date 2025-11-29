@@ -11,51 +11,54 @@ const Marysville = () => {
       <Navigation />
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[80vh] flex items-center justify-center bg-warm-bg">
-          <div className="container mx-auto px-4 text-center py-32">
-            <p className="font-script text-4xl md:text-6xl text-secondary mb-6">Buyer's Dream…</p>
-            <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-primary mb-6">
-              Welcome to {areaName}
-            </h1>
-            <p className="text-lg md:text-xl text-foreground max-w-3xl mx-auto leading-relaxed">
-              This is where we'll describe why {areaName} is such a popular corner of Snohomish County—location, vibe, and what life feels like here. I'll customize this copy later.
+        <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center bg-warm-bg bg-cover bg-center">
+          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="container mx-auto px-4 text-center py-32 relative z-10">
+            <p className="font-script text-5xl md:text-7xl text-white mb-4 drop-shadow-lg">
+              {areaName}
             </p>
           </div>
         </section>
 
-        {/* Video Section */}
+        {/* Welcome & Video Section */}
         <section className="py-20 md:py-32 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">
+              <p className="font-script text-3xl md:text-5xl text-secondary mb-6">Buyer's Dream…</p>
+              <h1 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">
                 Welcome to {areaName}
-              </h2>
-              <p className="text-lg text-foreground mb-8">
-                This is where an area video will go—stay tuned!
+              </h1>
+              <p className="text-base md:text-lg text-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
+                This is where we'll describe why {areaName} is such a popular corner of Snohomish County—the location, the vibe, and what life feels like here. Perfect for families, commuters, and anyone looking for that blend of community and convenience. I'll customize this copy with specific details about what makes this area special.
               </p>
-              <div className="aspect-video bg-warm-bg rounded-lg flex items-center justify-center">
-                <p className="text-muted-foreground">Video Placeholder</p>
+              <div className="aspect-video bg-warm-bg rounded-lg flex items-center justify-center border border-border">
+                <p className="text-muted-foreground">Video Placeholder - YouTube embed will go here</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Location Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="py-20 md:py-32 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6 text-center">On the map…</p>
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6 text-center">
                 Location of {areaName}
               </h2>
-              <p className="text-lg text-foreground mb-8 text-center">
-                This will show where {areaName} sits within the greater area and what's nearby.
+              <p className="text-base md:text-lg text-foreground mb-8 text-center max-w-2xl mx-auto leading-relaxed">
+                This will show where {areaName} sits within Snohomish County and what's nearby. Easy access to highways, shopping, schools, and outdoor recreation.
               </p>
-              <div className="aspect-video bg-background rounded-lg flex items-center justify-center border border-border">
-                <p className="text-muted-foreground">Map Placeholder</p>
+              <div className="aspect-video bg-warm-bg rounded-lg flex items-center justify-center border border-border">
+                <p className="text-muted-foreground">Google Maps Embed Placeholder</p>
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Full-Width Scenic Photo */}
+        <section className="relative h-[50vh] md:h-[60vh] bg-warm-bg bg-cover bg-center">
+          <div className="absolute inset-0 bg-black/10"></div>
         </section>
 
         {/* Love It / Might Not Section */}

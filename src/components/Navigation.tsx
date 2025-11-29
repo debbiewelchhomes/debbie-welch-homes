@@ -42,7 +42,10 @@ const Navigation = () => {
             
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-secondary transition-colors">
-                Services <ChevronDown className="h-4 w-4" />
+                <Link to="/services" className="hover:text-secondary transition-colors">
+                  Services
+                </Link>
+                <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-background border-border">
                 {services.map((service) => (
@@ -120,12 +123,14 @@ const Navigation = () => {
                 Home
               </Link>
               <div className="flex flex-col gap-2 pl-4">
-                <span className="text-sm font-semibold text-muted-foreground">Services</span>
+                <Link to="/services" className="text-sm font-semibold text-muted-foreground hover:text-secondary transition-colors">
+                  Services
+                </Link>
                 {services.map((service) => (
                   <Link
                     key={service.name}
                     to={service.href}
-                    className="text-foreground hover:text-secondary transition-colors"
+                    className="text-foreground hover:text-secondary transition-colors pl-4"
                   >
                     {service.name}
                   </Link>

@@ -20,14 +20,14 @@ const Navigation = () => {
   ];
 
   const areas = [
-    "Snohomish County",
-    "Arlington",
-    "Bothell & Mill Creek",
-    "Everett & Mukilteo",
-    "Lake Stevens",
-    "Marysville",
-    "Snohomish",
-    "Stanwood & Camano",
+    { name: "Snohomish County", href: "/areas/snohomish-county" },
+    { name: "Arlington", href: "/areas/arlington" },
+    { name: "Bothell & Mill Creek", href: "/areas/bothell-mill-creek" },
+    { name: "Everett & Mukilteo", href: "/areas/everett-mukilteo" },
+    { name: "Lake Stevens", href: "/areas/lake-stevens" },
+    { name: "Marysville", href: "/areas/marysville" },
+    { name: "Snohomish", href: "/areas/snohomish" },
+    { name: "Stanwood & Camano", href: "/areas/stanwood-camano" },
   ];
 
   return (
@@ -86,9 +86,9 @@ const Navigation = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-background border-border max-h-96 overflow-y-auto">
                 {areas.map((area) => (
-                  <DropdownMenuItem key={area}>
-                    <Link to="/" className="w-full">
-                      {area}
+                  <DropdownMenuItem key={area.name}>
+                    <Link to={area.href} className="w-full">
+                      {area.name}
                     </Link>
                   </DropdownMenuItem>
                 ))}
@@ -160,11 +160,11 @@ const Navigation = () => {
                 <span className="text-sm font-semibold text-muted-foreground">Areas</span>
                 {areas.map((area) => (
                   <Link
-                    key={area}
-                    to="/"
+                    key={area.name}
+                    to={area.href}
                     className="text-foreground hover:text-secondary transition-colors"
                   >
-                    {area}
+                    {area.name}
                   </Link>
                 ))}
               </div>

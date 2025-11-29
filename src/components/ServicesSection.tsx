@@ -86,7 +86,7 @@ const ServicesSection = () => {
                     className="border-secondary text-secondary hover:bg-secondary hover:text-white"
                     asChild
                   >
-                    <a href={index === 0 ? "/buying" : "#"}>
+                    <a href={index === 0 ? "/buying" : index === 1 ? "/selling" : "#"}>
                       {service.cta}
                     </a>
                   </Button>

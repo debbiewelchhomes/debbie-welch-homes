@@ -62,13 +62,13 @@ const Navigation = () => {
               </div>
             </div>
 
-            <a href="#listings" className="text-foreground hover:text-secondary transition-colors">
+            <Link to="/" className="text-foreground hover:text-secondary transition-colors">
               Listings
-            </a>
+            </Link>
 
-            <a href="#search" className="text-foreground hover:text-secondary transition-colors">
+            <Link to="/" className="text-foreground hover:text-secondary transition-colors">
               Search
-            </a>
+            </Link>
 
             {/* Center Logo Area */}
             <div className="flex-shrink-0 w-32 h-12 mx-6 flex items-center justify-center">
@@ -82,25 +82,25 @@ const Navigation = () => {
               <DropdownMenuContent className="bg-background border-border max-h-96 overflow-y-auto">
                 {areas.map((area) => (
                   <DropdownMenuItem key={area}>
-                    <a href="#neighborhoods" className="w-full">
+                    <Link to="/" className="w-full">
                       {area}
-                    </a>
+                    </Link>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <a href="#blog" className="text-foreground hover:text-secondary transition-colors">
+            <Link to="/" className="text-foreground hover:text-secondary transition-colors">
               Blog
-            </a>
+            </Link>
 
-            <a href="#about" className="text-foreground hover:text-secondary transition-colors">
+            <Link to="/" className="text-foreground hover:text-secondary transition-colors">
               About
-            </a>
+            </Link>
 
-            <a href="#contact" className="text-foreground hover:text-secondary transition-colors">
+            <Link to="/" className="text-foreground hover:text-secondary transition-colors">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -140,33 +140,33 @@ const Navigation = () => {
                   </Link>
                 ))}
               </div>
-              <a href="#listings" className="text-foreground hover:text-secondary transition-colors">
+              <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Listings
-              </a>
-              <a href="#search" className="text-foreground hover:text-secondary transition-colors">
+              </Link>
+              <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Search
-              </a>
+              </Link>
               <div className="flex flex-col gap-2 pl-4">
                 <span className="text-sm font-semibold text-muted-foreground">Areas</span>
                 {areas.map((area) => (
-                  <a
+                  <Link
                     key={area}
-                    href="#neighborhoods"
+                    to="/"
                     className="text-foreground hover:text-secondary transition-colors"
                   >
                     {area}
-                  </a>
+                  </Link>
                 ))}
               </div>
-              <a href="#blog" className="text-foreground hover:text-secondary transition-colors">
+              <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Blog
-              </a>
-              <a href="#about" className="text-foreground hover:text-secondary transition-colors">
+              </Link>
+              <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 About
-              </a>
-              <a href="#contact" className="text-foreground hover:text-secondary transition-colors">
+              </Link>
+              <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         )}

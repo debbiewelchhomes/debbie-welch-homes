@@ -40,23 +40,27 @@ const Navigation = () => {
               Home
             </Link>
             
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-secondary transition-colors">
-                <Link to="/services" className="hover:text-secondary transition-colors">
+            <div className="relative group">
+              <div className="flex items-center gap-1">
+                <Link to="/services" className="text-foreground hover:text-secondary transition-colors">
                   Services
                 </Link>
-                <ChevronDown className="h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-background border-border">
-                {services.map((service) => (
-                  <DropdownMenuItem key={service.name}>
-                    <Link to={service.href} className="w-full">
-                      {service.name}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+                <DropdownMenu>
+                  <DropdownMenuTrigger className="text-foreground hover:text-secondary transition-colors">
+                    <ChevronDown className="h-4 w-4" />
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="bg-background border-border z-50">
+                    {services.map((service) => (
+                      <DropdownMenuItem key={service.name}>
+                        <Link to={service.href} className="w-full">
+                          {service.name}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </div>
+            </div>
 
             <a href="#listings" className="text-foreground hover:text-secondary transition-colors">
               Listings

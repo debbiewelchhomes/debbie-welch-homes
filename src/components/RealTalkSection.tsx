@@ -11,7 +11,7 @@ const RealTalkSection = () => {
     margin: "-100px"
   });
   return <section className="relative py-32 overflow-hidden parallax-section" style={{
-    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(${calmInterior})`
+    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${calmInterior})`
   }}>
       <div className="relative z-10 container mx-auto px-4">
         <motion.div ref={ref} initial={{

@@ -38,7 +38,7 @@ const Navigation = () => {
           {/* Desktop Navigation - Logo centered, nav groups on sides */}
           <div className="hidden lg:flex items-center justify-between w-full max-w-7xl mx-auto">
             {/* Left Navigation Group */}
-            <div className="flex items-center gap-8 flex-1 justify-end pr-12">
+            <div className="flex items-center gap-8 flex-1 justify-end pr-8">
               <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
@@ -86,7 +86,7 @@ const Navigation = () => {
             </div>
 
             {/* Center Logo */}
-            <Link to="/" className="flex-shrink-0 px-8">
+            <Link to="/" className="flex-shrink-0 px-4">
               <img 
                 src={logo} 
                 alt="Debbie Welch Homes at eXp Realty" 
@@ -95,7 +95,7 @@ const Navigation = () => {
             </Link>
 
             {/* Right Navigation Group */}
-            <div className="flex items-center gap-8 flex-1 justify-start pl-12">
+            <div className="flex items-center gap-8 flex-1 justify-start pl-8">
               <a 
                 href="https://debbiewelch.exprealty.com/index?advanced=1&display=Snohomish&areas%5B%5D=county:Snohomish:wa&beds=0&baths=0&min=0&max=100000000&minacres=0&maxacres=50000&minfootage=0&maxfootage=30000&walkscore=&yearbuilt=0&types%5B%5D=2&types%5B%5D=3&types%5B%5D=1&sortby=listings.listingdate+DESC&ppc=Loveable+Website&addht=LoveableWebsite&agency_photos=&view_timing=2"
                 target="_blank"

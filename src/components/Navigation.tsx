@@ -8,7 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-horizontal.png";
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -33,12 +33,12 @@ const Navigation = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-24">
+      <div className="container mx-auto px-6">
+        <div className="flex items-center justify-between h-20">
           {/* Desktop Navigation - Three groups with logo in center */}
-          <div className="hidden lg:flex items-center justify-between w-full gap-8">
+          <div className="hidden lg:flex items-center justify-between w-full gap-12">
             {/* Left Navigation Group */}
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-8">
               <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
@@ -86,16 +86,16 @@ const Navigation = () => {
             </div>
 
             {/* Center Logo */}
-            <Link to="/" className="flex-shrink-0">
+            <Link to="/" className="flex-shrink-0 mx-4">
               <img 
                 src={logo} 
                 alt="Debbie Welch Homes at eXp Realty" 
-                className="h-16 w-auto"
+                className="h-10 w-auto"
               />
             </Link>
 
             {/* Right Navigation Group */}
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-8">
               <a 
                 href="https://debbiewelch.exprealty.com/index?advanced=1&display=Snohomish&areas%5B%5D=county:Snohomish:wa&beds=0&baths=0&min=0&max=100000000&minacres=0&maxacres=50000&minfootage=0&maxfootage=30000&walkscore=&yearbuilt=0&types%5B%5D=2&types%5B%5D=3&types%5B%5D=1&sortby=listings.listingdate+DESC&ppc=Loveable+Website&addht=LoveableWebsite&agency_photos=&view_timing=2"
                 target="_blank"
@@ -142,7 +142,7 @@ const Navigation = () => {
                   <img 
                     src={logo} 
                     alt="Debbie Welch Homes at eXp Realty" 
-                    className="h-12 w-auto"
+                    className="h-8 w-auto"
                   />
                 </Link>
               </div>

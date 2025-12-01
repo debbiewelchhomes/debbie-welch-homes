@@ -1,20 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 const FreeResourceSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
     margin: "-100px"
   });
-  const [email, setEmail] = useState("");
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log("Email submitted:", email);
-  };
   return <section className="py-20 md:py-32 bg-warm-bg">
       <div className="container mx-auto px-4">
         <motion.div ref={ref} initial={{
@@ -43,12 +36,11 @@ const FreeResourceSection = () => {
             Get your free market report that outlines price reductions, new listings, comparable listings and more!
           </p>
 
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-            <Input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} required className="flex-1 h-12 bg-background border-border" />
-            <Button type="submit" size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8">
-              Get my report
+          <div className="flex justify-center">
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>
+              <a href="#">Get my report</a>
             </Button>
-          </form>
+          </div>
         </motion.div>
       </div>
     </section>;

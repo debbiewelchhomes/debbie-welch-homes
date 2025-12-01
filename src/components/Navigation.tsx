@@ -34,11 +34,11 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
-          {/* Desktop Navigation - Three groups with logo in center */}
-          <div className="hidden lg:flex items-center justify-between w-full gap-12">
+        <div className="relative flex items-center justify-center h-20">
+          {/* Desktop Navigation - Logo centered, nav groups on sides */}
+          <div className="hidden lg:flex items-center justify-between w-full max-w-7xl mx-auto">
             {/* Left Navigation Group */}
-            <div className="flex items-center gap-8">
+            <div className="flex items-center gap-8 flex-1 justify-end pr-12">
               <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
@@ -86,7 +86,7 @@ const Navigation = () => {
             </div>
 
             {/* Center Logo */}
-            <Link to="/" className="flex-shrink-0 mx-4">
+            <Link to="/" className="flex-shrink-0 px-8">
               <img 
                 src={logo} 
                 alt="Debbie Welch Homes at eXp Realty" 
@@ -95,7 +95,7 @@ const Navigation = () => {
             </Link>
 
             {/* Right Navigation Group */}
-            <div className="flex items-center gap-8">
+            <div className="flex items-center gap-8 flex-1 justify-start pl-12">
               <a 
                 href="https://debbiewelch.exprealty.com/index?advanced=1&display=Snohomish&areas%5B%5D=county:Snohomish:wa&beds=0&baths=0&min=0&max=100000000&minacres=0&maxacres=50000&minfootage=0&maxfootage=30000&walkscore=&yearbuilt=0&types%5B%5D=2&types%5B%5D=3&types%5B%5D=1&sortby=listings.listingdate+DESC&ppc=Loveable+Website&addht=LoveableWebsite&agency_photos=&view_timing=2"
                 target="_blank"

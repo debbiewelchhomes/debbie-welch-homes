@@ -11,16 +11,32 @@ const TestimonialSection = () => {
 
   const testimonials = [
     {
-      quote: "We were overwhelmed at the idea of selling the home we had lived in for 25+ years. Debbie broke everything down into small steps, gave us honest feedback without judgment, and kept us calm through every curveball. We ended up with a smooth sale and a downsized home that actually fits this season of life.",
-      author: "Karen & Mike S., Lake Stevens downsizers"
+      quote: "We found Debbie online and chose her because of the reviews - and we'd give her 10 stars if we could. Even with a 9-hour time difference (we were in Germany), she replied incredibly fast, did video walk-throughs, and helped us feel confident buying from afar. Her expertise was priceless.",
+      attribution: "Vanessa G. - Lake Stevens (Relocation / long-distance)"
     },
     {
-      quote: "Moving to Snohomish County for a new duty station felt impossible until Debbie stepped in. She sent video walkthroughs, explained neighborhoods in plain language, and helped us make a smart offer from out of state. By the time we arrived, it felt like we already knew the area.",
-      author: "The R. family, military relocation"
+      quote: "This was my first time buying a home on my own, and I knew nothing going in. As a USAF Veteran using a VA loan in a hot sellers market, Debbie stayed calm, confident, and on top of everything. She helped me find a home I loved and could afford - and was a strong advocate the whole way.",
+      attribution: "Lisa L. - Lake Stevens (USAF Veteran / VA loan)"
     },
     {
-      quote: "As first-time buyers we had a lot of questions and zero idea where to start. Debbie never made us feel silly for asking things twice. She laid out the numbers, pros and cons, and next steps so clearly that we actually enjoyed the process instead of stressing through it.",
-      author: "Jenna & Alex P., first-time buyers in Marysville"
+      quote: "We were living out of state and couldn't get back to Washington to prepare our home for sale. Debbie handled everything - selling unwanted items, helping pack, and staging. The result was a SOLD sign in two days with multiple offers over asking. She truly goes the extra mile.",
+      attribution: "Pat D. - Lake Stevens (Out-of-state seller)"
+    },
+    {
+      quote: "Debbie was outstanding and extremely professional - responsive, great communication, and excellent negotiation skills. She got our home sold in less than a month, and she even helped us pack our POD, clean the home, and handle dump and donation runs. I'd use Debbie again in a heartbeat.",
+      attribution: "Kasey B. - Marysville (Seller)"
+    },
+    {
+      quote: "We're so grateful for Debbie's work selling our home. Her market knowledge, attention to detail, and guidance on preparing the home were invaluable. Her marketing showcased the best features, and her support made the process feel seamless and manageable.",
+      attribution: "Stacie F. - Stanwood (Navy Veteran)"
+    },
+    {
+      quote: "Debbie was amazing through my first home-buying experience. She's patient, understanding, and genuinely caring. I wouldn't hesitate to have her as my realtor again.",
+      attribution: "Issac M. - Marysville (US Navy)"
+    },
+    {
+      quote: "Debbie was wonderful to work with throughout our home buying process. When we unexpectedly had to change markets to Eastern WA, she stayed supportive and connected us with an excellent agent there. We felt taken care of the whole way.",
+      attribution: "Greg P. - Kennewick (Market change / referral support)"
     }
   ];
 
@@ -71,14 +87,14 @@ const TestimonialSection = () => {
                           "{testimonial.quote}"
                         </blockquote>
                         <p className="text-base md:text-lg font-medium text-secondary">
-                          – {testimonial.author}
+                          – {testimonial.attribution}
                         </p>
                       </div>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious className="left-0 md:-left-12" />
-                <CarouselNext className="right-0 md:-right-12" />
+                <CarouselPrevious className="left-0 md:-left-12" aria-label="Previous testimonial" />
+                <CarouselNext className="right-0 md:-right-12" aria-label="Next testimonial" />
               </Carousel>
             </CardContent>
           </Card>

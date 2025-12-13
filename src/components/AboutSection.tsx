@@ -76,7 +76,7 @@ const AboutSection = () => {
           duration: 0.8,
           delay: 0.2
         }} className="order-1 md:order-2">
-            <img src={debbiePortrait} alt="Debbie Welch, Snohomish County real estate broker and local expert" className="rounded-lg shadow-2xl w-full" />
+            <img alt="Debbie Welch, Snohomish County real estate broker and local expert" className="rounded-lg shadow-2xl w-full" src="/lovable-uploads/73b3d770-6a81-4f42-b1a2-76049a58e3b2.png" />
           </motion.div>
         </div>
       </div>

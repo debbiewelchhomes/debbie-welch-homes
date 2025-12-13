@@ -28,9 +28,8 @@ const RealTalkSection = () => {
       }} className="max-w-4xl mx-auto text-center text-white">
           <p className="font-script text-3xl mb-6 md:text-6xl text-secondary" aria-hidden="true">Real talk…</p>
 
-          <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold mb-8 text-primary">
-            Real estate does not have to feel pushy, confusing, or rushed.
-          </h2>
+          <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold mb-8 text-primary">Real estate does not have to feel
+pushy, confusing, or rushed.</h2>
 
           <p className="text-lg md:text-xl leading-relaxed mb-10 text-foreground">
             A lot of people brace themselves for this process to feel stressful and salesy. That is not how I work. I slow things down just enough so you understand your options, the numbers, and the tradeoffs before you make a move. My job is to protect your best interests, keep you informed, and make sure every decision lines up with your real life — not just the market headlines.

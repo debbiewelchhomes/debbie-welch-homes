@@ -10,7 +10,7 @@ const AboutSection = () => {
     once: true,
     margin: "-100px"
   });
-  return <section id="about" className="py-20 md:py-32 bg-warm-bg">
+  return <section id="about" className="py-16 md:py-24 bg-warm-bg">
       <div className="container mx-auto px-4">
         <motion.div ref={ref} initial={{
         opacity: 0,
@@ -30,7 +30,7 @@ const AboutSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-[1fr_auto] gap-10 items-start max-w-6xl mx-auto">
           <motion.div initial={{
           opacity: 0,
           x: -40
@@ -75,7 +75,7 @@ const AboutSection = () => {
         }} transition={{
           duration: 0.8,
           delay: 0.2
-        }} className="order-1 md:order-2">
+        }} className="order-1 md:order-2 md:max-w-xs">
             <img src={debbiePortrait} alt="Debbie Welch, Snohomish County real estate broker and local expert" className="rounded-lg shadow-2xl w-full" />
           </motion.div>
         </div>

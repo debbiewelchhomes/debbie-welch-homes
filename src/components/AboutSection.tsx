@@ -24,9 +24,7 @@ const AboutSection = () => {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-12">
-          <p className="font-script text-3xl text-secondary mb-4 md:text-6xl" aria-hidden="true">
-            hey there…
-          </p>
+          <p className="font-script text-3xl text-secondary mb-4 md:text-6xl" aria-hidden="true">Hey there…</p>
           <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-primary">
             I'm Debbie
           </h2>

@@ -46,19 +46,16 @@ const AboutSection = () => {
         }} className="order-2 md:order-1">
             <div className="prose prose-lg max-w-none">
               <p className="text-foreground leading-relaxed mb-4">
-                I'm a life-long Snohomish County resident, homeowner, and real estate broker who has walked through many of the same transitions my clients are facing. I've raised my family here, owned both personal and investment properties, and watched Lake Stevens, Everett, Marysville, and surrounding communities in Snohomish County grow and change over the years.
+                I'm a lifelong Snohomish County resident, homeowner, and real estate broker who's walked through many of the same transitions my clients are facing. I've raised my family here, owned both personal and investment properties, and watched Lake Stevens, Everett, Marysville, and the surrounding communities grow and change over the years.
               </p>
               <p className="text-foreground leading-relaxed mb-4">
-                My sweet spot is helping people through big life changes — especially empty nesting, downsizing, and relocation (including military moves). I bring a mix of market knowledge, neighborhood insight, and detailed research so you understand what's happening with prices, inventory, and trends before you make any big decisions.
+                My sweet spot is helping people through big life changes — especially empty nesting, downsizing, and relocation (including military moves). I blend market data, neighborhood insight, and detailed research so you understand what's happening with prices, inventory, and trends before you make any big decisions. Every move has real-life impact, so I stay responsive, keep you updated, and make sure you always know what's coming next.
               </p>
               <p className="text-foreground leading-relaxed mb-4">
-                Every real estate transaction is more than a business deal — it's a major life event. I'm committed to being responsive, providing regular updates, and making sure you feel informed and confident at each step. My approach is grounded in integrity and calm, and I adapt my service to each client's situation, because no two real estate journeys are exactly alike.
-              </p>
-              <p className="text-foreground leading-relaxed mb-4">
-                As a wife, mom, and "Gramma," I deeply understand the importance of home. Together with my husband, a retired Navy Veteran, we raised our blended family of six children in the Lake Stevens and Marysville communities. When I'm not serving clients, you'll usually find me volunteering with the Lake Stevens Education Foundation, traveling, exploring new local restaurants, breweries, and wineries, spending time with family, or day-tripping to the Pacific Northwest's beautiful coastal and mountain areas.
+                As a wife, mom, "Gramma," and partner to a retired Navy Veteran, I deeply understand the importance of home and community. When I'm not working with clients, I'm often involved with the Lake Stevens Education Foundation, spending time with family, or exploring our local restaurants, breweries, and day-trip spots around the Pacific Northwest.
               </p>
               <p className="text-foreground leading-relaxed mb-6">
-                Having owned multiple personal and investment properties in Snohomish County over the years, I bring both professional expertise and lived experience to the table. My goal is simple: to be your calm, honest guide — someone who will tell you the truth, lay out your options, and help you home in a way that feels steady and doable, not rushed or overwhelming.
+                My goal is simple: to be your calm, honest guide — someone who will tell you the truth, lay out your options, and help you home in a way that feels steady and doable, not rushed or overwhelming.
               </p>
             </div>
             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>

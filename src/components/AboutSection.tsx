@@ -30,7 +30,7 @@ const AboutSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 items-start max-w-7xl mx-auto">
           <motion.div initial={{
           opacity: 0,
           x: -40

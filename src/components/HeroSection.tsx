@@ -53,7 +53,7 @@ const HeroSection = () => {
               
             </div>
 
-            <p className="text-sm text-primary max-w-2xl mx-auto">Serving Everett, Lake Stevens, Marysville in Snohomish County and the surrouding areas.and the surrounding areas of Snohomish County</p>
+            <p className="text-sm text-primary max-w-2xl mx-auto">Serving Everett, Lake Stevens, Marysville in Snohomish County and the surrounding areas.</p>
           </div>
         </motion.div>
       </div>

@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 parallax-section" 
         style={{
-          backgroundImage: `linear-gradient(rgba(225, 223, 220, 0.55), rgba(225, 223, 220, 0.55)), url(${heroImage})`
+          backgroundImage: `linear-gradient(rgba(225, 223, 220, 0.3), rgba(225, 223, 220, 0.3)), url(${heroImage})`
         }}
         role="img"
         aria-label="Snohomish County WA home exterior - Debbie Welch local real estate agent"

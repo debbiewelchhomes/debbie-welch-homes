@@ -4,14 +4,9 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Parallax Background with Lighter Overlay */}
-      <div 
-        className="absolute inset-0 parallax-section" 
-        style={{
-          backgroundImage: `linear-gradient(rgba(225, 223, 220, 0.3), rgba(225, 223, 220, 0.3)), url(${heroImage})`
-        }}
-        role="img"
-        aria-label="Snohomish County WA home exterior - Debbie Welch local real estate agent"
-      />
+      <div className="absolute inset-0 parallax-section" style={{
+      backgroundImage: `linear-gradient(rgba(225, 223, 220, 0.3), rgba(225, 223, 220, 0.3)), url(${heroImage})`
+    }} role="img" aria-label="Snohomish County WA home exterior - Debbie Welch local real estate agent" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-32 md:pt-40 pb-20 text-center items-center justify-center min-h-[85vh] flex flex-row">
@@ -25,16 +20,13 @@ const HeroSection = () => {
         duration: 0.8
       }} className="max-w-4xl mx-auto">
           {/* Semi-transparent content box */}
-          <div 
-            className="px-6 py-8 md:px-10 md:py-12 rounded-2xl"
-            style={{
-              background: 'rgba(225, 223, 220, 0.85)',
-              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)'
-            }}
-          >
+          <div className="px-6 py-8 md:px-10 md:py-12 rounded-2xl" style={{
+          background: 'rgba(225, 223, 220, 0.85)',
+          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)'
+        }}>
             <p className="font-script text-4xl md:text-5xl lg:text-6xl mb-6" style={{
-              color: '#6e808e'
-            }}>
+            color: '#6e808e'
+          }}>
               Welcome home…
             </p>
 
@@ -61,9 +53,7 @@ const HeroSection = () => {
               
             </div>
 
-            <p className="text-sm text-primary max-w-2xl mx-auto">
-              Serving Snohomish County and surrounding areas, including Snohomish County, Arlington, Bothell & Mill Creek, Everett & Mukilteo, Lake Stevens, Marysville, Snohomish, and Stanwood & Camano.
-            </p>
+            <p className="text-sm text-primary max-w-2xl mx-auto">Serving Everett, Lake Stevens, Marysville in Snohomish County and the surrouding areas.and the surrounding areas of Snohomish County</p>
           </div>
         </motion.div>
       </div>

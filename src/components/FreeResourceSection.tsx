@@ -22,7 +22,7 @@ const FreeResourceSection = () => {
       }} transition={{
         duration: 0.6
       }} className="max-w-3xl mx-auto text-center">
-          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl" aria-hidden="true">Steal this</p>
+          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl" aria-hidden="true">Steal this...</p>
 
           <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
             GET YOUR FREE MARKET REPORT

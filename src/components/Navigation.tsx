@@ -34,7 +34,7 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6">
-        <div className="relative flex items-center justify-center h-20">
+        <div className="relative flex items-center justify-center h-24">
           {/* Desktop Navigation - Logo centered, nav groups on sides */}
           <div className="hidden lg:flex items-center justify-between w-full max-w-7xl mx-auto">
             {/* Left Navigation Group */}
@@ -95,7 +95,7 @@ const Navigation = () => {
               <img 
                 src={logo} 
                 alt="Debbie Welch Homes at eXp Realty" 
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
             </Link>
 
@@ -138,11 +138,11 @@ const Navigation = () => {
           <div className="lg:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
               <div className="flex justify-center mb-4">
-                <Link to="/" onClick={() => setMobileMenuOpen(false)}>
+              <Link to="/" onClick={() => setMobileMenuOpen(false)}>
                   <img 
                     src={logo} 
                     alt="Debbie Welch Homes at eXp Realty" 
-                    className="h-8 w-auto"
+                    className="h-10 w-auto"
                   />
                 </Link>
               </div>

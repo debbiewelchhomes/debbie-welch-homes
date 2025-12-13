@@ -30,7 +30,7 @@ const AboutSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-[55%_42%] gap-8 items-start max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-[52%_45%] gap-6 items-start max-w-5xl mx-auto">
           <motion.div initial={{
           opacity: 0,
           x: -40
@@ -44,17 +44,17 @@ const AboutSection = () => {
           duration: 0.8,
           delay: 0.2
         }} className="order-2 md:order-1">
-            <div className="prose prose-lg max-w-md">
-              <p className="text-foreground leading-relaxed mb-4">
+            <div className="prose prose-lg max-w-lg">
+              <p className="text-foreground leading-relaxed mb-4 text-justify">
                 I'm a lifelong Snohomish County resident, homeowner, and real estate broker who's walked through many of the same transitions my clients are facing. I've raised my family here, owned both personal and investment properties, and watched Lake Stevens, Everett, Marysville, and the surrounding communities grow and change over the years.
               </p>
-              <p className="text-foreground leading-relaxed mb-4">
+              <p className="text-foreground leading-relaxed mb-4 text-justify">
                 My sweet spot is helping people through big life changes — especially empty nesting, downsizing, and relocation (including military moves). I blend market data, neighborhood insight, and detailed research so you understand what's happening with prices, inventory, and trends before you make any big decisions. Every move has real-life impact, so I stay responsive, keep you updated, and make sure you always know what's coming next.
               </p>
-              <p className="text-foreground leading-relaxed mb-4">
+              <p className="text-foreground leading-relaxed mb-4 text-justify">
                 As a wife, mom, "Gramma," and partner to a retired Navy Veteran, I deeply understand the importance of home and community. When I'm not working with clients, I'm often involved with the Lake Stevens Education Foundation, spending time with family, or exploring our local restaurants, breweries, and day-trip spots around the Pacific Northwest.
               </p>
-              <p className="text-foreground leading-relaxed mb-6">
+              <p className="text-foreground leading-relaxed mb-6 text-justify">
                 My goal is simple: to be your calm, honest guide — someone who will tell you the truth, lay out your options, and help you home in a way that feels steady and doable, not rushed or overwhelming.
               </p>
             </div>

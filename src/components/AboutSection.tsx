@@ -30,7 +30,7 @@ const AboutSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-[1fr_auto] gap-10 items-start max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-[55%_42%] gap-8 items-start max-w-5xl mx-auto">
           <motion.div initial={{
           opacity: 0,
           x: -40
@@ -44,7 +44,7 @@ const AboutSection = () => {
           duration: 0.8,
           delay: 0.2
         }} className="order-2 md:order-1">
-            <div className="prose prose-lg max-w-none">
+            <div className="prose prose-lg max-w-md">
               <p className="text-foreground leading-relaxed mb-4">
                 I'm a lifelong Snohomish County resident, homeowner, and real estate broker who's walked through many of the same transitions my clients are facing. I've raised my family here, owned both personal and investment properties, and watched Lake Stevens, Everett, Marysville, and the surrounding communities grow and change over the years.
               </p>
@@ -75,7 +75,7 @@ const AboutSection = () => {
         }} transition={{
           duration: 0.8,
           delay: 0.2
-        }} className="order-1 md:order-2 md:max-w-xs">
+        }} className="order-1 md:order-2">
             <img src={debbiePortrait} alt="Debbie Welch, Snohomish County real estate broker and local expert" className="rounded-lg shadow-2xl w-full" />
           </motion.div>
         </div>

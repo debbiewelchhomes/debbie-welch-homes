@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://debbie-welch-homes.lovable.app/sitemap.xml

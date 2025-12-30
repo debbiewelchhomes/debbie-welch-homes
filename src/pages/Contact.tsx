@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -12,6 +13,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { pageSEO, realEstateAgentSchema } from "@/data/seoData";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -50,6 +52,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title={pageSEO.contact.title}
+        description={pageSEO.contact.description}
+        canonical="/contact"
+        jsonLd={realEstateAgentSchema}
+      />
       <Navigation />
       
       {/* Hero Script Line */}

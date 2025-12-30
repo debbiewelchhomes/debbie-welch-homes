@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import { mainBlogPosts, searchInsightsPosts } from "@/data/blogPosts";
+import { pageSEO } from "@/data/seoData";
 
 const Blog = () => {
   const recentPosts = mainBlogPosts.slice(0, 6);
@@ -20,6 +22,11 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title={pageSEO.blog.title}
+        description={pageSEO.blog.description}
+        canonical="/blog"
+      />
       <Navigation />
       <main className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">

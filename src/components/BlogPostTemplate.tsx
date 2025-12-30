@@ -1,7 +1,7 @@
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { BlogPost } from "@/data/blogPosts";
@@ -12,20 +12,6 @@ interface BlogPostTemplateProps {
 
 const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    // Set document title and meta description
-    document.title = `${post.title} | Debbie Welch Homes`;
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", post.metaDescription);
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content = post.metaDescription;
-      document.head.appendChild(meta);
-    }
-  }, [post]);
 
   // Convert markdown-style bold to HTML
   const formatContent = (content: string) => {
@@ -71,6 +57,12 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title={post.title}
+        description={post.metaDescription}
+        canonical={`/blog/${post.slug}`}
+        type="article"
+      />
       <Navigation />
       <main className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">

@@ -10,10 +10,18 @@ import TestimonialSection from "@/components/TestimonialSection";
 import NeighborhoodsSection from "@/components/NeighborhoodsSection";
 import BlogSection from "@/components/BlogSection";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { pageSEO, realEstateAgentSchema } from "@/data/seoData";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title={pageSEO.home.title}
+        description={pageSEO.home.description}
+        canonical="/"
+        jsonLd={realEstateAgentSchema}
+      />
       <Navigation />
       <main>
         <HeroSection />

@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
@@ -8,6 +9,7 @@ import calmInterior from "@/assets/calm-interior.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { pageSEO, realEstateAgentSchema } from "@/data/seoData";
 
 const About = () => {
   const ref = useRef(null);
@@ -23,6 +25,12 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title={pageSEO.about.title}
+        description={pageSEO.about.description}
+        canonical="/about"
+        jsonLd={realEstateAgentSchema}
+      />
       <Navigation />
       
       {/* Hero Section */}

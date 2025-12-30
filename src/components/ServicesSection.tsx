@@ -83,7 +83,7 @@ const ServicesSection = () => {
                   <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4 text-primary">
                     {service.title}
                   </h3>
-                  <p className="text-foreground leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6 text-base">
                     {service.description}
                   </p>
                   <Button variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-white" asChild>

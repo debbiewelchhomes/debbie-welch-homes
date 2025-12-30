@@ -38,7 +38,7 @@ const FreeResourceSection = () => {
 
           <div className="flex justify-center">
             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>
-              <a href="#">Get my report</a>
+              <a href="#" className="text-lg font-normal">Get My Report</a>
             </Button>
           </div>
         </motion.div>

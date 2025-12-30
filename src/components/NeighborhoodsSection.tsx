@@ -85,16 +85,12 @@ const NeighborhoodsSection = () => {
               <Link to={area.href}>
                 <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-border bg-card group cursor-pointer">
                   <CardContent className="p-6">
-                    <div 
-                      className="h-32 bg-warm-bg rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300"
-                      role="img"
-                      aria-label={area.altText}
-                    >
+                    <div className="h-32 bg-warm-bg rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300" role="img" aria-label={area.altText}>
                       <h3 className="font-heading text-xl md:text-2xl font-bold text-primary text-center px-2 whitespace-pre-line">
                         {area.name}
                       </h3>
                     </div>
-                    <p className="text-sm text-foreground leading-relaxed">
+                    <p className="text-foreground leading-relaxed text-base text-left">
                       {area.description}
                     </p>
                   </CardContent>

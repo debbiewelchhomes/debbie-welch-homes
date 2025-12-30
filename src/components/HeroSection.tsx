@@ -38,14 +38,14 @@ Snohomish County</h1>
             </p>
 
             <div className="prose prose-lg text-primary mb-10 max-w-3xl mx-auto">
-              <p className="text-lg leading-relaxed">
+              <p className="leading-relaxed text-xl">
                 If you are like most of my clients, you do not need more hype — you need a clear plan, someone to translate the real estate speak, and a calm voice who will tell you the truth even when it is not convenient. That is the work I do every day for downsizers, military families, and first time buyers across Snohomish County.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6" asChild>
-                <a href="https://cal.com/debbie-welch-t6p0dm" target="_blank" rel="noopener noreferrer">
+                <a href="https://cal.com/debbie-welch-t6p0dm" target="_blank" rel="noopener noreferrer" className="text-lg font-normal">
                   Book a Free Consult
                 </a>
               </Button>

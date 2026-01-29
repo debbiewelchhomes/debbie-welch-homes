@@ -33,9 +33,8 @@ const HeroSection = () => {
             <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-6">Helping You Home in
 Snohomish County</h1>
 
-            <p className="text-xl md:text-2xl text-primary mb-8 max-w-3xl mx-auto font-light">
-              Real estate guidance for downsizers, military families, and first time buyers who want less pressure and more clarity.
-            </p>
+            <p className="text-xl md:text-2xl text-primary mb-8 max-w-3xl mx-auto font-light">Real estate guidance for downsizers, military families, and
+first time buyers who want less pressure and more clarity.</p>
 
             <div className="prose prose-lg text-primary mb-10 max-w-3xl mx-auto">
               <p className="leading-relaxed text-xl">

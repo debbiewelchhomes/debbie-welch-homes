@@ -20,8 +20,8 @@ const HeroSection = () => {
         duration: 0.8
       }} className="max-w-4xl mx-auto">
           {/* Semi-transparent content box */}
-          <div className="px-6 py-8 md:px-10 md:py-12 rounded-2xl" style={{
-          background: 'rgba(225, 223, 220, 0.85)',
+          <div className="px-5 py-6 md:px-8 md:py-8 rounded-2xl" style={{
+          background: 'rgba(225, 223, 220, 0.88)',
           boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)'
         }}>
             <p className="font-script text-4xl md:text-5xl lg:text-6xl mb-6" style={{

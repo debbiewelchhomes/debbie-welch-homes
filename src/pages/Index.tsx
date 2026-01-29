@@ -17,8 +17,6 @@ import { pageSEO, realEstateAgentSchema } from "@/data/seoData";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      {/* UNDER CONSTRUCTION BANNER - Remove this line and the component when site is ready */}
-      <UnderConstructionBanner />
       <SEO 
         title={pageSEO.home.title}
         description={pageSEO.home.description}
@@ -26,6 +24,8 @@ const Index = () => {
         jsonLd={realEstateAgentSchema}
       />
       <Navigation />
+      {/* UNDER CONSTRUCTION BANNER - Remove this line and the component when site is ready */}
+      <UnderConstructionBanner />
       <main>
         <HeroSection />
         <BufferSection />

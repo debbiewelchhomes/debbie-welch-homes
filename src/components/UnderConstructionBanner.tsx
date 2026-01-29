@@ -7,7 +7,7 @@ const UnderConstructionBanner = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="bg-secondary text-white py-3 px-4 relative">
+    <div className="fixed top-0 left-0 right-0 z-[60] bg-secondary text-white py-3 px-4">
       <div className="container mx-auto flex items-center justify-center gap-2 text-sm md:text-base">
         <AlertTriangle className="h-4 w-4 flex-shrink-0" />
         <span>This site is currently under construction. Some features may not be available yet.</span>

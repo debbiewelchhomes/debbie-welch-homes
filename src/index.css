@@ -123,4 +123,20 @@ All colors MUST be HSL.
       background-attachment: scroll;
     }
   }
+  
+  /* Readable text backdrop for content over images */
+  .text-backdrop {
+    background: rgba(225, 223, 220, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .text-backdrop {
+      padding: 3rem;
+    }
+  }
 }

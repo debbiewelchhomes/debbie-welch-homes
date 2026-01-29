@@ -25,7 +25,7 @@ const RealTalkSection = () => {
         y: 40
       }} transition={{
         duration: 0.8
-      }} className="max-w-4xl mx-auto text-center text-white">
+      }} className="max-w-4xl mx-auto text-center text-backdrop">
           <p className="font-script text-3xl mb-6 md:text-6xl text-secondary" aria-hidden="true">Real talk…</p>
 
           <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold mb-8 text-primary">Real estate does not have to feel

@@ -16,7 +16,8 @@ function getCorsHeaders(origin: string | null): Record<string, string> {
   // Check if origin is allowed, including preview URLs
   const isAllowed = origin && (
     ALLOWED_ORIGINS.includes(origin) ||
-    origin.includes("lovable.app") // Allow all lovable.app subdomains for preview
+    origin.includes("lovable.app") || // Allow lovable.app subdomains for preview
+    origin.includes("lovableproject.com") // Allow lovableproject.com subdomains for preview
   );
   
   return {

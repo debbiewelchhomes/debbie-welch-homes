@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
 import debbiePortrait from "@/assets/debbie-portrait.jpg";
-import calmInterior from "@/assets/calm-interior.jpg";
+import aboutInterior from "@/assets/about-interior.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -106,7 +106,7 @@ const About = () => {
               className="order-2 md:order-1"
             >
               <img 
-                src={calmInterior} 
+                src={aboutInterior} 
                 alt="Debbie with clients in Snohomish County WA" 
                 className="rounded-lg shadow-2xl w-full"
               />

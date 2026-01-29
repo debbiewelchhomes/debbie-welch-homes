@@ -3,7 +3,7 @@ import ServicesSection from "@/components/ServicesSection";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-home.jpg";
+import heroImage from "@/assets/hero-services.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";

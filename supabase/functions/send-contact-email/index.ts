@@ -15,6 +15,24 @@ interface ContactFormData {
   message: string;
 }
 
+// HTML escape function to prevent XSS/injection in emails
+function escapeHtml(text: string): string {
+  const map: Record<string, string> = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  };
+  return text.replace(/[&<>"']/g, (m) => map[m]);
+}
+
+// Validate email format
+function isValidEmail(email: string): boolean {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email) && email.length <= 254;
+}
+
 const handler = async (req: Request): Promise<Response> => {
   // Handle CORS preflight requests
   if (req.method === "OPTIONS") {
@@ -41,6 +59,32 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
+    // Validate email format
+    if (!isValidEmail(formData.email)) {
+      return new Response(
+        JSON.stringify({ error: "Invalid email format" }),
+        { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    // Validate field lengths to prevent abuse
+    if (formData.firstName.length > 100 || 
+        (formData.lastName && formData.lastName.length > 100) ||
+        (formData.phone && formData.phone.length > 30) ||
+        formData.message.length > 5000) {
+      return new Response(
+        JSON.stringify({ error: "Field length exceeds maximum allowed" }),
+        { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    // Escape all user inputs for HTML
+    const safeFirstName = escapeHtml(formData.firstName.trim());
+    const safeLastName = formData.lastName ? escapeHtml(formData.lastName.trim()) : "";
+    const safeEmail = escapeHtml(formData.email.trim());
+    const safePhone = formData.phone ? escapeHtml(formData.phone.trim()) : "";
+    const safeMessage = escapeHtml(formData.message.trim());
+
     // Format the looking for field
     const lookingForMap: Record<string, string> = {
       buying: "Buying",
@@ -50,10 +94,10 @@ const handler = async (req: Request): Promise<Response> => {
       exploring: "Just Exploring",
     };
     const lookingForText = formData.lookingFor 
-      ? lookingForMap[formData.lookingFor] || formData.lookingFor 
+      ? lookingForMap[formData.lookingFor] || escapeHtml(formData.lookingFor)
       : "Not specified";
 
-    // Build the email HTML
+    // Build the email HTML with sanitized inputs
     const emailHtml = `
       <h2>New Website Contact</h2>
       <p>You have received a new inquiry from your website contact form:</p>
@@ -61,15 +105,15 @@ const handler = async (req: Request): Promise<Response> => {
       <table style="border-collapse: collapse; width: 100%; max-width: 600px;">
         <tr>
           <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Name</td>
-          <td style="padding: 10px; border: 1px solid #ddd;">${formData.firstName} ${formData.lastName || ""}</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">${safeFirstName} ${safeLastName}</td>
         </tr>
         <tr>
           <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Email</td>
-          <td style="padding: 10px; border: 1px solid #ddd;"><a href="mailto:${formData.email}">${formData.email}</a></td>
+          <td style="padding: 10px; border: 1px solid #ddd;"><a href="mailto:${safeEmail}">${safeEmail}</a></td>
         </tr>
         <tr>
           <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Phone</td>
-          <td style="padding: 10px; border: 1px solid #ddd;">${formData.phone || "Not provided"}</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">${safePhone || "Not provided"}</td>
         </tr>
         <tr>
           <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Looking For</td>
@@ -77,7 +121,7 @@ const handler = async (req: Request): Promise<Response> => {
         </tr>
         <tr>
           <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Message</td>
-          <td style="padding: 10px; border: 1px solid #ddd;">${formData.message.replace(/\n/g, "<br>")}</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">${safeMessage.replace(/\n/g, "<br>")}</td>
         </tr>
       </table>
       

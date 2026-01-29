@@ -40,11 +40,24 @@ const Contact = () => {
         body: formData,
       });
       
+      console.log("Contact form response:", { data, error });
+      
       if (error) {
         console.error("Error sending contact form:", error);
         toast({
           title: "Error",
           description: "There was a problem sending your message. Please try again or contact me directly.",
+          variant: "destructive",
+        });
+        return;
+      }
+      
+      // Also check if the response indicates failure
+      if (data && data.success === false) {
+        console.error("Email sending failed:", data.error);
+        toast({
+          title: "Error",
+          description: data.error || "There was a problem sending your message. Please try again or contact me directly.",
           variant: "destructive",
         });
         return;

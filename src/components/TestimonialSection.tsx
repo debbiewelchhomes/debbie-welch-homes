@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
-import calmInterior from "@/assets/calm-interior.jpg";
+import testimonialBg from "@/assets/testimonial-bg.jpg";
 const testimonials = [{
   quote: "We found Debbie online and chose her because of the reviews - and we'd give her 10 stars if we could. Even with a 9-hour time difference (we were in Germany), she replied incredibly fast, did video walk-throughs, and helped us feel confident buying from afar. Her expertise was priceless.",
   attribution: "Vanessa G. from Lake Stevens (long-distance PCS relocation)"
@@ -38,7 +38,7 @@ const TestimonialSection = () => {
     stopOnInteraction: true
   }));
   return <section className="relative py-20 md:py-32 overflow-hidden" style={{
-    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${calmInterior})`,
+    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${testimonialBg})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundAttachment: 'fixed'

@@ -17,9 +17,7 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
               <p className="font-semibold">Debbie Welch, Realtor®</p>
               <p>Debbie Welch Homes at eXp Realty</p>
-              <p className="text-primary-foreground/80">
-                40+ year Snohomish County resident and local homeowner/investor
-              </p>
+              <p className="text-primary-foreground/80">45+ year Snohomish County resident and local homeowner/investor</p>
               <p>Serving Snohomish County, Washington</p>
               <p className="pt-4">
                 <strong>Call or Text:</strong>{" "}

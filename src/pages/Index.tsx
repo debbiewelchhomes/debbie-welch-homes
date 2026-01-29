@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import UnderConstructionBanner from "@/components/UnderConstructionBanner";
 import HeroSection from "@/components/HeroSection";
 import BufferSection from "@/components/BufferSection";
 import RealTalkSection from "@/components/RealTalkSection";
@@ -16,6 +17,8 @@ import { pageSEO, realEstateAgentSchema } from "@/data/seoData";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      {/* UNDER CONSTRUCTION BANNER - Remove this line and the component when site is ready */}
+      <UnderConstructionBanner />
       <SEO 
         title={pageSEO.home.title}
         description={pageSEO.home.description}

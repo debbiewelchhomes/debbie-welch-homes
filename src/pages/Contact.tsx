@@ -14,8 +14,11 @@ import {
 } from "@/components/ui/select";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { pageSEO, realEstateAgentSchema } from "@/data/seoData";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -25,25 +28,51 @@ const Contact = () => {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Placeholder submission - will be wired to actual backend later
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
+    setIsSubmitting(true);
     
-    // Reset after 5 seconds
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        lookingFor: "",
-        message: "",
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData,
       });
-    }, 5000);
+      
+      if (error) {
+        console.error("Error sending contact form:", error);
+        toast({
+          title: "Error",
+          description: "There was a problem sending your message. Please try again or contact me directly.",
+          variant: "destructive",
+        });
+        return;
+      }
+      
+      setSubmitted(true);
+      
+      // Reset after 5 seconds
+      setTimeout(() => {
+        setSubmitted(false);
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          lookingFor: "",
+          message: "",
+        });
+      }, 5000);
+    } catch (error) {
+      console.error("Error sending contact form:", error);
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again or contact me directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (field: string, value: string) => {
@@ -205,9 +234,10 @@ const Contact = () => {
 
                 <Button 
                   type="submit" 
+                  disabled={isSubmitting}
                   className="w-full md:w-auto px-8 py-6 text-base font-['Montserrat']"
                 >
-                  Submit
+                  {isSubmitting ? "Sending..." : "Submit"}
                 </Button>
               </form>
             ) : (

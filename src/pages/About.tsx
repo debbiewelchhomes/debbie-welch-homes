@@ -4,7 +4,7 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
-import debbiePortrait from "@/assets/debbie-portrait.jpg";
+import debbiePortrait from "/lovable-uploads/73b3d770-6a81-4f42-b1a2-76049a58e3b2.png";
 import aboutInterior from "@/assets/about-interior.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";

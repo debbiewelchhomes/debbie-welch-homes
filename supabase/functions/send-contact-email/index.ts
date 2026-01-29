@@ -1,10 +1,47 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers":
-    "authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version",
-};
+// Allowed origins for CORS
+const ALLOWED_ORIGINS = [
+  "https://debbie-welch-homes.lovable.app",
+  "https://debbiewelchhomes.com",
+  "https://www.debbiewelchhomes.com",
+];
+
+// Rate limiting: track requests per IP (resets on cold start, but still helps)
+const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
+const RATE_LIMIT_MAX = 5; // max requests per window
+const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
+
+function getCorsHeaders(origin: string | null): Record<string, string> {
+  // Check if origin is allowed, including preview URLs
+  const isAllowed = origin && (
+    ALLOWED_ORIGINS.includes(origin) ||
+    origin.includes("lovable.app") // Allow all lovable.app subdomains for preview
+  );
+  
+  return {
+    "Access-Control-Allow-Origin": isAllowed ? origin : ALLOWED_ORIGINS[0],
+    "Access-Control-Allow-Headers":
+      "authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version",
+  };
+}
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now();
+  const record = rateLimitMap.get(ip);
+  
+  if (!record || now > record.resetTime) {
+    rateLimitMap.set(ip, { count: 1, resetTime: now + RATE_LIMIT_WINDOW_MS });
+    return true;
+  }
+  
+  if (record.count >= RATE_LIMIT_MAX) {
+    return false;
+  }
+  
+  record.count++;
+  return true;
+}
 
 interface ContactFormData {
   firstName: string;
@@ -13,6 +50,7 @@ interface ContactFormData {
   phone: string;
   lookingFor: string;
   message: string;
+  website?: string; // Honeypot field - should be empty
 }
 
 // HTML escape function to prevent XSS/injection in emails
@@ -34,12 +72,29 @@ function isValidEmail(email: string): boolean {
 }
 
 const handler = async (req: Request): Promise<Response> => {
+  const origin = req.headers.get("origin");
+  const corsHeaders = getCorsHeaders(origin);
+  
   // Handle CORS preflight requests
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
   }
 
   try {
+    // Get client IP for rate limiting
+    const clientIp = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || 
+                     req.headers.get("cf-connecting-ip") || 
+                     "unknown";
+    
+    // Check rate limit
+    if (!checkRateLimit(clientIp)) {
+      console.warn(`Rate limit exceeded for IP: ${clientIp}`);
+      return new Response(
+        JSON.stringify({ error: "Too many requests. Please try again later." }),
+        { status: 429, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
     const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
     if (!RESEND_API_KEY) {
       console.error("RESEND_API_KEY is not configured");
@@ -50,6 +105,16 @@ const handler = async (req: Request): Promise<Response> => {
     }
 
     const formData: ContactFormData = await req.json();
+    
+    // Honeypot check - if the hidden "website" field is filled, it's a bot
+    if (formData.website && formData.website.trim() !== "") {
+      console.warn(`Honeypot triggered from IP: ${clientIp}`);
+      // Return success to not alert bots, but don't send email
+      return new Response(JSON.stringify({ success: true }), {
+        status: 200,
+        headers: { "Content-Type": "application/json", ...corsHeaders },
+      });
+    }
     
     // Validate required fields
     if (!formData.firstName || !formData.email || !formData.message) {
@@ -130,7 +195,7 @@ const handler = async (req: Request): Promise<Response> => {
       </p>
     `;
 
-    console.log("Sending contact email to debbie@debbiewelchhomes.com");
+    console.log(`Sending contact email from IP: ${clientIp}`);
     
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",

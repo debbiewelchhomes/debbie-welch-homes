@@ -26,6 +26,7 @@ const Contact = () => {
     phone: "",
     lookingFor: "",
     message: "",
+    website: "", // Honeypot field - hidden from users, bots will fill it
   });
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -61,6 +62,7 @@ const Contact = () => {
           phone: "",
           lookingFor: "",
           message: "",
+          website: "",
         });
       }, 5000);
     } catch (error) {
@@ -141,6 +143,20 @@ const Contact = () => {
             {/* Contact Form */}
             {!submitted ? (
               <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Honeypot field - hidden from users, visible to bots */}
+                <div className="absolute -left-[9999px]" aria-hidden="true">
+                  <label htmlFor="website">Website</label>
+                  <Input
+                    type="text"
+                    id="website"
+                    name="website"
+                    value={formData.website}
+                    onChange={(e) => handleChange("website", e.target.value)}
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                </div>
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-['Montserrat'] font-medium text-[#3c3e4f] mb-2">

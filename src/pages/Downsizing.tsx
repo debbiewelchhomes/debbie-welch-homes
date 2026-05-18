@@ -1,5 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { pageSEO, buildFaqSchema } from "@/data/seoData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -119,6 +121,7 @@ const Downsizing = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO title={pageSEO.downsizing.title} description={pageSEO.downsizing.description} canonical="/services/downsizing" jsonLd={buildFaqSchema(faqs)} />
       <Navigation />
       <main>
         {/* Hero Section */}

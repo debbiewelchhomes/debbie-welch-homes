@@ -1,12 +1,14 @@
 import Navigation from "@/components/Navigation";
 import ServicesSection from "@/components/ServicesSection";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-services.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { pageSEO } from "@/data/seoData";
 
 const Services = () => {
   const introRef = useRef(null);
@@ -21,6 +23,7 @@ const Services = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO title={pageSEO.services.title} description={pageSEO.services.description} canonical="/services" />
       <Navigation />
       <main>
         {/* Hero Section */}

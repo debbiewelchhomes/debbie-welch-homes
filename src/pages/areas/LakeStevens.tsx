@@ -1,5 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { pageSEO } from "@/data/seoData";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -8,6 +10,7 @@ const LakeStevens = () => {
   
   return (
     <div className="min-h-screen">
+      <SEO title={pageSEO.areas.lakeStevens.title} description={pageSEO.areas.lakeStevens.description} canonical="/areas/lake-stevens" />
       <Navigation />
       <main>
         {/* Hero Section */}

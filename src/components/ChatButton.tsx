@@ -1,30 +1,16 @@
-import { MessageCircle } from "lucide-react";
+import { useEffect } from "react";
 
 const ChatButton = () => {
-  return (
-    <a
-      href="https://m.me/debbie.welch.realtor?ref=w47618904"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Chat with Debbie"
-      className="fixed bottom-6 right-6 z-[9999] flex items-center gap-2 px-5 py-3 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl md:bottom-6 md:right-6"
-      style={{
-        backgroundColor: '#3c3e4f',
-        color: '#ffffff',
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.backgroundColor = '#6e808e';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.backgroundColor = '#3c3e4f';
-      }}
-    >
-      <MessageCircle className="w-5 h-5" />
-      <span className="hidden md:inline font-body font-medium text-sm">
-        Chat with Debbie
-      </span>
-    </a>
-  );
+  useEffect(() => {
+    if (document.getElementById("jivosite-widget")) return;
+    const script = document.createElement("script");
+    script.id = "jivosite-widget";
+    script.src = "//code.jivosite.com/widget/rIV3GuN2Kf";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
+  return null;
 };
 
 export default ChatButton;

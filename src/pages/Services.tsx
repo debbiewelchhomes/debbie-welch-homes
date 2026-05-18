@@ -160,7 +160,7 @@ const Services = () => {
               </p>
 
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6" asChild>
-                <a href="https://cal.com/debbie-welch-t6p0dm" target="_blank" rel="noopener noreferrer">
+                <a href="https://cal.com/debbie.welch.homes" target="_blank" rel="noopener noreferrer">
                   Schedule a Conversation
                 </a>
               </Button>

@@ -1,5 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { pageSEO, buildFaqSchema } from "@/data/seoData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -119,6 +121,7 @@ const Selling = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO title={pageSEO.selling.title} description={pageSEO.selling.description} canonical="/services/selling" jsonLd={buildFaqSchema(faqs)} />
       <Navigation />
       <main>
         {/* Hero Section */}

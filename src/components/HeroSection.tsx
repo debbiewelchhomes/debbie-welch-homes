@@ -41,7 +41,7 @@ first time buyers who want less pressure and more clarity.</p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6" asChild>
-                <a href="https://cal.com/debbie-welch-t6p0dm" target="_blank" rel="noopener noreferrer" className="text-lg font-normal">
+                <a href="https://cal.com/debbie.welch.homes" target="_blank" rel="noopener noreferrer" className="text-lg font-normal">
                   Book a Free Consult
                 </a>
               </Button>

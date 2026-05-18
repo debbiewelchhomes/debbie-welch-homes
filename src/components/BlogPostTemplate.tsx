@@ -55,6 +55,21 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
       });
   };
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.metaDescription,
+    datePublished: post.date,
+    author: {
+      "@type": "Person",
+      name: "Debbie Welch",
+      url: "https://debbie-welch-homes.lovable.app/about"
+    },
+    mainEntityOfPage: `https://debbie-welch-homes.lovable.app/blog/${post.slug}`,
+    articleSection: post.category
+  };
+
   return (
     <div className="min-h-screen">
       <SEO 
@@ -62,6 +77,7 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
         description={post.metaDescription}
         canonical={`/blog/${post.slug}`}
         type="article"
+        jsonLd={articleSchema}
       />
       <Navigation />
       <main className="py-20 md:py-32 bg-background">

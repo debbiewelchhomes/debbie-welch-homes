@@ -258,8 +258,10 @@ const Selling = () => {
                 My Seller Guide walks you through what to do (and what to skip) when preparing your home for the market, plus what to expect from pricing, showings, and offers in Snohomish County.
               </p>
 
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-                Get the Seller Guide
+              <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
+                <a href="https://heyzine.com/flip-book/0f267477d7.html" target="_blank" rel="noopener noreferrer">
+                  Get the Seller Guide
+                </a>
               </Button>
             </motion.div>
           </div>

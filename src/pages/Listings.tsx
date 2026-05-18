@@ -118,6 +118,7 @@ const Listings = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO title={pageSEO.listings.title} description={pageSEO.listings.description} canonical="/listings" />
       <Navigation />
       
       {/* Hero Section */}

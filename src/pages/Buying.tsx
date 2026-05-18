@@ -292,7 +292,7 @@ const Buying = () => {
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Straight talk about conditions, pricing, and competition.</li>
                   <li>Calm, organized next steps instead of chaos.</li>
-                  <li>Extra support for first-time buyers who want to ask "one more question" (or ten).</li>
+                  <li>Extra support for buyers who want to ask "one more question" (or ten).</li>
                   <li>A partner who cares about how this home will feel to live in, not just whether it will close.</li>
                 </ul>
               </div>

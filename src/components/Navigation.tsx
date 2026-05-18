@@ -16,8 +16,8 @@ const Navigation = () => {
   const services = [
     { name: "Buying", href: "/services/buying" },
     { name: "Selling", href: "/services/selling" },
-    { name: "Relocation", href: "/services/relocation" },
-    { name: "Downsizing", href: "/services/downsizing" },
+    { name: "Downsizing & Seniors", href: "/services/downsizing" },
+    { name: "Relocation & Military PCS", href: "/services/relocation" },
   ];
 
   const areas = [

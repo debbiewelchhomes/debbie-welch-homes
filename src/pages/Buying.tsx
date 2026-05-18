@@ -259,8 +259,10 @@ const Buying = () => {
                 My Buyer Guide walks you through financing basics, local market norms, what to expect in inspections, and how to shop strategically in Snohomish County without losing your mind—or your budget.
               </p>
 
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-                Get the Buyer Guide
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6" asChild>
+                <a href="https://debbiewelchhomes.myflodesk.com/home-buyer-guide" target="_blank" rel="noopener noreferrer">
+                  Get the Buyer Guide
+                </a>
               </Button>
             </motion.div>
           </div>

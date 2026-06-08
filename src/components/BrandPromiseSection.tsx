@@ -2,7 +2,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Shield, BookOpen, ListChecks, MapPin, Heart, MessageCircle } from "lucide-react";
+import {
+  Shield,
+  BookOpen,
+  ListChecks,
+  MapPin,
+  Heart,
+  MessageCircle,
+} from "lucide-react";
 
 const BrandPromiseSection = () => {
   const ref = useRef(null);
@@ -31,7 +38,7 @@ const BrandPromiseSection = () => {
       icon: MapPin,
       title: "Local, Boots-on-the-Ground Insight",
       description:
-        "I've lived in Snohomish County for over 40 years and owned multiple properties here. I know what the online reports miss -- the neighborhoods in transition, the roads that flood, the pockets of real value.",
+        "I've lived in Snohomish County for over 45 years and owned multiple properties here. I know what the online reports miss -- the neighborhoods in transition, the roads that flood, the pockets of real value.",
     },
     {
       icon: Heart,
@@ -75,14 +82,16 @@ const BrandPromiseSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-border bg-card">
-                <CardContent className="p-8 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-warm-bg mb-6">
-                    <promise.icon className="w-8 h-8 text-secondary" />
+                <CardContent className="p-8">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-warm-bg flex-shrink-0 mt-1">
+                      <promise.icon className="w-6 h-6 text-secondary" />
+                    </div>
+                    <h3 className="font-heading text-xl md:text-2xl font-bold text-primary pt-1">
+                      {promise.title}
+                    </h3>
                   </div>
-                  <h3 className="font-heading text-xl md:text-2xl font-bold mb-4 text-primary">
-                    {promise.title}
-                  </h3>
-                  <p className="text-foreground leading-relaxed text-lg font-normal">
+                  <p className="text-foreground leading-relaxed text-lg font-normal pl-16">
                     {promise.description}
                   </p>
                 </CardContent>

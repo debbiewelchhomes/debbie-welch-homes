@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
-      {/* Parallax Background with Lighter Overlay */}
       <div
         className="absolute inset-0 parallax-section"
         style={{
@@ -15,7 +14,6 @@ const HeroSection = () => {
         aria-label="Snohomish County WA home exterior - Debbie Welch local real estate agent"
       />
 
-      {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-32 md:pt-40 pb-20 text-center items-center justify-center min-h-[85vh] flex flex-row">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -23,7 +21,6 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
-          {/* Semi-transparent content box */}
           <div className="text-backdrop px-5 py-6 md:px-8 md:py-8">
             <p
               className="font-script text-4xl md:text-5xl lg:text-6xl mb-6"
@@ -37,17 +34,16 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-primary mb-8 max-w-3xl mx-auto font-light">
-              Real estate guidance for downsizers, military families, and
-              first-time buyers who want a clear plan -- not a sales pitch.
+              Lifelong Local. Downsizing Specialist. Military and Relocation Expert.
             </p>
 
             <div className="prose prose-lg text-primary mb-10 max-w-3xl mx-auto">
               <p className="leading-relaxed text-xl">
                 I grew up here. I've bought and sold here. I know which
-                neighborhoods are changing, which ones are steady, and where
-                the real value is in this market right now. If you want someone
-                who will level with you, keep you organized, and actually pick
-                up the phone -- that's what I do.
+                neighborhoods are changing, which ones have been steady for
+                decades, and where the real value is in this market right now.
+                If you want someone who will level with you, keep you organized,
+                and actually pick up the phone -- that's what I do.
               </p>
             </div>
 

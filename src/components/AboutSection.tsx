@@ -49,22 +49,23 @@ const AboutSection = () => {
               <p className="text-foreground leading-relaxed mb-4 text-justify text-lg">
                 Before real estate, I spent 30 years in healthcare -- medical
                 coding, auditing, and education. That work taught me to read
-                the fine print, catch the things that get buried on page four,
-                and explain complicated information in plain language. Those
-                habits follow me into every transaction.
+                the fine print, catch what gets buried on page four, and
+                explain complicated information in plain language. Those habits
+                follow me into every transaction.
               </p>
               <p className="text-foreground leading-relaxed mb-4 text-justify text-lg">
-                Most of my clients are going through something big -- downsizing
-                after the kids leave, relocating for military orders, buying for
-                the first time and not sure where to start. I've been through
-                versions of all of it. My husband Todd is a retired Navy
-                veteran. We're currently doing a live-in renovation in North
-                Everett. I'm not just talking about this stuff from a distance.
+                Most of my clients are going through something significant --
+                downsizing after the kids leave, relocating for military orders,
+                or buying for the first time and not quite sure where to start.
+                I've been through versions of all of it. I'm the wife of a
+                retired Navy Veteran, and we're currently doing a live-in
+                renovation in North Everett. I'm not talking about any of this
+                from a distance.
               </p>
               <p className="text-foreground leading-relaxed mb-6 text-justify text-lg">
-                I also serve on the Lake Stevens Education Foundation board and
-                the Everett Community Development Advisory Council. This
-                community matters to me. I'm not going anywhere.
+                Outside of real estate, I volunteer on local education and
+                community development boards. This county is home. I'm not
+                going anywhere.
               </p>
             </div>
             <Button

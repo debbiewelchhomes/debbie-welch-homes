@@ -189,7 +189,7 @@ const Selling = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                Here's the truth…
+                Three questions first…
               </p>
               <h2 className="font-heading text-3xl md:text-5xl text-primary mb-8">
                 Most Sellers Have the Same Three Questions
@@ -198,16 +198,12 @@ const Selling = () => {
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
                   What's my home actually worth right now? What do I need to do to get it ready? And how do I time this
-                  so I'm not caught between two moves with nowhere to land?
+                  so I'm not caught between two moves with nowhere to land? Those deserve straight answers - not vague
+                  reassurances or a pitch to list immediately.
                 </p>
                 <p>
-                  Those are the right questions. And they deserve straight answers - not vague reassurances or a pitch
-                  to list immediately. My job is to give you the real picture first, then build a plan that fits your
-                  actual timeline and situation.
-                </p>
-                <p>
-                  I came from 30 years in healthcare reading complex documents and explaining them to people under
-                  stress. That's what I do here too. You'll understand every step, every offer, every piece of paper
+                  I spent 30 years in healthcare reading complex documents and explaining them to people under stress. I
+                  brought that same approach here. You'll understand every offer, every contract term, every clause
                   before you sign anything.
                 </p>
               </div>
@@ -226,7 +222,7 @@ const Selling = () => {
               className="text-center mb-16"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                How it works…
+                From walkthrough to close…
               </p>
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                 What the Process Actually Looks Like
@@ -271,7 +267,7 @@ const Selling = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                What's different here…
+                The fine print matters…
               </p>
 
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
@@ -280,19 +276,15 @@ const Selling = () => {
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  I'm a details person. After 30 years reading healthcare documents for a living, I'm not going to miss
-                  the clause buried on page 4 of a purchase agreement, or let a buyer's inspection addendum slide by
-                  without explaining what you're actually agreeing to give up.
-                </p>
-                <p>
-                  I'm also honest about what I can't control. The market moves the way it moves. What I can control is
-                  how well your home is positioned, how clearly you understand your options, and how steadily I
-                  communicate with you from the first conversation to closing day.
+                  After 30 years reading healthcare documents for a living, I'm not going to miss the clause on page 4
+                  of a purchase agreement or let a buyer's inspection addendum slide by without explaining what you're
+                  giving up. The market moves the way it moves - what I control is how well your home is positioned and
+                  how clearly you understand your options at every step.
                 </p>
                 <p>
                   And if you need more than just an agent - if you're sorting through decades of belongings,
-                  coordinating with out-of-state family, or just need a calm presence at a stressful moment - I show up
-                  for that too. That's not an add-on. That's just how I work.
+                  coordinating with out-of-state family, or just need a calm presence on a hard day - I show up for that
+                  too. That's not an add-on. It's just how I work.
                 </p>
               </div>
             </motion.div>
@@ -310,7 +302,7 @@ const Selling = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                A good place to start…
+                Take it with you…
               </p>
 
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
@@ -431,7 +423,7 @@ const Selling = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  Good questions…
+                  Seller questions…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                   Selling Questions I Hear All the Time
@@ -470,7 +462,7 @@ const Selling = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  In their own words…
+                  From seller clients…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                   What My Seller Clients Have to Say

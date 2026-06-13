@@ -189,7 +189,7 @@ const Relocation = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                This part matters…
+                Buying from a distance…
               </p>
               <h2 className="font-heading text-3xl md:text-5xl text-primary mb-8">
                 Buying From a Distance Is a Different Kind of Hard
@@ -197,20 +197,15 @@ const Relocation = () => {
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  You're trying to choose a home - and a neighborhood, and a commute, and schools, and proximity to the
-                  base - without being able to just drive around on a Saturday and get a feel for things. You're making
-                  a big financial decision based on listing photos, Google Maps, and whatever you can piece together
-                  online.
+                  You're choosing a home, a neighborhood, a commute, schools, and proximity to the base - without being
+                  able to drive around on a Saturday and get a feel for things. Big financial decisions made from
+                  listing photos and Google Maps.
                 </p>
                 <p>
                   My husband Todd is a retired Navy Veteran. I understand what PCS timelines actually look like - the
-                  short notice, the hard deadlines, the pressure to decide fast. And I've helped enough military
-                  families buy in Snohomish County to know what questions to ask, what to watch out for, and what areas
-                  make sense depending on where you're reporting.
-                </p>
-                <p>
-                  You deserve someone who will tell you the truth about a neighborhood, flag the things you can't see in
-                  photos, and help you make a decision you'll feel good about after the boxes are unpacked.
+                  short notice, the hard deadlines, the pressure to decide fast. I've helped enough military families
+                  buy in Snohomish County to know what questions to ask, what to watch out for, and what areas make
+                  sense depending on where you're reporting.
                 </p>
               </div>
             </motion.div>
@@ -228,7 +223,7 @@ const Relocation = () => {
               className="text-center mb-16"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                How it works…
+                Before you pack a box…
               </p>
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                 What the Process Actually Looks Like
@@ -273,7 +268,7 @@ const Relocation = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                What's different here…
+                Close to home…
               </p>
 
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
@@ -282,24 +277,16 @@ const Relocation = () => {
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  My husband Todd served in the Navy. I know what PCS season actually looks like - the orders that come
-                  with six weeks notice, the decisions you have to make before you've had time to think, the pressure of
-                  getting it right when you can't just "go look at a few more houses" this weekend.
+                  Todd served in the Navy. I know what PCS season looks like - orders with six weeks notice, decisions
+                  before you've had time to think, pressure to get it right when you can't just look at a few more
+                  houses this weekend. I hold the MRP designation and have done this enough times to make it work even
+                  when the timeline is tight.
                 </p>
                 <p>
-                  I hold the MRP designation - Military Relocation Professional - which means I've specifically trained
-                  to understand the VA loan process, BAH rates, military timelines, and the unique challenges of buying
-                  from a distance. But more than the designation, I've just done this enough times to know how to make
-                  it work even when the timeline is tight.
-                </p>
-                <p>
-                  For VA financing, I work closely with Jared Paul at CrossCountry Mortgage. He's a Marine veteran and a
-                  Marysville native - someone who actually understands VA loans and Snohomish County. Getting
-                  pre-approved with the right lender makes a real difference in how your offer is received.
-                </p>
-                <p>
-                  My goal is simple: by the time you show up with a moving truck, you should already feel like you know
-                  where you landed.
+                  For VA financing, I work closely with Jared Paul at CrossCountry Mortgage - a Marine veteran and
+                  Marysville native who actually understands VA loans and Snohomish County. Getting pre-approved with
+                  the right lender makes a real difference in how your offer is received. My goal: by the time you show
+                  up with a moving truck, you should already feel like you know where you landed.
                 </p>
               </div>
             </motion.div>
@@ -317,7 +304,7 @@ const Relocation = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                A good place to start…
+                Take it with you…
               </p>
 
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
@@ -438,7 +425,7 @@ const Relocation = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  Good questions…
+                  Relocation questions…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                   Relocation Questions I Hear All the Time
@@ -477,7 +464,7 @@ const Relocation = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  In their own words…
+                  From relocation clients…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                   What My Relocation Clients Have to Say

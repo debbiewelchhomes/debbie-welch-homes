@@ -60,7 +60,7 @@ const testimonials = [
   {
     quote:
       "My wife and I just closed on a home in Oak Harbor from thousands of miles away and Debbie made the process seamless. Fantastic, efficient, smart, professional, communicative, and trustworthy are just a few words for Debbie and the values she upholds. She will take care of you every step of the way. Thank you Debbie - we look forward to doing business with you again.",
-    attribution: "Dustin Hoskins, Oak Harbor (military seller, remote close)",
+    attribution: "D. Hoskins, Oak Harbor (active military, out of area seller)",
   },
   {
     quote:

@@ -40,7 +40,7 @@ const testimonials = [
   {
     quote:
       "We wanted to express our heartfelt gratitude for your exceptional work in selling our home. Your dedication, expertise, and unwavering support made all the difference. Your guidance on preparing our home for sale was invaluable, and your tireless commitment to negotiating on our behalf exceeded our expectations. Thank you for your professionalism, kindness, friendship, and for going above and beyond. We will gladly recommend you to anyone looking for a top-notch realtor.",
-    attribution: "Stacie Filler, Stanwood (Veteran seller)",
+    attribution: "S. Filler, Stanwood (Veteran seller)",
   },
   {
     quote:

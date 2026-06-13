@@ -12,12 +12,12 @@ import { pageSEO } from "@/data/seoData";
 
 const Services = () => {
   const introRef = useRef(null);
-  const signatureRef = useRef(null);
+  const approachRef = useRef(null);
   const quoteRef = useRef(null);
   const ctaRef = useRef(null);
-  
+
   const introInView = useInView(introRef, { once: true, margin: "-100px" });
-  const signatureInView = useInView(signatureRef, { once: true, margin: "-100px" });
+  const approachInView = useInView(approachRef, { once: true, margin: "-100px" });
   const quoteInView = useInView(quoteRef, { once: true, margin: "-100px" });
   const ctaInView = useInView(ctaRef, { once: true, margin: "-100px" });
 
@@ -28,32 +28,34 @@ const Services = () => {
       <main>
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-          <div 
-            className="absolute inset-0 parallax-section" 
+          <div
+            className="absolute inset-0 parallax-section"
             style={{
-              backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${heroImage})`
+              backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${heroImage})`,
             }}
             role="img"
-            aria-label="Services - Debbie Welch real estate services"
+            aria-label="Debbie Welch real estate services - Snohomish County"
           />
-          
+
           <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               className="max-w-4xl mx-auto text-backdrop"
             >
               <p className="font-script text-4xl md:text-5xl lg:text-6xl mb-6 text-secondary" aria-hidden="true">
-                Work with me
+                How I can help…
               </p>
 
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-primary mb-6">
-                My Services
+                Real Estate Services in Snohomish County
               </h1>
 
               <p className="font-body text-lg md:text-xl text-primary max-w-3xl mx-auto">
-                Real estate doesn't have to feel pushy, confusing, or rushed. I help buyers, sellers, downsizers, and relocation clients across Snohomish County move through big life transitions with clarity and calm. Whether you're buying your first place, selling a long-time home, or moving here from out of the area, we'll build a plan that makes sense for your real life—not just the market headlines.
+                Buying, selling, downsizing, relocating - whatever brought you here, the goal is the same. You deserve
+                clear information, honest guidance, and someone in your corner who actually knows this county. Not a
+                sales pitch. A real plan.
               </p>
             </motion.div>
           </div>
@@ -70,41 +72,67 @@ const Services = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                Subheading goes here
+                Here's the thing…
               </p>
 
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
-                Calm, Clear Real Estate Guidance in Snohomish County
+                Real Estate Is Rarely Just About the House
               </h2>
 
               <p className="font-body text-lg md:text-xl text-foreground leading-relaxed">
-                Real estate decisions are rarely just about bedrooms and bathrooms. They're about time, energy, family, and long-term plans. My role is to blend detailed market knowledge with real-life perspective so you always understand what's happening, what your options are, and what makes the most sense for your goals—without pressure.
+                It's about the job that moved you here, the parent who needs to be closer, the stairs that aren't
+                working anymore, the PCS orders that gave you six weeks to figure everything out. I've been working with
+                Snohomish County buyers and sellers long enough to know that the best real estate advice starts with
+                understanding what's actually going on in someone's life - not just what they're looking for in a
+                listing.
               </p>
             </motion.div>
           </div>
         </section>
 
-        {/* Signature System Section */}
+        {/* Approach Section */}
         <section className="py-20 md:py-32 bg-warm-bg">
           <div className="container mx-auto px-4">
             <motion.div
-              ref={signatureRef}
+              ref={approachRef}
               initial={{ opacity: 0, y: 30 }}
-              animate={signatureInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              animate={approachInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto text-center"
+              className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                Introducing…
-              </p>
+              <div className="text-center mb-12">
+                <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                  What you can count on…
+                </p>
 
-              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
-                The Helping You Home Approach
-              </h2>
+                <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
+                  How I Work With Every Client
+                </h2>
+              </div>
 
-              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed">
-                The Helping You Home approach is built around three things: clarity, calm, and communication. We'll start with a conversation about where you are now and where you're hoping to go, then create a step-by-step plan that fits your timeline and capacity. You'll get honest feedback, steady updates, and practical guidance whether you're buying, selling, relocating, or downsizing in Snohomish County.
-              </p>
+              <div className="grid md:grid-cols-3 gap-8 text-center">
+                <div className="bg-background p-8 rounded-lg">
+                  <h3 className="font-heading text-2xl font-bold text-primary mb-4">Clarity</h3>
+                  <p className="text-foreground leading-relaxed">
+                    Plain-language explanations at every step. No jargon, no skipping the parts that matter, no "just
+                    trust me." You'll always know what's happening and why.
+                  </p>
+                </div>
+                <div className="bg-background p-8 rounded-lg">
+                  <h3 className="font-heading text-2xl font-bold text-primary mb-4">Honesty</h3>
+                  <p className="text-foreground leading-relaxed">
+                    The real numbers, the real tradeoffs, and the real risks - even when the easy answer would be
+                    "you're fine, just move forward." You deserve accurate information, not reassurance.
+                  </p>
+                </div>
+                <div className="bg-background p-8 rounded-lg">
+                  <h3 className="font-heading text-2xl font-bold text-primary mb-4">Follow-Through</h3>
+                  <p className="text-foreground leading-relaxed">
+                    Proactive updates, organized timelines, and a steady presence from first conversation to closing
+                    day. You won't be left wondering what's happening or waiting for a callback.
+                  </p>
+                </div>
+              </div>
             </motion.div>
           </div>
         </section>
@@ -127,12 +155,12 @@ const Services = () => {
               </p>
 
               <blockquote className="font-body text-xl md:text-2xl text-primary leading-relaxed mb-8 italic">
-                "Debbie made a complicated move feel surprisingly manageable. She broke everything into small steps, told us the truth (even when it wasn't what we wanted to hear), and never made us feel rushed."
+                "Debbie always exceeded my expectations - whether it was anticipating problems before they arose,
+                expertly reacting to unusual situations, or just being the kind, friendly person she is. Her
+                zealousness, competence, foresight, and above-and-beyond research are a rarity these days."
               </blockquote>
 
-              <p className="font-body text-lg text-foreground">
-                – Snohomish County buyer & seller clients
-              </p>
+              <p className="font-body text-lg text-foreground">– Austen Swaim, PCS relocation client</p>
             </motion.div>
           </div>
         </section>
@@ -148,21 +176,21 @@ const Services = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                Ready to get started?
+                No pressure, just a conversation…
               </p>
 
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
-                Let's Talk About Your Next Move
+                Not Sure Where to Start?
               </h2>
 
               <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
-                Whether you're sure of your next step or just starting to explore options, we can talk through your timing, goals, and questions and see what makes sense. No pressure, no sales pitch—just real conversation about what's possible.
+                That's actually a fine place to begin. Tell me what's going on in your life and what's prompting the
+                question, and we'll figure out together whether now is the right time, what your options are, and what a
+                realistic next step might look like.
               </p>
 
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6" asChild>
-                <a href="https://cal.com/debbie.welch.homes" target="_blank" rel="noopener noreferrer">
-                  Schedule a Conversation
-                </a>
+                <Link to="/contact">Let's Talk It Through</Link>
               </Button>
             </motion.div>
           </div>

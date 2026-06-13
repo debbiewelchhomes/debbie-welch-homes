@@ -273,7 +273,7 @@ const ExpRealty = () => {
                   className="bg-secondary hover:bg-secondary/90 text-white px-8"
                   asChild
                 >
-                  
+                  <a
                     href="https://thebiggame.my.canva.site/debbie-welch-entourage-landing-page"
                     target="_blank"
                     rel="noopener noreferrer"

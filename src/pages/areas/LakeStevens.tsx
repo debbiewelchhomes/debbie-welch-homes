@@ -225,7 +225,7 @@ const LakeStevens = () => {
                   This is one of the main reasons families from Boeing, tech, and healthcare are making the commute from Lake Stevens rather than buying closer to work. The school district is genuinely one of the strongest selling points in this part of the county - and it's been consistent, not just a flash in the rankings.
                 </p>
                 <div className="mt-6">
-                  
+                  <a
                     href="https://www.lkstevens.wednet.edu"
                     target="_blank"
                     rel="noopener noreferrer"

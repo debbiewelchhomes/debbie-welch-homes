@@ -20,7 +20,7 @@ const BrandPromiseSection = () => {
       icon: Shield,
       title: "Clarity Over Pressure",
       description:
-        "I walk you through the 'why' behind every recommendation so you understand what you're agreeing to -- and why -- before you sign anything.",
+        "I walk you through the 'why' behind every recommendation so you understand what you're agreeing to - and why - before you sign anything.",
     },
     {
       icon: BookOpen,
@@ -38,13 +38,13 @@ const BrandPromiseSection = () => {
       icon: MapPin,
       title: "Local, Boots-on-the-Ground Insight",
       description:
-        "I've lived in Snohomish County for over 45 years and owned multiple properties here. I know what the online reports miss -- the neighborhoods in transition, the roads that flood, the pockets of real value.",
+        "I've lived in Snohomish County for over 45 years and have owned multiple properties here. I know what the online reports miss - the neighborhoods in transition, the roads that flood, the pockets of real value.",
     },
     {
       icon: Heart,
       title: "Honest, Straight Answers",
       description:
-        "If a house has a problem, I'll tell you. If the timing isn't right, I'll say so. You'll always get my real opinion -- not the one designed to move the transaction forward.",
+        "If a house has a problem, I'll tell you. If the timing isn't right, I'll say so. You'll always get my real opinion - not the one designed to move the transaction forward.",
     },
     {
       icon: MessageCircle,

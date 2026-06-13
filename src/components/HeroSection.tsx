@@ -34,16 +34,17 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-primary mb-8 max-w-3xl mx-auto font-light">
-              Lifelong Local. Downsizing Specialist. Military and Relocation Expert.
+              Lifelong Local. Downsizing Specialist. Military & Relocation Expert.
             </p>
 
             <div className="prose prose-lg text-primary mb-10 max-w-3xl mx-auto">
               <p className="leading-relaxed text-xl">
                 I grew up here. I've bought and sold here. I know which
                 neighborhoods are changing, which ones have been steady for
-                decades, and where the real value is in this market right now.
+                decades, which ones you may want to research a little more than
+                others, and where the real value is in this market right now.
                 If you want someone who will level with you, keep you organized,
-                and actually pick up the phone -- that's what I do.
+                and actually pick up the phone - that's what I do.
               </p>
             </div>
 

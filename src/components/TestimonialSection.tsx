@@ -25,7 +25,7 @@ const testimonials = [
   {
     quote:
       "We are currently living in another state and were not able to get back to Washington to prepare our home for sale. Debbie did everything - from selling unwanted items, to assisting with packing, to staging our home. The result was a SOLD sign in two days with multiple offers all over asking price. Debbie truly goes the extra mile. Her wonderful personality as well as knowledge of the real estate market make her a 5-star-plus Realtor.",
-    attribution: "Pat Davis, Lake Stevens (out-of-state senior seller)",
+    attribution: "P. Davis, Lake Stevens (out-of-state senior seller, full-service move prep)",
   },
   {
     quote:

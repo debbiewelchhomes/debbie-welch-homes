@@ -1,46 +1,73 @@
-import Navigation from "@/components/Navigation";
-import UnderConstructionBanner from "@/components/UnderConstructionBanner";
-import HeroSection from "@/components/HeroSection";
-import BufferSection from "@/components/BufferSection";
-import RealTalkSection from "@/components/RealTalkSection";
-import BrandPromiseSection from "@/components/BrandPromiseSection";
-import FreeResourceSection from "@/components/FreeResourceSection";
-import ServicesSection from "@/components/ServicesSection";
-import AboutSection from "@/components/AboutSection";
-import TestimonialSection from "@/components/TestimonialSection";
-import NeighborhoodsSection from "@/components/NeighborhoodsSection";
-import BlogSection from "@/components/BlogSection";
-import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
-import { pageSEO, realEstateAgentSchema } from "@/data/seoData";
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "@/components/ScrollToTop";
+import ChatButton from "@/components/ChatButton";
+import Index from "./pages/Index";
+import Services from "./pages/Services";
+import Buying from "./pages/Buying";
+import Selling from "./pages/Selling";
+import Relocation from "./pages/Relocation";
+import Downsizing from "./pages/Downsizing";
+import Listings from "./pages/Listings";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import About from "./pages/About";
+import ExpRealty from "./pages/ExpRealty";
+import Contact from "./pages/Contact";
+import SnohomishCounty from "./pages/areas/SnohomishCounty";
+import Arlington from "./pages/areas/Arlington";
+import BothellMillCreek from "./pages/areas/BothellMillCreek";
+import EverettMukilteo from "./pages/areas/EverettMukilteo";
+import LakeStevens from "./pages/areas/LakeStevens";
+import Marysville from "./pages/areas/Marysville";
+import Snohomish from "./pages/areas/Snohomish";
+import StanwoodCamano from "./pages/areas/StanwoodCamano";
+import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
-const Index = () => {
+const queryClient = new QueryClient();
+
+const App = () => {
   return (
-    <div className="min-h-screen">
-      <SEO 
-        title={pageSEO.home.title}
-        description={pageSEO.home.description}
-        canonical="/"
-        jsonLd={realEstateAgentSchema}
-      />
-      <Navigation />
-      {/* UNDER CONSTRUCTION BANNER - Remove this line and the component when site is ready */}
-      <UnderConstructionBanner />
-      <main>
-        <HeroSection />
-        <BufferSection />
-        <RealTalkSection />
-        <BrandPromiseSection />
-        <FreeResourceSection />
-        <ServicesSection />
-        <AboutSection />
-        <TestimonialSection />
-        <NeighborhoodsSection />
-        <BlogSection />
-      </main>
-      <Footer />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/services/buying" element={<Buying />} />
+            <Route path="/services/selling" element={<Selling />} />
+            <Route path="/services/relocation" element={<Relocation />} />
+            <Route path="/services/downsizing" element={<Downsizing />} />
+            <Route path="/listings" element={<Listings />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/about/exp-realty" element={<ExpRealty />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/areas/snohomish-county" element={<SnohomishCounty />} />
+            <Route path="/areas/arlington" element={<Arlington />} />
+            <Route path="/areas/bothell-mill-creek" element={<BothellMillCreek />} />
+            <Route path="/areas/everett-mukilteo" element={<EverettMukilteo />} />
+            <Route path="/areas/lake-stevens" element={<LakeStevens />} />
+            <Route path="/areas/marysville" element={<Marysville />} />
+            <Route path="/areas/snohomish" element={<Snohomish />} />
+            <Route path="/areas/stanwood-camano" element={<StanwoodCamano />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+        <ChatButton />
+      </TooltipProvider>
+    </QueryClientProvider>
   );
 };
 
-export default Index;
+export default App;

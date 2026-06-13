@@ -50,7 +50,7 @@ const testimonials = [
   {
     quote:
       "From the beginning Debbie was there to offer what I needed to sell my condo. As a senior citizen moving out of state she guided me through the process. It was stress free and helpful. Instantly had multiple cash offers. The staging was perfection. Escrow was over and done in record time. Would not hesitate to recommend with a 5-star rating.",
-    attribution: "M. Cornell, Marysville (senior condo seller, out-of-state move)",
+    attribution: "M. Cornell, Marysville (senior seller, out-of-state move help)",
   },
   {
     quote:

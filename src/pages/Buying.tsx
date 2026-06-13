@@ -58,7 +58,7 @@ const Buying = () => {
       number: "02",
       title: "Get Pre-Approved With the Right Lender",
       description:
-        "A pre-approval isn't just paperwork - it tells you what you can actually afford, what your monthly payment looks like in real numbers, and whether there's a loan program that fits your situation better than you realized. I'll connect you with trusted lenders who explain your options clearly, not just hand you a number and move on.",
+        "A pre-approval tells you what you can actually afford, what your monthly payment looks like in real numbers, and whether there's a loan program that fits your situation better than you realized. I'll connect you with trusted lenders who explain your options clearly.",
     },
     {
       number: "03",
@@ -76,7 +76,7 @@ const Buying = () => {
       number: "05",
       title: "From Contract to Keys - Without the Chaos",
       description:
-        "Once you're under contract, I manage the timeline - inspections, appraisals, deadlines, lender communication, escrow coordination. You'll always know what's happening and what's coming next. My job is to get you to closing day without last-minute scrambles or surprises you should have been warned about.",
+        "Once you're under contract, I manage the timeline - inspections, appraisals, deadlines, lender communication, escrow coordination. You'll always know what's happening and what's coming next.",
     },
   ];
 
@@ -188,24 +188,20 @@ const Buying = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                Here's what I know…
+                Before the search…
               </p>
-              <h2 className="font-heading text-3xl md:text-5xl text-primary mb-8">The Search Is Only Part of It</h2>
+              <h2 className="font-heading text-3xl md:text-5xl text-primary mb-8">The House Is Only Part of It</h2>
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  Most people come into the buying process thinking it's mostly about finding the right house. It is -
-                  but it's also about understanding what you can actually afford, what the inspection is really telling
-                  you, what the contract terms mean, and whether the neighborhood is going to feel right six months
-                  after you move in.
+                  Buying a home is also about understanding what you can actually afford, what the inspection is really
+                  telling you, what the contract terms mean, and whether the neighborhood is going to feel right six
+                  months after you move in. Most agents move you through those questions. I stop and explain them.
                 </p>
                 <p>
-                  I came from 30 years in healthcare where my job was to read complex documents carefully and explain
-                  them clearly to people who were already stressed. That's exactly what I do here. I'll walk you through
-                  every step in plain language, flag the things worth paying attention to, and make sure you feel
-                  informed - not just moved along.
+                  I'm not trying to close a deal. I'm trying to help you buy the right home. There's a difference - and
+                  you'll feel it.
                 </p>
-                <p>I'm not trying to close a deal. I'm trying to help you buy the right home.</p>
               </div>
             </motion.div>
           </div>
@@ -222,7 +218,7 @@ const Buying = () => {
               className="text-center mb-16"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                How it works…
+                Step by step…
               </p>
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                 What the Process Actually Looks Like
@@ -267,7 +263,7 @@ const Buying = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                What's different here…
+                No rush, no pressure…
               </p>
 
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
@@ -276,17 +272,15 @@ const Buying = () => {
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  I'm not going to push you toward a home because the market is "moving fast" or because I need to close
-                  a transaction this month. If a house isn't right, I'll tell you. If a contract term concerns me, I'll
-                  flag it. If you need to slow down and think, we slow down and think.
+                  I'm not going to push you toward a home because the market is "moving fast." If a house isn't right,
+                  I'll tell you. If a contract term concerns me, I'll flag it. If you need to slow down and think, we
+                  slow down.
                 </p>
                 <p>
-                  I'm also a lifelong Snohomish County local. I grew up in Marysville, lived in Lake Stevens for years,
-                  and I'm currently in the middle of a live-in renovation in North Everett. When I tell you what a
-                  neighborhood is actually like - the schools, the traffic, the feel of the street - it's because I've
-                  lived in this county my whole life, not because I pulled it from a market report.
+                  I'm a lifelong Snohomish County local - grew up in Marysville, lived in Lake Stevens for years,
+                  currently renovating in North Everett. When I tell you what a neighborhood is actually like, it's from
+                  living here, not a market report. Ask me as many questions as you need.
                 </p>
-                <p>Ask me as many questions as you need. That's what I'm here for.</p>
               </div>
             </motion.div>
           </div>
@@ -303,7 +297,7 @@ const Buying = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                A good place to start…
+                Start here…
               </p>
 
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
@@ -419,7 +413,7 @@ const Buying = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  Good questions…
+                  Things people ask…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                   Buying Questions I Hear All the Time
@@ -458,7 +452,7 @@ const Buying = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  In their own words…
+                  From buyer clients…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                   What My Buyer Clients Have to Say

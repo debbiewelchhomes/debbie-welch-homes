@@ -35,7 +35,7 @@ const testimonials = [
   {
     quote:
       "Look no further and pick Debbie! She always exceeded my expectations - despite a 9-hour time difference and remote house-hunting and close - whether it was anticipating problems before they arose, expertly reacting to unusual situations, or just being the kind, friendly person she is. Debbie's zealousness, competence, foresight, and above-and-beyond research are a rarity these days. I cannot recommend her more highly.",
-    attribution: "Austen Swaim (PCS relocation, VA loan)",
+    attribution: "A. Swaim (out of country PCS relocation, remote buyer, active military with VA loan)",
   },
   {
     quote:

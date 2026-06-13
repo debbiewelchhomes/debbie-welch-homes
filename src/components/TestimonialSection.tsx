@@ -15,7 +15,7 @@ const testimonials = [
   {
     quote:
       "We found Debbie on the Internet and chose her because of the good reviews. I would give her 10 stars if possible - she was always a step ahead and treated the process like she was buying the house for herself. Even with a 9-hour time difference while we were in Germany, she managed to answer everything in time. She made videos of the properties and walked through them with us on video call. It can be stressful to buy blind, but she gave us the confidence to make the right decision without seeing the house ourselves. That kind of expertise was priceless.",
-    attribution: "V. Gerhard, Lake Stevens",
+    attribution: "V. Gerhard, Lake Stevens (PCS from Germany, remote buyer, active military spouse)",
   },
   {
     quote:

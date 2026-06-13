@@ -197,18 +197,16 @@ const Downsizing = () => {
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  It's about 30 years of accumulated life in the garage. It's the kitchen where you raised your kids.
-                  It's the question of whether you can actually afford to stay, or whether the equity in this house
-                  could fund something better. It's family members with strong opinions and a timeline that feels
-                  impossible.
+                  It's about 30 years of accumulated life in the garage. The kitchen where you raised your kids. Whether
+                  you can afford to stay, or whether the equity in this house could fund something better. Family
+                  members with strong opinions and a timeline that feels impossible.
                 </p>
                 <p>
-                  I've sat at a lot of kitchen tables with people in exactly this spot. What I've learned is that the
-                  practical part - the selling, the pricing, the logistics - is actually the easier part. The harder
+                  The practical part - the selling, the pricing, the logistics - is actually the easier part. The harder
                   part is figuring out what you actually want, what you can realistically do, and how to make a decision
-                  you'll feel good about a year from now.
+                  you'll feel good about a year from now. That's where we start. Not with a listing appointment. With a
+                  real conversation.
                 </p>
-                <p>That's where we start. Not with a listing appointment. With a real conversation.</p>
               </div>
             </motion.div>
           </div>
@@ -225,7 +223,7 @@ const Downsizing = () => {
               className="text-center mb-16"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                How it works…
+                One step at a time…
               </p>
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                 What the Process Actually Looks Like
@@ -310,7 +308,7 @@ const Downsizing = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                A good place to start…
+                Take it with you…
               </p>
 
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
@@ -431,7 +429,7 @@ const Downsizing = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  Good questions…
+                  Downsizing questions…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                   Downsizing Questions I Hear All the Time
@@ -470,7 +468,7 @@ const Downsizing = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  In their own words…
+                  From downsizing clients…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                   What My Clients Have to Say

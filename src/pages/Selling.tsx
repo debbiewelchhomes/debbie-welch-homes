@@ -6,12 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import heroImage from "@/assets/hero-selling.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -26,7 +21,7 @@ const Selling = () => {
   const formRef = useRef(null);
   const faqRef = useRef(null);
   const testimonialRef = useRef(null);
-  
+
   const introInView = useInView(introRef, { once: true, margin: "-100px" });
   const processInView = useInView(processRef, { once: true, margin: "-100px" });
   const guideInView = useInView(guideRef, { once: true, margin: "-100px" });
@@ -41,14 +36,14 @@ const Selling = () => {
     email: "",
     phone: "",
     address: "",
-    message: ""
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Form submitted!",
-      description: "I'll be in touch soon with your home evaluation.",
+      title: "Got it - thank you.",
+      description: "I'll follow up soon to put together your home evaluation.",
     });
     setFormData({ name: "", email: "", phone: "", address: "", message: "" });
   };
@@ -56,108 +51,134 @@ const Selling = () => {
   const sellingSteps = [
     {
       number: "01",
-      title: "Walkthrough & Strategy",
-      description: "We start with a walkthrough (in person or virtual) and a conversation about your goals, timing, and concerns. I'll share honest feedback and a high-level plan for getting your home ready."
+      title: "Start With an Honest Conversation",
+      description:
+        "We walk through your home together - in person or virtually - and talk about your goals, your timeline, and what's prompting the move. I'll tell you what I see, what I think will matter to buyers, and what we can realistically expect from the current Snohomish County market. No sugarcoating.",
     },
     {
       number: "02",
-      title: "Prep & Presentation Plan",
-      description: "I'll outline which tweaks will have the most impact—whether that's decluttering, paint, small repairs, or staging—and connect you with trusted local pros if needed."
+      title: "Build a Prep Plan That Fits Your Reality",
+      description:
+        "Not every home needs a full renovation before listing. Some need a deep clean and better photos. Some need one or two targeted updates. I'll tell you exactly what's worth doing and what you can skip - based on your price point, your timeline, and what buyers in your area actually care about. I can also connect you with trusted stagers, cleaners, and contractors when needed.",
     },
     {
       number: "03",
-      title: "Pricing & Listing Strategy",
-      description: "Using recent data and an understanding of your ideal buyer, we'll set a pricing and launch strategy that fits both the market and your goals."
+      title: "Price It Right From the Start",
+      description:
+        "Pricing is a strategy, not a guess. We'll look at recent comparable sales, current inventory, your home's specific features, and your goals for timing and net proceeds. I'll explain the data and walk you through the tradeoffs so you understand the reasoning - not just the number.",
     },
     {
       number: "04",
-      title: "Showings, Offers & Negotiation",
-      description: "I'll handle marketing, showings, and communication with buyer agents, then walk you through each offer's strengths, weaknesses, and fine print so you can choose what's right for you."
+      title: "Market, Show, and Field Offers",
+      description:
+        "Professional photos, a well-written listing, and targeted marketing to reach the right buyers. I'll manage showings and agent communication, then walk you through each offer in plain language - the price, the terms, the contingencies, the fine print. You'll understand what you're actually agreeing to before you respond to anything.",
     },
     {
       number: "05",
-      title: "From Contract to Close",
-      description: "Once under contract, I'll manage timelines, inspections, appraisal, and all the moving pieces so you always know what's happening and what's needed from you."
-    }
+      title: "From Contract to Close - Without the Scramble",
+      description:
+        "Once you're under contract, I manage the timeline - inspections, appraisal, any repair negotiations, lender deadlines, and escrow coordination. You'll always know what's happening, what's coming next, and what I need from you. No last-minute surprises.",
+    },
   ];
 
   const faqs = [
     {
       question: "When is the best time to sell my home?",
-      answer: "There are seasonal patterns in every market, but the right time to sell is the one that makes sense for your life and lines up with current local data. Together we'll look at what's happening in your specific neighborhood and price range so you can decide on timing that feels both practical and realistic."
-    },
-    {
-      question: "Do I have to do a lot of updates before listing?",
-      answer: "Not necessarily. Some homes benefit from strategic updates; others simply need a good clean, declutter, and a bit of styling. I'll show you which changes are likely to have the biggest impact and which projects you can comfortably skip."
+      answer:
+        "There are seasonal patterns in Snohomish County - spring and early summer tend to bring more buyers, but inventory is also higher. The honest answer is that the best time to sell is when it makes sense for your life and when the current data supports it. We'll look at what's actually happening in your specific neighborhood and price range so you can make a decision based on real information, not general market headlines.",
     },
     {
       question: "How do we decide on a listing price?",
-      answer: "We'll look at recent comparable sales, current inventory, your home's condition and features, and your goals for timing and net proceeds. Pricing is a strategy, not just a number—we'll walk through different options so you feel confident in the plan."
+      answer:
+        "We look at recent comparable sales - homes similar to yours that have actually closed, not just listed. We also factor in current competition, your home's condition and specific features, and your goals for timing. Pricing too high can cost you as much as pricing too low. I'll walk you through the data and explain the reasoning behind any price I recommend, so you feel confident in the strategy.",
+    },
+    {
+      question: "Do I have to do a lot of updates before listing?",
+      answer:
+        "Not necessarily - and I'll tell you honestly which updates are worth it and which aren't. Some homes need a deep clean, declutter, and better staging. Others benefit from one or two targeted repairs. A few genuinely need more work to compete. I'll give you a prioritized list based on likely return and your capacity, not a generic renovation checklist.",
     },
     {
       question: "What should I expect during showings?",
-      answer: "We'll talk about a showing schedule that works as well as possible with your day-to-day life. I'll give you simple guidelines for how 'ready' the house needs to be, and we'll make a plan for pets, kids, and work-from-home routines so it feels manageable."
+      answer:
+        "We'll set a showing schedule that works as well as possible with your real life - work, kids, pets, all of it. I'll give you clear, simple guidelines for how ready the house needs to be for each showing, and we'll make a practical plan together. You won't be scrambling every time someone wants to see it.",
     },
     {
-      question: "How long will it take my home to sell?",
-      answer: "That depends on your price point, location, condition, and the current market. We'll review days-on-market data for similar homes so you have a realistic range and aren't left guessing."
-    }
+      question: "How long will it take to sell?",
+      answer:
+        "It depends on your price point, location, condition, and what the market is doing. I'll pull days-on-market data for comparable homes so you have a realistic range going in - not a guess, not a promise, just an honest picture. Some homes move in days; others take a few weeks. We'll plan accordingly.",
+    },
+    {
+      question: "What if the inspection turns up issues?",
+      answer:
+        "It almost always turns up something. That's what inspections are for. The question is whether those findings are deal-breakers, negotiating points, or just normal wear and tear that buyers expect. I'll help you understand what you're actually looking at, talk through your options for responding, and negotiate on your behalf so you're not giving away more than you need to.",
+    },
   ];
 
   const testimonials = [
     {
-      quote: "Debbie gave us realistic advice about what was worth fixing and what we could leave alone. We saved time and money, and the house still showed beautifully.",
-      attribution: "– Downsizing sellers in Lake Stevens"
+      quote:
+        "Debbie is amazing! We worked with her when the market took a turn downwards and we needed to sell our home and move for work. It was a very stressful time and Debbie was so kind, helpful, communicative, aggressive when we needed her to be, firm, and just incredible to work with. You definitely can't go wrong with Debbie.",
+      attribution: "Hill Hansen, Arlington (seller, tough market)",
     },
     {
-      quote: "She walked us through every offer in plain language and helped us understand the pros and cons. We never felt pressured or confused.",
-      attribution: "– Growing family selling in Marysville"
+      quote:
+        "Debbie Welch was amazing to work with! She was very knowledgeable about the selling process and answered all our questions in a professional and timely manner. We were able to sell our home quickly and got $60k over asking price! I would highly recommend Debbie if you're looking to sell your home.",
+      attribution: "Shawn Frederick, Lake Stevens ($60k over asking)",
     },
     {
-      quote: "From pricing to closing, Debbie kept us informed and calm. Selling felt so much more manageable than we expected.",
-      attribution: "– Relocating sellers in Everett"
-    }
+      quote:
+        "Your dedication, expertise, and unwavering support made all the difference. Your guidance on preparing our home for sale was invaluable, and your tireless commitment to negotiating on our behalf exceeded our expectations. Thank you for your professionalism, kindness, friendship, and for going above and beyond.",
+      attribution: "Stacie Filler, Stanwood (Veteran seller)",
+    },
   ];
 
   return (
     <div className="min-h-screen">
-      <SEO title={pageSEO.selling.title} description={pageSEO.selling.description} canonical="/services/selling" jsonLd={buildFaqSchema(faqs)} />
+      <SEO
+        title={pageSEO.selling.title}
+        description={pageSEO.selling.description}
+        canonical="/services/selling"
+        jsonLd={buildFaqSchema(faqs)}
+      />
       <Navigation />
       <main>
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-          <div 
-            className="absolute inset-0 parallax-section" 
+          <div
+            className="absolute inset-0 parallax-section"
             style={{
-              backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${heroImage})`
+              backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${heroImage})`,
             }}
             role="img"
-            aria-label="Selling a home in Snohomish County"
+            aria-label="Selling a home in Snohomish County WA"
           />
-          
+
           <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               className="max-w-4xl mx-auto text-backdrop"
             >
               <p className="font-script text-4xl md:text-5xl lg:text-6xl mb-6 text-secondary" aria-hidden="true">
-                For Sellers
+                Time to sell…
               </p>
 
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-primary mb-6">
-                Selling a Home in Snohomish County
+                Selling Your Home in Snohomish County
               </h1>
 
               <p className="font-body text-lg md:text-xl text-primary max-w-3xl mx-auto">
-                Selling a home you've lived in—and poured time, money, and memories into—can feel huge. I help Snohomish County sellers prepare, price, and present their homes in a way that attracts the right buyers, protects their sanity, and supports their next step, whether that's upsizing, downsizing, or relocating.
+                Selling a home you've lived in - and cared for - is not a small thing. It's a financial decision and an
+                emotional one, often happening at the same time as whatever comes next. I help Snohomish County sellers
+                get their homes ready, priced right, and sold well - without the chaos, the pressure, or the surprises
+                that should have been mentioned earlier.
               </p>
             </motion.div>
           </div>
         </section>
 
-        {/* Here's What I'll Help You With */}
+        {/* Intro Section */}
         <section className="py-20 md:py-32 bg-background">
           <div className="container mx-auto px-4">
             <motion.div
@@ -167,21 +188,28 @@ const Selling = () => {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
+              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                Here's the truth…
+              </p>
               <h2 className="font-heading text-3xl md:text-5xl text-primary mb-8">
-                Here's what I'll help you with…
+                Most Sellers Have the Same Three Questions
               </h2>
 
-              <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-4">
+              <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  Whether you're selling a long-time family home or a more recent move, you shouldn't have to guess what truly matters.
+                  What's my home actually worth right now? What do I need to do to get it ready? And how do I time this
+                  so I'm not caught between two moves with nowhere to land?
                 </p>
-                <p>I'll help you:</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Understand how your home fits into the current Snohomish County market.</li>
-                  <li>Decide which updates, repairs, or staging efforts are actually worth the time and money.</li>
-                  <li>Price strategically so you're competitive without leaving money on the table.</li>
-                  <li>Navigate showings, offers, negotiations, and timelines with a clear plan.</li>
-                </ul>
+                <p>
+                  Those are the right questions. And they deserve straight answers - not vague reassurances or a pitch
+                  to list immediately. My job is to give you the real picture first, then build a plan that fits your
+                  actual timeline and situation.
+                </p>
+                <p>
+                  I came from 30 years in healthcare reading complex documents and explaining them to people under
+                  stress. That's what I do here too. You'll understand every step, every offer, every piece of paper
+                  before you sign anything.
+                </p>
               </div>
             </motion.div>
           </div>
@@ -201,7 +229,7 @@ const Selling = () => {
                 How it works…
               </p>
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
-                The Selling Process
+                What the Process Actually Looks Like
               </h2>
             </motion.div>
 
@@ -220,12 +248,8 @@ const Selling = () => {
                           {step.number}
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-heading text-2xl md:text-3xl text-primary mb-4">
-                            {step.title}
-                          </h3>
-                          <p className="font-body text-lg text-foreground leading-relaxed">
-                            {step.description}
-                          </p>
+                          <h3 className="font-heading text-2xl md:text-3xl text-primary mb-4">{step.title}</h3>
+                          <p className="font-body text-lg text-foreground leading-relaxed">{step.description}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -236,39 +260,8 @@ const Selling = () => {
           </div>
         </section>
 
-        {/* Must-Have Guide Section */}
-        <section className="py-20 md:py-32 bg-background">
-          <div className="container mx-auto px-4">
-            <motion.div
-              ref={guideRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={guideInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-              transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                Must-have guide!
-              </p>
-
-              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
-                5 Smart Steps to Selling in Snohomish County
-              </h2>
-
-              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
-                My Seller Guide walks you through what to do (and what to skip) when preparing your home for the market, plus what to expect from pricing, showings, and offers in Snohomish County.
-              </p>
-
-              <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-                <a href="https://heyzine.com/flip-book/0f267477d7.html" target="_blank" rel="noopener noreferrer">
-                  Get the Seller Guide
-                </a>
-              </Button>
-            </motion.div>
-          </div>
-        </section>
-
         {/* What Makes Working With Me Different */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="py-20 md:py-32 bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={differentRef}
@@ -278,24 +271,63 @@ const Selling = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                Soft landing…
+                What's different here…
               </p>
 
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
-                What Makes Working With Me Different
+                Detail-Oriented. Straight-Talking. In Your Corner.
               </h2>
 
-              <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-4">
+              <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  You won't get a one-size-fits-all checklist or pressure to overhaul your house. Instead, you'll get:
+                  I'm a details person. After 30 years reading healthcare documents for a living, I'm not going to miss
+                  the clause buried on page 4 of a purchase agreement, or let a buyer's inspection addendum slide by
+                  without explaining what you're actually agreeing to give up.
                 </p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>A tailored prep plan based on your timeline, budget, and capacity.</li>
-                  <li>Clear explanations of your options—not just "you should do this."</li>
-                  <li>Strong advocacy in pricing and negotiations, paired with honest pros and cons.</li>
-                  <li>A calm, detail-focused partner who knows your home is more than a line on a spreadsheet.</li>
-                </ul>
+                <p>
+                  I'm also honest about what I can't control. The market moves the way it moves. What I can control is
+                  how well your home is positioned, how clearly you understand your options, and how steadily I
+                  communicate with you from the first conversation to closing day.
+                </p>
+                <p>
+                  And if you need more than just an agent - if you're sorting through decades of belongings,
+                  coordinating with out-of-state family, or just need a calm presence at a stressful moment - I show up
+                  for that too. That's not an add-on. That's just how I work.
+                </p>
               </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Must-Have Guide Section */}
+        <section className="py-20 md:py-32 bg-warm-bg">
+          <div className="container mx-auto px-4">
+            <motion.div
+              ref={guideRef}
+              initial={{ opacity: 0, y: 30 }}
+              animate={guideInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl mx-auto text-center"
+            >
+              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                A good place to start…
+              </p>
+
+              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
+                The Snohomish County Seller Guide
+              </h2>
+
+              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
+                Covers what to do - and what to skip - when preparing your home for the Snohomish County market.
+                Includes pricing strategy basics, what buyers actually notice during showings, how to read an offer, and
+                what to expect from inspection to close. Straightforward, practical, no fluff.
+              </p>
+
+              <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
+                <a href="https://heyzine.com/flip-book/0f267477d7.html" target="_blank" rel="noopener noreferrer">
+                  Get the Seller Guide
+                </a>
+              </Button>
             </motion.div>
           </div>
         </section>
@@ -311,14 +343,14 @@ const Selling = () => {
               className="max-w-3xl mx-auto"
             >
               <div className="text-center mb-12">
-                <h2 className="font-heading text-3xl md:text-5xl text-primary mb-6">
-                  Set Up a No-Obligation Home Evaluation
-                </h2>
-                <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
-                  Curious what your home could sell for in today's Snohomish County market? I'll prepare a thoughtful evaluation based on your home's features, recent sales, and current trends—and we can talk through potential strategies with zero pressure.
+                <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                  Let's start with the numbers…
                 </p>
-                <p className="font-body text-base text-muted-foreground">
-                  Share your details below and I'll follow up with a customized evaluation and next-step options.
+                <h2 className="font-heading text-3xl md:text-5xl text-primary mb-6">Request a Free Home Evaluation</h2>
+                <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
+                  Wondering what your home could realistically sell for right now? Share a few details below and I'll
+                  put together a thoughtful evaluation based on your home, recent sales, and current market conditions.
+                  No obligation, no pressure to list.
                 </p>
               </div>
 
@@ -348,7 +380,7 @@ const Selling = () => {
                     <div>
                       <Input
                         type="tel"
-                        placeholder="Phone Number"
+                        placeholder="Phone Number (optional)"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="font-body"
@@ -366,16 +398,16 @@ const Selling = () => {
                     </div>
                     <div>
                       <Textarea
-                        placeholder="Tell me about your home, your timeline, and any questions you have..."
+                        placeholder="Anything helpful to know - timeline, your situation, questions you already have. Whatever feels relevant."
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         rows={5}
                         className="font-body"
                       />
                     </div>
-                    <Button 
-                      type="submit" 
-                      size="lg" 
+                    <Button
+                      type="submit"
+                      size="lg"
                       className="w-full bg-secondary hover:bg-secondary/90 text-white text-lg"
                     >
                       Request My Home Evaluation
@@ -399,17 +431,17 @@ const Selling = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  Still have questions?
+                  Good questions…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
-                  About Selling Real Estate in Snohomish County
+                  Selling Questions I Hear All the Time
                 </h2>
               </div>
 
               <Accordion type="single" collapsible className="space-y-4">
                 {faqs.map((faq, index) => (
-                  <AccordionItem 
-                    key={index} 
+                  <AccordionItem
+                    key={index}
                     value={`item-${index}`}
                     className="border border-border bg-card rounded-lg px-6"
                   >
@@ -438,7 +470,7 @@ const Selling = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  Don't just take my word for it…
+                  In their own words…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                   What My Seller Clients Have to Say
@@ -455,11 +487,18 @@ const Selling = () => {
                   >
                     <Card className="h-full border-border bg-card hover:shadow-lg transition-shadow">
                       <CardContent className="p-8">
+                        <div className="flex gap-1 mb-4">
+                          {[...Array(5)].map((_, i) => (
+                            <span key={i} className="text-secondary text-xl">
+                              ★
+                            </span>
+                          ))}
+                        </div>
                         <blockquote className="font-body text-lg text-foreground leading-relaxed mb-6 italic">
                           "{testimonial.quote}"
                         </blockquote>
-                        <p className="font-body text-base text-muted-foreground">
-                          {testimonial.attribution}
+                        <p className="font-body text-base text-muted-foreground font-medium">
+                          - {testimonial.attribution}
                         </p>
                       </CardContent>
                     </Card>

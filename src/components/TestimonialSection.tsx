@@ -10,7 +10,7 @@ const testimonials = [
   {
     quote:
       "Debbie was outstanding and extremely professional - responsive, great communication, and excellent negotiation skills. She got our home sold in less than a month, and she even helped us pack our POD, clean the home, and handled dump and donation runs for us. I would use Debbie again and highly recommend her to anyone selling in Snohomish County.",
-    attribution: "K. Bryar, Snohomish County (Veteran seller)",
+    attribution: "K. Bryar, Snohomish County (Veteran seller, relocation out of area)",
   },
   {
     quote:

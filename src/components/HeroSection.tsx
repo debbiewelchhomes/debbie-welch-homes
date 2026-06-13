@@ -34,7 +34,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-primary mb-8 max-w-3xl mx-auto font-light whitespace-pre-line">
-              Lifelong Local.{"\n"}Downsizing Specialist.{"\n"}Military, VA & Relocation Expert.
+              Lifelong Local.{"\n"}Right-Sizing Specialist.{"\n"}Military, VA & Relocation Expert.
             </p>
 
             <div className="prose prose-lg text-primary mb-10 max-w-3xl mx-auto">

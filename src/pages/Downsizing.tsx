@@ -6,12 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import heroImage from "@/assets/hero-downsizing.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -26,7 +21,7 @@ const Downsizing = () => {
   const formRef = useRef(null);
   const faqRef = useRef(null);
   const testimonialRef = useRef(null);
-  
+
   const introInView = useInView(introRef, { once: true, margin: "-100px" });
   const processInView = useInView(processRef, { once: true, margin: "-100px" });
   const guideInView = useInView(guideRef, { once: true, margin: "-100px" });
@@ -41,14 +36,14 @@ const Downsizing = () => {
     email: "",
     phone: "",
     currentHome: "",
-    message: ""
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Form submitted!",
-      description: "I'll be in touch soon to schedule your downsizing consult.",
+      title: "Got it - thank you.",
+      description: "I'll follow up soon to find a time that works for you.",
     });
     setFormData({ name: "", email: "", phone: "", currentHome: "", message: "" });
   };
@@ -56,108 +51,134 @@ const Downsizing = () => {
   const downsizingSteps = [
     {
       number: "01",
-      title: "Clarify Your Next Chapter",
-      description: "We start with a conversation about what you want this next season to look like—budget, preferred locations, stairs vs. single-level, yard vs. low-maintenance, and your ideal timing."
+      title: "Start With a Real Conversation",
+      description:
+        "Not a sales pitch - a conversation. We talk through what's prompting the question, what you want your next chapter to feel like, and whether now is actually the right time. Sometimes it is. Sometimes the answer is 'let's come back to this in six months.' Either way, you'll leave with more clarity than you came in with.",
     },
     {
       number: "02",
-      title: "Evaluate Your Current Home",
-      description: "I'll walk through your home (in person or virtually) to identify what truly needs attention and what doesn't. You'll get a prioritized list of prep items based on likely return and your capacity."
+      title: "Understand What Your Home Is Worth",
+      description:
+        "Before you can make a plan, you need real numbers. I'll walk through your home and give you an honest picture of current market value, what prep work would actually move the needle, and what you can skip. No pressure to list - just the information you need to make a good decision.",
     },
     {
       number: "03",
-      title: "Prep, Support & Staging Plan",
-      description: "We'll bring in any needed support—organizers, cleaners, minor repairs—and determine whether full staging or partial styling makes sense for your price point and target buyer."
+      title: "Build a Prep Plan You Can Actually Do",
+      description:
+        "We'll prioritize what needs attention and what doesn't. I can connect you with stagers, organizers, cleaners, and contractors who understand the downsizing process - and for clients who need more hands-on help, I've done everything from donation runs to helping pack a POD. We meet you where you are.",
     },
     {
       number: "04",
-      title: "List, Market & Navigate Offers",
-      description: "Once your home is ready, I'll position it thoughtfully for the current Snohomish County market, manage showings, and help you evaluate offers based on both price and terms that support your next-step timeline."
+      title: "List and Market Your Home Well",
+      description:
+        "When you're ready, I'll position your home thoughtfully for the Snohomish County market - pricing strategy, professional photos, marketing that reaches the right buyers. You'll know exactly what's happening at every step, and I'll walk you through offers in plain language so you understand what you're actually agreeing to.",
     },
     {
       number: "05",
-      title: "Transition Smoothly to Your Next Home",
-      description: "We'll coordinate your sale with your next purchase or move, work through logistics like rent-backs or extended closings when possible, and keep communication clear so you know exactly what's happening from contract to keys."
-    }
+      title: "Coordinate the Transition",
+      description:
+        "Selling and moving at the same time is a lot. We'll work through the logistics together - timing the sale with your next move, exploring rent-backs or extended closings when needed, and keeping things organized so nothing falls through the cracks. The goal is a landing that feels like a landing, not a scramble.",
+    },
   ];
 
   const faqs = [
     {
-      question: "How do I know if it's the right time to downsize?",
-      answer: "Signs it may be time include feeling overwhelmed by maintenance, unused space, stairs that are getting harder, or monthly costs that no longer match your income or priorities. We can talk through your situation and see whether a move now—or a phased plan—makes the most sense."
+      question: "How do I know if it's actually the right time to downsize?",
+      answer:
+        "Honest answer: there's rarely a perfect time. But some real signs worth paying attention to - the maintenance feels like more than you want to manage, you're paying for space you don't use, stairs are becoming a concern, or your monthly costs no longer match your priorities or income. We can talk through your specific situation and look at the numbers together. Sometimes the answer is 'yes, let's make a plan.' Sometimes it's 'you have more time than you think.' I'd rather tell you the truth than push you toward a move that doesn't make sense yet.",
     },
     {
-      question: "Do I have to get rid of everything at once?",
-      answer: "Not at all. Downsizing is often easier when it's done in stages. I can connect you with organizers and other professionals who specialize in helping homeowners sort, donate, sell, and simplify over time instead of all at once."
+      question: "Do I have to get rid of everything before I sell?",
+      answer:
+        "No. And trying to do it all at once is one of the fastest ways to burn out and stall the whole process. Most people do better working through belongings in stages - a room or category at a time. I can connect you with organizers who specialize in working with downsizers and are genuinely good at the emotional side of letting go. You don't have to figure this part out alone.",
     },
     {
-      question: "Should I buy my next place before I sell, or sell first?",
-      answer: "Both options can work; it depends on your finances, comfort level, and the type of home you're moving into. We'll look at your numbers and timeline and talk through the pros and cons of each approach so you can choose what feels most secure."
+      question: "Should I buy first or sell first?",
+      answer:
+        "It depends on your finances, your comfort with risk, and what you're moving into. Buying first gives you certainty about where you're going but can mean carrying two mortgages temporarily. Selling first gives you cash in hand but requires knowing where you'll land. We'll look at your specific numbers and timeline and talk through both options honestly - including some in-between approaches like rent-backs that can give you more breathing room.",
     },
     {
-      question: "What kinds of homes work best for downsizing?",
-      answer: "Many downsizers prefer single-level homes, townhomes, or condos with minimal yard work and easy access to services. We'll focus on homes that support your health, hobbies, and long-term plans—not just something smaller on paper."
+      question: "What kinds of homes make sense for downsizing?",
+      answer:
+        "It varies a lot depending on what matters most to you. Many clients want single-level living, a smaller yard or no yard, and lower maintenance overall. Others want to stay in a neighborhood they know. Some are open to condos or townhomes; others aren't. We'll focus on homes that genuinely fit your life - not just something smaller on paper. I'll also ask about things like accessibility, proximity to family or medical care, and what you want to be able to do five or ten years from now.",
     },
     {
-      question: "Can you work with my adult children too?",
-      answer: "Absolutely. Downsizing often involves family members, and I'm happy to keep everyone in the loop while still centering your needs and preferences. Clear communication can make this process much smoother for everyone."
-    }
+      question: "My adult kids have opinions about all of this. Can you help with that?",
+      answer:
+        "Yes - and you're not alone in navigating that dynamic. Downsizing decisions often involve family members who care deeply but may not all be on the same page. I'm happy to communicate with whoever needs to be in the loop, answer questions from adult children, and help everyone work from the same factual picture instead of assumptions. At the end of the day though, this is your home and your decision. My job is to support you.",
+    },
+    {
+      question: "What does it cost to talk with you?",
+      answer:
+        "Nothing. An initial conversation is always free. If you decide you want to move forward, my commission is paid at closing - you don't pay anything out of pocket upfront. If you're not ready to sell, or it turns out this isn't the right move for you right now, that's completely okay. I'd rather be honest with you now than push you into something that doesn't fit.",
+    },
   ];
 
   const testimonials = [
     {
-      quote: "Debbie helped us let go of our family home without feeling rushed or guilty. She understood both the practical and emotional sides of downsizing.",
-      attribution: "– Empty nesters in Lake Stevens"
+      quote:
+        "We are currently living in another state and were not able to get back to Washington to prepare our home for sale. Debbie did everything - from selling unwanted items, to assisting with packing, to staging our home. The result was a SOLD sign in two days with multiple offers all over asking price. Debbie truly goes the extra mile.",
+      attribution: "Pat Davis, Lake Stevens (out-of-state seller)",
     },
     {
-      quote: "We weren't sure if we were ready, but Debbie helped us see that downsizing was the right move. Her step-by-step approach made it so much easier.",
-      attribution: "– Retirees downsizing in Marysville"
+      quote:
+        "From the beginning Debbie was there to offer what I needed to sell my condo. As a senior citizen moving out of state she guided me through the process. It was stress free and helpful. Instantly had multiple cash offers. The staging was perfection. Escrow was over and done in record time.",
+      attribution: "M. Cornell, Marysville (senior condo seller)",
     },
     {
-      quote: "She connected us with organizers and movers who understood our needs. The whole process felt supportive instead of overwhelming.",
-      attribution: "– Downsizing couple in Everett"
-    }
+      quote:
+        "She was responsive, great communication and had excellent negotiation skills. She got our home sold in less than a month - and she also helped us pack our POD, clean our home, and did dump and donation runs for us. I would use Debbie again and highly recommend her to anyone selling in Snohomish County.",
+      attribution: "K. Bryar, Snohomish County (Veteran seller)",
+    },
   ];
 
   return (
     <div className="min-h-screen">
-      <SEO title={pageSEO.downsizing.title} description={pageSEO.downsizing.description} canonical="/services/downsizing" jsonLd={buildFaqSchema(faqs)} />
+      <SEO
+        title={pageSEO.downsizing.title}
+        description={pageSEO.downsizing.description}
+        canonical="/services/downsizing"
+        jsonLd={buildFaqSchema(faqs)}
+      />
       <Navigation />
       <main>
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-          <div 
-            className="absolute inset-0 parallax-section" 
+          <div
+            className="absolute inset-0 parallax-section"
             style={{
-              backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${heroImage})`
+              backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${heroImage})`,
             }}
             role="img"
-            aria-label="Downsizing in Snohomish County"
+            aria-label="Downsizing and life transitions in Snohomish County"
           />
-          
+
           <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               className="max-w-4xl mx-auto text-backdrop"
             >
               <p className="font-script text-4xl md:text-5xl lg:text-6xl mb-6 text-secondary" aria-hidden="true">
-                For Downsizing
+                A new chapter…
               </p>
 
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-primary mb-6">
-                Downsizing in Snohomish County
+                Downsizing & Life Transitions in Snohomish County
               </h1>
 
               <p className="font-body text-lg md:text-xl text-primary max-w-3xl mx-auto">
-                Letting go of a long-time home is rarely just about square footage. It's about memories, energy, and what you want this next season of life to feel like. I help Snohomish County homeowners—often empty nesters and near-retirees—right-size into homes that better match their current lifestyle, without feeling rushed or pressured into decisions they're not ready for.
+                You've taken care of this home for years. Maybe decades. And now something has shifted - the
+                maintenance, the space, the stairs, the cost, the season of life. Figuring out what comes next is a big
+                decision, and it deserves more than a sales pitch. I help Snohomish County homeowners think it through
+                clearly, plan it carefully, and move when the time is actually right for them.
               </p>
             </motion.div>
           </div>
         </section>
 
-        {/* Here's What I'll Help You With */}
+        {/* Intro Section */}
         <section className="py-20 md:py-32 bg-background">
           <div className="container mx-auto px-4">
             <motion.div
@@ -167,24 +188,27 @@ const Downsizing = () => {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
+              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                Real talk…
+              </p>
               <h2 className="font-heading text-3xl md:text-5xl text-primary mb-8">
-                Here's what I'll help you with…
+                Downsizing Is Rarely Just About the House
               </h2>
 
-              <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-4">
+              <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  Downsizing touches your finances, family, and daily routines all at once. My job is to make the process less overwhelming and more step-by-step.
+                  It's about 30 years of accumulated life in the garage. It's the kitchen where you raised your kids.
+                  It's the question of whether you can actually afford to stay, or whether the equity in this house
+                  could fund something better. It's family members with strong opinions and a timeline that feels
+                  impossible.
                 </p>
-                <p>We'll work through:</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Clarifying your next-step vision—staying local vs. moving closer to family, single-level living, low-maintenance communities, or lock-and-leave options.</li>
-                  <li>Preparing your current home with a realistic plan for decluttering, light updates, and repairs that will actually move the needle.</li>
-                  <li>Pricing and timing strategically so you're not scrambling between two moves.</li>
-                  <li>Connecting you to trusted stagers, organizers, cleaners, and contractors who understand the needs of downsizers.</li>
-                </ul>
                 <p>
-                  You'll always know what's next and why we're doing it.
+                  I've sat at a lot of kitchen tables with people in exactly this spot. What I've learned is that the
+                  practical part - the selling, the pricing, the logistics - is actually the easier part. The harder
+                  part is figuring out what you actually want, what you can realistically do, and how to make a decision
+                  you'll feel good about a year from now.
                 </p>
+                <p>That's where we start. Not with a listing appointment. With a real conversation.</p>
               </div>
             </motion.div>
           </div>
@@ -204,7 +228,7 @@ const Downsizing = () => {
                 How it works…
               </p>
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
-                The Downsizing Process
+                What the Process Actually Looks Like
               </h2>
             </motion.div>
 
@@ -223,12 +247,8 @@ const Downsizing = () => {
                           {step.number}
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-heading text-2xl md:text-3xl text-primary mb-4">
-                            {step.title}
-                          </h3>
-                          <p className="font-body text-lg text-foreground leading-relaxed">
-                            {step.description}
-                          </p>
+                          <h3 className="font-heading text-2xl md:text-3xl text-primary mb-4">{step.title}</h3>
+                          <p className="font-body text-lg text-foreground leading-relaxed">{step.description}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -239,37 +259,8 @@ const Downsizing = () => {
           </div>
         </section>
 
-        {/* Must-Have Guide Section */}
-        <section className="py-20 md:py-32 bg-background">
-          <div className="container mx-auto px-4">
-            <motion.div
-              ref={guideRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={guideInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-              transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                Must-have guide!
-              </p>
-
-              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
-                The Snohomish County Downsizing Guide
-              </h2>
-
-              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
-                My Snohomish County Downsizing Guide walks you through what to tackle first, how to prep your home without burning out, and what to consider when choosing your next place—whether that's a condo, smaller single-family home, or something else entirely.
-              </p>
-
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-                Get the Downsizing Guide
-              </Button>
-            </motion.div>
-          </div>
-        </section>
-
         {/* What Makes Working With Me Different */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="py-20 md:py-32 bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={differentRef}
@@ -279,28 +270,63 @@ const Downsizing = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                Soft landing…
+                What's different here…
               </p>
 
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
-                What Makes Working With Me Different
+                I Show Up. All the Way.
               </h2>
 
-              <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-4">
+              <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
+                <p>Most agents will help you list your home. I help you move your life. There's a difference.</p>
                 <p>
-                  Downsizing is emotional as much as it is practical. I approach it with a mix of empathy, realism, and clear communication.
+                  For clients who need it, I've helped coordinate donation runs, packed boxes, arranged junk hauling,
+                  managed staging logistics, and been the calm point of contact when everything feels like a lot. That's
+                  not a formal service with a fee attached. It's just what I do when someone needs it.
                 </p>
-                <p>You can expect:</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>No pressure, ever. My job is to lay out your options and timing, not push you into moving before you're ready.</li>
-                  <li>Step-by-step planning that breaks an overwhelming project into smaller, doable pieces.</li>
-                  <li>An understanding of accessibility and long-term livability, so your next home actually works for you five or ten years from now.</li>
-                  <li>Steady communication so you and your family feel informed, even if multiple decision-makers are involved.</li>
-                </ul>
                 <p>
-                  You'll never be shamed for your stuff or your timeline. We move at the pace that respects your reality.
+                  I also came from 30 years in healthcare - reading complex documents, catching the details other people
+                  miss, and explaining things clearly to people who are already stressed. That same approach applies
+                  here. I'll walk you through contracts in plain language, flag the clauses that matter, and make sure
+                  you understand what you're agreeing to before you sign anything.
+                </p>
+                <p>
+                  You'll never feel rushed. You'll never feel judged for your stuff, your timeline, or your questions.
+                  We move at the pace that makes sense for your actual life.
                 </p>
               </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Must-Have Guide Section */}
+        <section className="py-20 md:py-32 bg-warm-bg">
+          <div className="container mx-auto px-4">
+            <motion.div
+              ref={guideRef}
+              initial={{ opacity: 0, y: 30 }}
+              animate={guideInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl mx-auto text-center"
+            >
+              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                A good place to start…
+              </p>
+
+              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
+                The Snohomish County Downsizing Guide
+              </h2>
+
+              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
+                Not sure where to begin? This guide walks through what to think about before you decide anything - the
+                financial questions worth asking, how to approach the sorting and prep process without burning out, and
+                what to look for in your next home. Plain language, no fluff. A good starting point whether you're six
+                months out or two years away.
+              </p>
+
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
+                Get the Downsizing Guide
+              </Button>
             </motion.div>
           </div>
         </section>
@@ -316,14 +342,16 @@ const Downsizing = () => {
               className="max-w-3xl mx-auto"
             >
               <div className="text-center mb-12">
+                <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                  Let's talk it through…
+                </p>
                 <h2 className="font-heading text-3xl md:text-5xl text-primary mb-6">
-                  Set Up a No-Obligation Downsizing Consult
+                  Request a Free Downsizing Consult
                 </h2>
                 <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
-                  Thinking about downsizing in the next year or two, but not sure where to begin? Let's talk through your goals, timing, and questions. We'll map out a rough plan so you know what to expect—whether you're ready to list soon or just starting to explore options.
-                </p>
-                <p className="font-body text-base text-muted-foreground">
-                  Share a few details below and I'll follow up with a time that works for you.
+                  No pressure, no obligation. Just a conversation about where you are, what you're thinking about, and
+                  whether this is the right time to make a move. Share a few details below and I'll follow up to find a
+                  time that works.
                 </p>
               </div>
 
@@ -353,7 +381,7 @@ const Downsizing = () => {
                     <div>
                       <Input
                         type="tel"
-                        placeholder="Phone Number"
+                        placeholder="Phone Number (optional)"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="font-body"
@@ -362,7 +390,7 @@ const Downsizing = () => {
                     <div>
                       <Input
                         type="text"
-                        placeholder="Current Home Location (City, Neighborhood)"
+                        placeholder="Where is your home? (City or neighborhood)"
                         value={formData.currentHome}
                         onChange={(e) => setFormData({ ...formData, currentHome: e.target.value })}
                         className="font-body"
@@ -370,19 +398,19 @@ const Downsizing = () => {
                     </div>
                     <div>
                       <Textarea
-                        placeholder="Tell me about your downsizing goals, timeline, and any questions you have..."
+                        placeholder="What's on your mind? Timeline, questions, what's prompting the conversation - whatever feels useful to share."
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         rows={5}
                         className="font-body"
                       />
                     </div>
-                    <Button 
-                      type="submit" 
-                      size="lg" 
+                    <Button
+                      type="submit"
+                      size="lg"
                       className="w-full bg-secondary hover:bg-secondary/90 text-white text-lg"
                     >
-                      Request a Downsizing Consult
+                      Send My Request
                     </Button>
                   </form>
                 </CardContent>
@@ -403,17 +431,17 @@ const Downsizing = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  Still feeling unsure?
+                  Good questions…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
-                  About Downsizing in Snohomish County
+                  Downsizing Questions I Hear All the Time
                 </h2>
               </div>
 
               <Accordion type="single" collapsible className="space-y-4">
                 {faqs.map((faq, index) => (
-                  <AccordionItem 
-                    key={index} 
+                  <AccordionItem
+                    key={index}
                     value={`item-${index}`}
                     className="border border-border bg-card rounded-lg px-6"
                   >
@@ -442,10 +470,10 @@ const Downsizing = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  Don't just take my word for it…
+                  In their own words…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
-                  What My Downsizing Clients Have to Say
+                  What My Clients Have to Say
                 </h2>
               </div>
 
@@ -459,11 +487,18 @@ const Downsizing = () => {
                   >
                     <Card className="h-full border-border bg-card hover:shadow-lg transition-shadow">
                       <CardContent className="p-8">
+                        <div className="flex gap-1 mb-4">
+                          {[...Array(5)].map((_, i) => (
+                            <span key={i} className="text-secondary text-xl">
+                              ★
+                            </span>
+                          ))}
+                        </div>
                         <blockquote className="font-body text-lg text-foreground leading-relaxed mb-6 italic">
                           "{testimonial.quote}"
                         </blockquote>
-                        <p className="font-body text-base text-muted-foreground">
-                          {testimonial.attribution}
+                        <p className="font-body text-base text-muted-foreground font-medium">
+                          - {testimonial.attribution}
                         </p>
                       </CardContent>
                     </Card>

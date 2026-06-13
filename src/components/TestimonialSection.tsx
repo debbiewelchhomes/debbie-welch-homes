@@ -55,7 +55,7 @@ const testimonials = [
   {
     quote:
       "Her attention to detail and proactive approach ensured that my property stood out and received the attention it deserved. Throughout the process, Debbie maintained open and transparent communication and kept me informed and reassured at all points. She went above and beyond to provide personalized guidance and support. I wholeheartedly recommend Debbie to anyone looking to sell their home with confidence.",
-    attribution: "Sara Neuendorf, Lake Stevens (out-of-area seller)",
+    attribution: "S. Neuendorf, Lake Stevens (out-of-area seller)",
   },
   {
     quote:

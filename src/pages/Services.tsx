@@ -160,7 +160,7 @@ const Services = () => {
                 zealousness, competence, foresight, and above-and-beyond research are a rarity these days."
               </blockquote>
 
-              <p className="font-body text-lg text-foreground">– Austen Swaim, PCS relocation client</p>
+              <p className="font-body text-lg text-foreground">– A. Swaim, PCS active duty relocation client</p>
             </motion.div>
           </div>
         </section>

@@ -20,7 +20,7 @@ const LakeStevens = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Living in Lake Stevens, WA | Homes for Sale | Debbie Welch Homes"
+        title="Living in Lake Stevens, WA | Homes for Sale | Daebbie Welch Homes"
         description="Thinking about buying a home in Lake Stevens, WA? A lifelong local's honest take on the lake, the schools, the commute, and what daily life actually looks like here."
         canonical="/areas/lake-stevens"
       />
@@ -31,7 +31,7 @@ const LakeStevens = () => {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(${heroImage})`,
+              backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0.1) 100%), url(${heroImage})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -40,8 +40,16 @@ const LakeStevens = () => {
           />
           <div className="container mx-auto px-4 text-center py-32 relative z-10">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-              <p className="font-script text-5xl md:text-7xl text-white mb-4 drop-shadow-lg">Lake Stevens</p>
-              <p className="font-heading text-xl md:text-2xl text-white/90 drop-shadow max-w-2xl mx-auto">
+              <p
+                className="font-script text-5xl md:text-7xl text-white mb-4"
+                style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}
+              >
+                Lake Stevens
+              </p>
+              <p
+                className="font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+                style={{ textShadow: "0 1px 6px rgba(0,0,0,0.7)" }}
+              >
                 A real lake town with a real community - and schools that make buyers drive an extra twenty minutes
                 without blinking.
               </p>

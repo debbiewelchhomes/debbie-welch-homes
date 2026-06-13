@@ -7,18 +7,11 @@ import { Check } from "lucide-react";
 import debbiePortrait from "@/assets/debbie-blazer.png";
 import aboutInterior from "@/assets/about-interior.jpg";
 import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { pageSEO, realEstateAgentSchema } from "@/data/seoData";
 import TestimonialSection from "@/components/TestimonialSection";
 
 const About = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, {
-    once: true,
-    margin: "-100px",
-  });
-
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0 },
@@ -70,53 +63,14 @@ const About = () => {
         </div>
       </section>
 
-      {/* Story Section */}
+      {/* What to Expect Section - comes first so visitor knows what they're getting */}
       <section className="py-20 md:py-32 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <motion.div
-            ref={ref}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-            variants={fadeInUp}
-            transition={{ duration: 0.6 }}
-          >
-            <p className="font-script text-3xl md:text-5xl text-secondary mb-4 text-center">A little backstory…</p>
-            <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-8 text-center">
-              Thirty Years Reading the Fine Print
-            </h2>
-            <div className="space-y-5 text-foreground text-lg leading-relaxed">
-              <p>
-                Before real estate, I spent 30 years in healthcare - medical coding, auditing, and education. My job was
-                to read documents other people skimmed, catch the detail that changed everything, and explain complex
-                information in plain language to people who were already overwhelmed.
-              </p>
-              <p>
-                Real talk: I brought that same brain to real estate. The clause on page 4 of a purchase agreement that
-                nobody reads? That's the one I flag. The inspection report that's 40 pages long and written in a way
-                that makes everything sound catastrophic? I'll walk you through what actually matters and what doesn't.
-              </p>
-              <p>
-                I'm not trying to rush you through a transaction. I'm trying to make sure you actually understand what
-                you're signing, what you're buying, and what comes next. That's what I know how to do.
-              </p>
-              <p>
-                My husband Todd is a retired Navy Veteran and Systems Engineer - so military families, PCS moves, and VA
-                loans are genuinely close to home for us. We know what it feels like to make big decisions on a tight
-                timeline with a lot of unknowns.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* What to Expect Section */}
-      <section className="py-20 md:py-32 bg-warm-bg">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
             <motion.div
+              ref={ref}
               initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              animate={isInView ? "visible" : "hidden"}
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
               className="order-2 md:order-1"
@@ -177,6 +131,37 @@ const About = () => {
               </ul>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Story Section */}
+      <section className="py-20 md:py-32 bg-warm-bg">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeInUp}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="font-script text-3xl md:text-5xl text-secondary mb-4 text-center">A little backstory…</p>
+            <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-8 text-center">
+              Thirty Years Reading the Fine Print
+            </h2>
+            <div className="space-y-5 text-foreground text-lg leading-relaxed">
+              <p>
+                Before real estate, I spent 30 years in healthcare - medical coding, auditing, and education. My job was
+                to read documents other people skimmed, catch the detail that changed everything, and explain complex
+                information in plain language to people who were already overwhelmed. The clause on page 4 of a purchase
+                agreement that nobody reads? That's the one I flag.
+              </p>
+              <p>
+                My husband Todd is a retired Navy Veteran and Systems Engineer - so military families, PCS moves, and VA
+                loans are genuinely close to home for us. We know what it feels like to make big decisions on a tight
+                timeline with a lot of unknowns.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 

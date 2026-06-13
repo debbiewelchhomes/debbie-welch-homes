@@ -65,7 +65,7 @@ const testimonials = [
   {
     quote:
       "Debbie and her team are amazing people! My first time buying a house - and with her it for sure won't ever be my last. I wouldn't hesitate to have her be my realtor again. She is patient, understanding, very nice and caring. A perfect example of what you'd dream of in a realtor.",
-    attribution: "I. Monroe (active military, first-time buyer)",
+    attribution: "I. Monroe (active military PCS, first-time buyer, remote purchase)",
   },
 ];
 

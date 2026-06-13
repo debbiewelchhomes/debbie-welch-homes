@@ -6,12 +6,15 @@ import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
 import debbiePortrait from "@/assets/debbie-blazer.png";
 import aboutInterior from "@/assets/about-interior.jpg";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { pageSEO, realEstateAgentSchema } from "@/data/seoData";
 import TestimonialSection from "@/components/TestimonialSection";
 
 const About = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0 },

@@ -16,6 +16,7 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import About from "./pages/About";
 import ExpRealty from "./pages/ExpRealty";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 import Contact from "./pages/Contact";
 import SnohomishCounty from "./pages/areas/SnohomishCounty";

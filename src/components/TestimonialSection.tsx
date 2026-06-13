@@ -20,7 +20,7 @@ const testimonials = [
   {
     quote:
       "Debbie is amazing! There are few people in the industry who are as caring, considerate, and collaborative. We worked with Debbie when the market took a turn downwards and we needed to sell our home and move for work. It was a very stressful time and Debbie was so kind, helpful, communicative, aggressive when we needed her to be, firm, and just incredible to work with. You definitely can't go wrong with Debbie.",
-    attribution: "Hill Hansen, Arlington (seller, tough market)",
+    attribution: "H. Hansen, Arlington (relocating seller, tough market)",
   },
   {
     quote:

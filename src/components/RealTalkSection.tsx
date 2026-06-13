@@ -37,7 +37,7 @@ const RealTalkSection = () => {
 
           <p className="text-lg md:text-xl leading-relaxed mb-10 text-foreground">
             A lot of people come to me expecting this process to feel
-            overwhelming. And honestly, it can be -- if no one takes the time
+            overwhelming. And honestly, it can be - if no one takes the time
             to explain what's actually happening. That's the part I care about
             most. I slow things down just enough for you to understand what
             you're looking at: the numbers, the tradeoffs, the fine print on

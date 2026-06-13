@@ -47,14 +47,14 @@ const AboutSection = () => {
                 market right now.
               </p>
               <p className="text-foreground leading-relaxed mb-4 text-justify text-lg">
-                Before real estate, I spent 30 years in healthcare -- medical
+                Before real estate, I spent 30 years in healthcare - medical
                 coding, auditing, and education. That work taught me to read
                 the fine print, catch what gets buried on page four, and
                 explain complicated information in plain language. Those habits
                 follow me into every transaction.
               </p>
               <p className="text-foreground leading-relaxed mb-4 text-justify text-lg">
-                Most of my clients are going through something significant --
+                Most of my clients are going through something significant -
                 downsizing after the kids leave, relocating for military orders,
                 or buying for the first time and not quite sure where to start.
                 I've been through versions of all of it. I'm the wife of a

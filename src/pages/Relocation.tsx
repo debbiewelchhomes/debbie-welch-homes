@@ -283,8 +283,8 @@ const Relocation = () => {
                   when the timeline is tight.
                 </p>
                 <p>
-                  For VA financing, I work closely with Jared Paul at CrossCountry Mortgage - a Marine veteran and
-                  Marysville native who actually understands VA loans and Snohomish County. Getting pre-approved with
+                  For VA financing, I work closely with Jared Paul at CrossCountry Mortgage - a Marine Veteran and
+                  Marysville native who actually specializes in VA loans and Snohomish County. Getting pre-approved with
                   the right lender makes a real difference in how your offer is received. My goal: by the time you show
                   up with a moving truck, you should already feel like you know where you landed.
                 </p>

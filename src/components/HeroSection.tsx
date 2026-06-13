@@ -53,7 +53,7 @@ const HeroSection = () => {
                 className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6"
                 asChild
               >
-                
+                <a
                   href="https://cal.com/debbie.welch.homes"
                   target="_blank"
                   rel="noopener noreferrer"

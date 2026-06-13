@@ -1,29 +1,16 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import { pageSEO } from "@/data/seoData";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import heroImage from "@/assets/hero-lake-stevens.jpg";
 
 const LakeStevens = () => {
-  const introRef = useRef(null);
-  const lakeRef = useRef(null);
-  const loveRef = useRef(null);
-  const schoolsRef = useRef(null);
-  const lifeRef = useRef(null);
-  const buyersRef = useRef(null);
-  const ctaRef = useRef(null);
-
-  const introInView = useInView(introRef, { once: true, margin: "-100px" });
-  const lakeInView = useInView(lakeRef, { once: true, margin: "-100px" });
-  const loveInView = useInView(loveRef, { once: true, margin: "-100px" });
-  const schoolsInView = useInView(schoolsRef, { once: true, margin: "-100px" });
-  const lifeInView = useInView(lifeRef, { once: true, margin: "-100px" });
-  const buyersInView = useInView(buyersRef, { once: true, margin: "-100px" });
-  const ctaInView = useInView(ctaRef, { once: true, margin: "-100px" });
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -39,9 +26,18 @@ const LakeStevens = () => {
       />
       <Navigation />
       <main>
-        {/* Hero Section */}
-        <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center bg-warm-bg bg-cover bg-center">
-          <div className="absolute inset-0 bg-black/20"></div>
+        {/* Hero */}
+        <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(${heroImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            role="img"
+            aria-label="Lake Stevens Washington dock and pier extending over the lake with boats and Pacific Northwest treeline"
+          />
           <div className="container mx-auto px-4 text-center py-32 relative z-10">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
               <p className="font-script text-5xl md:text-7xl text-white mb-4 drop-shadow-lg">Lake Stevens</p>
@@ -53,173 +49,114 @@ const LakeStevens = () => {
           </div>
         </section>
 
-        {/* Intro Section */}
-        <section className="py-20 md:py-32 bg-background">
+        {/* Intro */}
+        <section className="py-16 md:py-24 bg-background">
           <div className="container mx-auto px-4">
             <motion.div
-              ref={introRef}
+              ref={ref}
               initial="hidden"
-              animate={introInView ? "visible" : "hidden"}
+              animate={isInView ? "visible" : "hidden"}
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-4">I know this town…</p>
-              <h1 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-8">
-                Lake Stevens, WA - The Honest Version
-              </h1>
-
-              <div className="text-foreground text-lg leading-relaxed space-y-5">
-                <p>
-                  I lived in the Soper Hill area of northwest Lake Stevens for about ten years. I know what the traffic
-                  looks like on a Monday morning, where the hidden parking is at the Farmer's Market, and which parks
-                  fill up first on a hot July weekend. What's below is what I actually know from living here - not a
-                  generic city overview.
-                </p>
-                <p>
-                  Lake Stevens has grown fast, but it's held onto something real. The lake is genuinely central to
-                  summer life here. The school district is one of the strongest in the county. The commute is honest
-                  work. It's a great fit for the right buyer - and I'll tell you straight if that's you.
-                </p>
-              </div>
+              <h1 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">Lake Stevens, WA</h1>
+              <p className="text-foreground text-lg leading-relaxed">
+                I lived in the Soper Hill area of northwest Lake Stevens for about ten years - I know the Monday morning
+                traffic, where the hidden parking is at the Farmer's Market, and which parks fill up first on a hot July
+                weekend. Lake Stevens has grown fast but held onto something real. The lake is central to summer life
+                here, the school district is the strongest in the county, and the commute is honest work. Great fit for
+                the right buyer.
+              </p>
             </motion.div>
           </div>
         </section>
 
-        {/* The Lake Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
-          <div className="container mx-auto px-4">
+        {/* Pros and Cons */}
+        <section className="py-16 md:py-24 bg-warm-bg">
+          <div className="container mx-auto px-4 max-w-6xl mx-auto">
             <motion.div
-              ref={lakeRef}
               initial="hidden"
-              animate={lakeInView ? "visible" : "hidden"}
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">The actual lake…</p>
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-8">About the Lake Itself</h2>
-
-              <div className="text-foreground text-lg leading-relaxed space-y-5">
-                <p>
-                  The lake is about 1,000 acres and most of the shoreline is private - so if you're not buying a
-                  lakefront home, you're using the public access points, of which there are several good ones. The city
-                  maintains four main parks on the water: Lundeen Park, North Cove Park, Davies Beach, and Sunset Beach
-                  Park, plus the North Lakeshore Swim Beach area.
-                </p>
-                <p>
-                  Boat launches are at North Cove and Davies Beach - both two-lane launches with docks and paid parking.
-                  Lundeen has a sandy beach, dock, playground, and basketball court - it's the go-to with kids. North
-                  Cove is right downtown, walkable to coffee and the Mill area. Davies is on the west shore with a good
-                  swim area and two launches, one for motorized boats and one for non-motorized. Both Lundeen and North
-                  Cove went through major renovations in recent years and the upgrades show.
-                </p>
-                <p>
-                  On the water itself: swimming, boating, fishing (rainbow trout stocked regularly, yellow perch
-                  year-round), water skiing, jet skis - it's an active lake, not a quiet one. Summer weekends get busy.
-                  Parking fills up. That's just the reality. But it's a genuinely fun lake and that access is a real
-                  part of what you're paying for when you buy here.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Love It / Might Not Section */}
-        <section className="py-20 md:py-32 bg-background">
-          <div className="container mx-auto px-4">
-            <motion.div
-              ref={loveRef}
-              initial="hidden"
-              animate={loveInView ? "visible" : "hidden"}
-              variants={fadeInUp}
-              transition={{ duration: 0.6 }}
-              className="max-w-6xl mx-auto"
-            >
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-12 text-center">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-10 text-center">
                 The Honest Pros and Cons
               </h2>
-
-              <div className="grid md:grid-cols-2 gap-12">
+              <div className="grid md:grid-cols-2 gap-10">
                 <div>
-                  <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-6">Why You'll Love It</h3>
-                  <ul className="space-y-4 text-foreground">
-                    <li className="flex gap-3">
-                      <span className="text-secondary font-bold mt-1">•</span>
+                  <h3 className="font-heading text-xl font-bold text-primary mb-4">Why buyers choose it</h3>
+                  <ul className="space-y-3 text-foreground text-base">
+                    <li className="flex gap-2">
+                      <span className="text-secondary font-bold">•</span>
                       <span>
-                        The school district. Lake Stevens is ranked #1 in Snohomish County by Niche with an A- rating.
-                        Families specifically move here for it - and it genuinely shows in the community.
+                        <strong>#1 school district in Snohomish County</strong> (Niche A-, 24th statewide). Families
+                        specifically move here for it.
                       </span>
                     </li>
-                    <li className="flex gap-3">
-                      <span className="text-secondary font-bold mt-1">•</span>
+                    <li className="flex gap-2">
+                      <span className="text-secondary font-bold">•</span>
                       <span>
-                        A real lake with real public access. Four parks, two boat launches, swimming, fishing, boating.
-                        Summer here has a rhythm to it that's hard to find at this price point.
+                        <strong>A real lake with real access.</strong> Four public parks, two boat launches, swimming,
+                        fishing, water skiing, jet skis.
                       </span>
                     </li>
-                    <li className="flex gap-3">
-                      <span className="text-secondary font-bold mt-1">•</span>
+                    <li className="flex gap-2">
+                      <span className="text-secondary font-bold">•</span>
                       <span>
-                        Two distinct town personalities: the east side has the revitalized old downtown, the Mill
-                        complex, North Cove Park, Lundeen, local restaurants, a Farmer's Market, and Aquafest. The west
-                        side along Highway 9 (Frontier Village area) has Costco and larger box stores for the practical
-                        stuff.
+                        <strong>More house for the money.</strong> Median around $680-715K with established
+                        neighborhoods and room to spread out.
                       </span>
                     </li>
-                    <li className="flex gap-3">
-                      <span className="text-secondary font-bold mt-1">•</span>
+                    <li className="flex gap-2">
+                      <span className="text-secondary font-bold">•</span>
                       <span>
-                        More house for the money than most of western Washington at a comparable quality of life. Median
-                        home prices around $680-715K, with neighborhoods that feel established and well-kept.
+                        <strong>Two distinct town personalities.</strong> East side: revitalized downtown, the Mill,
+                        local restaurants, Farmer's Market, Aquafest. West side (Frontier Village): Costco and big box
+                        for the practical stuff.
                       </span>
                     </li>
-                    <li className="flex gap-3">
-                      <span className="text-secondary font-bold mt-1">•</span>
+                    <li className="flex gap-2">
+                      <span className="text-secondary font-bold">•</span>
                       <span>
-                        Community events that people actually show up for - Aquafest, holiday markets, the Farmer's
-                        Market, festivals at the Mill. It doesn't feel like a town that's just going through the
-                        motions.
+                        <strong>Real community events.</strong> Aquafest, holiday markets, the Farmer's Market - people
+                        actually show up.
                       </span>
                     </li>
                   </ul>
                 </div>
-
                 <div>
-                  <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-6">
-                    What to Think About First
-                  </h3>
-                  <ul className="space-y-4 text-foreground">
-                    <li className="flex gap-3">
-                      <span className="text-secondary font-bold mt-1">•</span>
+                  <h3 className="font-heading text-xl font-bold text-primary mb-4">What to think about first</h3>
+                  <ul className="space-y-3 text-foreground text-base">
+                    <li className="flex gap-2">
+                      <span className="text-secondary font-bold">•</span>
                       <span>
-                        The commute is real. I'm not going to sugarcoat it. Commuting anywhere in Snohomish County takes
-                        time - we have mountains and foothills to the east, Puget Sound to the west, and I-5 and Highway
-                        9 as the main north-south routes. US Route 2 heads toward Monroe and the passes. Boeing traffic.
-                        The US 2 trestle. If you're commuting south to Seattle or east to the Eastside, plan your route
-                        carefully and drive it at commute time before you buy.
+                        <strong>The commute is real.</strong> I-5, Hwy 9, and US Route 2 are your main routes. Boeing
+                        traffic, the US 2 trestle - drive your actual commute at actual commute time before you buy.
                       </span>
                     </li>
-                    <li className="flex gap-3">
-                      <span className="text-secondary font-bold mt-1">•</span>
+                    <li className="flex gap-2">
+                      <span className="text-secondary font-bold">•</span>
                       <span>
-                        It's grown fast, and some of that growth is visible. Parts of town - especially the western
-                        corridor - feel suburban in the way that growing towns do. If you're looking for walkability or
-                        a dense neighborhood feel, this probably isn't your place.
+                        <strong>It's grown fast.</strong> The western corridor feels suburban. If walkability is
+                        important, this probably isn't your place.
                       </span>
                     </li>
-                    <li className="flex gap-3">
-                      <span className="text-secondary font-bold mt-1">•</span>
+                    <li className="flex gap-2">
+                      <span className="text-secondary font-bold">•</span>
                       <span>
-                        The lake is great, but it's not private. If you're not on the water, summer access means public
-                        parks and parking fees. Worth knowing going in.
+                        <strong>The lake is public, not private.</strong> Great access - but summer means crowds and
+                        parking fees at the parks.
                       </span>
                     </li>
-                    <li className="flex gap-3">
-                      <span className="text-secondary font-bold mt-1">•</span>
+                    <li className="flex gap-2">
+                      <span className="text-secondary font-bold">•</span>
                       <span>
-                        Further from the I-5 corridor than Marysville or Everett. The tradeoff in beauty and price is
-                        real, but so is the extra distance if your job pulls you toward the freeway.
+                        <strong>Further from I-5</strong> than Marysville or Everett. The beauty-and-price tradeoff is
+                        real, but so is the distance.
                       </span>
                     </li>
                   </ul>
@@ -229,159 +166,75 @@ const LakeStevens = () => {
           </div>
         </section>
 
-        {/* Schools Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
-          <div className="container mx-auto px-4">
+        {/* Quick Facts */}
+        <section className="py-16 md:py-24 bg-background">
+          <div className="container mx-auto px-4 max-w-4xl">
             <motion.div
-              ref={schoolsRef}
               initial="hidden"
-              animate={schoolsInView ? "visible" : "hidden"}
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">Worth knowing…</p>
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-8">The Schools</h2>
-
-              <div className="text-foreground text-lg leading-relaxed space-y-5">
-                <p>
-                  The Lake Stevens School District is ranked #1 in Snohomish County by Niche with an A- rating, and 24th
-                  out of 247 districts statewide by SchoolDigger. That's not marketing - those are real numbers, and
-                  families who've done their homework know it.
-                </p>
-                <p>
-                  Lake Stevens Senior High School performs above state average in both English Language Arts and Math,
-                  with a four-year graduation rate consistently in the 82-89% range - higher than the state average.
-                  Five district schools were recognized by the Washington State Board of Education in the 2024-25 school
-                  year for student achievement and growth. Elementary standouts include Stevens Creek and Glenwood.
-                </p>
-                <p>
-                  This is one of the main reasons families from Boeing, tech, and healthcare are making the commute from
-                  Lake Stevens rather than buying closer to work. The school district is genuinely one of the strongest
-                  selling points in this part of the county - and it's been consistent, not just a flash in the
-                  rankings.
-                </p>
-                <div className="mt-6">
-                  <a
-                    href="https://www.lkstevens.wednet.edu"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block p-4 bg-background rounded-lg border border-border hover:border-secondary transition-colors text-foreground hover:text-secondary font-medium"
-                  >
-                    Lake Stevens School District →
-                  </a>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-8 text-center">Quick Facts</h2>
+              <div className="grid md:grid-cols-3 gap-6 text-center mb-10">
+                <div className="bg-warm-bg p-6 rounded-lg">
+                  <p className="font-heading text-2xl font-bold text-secondary mb-1">#1</p>
+                  <p className="text-foreground text-sm">School district in Snohomish County (Niche)</p>
+                </div>
+                <div className="bg-warm-bg p-6 rounded-lg">
+                  <p className="font-heading text-2xl font-bold text-secondary mb-1">~$695K</p>
+                  <p className="text-foreground text-sm">Median home price</p>
+                </div>
+                <div className="bg-warm-bg p-6 rounded-lg">
+                  <p className="font-heading text-2xl font-bold text-secondary mb-1">4 parks</p>
+                  <p className="text-foreground text-sm">Public lake access (2 boat launches)</p>
                 </div>
               </div>
-            </motion.div>
-          </div>
-        </section>
 
-        {/* Local Life Section */}
-        <section className="py-20 md:py-32 bg-background">
-          <div className="container mx-auto px-4">
-            <motion.div
-              ref={lifeRef}
-              initial="hidden"
-              animate={lifeInView ? "visible" : "hidden"}
-              variants={fadeInUp}
-              transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto"
-            >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">Where to eat, gather…</p>
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-8">
-                Local Life in Lake Stevens
-              </h2>
-
-              <div className="text-foreground text-lg leading-relaxed space-y-5">
-                <p>
-                  The downtown east side has quietly become a real destination. Francisco's for Mexican food. LJ's for a
-                  neighborhood spot. Fuente de Cafe for good coffee. Lake Stevens Brewery and The Rustic Cork have added
-                  a newer, livelier dimension to the local food and drink scene. Food trucks have become a regular
-                  presence in the warmer months. Nothing fancy, nothing trying too hard - just good local options that
-                  didn't exist ten years ago.
-                </p>
-                <p>
-                  The Mill on Lake Stevens is the anchor of the downtown waterfront - a revitalized historic complex
-                  that hosts the Farmer's Market, Aquafest (the big summer festival on the lake), holiday markets, and
-                  other community events throughout the year. North Cove Park and Lundeen Park both got significant
-                  overhauls in recent years and are genuinely beautiful now.
-                </p>
-                <p>
-                  For the practical day-to-day stuff - groceries, hardware, errands - the Frontier Village area on the
-                  Highway 9 west corridor has Costco and most of the larger retailers you'd need. It's not charming, but
-                  it's convenient.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Who Buys Here Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
-          <div className="container mx-auto px-4">
-            <motion.div
-              ref={buyersRef}
-              initial="hidden"
-              animate={buyersInView ? "visible" : "hidden"}
-              variants={fadeInUp}
-              transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto"
-            >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">Who lands here…</p>
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-8">
-                Who's Buying in Lake Stevens
-              </h2>
-
-              <div className="text-foreground text-lg leading-relaxed space-y-5">
-                <p>
-                  Lake Stevens tends to attract buyers who've done the math and decided the tradeoff is worth it. The
-                  median household income here is around $122,000 and the population is growing fast - about 24% from
-                  2019 to 2024, with projections pushing toward 44,000 residents by 2026.
-                </p>
-                <p>
-                  The biggest buyer profiles I see: families moving north from King County who've been priced out of
-                  comparable neighborhoods closer to work. Tech workers - especially from Microsoft and Amazon on the
-                  Eastside - who want more house and a better school district than their budget buys closer in. Boeing
-                  employees from the Everett plant who want a real community feel without going too far from work.
-                  Healthcare workers. Remote workers who can absorb the commute because they're not making it every day.
-                </p>
-                <p>
-                  What they have in common: they're choosing quality of life and school district over commute
-                  convenience. Most of them have run the numbers and decided that the drive is the price of admission
-                  for what Lake Stevens offers. That calculation is real - and it's worth making honestly before you
-                  commit.
-                </p>
-                <p>
-                  If you're wondering whether Lake Stevens makes sense for your situation - your commute, your budget,
-                  your priorities - that's exactly the kind of conversation I'm happy to have before you start touring
-                  homes.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Homes For Sale Section */}
-        <section className="py-20 md:py-32 bg-background">
-          <div className="container mx-auto px-4">
-            <motion.div
-              ref={ctaRef}
-              initial="hidden"
-              animate={ctaInView ? "visible" : "hidden"}
-              variants={fadeInUp}
-              transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">Ready to look…</p>
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">
-                Homes for Sale in Lake Stevens
-              </h2>
-              <p className="text-foreground text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-                Browse current listings in Lake Stevens - or reach out and I'll put together a custom search based on
-                what you're actually looking for. I know the neighborhoods here well enough to tell you which ones to
-                look at first.
+              <h3 className="font-heading text-xl font-bold text-primary mb-3">Local favorites</h3>
+              <p className="text-foreground text-base leading-relaxed mb-6">
+                Francisco's · LJ's · Fuente de Cafe · Lake Stevens Brewery · The Rustic Cork · The Mill complex ·
+                Aquafest · Farmer's Market
               </p>
 
+              <h3 className="font-heading text-xl font-bold text-primary mb-3">Who buys here</h3>
+              <p className="text-foreground text-base leading-relaxed mb-4">
+                Families choosing school district over commute. Boeing and tech workers (Microsoft, Amazon) moving north
+                from King County. Remote workers who don't commute daily. Healthcare workers. Buyers who've done the
+                math and decided the tradeoff is worth it.
+              </p>
+
+              <a
+                href="https://www.lkstevens.wednet.edu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-secondary hover:underline font-medium text-sm"
+              >
+                Lake Stevens School District →
+              </a>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-16 md:py-24 bg-warm-bg">
+          <div className="container mx-auto px-4 max-w-3xl text-center">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeInUp}
+              transition={{ duration: 0.6 }}
+            >
+              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">Ready to look…</p>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
+                Homes for Sale in Lake Stevens
+              </h2>
+              <p className="text-foreground text-lg leading-relaxed mb-8">
+                Browse current listings or reach out and I'll put together a custom search. I know the neighborhoods
+                well enough to tell you which ones to look at first.
+              </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>
                   <a

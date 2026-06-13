@@ -225,7 +225,7 @@ const LakeStevens = () => {
                   This is one of the main reasons families from Boeing, tech, and healthcare are making the commute from Lake Stevens rather than buying closer to work. The school district is genuinely one of the strongest selling points in this part of the county - and it's been consistent, not just a flash in the rankings.
                 </p>
                 <div className="mt-6">
-                  
+                  <a
                     href="https://www.lkstevens.wednet.edu"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -331,7 +331,7 @@ const LakeStevens = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>
-                  
+                  <a
                     href="https://debbiewelch.exprealty.com/index?advanced=1&display=Snohomish&areas%5B%5D=county:Snohomish:wa&beds=0&baths=0&min=0&max=100000000&minacres=0&maxacres=50000&minfootage=0&maxfootage=30000&walkscore=&yearbuilt=0&types%5B%5D=2&types%5B%5D=3&types%5B%5D=1&sortby=listings.listingdate+DESC&ppc=Loveable+Website&addht=LoveableWebsite&agency_photos=&view_timing=2"
                     target="_blank"
                     rel="noopener noreferrer"

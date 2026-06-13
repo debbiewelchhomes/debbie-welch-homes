@@ -35,18 +35,23 @@ const RealTalkSection = () => {
             Real estate does not have to feel pushy, confusing, or rushed.
           </h2>
 
-          <p className="text-lg md:text-xl leading-relaxed mb-10 text-foreground">
-            A lot of people come to me expecting this process to feel
-            overwhelming. And honestly, it can be - if no one takes the time
-            to explain what's actually happening. That's the part I care about
-            most. I slow things down just enough for you to understand what
-            you're looking at: the numbers, the tradeoffs, the fine print on
-            page four. Thirty years reading healthcare contracts taught me that
-            the details buried in the middle of a document are usually the ones
-            that matter most. That same habit follows me into every
-            transaction. You will never feel pushed into a decision you don't
-            fully understand.
-          </p>
+          <div className="text-lg md:text-xl leading-relaxed mb-10 text-foreground space-y-6">
+            <p>
+              A lot of people come to me expecting this process to feel
+              overwhelming. And honestly, it can be - if no one takes the time
+              to explain what's actually happening.
+            </p>
+            <p>
+              That's the part I care about
+              most. I slow things down just enough for you to understand what
+              you're looking at: the numbers, the tradeoffs, the fine print on
+              page four. Thirty years reading healthcare contracts taught me that
+              the details buried in the middle of a document are usually the ones
+              that matter most. That same habit follows me into every
+              transaction. You will never feel pushed into a decision you don't
+              fully understand.
+            </p>
+          </div>
 
           <Button
             size="lg"

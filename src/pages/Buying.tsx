@@ -6,12 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import heroImage from "@/assets/hero-buying.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -26,7 +21,7 @@ const Buying = () => {
   const formRef = useRef(null);
   const faqRef = useRef(null);
   const testimonialRef = useRef(null);
-  
+
   const introInView = useInView(introRef, { once: true, margin: "-100px" });
   const processInView = useInView(processRef, { once: true, margin: "-100px" });
   const guideInView = useInView(guideRef, { once: true, margin: "-100px" });
@@ -40,14 +35,14 @@ const Buying = () => {
     name: "",
     email: "",
     phone: "",
-    message: ""
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Form submitted!",
-      description: "I'll be in touch soon to set up your property search.",
+      title: "Got it - thank you.",
+      description: "I'll follow up soon to get your search set up.",
     });
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
@@ -55,94 +50,117 @@ const Buying = () => {
   const buyingSteps = [
     {
       number: "01",
-      title: "Clarity & Pre-Approval",
-      description: "We start with a strategy session to talk through your goals, timing, and non-negotiables. I'll connect you with trusted lenders (if needed), and we'll get you pre-approved so you're shopping with real numbers."
+      title: "Get Clear on What You Actually Want",
+      description:
+        "Before we look at a single listing, we talk. What does the right home actually look like for your life right now - and two or five years from now? Budget, location, commute, schools, yard, stairs, layout. I ask the questions most people forget to ask themselves until they're standing in a house they don't love.",
     },
     {
       number: "02",
-      title: "Neighborhood Match & Home Search",
-      description: "We'll narrow in on the Snohomish County areas that make sense for your lifestyle—whether that's Lake Stevens, Everett, Marysville, Snohomish, or nearby—and set up a curated search that doesn't waste your time."
+      title: "Get Pre-Approved With the Right Lender",
+      description:
+        "A pre-approval isn't just paperwork - it tells you what you can actually afford, what your monthly payment looks like in real numbers, and whether there's a loan program that fits your situation better than you realized. I'll connect you with trusted lenders who explain your options clearly, not just hand you a number and move on.",
     },
     {
       number: "03",
-      title: "Touring & Evaluating Homes",
-      description: "As we tour homes (in person or virtually), I'll walk you through both the highlights and the \"things to think about,\" so you can evaluate condition, layout, and long-term fit—not just pretty photos."
+      title: "Search Smart, Tour Well",
+      description:
+        "We'll focus on the Snohomish County areas that actually fit your criteria - Lake Stevens, Everett, Marysville, Snohomish, Arlington, Bothell, wherever makes sense. When we tour homes, I'll tell you what I see - the good, the things to think about, and the things that would make me pause. Not just listing-photo enthusiasm.",
     },
     {
       number: "04",
-      title: "Offer Strategy & Negotiation",
-      description: "When you're ready, we'll build an offer that's competitive but thoughtful, reviewing terms like contingencies, timelines, and risk. I'll negotiate on your behalf and keep you fully informed throughout."
+      title: "Make a Competitive, Thoughtful Offer",
+      description:
+        "When you find the right home, we'll build an offer that's grounded in data - recent sales, current competition, what the terms actually mean for your risk. I'll explain every part of the contract in plain language before you sign anything. No 'just trust me, this is standard.'",
     },
     {
       number: "05",
-      title: "From Contract to Keys",
-      description: "Once you're under contract, I'll coordinate inspections, appraisals, paperwork, and communication with your lender and escrow so nothing slips through the cracks. My goal is a smooth, surprisingly calm path to closing."
-    }
+      title: "From Contract to Keys - Without the Chaos",
+      description:
+        "Once you're under contract, I manage the timeline - inspections, appraisals, deadlines, lender communication, escrow coordination. You'll always know what's happening and what's coming next. My job is to get you to closing day without last-minute scrambles or surprises you should have been warned about.",
+    },
   ];
 
   const faqs = [
     {
-      question: "How competitive is the market right now for buyers?",
-      answer: "It depends on the price point and the specific area of Snohomish County. Some neighborhoods and price ranges still move quickly, while others give buyers a little more breathing room. I'll walk you through up-to-date data for the cities you're considering so you know what to expect before we start writing offers."
+      question: "How competitive is the Snohomish County market right now for buyers?",
+      answer:
+        "It varies a lot by price point and area. Some neighborhoods and price ranges still move fast with multiple offers; others give buyers more breathing room and room to negotiate. I'll walk you through current data for the specific areas you're considering before we start writing offers - so you know what you're walking into, not after the fact.",
     },
     {
-      question: "How much do I need for a down payment?",
-      answer: "Many buyers purchase with less than 20% down, depending on the loan program and their overall financial picture. Your ideal down payment will depend on your goals, monthly comfort level, and lender recommendations. I'll connect you with trusted lenders who can explain your options clearly so we can search with real numbers."
+      question: "How much do I actually need for a down payment?",
+      answer:
+        "Less than most people think, depending on your loan type and financial picture. Conventional loans can go as low as 3-5% down. FHA is 3.5%. VA loans for qualified veterans require zero down. Your ideal down payment depends on your goals, your monthly comfort level, and what your lender recommends for your situation. I'll connect you with someone who will explain this clearly so we can search with real numbers.",
     },
     {
       question: "Do I need to sell my current home before I buy?",
-      answer: "Not always. Some buyers sell first, some buy first, and others use contingent offers or creative strategies. We'll look at your finances, timeline, and risk tolerance and decide together what makes the most sense for you."
+      answer:
+        "Not necessarily. Some buyers sell first, some buy first, and others use contingent offers or bridge strategies. There's no universal right answer - it depends on your finances, your timeline, and how much risk you're comfortable with. We'll look at your specific situation and talk through the options honestly before you decide.",
     },
     {
-      question: "What are the biggest 'hidden' costs of buying?",
-      answer: "In addition to your down payment, you'll want to plan for closing costs, inspections, potential appraisal gaps, and move-in expenses like utilities, small repairs, or new furnishings. I'll outline these early so there are fewer surprises and we can budget realistically."
+      question: "What are the costs beyond the down payment I should plan for?",
+      answer:
+        "Good question to ask early. Plan for closing costs (typically 2-3% of the purchase price), inspection fees, a possible appraisal gap if the home doesn't appraise at purchase price, and move-in expenses like immediate repairs, utilities setup, and whatever the new place needs. I'll outline realistic numbers early so nothing blindsides you at the finish line.",
     },
     {
-      question: "How long does it usually take to buy a home?",
-      answer: "Once you're under contract, most purchases in our area close in roughly 30–45 days, depending on financing. The search phase can be very quick or take a bit longer based on your criteria and the market. I'll help you set a realistic timeline so you know what to expect."
-    }
+      question: "How long does buying a home usually take?",
+      answer:
+        "Once you're under contract, most purchases in Snohomish County close in 30-45 days depending on financing. The search phase varies - some buyers find their home in a few weeks, others take a few months. It depends on inventory, your criteria, and the market. I'll help you set a realistic timeline so you can plan around it.",
+    },
+    {
+      question: "What if I find a home I love but something feels off?",
+      answer:
+        "Tell me. That feeling is worth paying attention to. Sometimes it's something fixable - a cosmetic issue, a negotiable repair. Sometimes it's a real red flag. My job is to help you figure out which is which, not to keep the deal moving at all costs. I'd rather you walk away from the wrong house than close on it.",
+    },
   ];
 
   const testimonials = [
     {
-      quote: "Debbie made our first home purchase feel manageable instead of overwhelming. She explained everything in plain language and never made us feel rushed or pressured.",
-      attribution: "– First-time buyers in Lake Stevens"
+      quote:
+        "This was my first attempt at buying a home on my own and I knew absolutely nothing. Being a USAF Veteran using a VA loan during a hot sellers market didn't even phase her. She was so knowledgeable and caring, had a fantastic sense of humor, and was on top of everything for me. She was a great advocate for me and she will be for you as well.",
+      attribution: "L. Lawless, Lake Stevens (USAF Veteran, first-time buyer)",
     },
     {
-      quote: "We had very specific criteria and a tight budget. Debbie helped us find a home that checked all our boxes without compromising on what mattered most to our family.",
-      attribution: "– Growing family in Marysville"
+      quote:
+        "We found Debbie on the Internet and chose her because of the good reviews. I would give her 10 stars if possible - she was always a step ahead and treated the process like she was buying the house for herself. She gave us the confidence to make the right decision even without seeing the house ourselves. That kind of expertise was priceless.",
+      attribution: "Vanessa Gerhard, Lake Stevens (buyer, PCS from Germany)",
     },
     {
-      quote: "Her knowledge of Snohomish County neighborhoods saved us so much time. She knew exactly which areas would fit our commute and lifestyle before we even started touring.",
-      attribution: "– Relocating buyers in Everett"
-    }
+      quote:
+        "Debbie and her team are amazing people! My first time buying a house - and with her it for sure won't ever be my last. I wouldn't hesitate to have her be my realtor again. She is patient, understanding, very nice and caring. A perfect example of what you'd dream of in a realtor.",
+      attribution: "I. Monroe (active military, first-time buyer)",
+    },
   ];
 
   return (
     <div className="min-h-screen">
-      <SEO title={pageSEO.buying.title} description={pageSEO.buying.description} canonical="/services/buying" jsonLd={buildFaqSchema(faqs)} />
+      <SEO
+        title={pageSEO.buying.title}
+        description={pageSEO.buying.description}
+        canonical="/services/buying"
+        jsonLd={buildFaqSchema(faqs)}
+      />
       <Navigation />
       <main>
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-          <div 
-            className="absolute inset-0 parallax-section" 
+          <div
+            className="absolute inset-0 parallax-section"
             style={{
-              backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${heroImage})`
+              backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${heroImage})`,
             }}
             role="img"
-            aria-label="Buying a home in Snohomish County"
+            aria-label="Buying a home in Snohomish County WA"
           />
-          
+
           <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               className="max-w-4xl mx-auto text-backdrop"
             >
               <p className="font-script text-4xl md:text-5xl lg:text-6xl mb-6 text-secondary" aria-hidden="true">
-                For Buyers
+                Finding your place…
               </p>
 
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-primary mb-6">
@@ -150,13 +168,16 @@ const Buying = () => {
               </h1>
 
               <p className="font-body text-lg md:text-xl text-primary max-w-3xl mx-auto">
-                Buying a home here isn't just about winning a bidding war—it's about choosing a place that actually fits your life. I help buyers in Lake Stevens, Everett, Marysville, Snohomish, and surrounding Snohomish County communities understand the market, compare neighborhoods, and move forward with clarity instead of panic.
+                Buying a home is one of the biggest financial decisions most people make. It deserves more than a rushed
+                search and a stack of paperwork you don't fully understand. I help buyers in Lake Stevens, Everett,
+                Marysville, Snohomish, Arlington, and surrounding communities move through the process with clear
+                information, honest guidance, and someone in their corner who actually gives a damn about the outcome.
               </p>
             </motion.div>
           </div>
         </section>
 
-        {/* Here's What I'll Help You With */}
+        {/* Intro Section */}
         <section className="py-20 md:py-32 bg-background">
           <div className="container mx-auto px-4">
             <motion.div
@@ -166,23 +187,25 @@ const Buying = () => {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <h2 className="font-heading text-3xl md:text-5xl text-primary mb-8">
-                Here's what I'll help you with…
-              </h2>
+              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                Here's what I know…
+              </p>
+              <h2 className="font-heading text-3xl md:text-5xl text-primary mb-8">The Search Is Only Part of It</h2>
 
-              <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-4">
+              <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  From your very first search to the day you get keys, you shouldn't have to guess your way through the process. I'll help you:
+                  Most people come into the buying process thinking it's mostly about finding the right house. It is -
+                  but it's also about understanding what you can actually afford, what the inspection is really telling
+                  you, what the contract terms mean, and whether the neighborhood is going to feel right six months
+                  after you move in.
                 </p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Clarify your budget and comfort zone with your lender.</li>
-                  <li>Understand how different areas compare for commute, schools, and amenities.</li>
-                  <li>Read between the lines of listings and spot red flags early.</li>
-                  <li>Craft smart, competitive offers that still respect your risk tolerance.</li>
-                </ul>
                 <p>
-                  You'll always know what we're doing, why we're doing it, and what comes next.
+                  I came from 30 years in healthcare where my job was to read complex documents carefully and explain
+                  them clearly to people who were already stressed. That's exactly what I do here. I'll walk you through
+                  every step in plain language, flag the things worth paying attention to, and make sure you feel
+                  informed - not just moved along.
                 </p>
+                <p>I'm not trying to close a deal. I'm trying to help you buy the right home.</p>
               </div>
             </motion.div>
           </div>
@@ -202,7 +225,7 @@ const Buying = () => {
                 How it works…
               </p>
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
-                The Buying Process
+                What the Process Actually Looks Like
               </h2>
             </motion.div>
 
@@ -221,12 +244,8 @@ const Buying = () => {
                           {step.number}
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-heading text-2xl md:text-3xl text-primary mb-4">
-                            {step.title}
-                          </h3>
-                          <p className="font-body text-lg text-foreground leading-relaxed">
-                            {step.description}
-                          </p>
+                          <h3 className="font-heading text-2xl md:text-3xl text-primary mb-4">{step.title}</h3>
+                          <p className="font-body text-lg text-foreground leading-relaxed">{step.description}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -237,39 +256,8 @@ const Buying = () => {
           </div>
         </section>
 
-        {/* Must-Have Guide Section */}
-        <section className="py-20 md:py-32 bg-background">
-          <div className="container mx-auto px-4">
-            <motion.div
-              ref={guideRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={guideInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-              transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                Must-have guide!
-              </p>
-
-              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
-                5 Things to Know Before Buying in Snohomish County
-              </h2>
-
-              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
-                My Buyer Guide walks you through financing basics, local market norms, what to expect in inspections, and how to shop strategically in Snohomish County without losing your mind—or your budget.
-              </p>
-
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6" asChild>
-                <a href="https://debbiewelchhomes.myflodesk.com/home-buyer-guide" target="_blank" rel="noopener noreferrer">
-                  Get the Buyer Guide
-                </a>
-              </Button>
-            </motion.div>
-          </div>
-        </section>
-
         {/* What Makes Working With Me Different */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="py-20 md:py-32 bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={differentRef}
@@ -279,25 +267,64 @@ const Buying = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                Soft landing…
+                What's different here…
               </p>
 
               <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
-                What Makes Working With Me Different
+                I'm Not in a Hurry. You Shouldn't Be Either.
               </h2>
 
-              <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-4">
+              <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  I'm not here to drag you through as many homes as possible and push you into the first one you hesitate on. I'm here to help you understand the "why" behind each decision.
+                  I'm not going to push you toward a home because the market is "moving fast" or because I need to close
+                  a transaction this month. If a house isn't right, I'll tell you. If a contract term concerns me, I'll
+                  flag it. If you need to slow down and think, we slow down and think.
                 </p>
-                <p>You'll get:</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Straight talk about conditions, pricing, and competition.</li>
-                  <li>Calm, organized next steps instead of chaos.</li>
-                  <li>Extra support for buyers who want to ask "one more question" (or ten).</li>
-                  <li>A partner who cares about how this home will feel to live in, not just whether it will close.</li>
-                </ul>
+                <p>
+                  I'm also a lifelong Snohomish County local. I grew up in Marysville, lived in Lake Stevens for years,
+                  and I'm currently in the middle of a live-in renovation in North Everett. When I tell you what a
+                  neighborhood is actually like - the schools, the traffic, the feel of the street - it's because I've
+                  lived in this county my whole life, not because I pulled it from a market report.
+                </p>
+                <p>Ask me as many questions as you need. That's what I'm here for.</p>
               </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Must-Have Guide Section */}
+        <section className="py-20 md:py-32 bg-warm-bg">
+          <div className="container mx-auto px-4">
+            <motion.div
+              ref={guideRef}
+              initial={{ opacity: 0, y: 30 }}
+              animate={guideInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl mx-auto text-center"
+            >
+              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                A good place to start…
+              </p>
+
+              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
+                The Snohomish County Home Buyer Guide
+              </h2>
+
+              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
+                Covers what to know before you start your search - financing basics, how to read a listing, what
+                inspections actually tell you, hidden costs to plan for, and how the Snohomish County market works.
+                Written for people who want real information, not a glossy brochure.
+              </p>
+
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6" asChild>
+                <a
+                  href="https://debbiewelchhomes.myflodesk.com/home-buyer-guide"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Get the Buyer Guide
+                </a>
+              </Button>
             </motion.div>
           </div>
         </section>
@@ -313,14 +340,15 @@ const Buying = () => {
               className="max-w-3xl mx-auto"
             >
               <div className="text-center mb-12">
+                <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                  Let's get started…
+                </p>
                 <h2 className="font-heading text-3xl md:text-5xl text-primary mb-6">
                   Set Up a No-Obligation Property Search
                 </h2>
                 <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
-                  Wondering what's actually available in your price range? I'll create a custom search for you in the areas that fit your lifestyle and budget—no spam, no pressure.
-                </p>
-                <p className="font-body text-base text-muted-foreground">
-                  Share a few details below and I'll set up a tailored search for you in Snohomish County.
+                  Tell me what you're looking for and I'll put together a custom search for the areas and price ranges
+                  that make sense for you. No spam, no pressure - just listings that are actually worth your time.
                 </p>
               </div>
 
@@ -350,7 +378,7 @@ const Buying = () => {
                     <div>
                       <Input
                         type="tel"
-                        placeholder="Phone Number"
+                        placeholder="Phone Number (optional)"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="font-body"
@@ -358,19 +386,19 @@ const Buying = () => {
                     </div>
                     <div>
                       <Textarea
-                        placeholder="Tell me about your ideal home, preferred areas, timeline, and any questions you have..."
+                        placeholder="What are you looking for? Budget, preferred areas, timeline, must-haves - whatever helps me point you in the right direction."
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         rows={5}
                         className="font-body"
                       />
                     </div>
-                    <Button 
-                      type="submit" 
-                      size="lg" 
+                    <Button
+                      type="submit"
+                      size="lg"
                       className="w-full bg-secondary hover:bg-secondary/90 text-white text-lg"
                     >
-                      Set Up My Property Search
+                      Send My Request
                     </Button>
                   </form>
                 </CardContent>
@@ -391,17 +419,17 @@ const Buying = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  Still have questions?
+                  Good questions…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
-                  About Buying Real Estate in Snohomish County
+                  Buying Questions I Hear All the Time
                 </h2>
               </div>
 
               <Accordion type="single" collapsible className="space-y-4">
                 {faqs.map((faq, index) => (
-                  <AccordionItem 
-                    key={index} 
+                  <AccordionItem
+                    key={index}
                     value={`item-${index}`}
                     className="border border-border bg-card rounded-lg px-6"
                   >
@@ -430,7 +458,7 @@ const Buying = () => {
             >
               <div className="text-center mb-12">
                 <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
-                  Don't just take my word for it…
+                  In their own words…
                 </p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
                   What My Buyer Clients Have to Say
@@ -447,11 +475,18 @@ const Buying = () => {
                   >
                     <Card className="h-full border-border bg-card hover:shadow-lg transition-shadow">
                       <CardContent className="p-8">
+                        <div className="flex gap-1 mb-4">
+                          {[...Array(5)].map((_, i) => (
+                            <span key={i} className="text-secondary text-xl">
+                              ★
+                            </span>
+                          ))}
+                        </div>
                         <blockquote className="font-body text-lg text-foreground leading-relaxed mb-6 italic">
                           "{testimonial.quote}"
                         </blockquote>
-                        <p className="font-body text-base text-muted-foreground">
-                          {testimonial.attribution}
+                        <p className="font-body text-base text-muted-foreground font-medium">
+                          - {testimonial.attribution}
                         </p>
                       </CardContent>
                     </Card>

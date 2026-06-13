@@ -118,12 +118,12 @@ const Downsizing = () => {
     {
       quote:
         "We are currently living in another state and were not able to get back to Washington to prepare our home for sale. Debbie did everything - from selling unwanted items, to assisting with packing, to staging our home. The result was a SOLD sign in two days with multiple offers all over asking price. Debbie truly goes the extra mile.",
-      attribution: "Pat Davis, Lake Stevens (out-of-state seller)",
+      attribution: "P. Davis, Lake Stevens (senior out-of-state seller)",
     },
     {
       quote:
         "From the beginning Debbie was there to offer what I needed to sell my condo. As a senior citizen moving out of state she guided me through the process. It was stress free and helpful. Instantly had multiple cash offers. The staging was perfection. Escrow was over and done in record time.",
-      attribution: "M. Cornell, Marysville (senior condo seller)",
+      attribution: "M. Cornell, Marysville (senior out of state seller)",
     },
     {
       quote:

@@ -45,7 +45,7 @@ const testimonials = [
   {
     quote:
       "Debbie Welch was amazing to work with! She was very knowledgeable about the selling process and was able to answer all our questions in a professional and timely manner. We were able to sell our home quickly and got $60k over asking price! I would highly recommend Debbie if you're looking to sell your home.",
-    attribution: "A. Brown, Lake Stevens (seller, over-asking over the Memorial Day weekend)",
+    attribution: "A. Brown, Lake Stevens (relocating seller, over-asking over the Memorial Day weekend)",
   },
   {
     quote:

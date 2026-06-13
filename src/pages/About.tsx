@@ -37,13 +37,14 @@ const About = () => {
             <motion.div initial="hidden" animate="visible" variants={fadeInUp} transition={{ duration: 0.6 }}>
               <p className="font-script text-3xl md:text-5xl text-secondary mb-4">Hey there…</p>
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
-                I'm Debbie. Snohomish County is My Backyard, Not Just My Market.
+                I'm Debbie. Snohomish County is my backyard, not just my market.
               </h1>
               <p className="text-foreground text-lg leading-relaxed mb-4">
                 I grew up in Marysville. Lived in Lake Stevens for about ten years. Now I'm in the middle of a live-in
-                renovation in North Everett. This isn't a county I moved to for the real estate market. It's home. I've
-                watched the traffic patterns shift, the neighborhoods change, the school districts rise and fall. I know
-                where the hidden parking is at the Farmer's Market and which parts of town look different after dark.
+                renovation in North Everett. This isn't a county I moved to or jus happen to do work in for the real
+                estate market. It's home. My parents are here. Our children and their families are here. I've watched
+                the traffic patterns shift, the neighborhoods change, the school districts rise and fall. I know where
+                the hidden parking is at the Farmer's Market and which parts of town look different after dark.
               </p>
               <p className="text-foreground text-lg leading-relaxed">
                 That's the kind of local I am. And it's exactly the kind of broker I try to be.
@@ -121,8 +122,8 @@ const About = () => {
                 <li className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                   <span className="text-foreground">
-                    Hands-on support for big transitions - I've helped clients with everything from donation runs to
-                    staging coordination to just being a calm presence on a hard day.
+                    Hands-on support for big transitions - I've helped clients with everything from dump and donation
+                    runs to staging coordination to just being a calm presence on a hard day.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">

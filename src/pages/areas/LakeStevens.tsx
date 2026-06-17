@@ -20,7 +20,7 @@ const LakeStevens = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Living in Lake Stevens, WA | Homes for Sale | Daebbie Welch Homes"
+        title="Living in Lake Stevens, WA | Homes for Sale | Debbie Welch Homes"
         description="Thinking about buying a home in Lake Stevens, WA? A lifelong local's honest take on the lake, the schools, the commute, and what daily life actually looks like here."
         canonical="/areas/lake-stevens"
       />
@@ -108,8 +108,26 @@ const LakeStevens = () => {
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
+                        <strong>School district boundaries here are not as simple as the city limits suggest.</strong>{" "}
+                        Most of Lake Stevens falls within Lake Stevens School District, but the southeast edge of the
+                        city actually falls into Snohomish School District instead. I know where these lines fall block
+                        by block, which matters if a specific district is part of your decision.
+                      </span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-secondary font-bold">•</span>
+                      <span>
                         <strong>A real lake with real access.</strong> Four public parks, two boat launches, swimming,
                         fishing, water skiing, jet skis.
+                      </span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-secondary font-bold">•</span>
+                      <span>
+                        <strong>Some neighborhoods carry their own private lake access through the HOA</strong> -
+                        separate from the four public parks. This isn't something you'll find by browsing listings; it's
+                        the kind of detail that comes from knowing the city's micro-neighborhoods, not just the big
+                        picture.
                       </span>
                     </li>
                     <li className="flex gap-2">

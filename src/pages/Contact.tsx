@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/select";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { pageSEO, realEstateAgentSchema } from "@/data/seoData";
-import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { sendInquiry } from "@/lib/inquiry";
 import InquiryFallback from "@/components/InquiryFallback";
@@ -260,10 +259,13 @@ const Contact = () => {
                 <Button 
                   type="submit" 
                   disabled={isSubmitting}
+                  aria-busy={isSubmitting}
                   className="w-full md:w-auto px-8 py-6 text-base font-['Montserrat']"
                 >
-                  {isSubmitting ? "Sending..." : "Submit"}
+                  {isSubmitting ? "Sending…" : "Submit"}
                 </Button>
+
+                <InquiryFallback />
               </form>
             ) : (
               <div className="py-12 text-center">
@@ -283,7 +285,7 @@ const Contact = () => {
       <section className="py-8 md:py-12 bg-background">
         <div className="container mx-auto px-4">
           <p className="text-center text-sm md:text-base font-['Montserrat'] text-muted-foreground max-w-2xl mx-auto">
-            Prefer email or a quick message instead? You can also reach me through my Facebook page or reply to any of my emails if you're already on my list.
+            Prefer to skip the form? Email or call me directly using the details above and I will get back to you within one business day.
           </p>
         </div>
       </section>

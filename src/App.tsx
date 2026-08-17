@@ -18,6 +18,7 @@ import About from "./pages/About";
 import ExpRealty from "./pages/ExpRealty";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Resources from "./pages/Resources";
+import TrustedPartners from "./pages/TrustedPartners";
 
 import Contact from "./pages/Contact";
 import SnohomishCounty from "./pages/areas/SnohomishCounty";
@@ -49,6 +50,7 @@ const App = () => {
             <Route path="/services/downsizing" element={<Downsizing />} />
             <Route path="/listings" element={<Listings />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/resources/trusted-partners" element={<TrustedPartners />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/about" element={<About />} />

@@ -155,6 +155,25 @@ const Resources = () => {
             </div>
           </div>
         </section>
+
+        <section className="section bg-warm-bg">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <Link to="/resources/trusted-partners" className="group">
+              <Card className="border-border bg-background transition-shadow duration-300 group-hover:shadow-lg">
+                <CardContent className="p-8 md:p-10">
+                  <p className="eyebrow mb-3">The people behind a smooth move…</p>
+                  <h2 className="font-heading h-section text-primary mb-4">Trusted Local Partners</h2>
+                  <p className="copy text-foreground max-w-3xl mb-6">
+                    Meet the lenders, inspectors, stagers, and real estate media professionals I trust to help keep each part of a transaction organized and moving forward.
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-secondary">
+                    Meet My Trusted Partners <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </section>
       </main>
 
       <Footer />

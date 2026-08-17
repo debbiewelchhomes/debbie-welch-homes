@@ -65,6 +65,9 @@ const Footer = () => {
             </ul>
 
             <div className="flex flex-col items-start gap-3">
+              <Link to="/resources/trusted-partners" className="text-sm hover:text-accent transition-colors">
+                Trusted Local Partners
+              </Link>
               <Link to="/privacy-policy" className="text-sm hover:text-accent transition-colors">
                 Privacy Policy
               </Link>

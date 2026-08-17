@@ -301,65 +301,23 @@ const About = () => {
 
       {/* Trusted Partners Section */}
       <section className="section bg-warm-bg">
-        <div className="container mx-auto px-4 max-w-7xl">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
           >
-            <p className="eyebrow mb-4">Let me introduce you…</p>
-            <h2 className="font-heading h-section text-primary mb-6">Trusted Local Partners</h2>
-            <p className="text-foreground text-lg leading-relaxed max-w-3xl mx-auto">
-              These are professionals I know and trust. You are always free to choose the provider who is right for you, and I can share additional options based on the property and the work involved.
+            <p className="eyebrow mb-4">The people behind a smooth move…</p>
+            <h2 className="font-heading h-section text-primary mb-6">My Trusted Local Partners</h2>
+            <p className="copy-lead text-foreground max-w-3xl mx-auto mb-8">
+              I may be your main point of contact, but every well-run transaction depends on skilled people behind the scenes. Meet the local professionals I trust to help keep financing, inspections, staging, photography, and the details moving smoothly.
             </p>
+            <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-white" asChild>
+              <Link to="/resources/trusted-partners">Meet My Trusted Partners</Link>
+            </Button>
           </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <a href="https://crosscountrymortgage.com/scottsdale-az-4636/jared-paul/" target="_blank" rel="noopener noreferrer" className="bg-background p-7 rounded-lg hover:shadow-lg transition-shadow">
-              <p className="eyebrow-caps mb-3">Mortgage Lending</p>
-              <h3 className="font-heading h-card text-primary mb-3">Jared Paul, CrossCountry Mortgage</h3>
-              <p className="text-foreground leading-relaxed">
-                Jared grew up locally and is a former Marine. He works with conventional, FHA, VA, purchase, and refinance loans and is licensed in Washington.
-              </p>
-            </a>
-
-            <a href="https://www.instagram.com/summitstaging/" target="_blank" rel="noopener noreferrer" className="bg-background p-7 rounded-lg hover:shadow-lg transition-shadow">
-              <p className="eyebrow-caps mb-3">Home Staging</p>
-              <h3 className="font-heading h-card text-primary mb-3">Cecilia Rehbein, Summit Staging & Design</h3>
-              <p className="text-foreground leading-relaxed">
-                A local staging and design business helping prepare homes to photograph well and make a strong first impression.
-              </p>
-            </a>
-
-            <a href="https://picsbypixphotography.com/realestate" target="_blank" rel="noopener noreferrer" className="bg-background p-7 rounded-lg hover:shadow-lg transition-shadow">
-              <p className="eyebrow-caps mb-3">Real Estate Photography</p>
-              <h3 className="font-heading h-card text-primary mb-3">Melinda Wong, Pics by Pix Photography</h3>
-              <p className="text-foreground leading-relaxed">
-                Puget Sound real estate media including polished photography, video, aerial images, 3D tours, floor plans, and virtual staging.
-              </p>
-            </a>
-
-            <div className="bg-background p-7 rounded-lg">
-              <p className="eyebrow-caps mb-3">Home Inspections</p>
-              <h3 className="font-heading h-card text-primary mb-3">Inspection Options</h3>
-              <ul className="space-y-3 text-foreground">
-                <li>John Sobieski, Home Inspections Services NW</li>
-                <li>
-                  <a href="https://titaninspectionservices.com/home-inspections-in-snohomish/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
-                    Titan Inspection Services
-                  </a>
-                </li>
-                <li>
-                  <a href="https://hamiltonhomeinspections.com/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
-                    Butch Hamilton, Hamilton Home Inspections
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
 

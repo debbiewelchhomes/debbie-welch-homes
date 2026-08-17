@@ -37,7 +37,7 @@ const EverettMukilteo = () => {
             fetchPriority="high"
             decoding="async"
             className="absolute inset-0 h-full w-full object-cover"
-            style={{ objectPosition: "center" }}
+            style={{ objectPosition: "center 35%" }}
           />
           <div
             className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/15 to-black/10"

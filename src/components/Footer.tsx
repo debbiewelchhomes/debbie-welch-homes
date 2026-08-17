@@ -1,12 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-primary text-primary-foreground pt-16 pb-8">
+    <footer id="contact" className="bg-muted-foreground text-primary-foreground pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-
-          {/* Contact Column */}
+        <div className="grid md:grid-cols-3 gap-10 lg:gap-16 mb-12">
           <div>
             <h3 className="font-heading h-card mb-6">Contact</h3>
             <div className="space-y-3 text-sm">
@@ -31,58 +30,31 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Stay in Touch Column */}
+          <div>
+            <h3 className="font-heading h-card mb-6">Helpful Links</h3>
+            <ul className="space-y-3 text-sm">
+              <li><Link to="/resources" className="hover:text-accent transition-colors">Resource Library</Link></li>
+              <li><Link to="/resources/trusted-partners" className="hover:text-accent transition-colors">Trusted Local Partners</Link></li>
+              <li><Link to="/areas/snohomish-county" className="hover:text-accent transition-colors">Explore Snohomish County</Link></li>
+              <li><Link to="/about" className="hover:text-accent transition-colors">About Debbie</Link></li>
+              <li><Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
+            </ul>
+          </div>
+
           <div>
             <h3 className="font-heading h-card mb-6">Stay in Touch</h3>
-            <p className="text-sm mb-6 text-primary-foreground/90">
-              Have a question about the Snohomish County market, or want a custom report for the area you're
-              watching? Send me a note and I'll follow up personally within one business day.
+            <p className="text-sm mb-5 text-primary-foreground/90">
+              Have a question about the local market or want a custom report for an area you are watching? Send me a note and I will follow up personally within one business day.
             </p>
-            <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-white">
+            <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-white mb-7">
               <Link to="/contact">Contact Debbie</Link>
             </Button>
-          </div>
-
-          {/* Links Column */}
-          <div>
-            <h3 className="font-heading h-card mb-6">From the Blog</h3>
-            <ul className="space-y-3 text-sm mb-8">
-              <li>
-                <Link to="/blog?q=downsizing" className="hover:text-accent transition-colors">
-                  Downsizing Tips
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog?q=military" className="hover:text-accent transition-colors">
-                  Military Relocation
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog?q=first-time" className="hover:text-accent transition-colors">
-                  First-Time Buyers
-                </Link>
-              </li>
-            </ul>
-
-            <div className="flex flex-col items-start gap-3">
-              <Link to="/resources/trusted-partners" className="text-sm hover:text-accent transition-colors">
-                Trusted Local Partners
-              </Link>
-              <Link to="/privacy-policy" className="text-sm hover:text-accent transition-colors">
-                Privacy Policy
+            <div className="border-t border-primary-foreground/20 pt-5">
+              <p className="eyebrow-caps text-primary-foreground/75 mb-2">For Real Estate Agents</p>
+              <Link to="/about/exp-realty" className="text-sm font-semibold hover:text-accent transition-colors">
+                Learn About Working With Me at eXp
               </Link>
             </div>
-
-          </div>
-
-          <div>
-            <h3 className="font-heading h-card mb-6">For Real Estate Agents</h3>
-            <p className="text-sm mb-4 text-primary-foreground/90">
-              Curious about eXp Realty or looking for practical support as you grow your business?
-            </p>
-            <Link to="/about/exp-realty" className="text-sm font-semibold hover:text-accent transition-colors">
-              Work With Me at eXp Realty
-            </Link>
           </div>
         </div>
 
@@ -93,4 +65,5 @@ const Footer = () => {
     </footer>
   );
 };
+
 export default Footer;

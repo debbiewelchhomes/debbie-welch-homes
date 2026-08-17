@@ -75,7 +75,7 @@ const NeighborhoodsSection = () => {
                   <CardContent className="p-6">
                     <div className="relative mb-4 h-36 overflow-hidden rounded-lg">
                       <img src={area.image} alt={area.altText} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
-                      <div className="absolute inset-0 flex items-center justify-center bg-primary/55 px-3">
+                      <div className="absolute inset-0 flex items-center justify-center bg-muted-foreground/75 px-3">
                         <h3 className="font-heading h-card text-primary-foreground text-center whitespace-pre-line">
                           {area.name}
                         </h3>

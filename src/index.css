@@ -256,7 +256,7 @@ section:has(> img.absolute.inset-0) .eyebrow {
   margin-right: auto;
   padding: 0.35rem 0.9rem 0.45rem;
   color: hsl(var(--primary-foreground));
-  background: hsl(var(--primary) / 0.74);
+  background: hsl(var(--muted-foreground) / 0.82);
   border: 1px solid hsl(var(--primary-foreground) / 0.22);
   border-radius: 9999px;
   box-shadow: 0 3px 14px rgb(0 0 0 / 0.25);

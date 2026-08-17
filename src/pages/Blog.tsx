@@ -83,8 +83,19 @@ const Blog = () => {
             <div className="lg:col-span-2 space-y-12">
               {filteredMainPosts.map((post) => (
                 <article key={post.id} className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow">
-                  <div className="aspect-[16/9] bg-warm-bg flex items-center justify-center px-6 text-center">
-                    <p className="text-muted-foreground">Snohomish County real estate guidance</p>
+                  <div className="aspect-[16/9] bg-warm-bg overflow-hidden">
+                    {post.image ? (
+                      <img
+                        src={post.image}
+                        alt={post.imageAlt ?? ""}
+                        className="h-full w-full object-cover"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="h-full flex items-center justify-center px-6 text-center">
+                        <p className="text-muted-foreground">Snohomish County real estate guidance</p>
+                      </div>
+                    )}
                   </div>
                   <div className="p-6 md:p-8">
                     <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-4">

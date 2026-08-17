@@ -22,7 +22,7 @@ const ExpRealty = () => {
   const ctaInView = useInView(ctaRef, { once: true, margin: "-100px" });
 
   const fadeInUp = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 16 },
     visible: { opacity: 1, y: 0 },
   };
 
@@ -78,8 +78,8 @@ const ExpRealty = () => {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">For fellow agents…</p>
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
+              <p className="eyebrow mb-4">For fellow agents…</p>
+              <h1 className="font-heading h-section font-bold text-primary mb-6">
                 Why I'm at eXp Realty. And Why You Might Be Too.
               </h1>
               <p className="text-foreground text-lg leading-relaxed mb-4">
@@ -96,7 +96,7 @@ const ExpRealty = () => {
         </section>
 
         {/* My Story Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={storyRef}
@@ -106,8 +106,8 @@ const ExpRealty = () => {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">How I got here…</p>
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-8">My Story With eXp</h2>
+              <p className="eyebrow mb-4">How I got here…</p>
+              <h2 className="font-heading h-section text-primary mb-8">My Story With eXp</h2>
 
               <div className="text-foreground text-lg leading-relaxed space-y-5">
                 <p>
@@ -132,7 +132,7 @@ const ExpRealty = () => {
         </section>
 
         {/* Why eXp Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">
             <motion.div
               ref={whyRef}
@@ -142,8 +142,8 @@ const ExpRealty = () => {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">The structure…</p>
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-8">
+              <p className="eyebrow mb-4">The structure…</p>
+              <h2 className="font-heading h-section text-primary mb-8">
                 What eXp Actually Offers
               </h2>
               <p className="text-foreground text-lg leading-relaxed mb-10">
@@ -177,7 +177,7 @@ const ExpRealty = () => {
         </section>
 
         {/* Entourage Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={entourageRef}
@@ -187,8 +187,8 @@ const ExpRealty = () => {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">The group that matters…</p>
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-8">
+              <p className="eyebrow mb-4">The group that matters…</p>
+              <h2 className="font-heading h-section text-primary mb-8">
                 Why Entourage Specifically
               </h2>
 
@@ -219,7 +219,7 @@ const ExpRealty = () => {
         </section>
 
         {/* Referral Network Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">
             <motion.div
               ref={referralRef}
@@ -229,8 +229,8 @@ const ExpRealty = () => {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">The part I didn't expect…</p>
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-8">
+              <p className="eyebrow mb-4">The part I didn't expect…</p>
+              <h2 className="font-heading h-section text-primary mb-8">
                 A Referral Network You Can Actually Trust
               </h2>
 
@@ -256,7 +256,7 @@ const ExpRealty = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={ctaRef}
@@ -266,8 +266,8 @@ const ExpRealty = () => {
               transition={{ duration: 0.6 }}
               className="max-w-3xl mx-auto text-center"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">Curious? Let's talk…</p>
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">
+              <p className="eyebrow mb-4">Curious? Let's talk…</p>
+              <h2 className="font-heading h-section text-primary mb-6">
                 No Pressure. Just a Real Conversation.
               </h2>
               <p className="text-foreground text-lg leading-relaxed mb-4">

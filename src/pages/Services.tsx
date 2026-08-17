@@ -39,16 +39,16 @@ const Services = () => {
 
           <div className="relative z-10 container mx-auto px-4 py-20 text-center">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               className="max-w-4xl mx-auto text-backdrop"
             >
-              <p className="font-script text-4xl md:text-5xl lg:text-6xl mb-6 text-secondary" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 How I can help…
               </p>
 
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-primary mb-6">
+              <h1 className="font-heading h-section text-primary mb-6">
                 Real Estate Services in Snohomish County
               </h1>
 
@@ -62,20 +62,20 @@ const Services = () => {
         </section>
 
         {/* Intro Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={introRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={introInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={introInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 Here's the thing…
               </p>
 
-              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
+              <h2 className="font-heading h-section text-primary mb-8">
                 Real Estate Is Rarely Just About the House
               </h2>
 
@@ -91,21 +91,21 @@ const Services = () => {
         </section>
 
         {/* Approach Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">
             <motion.div
               ref={approachRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={approachInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={approachInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
               <div className="text-center mb-12">
-                <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                <p className="eyebrow mb-4" aria-hidden="true">
                   What you can count on…
                 </p>
 
-                <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
+                <h2 className="font-heading h-section text-primary mb-8">
                   How I Work With Every Client
                 </h2>
               </div>
@@ -141,16 +141,16 @@ const Services = () => {
         <ServicesSection />
 
         {/* Quote Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">
             <motion.div
               ref={quoteRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={quoteInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={quoteInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 What they've said…
               </p>
 
@@ -166,20 +166,20 @@ const Services = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={ctaRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={ctaInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={ctaInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 No pressure, just a conversation…
               </p>
 
-              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
+              <h2 className="font-heading h-section text-primary mb-8">
                 Not Sure Where to Start?
               </h2>
 

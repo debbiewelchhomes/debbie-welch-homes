@@ -31,22 +31,22 @@ const BlogSection = () => {
   ];
 
   return (
-    <section id="blog" className="py-20 md:py-32 bg-warm-bg">
+    <section id="blog" className="section bg-warm-bg">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 16 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
           <p
-            className="font-script text-3xl text-secondary mb-6 md:text-6xl"
+            className="eyebrow mb-4"
             aria-hidden="true"
           >
             Stay informed…
           </p>
-          <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
+          <h2 className="font-heading h-section text-primary mb-6">
             From the Blog
           </h2>
           <p className="text-lg md:text-xl text-foreground max-w-3xl mx-auto">
@@ -60,9 +60,9 @@ const BlogSection = () => {
           {posts.map((post, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={
-                isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }
+                isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }
               }
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >

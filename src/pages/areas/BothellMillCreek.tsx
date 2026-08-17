@@ -16,19 +16,19 @@ const BothellMillCreek = () => {
         {/* Hero Section */}
         <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center bg-warm-bg bg-cover bg-center">
           <div className="absolute inset-0 bg-black/20"></div>
-          <div className="container mx-auto px-4 text-center py-32 relative z-10">
-            <p className="font-script text-5xl md:text-7xl text-white mb-4 drop-shadow-lg">
+          <div className="container mx-auto px-4 text-center section relative z-10">
+            <p className="eyebrow mb-4">
               {areaName}
             </p>
           </div>
         </section>
 
         {/* Welcome & Video Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6">Buyer's Dream…</p>
-              <h1 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">
+              <p className="eyebrow mb-4">Buyer's Dream…</p>
+              <h1 className="font-heading h-section text-primary mb-6">
                 Welcome to {areaName}
               </h1>
               <p className="text-base md:text-lg text-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
@@ -42,11 +42,11 @@ const BothellMillCreek = () => {
         </section>
 
         {/* Location Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6 text-center">On the map…</p>
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6 text-center">
+              <p className="eyebrow mb-4 text-center">On the map…</p>
+              <h2 className="font-heading h-section text-primary mb-6 text-center">
                 Location of {areaName}
               </h2>
               <p className="text-base md:text-lg text-foreground mb-8 text-center max-w-2xl mx-auto leading-relaxed">
@@ -65,7 +65,7 @@ const BothellMillCreek = () => {
         </section>
 
         {/* Love It / Might Not Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
               <div>
@@ -123,9 +123,9 @@ const BothellMillCreek = () => {
         </section>
 
         {/* Home Styles Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">
-            <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-12 text-center">
+            <h2 className="font-heading h-section text-primary mb-12 text-center">
               Home Styles in {areaName}
             </h2>
             <div className="max-w-6xl mx-auto space-y-16">
@@ -134,7 +134,7 @@ const BothellMillCreek = () => {
                   <p className="text-muted-foreground">Image Placeholder 1</p>
                 </div>
                 <div>
-                  <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-4">
+                  <h3 className="font-heading h-card text-primary mb-4">
                     Classic Style
                   </h3>
                   <p className="text-foreground leading-relaxed">
@@ -144,7 +144,7 @@ const BothellMillCreek = () => {
               </div>
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="order-2 md:order-1">
-                  <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-4">
+                  <h3 className="font-heading h-card text-primary mb-4">
                     Second Style
                   </h3>
                   <p className="text-foreground leading-relaxed">
@@ -160,7 +160,7 @@ const BothellMillCreek = () => {
                   <p className="text-muted-foreground">Image Placeholder 3</p>
                 </div>
                 <div>
-                  <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-4">
+                  <h3 className="font-heading h-card text-primary mb-4">
                     Third Style
                   </h3>
                   <p className="text-foreground leading-relaxed">
@@ -173,10 +173,10 @@ const BothellMillCreek = () => {
         </section>
 
         {/* Schools Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6 text-center">
+              <h2 className="font-heading h-section text-primary mb-6 text-center">
                 Schools
               </h2>
               <p className="text-lg text-foreground mb-8 text-center">
@@ -198,10 +198,10 @@ const BothellMillCreek = () => {
         </section>
 
         {/* Places of Interest Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6 text-center">
+              <h2 className="font-heading h-section text-primary mb-6 text-center">
                 Places of Interest
               </h2>
               <p className="text-lg text-foreground mb-8 text-center">
@@ -223,10 +223,10 @@ const BothellMillCreek = () => {
         </section>
 
         {/* Homes For Sale & Sold Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
-            <p className="font-script text-3xl md:text-5xl text-secondary mb-6 text-center">Get a feel for…</p>
-            <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-12 text-center">
+            <p className="eyebrow mb-4 text-center">Get a feel for…</p>
+            <h2 className="font-heading h-section text-primary mb-12 text-center">
               Homes For Sale & Sold in {areaName}
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">

@@ -28,12 +28,12 @@ const Blog = () => {
         canonical="/blog"
       />
       <Navigation />
-      <main className="py-20 md:py-32 bg-background">
+      <main className="section bg-background">
         <div className="container mx-auto px-4">
           {/* Page Header */}
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <p className="font-script text-3xl md:text-5xl text-secondary mb-6">Check these out…</p>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
+            <p className="eyebrow mb-4">Check these out…</p>
+            <h1 className="font-heading h-section font-bold text-primary mb-6">
               Real Estate Tips, Local Stories & Market Insights
             </h1>
             <p className="text-base md:text-lg text-foreground leading-relaxed max-w-3xl mx-auto">
@@ -56,7 +56,7 @@ const Blog = () => {
                       <span className="text-secondary">•</span>
                       <span className="text-secondary font-medium">{post.category}</span>
                     </div>
-                    <h2 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-4 hover:text-secondary transition-colors">
+                    <h2 className="font-heading h-card text-primary mb-4 hover:text-secondary transition-colors">
                       <Link to={`/blog/${post.slug}`}>{post.title}</Link>
                     </h2>
                     <p className="text-foreground leading-relaxed mb-6">{post.excerpt}</p>
@@ -111,7 +111,7 @@ const Blog = () => {
           {/* Search Insights Section */}
           <section className="max-w-7xl mx-auto mt-20 pt-16 border-t border-border">
             <div className="mb-10">
-              <h2 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-4">
+              <h2 className="font-heading h-card text-primary mb-4">
                 Additional Articles & Resources
               </h2>
               <p className="text-foreground max-w-3xl">

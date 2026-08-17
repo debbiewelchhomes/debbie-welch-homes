@@ -124,10 +124,10 @@ const Listings = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <p className="font-script text-4xl md:text-5xl text-secondary mb-6">
+          <p className="eyebrow mb-4">
             Check these out…
           </p>
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-primary mb-8">
+          <h1 className="font-heading h-section text-primary mb-8">
             See Properties I've Helped Buyers & Sellers With in Snohomish County
           </h1>
           <p className="font-body text-lg text-foreground/80 leading-relaxed">

@@ -16,7 +16,7 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const fadeInUp = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 16 },
     visible: { opacity: 1, y: 0 },
   };
 
@@ -35,8 +35,8 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
             <motion.div initial="hidden" animate="visible" variants={fadeInUp} transition={{ duration: 0.6 }}>
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">Hey there…</p>
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
+              <p className="eyebrow mb-4">Hey there…</p>
+              <h1 className="font-heading h-section font-bold text-primary mb-6">
                 I'm Debbie. Snohomish County is my backyard, not just my market.
               </h1>
               <p className="text-foreground text-lg leading-relaxed mb-4">
@@ -68,7 +68,7 @@ const About = () => {
       </section>
 
       {/* What to Expect Section - comes first so visitor knows what they're getting */}
-      <section className="py-20 md:py-32 bg-background">
+      <section className="section bg-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
             <motion.div
@@ -94,8 +94,8 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="order-1 md:order-2"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">What to expect…</p>
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">When We Work Together</h2>
+              <p className="eyebrow mb-4">What to expect…</p>
+              <h2 className="font-heading h-section text-primary mb-6">When We Work Together</h2>
               <p className="text-foreground text-lg leading-relaxed mb-6">
                 I'm a details person and a big-picture thinker. That means I'm watching the market and your stress level
                 at the same time. Here's what working together actually looks like:
@@ -139,7 +139,7 @@ const About = () => {
       </section>
 
       {/* Story Section */}
-      <section className="py-20 md:py-32 bg-warm-bg">
+      <section className="section bg-warm-bg">
         <div className="container mx-auto px-4 max-w-4xl">
           <motion.div
             initial="hidden"
@@ -148,8 +148,8 @@ const About = () => {
             variants={fadeInUp}
             transition={{ duration: 0.6 }}
           >
-            <p className="font-script text-3xl md:text-5xl text-secondary mb-4 text-center">A little backstory…</p>
-            <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-8 text-center">
+            <p className="eyebrow mb-4 text-center">A little backstory…</p>
+            <h2 className="font-heading h-section text-primary mb-8 text-center">
               Thirty Years Reading the Fine Print
             </h2>
             <div className="space-y-5 text-foreground text-lg leading-relaxed">
@@ -170,7 +170,7 @@ const About = () => {
       </section>
 
       {/* Behind the Scenes Section */}
-      <section className="py-20 md:py-32 bg-background">
+      <section className="section bg-background">
         <div className="container mx-auto px-4 max-w-7xl">
           <motion.div
             initial="hidden"
@@ -180,7 +180,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-4">
+            <h2 className="font-heading h-section text-primary mb-4">
               A Little About Me Off the Clock
             </h2>
             <p className="text-foreground text-lg leading-relaxed max-w-3xl mx-auto">
@@ -284,7 +284,7 @@ const About = () => {
       </section>
 
       {/* Trusted Partners Section */}
-      <section className="py-20 md:py-32 bg-warm-bg">
+      <section className="section bg-warm-bg">
         <div className="container mx-auto px-4 max-w-7xl">
           <motion.div
             initial="hidden"
@@ -294,8 +294,8 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <p className="font-script text-3xl md:text-5xl text-secondary mb-4">Let me introduce you…</p>
-            <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">
+            <p className="eyebrow mb-4">Let me introduce you…</p>
+            <h2 className="font-heading h-section text-primary mb-6">
               To My Trusted Local Partners
             </h2>
             <p className="text-foreground text-lg leading-relaxed max-w-3xl mx-auto">
@@ -382,7 +382,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-32 bg-background">
+      <section className="section bg-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial="hidden"
@@ -392,8 +392,8 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <p className="font-script text-3xl md:text-5xl text-secondary mb-4">Let's talk…</p>
-            <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">
+            <p className="eyebrow mb-4">Let's talk…</p>
+            <h2 className="font-heading h-section text-primary mb-6">
               Ready to Figure Out Your Next Move?
             </h2>
             <p className="text-foreground text-lg leading-relaxed mb-8">

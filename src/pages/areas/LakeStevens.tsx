@@ -109,9 +109,12 @@ const LakeStevens = () => {
                       <span className="text-secondary font-bold">•</span>
                       <span>
                         <strong>School district boundaries here are not as simple as the city limits suggest.</strong>{" "}
-                        Most of Lake Stevens falls within Lake Stevens School District, but the southeast edge of the
-                        city actually falls into Snohomish School District instead. I know where these lines fall block
-                        by block, which matters if a specific district is part of your decision.
+                        Most of Lake Stevens falls within Lake Stevens School District, and part of the southeast edge
+                        of the city falls into Snohomish School District instead. It also runs the other direction:
+                        some Marysville neighborhoods, including parts of Whiskey Ridge and Soper Hill, are served by
+                        Lake Stevens School District. District lines simply do not follow city limits here. If a
+                        specific district matters to you, we will look at it early, and you will want to confirm any
+                        particular address with the district's own boundary locator before you write an offer.
                       </span>
                     </li>
                     <li className="flex gap-2">

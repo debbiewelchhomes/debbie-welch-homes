@@ -349,8 +349,8 @@ const Downsizing = () => {
                 months out or two years away.
               </p>
 
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-                Get the Downsizing Guide
+              <Button size="lg" asChild className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
+                <Link to="/contact">Ask Me for the Downsizing Guide</Link>
               </Button>
             </motion.div>
           </div>

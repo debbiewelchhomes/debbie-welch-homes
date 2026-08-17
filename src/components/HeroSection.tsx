@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const specialties = [
-  "Senior Housing Transitions & Downsizing",
-  "Military PCS & Veterans",
-  "Relocation to and from Snohomish County",
+  { label: "Senior Housing Transitions & Downsizing", to: "/services/downsizing" },
+  { label: "Military PCS & Veterans", to: "/services/relocation" },
+  { label: "Relocation to and from Snohomish County", to: "/services/relocation" },
 ];
 
 const HeroSection = () => {

@@ -33,7 +33,6 @@ const Navigation = () => {
 
   const aboutLinks = [
     { name: "About Me", href: "/about" },
-    { name: "Past Sales", href: "/about/past-sales" },
     { name: "Work With Me at eXp", href: "/about/exp-realty" },
   ];
 

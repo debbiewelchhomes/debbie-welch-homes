@@ -5,6 +5,7 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { BlogPost } from "@/data/blogPosts";
+import { absoluteUrl } from "@/config/site";
 
 interface BlogPostTemplateProps {
   post: BlogPost;
@@ -64,11 +65,11 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
     author: {
       "@type": "Person",
       name: "Debbie Welch",
-      url: "https://debbie-welch-homes.lovable.app/about"
+      url: absoluteUrl("/about")
     },
-    mainEntityOfPage: `https://debbie-welch-homes.lovable.app/blog/${post.slug}`,
+    mainEntityOfPage: absoluteUrl(`/blog/${post.slug}`),
     articleSection: post.category,
-    ...(post.image ? { image: `https://debbie-welch-homes.lovable.app${post.image}` } : {})
+    ...(post.image ? { image: absoluteUrl(post.image) } : {})
   };
 
   return (

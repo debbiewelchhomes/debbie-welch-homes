@@ -10,45 +10,25 @@ const NeighborhoodsSection = () => {
     margin: "-100px"
   });
   const neighborhoods = [{
-    name: "Snohomish County",
-    description: "A mix of charming small towns, established neighborhoods, and rural pockets, all within reach of major job centers and outdoor fun.",
-    altText: "Snohomish County WA neighborhoods overview",
-    href: "/areas/snohomish-county"
-  }, {
-    name: "Arlington",
-    description: "A blend of small-town main street, newer neighborhoods, and rural acreage with quick access to I-5 and mountain adventures.",
-    altText: "Arlington WA neighborhood homes - real estate",
-    href: "/areas/arlington"
-  }, {
-    name: "Bothell &\nMill Creek",
-    description: "Highly sought-after schools, established neighborhoods, and strong commuter access toward the Eastside and Seattle.",
-    altText: "Bothell and Mill Creek WA neighborhoods - homes for sale",
-    href: "/areas/bothell-mill-creek"
-  }, {
-    name: "Everett & Mukilteo",
-    description: "Waterfront views, historic homes, and commuter-friendly locations near Paine Field, Naval Station Everett, and major employers.",
-    altText: "Everett and Mukilteo WA coastline and homes",
-    href: "/areas/everett-mukilteo"
-  }, {
     name: "Lake Stevens",
     description: "Lakeside living, established neighborhoods, and new construction options with a strong community feel and easy access to Everett and Highway 9.",
     altText: "Lake Stevens WA lakefront homes and community",
     href: "/areas/lake-stevens"
   }, {
+    name: "Everett",
+    description: "Waterfront views, historic homes, and commuter-friendly locations near Paine Field, Naval Station Everett, and major employers.",
+    altText: "Everett WA neighborhoods, waterfront, and homes",
+    href: "/areas/everett-mukilteo"
+  }, {
     name: "Marysville",
     description: "Growing neighborhoods, convenient shopping, and quick access north and south, with room to stretch out a bit more than the city core.",
-    altText: "Marysville WA family neighborhoods and parks",
+    altText: "Marysville WA neighborhoods and parks",
     href: "/areas/marysville"
   }, {
-    name: "Snohomish",
-    description: "Quaint historic downtown, scenic farmland, and neighborhoods that feel a little slower and more small-town while still being close in.",
-    altText: "Snohomish WA historic homes and downtown",
-    href: "/areas/snohomish"
-  }, {
-    name: "Stanwood & Camano",
-    description: "Coastal views, island sunsets, and a quieter pace of life for people who want to feel a little more 'away' without being too far from services.",
-    altText: "Stanwood and Camano Island WA coastal homes",
-    href: "/areas/stanwood-camano"
+    name: "Mill Creek &\nBothell",
+    description: "Established neighborhoods, convenient shopping, and strong commuter access toward the Eastside and Seattle.",
+    altText: "Mill Creek and Bothell WA neighborhoods and homes",
+    href: "/areas/bothell-mill-creek"
   }];
   return <section id="neighborhoods" className="section bg-background">
       <div className="container mx-auto px-4">
@@ -65,7 +45,7 @@ const NeighborhoodsSection = () => {
         duration: 0.6
       }} className="text-center mb-12">
           <p className="eyebrow mb-4" aria-hidden="true">Let me show you around…</p>
-          <h2 className="font-heading h-section text-primary">Explore Neighborhoods</h2>
+          <h2 className="font-heading h-section text-primary">Featured Areas</h2>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">

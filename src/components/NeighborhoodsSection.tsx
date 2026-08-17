@@ -63,12 +63,12 @@ const NeighborhoodsSection = () => {
         y: 16
       }} transition={{
         duration: 0.6
-      }} className="text-center mb-16">
+      }} className="text-center mb-12">
           <p className="eyebrow mb-4" aria-hidden="true">Let me show you around…</p>
           <h2 className="font-heading h-section text-primary">Explore Neighborhoods</h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {neighborhoods.map((area, index) => <motion.div key={index} initial={{
           opacity: 0,
           y: 16
@@ -85,12 +85,12 @@ const NeighborhoodsSection = () => {
               <Link to={area.href}>
                 <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-border bg-card group cursor-pointer">
                   <CardContent className="p-6">
-                    <div className="h-32 bg-warm-bg rounded-lg mb-4 flex items-center justify-center group-hover:opacity-90 transition-transform duration-300" role="img" aria-label={area.altText}>
+                    <div className="mb-4 flex h-28 items-center justify-center rounded-lg bg-warm-bg" role="img" aria-label={area.altText}>
                       <h3 className="font-heading h-card text-primary text-center px-2 whitespace-pre-line">
                         {area.name}
                       </h3>
                     </div>
-                    <p className="text-foreground leading-relaxed text-base text-left">
+                    <p className="copy text-foreground text-left">
                       {area.description}
                     </p>
                   </CardContent>

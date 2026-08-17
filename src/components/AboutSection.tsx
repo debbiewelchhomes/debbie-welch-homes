@@ -30,15 +30,15 @@ const AboutSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-[52%_45%] gap-6 items-center max-w-5xl mx-auto">
+        <div className="grid gap-8 md:grid-cols-[1fr_0.85fr] md:items-center max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -40 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="order-2 md:order-1"
           >
-            <div className="prose prose-lg max-w-lg">
-              <p className="text-foreground leading-relaxed mb-4 text-left text-lg">
+            <div className="measure">
+              <p className="copy text-foreground mb-4">
                 I grew up in Marysville, raised my family in Lake Stevens, and
                 I've been buying, selling, and renovating property in Snohomish
                 County for decades. This is my backyard. I know which
@@ -46,14 +46,14 @@ const AboutSection = () => {
                 thirty years, and where the actual value is hiding in this
                 market right now.
               </p>
-              <p className="text-foreground leading-relaxed mb-4 text-left text-lg">
+              <p className="copy text-foreground mb-4">
                 Before real estate, I spent 30 years in healthcare - medical
                 coding, auditing, and education. That work taught me to read
                 the fine print, catch what gets buried on page four, and
                 explain complicated information in plain language. Those habits
                 follow me into every transaction.
               </p>
-              <p className="text-foreground leading-relaxed mb-4 text-left text-lg">
+              <p className="copy text-foreground mb-4">
                 Most of my clients are going through something significant -
                 downsizing after the kids leave, relocating for military orders,
                 or buying for the first time and not quite sure where to start.
@@ -62,7 +62,7 @@ const AboutSection = () => {
                 renovation in North Everett. I'm not talking about any of this
                 from a distance.
               </p>
-              <p className="text-foreground leading-relaxed mb-6 text-left text-lg">
+              <p className="copy text-foreground mb-6">
                 Outside of real estate, I volunteer on local education and
                 community development boards. This county is home. I'm not
                 going anywhere.
@@ -73,7 +73,7 @@ const AboutSection = () => {
               className="bg-secondary hover:bg-secondary/90 text-white px-8"
               asChild
             >
-              <Link to="/contact" className="text-lg font-normal">
+              <Link to="/contact" >
                 Let's Talk
               </Link>
             </Button>
@@ -87,7 +87,7 @@ const AboutSection = () => {
           >
             <img
               alt="Debbie Welch, Snohomish County real estate broker and local expert"
-              className="rounded-lg shadow-2xl w-full"
+              className="rounded-lg shadow-md w-full"
               src="/lovable-uploads/73b3d770-6a81-4f42-b1a2-76049a58e3b2.png"
             />
           </motion.div>

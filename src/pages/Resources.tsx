@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { ArrowRight, BarChart3, BookOpen, Calculator, ExternalLink, Newspaper } from "lucide-react";
+import { ArrowRight, BarChart3, BookOpen, Calculator, ExternalLink, HelpCircle, Newspaper } from "lucide-react";
 
 const guideLinks = [
   {
@@ -153,6 +153,27 @@ const Resources = () => {
                 </Card>
               </Link>
             </div>
+          </div>
+        </section>
+
+
+        <section className="section bg-background">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <Link to="/resources/faq" className="group">
+              <Card className="border-border bg-card transition-shadow duration-300 group-hover:shadow-lg">
+                <CardContent className="p-8 md:p-10">
+                  <HelpCircle className="h-8 w-8 text-secondary mb-4" aria-hidden="true" />
+                  <p className="eyebrow mb-3">Questions are part of the process…</p>
+                  <h2 className="font-heading h-section text-primary mb-4">Real Estate Frequently Asked Questions</h2>
+                  <p className="copy text-foreground max-w-3xl mb-6">
+                    Find straightforward answers about military PCS moves, VA-financed purchases, downsizing, buying and selling at the same time, preparing a home, and working together.
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-secondary">
+                    Read the FAQs <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </section>
 

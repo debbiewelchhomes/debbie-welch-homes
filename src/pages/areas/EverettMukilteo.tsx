@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-everett.jpg";
+import heroImage from "@/assets/area-hero-everett-mukilteo.webp";
 
 const EverettMukilteo = () => {
   const ref = useRef(null);
@@ -28,15 +28,20 @@ const EverettMukilteo = () => {
       <main>
         {/* Hero */}
         <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+          <img
+            src={heroImage}
+            alt="Sailboats at the Everett marina on the Port Gardner waterfront in Everett, Washington"
+            width={1920}
+            height={1080}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 h-full w-full object-cover"
+            style={{ objectPosition: "center" }}
+          />
           <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0.1) 100%), url(${heroImage})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-            role="img"
-            aria-label="Everett Washington marina with sailboats and historic building on Port Gardner Bay"
+            className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/15 to-black/10"
+            aria-hidden="true"
           />
           <div className="container mx-auto px-4 text-center section relative z-10">
             <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>

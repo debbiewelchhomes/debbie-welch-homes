@@ -109,15 +109,15 @@ All colors MUST be HSL.
 
 @layer utilities {
   .font-script {
-    font-family: 'Oooh Baby', cursive;
+    font-family: 'Allura', cursive;
     font-size: 1.15em;
     line-height: 1.6;
     color: hsl(var(--secondary));
   }
   
   .font-heading {
-    font-family: 'Bodoni Moda', serif;
-    font-weight: 550;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
     line-height: 1.15;
     letter-spacing: -0.02em;
   }
@@ -126,7 +126,7 @@ All colors MUST be HSL.
     font-family: 'Montserrat', sans-serif;
   }
 
-  /* Bodoni Moda is reserved for prominent display headings. Smaller headings
+  /* Cormorant Garamond Semibold is reserved for prominent display headings. Smaller headings
      stay in Montserrat for clarity, especially on mobile and in cards. */
   h3, h4, h5, h6,
   .h-card {
@@ -192,7 +192,7 @@ All colors MUST be HSL.
 
   /* Eyebrow / script accent label */
   .eyebrow {
-    font-family: 'Oooh Baby', cursive;
+    font-family: 'Allura', cursive;
     color: hsl(var(--secondary));
     font-size: clamp(1.375rem, 2.2vw, 1.875rem);
     line-height: 1.4;

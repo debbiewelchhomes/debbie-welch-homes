@@ -31,63 +31,57 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const lookingForLabels: Record<string, string> = {
+    buying: "Buying",
+    selling: "Selling",
+    relocating: "Relocating",
+    downsizing: "Downsizing",
+    exploring: "Just Exploring",
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    try {
-      const { data, error } = await supabase.functions.invoke('send-contact-email', {
-        body: formData,
-      });
-      
-      console.log("Contact form response:", { data, error });
-      
-      if (error) {
-        console.error("Error sending contact form:", error);
-        toast({
-          title: "Error",
-          description: "There was a problem sending your message. Please try again or contact me directly.",
-          variant: "destructive",
-        });
-        return;
-      }
-      
-      // Also check if the response indicates failure
-      if (data && data.success === false) {
-        console.error("Email sending failed:", data.error);
-        toast({
-          title: "Error",
-          description: data.error || "There was a problem sending your message. Please try again or contact me directly.",
-          variant: "destructive",
-        });
-        return;
-      }
-      
-      setSubmitted(true);
-      
-      // Reset after 5 seconds
-      setTimeout(() => {
-        setSubmitted(false);
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          lookingFor: "",
-          message: "",
-          website: "",
-        });
-      }, 5000);
-    } catch (error) {
-      console.error("Error sending contact form:", error);
+
+    const result = await sendInquiry({
+      formName: "Website Contact",
+      name: `${formData.firstName} ${formData.lastName}`.trim(),
+      email: formData.email,
+      phone: formData.phone,
+      website: formData.website,
+      fields: {
+        "Looking For": formData.lookingFor
+          ? lookingForLabels[formData.lookingFor] ?? formData.lookingFor
+          : "",
+        Message: formData.message,
+      },
+    });
+
+    setIsSubmitting(false);
+
+    if (!result.ok) {
       toast({
-        title: "Error",
-        description: "There was a problem sending your message. Please try again or contact me directly.",
+        title: "That did not go through.",
+        description: result.error,
         variant: "destructive",
       });
-    } finally {
-      setIsSubmitting(false);
+      return;
     }
+
+    setSubmitted(true);
+
+    setTimeout(() => {
+      setSubmitted(false);
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        lookingFor: "",
+        message: "",
+        website: "",
+      });
+    }, 5000);
   };
 
   const handleChange = (field: string, value: string) => {

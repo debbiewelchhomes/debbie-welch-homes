@@ -1,10 +1,12 @@
+import { SITE_URL } from "@/config/site";
+
 // RealEstateAgent JSON-LD schema for About/Contact pages
 export const realEstateAgentSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   "name": "Debbie Welch",
   "alternateName": "Debbie Welch Homes",
-  "url": "https://debbie-welch-homes.lovable.app",
+  "url": SITE_URL,
   "telephone": "360-631-8148",
   "email": "debbie@debbiewelchhomes.com",
   "description": "Snohomish County real estate broker helping buyers, sellers, downsizers, and relocation clients in Lake Stevens, Everett, Marysville, Snohomish, Arlington, Bothell, Mill Creek, Stanwood & Camano.",

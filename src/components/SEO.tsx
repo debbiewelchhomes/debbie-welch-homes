@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { absoluteUrl } from "@/config/site";
 
 interface SEOProps {
   title: string;
@@ -19,9 +20,12 @@ const SEO = ({
   imageAlt,
   jsonLd
 }: SEOProps) => {
-  const baseUrl = "https://debbie-welch-homes.lovable.app";
-  const fullCanonical = canonical ? `${baseUrl}${canonical}` : undefined;
-  const fullImage = image ? `${baseUrl}${image}` : undefined;
+  const fullCanonical = canonical ? absoluteUrl(canonical) : undefined;
+  const fullImage = image
+    ? image.startsWith("http")
+      ? image
+      : absoluteUrl(image)
+    : undefined;
   const fullTitle = title.includes("Debbie Welch") ? title : `${title} | Debbie Welch Homes`;
 
   return (

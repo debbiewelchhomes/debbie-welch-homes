@@ -17,7 +17,10 @@ export interface InquiryPayload {
   fields?: Record<string, string | undefined | null>;
 }
 
-export type InquiryResult = { ok: true } | { ok: false; error: string };
+export interface InquiryResult {
+  ok: boolean;
+  error?: string;
+}
 
 const GENERIC_ERROR =
   "I could not send that message right now. Please email me at " +

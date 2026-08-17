@@ -16,6 +16,8 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import { pageSEO, realEstateAgentSchema } from "@/data/seoData";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { sendInquiry } from "@/lib/inquiry";
+import InquiryFallback from "@/components/InquiryFallback";
 
 const Contact = () => {
   const { toast } = useToast();

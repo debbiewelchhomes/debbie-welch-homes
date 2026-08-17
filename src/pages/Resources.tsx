@@ -64,7 +64,7 @@ const Resources = () => {
                       <h3 className="font-heading h-card text-primary mb-3">{guide.title}</h3>
                       <p className="copy text-foreground mb-6">{guide.description}</p>
                       <span className="inline-flex items-center gap-2 text-sm font-medium text-secondary">
-                        Open Guide <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                        Get Yours Here <ExternalLink className="h-4 w-4" aria-hidden="true" />
                       </span>
                     </CardContent>
                   </Card>

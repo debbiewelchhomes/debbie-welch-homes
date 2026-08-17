@@ -173,7 +173,8 @@ const About = () => {
       <section className="py-10 bg-background border-y border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-heading text-2xl text-primary mb-3">Considering a Career at eXp Realty?</h2>
+            <p className="eyebrow mb-3">For fellow agents…</p>
+            <h2 className="font-heading h-section text-primary mb-4">Considering a Career at eXp Realty?</h2>
             <p className="text-foreground leading-relaxed mb-4">
               If you are an agent who is curious about eXp Realty, I am happy to share my experience, answer practical questions, and help you decide whether it may fit your business.
             </p>
@@ -229,7 +230,7 @@ const About = () => {
             >
               <h3 className="font-heading text-2xl font-bold text-primary mb-4">The Most Important People</h3>
               <p className="text-foreground leading-relaxed">
-                Todd, my husband and best person. Our blended family of six adult kids. Cooper the Goldendoodle, who has
+                Todd, my husband and best person. Our blended family of six adult kids and three grandbabies. Cooper the Goldendoodle, who has
                 very strong opinions about when it's walk time. And an iced sweet tea, always.
               </p>
             </motion.div>
@@ -310,88 +311,54 @@ const About = () => {
             className="text-center mb-12"
           >
             <p className="eyebrow mb-4">Let me introduce you…</p>
-            <h2 className="font-heading h-section text-primary mb-6">
-              To My Trusted Local Partners
-            </h2>
+            <h2 className="font-heading h-section text-primary mb-6">Trusted Local Partners</h2>
             <p className="text-foreground text-lg leading-relaxed max-w-3xl mx-auto">
-              I'm a solo agent, but I'm not doing this alone. Over the years I've built a circle of local lenders,
-              inspectors, stagers, and title partners who genuinely care about people. When it makes sense, I'll connect
-              you with the right folks so you're supported from every angle.
+              These are professionals I know and trust. You are always free to choose the provider who is right for you, and I can share additional options based on the property and the work involved.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={fadeInUp}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-background p-6 rounded-lg text-center"
-            >
-              <div className="w-24 h-24 bg-secondary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-3xl text-secondary">💼</span>
-              </div>
-              <h3 className="font-heading text-xl font-bold text-primary mb-3">Local Lender Partner</h3>
-              <p className="text-foreground text-sm leading-relaxed">
-                Trusted mortgage pros who understand Snohomish County, VA loans, and the real difference between a
-                pre-qual and a solid pre-approval.
+          <div className="grid md:grid-cols-2 gap-8">
+            <a href="https://crosscountrymortgage.com/scottsdale-az-4636/jared-paul/" target="_blank" rel="noopener noreferrer" className="bg-background p-7 rounded-lg hover:shadow-lg transition-shadow">
+              <p className="eyebrow-caps mb-3">Mortgage Lending</p>
+              <h3 className="font-heading h-card text-primary mb-3">Jared Paul, CrossCountry Mortgage</h3>
+              <p className="text-foreground leading-relaxed">
+                Jared grew up locally and is a former Marine. He works with conventional, FHA, VA, purchase, and refinance loans and is licensed in Washington.
               </p>
-            </motion.div>
+            </a>
 
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={fadeInUp}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-background p-6 rounded-lg text-center"
-            >
-              <div className="w-24 h-24 bg-secondary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-3xl text-secondary">🔍</span>
-              </div>
-              <h3 className="font-heading text-xl font-bold text-primary mb-3">Home Inspection Partner</h3>
-              <p className="text-foreground text-sm leading-relaxed">
-                Detail-oriented inspectors who explain what they found in plain language, not just a 40-page PDF that
-                makes every house sound like a teardown.
+            <a href="https://www.instagram.com/summitstaging/" target="_blank" rel="noopener noreferrer" className="bg-background p-7 rounded-lg hover:shadow-lg transition-shadow">
+              <p className="eyebrow-caps mb-3">Home Staging</p>
+              <h3 className="font-heading h-card text-primary mb-3">Cecilia Rehbein, Summit Staging & Design</h3>
+              <p className="text-foreground leading-relaxed">
+                A local staging and design business helping prepare homes to photograph well and make a strong first impression.
               </p>
-            </motion.div>
+            </a>
 
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={fadeInUp}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-background p-6 rounded-lg text-center"
-            >
-              <div className="w-24 h-24 bg-secondary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-3xl text-secondary">✨</span>
-              </div>
-              <h3 className="font-heading text-xl font-bold text-primary mb-3">Staging & Prep Support</h3>
-              <p className="text-foreground text-sm leading-relaxed">
-                Stagers and prep pros who know how to highlight what's great about your home without making it feel like
-                a hotel nobody actually lives in.
+            <a href="https://picsbypixphotography.com/realestate" target="_blank" rel="noopener noreferrer" className="bg-background p-7 rounded-lg hover:shadow-lg transition-shadow">
+              <p className="eyebrow-caps mb-3">Real Estate Photography</p>
+              <h3 className="font-heading h-card text-primary mb-3">Melinda Wong, Pics by Pix Photography</h3>
+              <p className="text-foreground leading-relaxed">
+                Puget Sound real estate media including polished photography, video, aerial images, 3D tours, floor plans, and virtual staging.
               </p>
-            </motion.div>
+            </a>
 
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={fadeInUp}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="bg-background p-6 rounded-lg text-center"
-            >
-              <div className="w-24 h-24 bg-secondary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-3xl text-secondary">📋</span>
-              </div>
-              <h3 className="font-heading text-xl font-bold text-primary mb-3">Escrow & Title Team</h3>
-              <p className="text-foreground text-sm leading-relaxed">
-                Behind-the-scenes pros who keep the paperwork and timelines on track from contract to closing without
-                the last-minute scrambles.
-              </p>
-            </motion.div>
+            <div className="bg-background p-7 rounded-lg">
+              <p className="eyebrow-caps mb-3">Home Inspections</p>
+              <h3 className="font-heading h-card text-primary mb-3">Inspection Options</h3>
+              <ul className="space-y-3 text-foreground">
+                <li>John Sobieski, Home Inspections Services NW</li>
+                <li>
+                  <a href="https://titaninspectionservices.com/home-inspections-in-snohomish/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
+                    Titan Inspection Services
+                  </a>
+                </li>
+                <li>
+                  <a href="https://hamiltonhomeinspections.com/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
+                    Butch Hamilton, Hamilton Home Inspections
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

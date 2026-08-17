@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer id="contact" className="bg-primary text-primary-foreground pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
 
           {/* Contact Column */}
           <div>
@@ -68,11 +68,18 @@ const Footer = () => {
               <Link to="/privacy-policy" className="text-sm hover:text-accent transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/about/exp-realty" className="text-sm text-primary-foreground/80 hover:text-accent transition-colors">
-                Work With Me at eXp Realty
-              </Link>
             </div>
 
+          </div>
+
+          <div>
+            <h3 className="font-heading h-card mb-6">For Real Estate Agents</h3>
+            <p className="text-sm mb-4 text-primary-foreground/90">
+              Curious about eXp Realty or looking for practical support as you grow your business?
+            </p>
+            <Link to="/about/exp-realty" className="text-sm font-semibold hover:text-accent transition-colors">
+              Work With Me at eXp Realty
+            </Link>
           </div>
         </div>
 

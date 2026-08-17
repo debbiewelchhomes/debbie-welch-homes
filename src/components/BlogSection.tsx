@@ -1,34 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { mainBlogPosts } from "@/data/blogPosts";
 
 const BlogSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-
-  const posts = [
-    {
-      title: "Washington's Medicaid Estate Recovery Rule, What Every Family Should Know",
-      excerpt:
-        "Most people have never heard of it until it's too late. If a parent received Medicaid long-term care, the state can make a claim against their estate after they pass. Here's what that means for your family and your home.",
-      href: "/blog/medicaid-estate-recovery-washington",
-    },
-    {
-      title: "Moving to Snohomish County on Military Orders, A Practical Guide",
-      excerpt:
-        "PCS timelines are tight and there's a lot of ground to cover. Here's an honest look at neighborhoods near Naval Station Everett, how VA financing works in this market, and what to know before you sign anything.",
-      href: "/blog/military-pcs-relocation-snohomish-county",
-    },
-    {
-      title: "Downsizing in Snohomish County: Where to Start When It All Feels Like Too Much",
-      excerpt:
-        "The house is too big. The kids are gone. You know you need to make a move, but the thought of going through 30 years of stuff is genuinely overwhelming. Let's talk about what the process actually looks like, step by step.",
-      href: "/blog/downsizing-snohomish-county",
-    },
-  ];
+  const posts = mainBlogPosts.slice(0, 3);
 
   return (
     <section id="blog" className="section bg-warm-bg">
@@ -40,45 +20,30 @@ const BlogSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <p
-            className="eyebrow mb-4"
-            aria-hidden="true"
-          >
-            Stay informed…
-          </p>
-          <h2 className="font-heading h-section text-primary mb-6">
-            From the Blog
-          </h2>
+          <p className="eyebrow mb-4" aria-hidden="true">Stay informed…</p>
+          <h2 className="font-heading h-section text-primary mb-6">From the Blog</h2>
           <p className="copy text-foreground max-w-2xl mx-auto">
-            Real talk on downsizing, buying, selling, and what's actually
-            happening in the Snohomish County market. A few nerdy numbers
-            included, because honestly, the numbers matter.
+            Real talk on downsizing, buying, selling, and what is actually happening in the Snohomish County market. A few useful numbers included, because the numbers matter.
           </p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
           {posts.map((post, index) => (
             <motion.div
-              key={index}
+              key={post.slug}
               initial={{ opacity: 0, y: 16 }}
-              animate={
-                isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }
-              }
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Link to={post.href}>
-                <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-border bg-card cursor-pointer">
+              <Link to={`/blog/${post.slug}`} className="group">
+                <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-border bg-card cursor-pointer overflow-hidden">
+                  {post.image && (
+                    <img src={post.image} alt={post.imageAlt || post.title} className="h-44 w-full object-cover" loading="lazy" />
+                  )}
                   <CardContent className="p-6">
-                    <div className="h-32 bg-accent/60 rounded-lg mb-4" aria-hidden="true" />
-                    <h3 className="font-heading h-card mb-3 text-primary">
-                      {post.title}
-                    </h3>
-                    <p className="copy text-foreground mb-4">
-                      {post.excerpt}
-                    </p>
-                    <Button variant="link" className="text-secondary p-0">
-                      Read More →
-                    </Button>
+                    <h3 className="font-heading h-card mb-3 text-primary">{post.title}</h3>
+                    <p className="copy text-foreground mb-4">{post.excerpt}</p>
+                    <Button variant="link" className="text-secondary p-0">Read More →</Button>
                   </CardContent>
                 </Card>
               </Link>
@@ -87,12 +52,7 @@ const BlogSection = () => {
         </div>
 
         <div className="text-center">
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-secondary text-secondary hover:bg-secondary hover:text-white text-lg font-normal"
-            asChild
-          >
+          <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-white text-lg font-normal" asChild>
             <Link to="/blog">View All Posts</Link>
           </Button>
         </div>

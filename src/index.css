@@ -266,7 +266,7 @@ section:has(> img.absolute.inset-0) .eyebrow {
 }
 
 /* Let visitors know that property-search links leave the branded site. */
-a[href*="debbiewelch.exprealty.com/index"] {
+main a[href*="debbiewelch.exprealty.com/index"] {
   flex-direction: column;
   height: auto;
   min-height: 2.75rem;
@@ -275,7 +275,7 @@ a[href*="debbiewelch.exprealty.com/index"] {
   padding-bottom: 0.5rem;
 }
 
-a[href*="debbiewelch.exprealty.com/index"]::after {
+main a[href*="debbiewelch.exprealty.com/index"]::after {
   content: "Opens in a new window";
   display: block;
   margin-top: 0.2rem;

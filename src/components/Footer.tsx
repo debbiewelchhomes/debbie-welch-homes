@@ -1,17 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
-import { useState } from "react";
+import { Link } from "react-router-dom";
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Newsletter signup:", email);
-  };
   return (
     <footer id="contact" className="bg-primary text-primary-foreground pt-20 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
+
           {/* Contact Column */}
           <div>
             <h3 className="font-heading text-2xl font-bold mb-6">Contact</h3>

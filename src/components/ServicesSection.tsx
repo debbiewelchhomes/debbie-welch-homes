@@ -20,7 +20,7 @@ const ServicesSection = () => {
   }, {
     icon: DollarSign,
     title: "Selling",
-    description: "From pricing strategy and home prep to marketing and negotiation, I'll help you position your Snohomish County home so it stands out in today's market—without burning yourself out in the process.",
+    description: "From pricing strategy and home prep to marketing and negotiation, I'll help you position your Snohomish County home so it stands out in today's market, without burning yourself out in the process.",
     cta: "Explore Selling Services",
     href: "/services/selling"
   }, {
@@ -32,7 +32,7 @@ const ServicesSection = () => {
   }, {
     icon: TrendingDown,
     title: "Downsizing",
-    description: "If you're entering a new season and your current home no longer fits, I'll help you right-size into something more manageable—step by step—while honoring both the practical and emotional parts of letting go.",
+    description: "If you're entering a new season and your current home no longer fits, I'll help you right-size into something more manageable, step by step, while honoring both the practical and emotional parts of letting go.",
     cta: "Explore Downsizing Services",
     href: "/services/downsizing"
   }];

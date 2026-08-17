@@ -70,7 +70,7 @@ export const pageSEO = {
   },
   buying: {
     title: "Buying a Home in Snohomish County | Debbie Welch",
-    description: "Calm, step-by-step guidance for home buyers in Snohomish County—from first-time buyers to VA loan and relocation clients."
+    description: "Calm, step-by-step guidance for home buyers in Snohomish County, from first-time buyers to VA loan and relocation clients."
   },
   selling: {
     title: "Selling Your Home in Snohomish County | Debbie Welch",
@@ -78,7 +78,7 @@ export const pageSEO = {
   },
   relocation: {
     title: "Relocation & PCS to Snohomish County | Debbie Welch",
-    description: "Relocating to Snohomish County? Expert guidance for military PCS moves and out-of-area buyers with remote-friendly support."
+    description: "Relocating to Snohomish County? Practical guidance for military PCS moves and out-of-area buyers with remote-friendly support."
   },
   downsizing: {
     title: "Downsizing in Snohomish County | Debbie Welch",

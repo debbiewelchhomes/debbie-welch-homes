@@ -32,7 +32,7 @@ const StanwoodCamano = () => {
                 Welcome to {areaName}
               </h1>
               <p className="text-base md:text-lg text-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
-                This is where we'll describe why {areaName} is such a popular corner of Snohomish County—the location, the vibe, and what life feels like here. Perfect for families, commuters, and anyone looking for that blend of community and convenience. I'll customize this copy with specific details about what makes this area special.
+                This is where we'll describe why {areaName} is such a popular corner of Snohomish County, the location, the vibe, and what life feels like here. Perfect for families, commuters, and anyone looking for that blend of community and convenience. I'll customize this copy with specific details about what makes this area special.
               </p>
               <div className="aspect-video bg-warm-bg rounded-lg flex items-center justify-center border border-border">
                 <p className="text-muted-foreground">Video Placeholder - YouTube embed will go here</p>
@@ -106,7 +106,7 @@ const StanwoodCamano = () => {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-secondary font-bold">•</span>
-                    <span>Limited walkability in some areas—car is often necessary.</span>
+                    <span>Limited walkability in some areas, car is often necessary.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-secondary font-bold">•</span>

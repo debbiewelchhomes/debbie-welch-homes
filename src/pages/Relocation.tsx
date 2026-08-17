@@ -95,7 +95,7 @@ const Relocation = () => {
     {
       question: "How does a VA loan work in this market?",
       answer:
-        "VA loans are a strong financing tool and I'm comfortable working with them. The key is having a lender who actually knows VA loans - not just someone who offers them on a checklist. My preferred VA lender is Jared Paul at CrossCountry Mortgage. He's a Marine veteran, a Marysville native, and knows this market and VA financing well. We'll get you pre-approved properly so your offer is competitive from the start.",
+        "VA loans are a strong financing tool and I'm comfortable working with them. The key is having a lender who actually knows VA loans - not just someone who offers them on a checklist. My preferred VA lender is Jared Paul at CrossCountry Mortgage. He's a Marine Veteran, a Marysville native, and knows this market and VA financing well. We'll get you pre-approved properly so your offer is competitive from the start.",
     },
     {
       question: "What if I need to sell a home in another state before I can buy here?",

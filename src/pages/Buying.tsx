@@ -89,7 +89,7 @@ const Buying = () => {
     {
       question: "How much do I actually need for a down payment?",
       answer:
-        "Less than most people think, depending on your loan type and financial picture. Conventional loans can go as low as 3-5% down. FHA is 3.5%. VA loans for qualified veterans require zero down. Your ideal down payment depends on your goals, your monthly comfort level, and what your lender recommends for your situation. I'll connect you with someone who will explain this clearly so we can search with real numbers.",
+        "Less than most people think, depending on your loan type and financial picture. Conventional loans can go as low as 3-5% down. FHA is 3.5%. VA loans for qualified Veterans require zero down. Your ideal down payment depends on your goals, your monthly comfort level, and what your lender recommends for your situation. I'll connect you with someone who will explain this clearly so we can search with real numbers.",
     },
     {
       question: "Do I need to sell my current home before I buy?",

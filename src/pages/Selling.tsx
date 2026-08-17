@@ -229,9 +229,8 @@ const Selling = () => {
                   reassurances or a pitch to list immediately.
                 </p>
                 <p>
-                  I spent 30 years in healthcare reading complex documents and explaining them to people under stress. I
-                  brought that same approach here. You'll understand every offer, every contract term, every clause
-                  before you sign anything.
+                  I read complex documents carefully and explain them plainly to people who are under stress. You'll
+                  understand every offer, every contract term, every clause before you sign anything.
                 </p>
               </div>
             </motion.div>
@@ -303,8 +302,7 @@ const Selling = () => {
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  After 30 years reading healthcare documents for a living, I'm not going to miss the clause on page 4
-                  of a purchase agreement or let a buyer's inspection addendum slide by without explaining what you're
+                  I'm not going to miss the clause on page 4 of a purchase agreement or let a buyer's inspection addendum slide by without explaining what you're
                   giving up. The market moves the way it moves - what I control is how well your home is positioned and
                   how clearly you understand your options at every step.
                 </p>

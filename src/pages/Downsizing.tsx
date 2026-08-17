@@ -311,9 +311,8 @@ const Downsizing = () => {
                   not a formal service with a fee attached. It's just what I do when someone needs it.
                 </p>
                 <p>
-                  I also came from 30 years in healthcare - reading complex documents, catching the details other people
-                  miss, and explaining things clearly to people who are already stressed. That same approach applies
-                  here. I'll walk you through contracts in plain language, flag the clauses that matter, and make sure
+                  I am careful with complex documents, I catch the details other people miss, and I explain things
+                  clearly to people who are already stressed. I'll walk you through contracts in plain language, flag the clauses that matter, and make sure
                   you understand what you're agreeing to before you sign anything.
                 </p>
                 <p>

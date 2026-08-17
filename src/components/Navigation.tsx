@@ -31,6 +31,14 @@ const Navigation = () => {
     { name: "Stanwood & Camano Island", href: "/areas/stanwood-camano" },
   ];
 
+  const resources = [
+    { name: "Resource Library", href: "/resources" },
+    { name: "Buyer & Seller Guides", href: "/resources#guides" },
+    { name: "Local Market Reports", href: "/resources#market-reports" },
+    { name: "Mortgage Calculator", href: "https://debbiewelch.exprealty.com/resources/mortgage-calculator/", external: true },
+    { name: "Blog", href: "/blog" },
+  ];
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6">
@@ -101,9 +109,22 @@ const Navigation = () => {
 
             {/* Right Navigation Group */}
             <div className="flex items-center gap-6 flex-1 justify-start pl-6 whitespace-nowrap">
-              <Link to="/blog" className="text-foreground hover:text-secondary transition-colors">
-                Blog
-              </Link>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-secondary transition-colors">
+                  Resources <ChevronDown className="h-4 w-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="bg-background border-border z-50">
+                  {resources.map((resource) => (
+                    <DropdownMenuItem key={resource.name}>
+                      {resource.external ? (
+                        <a href={resource.href} target="_blank" rel="noopener noreferrer" className="w-full">{resource.name}</a>
+                      ) : (
+                        <Link to={resource.href} className="w-full">{resource.name}</Link>
+                      )}
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
 
               <Link to="/about" className="text-foreground hover:text-secondary transition-colors">
                 About
@@ -186,13 +207,22 @@ const Navigation = () => {
                 Search Homes
               </a>
 
-              <Link
-                to="/blog"
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-foreground hover:text-secondary transition-colors"
-              >
-                Blog
-              </Link>
+              <div className="flex flex-col gap-2 pl-4">
+                <Link to="/resources" onClick={() => setMobileMenuOpen(false)} className="text-sm font-semibold text-muted-foreground hover:text-secondary transition-colors">
+                  Resources
+                </Link>
+                {resources.slice(1).map((resource) =>
+                  resource.external ? (
+                    <a key={resource.name} href={resource.href} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} className="text-foreground hover:text-secondary transition-colors pl-4">
+                      {resource.name}
+                    </a>
+                  ) : (
+                    <Link key={resource.name} to={resource.href} onClick={() => setMobileMenuOpen(false)} className="text-foreground hover:text-secondary transition-colors pl-4">
+                      {resource.name}
+                    </Link>
+                  ),
+                )}
+              </div>
 
               <Link
                 to="/about"

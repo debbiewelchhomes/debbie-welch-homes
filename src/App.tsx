@@ -17,6 +17,7 @@ import BlogPost from "./pages/BlogPost";
 import About from "./pages/About";
 import ExpRealty from "./pages/ExpRealty";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Resources from "./pages/Resources";
 
 import Contact from "./pages/Contact";
 import SnohomishCounty from "./pages/areas/SnohomishCounty";
@@ -47,6 +48,7 @@ const App = () => {
             <Route path="/services/relocation" element={<Relocation />} />
             <Route path="/services/downsizing" element={<Downsizing />} />
             <Route path="/listings" element={<Listings />} />
+            <Route path="/resources" element={<Resources />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/about" element={<About />} />

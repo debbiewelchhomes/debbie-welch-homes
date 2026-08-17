@@ -67,7 +67,8 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
       url: "https://debbie-welch-homes.lovable.app/about"
     },
     mainEntityOfPage: `https://debbie-welch-homes.lovable.app/blog/${post.slug}`,
-    articleSection: post.category
+    articleSection: post.category,
+    ...(post.image ? { image: `https://debbie-welch-homes.lovable.app${post.image}` } : {})
   };
 
   return (
@@ -77,6 +78,8 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
         description={post.metaDescription}
         canonical={`/blog/${post.slug}`}
         type="article"
+        image={post.image}
+        imageAlt={post.imageAlt}
         jsonLd={articleSchema}
       />
       <Navigation />
@@ -104,6 +107,16 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
                 {post.title}
               </h1>
             </header>
+
+            {post.image && (
+              <figure className="mb-12 overflow-hidden rounded-lg border border-border bg-warm-bg">
+                <img
+                  src={post.image}
+                  alt={post.imageAlt ?? ""}
+                  className="aspect-[16/9] w-full object-cover"
+                />
+              </figure>
+            )}
 
             {/* Content */}
             <div className="prose prose-lg max-w-none">

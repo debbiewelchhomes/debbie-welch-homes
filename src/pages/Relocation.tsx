@@ -38,7 +38,8 @@ const Relocation = () => {
     email: "",
     phone: "",
     currentLocation: "",
-    message: "",    website: "",
+    message: "",
+    website: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 

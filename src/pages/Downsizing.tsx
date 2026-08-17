@@ -38,7 +38,8 @@ const Downsizing = () => {
     email: "",
     phone: "",
     currentHome: "",
-    message: "",    website: "",
+    message: "",
+    website: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 

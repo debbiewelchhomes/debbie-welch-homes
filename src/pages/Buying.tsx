@@ -37,7 +37,8 @@ const Buying = () => {
     name: "",
     email: "",
     phone: "",
-    message: "",    website: "",
+    message: "",
+    website: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 

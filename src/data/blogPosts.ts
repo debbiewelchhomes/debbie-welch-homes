@@ -543,6 +543,15 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
   }
 ];
 
+// Reader-focused posts displayed in the public Blog directory.
+// The remaining search insights stay available by direct URL for contextual SEO support.
+const publicSearchInsightIds = new Set(["r01", "r02", "r03", "r04"]);
+
+export const publicBlogPosts: BlogPost[] = [
+  ...searchInsightsPosts.filter((post) => publicSearchInsightIds.has(post.id)),
+  ...mainBlogPosts
+];
+
 // All posts combined
 export const allBlogPosts: BlogPost[] = [...mainBlogPosts, ...searchInsightsPosts];
 

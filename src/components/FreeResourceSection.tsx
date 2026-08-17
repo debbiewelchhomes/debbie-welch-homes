@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
+
 
 const FreeResourceSection = () => {
   const ref = useRef(null);
@@ -42,9 +44,10 @@ const FreeResourceSection = () => {
               className="bg-secondary hover:bg-secondary/90 text-white px-8"
               asChild
             >
-              <a href="#" className="text-lg font-normal">
+              <Link to="/contact" className="text-lg font-normal">
                 Get My Free Report
-              </a>
+              </Link>
+
             </Button>
           </div>
         </motion.div>

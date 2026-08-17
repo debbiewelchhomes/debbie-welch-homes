@@ -1,5 +1,5 @@
 import Navigation from "@/components/Navigation";
-import UnderConstructionBanner from "@/components/UnderConstructionBanner";
+
 import HeroSection from "@/components/HeroSection";
 import BufferSection from "@/components/BufferSection";
 import RealTalkSection from "@/components/RealTalkSection";
@@ -24,8 +24,7 @@ const Index = () => {
         jsonLd={realEstateAgentSchema}
       />
       <Navigation />
-      {/* UNDER CONSTRUCTION BANNER - Remove this line and the component when site is ready */}
-      <UnderConstructionBanner />
+
       <main>
         <HeroSection />
         <BufferSection />

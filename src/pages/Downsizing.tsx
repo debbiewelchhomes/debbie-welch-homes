@@ -240,6 +240,14 @@ const Downsizing = () => {
           </div>
         </section>
 
+        <section className="py-10 bg-warm-bg border-y border-border">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <p className="eyebrow mb-3">Specialized support for a significant transition…</p>
+            <h2 className="font-heading h-card text-primary mb-4">Seniors Real Estate Specialist® (SRES®)</h2>
+            <p className="copy text-foreground">My SRES® credential reflects specialized training in the housing decisions that often affect older adults and their families. That includes timing, downsizing, accessibility, family communication, financial considerations, and coordinating a move that may involve decades of belongings. It does not replace legal, tax, medical, or financial advice, but it helps me recognize when those professionals should be part of the conversation.</p>
+          </div>
+        </section>
+
         {/* The Downsizing Process - 5 Steps */}
         <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">

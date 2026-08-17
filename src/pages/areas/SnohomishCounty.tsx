@@ -164,23 +164,27 @@ const SnohomishCounty = () => {
             <ul className="space-y-3 text-foreground text-base">
               <li className="flex gap-2">
                 <span className="text-secondary font-bold">•</span>
-                <span>School assignment, confirmed with the district using the exact address.</span>
+                <span><strong>School assignment.</strong> Confirm it with the district using the exact address.</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-secondary font-bold">•</span>
                 <span>
-                  Utilities and systems: city water and sewer, or well and septic, with inspection records.
+                  <strong>Utilities and systems.</strong> Confirm city water and sewer, or well and septic, along with available inspection records.
                 </span>
               </li>
               <li className="flex gap-2">
                 <span className="text-secondary font-bold">•</span>
                 <span>
-                  Flood, shoreline, critical-area, easement, and HOA conditions, as applicable to the parcel.
+                  <strong>Property-specific restrictions.</strong> Review flood, shoreline, critical-area, easement, and HOA conditions as applicable to the parcel.
                 </span>
               </li>
               <li className="flex gap-2">
                 <span className="text-secondary font-bold">•</span>
-                <span>Your commute, driven at the time of day you would actually be driving it.</span>
+                <span><strong>Your real commute.</strong> Drive it at the time of day you would actually be traveling.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-secondary font-bold">•</span>
+                <span><strong>Seller documentation.</strong> Permits, repair history, utility details, HOA records, and well or septic information can make a property easier to evaluate and help prevent closing delays.</span>
               </li>
             </ul>
           </div>

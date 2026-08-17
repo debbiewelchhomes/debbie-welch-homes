@@ -81,28 +81,19 @@ const Snohomish = () => {
                 <ul className="space-y-3 text-foreground text-base">
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      A genuine historic downtown, recognized as a National Historic District, with an
-                      established local character.
-                    </span>
+                    <span><strong>A genuine historic downtown, recognized as a National Historic District, with an established local character.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      River and lake setting, with parks, trails, and nearby agricultural landscape for open
-                      views and outdoor time.
-                    </span>
+                    <span><strong>River and lake setting, with parks, trails, and nearby agricultural landscape for open views and outdoor time.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      A mix of in-town homes, newer construction, and rural or acreage property just outside the
-                      city.
-                    </span>
+                    <span><strong>A mix of in-town homes, newer construction, and rural or acreage property just outside the city.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>A small-town feel while still being within reach of Everett and the I-5 corridor.</span>
+                    <span><strong>A small-town feel while still being within reach of Everett and the I-5 corridor.</strong></span>
                   </li>
                 </ul>
               </div>
@@ -111,29 +102,19 @@ const Snohomish = () => {
                 <ul className="space-y-3 text-foreground text-base">
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Older homes, where they are present, can call for additional inspection, maintenance,
-                      insurance review, or renovation planning.
-                    </span>
+                    <span><strong>Older homes, where they are present, can call for additional inspection, maintenance, insurance review, or renovation planning.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Not every downtown-area property is historic, and not every historic property carries the
-                      same requirements. Verify rather than assume.
-                    </span>
+                    <span><strong>Not every downtown-area property is historic, and not every historic property carries the same requirements.</strong> Verify rather than assume.</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      River proximity makes flood mapping and insurance a parcel-by-parcel question.
-                    </span>
+                    <span><strong>River proximity makes flood mapping and insurance a parcel-by-parcel question.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      City limits versus unincorporated county changes utilities, services, and permitting.
-                    </span>
+                    <span><strong>City limits versus unincorporated county changes utilities, services, and permitting.</strong></span>
                   </li>
                 </ul>
               </div>
@@ -157,6 +138,16 @@ const Snohomish = () => {
               come into play. Near the rivers, elevation and flood mapping matter. These are all answerable
               questions. They just need to be answered for the specific parcel rather than the general area.
             </p>
+          </div>
+        </section>
+
+        <section className="section bg-background">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="font-heading h-section text-primary mb-8 text-center">Practical Notes for Buyers and Sellers</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Plan for the age and setting of the property.</strong> Older systems, flood mapping, shoreline or river proximity, wells, septic systems, easements, and historic considerations all deserve address-specific review before an offer becomes firm.</p></div>
+              <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Documentation helps buyers see character instead of uncertainty.</strong> Permits, repair records, system ages, utility information, flood insurance history when applicable, and details about thoughtful updates can make an older or rural property easier to evaluate.</p></div>
+            </div>
           </div>
         </section>
 

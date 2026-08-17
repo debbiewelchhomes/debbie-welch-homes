@@ -83,30 +83,19 @@ const BothellMillCreek = () => {
                 <ul className="space-y-3 text-foreground text-base">
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Access toward employment centers in Everett, Seattle, Bellevue, and the Eastside from one
-                      general location.
-                    </span>
+                    <span><strong>Access toward employment centers in Everett, Seattle, Bellevue, and the Eastside from one general location.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Substantial public open space. Bothell manages roughly 400 acres of parkland and open
-                      space along with its trail systems.
-                    </span>
+                    <span><strong>Substantial public open space.</strong> Bothell manages roughly 400 acres of parkland and open space along with its trail systems.</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Mill Creek has 11 city parks, nature trails including the North Creek Trail, and Mill
-                      Creek Town Center as a walkable retail and dining hub.
-                    </span>
+                    <span><strong>Mill Creek has 11 city parks, nature trails including the North Creek Trail, and Mill Creek Town Center as a walkable retail and dining hub.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      A broad range of housing, from established homes to newer townhomes and condominiums.
-                    </span>
+                    <span><strong>A broad range of housing, from established homes to newer townhomes and condominiums.</strong></span>
                   </li>
                 </ul>
               </div>
@@ -115,30 +104,19 @@ const BothellMillCreek = () => {
                 <ul className="space-y-3 text-foreground text-base">
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      The county question in Bothell is not academic. Confirm county, taxes, and services for
-                      the specific parcel.
-                    </span>
+                    <span><strong>The county question in Bothell is not academic.</strong> Confirm county, taxes, and services for the specific parcel.</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      School assignment varies. Mill Creek is served by Everett Public Schools, while Bothell
-                      addresses may fall under Northshore or another district depending on location.
-                    </span>
+                    <span><strong>School assignment varies.</strong> Mill Creek is served by Everett Public Schools, while Bothell addresses may fall under Northshore or another district depending on location.</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Traffic varies widely by corridor and time of day. No one can promise you a commute time.
-                    </span>
+                    <span><strong>Traffic varies widely by corridor and time of day.</strong> No one can promise you a commute time.</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Many neighborhoods carry homeowner associations. Read the dues, rules, and reserve
-                      documents before you are emotionally committed.
-                    </span>
+                    <span><strong>Many neighborhoods carry homeowner associations.</strong> Read the dues, rules, and reserve documents before you are emotionally committed.</span>
                   </li>
                 </ul>
               </div>
@@ -162,6 +140,16 @@ const BothellMillCreek = () => {
               district, the utility providers, the association if there is one, and the school assignment for
               that exact address before you draw conclusions from the city name.
             </p>
+          </div>
+        </section>
+
+        <section className="section bg-background">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="font-heading h-section text-primary mb-8 text-center">Practical Notes for Buyers and Sellers</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Check the parcel, not just the mailing address.</strong> County, school district, taxes, utilities, HOA rules, and commute routes can change within a short distance. For condos and townhomes, review the association budget, reserves, insurance, and meeting minutes before committing.</p></div>
+              <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Make the location differences easy to understand.</strong> Clear information about schools, county, commuting options, nearby trails, association details, and recent improvements helps buyers compare your home accurately with properties carrying the same city name.</p></div>
+            </div>
           </div>
         </section>
 

@@ -4,7 +4,6 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
-import aboutInterior from "@/assets/about-interior.jpg";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { pageSEO, realEstateAgentSchema } from "@/data/seoData";
@@ -81,9 +80,9 @@ const About = () => {
               className="order-2 md:order-1"
             >
               <img
-                src={aboutInterior}
-                alt="Debbie with clients in Snohomish County WA"
-                className="rounded-lg shadow-2xl w-full"
+                src="/images/debbie-welch-working.webp"
+                alt="Debbie Welch working at her laptop"
+                className="rounded-lg shadow-xl w-full object-cover"
               />
             </motion.div>
 

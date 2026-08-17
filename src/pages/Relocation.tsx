@@ -240,6 +240,14 @@ const Relocation = () => {
           </div>
         </section>
 
+        <section className="py-10 bg-warm-bg border-y border-border">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <p className="eyebrow mb-3">Military moves have their own moving parts…</p>
+            <h2 className="font-heading h-card text-primary mb-4">Military Relocation Professional (MRP)</h2>
+            <p className="copy text-foreground">My MRP credential reflects specialized training in the real estate needs of active-duty service members, Veterans, and military families. It supports the practical work around PCS timelines, VA financing, remote home searches, coordinating across time zones, and helping clients connect with professionals who understand military moves. As the wife of a retired Navy Veteran, I also understand that the logistics affect the whole family.</p>
+          </div>
+        </section>
+
         {/* The Relocation Process - 5 Steps */}
         <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">

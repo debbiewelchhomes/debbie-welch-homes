@@ -82,29 +82,19 @@ const StanwoodCamano = () => {
                 <ul className="space-y-3 text-foreground text-base">
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Shoreline, forest, and recreation access, including Camano Island State Park and Cama
-                      Beach State Park.
-                    </span>
+                    <span><strong>Shoreline, forest, and recreation access, including Camano Island State Park and Cama Beach State Park.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      A traditional Stanwood downtown with agricultural roots and everyday services on the
-                      mainland side.
-                    </span>
+                    <span><strong>A traditional Stanwood downtown with agricultural roots and everyday services on the mainland side.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Bridge access to Camano Island, so island property does not require a ferry crossing.
-                    </span>
+                    <span><strong>Bridge access to Camano Island, so island property does not require a ferry crossing.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      A wide range of property types, from in-town homes to rural and water-oriented parcels.
-                    </span>
+                    <span><strong>A wide range of property types, from in-town homes to rural and water-oriented parcels.</strong></span>
                   </li>
                 </ul>
               </div>
@@ -113,31 +103,19 @@ const StanwoodCamano = () => {
                 <ul className="space-y-3 text-foreground text-base">
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Two counties, two sets of rules. Confirm which county a property is in before comparing
-                      taxes or services.
-                    </span>
+                    <span><strong>Two counties, two sets of rules.</strong> Confirm which county a property is in before comparing taxes or services.</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Wells, septic systems, and private road or access agreements are common outside of town
-                      and need real review.
-                    </span>
+                    <span><strong>Wells, septic systems, and private road or access agreements are common outside of town and need real review.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Shoreline, bluff, drainage, and flood considerations apply to many properties near the
-                      water and the river delta.
-                    </span>
+                    <span><strong>Shoreline, bluff, drainage, and flood considerations apply to many properties near the water and the river delta.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Distance to daily services and to I-5 varies a lot by location. Test the drive you would
-                      actually make.
-                    </span>
+                    <span><strong>Distance to daily services and to I-5 varies a lot by location.</strong> Test the drive you would actually make.</span>
                   </li>
                 </ul>
               </div>
@@ -159,6 +137,16 @@ const StanwoodCamano = () => {
               These are all workable. They simply take a slower, more document-driven process than a standard
               in-city purchase, and it is far cheaper to ask the questions during inspection than after closing.
             </p>
+          </div>
+        </section>
+
+        <section className="section bg-background">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="font-heading h-section text-primary mb-8 text-center">Practical Notes for Buyers and Sellers</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Allow extra time for property-specific research.</strong> County jurisdiction, wells, septic systems, private roads, shared access, shoreline rules, drainage, bluff conditions, insurance, and travel time to daily services should all be understood before closing.</p></div>
+              <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Prepare the records that explain how the property works.</strong> Well and septic documents, road agreements, surveys, permits, maintenance history, shoreline information, and insurance details can prevent a distinctive property from feeling unnecessarily complicated.</p></div>
+            </div>
           </div>
         </section>
 

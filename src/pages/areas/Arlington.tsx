@@ -82,27 +82,19 @@ const Arlington = () => {
                 <ul className="space-y-3 text-foreground text-base">
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      A real downtown with a defined main street, rather than only newer commercial development.
-                    </span>
+                    <span><strong>A real downtown with a defined main street, rather than only newer commercial development.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Trail and park access, including the Centennial Trail, the Airport Trail, Centennial Park,
-                      and a number of smaller city parks.
-                    </span>
+                    <span><strong>Trail and park access, including the Centennial Trail, the Airport Trail, Centennial Park, and a number of smaller city parks.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      A wide range of housing types, from established in-town homes to newer developments to
-                      more rural properties outside the city.
-                    </span>
+                    <span><strong>A wide range of housing types, from established in-town homes to newer developments to more rural properties outside the city.</strong></span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>Direct I-5 access at Smokey Point for buyers who travel south for work.</span>
+                    <span><strong>Direct I-5 access at Smokey Point for buyers who travel south for work.</strong></span>
                   </li>
                 </ul>
               </div>
@@ -111,31 +103,19 @@ const Arlington = () => {
                 <ul className="space-y-3 text-foreground text-base">
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Downtown, Smokey Point, and rural-edge properties are genuinely different living
-                      experiences. Visit all three before deciding what you want.
-                    </span>
+                    <span><strong>Downtown, Smokey Point, and rural-edge properties are genuinely different living experiences.</strong> Visit all three before deciding what you want.</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Some properties sit inside city limits and some sit in unincorporated Snohomish County.
-                      That affects permitting, services, and utilities.
-                    </span>
+                    <span><strong>Some properties sit inside city limits and some sit in unincorporated Snohomish County.</strong> That affects permitting, services, and utilities.</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      The airport and surrounding industrial area are active. Worth understanding for any home
-                      nearby.
-                    </span>
+                    <span><strong>The airport and surrounding industrial area are active.</strong> Worth understanding for any home nearby.</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
-                    <span>
-                      Commute conditions vary by time of day and direction. Test your actual route before you
-                      commit.
-                    </span>
+                    <span><strong>Commute conditions vary by time of day and direction.</strong> Test your actual route before you commit.</span>
                   </li>
                 </ul>
               </div>
@@ -160,6 +140,16 @@ const Arlington = () => {
               allows, and whether the property has any easement or access conditions attached. I go through that
               with you before you write an offer, not after.
             </p>
+          </div>
+        </section>
+
+        <section className="section bg-background">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="font-heading h-section text-primary mb-8 text-center">Practical Notes for Buyers and Sellers</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Verify jurisdiction, utilities, and access early.</strong> Arlington addresses can represent in-city homes, newer development, or rural property. Wells, septic systems, private roads, airport proximity, and future land-use plans can matter as much as the house itself.</p></div>
+              <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Gather rural-property records before listing.</strong> Septic documents, well information, surveys, easements, permits, and private-road agreements help buyers understand the property and reduce avoidable delays once you are under contract.</p></div>
+            </div>
           </div>
         </section>
 

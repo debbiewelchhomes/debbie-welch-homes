@@ -1,73 +1,82 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-home.jpg";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
+const specialties = [
+  "Senior Housing Transitions & Downsizing",
+  "Military PCS & Veterans",
+  "Relocation to and from Snohomish County",
+];
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+    <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 parallax-section"
         style={{
-          backgroundImage: `linear-gradient(rgba(225, 223, 220, 0.3), rgba(225, 223, 220, 0.3)), url(${heroImage})`,
+          backgroundImage: `linear-gradient(rgba(225, 223, 220, 0.35), rgba(225, 223, 220, 0.35)), url(${heroImage})`,
         }}
         role="img"
-        aria-label="Snohomish County WA home exterior - Debbie Welch local real estate agent"
+        aria-label="Snohomish County WA home exterior, Debbie Welch local real estate agent"
       />
 
-      <div className="relative z-10 container mx-auto px-4 pt-32 md:pt-40 pb-20 text-center items-center justify-center min-h-[85vh] flex flex-row">
+      <div className="relative z-10 container mx-auto flex min-h-[80vh] items-center justify-center px-4 pb-16 pt-32 md:pt-40">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto"
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="w-full max-w-3xl"
         >
-          <div className="text-backdrop px-5 py-6 md:px-8 md:py-8">
-            <p
-              className="font-script text-4xl md:text-5xl lg:text-6xl mb-6"
-              style={{ color: "#6e808e" }}
-            >
+          <div className="text-backdrop text-center">
+            <p className="eyebrow" aria-hidden="true">
               Welcome home…
             </p>
 
-            <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-6 whitespace-pre-line">
-              Helping You Home in{"\n"}Snohomish County
+            <h1 className="font-heading h-display text-primary mb-4">
+              Helping You Home in Snohomish County
             </h1>
 
-            <p className="text-xl md:text-2xl text-primary mb-8 max-w-3xl mx-auto font-light whitespace-pre-line">
-              Lifelong Local.{"\n"}Right-Sizing Specialist.{"\n"}Military, VA & Relocation Expert.
+            <p className="copy-lead text-primary/90 mx-auto measure mb-6">
+              I grew up here, I have owned homes here, and I have spent 45+ years watching this
+              county change. You get honest guidance, a calm and organized plan, and someone who
+              actually picks up the phone.
             </p>
 
-            <div className="prose prose-lg text-primary mb-10 max-w-3xl mx-auto">
-              <p className="leading-relaxed text-xl">
-                I grew up here. I've bought and sold here. I know which
-                neighborhoods are changing, which ones have been steady for
-                decades, which ones you may want to research a little more than
-                others, and where the real value is in this market right now.
-                If you want someone who will level with you, keep you organized,
-                and actually pick up the phone - that's what I do.
-              </p>
-            </div>
+            <ul className="mb-8 flex flex-wrap justify-center gap-2">
+              {specialties.map((item) => (
+                <li
+                  key={item}
+                  className="rounded-full border border-secondary/40 bg-white/70 px-4 py-1.5 text-sm text-primary"
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button
-                size="lg"
-                className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6"
-                asChild
-              >
+            <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90" asChild>
                 <a
                   href="https://cal.com/debbie.welch.homes"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-lg font-normal"
                 >
                   Book a Free Consult
                 </a>
               </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-secondary bg-transparent text-secondary hover:bg-secondary hover:text-white"
+                asChild
+              >
+                <Link to="/services">See How I Help</Link>
+              </Button>
             </div>
 
-            <p className="text-sm text-primary max-w-2xl mx-auto">
-              Serving Lake Stevens, Everett, Marysville, Arlington, Snohomish,
-              Stanwood, Camano Island, Bothell, Mill Creek, and Mukilteo.
+            <p className="mt-6 text-sm text-primary/80">
+              Serving Lake Stevens, Everett, Marysville, Arlington, Snohomish, Stanwood, Camano
+              Island, Bothell, Mill Creek, and Mukilteo.
             </p>
           </div>
         </motion.div>

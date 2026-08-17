@@ -119,11 +119,11 @@ export const pageSEO = {
     },
     snohomish: {
       title: "Snohomish WA Real Estate Guide | Debbie Welch",
-      description: "Buying or selling in Snohomish, WA? Historic charm, acreage, and growing communities from a local broker."
+      description: "Snohomish, WA guide: the historic district downtown, river and lake setting, older home considerations, and city versus unincorporated county."
     },
     stanwoodCamano: {
       title: "Stanwood & Camano Real Estate | Debbie Welch",
-      description: "Local guide to buying and selling homes in Stanwood and on Camano Island, WA, from a Snohomish County broker."
+      description: "Stanwood and Camano Island guide: two counties, bridge access, state park shoreline, and well, septic, and shoreline checks before you buy."
     }
   }
 };

@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const specialties = [
-  "Senior Housing Transitions & Downsizing",
-  "Military PCS & Veterans",
-  "Relocation to and from Snohomish County",
+  { label: "Senior Housing Transitions & Downsizing", to: "/services/downsizing" },
+  { label: "Military PCS & Veterans", to: "/services/relocation" },
+  { label: "Relocation to and from Snohomish County", to: "/services/relocation" },
 ];
 
 const HeroSection = () => {
@@ -45,11 +45,13 @@ const HeroSection = () => {
 
             <ul className="mb-8 flex flex-wrap justify-center gap-2">
               {specialties.map((item) => (
-                <li
-                  key={item}
-                  className="rounded-full border border-secondary/40 bg-white/70 px-4 py-1.5 text-sm text-primary"
-                >
-                  {item}
+                <li key={item.label}>
+                  <Link
+                    to={item.to}
+                    className="block rounded-full border border-secondary/40 bg-white/70 px-4 py-1.5 text-sm text-primary transition-colors hover:border-secondary hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+                  >
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>

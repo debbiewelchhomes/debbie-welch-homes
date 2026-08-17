@@ -12,6 +12,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { sendInquiry } from "@/lib/inquiry";
+import InquiryFallback from "@/components/InquiryFallback";
 
 const Selling = () => {
   const introRef = useRef(null);
@@ -37,15 +39,40 @@ const Selling = () => {
     phone: "",
     address: "",
     message: "",
+    website: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    const result = await sendInquiry({
+      formName: "Request a Free Home Evaluation",
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      website: formData.website,
+      fields: {
+        "Property address": formData.address,
+        "Message": formData.message,
+      },
+    });
+    setIsSubmitting(false);
+
+    if (!result.ok) {
+      toast({
+        title: "That did not go through.",
+        description: result.error,
+        variant: "destructive",
+      });
+      return;
+    }
+
     toast({
       title: "Got it - thank you.",
-      description: "I'll follow up soon to put together your home evaluation.",
+      description: "Thanks for reaching out. I'll follow up soon with your home evaluation.",
     });
-    setFormData({ name: "", email: "", phone: "", address: "", message: "" });
+    setFormData({ name: "", email: "", phone: "", address: "", message: "", website: "" });
   };
 
   const sellingSteps = [
@@ -202,9 +229,8 @@ const Selling = () => {
                   reassurances or a pitch to list immediately.
                 </p>
                 <p>
-                  I spent 30 years in healthcare reading complex documents and explaining them to people under stress. I
-                  brought that same approach here. You'll understand every offer, every contract term, every clause
-                  before you sign anything.
+                  I read complex documents carefully and explain them plainly to people who are under stress. You'll
+                  understand every offer, every contract term, every clause before you sign anything.
                 </p>
               </div>
             </motion.div>
@@ -276,8 +302,7 @@ const Selling = () => {
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  After 30 years reading healthcare documents for a living, I'm not going to miss the clause on page 4
-                  of a purchase agreement or let a buyer's inspection addendum slide by without explaining what you're
+                  I'm not going to miss the clause on page 4 of a purchase agreement or let a buyer's inspection addendum slide by without explaining what you're
                   giving up. The market moves the way it moves - what I control is how well your home is positioned and
                   how clearly you understand your options at every step.
                 </p>
@@ -349,6 +374,18 @@ const Selling = () => {
               <Card className="border-border bg-card">
                 <CardContent className="p-8">
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="absolute -left-[9999px]" aria-hidden="true">
+                      <label htmlFor="website-hp">Website</label>
+                      <Input
+                        type="text"
+                        id="website-hp"
+                        name="website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={formData.website}
+                        onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                      />
+                    </div>
                     <div>
                       <Input
                         type="text"
@@ -400,10 +437,13 @@ const Selling = () => {
                     <Button
                       type="submit"
                       size="lg"
+                      disabled={isSubmitting}
+                      aria-busy={isSubmitting}
                       className="w-full bg-secondary hover:bg-secondary/90 text-white text-lg"
                     >
-                      Request My Home Evaluation
+                      {isSubmitting ? "Sending…" : "Request My Home Evaluation"}
                     </Button>
+                    <InquiryFallback />
                   </form>
                 </CardContent>
               </Card>

@@ -40,8 +40,8 @@ const RealTalkSection = () => {
             <p>
               That is the part I care about most. I slow things down just enough for you to
               understand what you are looking at: the numbers, the tradeoffs, the fine print on page
-              four. Thirty years reading healthcare contracts taught me that the details buried in
-              the middle of a document are usually the ones that matter most.
+              four. The details buried in the middle of a document are usually the ones that matter
+              most.
             </p>
             <p>You will never feel pushed into a decision you do not fully understand.</p>
           </div>

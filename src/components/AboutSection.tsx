@@ -47,11 +47,9 @@ const AboutSection = () => {
                 market right now.
               </p>
               <p className="copy text-foreground mb-4">
-                Before real estate, I spent 30 years in healthcare - medical
-                coding, auditing, and education. That work taught me to read
-                the fine print, catch what gets buried on page four, and
-                explain complicated information in plain language. Those habits
-                follow me into every transaction.
+                I read the fine print, catch what gets buried on page four,
+                and explain complicated information in plain language. Those
+                habits follow me into every transaction.
               </p>
               <p className="copy text-foreground mb-4">
                 Most of my clients are going through something significant -

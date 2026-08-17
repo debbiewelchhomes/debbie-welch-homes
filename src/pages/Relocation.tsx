@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -12,6 +13,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { sendInquiry } from "@/lib/inquiry";
+import InquiryFallback from "@/components/InquiryFallback";
 
 const Relocation = () => {
   const introRef = useRef(null);
@@ -37,15 +40,40 @@ const Relocation = () => {
     phone: "",
     currentLocation: "",
     message: "",
+    website: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    const result = await sendInquiry({
+      formName: "Request a Free Relocation Consult",
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      website: formData.website,
+      fields: {
+        "Coming from": formData.currentLocation,
+        "Message": formData.message,
+      },
+    });
+    setIsSubmitting(false);
+
+    if (!result.ok) {
+      toast({
+        title: "That did not go through.",
+        description: result.error,
+        variant: "destructive",
+      });
+      return;
+    }
+
     toast({
       title: "Got it - thank you.",
-      description: "I'll follow up soon to find a time that works for you.",
+      description: "Thanks for reaching out. I'll follow up soon to find a time that works for you.",
     });
-    setFormData({ name: "", email: "", phone: "", currentLocation: "", message: "" });
+    setFormData({ name: "", email: "", phone: "", currentLocation: "", message: "", website: "" });
   };
 
   const relocationSteps = [
@@ -318,8 +346,8 @@ const Relocation = () => {
                 no fluff.
               </p>
 
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-                Get the Relocation Guide
+              <Button size="lg" asChild className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
+                <Link to="/contact">Ask Me for the Relocation Guide</Link>
               </Button>
             </motion.div>
           </div>
@@ -352,6 +380,18 @@ const Relocation = () => {
               <Card className="border-border bg-card">
                 <CardContent className="p-8">
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="absolute -left-[9999px]" aria-hidden="true">
+                      <label htmlFor="website-hp">Website</label>
+                      <Input
+                        type="text"
+                        id="website-hp"
+                        name="website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={formData.website}
+                        onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                      />
+                    </div>
                     <div>
                       <Input
                         type="text"
@@ -402,10 +442,13 @@ const Relocation = () => {
                     <Button
                       type="submit"
                       size="lg"
+                      disabled={isSubmitting}
+                      aria-busy={isSubmitting}
                       className="w-full bg-secondary hover:bg-secondary/90 text-white text-lg"
                     >
-                      Send My Request
+                      {isSubmitting ? "Sending…" : "Send My Request"}
                     </Button>
+                    <InquiryFallback />
                   </form>
                 </CardContent>
               </Card>

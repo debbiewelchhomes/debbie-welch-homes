@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -180,9 +181,7 @@ const Listings = () => {
                     {property.location}
                   </p>
                   <Button variant="secondary" className="w-full" asChild>
-                    <a href="#" onClick={(e) => e.preventDefault()}>
-                      Details
-                    </a>
+                    <Link to="/contact">Ask About This Home</Link>
                   </Button>
                 </CardContent>
               </Card>

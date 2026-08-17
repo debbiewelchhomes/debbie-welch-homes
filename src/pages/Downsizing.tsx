@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -12,6 +13,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { sendInquiry } from "@/lib/inquiry";
+import InquiryFallback from "@/components/InquiryFallback";
 
 const Downsizing = () => {
   const introRef = useRef(null);
@@ -37,15 +40,40 @@ const Downsizing = () => {
     phone: "",
     currentHome: "",
     message: "",
+    website: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    const result = await sendInquiry({
+      formName: "Request a Free Downsizing Consult",
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      website: formData.website,
+      fields: {
+        "Where is your home": formData.currentHome,
+        "Message": formData.message,
+      },
+    });
+    setIsSubmitting(false);
+
+    if (!result.ok) {
+      toast({
+        title: "That did not go through.",
+        description: result.error,
+        variant: "destructive",
+      });
+      return;
+    }
+
     toast({
       title: "Got it - thank you.",
-      description: "I'll follow up soon to find a time that works for you.",
+      description: "Thanks for reaching out. I'll follow up soon to find a time that works for you.",
     });
-    setFormData({ name: "", email: "", phone: "", currentHome: "", message: "" });
+    setFormData({ name: "", email: "", phone: "", currentHome: "", message: "", website: "" });
   };
 
   const downsizingSteps = [
@@ -283,9 +311,8 @@ const Downsizing = () => {
                   not a formal service with a fee attached. It's just what I do when someone needs it.
                 </p>
                 <p>
-                  I also came from 30 years in healthcare - reading complex documents, catching the details other people
-                  miss, and explaining things clearly to people who are already stressed. That same approach applies
-                  here. I'll walk you through contracts in plain language, flag the clauses that matter, and make sure
+                  I am careful with complex documents, I catch the details other people miss, and I explain things
+                  clearly to people who are already stressed. I'll walk you through contracts in plain language, flag the clauses that matter, and make sure
                   you understand what you're agreeing to before you sign anything.
                 </p>
                 <p>
@@ -322,8 +349,8 @@ const Downsizing = () => {
                 months out or two years away.
               </p>
 
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-                Get the Downsizing Guide
+              <Button size="lg" asChild className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
+                <Link to="/contact">Ask Me for the Downsizing Guide</Link>
               </Button>
             </motion.div>
           </div>
@@ -356,6 +383,18 @@ const Downsizing = () => {
               <Card className="border-border bg-card">
                 <CardContent className="p-8">
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="absolute -left-[9999px]" aria-hidden="true">
+                      <label htmlFor="website-hp">Website</label>
+                      <Input
+                        type="text"
+                        id="website-hp"
+                        name="website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={formData.website}
+                        onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                      />
+                    </div>
                     <div>
                       <Input
                         type="text"
@@ -406,10 +445,13 @@ const Downsizing = () => {
                     <Button
                       type="submit"
                       size="lg"
+                      disabled={isSubmitting}
+                      aria-busy={isSubmitting}
                       className="w-full bg-secondary hover:bg-secondary/90 text-white text-lg"
                     >
-                      Send My Request
+                      {isSubmitting ? "Sending…" : "Send My Request"}
                     </Button>
+                    <InquiryFallback />
                   </form>
                 </CardContent>
               </Card>

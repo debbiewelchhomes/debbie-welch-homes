@@ -104,8 +104,7 @@ const EverettMukilteo = () => {
                     Where the momentum is right now. Colby Avenue downtown is in the middle of a real revitalization -
                     new restaurants, new businesses, Main Street designation since 2021. The Port of Everett's
                     Waterfront Place has become a genuine destination with Restaurant Row along the marina esplanade -
-                    10 restaurants including Tacos and Beer, South Fork Baking Co., Tapped Public House and more along
-                    the waterfront deck. The homes near Howarth Park along the bluffs are some of the most impressive in
+                    a cluster of restaurants and taprooms along the waterfront deck. The homes near Howarth Park along the bluffs are some of the most impressive in
                     the county - craftsman and colonial revival architecture from the early 1900s, sweeping views of
                     Puget Sound and the Olympic Mountains. A newer generation of buyers is snapping up these homes and
                     putting real work into them, and it shows. Forest Park is nearby: 197 acres of old-growth forest
@@ -298,8 +297,8 @@ const EverettMukilteo = () => {
                 The scene reflects the city's genuine diversity. Vietnamese, Mexican, Chinese, Filipino, Italian -
                 immigrant-owned restaurants throughout the city make Everett one of the most interesting places to eat
                 in the county. Craft breweries and taprooms have taken hold alongside wine bars and cocktail bars
-                following the downtown revitalization energy. Tacos and Beer on the waterfront is a local favorite.
-                Nothing overpriced or pretentious.
+                following the downtown revitalization energy. Tacos and Beer, at 1405 Hewitt Avenue in downtown
+                Everett, is a longtime local favorite. Nothing overpriced or pretentious.
               </p>
 
               <h3 className="font-heading text-xl font-bold text-primary mb-3">Coming soon: Downtown stadium</h3>
@@ -381,7 +380,7 @@ const EverettMukilteo = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>
                   <a
-                    href="https://debbiewelch.exprealty.com/index?advanced=1&display=Snohomish&areas%5B%5D=county:Snohomish:wa&beds=0&baths=0&min=0&max=100000000&minacres=0&maxacres=50000&minfootage=0&maxfootage=30000&walkscore=&yearbuilt=0&types%5B%5D=2&types%5B%5D=3&types%5B%5D=1&sortby=listings.listingdate+DESC&ppc=Loveable+Website&addht=LoveableWebsite&agency_photos=&view_timing=2"
+                    href="https://debbiewelch.exprealty.com/index?advanced=1&areas%5B%5D=city%3AEverett%3Awa&areas%5B%5D=city%3AMukilteo%3Awa&baths=0&beds=0&display=Everett%2C+Mukilteo&max=100000000&maxacres=50000&maxfootage=30000&min=0&minacres=0&minfootage=0&types%5B%5D=1&types%5B%5D=2&types%5B%5D=3"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -36,6 +36,7 @@ const Navigation = () => {
     { name: "Buyer & Seller Guides", href: "/resources#guides" },
     { name: "Local Market Reports", href: "/resources#market-reports" },
     { name: "Trusted Local Partners", href: "/resources/trusted-partners" },
+    { name: "Frequently Asked Questions", href: "/resources/faq" },
     { name: "Mortgage Calculator", href: "https://debbiewelch.exprealty.com/resources/mortgage-calculator/", external: true },
     { name: "Blog", href: "/blog" },
   ];

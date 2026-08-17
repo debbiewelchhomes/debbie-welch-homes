@@ -64,9 +64,14 @@ const Footer = () => {
               </li>
             </ul>
 
-            <Link to="/privacy-policy" className="text-sm hover:text-accent transition-colors">
-              Privacy Policy
-            </Link>
+            <div className="flex flex-col items-start gap-3">
+              <Link to="/privacy-policy" className="text-sm hover:text-accent transition-colors">
+                Privacy Policy
+              </Link>
+              <Link to="/about/exp-realty" className="text-sm text-primary-foreground/80 hover:text-accent transition-colors">
+                Work With Me at eXp Realty
+              </Link>
+            </div>
 
           </div>
         </div>

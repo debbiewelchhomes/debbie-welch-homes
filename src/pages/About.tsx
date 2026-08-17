@@ -170,6 +170,20 @@ const About = () => {
         </div>
       </section>
 
+      <section className="py-10 bg-background border-y border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-heading text-2xl text-primary mb-3">Considering a Career at eXp Realty?</h2>
+            <p className="text-foreground leading-relaxed mb-4">
+              If you are an agent who is curious about eXp Realty, I am happy to share my experience, answer practical questions, and help you decide whether it may fit your business.
+            </p>
+            <Link to="/about/exp-realty" className="text-secondary font-medium hover:underline">
+              Learn About Working With Me at eXp
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Behind the Scenes Section */}
       <section className="section bg-background">
         <div className="container mx-auto px-4 max-w-7xl">

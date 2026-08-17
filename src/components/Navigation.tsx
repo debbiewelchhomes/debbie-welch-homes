@@ -21,19 +21,14 @@ const Navigation = () => {
   ];
 
   const areas = [
+    { name: "Snohomish County", href: "/areas/snohomish-county" },
     { name: "Lake Stevens", href: "/areas/lake-stevens" },
     { name: "Everett & Mukilteo", href: "/areas/everett-mukilteo" },
     { name: "Marysville", href: "/areas/marysville" },
     { name: "Arlington", href: "/areas/arlington" },
-    { name: "Snohomish", href: "/areas/snohomish" },
     { name: "Bothell & Mill Creek", href: "/areas/bothell-mill-creek" },
+    { name: "Snohomish", href: "/areas/snohomish" },
     { name: "Stanwood & Camano Island", href: "/areas/stanwood-camano" },
-    { name: "Snohomish County", href: "/areas/snohomish-county" },
-  ];
-
-  const aboutLinks = [
-    { name: "About Me", href: "/about" },
-    { name: "Work With Me at eXp", href: "/about/exp-realty" },
   ];
 
   return (
@@ -92,7 +87,7 @@ const Navigation = () => {
                 href="https://debbiewelch.exprealty.com/index?advanced=1&display=Snohomish&areas%5B%5D=county:Snohomish:wa&beds=0&baths=0&min=0&max=100000000&minacres=0&maxacres=50000&minfootage=0&maxfootage=30000&walkscore=&yearbuilt=0&types%5B%5D=2&types%5B%5D=3&types%5B%5D=1&sortby=listings.listingdate+DESC&ppc=Loveable+Website&addht=LoveableWebsite&agency_photos=&view_timing=2"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Search Homes on the eXp Realty site (opens in a new tab)"
+                aria-label="Search Homes on the eXp Realty site"
                 className="text-foreground hover:text-secondary transition-colors"
               >
                 Search Homes
@@ -110,21 +105,9 @@ const Navigation = () => {
                 Blog
               </Link>
 
-              {/* About Dropdown */}
-              <DropdownMenu>
-                <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-secondary transition-colors">
-                  About <ChevronDown className="h-4 w-4" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-background border-border z-50">
-                  {aboutLinks.map((link) => (
-                    <DropdownMenuItem key={link.name}>
-                      <Link to={link.href} className="w-full">
-                        {link.name}
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
+              <Link to="/about" className="text-foreground hover:text-secondary transition-colors">
+                About
+              </Link>
 
               <Link to="/contact" className="text-foreground hover:text-secondary transition-colors">
                 Contact
@@ -138,8 +121,11 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="lg:hidden p-2" aria-label="Toggle menu">
+          {/* Mobile Header */}
+          <Link to="/" className="lg:hidden absolute left-0" onClick={() => setMobileMenuOpen(false)}>
+            <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-11 w-auto" />
+          </Link>
+          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="lg:hidden absolute right-0 p-2" aria-label="Toggle menu">
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
@@ -148,12 +134,6 @@ const Navigation = () => {
         {mobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
-              <div className="flex justify-center mb-4">
-                <Link to="/" onClick={() => setMobileMenuOpen(false)}>
-                  <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-12 w-auto" />
-                </Link>
-              </div>
-
               <Link
                 to="/"
                 onClick={() => setMobileMenuOpen(false)}
@@ -200,7 +180,7 @@ const Navigation = () => {
                 href="https://debbiewelch.exprealty.com/index?advanced=1&display=Snohomish&areas%5B%5D=county:Snohomish:wa&beds=0&baths=0&min=0&max=100000000&minacres=0&maxacres=50000&minfootage=0&maxfootage=30000&walkscore=&yearbuilt=0&types%5B%5D=2&types%5B%5D=3&types%5B%5D=1&sortby=listings.listingdate+DESC&ppc=Loveable+Website&addht=LoveableWebsite&agency_photos=&view_timing=2"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Search Homes on the eXp Realty site (opens in a new tab)"
+                aria-label="Search Homes on the eXp Realty site"
                 className="text-foreground hover:text-secondary transition-colors"
               >
                 Search Homes
@@ -214,19 +194,13 @@ const Navigation = () => {
                 Blog
               </Link>
 
-              <div className="flex flex-col gap-2 pl-4">
-                <span className="text-sm font-semibold text-muted-foreground">About</span>
-                {aboutLinks.map((link) => (
-                  <Link
-                    key={link.name}
-                    to={link.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="text-foreground hover:text-secondary transition-colors pl-4"
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-              </div>
+              <Link
+                to="/about"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-foreground hover:text-secondary transition-colors"
+              >
+                About
+              </Link>
 
               <Link
                 to="/contact"

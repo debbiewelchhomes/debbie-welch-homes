@@ -6,10 +6,10 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, X } from "lucide-react";
-import { mainBlogPosts, searchInsightsPosts } from "@/data/blogPosts";
+import { mainBlogPosts } from "@/data/blogPosts";
 import { pageSEO } from "@/data/seoData";
 
-const categories = ["Buying", "Downsizing", "Relocation", "Market Updates", "Search Insights"];
+const categories = ["Buying", "Downsizing", "Relocation", "Market Updates"];
 
 const matchesQuery = (
   post: { title: string; excerpt: string; category: string },
@@ -34,12 +34,8 @@ const Blog = () => {
     () => mainBlogPosts.filter((post) => matchesQuery(post, normalizedQuery)),
     [normalizedQuery],
   );
-  const filteredInsightPosts = useMemo(
-    () => searchInsightsPosts.filter((post) => matchesQuery(post, normalizedQuery)),
-    [normalizedQuery],
-  );
   const recentPosts = mainBlogPosts.slice(0, 6);
-  const resultCount = filteredMainPosts.length + filteredInsightPosts.length;
+  const resultCount = filteredMainPosts.length;
 
   const submitSearch = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -169,31 +165,6 @@ const Blog = () => {
             </aside>
           </div>
 
-          {filteredInsightPosts.length > 0 && (
-            <section className="max-w-7xl mx-auto mt-20 pt-16 border-t border-border">
-              <div className="mb-10">
-                <h2 className="font-heading h-card text-primary mb-4">Additional Articles &amp; Resources</h2>
-                <p className="text-foreground max-w-3xl">
-                  A curated collection of additional Snohomish County real estate articles for anyone who wants to
-                  explore a topic in more detail.
-                </p>
-              </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredInsightPosts.map((post) => (
-                  <Link
-                    key={post.id}
-                    to={`/blog/${post.slug}`}
-                    className="bg-card rounded-lg border border-border p-5 hover:shadow-md hover:border-secondary/50 transition-all group"
-                  >
-                    <h3 className="font-heading text-lg font-semibold text-primary group-hover:text-secondary transition-colors mb-2 line-clamp-2">
-                      {post.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground line-clamp-2">{post.excerpt}</p>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
         </div>
       </main>
       <Footer />

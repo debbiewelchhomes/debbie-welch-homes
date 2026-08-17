@@ -42,9 +42,10 @@ const FreeResourceSection = () => {
               className="bg-secondary hover:bg-secondary/90 text-white px-8"
               asChild
             >
-              <a href="#" className="text-lg font-normal">
+              <Link to="/contact" className="text-lg font-normal">
                 Get My Free Report
-              </a>
+              </Link>
+
             </Button>
           </div>
         </motion.div>

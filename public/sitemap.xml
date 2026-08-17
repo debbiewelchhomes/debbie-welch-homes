@@ -200,4 +200,10 @@
     <loc>https://debbiewelchhomes.com/blog/first-time-home-buyer-realtor-snohomish-wa</loc>
     <lastmod>2026-08-17</lastmod>
   </url>
+  <url>
+    <loc>https://debbiewelchhomes.com/resources/faq</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

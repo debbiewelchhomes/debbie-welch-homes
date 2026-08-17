@@ -4,10 +4,12 @@ import SEO from "@/components/SEO";
 import { pageSEO } from "@/data/seoData";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import heroImage from "@/assets/hero-stanwood.jpg";
+
+const searchUrl =
+  "https://debbiewelch.exprealty.com/index.php?advanced=1&display=Snohomish+County+WA%2C+Camano+Island&min=0&max=100000000&beds=0&baths=0&types%5B%5D=1&types%5B%5D=2&types%5B%5D=3&types%5B%5D=20&minfootage=0&maxfootage=30000&minacres=0&maxacres=0&yearbuilt=0&maxyearbuilt=0&walkscore=0&keywords=&areas%5B%5D=county%3Asnohomish%3Awa&areas%5B%5D=area%3Acamano+island%3Awa&sortby=listings.listingdate+DESC&rtype=map";
 
 const StanwoodCamano = () => {
-  const areaName = "Stanwood & Camano Island";
-
   return (
     <div className="min-h-screen">
       <SEO
@@ -17,58 +19,211 @@ const StanwoodCamano = () => {
       />
       <Navigation />
       <main>
+        {/* Hero */}
+        <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.15) 100%), url(${heroImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            role="img"
+            aria-label="Shoreline and water view near Stanwood and Camano Island, Washington"
+          />
+          <div className="container mx-auto px-4 text-center section relative z-10">
+            <p className="eyebrow mb-4" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}>
+              Stanwood &amp; Camano Island
+            </p>
+            <p
+              className="font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+              style={{ textShadow: "0 1px 6px rgba(0,0,0,0.7)" }}
+            >
+              Where the Stillaguamish River meets the Salish Sea, and a bridge, not a ferry, carries you to the
+              island.
+            </p>
+          </div>
+        </section>
+
         {/* Intro */}
-        <section className="section bg-background pt-32 md:pt-40">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <p className="eyebrow mb-4">Stanwood & Camano Island</p>
+            <div className="max-w-3xl mx-auto">
               <h1 className="font-heading h-section text-primary mb-6">
-                Buying or Selling in Stanwood & Camano Island
+                Buying or Selling in Stanwood &amp; Camano Island, WA
               </h1>
-              <p className="text-base md:text-lg text-foreground leading-relaxed measure mx-auto">
-                Stanwood and Camano Island sit at the northwest edge of the county, near Port Susan and the Stillaguamish delta. If you are considering a move here, the most useful thing I can give you is
-                current, specific information about your price range and the streets you are actually
-                looking at, rather than general market headlines.
+              <p className="text-base md:text-lg text-foreground leading-relaxed mb-4">
+                Stanwood sits at the northwest edge of Snohomish County, where the Stillaguamish River meets the
+                Salish Sea, and serves as the mainland gateway to Camano Island. The island is reached by
+                bridge, so there is no ferry schedule to plan around.
+              </p>
+              <p className="text-base md:text-lg text-foreground leading-relaxed">
+                The most important practical distinction is jurisdictional. Stanwood is in Snohomish County.
+                Camano Island is in Island County. That single line changes taxes, services, permitting, school
+                districts, and sometimes insurance. People often shop both in one afternoon, which is exactly
+                why it is worth being clear about which side of the water any given property sits on.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Search + consult */}
+        {/* Balanced */}
         <section className="section bg-warm-bg">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="font-heading h-section text-primary mb-6">
-                See What Is Available Right Now
-              </h2>
-              <p className="text-base md:text-lg text-foreground leading-relaxed measure mx-auto mb-8">
-                This search pulls live listings so you can get a feel for pricing and inventory. If you
-                would like help reading what you are seeing, or you want a saved search set up for you,
-                just ask.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" asChild>
-                  <a href="https://debbiewelch.exprealty.com/index.php?advanced=1&display=Snohomish+County+WA%2C+Camano+Island&min=0&max=100000000&beds=0&baths=0&types%5B%5D=1&types%5B%5D=2&types%5B%5D=3&types%5B%5D=20&minfootage=0&maxfootage=30000&minacres=0&maxacres=0&yearbuilt=0&maxyearbuilt=0&walkscore=0&keywords=&areas%5B%5D=county%3Asnohomish%3Awa&areas%5B%5D=area%3Acamano+island%3Awa&sortby=listings.listingdate+DESC&rtype=map" target="_blank" rel="noopener noreferrer">
-                    Search homes in Stanwood & Camano Island
-                  </a>
-                </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <Link to="/contact">Ask Me About Stanwood & Camano Island</Link>
-                </Button>
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="font-heading h-section text-primary mb-10 text-center">An Honest Look</h2>
+            <div className="grid md:grid-cols-2 gap-10">
+              <div>
+                <h3 className="font-heading text-xl font-bold text-primary mb-4">Why buyers consider it</h3>
+                <ul className="space-y-3 text-foreground text-base">
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      Shoreline, forest, and recreation access, including Camano Island State Park and Cama
+                      Beach State Park.
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      A traditional Stanwood downtown with agricultural roots and everyday services on the
+                      mainland side.
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      Bridge access to Camano Island, so island property does not require a ferry crossing.
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      A wide range of property types, from in-town homes to rural and water-oriented parcels.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-heading text-xl font-bold text-primary mb-4">What to think about</h3>
+                <ul className="space-y-3 text-foreground text-base">
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      Two counties, two sets of rules. Confirm which county a property is in before comparing
+                      taxes or services.
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      Wells, septic systems, and private road or access agreements are common outside of town
+                      and need real review.
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      Shoreline, bluff, drainage, and flood considerations apply to many properties near the
+                      water and the river delta.
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      Distance to daily services and to I-5 varies a lot by location. Test the drive you would
+                      actually make.
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Coming soon */}
+        {/* Housing and location */}
         <section className="section bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-2xl mx-auto text-center">
-              <p className="font-body text-base text-muted-foreground">
-                A fuller Stanwood & Camano Island guide, with schools, neighborhoods, and local favorites, is still being
-                written. I would rather post it when it is accurate than fill it with guesses. In the
-                meantime, ask me anything about the area and I will answer directly.
-              </p>
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="font-heading h-section text-primary mb-6">Housing and Location Considerations</h2>
+            <p className="text-base md:text-lg text-foreground leading-relaxed mb-4">
+              In Stanwood, you will find in-town homes with city utilities alongside rural and agricultural
+              parcels just outside. On Camano Island, many properties rely on wells and septic systems, and
+              access can involve private roads or shared easements. Water-oriented parcels bring their own set
+              of questions about shoreline regulation, bank stability, drainage, and insurance.
+            </p>
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              These are all workable. They simply take a slower, more document-driven process than a standard
+              in-city purchase, and it is far cheaper to ask the questions during inspection than after closing.
+            </p>
+          </div>
+        </section>
+
+        {/* Community */}
+        <section className="section bg-warm-bg">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="font-heading h-section text-primary mb-6">Parks, Shoreline, and Everyday Life</h2>
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              Camano Island State Park and Cama Beach State Park anchor public access to shoreline, forest, and
+              recreation on the island. On the mainland, Stanwood's downtown and its agricultural surroundings
+              carry the everyday rhythm, with coastal and outdoor recreation close at hand for people who want
+              to be near the water without a ferry in the routine.
+            </p>
+          </div>
+        </section>
+
+        {/* Due diligence */}
+        <section className="section bg-background">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="font-heading h-section text-primary mb-6">Before You Write an Offer</h2>
+            <ul className="space-y-3 text-foreground text-base">
+              <li className="flex gap-2">
+                <span className="text-secondary font-bold">•</span>
+                <span>
+                  Confirm school assignment with the correct district for the exact address, which differs
+                  across the two counties.
+                </span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-secondary font-bold">•</span>
+                <span>
+                  Verify water source and septic condition, including flow tests, water quality, and inspection
+                  records.
+                </span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-secondary font-bold">•</span>
+                <span>
+                  Review shoreline, flood, easement, access, and HOA conditions along with insurance
+                  availability.
+                </span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-secondary font-bold">•</span>
+                <span>Drive your commute and your everyday errand route at realistic times.</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="section bg-warm-bg">
+          <div className="container mx-auto px-4 max-w-3xl text-center">
+            <h2 className="font-heading h-section text-primary mb-4">
+              Homes for Sale in Stanwood &amp; Camano Island
+            </h2>
+            <p className="text-base md:text-lg text-foreground leading-relaxed measure mx-auto mb-8">
+              This search covers Snohomish County along with Camano Island, so it is broader than Stanwood
+              alone. Tell me what you are after and I will narrow it to the right area and property type for
+              you.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild>
+                <a href={searchUrl} target="_blank" rel="noopener noreferrer">
+                  Search Snohomish County &amp; Camano Island
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link to="/contact">Ask Me About Stanwood &amp; Camano</Link>
+              </Button>
             </div>
           </div>
         </section>

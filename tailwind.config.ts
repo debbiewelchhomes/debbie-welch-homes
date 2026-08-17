@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         script: ['Oooh Baby', 'cursive'],
-        heading: ['Italiana', 'Cormorant Garamond', 'serif'],
+        heading: ['Bodoni Moda', 'serif'],
         body: ['Montserrat', 'sans-serif'],
       },
       colors: {

@@ -12,6 +12,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { sendInquiry } from "@/lib/inquiry";
+import InquiryFallback from "@/components/InquiryFallback";
 
 const Selling = () => {
   const introRef = useRef(null);
@@ -36,16 +38,40 @@ const Selling = () => {
     email: "",
     phone: "",
     address: "",
-    message: "",
+    message: "",    website: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    const result = await sendInquiry({
+      formName: "Request a Free Home Evaluation",
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      website: formData.website,
+      fields: {
+        "Property address": formData.address,
+        "Message": formData.message,
+      },
+    });
+    setIsSubmitting(false);
+
+    if (!result.ok) {
+      toast({
+        title: "That did not go through.",
+        description: result.error,
+        variant: "destructive",
+      });
+      return;
+    }
+
     toast({
       title: "Got it - thank you.",
-      description: "I'll follow up soon to put together your home evaluation.",
+      description: "Thanks for reaching out. I'll follow up soon with your home evaluation.",
     });
-    setFormData({ name: "", email: "", phone: "", address: "", message: "" });
+    setFormData({ name: "", email: "", phone: "", address: "", message: "", website: "" });
   };
 
   const sellingSteps = [
@@ -349,6 +375,18 @@ const Selling = () => {
               <Card className="border-border bg-card">
                 <CardContent className="p-8">
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="absolute -left-[9999px]" aria-hidden="true">
+                      <label htmlFor="website-hp">Website</label>
+                      <Input
+                        type="text"
+                        id="website-hp"
+                        name="website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={formData.website}
+                        onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                      />
+                    </div>
                     <div>
                       <Input
                         type="text"
@@ -400,10 +438,13 @@ const Selling = () => {
                     <Button
                       type="submit"
                       size="lg"
+                      disabled={isSubmitting}
+                      aria-busy={isSubmitting}
                       className="w-full bg-secondary hover:bg-secondary/90 text-white text-lg"
                     >
-                      Request My Home Evaluation
+                      {isSubmitting ? "Sending…" : "Request My Home Evaluation"}
                     </Button>
+                    <InquiryFallback />
                   </form>
                 </CardContent>
               </Card>

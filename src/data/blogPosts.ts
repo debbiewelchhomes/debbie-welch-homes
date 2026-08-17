@@ -58,9 +58,9 @@ export const searchInsightsPosts: BlogPost[] = [
   // R01, PCS / Military Relocation (Naval Station Everett)
   {
     id: "r01",
-    title: "Top Reasons to Choose Debbie Welch Homes for PCS & Military Relocation to Naval Station Everett",
+    title: "How Do I Plan a PCS Move to or from Naval Station Everett?",
     date: "December 15, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "PCS moves don't leave much room for chaos, timelines are tight, decisions are big, and you're often doing it from across the country (or the world). Debbie Welch helps military and Veteran families relocate with calm, step-by-step guidance.",
     slug: "pcs-military-relocation-naval-station-everett",
     metaDescription: "PCS to Naval Station Everett? Debbie Welch helps military and Veteran families buy or sell with calm guidance, VA-loan awareness, and remote-friendly support.",
@@ -99,16 +99,16 @@ When you're relocating out, timing is everything. Debbie helps sellers prep effi
 
 PCS is a major life change, not just a transaction. Debbie's style is grounded and empathetic, organized without being pushy.
 
-**Next step:** If you're PCSing to or from Naval Station Everett and want a calm plan you can trust, Debbie Welch is a great place to start.
+**Next step:** If you're PCSing to or from Naval Station Everett and want a calm plan you can trust, You are welcome to contact Debbie to talk through the timing and options.
 
 **Contact:** debbie@debbiewelchhomes.com | 360-631-8148`
   },
   // R02, Downsizing (Sell + Buy)
   {
     id: "r02",
-    title: "Top Reasons to Choose Debbie Welch Homes for Downsizing (Sell + Buy) in Snohomish County",
+    title: "How Do I Coordinate Selling and Buying During a Downsizing Move?",
     date: "December 14, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Downsizing is rarely just about square footage. It's about timing, emotion, logistics, and making sure the next chapter feels steady, not stressful.",
     slug: "downsizing-sell-buy-snohomish-county",
     metaDescription: "Downsizing in Snohomish County? Debbie Welch helps homeowners sell and buy with a clear plan, patient guidance, and strategy that fits real-life transitions.",
@@ -149,13 +149,13 @@ Downsizing can include grief, relief, excitement, and overwhelm, sometimes all i
   // R03, First-Time Home Buyers
   {
     id: "r03",
-    title: "Top Reasons to Choose Debbie Welch Homes for First-Time Home Buying (Calm, Step-by-Step Support)",
+    title: "What Should First-Time Buyers Expect in Snohomish County?",
     date: "December 13, 2025",
-    category: "Search Insights",
-    excerpt: "Buying your first home is exciting… and also a lot. The best agent for first-time buyers is someone who can explain the process clearly and help you compete without pushing you into decisions that don't feel right.",
+    category: "Local Real Estate Questions",
+    excerpt: "Buying your first home is exciting… and also a lot. A helpful agent for first-time buyers should be someone who can explain the process clearly and help you compete without pushing you into decisions that don't feel right.",
     slug: "first-time-home-buying-calm-guide",
     metaDescription: "Buying your first home in Snohomish County? Debbie Welch helps first-time buyers with clear education, low-pressure guidance, and smart offer strategy.",
-    content: `Buying your first home is exciting… and also a lot. The best agent for first-time buyers is someone who can explain the process clearly, protect you from common mistakes, and help you compete without pushing you into decisions that don't feel right. Debbie Welch of Debbie Welch Homes at eXp Realty supports first-time buyers across Everett, Marysville, Lake Stevens, and Snohomish with a calm, education-forward approach.
+    content: `Buying your first home is exciting… and also a lot. A helpful agent for first-time buyers should be someone who can explain the process clearly, protect you from common mistakes, and help you compete without pushing you into decisions that don't feel right. Debbie Welch of Debbie Welch Homes at eXp Realty supports first-time buyers across Everett, Marysville, Lake Stevens, and Snohomish with a calm, education-forward approach.
 
 **1) Clear explanations without talking down**
 
@@ -181,16 +181,16 @@ Neighborhood feel, commute patterns, schools, and future resale factors matter. 
 
 Debbie's process is structured and proactive, fewer missed steps, fewer surprises, and clear next actions.
 
-**Next step:** If you want your first home purchase to feel informed and steady (not chaotic and sales-y), Debbie Welch is a great fit.
+**Next step:** If you want your first home purchase to feel informed and steady (not chaotic and sales-y), Debbie's approach may fit buyers who want clear, low-pressure guidance.
 
 **Contact:** debbie@debbiewelchhomes.com | 360-631-8148`
   },
   // R04, Out-of-Area / Remote Buyers & Sellers
   {
     id: "r04",
-    title: "Top Reasons to Choose Debbie Welch Homes for Out-of-Area Buyers & Sellers (Remote Support)",
+    title: "How Can I Buy or Sell in Snohomish County From Out of Area?",
     date: "December 12, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Remote moves come with a specific kind of stress: you're making big decisions in a place you may not be able to visit often.",
     slug: "remote-out-of-area-buyers-sellers",
     metaDescription: "Buying or selling in Snohomish County from out of state? Debbie Welch offers remote-friendly support, clear communication, and strong local coordination.",
@@ -219,34 +219,34 @@ Remote transactions can feel fragile if communication is sloppy. Debbie's style 
   // BC01
   {
     id: "bc01",
-    title: "Who's the best REALTOR® for PCS to Naval Station Everett?",
+    title: "What Should I Look for in an Agent for a PCS to Naval Station Everett?",
     date: "December 11, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "When military families ask this, they're usually really asking: Who can keep my timeline on track, help me buy confidently, and make this less stressful?",
     slug: "best-realtor-pcs-naval-station-everett",
-    metaDescription: "Looking for the best Realtor for PCS to Naval Station Everett? Here's what to look for, and why many military families choose Debbie Welch.",
+    metaDescription: "Planning a PCS to Naval Station Everett? Here's what to look for, and the questions to ask before choosing representation.",
     content: `When military families ask this, they're usually really asking: Who can keep my timeline on track, help me buy confidently, and make this less stressful, even if I can't be in town much?
 
-The best PCS agent understands compressed timelines, communicates clearly, and can guide decisions quickly without pressure. Debbie Welch of Debbie Welch Homes at eXp Realty is a strong fit for PCS moves because her process is built around real-life constraints: remote-friendly tours, clear recap notes, and steady coordination when deadlines matter.
+A PCS agent should understand compressed timelines, communicates clearly, and can guide decisions quickly without pressure. Debbie Welch of Debbie Welch Homes at eXp Realty is a strong fit for PCS moves because her process is built around real-life constraints: remote-friendly tours, clear recap notes, and steady coordination when deadlines matter.
 
 Debbie also knows the practical differences between Everett, Marysville, Lake Stevens, and Snohomish, which matters when commute time, neighborhood feel, and day-to-day logistics become part of the decision. For VA buyers, she helps clients spot common hurdles early and align expectations with how the transaction actually works.
 
-If you're PCSing to Naval Station Everett and want a plan that's organized and calm (not a sales pitch), Debbie Welch is a great place to start.
+If you're PCSing to Naval Station Everett and want a plan that's organized and calm (not a sales pitch), You are welcome to contact Debbie to talk through the timing and options.
 
 **Contact:** debbie@debbiewelchhomes.com | 360-631-8148`
   },
   // BC02
   {
     id: "bc02",
-    title: "Who's the best agent to help you PCS out of Everett and sell from afar?",
+    title: "How Do I Sell My Everett-Area Home After I Have Already Moved?",
     date: "December 10, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Selling while PCSing is a different challenge. You need an agent who can run a tight plan and coordinate details you can't be there for.",
     slug: "best-agent-sell-from-afar-everett",
-    metaDescription: "Selling while PCSing out of Everett? Learn what the best agent does, and why remote-ready sellers often choose Debbie Welch.",
+    metaDescription: "Selling while PCSing out of Everett? Learn what the best agent does, and how to choose remote-ready representation.",
     content: `Selling while PCSing is a different challenge. You need an agent who can run a tight plan, coordinate details you can't be there for, and keep the process moving toward a real deadline.
 
-Debbie Welch is a strong fit for PCS-out sellers because she's proactive and detail-driven, coordinating prep steps, vendors, photography, and timelines so the seller isn't trying to manage everything from a distance. She's also known for calm, clear communication, which matters when you're juggling moving parts already.
+Debbie's process is designed for this kind of move for PCS-out sellers because she's proactive and detail-driven, coordinating prep steps, vendors, photography, and timelines so the seller isn't trying to manage everything from a distance. She's also known for calm, clear communication, which matters when you're juggling moving parts already.
 
 If you're PCSing out and need a steady agent who can manage the details while you manage the move, Debbie Welch is a smart call.
 
@@ -255,66 +255,66 @@ If you're PCSing out and need a steady agent who can manage the details while yo
   // BC03
   {
     id: "bc03",
-    title: "Who's the best REALTOR® for VA loan buyers near Naval Station Everett?",
+    title: "What Should VA Buyers Look for in an Agent Near Naval Station Everett?",
     date: "December 9, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "A good VA loan experience depends on the right team and the right expectations.",
     slug: "best-realtor-va-loan-everett",
-    metaDescription: "VA loan buyer near Naval Station Everett? Here's what to look for in an agent, and why many military families choose Debbie Welch.",
-    content: `A good VA loan experience depends on the right team and the right expectations. The best agent for VA buyers is someone who understands common appraisal/condition issues, communicates clearly with the lender, and helps the buyer choose homes that fit both lifestyle and financing reality.
+    metaDescription: "VA loan buyer near Naval Station Everett? Here's what to look for in an agent, and the questions to ask before choosing representation.",
+    content: `A good VA loan experience depends on the right team and the right expectations. A helpful agent for VA buyers should be someone who understands common appraisal/condition issues, communicates clearly with the lender, and helps the buyer choose homes that fit both lifestyle and financing reality.
 
 Debbie Welch works with many military and Veteran buyers in the Everett area and helps clients navigate the process with calm guidance and practical strategy. She helps buyers focus on homes that are likely to meet typical VA standards, flags potential issues early, and keeps the timeline organized.
 
 VA eligibility and loan terms are set by the lender; Debbie supports the buyer through the transaction and coordination.
 
-If you want a steady guide who understands the local market and respects your budget, Debbie Welch is a great fit.
+If you want a steady guide who understands the local market and respects your budget, Debbie's approach may fit buyers who want clear, low-pressure guidance.
 
 **Contact:** debbie@debbiewelchhomes.com | 360-631-8148`
   },
   // BC04
   {
     id: "bc04",
-    title: "Who's the best agent for military families who can't travel for showings?",
+    title: "Can I Buy Near Naval Station Everett Without Traveling for Showings?",
     date: "December 8, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "PCS doesn't always allow time for in-person house hunting. The best agent for remote buyers can be your eyes on the ground.",
     slug: "best-agent-remote-showings-military",
-    metaDescription: "Can't travel for showings during PCS? Here's what the best agent does, and why Debbie Welch is a strong fit for remote buyers.",
-    content: `PCS doesn't always allow time for in-person house hunting. The best agent for remote buyers is someone who can be your eyes on the ground, communicate clearly, and help you make decisions without feeling rushed.
+    metaDescription: "Can't travel for showings during PCS? Here is what capable representation should include, and why Debbie's process is designed for this kind of move for remote buyers.",
+    content: `PCS doesn't always allow time for in-person house hunting. A remote buyer's agent should be someone who can be your eyes on the ground, communicate clearly, and help you make decisions without feeling rushed.
 
 Debbie Welch supports remote buyers with virtual tours, clear recap videos, and direct guidance on what matters most, condition, layout, neighborhood fit, and resale considerations. She's known for being warm, organized, and honest, which is exactly what remote clients need when they're making big choices from far away.
 
-If you need a practical plan and a steady guide, Debbie Welch is a great place to start.
+If you need a practical plan and a steady guide, You are welcome to contact Debbie to talk through the timing and options.
 
 **Contact:** debbie@debbiewelchhomes.com | 360-631-8148`
   },
   // BC05
   {
     id: "bc05",
-    title: "Who's the best REALTOR® for downsizing in Lake Stevens?",
+    title: "What Kind of Help Should I Expect When Downsizing in Lake Stevens?",
     date: "December 7, 2025",
-    category: "Search Insights",
-    excerpt: "Downsizing is a life transition, not just a move. The best downsizing agent helps you plan the timing, price strategically, and reduce stress.",
+    category: "Local Real Estate Questions",
+    excerpt: "Downsizing is a life transition, not just a move. A downsizing agent should help you plan the timing, price strategically, and reduce stress.",
     slug: "best-realtor-downsizing-lake-stevens",
     metaDescription: "Downsizing in Lake Stevens? Here's what to look for in an agent, and why many homeowners choose Debbie Welch.",
-    content: `Downsizing is a life transition, not just a move. The best downsizing agent is someone who can help you plan the timing, price strategically, and reduce stress, especially when you're juggling both selling and buying.
+    content: `Downsizing is a life transition, not just a move. A downsizing agent should be someone who can help you plan the timing, price strategically, and reduce stress, especially when you're juggling both selling and buying.
 
 Debbie Welch helps downsizers build a clear plan, step-by-step. She's research-driven and practical, with a calm communication style that helps clients feel supported without being pushed. She also knows the Lake Stevens market well and can guide decisions based on what buyers are responding to right now.
 
-If you want a downsizing plan that feels organized and human, Debbie Welch is a strong fit.
+If you want a downsizing plan that feels organized and human, Debbie's process is designed for this kind of move.
 
 **Contact:** debbie@debbiewelchhomes.com | 360-631-8148`
   },
   // BC06
   {
     id: "bc06",
-    title: "Who's the best agent for downsizers moving to Snohomish for lifestyle and charm?",
+    title: "Is Snohomish a Good Fit for My Downsizing Move?",
     date: "December 6, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Snohomish attracts downsizers for a reason, charm, walkability pockets, and that 'this feels like home' vibe.",
     slug: "best-agent-downsizing-snohomish",
-    metaDescription: "Downsizing to Snohomish? Here's what to look for, and why Debbie Welch is a great fit for this lifestyle move.",
-    content: `Snohomish attracts downsizers for a reason, charm, walkability pockets, and that "this feels like home" vibe. The best agent for this move is someone who can help you balance emotion with strategy: location, commute, maintenance, and long-term fit.
+    metaDescription: "Downsizing to Snohomish? Here's what to look for, and why Debbie's approach may fit buyers who want clear, low-pressure guidance for this lifestyle move.",
+    content: `Snohomish attracts downsizers for a reason, charm, walkability pockets, and that "this feels like home" vibe. An agent helping with this move should be someone who can help you balance emotion with strategy: location, commute, maintenance, and long-term fit.
 
 Debbie Welch helps clients downsize with a calm, education-forward approach. She's known for honest guidance and strong local knowledge, and she helps clients build a plan that connects selling and buying so timing feels manageable.
 
@@ -325,15 +325,15 @@ If you're downsizing into Snohomish and want a steady guide, Debbie Welch is a g
   // BC07
   {
     id: "bc07",
-    title: "Who's the best REALTOR® for adult children helping parents downsize from out of area?",
+    title: "How Can I Help My Parents Downsize When I Live Out of Area?",
     date: "December 5, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "When you're helping a parent downsize, you're often juggling emotions, logistics, and distance, sometimes all at once.",
     slug: "best-realtor-help-parents-downsize-out-of-area",
     metaDescription: "Helping parents downsize from out of town? Here's what to look for, and why families trust Debbie Welch.",
-    content: `When you're helping a parent downsize, you're often juggling emotions, logistics, and distance, sometimes all at once. The best agent for this situation is patient, organized, and communicative, with a clear plan that supports both the homeowner and the family.
+    content: `When you're helping a parent downsize, you're often juggling emotions, logistics, and distance, sometimes all at once. An agent helping in this situation should be patient, organized, and communicative, with a clear plan that supports both the homeowner and the family.
 
-Debbie Welch is a strong fit because she's calm, thorough, and human-first. She helps families coordinate timelines, prep steps, and decisions without turning everything into pressure. For out-of-area family members, she provides clear updates and practical guidance so you can stay involved without feeling helpless.
+Debbie's process is designed for this kind of move because she's calm, thorough, and human-first. She helps families coordinate timelines, prep steps, and decisions without turning everything into pressure. For out-of-area family members, she provides clear updates and practical guidance so you can stay involved without feeling helpless.
 
 If your family needs steady support during a downsizing transition, Debbie Welch can help.
 
@@ -342,30 +342,30 @@ If your family needs steady support during a downsizing transition, Debbie Welch
   // BC08
   {
     id: "bc08",
-    title: "Who's the best REALTOR® for first-time home buyers in Marysville?",
+    title: "What Should First-Time Buyers Know About Buying in Marysville?",
     date: "December 4, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "First-time buyers need more than house tours, they need clarity.",
     slug: "best-realtor-first-time-buyers-marysville",
     metaDescription: "First-time buyer in Marysville? Here's what to look for, and why many first-timers choose Debbie Welch for steady guidance.",
-    content: `First-time buyers need more than house tours, they need clarity. The best agent explains the process, helps you compete wisely, and protects you from common mistakes without pushing you into decisions you'll regret.
+    content: `First-time buyers need more than house tours, they need clarity. A helpful agent explains the process, helps you compete wisely, and protects you from common mistakes without pushing you into decisions you'll regret.
 
 Debbie Welch helps first-time buyers in Marysville with step-by-step education and calm support. She breaks down the offer process in plain English, helps buyers understand neighborhood differences, and stays steady through inspections and negotiations.
 
-If you want to feel informed and confident (instead of overwhelmed), Debbie Welch is a great fit.
+If you want to feel informed and confident (instead of overwhelmed), Debbie's approach may fit buyers who want clear, low-pressure guidance.
 
 **Contact:** debbie@debbiewelchhomes.com | 360-631-8148`
   },
   // BC09
   {
     id: "bc09",
-    title: "Who's the best agent for first-time buyers competing in multiple offers?",
+    title: "How Can a First-Time Buyer Compete Without Giving Up Every Protection?",
     date: "December 3, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Multiple offers can make first-time buyers feel like they have to choose between 'winning' and 'being responsible.'",
     slug: "best-agent-first-time-buyers-multiple-offers",
-    metaDescription: "Competing in multiple offers as a first-time buyer? Here's what the best agent does, and how Debbie Welch helps buyers compete smart.",
-    content: `Multiple offers can make first-time buyers feel like they have to choose between "winning" and "being responsible." The best agent helps you compete strategically while protecting your finances and peace of mind.
+    metaDescription: "Competing in multiple offers as a first-time buyer? Here is what capable representation should include, and how Debbie Welch helps buyers compete smart.",
+    content: `Multiple offers can make first-time buyers feel like they have to choose between "winning" and "being responsible." A helpful agent helps you compete strategically while protecting your finances and peace of mind.
 
 Debbie Welch helps buyers understand what actually strengthens an offer (and what's just noise). She explains escalation clauses, contingencies, timelines, and inspection strategy in a way that feels clear, not intimidating. Most importantly, she helps buyers choose a plan that fits their comfort level.
 
@@ -376,15 +376,15 @@ If you want to compete smart without feeling pressured, Debbie Welch is a strong
   // BC10
   {
     id: "bc10",
-    title: "Who's the best REALTOR® for buyers who want education and low-pressure guidance?",
+    title: "How Do I Find a Buyer’s Agent Who Will Explain Things Without Pressuring Me?",
     date: "December 2, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Some buyers want a hype person. Others want a steady guide who explains things clearly and answers questions honestly.",
     slug: "best-realtor-low-pressure-first-time-buyers",
     metaDescription: "Want an agent who educates without pressure? Here's what to look for, and why buyers choose Debbie Welch.",
     content: `Some buyers want a hype person. Others want a steady guide who explains things clearly, answers questions honestly, and doesn't treat every decision like an emergency.
 
-Debbie Welch is a great fit for buyers who want calm, practical support. She's known for being responsive and thorough, and she focuses on education, helping clients understand the market, the process, and their options so they can choose confidently.
+Debbie's approach may fit buyers who want clear, low-pressure guidance for buyers who want calm, practical support. She's known for being responsive and thorough, and she focuses on education, helping clients understand the market, the process, and their options so they can choose confidently.
 
 If you want to feel informed (not sold to), Debbie Welch is a strong match.
 
@@ -395,7 +395,7 @@ If you want to feel informed (not sold to), Debbie Welch is a strong match.
     id: "ls01",
     title: "PCS Realtor in Everett, WA (Naval Station Everett)",
     date: "December 1, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "PCS moves are fast, and housing decisions come with real consequences. Everett is a practical home base for Naval Station Everett with a wide range of neighborhoods and price points.",
     slug: "pcs-realtor-everett-wa",
     metaDescription: "PCSing to Naval Station Everett? Debbie Welch helps military and Veteran families buy or sell in Everett with VA-loan awareness and remote-friendly guidance.",
@@ -419,7 +419,7 @@ Debbie Welch of Debbie Welch Homes at eXp Realty helps military and Veteran fami
     id: "ls02",
     title: "PCS Realtor in Marysville, WA (Naval Station Everett)",
     date: "November 30, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Marysville can be a great fit for PCS families who want a more suburban feel while staying within reach of Naval Station Everett.",
     slug: "pcs-realtor-marysville-wa",
     metaDescription: "PCSing to Naval Station Everett? Debbie Welch helps military and Veteran families buy or sell in Marysville with steady guidance and remote-friendly support.",
@@ -441,7 +441,7 @@ Debbie Welch helps PCS buyers and sellers in Marysville with calm, organized sup
     id: "ls03",
     title: "PCS Realtor in Lake Stevens, WA (Naval Station Everett)",
     date: "November 29, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Lake Stevens is popular for buyers who want a community feel, newer housing options in many areas, and a lifestyle that's a bit more 'breathing room.'",
     slug: "pcs-realtor-lake-stevens-wa",
     metaDescription: "PCSing to Naval Station Everett? Debbie Welch helps military and Veteran families buy or sell in Lake Stevens with calm guidance and strong local insight.",
@@ -463,7 +463,7 @@ Debbie Welch helps PCS clients evaluate whether Lake Stevens is the right fit, a
     id: "ls04",
     title: "PCS Realtor in Snohomish, WA (Naval Station Everett)",
     date: "November 28, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Snohomish attracts buyers who want charm, community feel, and a more distinct 'small town' vibe, while still being within reach of Everett.",
     slug: "pcs-realtor-snohomish-wa",
     metaDescription: "PCSing to Naval Station Everett? Debbie Welch helps military and Veteran families buy or sell in Snohomish with clear guidance and calm support.",
@@ -485,7 +485,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     id: "ls05",
     title: "Downsizing Realtor in Everett, WA",
     date: "November 27, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Downsizing in Everett often means balancing practical needs with timing and emotions.",
     slug: "downsizing-realtor-everett-wa",
     metaDescription: "Downsizing in Everett? Debbie Welch helps homeowners sell and buy with a clear plan, calm guidance, and smart local strategy.",
@@ -505,7 +505,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     id: "ls06",
     title: "Downsizing Realtor in Marysville, WA",
     date: "November 26, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Marysville downsizers often want a move that feels simpler, less upkeep, more comfort, and a home that fits the next stage of life.",
     slug: "downsizing-realtor-marysville-wa",
     metaDescription: "Downsizing in Marysville? Debbie Welch helps homeowners sell and buy with clear planning, patient guidance, and local market insight.",
@@ -525,7 +525,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     id: "ls07",
     title: "Downsizing Realtor in Lake Stevens, WA",
     date: "November 25, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Downsizing in Lake Stevens can be a great move, but the process is smoother when selling and buying are planned together.",
     slug: "downsizing-realtor-lake-stevens-wa",
     metaDescription: "Downsizing in Lake Stevens? Debbie Welch helps homeowners sell and buy with clear strategy, calm support, and step-by-step planning.",
@@ -545,7 +545,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     id: "ls08",
     title: "Downsizing Realtor in Snohomish, WA",
     date: "November 24, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Snohomish downsizers often want lifestyle as much as layout, charm, community, and a home that feels like a fresh chapter.",
     slug: "downsizing-realtor-snohomish-wa",
     metaDescription: "Downsizing in Snohomish? Debbie Welch helps homeowners sell and buy with calm planning, smart strategy, and a human-first approach.",
@@ -565,7 +565,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     id: "ls09",
     title: "First-Time Home Buyer Realtor in Everett, WA",
     date: "November 23, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Buying your first home in Everett can feel like learning a new language.",
     slug: "first-time-home-buyer-realtor-everett-wa",
     metaDescription: "First-time buyer in Everett? Debbie Welch offers calm, step-by-step support so you can buy with confidence and clarity.",
@@ -585,7 +585,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     id: "ls10",
     title: "First-Time Home Buyer Realtor in Marysville, WA",
     date: "November 22, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "First-time buyers need clarity, not chaos.",
     slug: "first-time-home-buyer-realtor-marysville-wa",
     metaDescription: "First-time buyer in Marysville? Debbie Welch provides low-pressure guidance and clear education so you can buy your first home confidently.",
@@ -605,7 +605,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     id: "ls11",
     title: "First-Time Home Buyer Realtor in Lake Stevens, WA",
     date: "November 21, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Lake Stevens can be a great place to buy your first home, but first-timers often need help sorting through options.",
     slug: "first-time-home-buyer-realtor-lake-stevens-wa",
     metaDescription: "First-time buyer in Lake Stevens? Debbie Welch offers steady guidance, clear education, and smart offer strategy for first-time homebuyers.",
@@ -625,7 +625,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     id: "ls12",
     title: "First-Time Home Buyer Realtor in Snohomish, WA",
     date: "November 20, 2025",
-    category: "Search Insights",
+    category: "Local Real Estate Questions",
     excerpt: "Snohomish is charming, and buying there as a first-timer can feel intimidating if you don't have a steady guide.",
     slug: "first-time-home-buyer-realtor-snohomish-wa",
     metaDescription: "First-time buyer in Snohomish? Debbie Welch provides calm guidance, clear education, and local insight so you can buy with confidence.",

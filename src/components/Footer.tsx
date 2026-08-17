@@ -2,13 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-primary text-primary-foreground pt-20 pb-8">
+    <footer id="contact" className="bg-primary text-primary-foreground pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
 
           {/* Contact Column */}
           <div>
-            <h3 className="font-heading text-2xl font-bold mb-6">Contact</h3>
+            <h3 className="font-heading h-card mb-6">Contact</h3>
             <div className="space-y-3 text-sm">
               <p className="font-semibold">Debbie Welch, Realtor®</p>
               <p>Debbie Welch Homes at eXp Realty</p>
@@ -33,7 +33,7 @@ const Footer = () => {
 
           {/* Stay in Touch Column */}
           <div>
-            <h3 className="font-heading text-2xl font-bold mb-6">Stay in Touch</h3>
+            <h3 className="font-heading h-card mb-6">Stay in Touch</h3>
             <p className="text-sm mb-6 text-primary-foreground/90">
               Have a question about the Snohomish County market, or want a custom report for the area you're
               watching? Send me a note and I'll follow up personally within one business day.
@@ -45,7 +45,7 @@ const Footer = () => {
 
           {/* Links Column */}
           <div>
-            <h3 className="font-heading text-2xl font-bold mb-6">From the Blog</h3>
+            <h3 className="font-heading h-card mb-6">From the Blog</h3>
             <ul className="space-y-3 text-sm mb-8">
               <li>
                 <Link to="/blog" className="hover:text-accent transition-colors">

@@ -248,6 +248,23 @@ All colors MUST be HSL.
   }
 }
 
+/* Keep script-style labels legible when they sit directly over area photography. */
+section:has(> img.absolute.inset-0) .eyebrow {
+  display: inline-block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.35rem 0.9rem 0.45rem;
+  color: hsl(var(--primary-foreground));
+  background: hsl(var(--primary) / 0.74);
+  border: 1px solid hsl(var(--primary-foreground) / 0.22);
+  border-radius: 9999px;
+  box-shadow: 0 3px 14px rgb(0 0 0 / 0.25);
+  text-shadow: 0 1px 4px rgb(0 0 0 / 0.75);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
 /* Let visitors know that property-search links leave the branded site. */
 a[href*="debbiewelch.exprealty.com/index"] {
   flex-direction: column;

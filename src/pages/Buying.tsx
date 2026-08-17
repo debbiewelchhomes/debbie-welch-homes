@@ -89,7 +89,7 @@ const Buying = () => {
     {
       question: "How much do I actually need for a down payment?",
       answer:
-        "Less than most people think, depending on your loan type and financial picture. Conventional loans can go as low as 3-5% down. FHA is 3.5%. VA loans for qualified veterans require zero down. Your ideal down payment depends on your goals, your monthly comfort level, and what your lender recommends for your situation. I'll connect you with someone who will explain this clearly so we can search with real numbers.",
+        "Less than most people think, depending on your loan type and financial picture. Conventional loans can go as low as 3-5% down. FHA is 3.5%. VA loans for qualified Veterans require zero down. Your ideal down payment depends on your goals, your monthly comfort level, and what your lender recommends for your situation. I'll connect you with someone who will explain this clearly so we can search with real numbers.",
     },
     {
       question: "Do I need to sell my current home before I buy?",
@@ -154,16 +154,16 @@ const Buying = () => {
 
           <div className="relative z-10 container mx-auto px-4 py-20 text-center">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               className="max-w-4xl mx-auto text-backdrop"
             >
-              <p className="font-script text-4xl md:text-5xl lg:text-6xl mb-6 text-secondary" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 Finding your place…
               </p>
 
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-primary mb-6">
+              <h1 className="font-heading h-section text-primary mb-6">
                 Buying a Home in Snohomish County
               </h1>
 
@@ -178,19 +178,19 @@ const Buying = () => {
         </section>
 
         {/* Intro Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={introRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={introInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={introInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 Before the search…
               </p>
-              <h2 className="font-heading text-3xl md:text-5xl text-primary mb-8">The House Is Only Part of It</h2>
+              <h2 className="font-heading h-section text-primary mb-8">The House Is Only Part of It</h2>
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
@@ -208,19 +208,19 @@ const Buying = () => {
         </section>
 
         {/* The Buying Process - 5 Steps */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">
             <motion.div
               ref={processRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={processInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={processInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 Step by step…
               </p>
-              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
+              <h2 className="font-heading h-section text-primary">
                 What the Process Actually Looks Like
               </h2>
             </motion.div>
@@ -253,20 +253,20 @@ const Buying = () => {
         </section>
 
         {/* What Makes Working With Me Different */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={differentRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={differentInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={differentInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 No rush, no pressure…
               </p>
 
-              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
+              <h2 className="font-heading h-section text-primary mb-8">
                 I'm Not in a Hurry. You Shouldn't Be Either.
               </h2>
 
@@ -287,20 +287,20 @@ const Buying = () => {
         </section>
 
         {/* Must-Have Guide Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">
             <motion.div
               ref={guideRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={guideInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={guideInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 Start here…
               </p>
 
-              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
+              <h2 className="font-heading h-section text-primary mb-8">
                 The Snohomish County Home Buyer Guide
               </h2>
 
@@ -324,20 +324,20 @@ const Buying = () => {
         </section>
 
         {/* Property Search Form */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={formRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={formInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={formInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-3xl mx-auto"
             >
               <div className="text-center mb-12">
-                <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                <p className="eyebrow mb-4" aria-hidden="true">
                   Let's get started…
                 </p>
-                <h2 className="font-heading text-3xl md:text-5xl text-primary mb-6">
+                <h2 className="font-heading h-section text-primary mb-6">
                   Set Up a No-Obligation Property Search
                 </h2>
                 <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
@@ -402,20 +402,20 @@ const Buying = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">
             <motion.div
               ref={faqRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={faqInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={faqInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
               <div className="text-center mb-12">
-                <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                <p className="eyebrow mb-4" aria-hidden="true">
                   Things people ask…
                 </p>
-                <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
+                <h2 className="font-heading h-section text-primary">
                   Buying Questions I Hear All the Time
                 </h2>
               </div>
@@ -441,20 +441,20 @@ const Buying = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={testimonialRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={testimonialInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={testimonialInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-5xl mx-auto"
             >
               <div className="text-center mb-12">
-                <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                <p className="eyebrow mb-4" aria-hidden="true">
                   From buyer clients…
                 </p>
-                <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
+                <h2 className="font-heading h-section text-primary">
                   What My Buyer Clients Have to Say
                 </h2>
               </div>

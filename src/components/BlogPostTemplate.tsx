@@ -22,7 +22,7 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
         if (paragraph.startsWith("**") && paragraph.endsWith("**")) {
           const text = paragraph.slice(2, -2);
           return (
-            <h2 key={index} className="font-heading text-xl md:text-2xl font-bold text-primary mt-8 mb-4">
+            <h2 key={index} className="font-heading h-card text-primary mt-8 mb-4">
               {text}
             </h2>
           );
@@ -80,7 +80,7 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
         jsonLd={articleSchema}
       />
       <Navigation />
-      <main className="py-20 md:py-32 bg-background">
+      <main className="section bg-background">
         <div className="container mx-auto px-4">
           <article className="max-w-3xl mx-auto">
             {/* Back Button */}

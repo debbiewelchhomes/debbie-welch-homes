@@ -84,7 +84,7 @@ const TestimonialSection = () => {
 
   return (
     <section
-      className="relative py-20 md:py-32 overflow-hidden"
+      className="relative section overflow-hidden"
       style={{
         backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${testimonialBg})`,
         backgroundSize: "cover",
@@ -95,21 +95,21 @@ const TestimonialSection = () => {
       <div className="relative z-10 container mx-auto px-4">
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 16 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
           transition={{ duration: 0.6 }}
           className="max-w-5xl mx-auto"
         >
-          <Card className="bg-white/95 backdrop-blur-sm shadow-2xl">
+          <Card className="bg-white/95 backdrop-blur-sm border-border/70 shadow-md">
             <CardContent className="p-8 md:p-12">
               <div className="text-center mb-8">
-                <p className="font-script text-3xl md:text-5xl text-secondary mb-4" aria-hidden="true">
+                <p className="eyebrow mb-4" aria-hidden="true">
                   In their own words…
                 </p>
-                <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">
+                <h2 className="font-heading h-section text-primary mb-6">
                   What My Clients Are Saying
                 </h2>
-                <p className="text-lg text-foreground leading-relaxed max-w-3xl mx-auto">
+                <p className="copy text-foreground max-w-2xl mx-auto">
                   Downsizers, military families, out-of-state sellers, first-time buyers - here's what working together
                   actually feels like.
                 </p>
@@ -121,13 +121,13 @@ const TestimonialSection = () => {
                 className="w-full max-w-4xl mx-auto"
               >
                 <CarouselContent>
-                  {testimonials.map((testimonial, index) => (
+                  {testimonials.slice(0, 5).map((testimonial, index) => (
                     <CarouselItem key={index}>
-                      <div className="p-6 md:p-8 text-center">
-                        <blockquote className="text-lg md:text-xl leading-relaxed text-foreground mb-6 italic">
+                      <div className="p-6 md:p-8">
+                        <blockquote className="copy measure mx-auto text-foreground mb-6 italic">
                           "{testimonial.quote}"
                         </blockquote>
-                        <p className="text-base md:text-lg font-medium text-secondary">– {testimonial.attribution}</p>
+                        <p className="measure mx-auto text-sm md:text-base font-medium text-secondary">– {testimonial.attribution}</p>
                       </div>
                     </CarouselItem>
                   ))}

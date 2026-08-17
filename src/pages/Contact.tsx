@@ -107,7 +107,7 @@ const Contact = () => {
       {/* Hero Script Line */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-background">
         <div className="container mx-auto px-4">
-          <p className="text-4xl md:text-5xl lg:text-6xl text-center font-['Oooh_Baby'] text-[#6e808e]">
+          <p className="h-section text-center font-['Oooh_Baby'] text-[#6e808e]">
             Get in touch…
           </p>
         </div>
@@ -258,7 +258,7 @@ const Contact = () => {
                 </div>
 
                 <p className="text-sm text-muted-foreground font-['Montserrat'] italic">
-                  I respect your time and inbox—no spam, ever.
+                  I respect your time and inbox, no spam, ever.
                 </p>
 
                 <Button 

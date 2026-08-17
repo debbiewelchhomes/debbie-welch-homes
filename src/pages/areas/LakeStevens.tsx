@@ -13,7 +13,7 @@ const LakeStevens = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const fadeInUp = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 16 },
     visible: { opacity: 1, y: 0 },
   };
 
@@ -38,10 +38,10 @@ const LakeStevens = () => {
             role="img"
             aria-label="Lake Stevens Washington dock and pier extending over the lake with boats and Pacific Northwest treeline"
           />
-          <div className="container mx-auto px-4 text-center py-32 relative z-10">
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+          <div className="container mx-auto px-4 text-center section relative z-10">
+            <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
               <p
-                className="font-script text-5xl md:text-7xl text-white mb-4"
+                className="eyebrow mb-4"
                 style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}
               >
                 Lake Stevens
@@ -58,7 +58,7 @@ const LakeStevens = () => {
         </section>
 
         {/* Intro */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={ref}
@@ -68,8 +68,8 @@ const LakeStevens = () => {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">I know this town…</p>
-              <h1 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">Lake Stevens, WA</h1>
+              <p className="eyebrow mb-4">I know this town…</p>
+              <h1 className="font-heading h-section text-primary mb-6">Lake Stevens, WA</h1>
               <p className="text-foreground text-lg leading-relaxed">
                 I lived in the Soper Hill area of northwest Lake Stevens for about ten years - I know the Monday morning
                 traffic, where the hidden parking is at the Farmer's Market, and which parks fill up first on a hot July
@@ -82,7 +82,7 @@ const LakeStevens = () => {
         </section>
 
         {/* Pros and Cons */}
-        <section className="py-16 md:py-24 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4 max-w-6xl mx-auto">
             <motion.div
               initial="hidden"
@@ -193,7 +193,7 @@ const LakeStevens = () => {
         </section>
 
         {/* Quick Facts */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4 max-w-4xl">
             <motion.div
               initial="hidden"
@@ -244,7 +244,7 @@ const LakeStevens = () => {
         </section>
 
         {/* CTA */}
-        <section className="py-16 md:py-24 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <motion.div
               initial="hidden"
@@ -253,7 +253,7 @@ const LakeStevens = () => {
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">Ready to look…</p>
+              <p className="eyebrow mb-4">Ready to look…</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
                 Homes for Sale in Lake Stevens
               </h2>

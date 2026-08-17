@@ -50,34 +50,34 @@ const NeighborhoodsSection = () => {
     altText: "Stanwood and Camano Island WA coastal homes",
     href: "/areas/stanwood-camano"
   }];
-  return <section id="neighborhoods" className="py-20 md:py-32 bg-background">
+  return <section id="neighborhoods" className="section bg-background">
       <div className="container mx-auto px-4">
         <motion.div ref={ref} initial={{
         opacity: 0,
-        y: 30
+        y: 16
       }} animate={isInView ? {
         opacity: 1,
         y: 0
       } : {
         opacity: 0,
-        y: 30
+        y: 16
       }} transition={{
         duration: 0.6
-      }} className="text-center mb-16">
-          <p className="font-script text-3xl text-secondary mb-6 md:text-6xl" aria-hidden="true">Let me show you around…</p>
-          <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-primary">Explore Neighborhoods</h2>
+      }} className="text-center mb-12">
+          <p className="eyebrow mb-4" aria-hidden="true">Let me show you around…</p>
+          <h2 className="font-heading h-section text-primary">Explore Neighborhoods</h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {neighborhoods.map((area, index) => <motion.div key={index} initial={{
           opacity: 0,
-          y: 30
+          y: 16
         }} animate={isInView ? {
           opacity: 1,
           y: 0
         } : {
           opacity: 0,
-          y: 30
+          y: 16
         }} transition={{
           duration: 0.5,
           delay: index * 0.08
@@ -85,12 +85,12 @@ const NeighborhoodsSection = () => {
               <Link to={area.href}>
                 <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-border bg-card group cursor-pointer">
                   <CardContent className="p-6">
-                    <div className="h-32 bg-warm-bg rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300" role="img" aria-label={area.altText}>
-                      <h3 className="font-heading text-xl md:text-2xl font-bold text-primary text-center px-2 whitespace-pre-line">
+                    <div className="mb-4 flex h-28 items-center justify-center rounded-lg bg-warm-bg" role="img" aria-label={area.altText}>
+                      <h3 className="font-heading h-card text-primary text-center px-2 whitespace-pre-line">
                         {area.name}
                       </h3>
                     </div>
-                    <p className="text-foreground leading-relaxed text-base text-left">
+                    <p className="copy text-foreground text-left">
                       {area.description}
                     </p>
                   </CardContent>

@@ -155,16 +155,16 @@ const Downsizing = () => {
 
           <div className="relative z-10 container mx-auto px-4 py-20 text-center">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               className="max-w-4xl mx-auto text-backdrop"
             >
-              <p className="font-script text-4xl md:text-5xl lg:text-6xl mb-6 text-secondary" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 A new chapter…
               </p>
 
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-primary mb-6">
+              <h1 className="font-heading h-section text-primary mb-6">
                 Downsizing & Life Transitions in Snohomish County
               </h1>
 
@@ -179,19 +179,19 @@ const Downsizing = () => {
         </section>
 
         {/* Intro Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={introRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={introInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={introInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 Real talk…
               </p>
-              <h2 className="font-heading text-3xl md:text-5xl text-primary mb-8">
+              <h2 className="font-heading h-section text-primary mb-8">
                 Downsizing Is Rarely Just About the House
               </h2>
 
@@ -213,19 +213,19 @@ const Downsizing = () => {
         </section>
 
         {/* The Downsizing Process - 5 Steps */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">
             <motion.div
               ref={processRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={processInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={processInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 One step at a time…
               </p>
-              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
+              <h2 className="font-heading h-section text-primary">
                 What the Process Actually Looks Like
               </h2>
             </motion.div>
@@ -258,20 +258,20 @@ const Downsizing = () => {
         </section>
 
         {/* What Makes Working With Me Different */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={differentRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={differentInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={differentInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 What's different here…
               </p>
 
-              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
+              <h2 className="font-heading h-section text-primary mb-8">
                 I Show Up. All the Way.
               </h2>
 
@@ -298,20 +298,20 @@ const Downsizing = () => {
         </section>
 
         {/* Must-Have Guide Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">
             <motion.div
               ref={guideRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={guideInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={guideInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+              <p className="eyebrow mb-4" aria-hidden="true">
                 Take it with you…
               </p>
 
-              <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary mb-8">
+              <h2 className="font-heading h-section text-primary mb-8">
                 The Snohomish County Downsizing Guide
               </h2>
 
@@ -330,20 +330,20 @@ const Downsizing = () => {
         </section>
 
         {/* Downsizing Consult Form */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={formRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={formInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={formInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-3xl mx-auto"
             >
               <div className="text-center mb-12">
-                <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                <p className="eyebrow mb-4" aria-hidden="true">
                   Let's talk it through…
                 </p>
-                <h2 className="font-heading text-3xl md:text-5xl text-primary mb-6">
+                <h2 className="font-heading h-section text-primary mb-6">
                   Request a Free Downsizing Consult
                 </h2>
                 <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
@@ -418,20 +418,20 @@ const Downsizing = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 md:py-32 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">
             <motion.div
               ref={faqRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={faqInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={faqInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
               <div className="text-center mb-12">
-                <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                <p className="eyebrow mb-4" aria-hidden="true">
                   Downsizing questions…
                 </p>
-                <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
+                <h2 className="font-heading h-section text-primary">
                   Downsizing Questions I Hear All the Time
                 </h2>
               </div>
@@ -457,20 +457,20 @@ const Downsizing = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-20 md:py-32 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={testimonialRef}
-              initial={{ opacity: 0, y: 30 }}
-              animate={testimonialInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={testimonialInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.6 }}
               className="max-w-5xl mx-auto"
             >
               <div className="text-center mb-12">
-                <p className="font-script text-3xl md:text-5xl text-secondary mb-6" aria-hidden="true">
+                <p className="eyebrow mb-4" aria-hidden="true">
                   From downsizing clients…
                 </p>
-                <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl text-primary">
+                <h2 className="font-heading h-section text-primary">
                   What My Clients Have to Say
                 </h2>
               </div>

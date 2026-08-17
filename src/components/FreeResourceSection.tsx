@@ -4,50 +4,35 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 
-
 const FreeResourceSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-20 md:py-32 bg-warm-bg">
+    <section className="section bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto text-center"
+          initial={{ opacity: 0, y: 16 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="mx-auto max-w-3xl rounded-xl border border-border/70 bg-warm-bg px-6 py-10 text-center md:px-10 md:py-12"
         >
-          <p
-            className="font-script text-3xl text-secondary mb-6 md:text-6xl"
-            aria-hidden="true"
-          >
-            Steal this...
-          </p>
+          <span className="eyebrow-caps">Free, No Obligation</span>
 
-          <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
-            Free Market Report for Any Area in Snohomish County
+          <h2 className="font-heading h-section mt-3 text-primary">
+            A Market Report for Any Area in Snohomish County
           </h2>
 
-          <p className="text-lg md:text-xl leading-relaxed mb-10 text-foreground">
-            Curious what's actually happening with prices in Lake Stevens right
-            now? Wondering how long homes are sitting in Marysville, or whether
-            Arlington is cooling off? I'll pull a custom report for whatever
-            area you're watching -- new listings, price reductions, days on
-            market, recent sales. Real numbers, not headlines. No obligation.
+          <p className="copy measure mx-auto mt-4 text-left text-foreground md:text-center">
+            Tell me the area you are watching and I will pull the current numbers: new listings,
+            price reductions, days on market, and recent sales. Real data for your neighborhood,
+            not national headlines.
           </p>
 
-          <div className="flex justify-center">
-            <Button
-              size="lg"
-              className="bg-secondary hover:bg-secondary/90 text-white px-8"
-              asChild
-            >
-              <Link to="/contact" className="text-lg font-normal">
-                Get My Free Report
-              </Link>
-
+          <div className="mt-8 flex justify-center">
+            <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90" asChild>
+              <Link to="/contact">Request My Market Report</Link>
             </Button>
           </div>
         </motion.div>

@@ -44,7 +44,7 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center justify-between w-full max-w-7xl mx-auto">
             {/* Left Navigation Group */}
-            <div className="flex items-center gap-8 flex-1 justify-end pr-8">
+            <div className="flex items-center gap-6 flex-1 justify-end pr-6 whitespace-nowrap">
               <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
@@ -93,6 +93,7 @@ const Navigation = () => {
                 href="https://debbiewelch.exprealty.com/index?advanced=1&display=Snohomish&areas%5B%5D=county:Snohomish:wa&beds=0&baths=0&min=0&max=100000000&minacres=0&maxacres=50000&minfootage=0&maxfootage=30000&walkscore=&yearbuilt=0&types%5B%5D=2&types%5B%5D=3&types%5B%5D=1&sortby=listings.listingdate+DESC&ppc=Loveable+Website&addht=LoveableWebsite&agency_photos=&view_timing=2"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Search Homes on the eXp Realty site (opens in a new tab)"
                 className="text-foreground hover:text-secondary transition-colors"
               >
                 Search Homes
@@ -105,7 +106,7 @@ const Navigation = () => {
             </Link>
 
             {/* Right Navigation Group */}
-            <div className="flex items-center gap-8 flex-1 justify-start pl-8">
+            <div className="flex items-center gap-6 flex-1 justify-start pl-6 whitespace-nowrap">
               <Link to="/blog" className="text-foreground hover:text-secondary transition-colors">
                 Blog
               </Link>
@@ -129,6 +130,12 @@ const Navigation = () => {
               <Link to="/contact" className="text-foreground hover:text-secondary transition-colors">
                 Contact
               </Link>
+
+              <Button size="sm" className="bg-secondary text-white hover:bg-secondary/90" asChild>
+                <a href="https://cal.com/debbie.welch.homes" target="_blank" rel="noopener noreferrer">
+                  Book a Free Consult
+                </a>
+              </Button>
             </div>
           </div>
 
@@ -194,6 +201,7 @@ const Navigation = () => {
                 href="https://debbiewelch.exprealty.com/index?advanced=1&display=Snohomish&areas%5B%5D=county:Snohomish:wa&beds=0&baths=0&min=0&max=100000000&minacres=0&maxacres=50000&minfootage=0&maxfootage=30000&walkscore=&yearbuilt=0&types%5B%5D=2&types%5B%5D=3&types%5B%5D=1&sortby=listings.listingdate+DESC&ppc=Loveable+Website&addht=LoveableWebsite&agency_photos=&view_timing=2"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Search Homes on the eXp Realty site (opens in a new tab)"
                 className="text-foreground hover:text-secondary transition-colors"
               >
                 Search Homes
@@ -228,6 +236,12 @@ const Navigation = () => {
               >
                 Contact
               </Link>
+
+              <Button className="mt-2 bg-secondary text-white hover:bg-secondary/90" asChild>
+                <a href="https://cal.com/debbie.welch.homes" target="_blank" rel="noopener noreferrer">
+                  Book a Free Consult
+                </a>
+              </Button>
             </div>
           </div>
         )}

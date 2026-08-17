@@ -13,7 +13,7 @@ const EverettMukilteo = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const fadeInUp = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 16 },
     visible: { opacity: 1, y: 0 },
   };
 
@@ -38,10 +38,10 @@ const EverettMukilteo = () => {
             role="img"
             aria-label="Everett Washington marina with sailboats and historic building on Port Gardner Bay"
           />
-          <div className="container mx-auto px-4 text-center py-32 relative z-10">
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+          <div className="container mx-auto px-4 text-center section relative z-10">
+            <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
               <p
-                className="font-script text-5xl md:text-7xl text-white mb-4"
+                className="eyebrow mb-4"
                 style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}
               >
                 Everett & Mukilteo
@@ -58,7 +58,7 @@ const EverettMukilteo = () => {
         </section>
 
         {/* Intro */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               ref={ref}
@@ -68,8 +68,8 @@ const EverettMukilteo = () => {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">Two very different places…</p>
-              <h1 className="font-heading text-3xl md:text-5xl font-bold text-primary mb-6">Everett & Mukilteo, WA</h1>
+              <p className="eyebrow mb-4">Two very different places…</p>
+              <h1 className="font-heading h-section text-primary mb-6">Everett & Mukilteo, WA</h1>
               <p className="text-foreground text-lg leading-relaxed">
                 These two communities sit side by side on the water but feel completely different. Everett is a real
                 city - layered, complex, with older neighborhoods that have deep roots and new energy coming into the
@@ -83,7 +83,7 @@ const EverettMukilteo = () => {
         </section>
 
         {/* Everett Neighborhoods */}
-        <section className="py-16 md:py-24 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4 max-w-4xl">
             <motion.div
               initial="hidden"
@@ -92,7 +92,7 @@ const EverettMukilteo = () => {
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">The honest breakdown…</p>
+              <p className="eyebrow mb-4">The honest breakdown…</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-8">Everett's Neighborhoods</h2>
 
               <div className="space-y-8 text-foreground text-base leading-relaxed">
@@ -161,7 +161,7 @@ const EverettMukilteo = () => {
         </section>
 
         {/* Pros and Cons */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4 max-w-6xl">
             <motion.div
               initial="hidden"
@@ -267,7 +267,7 @@ const EverettMukilteo = () => {
         </section>
 
         {/* Quick Facts */}
-        <section className="py-16 md:py-24 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4 max-w-4xl">
             <motion.div
               initial="hidden"
@@ -321,7 +321,7 @@ const EverettMukilteo = () => {
         </section>
 
         {/* Mukilteo Section */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="section bg-background">
           <div className="container mx-auto px-4 max-w-4xl">
             <motion.div
               initial="hidden"
@@ -330,7 +330,7 @@ const EverettMukilteo = () => {
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">A town on the Sound…</p>
+              <p className="eyebrow mb-4">A town on the Sound…</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-8">Mukilteo</h2>
 
               <div className="text-foreground text-base leading-relaxed space-y-5">
@@ -361,7 +361,7 @@ const EverettMukilteo = () => {
         </section>
 
         {/* CTA */}
-        <section className="py-16 md:py-24 bg-warm-bg">
+        <section className="section bg-warm-bg">
           <div className="container mx-auto px-4 max-w-3xl text-center">
             <motion.div
               initial="hidden"
@@ -370,7 +370,7 @@ const EverettMukilteo = () => {
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
             >
-              <p className="font-script text-3xl md:text-5xl text-secondary mb-4">Ready to look…</p>
+              <p className="eyebrow mb-4">Ready to look…</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
                 Homes for Sale in Everett & Mukilteo
               </h2>

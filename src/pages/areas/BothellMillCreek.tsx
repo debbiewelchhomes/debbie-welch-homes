@@ -4,7 +4,7 @@ import SEO from "@/components/SEO";
 import { pageSEO } from "@/data/seoData";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-bothell.jpg";
+import heroImage from "@/assets/area-hero-bothell-mill-creek.png";
 
 const searchUrl =
   "https://debbiewelch.exprealty.com/index?advanced=1&areas%5B%5D=city%3ABothell%3Awa&areas%5B%5D=city%3AMill+Creek%3Awa&baths=0&beds=0&display=Bothell%2C+Mill+Creek&max=100000000&maxacres=50000&maxfootage=30000&min=0&minacres=0&minfootage=0&types%5B%5D=1&types%5B%5D=2&types%5B%5D=3";
@@ -26,10 +26,10 @@ const BothellMillCreek = () => {
             style={{
               backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.15) 100%), url(${heroImage})`,
               backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundPosition: "center 45%",
             }}
             role="img"
-            aria-label="Wooded creek trail scenery typical of the Bothell and Mill Creek area"
+            aria-label="Wooden pedestrian bridge over water in Bothell"
           />
           <div className="container mx-auto px-4 text-center section relative z-10">
             <p className="eyebrow mb-4" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}>

@@ -50,6 +50,58 @@ export const mainBlogPosts: BlogPost[] = [
     slug: "interest-rates-impact",
     metaDescription: "Learn how mortgage-rate changes affect monthly payments, buying power, competition, and home-buying decisions in Snohomish County.",
     content: "Mortgage rates affect buying power, but a headline about rates moving up or down does not tell you whether buying is right for you. The useful question is what the change does to your actual payment and whether the full cost of ownership still fits your life.\n\nRates also interact with inventory and buyer competition. When rates fall, some buyers gain purchasing power—but more buyers may enter the market at the same time. When rates rise, competition may ease in some price ranges, but the monthly payment becomes more expensive. Neither environment is automatically better.\n\n**Start with the monthly payment, not the maximum price**\n\nAsk a lender to compare the same home price at several interest rates. Even a modest rate change can affect principal and interest, but that is not the entire payment.\n\nA realistic estimate should also include:\n\n- Property taxes\n- Homeowners insurance\n- Mortgage insurance, when applicable\n- Homeowners association dues\n- Estimated utilities and maintenance\n- Possible flood or other property-specific insurance\n- A reasonable reserve for repairs\n\nThe amount a lender approves and the amount that feels comfortable each month may be different. Your comfortable number should guide the search.\n\n**How rates affect purchasing range**\n\nWhen rates rise, keeping the same monthly payment generally means reducing the loan amount, increasing the down payment, or considering a different property. When rates fall, the same payment may support a larger loan—but that does not mean you need to spend the difference.\n\nIt can be useful to establish three numbers:\n\n- A comfortable target payment\n- A maximum payment you would accept for an unusually strong fit\n- A payment level that is clearly off limits\n\nThat framework makes it easier to evaluate homes without recalculating your entire financial life during every showing.\n\n**Lower rates can bring more competition**\n\nBuyers sometimes wait for lower rates assuming the whole purchase will become easier. Lower borrowing costs can improve affordability, but they can also bring sidelined buyers back into the market. More competition may mean faster decisions, multiple offers, or less seller flexibility.\n\nHigher-rate periods can create different opportunities. Some homes may remain available longer, and some sellers may be more open to price adjustments, closing-cost assistance, or a temporary or permanent interest-rate buydown. These options depend on the transaction, lender rules, appraisal, and seller priorities.\n\nThe point is not to predict which market will be “better.” It is to understand what you may gain and what you may give up in each one.\n\n**What about refinancing later?**\n\n“Marry the house, date the rate” is a catchy phrase, but it leaves out the risk. Refinancing may be possible later, but future rates, home value, personal qualification, closing costs, and loan availability are not guaranteed.\n\nA purchase should work at the payment you are accepting now. Treat a future refinance as a possible benefit—not the plan required to make the home affordable.\n\n**Questions to ask your lender**\n\n- Is this quote for a fixed or adjustable rate?\n- How long is the rate lock?\n- Are discount points included?\n- What are the total lender fees and cash needed at closing?\n- How would seller-paid closing costs or a buydown affect the numbers?\n- What changes if the appraisal is lower than the purchase price?\n- How sensitive is the approval to taxes, insurance, or association dues?\n- Which assumptions in this estimate could still change?\n\nCompare written loan estimates using the same purchase price and loan structure. A lower advertised rate can come with higher upfront costs.\n\n**Local property differences still matter**\n\nTwo similarly priced Snohomish County homes may have different ownership costs. Property taxes, association dues, insurance considerations, heating systems, private wells, septic systems, and maintenance needs all affect the monthly and long-term picture.\n\nCommute costs and likely length of ownership matter too. A payment that works for several years may not make sense for a move you expect to reverse quickly.\n\n**A better decision than trying to time the market**\n\nConsider buying when:\n\n- The payment is comfortable without depending on a future refinance.\n- You have enough reserves after closing.\n- The home fits your likely plans for a reasonable period.\n- You understand the inspection and property-specific risks.\n- You can make a careful offer without being pushed past your limits.\n\nConsider waiting when the payment leaves no room for maintenance or ordinary life, the timeline is uncertain, or buying would depend on assumptions you cannot control.\n\nRates are important, but they are one input. The soundest decision combines financing, property condition, local competition, ownership costs, and your real plans—not a prediction about next month's headline."
+  }
+];
+
+// Search Insights posts (SEO-focused articles)
+export const searchInsightsPosts: BlogPost[] = [
+  // R01, PCS / Military Relocation (Naval Station Everett)
+  {
+    id: "r01",
+    title: "How Do I Plan a PCS Move to or from Naval Station Everett?",
+    date: "December 15, 2025",
+    category: "Local Real Estate Questions",
+    excerpt: "PCS moves don't leave much room for chaos, timelines are tight, decisions are big, and you're often doing it from across the country (or the world). Debbie Welch helps military and Veteran families relocate with calm, step-by-step guidance.",
+    slug: "pcs-military-relocation-naval-station-everett",
+    metaDescription: "PCS to Naval Station Everett? Debbie Welch helps military and Veteran families buy or sell with calm guidance, VA-loan awareness, and remote-friendly support.",
+    content: `PCS moves don't leave much room for chaos, timelines are tight, decisions are big, and you're often doing it from across the country (or the world). Debbie Welch of Debbie Welch Homes at eXp Realty helps military and Veteran families relocate in and out of the Everett area with calm, step-by-step guidance and a plan that actually works under real-life PCS pressure.
+
+**1) PCS relocation is a specialty, not a side hobby**
+
+Debbie's process is built for PCS reality: compressed timelines, quick decisions, and a lot of moving parts that need to stay coordinated.
+
+**2) Local knowledge that matters for daily life**
+
+Everett, Marysville, Lake Stevens, and Snohomish all "feel" different, and that matters when you're choosing commute time, school options, and the rhythm of everyday life.
+
+**3) VA-loan aware strategy without the fluff**
+
+Debbie understands the practical side of VA purchases (appraisal/condition standards, timelines, common hurdles) and helps clients avoid preventable surprises.
+VA eligibility and loan terms are determined by the lender; Debbie coordinates the process and supports the client through the transaction.
+
+**4) Remote-ready support for buyers and sellers**
+
+Many PCS clients can't attend every showing, inspection, or contractor visit. Debbie's approach is designed for virtual tours, clear recap videos, and tight follow-up so clients aren't left guessing.
+
+**5) Calm, steady communication (especially when things get spicy)**
+
+PCS families don't need extra drama, they need clarity. Debbie is known for being responsive, direct-but-warm, and consistent from planning through closing.
+
+**6) Timeline-first planning**
+
+Reporting dates, household goods schedules, and travel logistics affect everything. Debbie builds the real estate plan around your timeline, not a generic one.
+
+**7) Seller strategy built for PCS-out moves**
+
+When you're relocating out, timing is everything. Debbie helps sellers prep efficiently, price strategically, and keep the transaction moving with fewer loose ends.
+
+**8) Human-first guidance during big transitions**
+
+PCS is a major life change, not just a transaction. Debbie's style is grounded and empathetic, organized without being pushy.
+
+**Next step:** If you're PCSing to or from Naval Station Everett and want a calm plan you can trust, You are welcome to contact Debbie to talk through the timing and options.
+
+**Contact:** debbie@debbiewelchhomes.com | 360-631-8148`
   },
   // R02, Downsizing (Sell + Buy)
   {

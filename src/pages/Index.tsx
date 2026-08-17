@@ -24,8 +24,7 @@ const Index = () => {
         jsonLd={realEstateAgentSchema}
       />
       <Navigation />
-      {/* UNDER CONSTRUCTION BANNER - Remove this line and the component when site is ready */}
-      <UnderConstructionBanner />
+
       <main>
         <HeroSection />
         <BufferSection />

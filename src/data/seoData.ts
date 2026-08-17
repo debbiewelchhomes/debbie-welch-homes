@@ -94,16 +94,16 @@ export const pageSEO = {
   },
   areas: {
     snohomishCounty: {
-      title: "Snohomish County Real Estate Guide | Debbie Welch",
-      description: "Explore Snohomish County, WA: neighborhoods, schools, commute, and what to know before buying or selling here."
+      title: "Snohomish County Area Guide: Compare Towns | Debbie Welch",
+      description: "Compare Snohomish County areas from shoreline to foothills, and learn why city names, school districts, and jurisdictions do not always align."
     },
     arlington: {
       title: "Arlington WA Real Estate Guide | Debbie Welch",
-      description: "Buying or selling in Arlington, WA? Local insights on neighborhoods, schools, and the Snohomish County market."
+      description: "Arlington, WA buyer and seller guide: downtown versus Smokey Point versus rural edges, trails and parks, and what to verify before you offer."
     },
     bothellMillCreek: {
       title: "Bothell & Mill Creek Real Estate | Debbie Welch",
-      description: "Local guide to buying and selling homes in Bothell and Mill Creek, WA, from a Snohomish County broker."
+      description: "Bothell and Mill Creek guide: the King and Snohomish county split, school district assignment, parks and trails, and property level checks."
     },
     everettMukilteo: {
       title: "Everett & Mukilteo Real Estate | Debbie Welch",
@@ -119,11 +119,11 @@ export const pageSEO = {
     },
     snohomish: {
       title: "Snohomish WA Real Estate Guide | Debbie Welch",
-      description: "Buying or selling in Snohomish, WA? Historic charm, acreage, and growing communities from a local broker."
+      description: "Snohomish, WA guide: the historic district downtown, river and lake setting, older home considerations, and city versus unincorporated county."
     },
     stanwoodCamano: {
       title: "Stanwood & Camano Real Estate | Debbie Welch",
-      description: "Local guide to buying and selling homes in Stanwood and on Camano Island, WA, from a Snohomish County broker."
+      description: "Stanwood and Camano Island guide: two counties, bridge access, state park shoreline, and well, septic, and shoreline checks before you buy."
     }
   }
 };

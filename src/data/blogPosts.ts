@@ -243,7 +243,7 @@ If you're PCSing to Naval Station Everett and want a plan that's organized and c
     category: "Local Real Estate Questions",
     excerpt: "Selling while PCSing is a different challenge. You need an agent who can run a tight plan and coordinate details you can't be there for.",
     slug: "best-agent-sell-from-afar-everett",
-    metaDescription: "Selling while PCSing out of Everett? Learn what the best agent does, and how to choose remote-ready representation.",
+    metaDescription: "Selling while PCSing out of Everett? Learn what capable representation should include when you are selling from a distance.",
     content: `Selling while PCSing is a different challenge. You need an agent who can run a tight plan, coordinate details you can't be there for, and keep the process moving toward a real deadline.
 
 Debbie's process is designed for this kind of move for PCS-out sellers because she's proactive and detail-driven, coordinating prep steps, vendors, photography, and timelines so the seller isn't trying to manage everything from a distance. She's also known for calm, clear communication, which matters when you're juggling moving parts already.
@@ -277,7 +277,7 @@ If you want a steady guide who understands the local market and respects your bu
     title: "Can I Buy Near Naval Station Everett Without Traveling for Showings?",
     date: "December 8, 2025",
     category: "Local Real Estate Questions",
-    excerpt: "PCS doesn't always allow time for in-person house hunting. The best agent for remote buyers can be your eyes on the ground.",
+    excerpt: "PCS doesn't always allow time for in-person house hunting. A remote buyer's agent should be able to serve as your eyes on the ground.",
     slug: "best-agent-remote-showings-military",
     metaDescription: "Can't travel for showings during PCS? Here is what capable representation should include, and why Debbie's process is designed for this kind of move for remote buyers.",
     content: `PCS doesn't always allow time for in-person house hunting. A remote buyer's agent should be someone who can be your eyes on the ground, communicate clearly, and help you make decisions without feeling rushed.

@@ -6,10 +6,10 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, X } from "lucide-react";
-import { mainBlogPosts } from "@/data/blogPosts";
+import { publicBlogPosts } from "@/data/blogPosts";
 import { pageSEO } from "@/data/seoData";
 
-const categories = ["Buying", "Downsizing", "Relocation", "Market Updates"];
+const categories = ["Buying", "Downsizing", "Relocation", "Military & VA", "Market Updates"];
 
 const matchesQuery = (
   post: { title: string; excerpt: string; category: string },
@@ -31,10 +31,10 @@ const Blog = () => {
   }, [query]);
 
   const filteredMainPosts = useMemo(
-    () => mainBlogPosts.filter((post) => matchesQuery(post, normalizedQuery)),
+    () => publicBlogPosts.filter((post) => matchesQuery(post, normalizedQuery)),
     [normalizedQuery],
   );
-  const recentPosts = mainBlogPosts.slice(0, 6);
+  const recentPosts = publicBlogPosts.slice(0, 6);
   const resultCount = filteredMainPosts.length;
 
   const submitSearch = (event: FormEvent<HTMLFormElement>) => {

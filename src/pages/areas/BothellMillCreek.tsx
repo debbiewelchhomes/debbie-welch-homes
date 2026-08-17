@@ -4,10 +4,12 @@ import SEO from "@/components/SEO";
 import { pageSEO } from "@/data/seoData";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import heroImage from "@/assets/hero-bothell.jpg";
+
+const searchUrl =
+  "https://debbiewelch.exprealty.com/index?advanced=1&areas%5B%5D=city%3ABothell%3Awa&areas%5B%5D=city%3AMill+Creek%3Awa&baths=0&beds=0&display=Bothell%2C+Mill+Creek&max=100000000&maxacres=50000&maxfootage=30000&min=0&minacres=0&minfootage=0&types%5B%5D=1&types%5B%5D=2&types%5B%5D=3";
 
 const BothellMillCreek = () => {
-  const areaName = "Bothell & Mill Creek";
-
   return (
     <div className="min-h-screen">
       <SEO
@@ -17,58 +19,211 @@ const BothellMillCreek = () => {
       />
       <Navigation />
       <main>
+        {/* Hero */}
+        <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.15) 100%), url(${heroImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            role="img"
+            aria-label="Wooded creek trail scenery typical of the Bothell and Mill Creek area"
+          />
+          <div className="container mx-auto px-4 text-center section relative z-10">
+            <p className="eyebrow mb-4" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}>
+              Bothell &amp; Mill Creek
+            </p>
+            <p
+              className="font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+              style={{ textShadow: "0 1px 6px rgba(0,0,0,0.7)" }}
+            >
+              The south end of the county, where county lines and school district lines do not follow the
+              mailing address.
+            </p>
+          </div>
+        </section>
+
         {/* Intro */}
-        <section className="section bg-background pt-32 md:pt-40">
+        <section className="section bg-background">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <p className="eyebrow mb-4">Bothell & Mill Creek</p>
+            <div className="max-w-3xl mx-auto">
               <h1 className="font-heading h-section text-primary mb-6">
-                Buying or Selling in Bothell & Mill Creek
+                Buying or Selling in Bothell &amp; Mill Creek, WA
               </h1>
-              <p className="text-base md:text-lg text-foreground leading-relaxed measure mx-auto">
-                Bothell and Mill Creek sit at the south end of Snohomish County, closest to the Eastside and Seattle commutes. If you are considering a move here, the most useful thing I can give you is
-                current, specific information about your price range and the streets you are actually
-                looking at, rather than general market headlines.
+              <p className="text-base md:text-lg text-foreground leading-relaxed mb-4">
+                These two communities sit at the south end of Snohomish County, closest to Seattle, Bellevue,
+                and the wider Eastside. The single most important practical detail here is that Bothell
+                straddles King County and Snohomish County. Two homes on nearby streets can sit in different
+                counties, with different taxes, different services, and different school district assignments.
+              </p>
+              <p className="text-base md:text-lg text-foreground leading-relaxed">
+                Mill Creek is more consistent by comparison. It began as a planned golf-course community and
+                still reads that way in its street layout, landscaping, and association structures. If you are
+                comparing the two, you are usually comparing a planned, cohesive feel against Bothell's wider
+                mix of older neighborhoods, newer infill, and a redeveloped downtown core.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Search + consult */}
+        {/* Balanced */}
         <section className="section bg-warm-bg">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="font-heading h-section text-primary mb-6">
-                See What Is Available Right Now
-              </h2>
-              <p className="text-base md:text-lg text-foreground leading-relaxed measure mx-auto mb-8">
-                This search pulls live listings so you can get a feel for pricing and inventory. If you
-                would like help reading what you are seeing, or you want a saved search set up for you,
-                just ask.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" asChild>
-                  <a href="https://debbiewelch.exprealty.com/index?advanced=1&areas%5B%5D=city%3ABothell%3Awa&areas%5B%5D=city%3AMill+Creek%3Awa&baths=0&beds=0&display=Bothell%2C+Mill+Creek&max=100000000&maxacres=50000&maxfootage=30000&min=0&minacres=0&minfootage=0&types%5B%5D=1&types%5B%5D=2&types%5B%5D=3" target="_blank" rel="noopener noreferrer">
-                    Search homes in Bothell & Mill Creek
-                  </a>
-                </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <Link to="/contact">Ask Me About Bothell & Mill Creek</Link>
-                </Button>
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="font-heading h-section text-primary mb-10 text-center">An Honest Look</h2>
+            <div className="grid md:grid-cols-2 gap-10">
+              <div>
+                <h3 className="font-heading text-xl font-bold text-primary mb-4">Why buyers consider it</h3>
+                <ul className="space-y-3 text-foreground text-base">
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      Access toward employment centers in Everett, Seattle, Bellevue, and the Eastside from one
+                      general location.
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      Substantial public open space. Bothell manages roughly 400 acres of parkland and open
+                      space along with its trail systems.
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      Mill Creek has 11 city parks, nature trails including the North Creek Trail, and Mill
+                      Creek Town Center as a walkable retail and dining hub.
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      A broad range of housing, from established homes to newer townhomes and condominiums.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-heading text-xl font-bold text-primary mb-4">What to think about</h3>
+                <ul className="space-y-3 text-foreground text-base">
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      The county question in Bothell is not academic. Confirm county, taxes, and services for
+                      the specific parcel.
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      School assignment varies. Mill Creek is served by Everett Public Schools, while Bothell
+                      addresses may fall under Northshore or another district depending on location.
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      Traffic varies widely by corridor and time of day. No one can promise you a commute time.
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-secondary font-bold">•</span>
+                    <span>
+                      Many neighborhoods carry homeowner associations. Read the dues, rules, and reserve
+                      documents before you are emotionally committed.
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Coming soon */}
+        {/* Housing and location */}
         <section className="section bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-2xl mx-auto text-center">
-              <p className="font-body text-base text-muted-foreground">
-                A fuller Bothell & Mill Creek guide, with schools, neighborhoods, and local favorites, is still being
-                written. I would rather post it when it is accurate than fill it with guesses. In the
-                meantime, ask me anything about the area and I will answer directly.
-              </p>
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="font-heading h-section text-primary mb-6">Housing and Location Considerations</h2>
+            <p className="text-base md:text-lg text-foreground leading-relaxed mb-4">
+              Because Bothell spans a county boundary and includes both older neighborhoods and newer infill,
+              the same search can return very different properties. Some are inside city limits, some are in
+              unincorporated areas, and jurisdiction affects permitting, utility providers, and what the tax
+              bill looks like. Mill Creek's planned-community origins mean association governance is more
+              common, which can be a benefit or a constraint depending on how you want to use your property.
+            </p>
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              The reliable approach is to treat every listing as its own case: confirm the county, the taxing
+              district, the utility providers, the association if there is one, and the school assignment for
+              that exact address before you draw conclusions from the city name.
+            </p>
+          </div>
+        </section>
+
+        {/* Community */}
+        <section className="section bg-warm-bg">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="font-heading h-section text-primary mb-6">Parks, Trails, and Everyday Life</h2>
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              Bothell's parkland and trail network is a real part of daily life here, not just a line on a
+              brochure. Mill Creek adds 11 city parks and nature trails, including the North Creek Trail, and
+              Mill Creek Town Center gives the area a compact, walkable place to eat, shop, and meet people
+              without getting in the car for everything.
+            </p>
+          </div>
+        </section>
+
+        {/* Due diligence */}
+        <section className="section bg-background">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="font-heading h-section text-primary mb-6">Before You Write an Offer</h2>
+            <ul className="space-y-3 text-foreground text-base">
+              <li className="flex gap-2">
+                <span className="text-secondary font-bold">•</span>
+                <span>
+                  Verify school assignment directly with the district using the exact address, especially in
+                  Bothell.
+                </span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-secondary font-bold">•</span>
+                <span>Confirm which county the parcel is in and what that means for taxes and services.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-secondary font-bold">•</span>
+                <span>
+                  Review HOA or condominium documents, dues, and reserves, plus utility providers and any
+                  critical-area conditions.
+                </span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-secondary font-bold">•</span>
+                <span>Drive your commute at the hour you would actually be driving it.</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="section bg-warm-bg">
+          <div className="container mx-auto px-4 max-w-3xl text-center">
+            <h2 className="font-heading h-section text-primary mb-4">
+              Homes for Sale in Bothell &amp; Mill Creek
+            </h2>
+            <p className="text-base md:text-lg text-foreground leading-relaxed measure mx-auto mb-8">
+              This search pulls live Bothell and Mill Creek listings. If you would like help sorting out which
+              county, district, or association a home falls under, that is exactly the kind of question to send
+              me.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild>
+                <a href={searchUrl} target="_blank" rel="noopener noreferrer">
+                  Search Bothell &amp; Mill Creek Homes
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link to="/contact">Ask Me About Bothell &amp; Mill Creek</Link>
+              </Button>
             </div>
           </div>
         </section>

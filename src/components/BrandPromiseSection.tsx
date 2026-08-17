@@ -1,14 +1,6 @@
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import {
-  Shield,
-  BookOpen,
-  ListChecks,
-  MapPin,
-  Heart,
-  MessageCircle,
-} from "lucide-react";
+import { Shield, ListChecks, MapPin, MessageCircle } from "lucide-react";
 
 const BrandPromiseSection = () => {
   const ref = useRef(null);
@@ -19,37 +11,25 @@ const BrandPromiseSection = () => {
       icon: Shield,
       title: "Clarity Over Pressure",
       description:
-        "I walk you through the reasoning behind every recommendation, so you understand what you are agreeing to before you sign anything.",
-    },
-    {
-      icon: BookOpen,
-      title: "Education First",
-      description:
-        "Plain language explanations of market conditions, pricing, and timelines. No jargon and no hand-waving.",
+        "I explain the reasoning, tradeoffs, and fine print in plain language so you can make decisions with confidence.",
     },
     {
       icon: ListChecks,
       title: "Calm, Organized Process",
       description:
-        "Checklists, timelines, and clear next steps keep everyone on track and cut down on last-minute surprises.",
+        "Clear timelines, practical checklists, and defined next steps keep the process moving without unnecessary surprises.",
     },
     {
       icon: MapPin,
       title: "Local Insight",
       description:
-        "I have lived in Snohomish County for 45+ years and have owned multiple properties here. I know what the online reports miss.",
-    },
-    {
-      icon: Heart,
-      title: "Honest, Straight Answers",
-      description:
-        "If a house has a problem, I will tell you. If the timing is not right, I will say so. You get my real opinion.",
+        "More than 45 years in Snohomish County gives me context that an online report cannot provide.",
     },
     {
       icon: MessageCircle,
-      title: "Steady Communication",
+      title: "Honest, Steady Communication",
       description:
-        "You will always know what is happening, what is coming next, and what I recommend. I pick up the phone.",
+        "You will know what is happening, what comes next, and what I honestly recommend for your situation.",
     },
   ];
 
@@ -69,13 +49,13 @@ const BrandPromiseSection = () => {
           </h2>
         </motion.div>
 
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
           {promises.map((promise, index) => (
             <motion.div
               key={promise.title}
               initial={{ opacity: 0, y: 16 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
-              transition={{ duration: 0.4, delay: Math.min(index, 3) * 0.06, ease: "easeOut" }}
+              transition={{ duration: 0.4, delay: index * 0.06, ease: "easeOut" }}
               className="card-surface h-full"
             >
               <div className="mb-3 flex items-center gap-3">

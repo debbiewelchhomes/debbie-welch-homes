@@ -4,7 +4,6 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
-import debbiePortrait from "@/assets/debbie-blazer.png";
 import aboutInterior from "@/assets/about-interior.jpg";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -41,7 +40,7 @@ const About = () => {
               </h1>
               <p className="text-foreground text-lg leading-relaxed mb-4">
                 I grew up in Marysville. Lived in Lake Stevens for about ten years. Now I'm in the middle of a live-in
-                renovation in North Everett. This isn't a county I moved to or jus happen to do work in for the real
+                renovation in North Everett. This isn't a county I moved to or just happen to do work in for the real
                 estate market. It's home. My parents are here. Our children and their families are here. I've watched
                 the traffic patterns shift, the neighborhoods change, the school districts rise and fall. I know where
                 the hidden parking is at the Farmer's Market and which parts of town look different after dark.
@@ -58,9 +57,11 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <img
-                src={debbiePortrait}
+                src="/images/debbie-welch-about.webp"
                 alt="Debbie Welch, Snohomish County real estate broker"
-                className="rounded-lg shadow-2xl w-full"
+                className="rounded-lg shadow-xl w-full max-w-[440px] mx-auto object-cover"
+                width="1100"
+                height="1374"
               />
             </motion.div>
           </div>

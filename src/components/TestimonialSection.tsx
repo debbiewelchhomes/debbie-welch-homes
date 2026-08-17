@@ -121,7 +121,7 @@ const TestimonialSection = () => {
                 className="w-full max-w-4xl mx-auto"
               >
                 <CarouselContent>
-                  {testimonials.slice(0, 5).map((testimonial, index) => (
+                  {testimonials.map((testimonial, index) => (
                     <CarouselItem key={index}>
                       <div className="p-6 md:p-8">
                         <blockquote className="copy measure mx-auto text-foreground mb-6 italic">

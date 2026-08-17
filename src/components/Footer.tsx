@@ -31,64 +31,43 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Newsletter Column */}
+          {/* Stay in Touch Column */}
           <div>
-            <h3 className="font-heading text-2xl font-bold mb-6">Get the Local Scoop</h3>
+            <h3 className="font-heading text-2xl font-bold mb-6">Stay in Touch</h3>
             <p className="text-sm mb-6 text-primary-foreground/90">
-              Once or twice a month, I share Snohomish County market updates, local events, and practical tips for
-              homeowners, buyers, and downsizers. No spam, no pressure, just helpful info.
+              Have a question about the Snohomish County market, or want a custom report for the area you're
+              watching? Send me a note and I'll follow up personally within one business day.
             </p>
-            <form onSubmit={handleSubmit} className="space-y-3">
-              <Input
-                type="email"
-                placeholder="Your email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="bg-primary-foreground text-primary border-primary-foreground/20"
-              />
-              <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90 text-white">
-                Join the Newsletter
-              </Button>
-            </form>
+            <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-white">
+              <Link to="/contact">Contact Debbie</Link>
+            </Button>
           </div>
 
           {/* Links Column */}
           <div>
-            <h3 className="font-heading text-2xl font-bold mb-6">Latest Posts</h3>
+            <h3 className="font-heading text-2xl font-bold mb-6">From the Blog</h3>
             <ul className="space-y-3 text-sm mb-8">
               <li>
-                <a href="#" className="hover:text-accent transition-colors">
+                <Link to="/blog" className="hover:text-accent transition-colors">
                   Downsizing Tips
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-accent transition-colors">
+                <Link to="/blog" className="hover:text-accent transition-colors">
                   Military Relocation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-accent transition-colors">
+                <Link to="/blog" className="hover:text-accent transition-colors">
                   First-Time Buyers
-                </a>
+                </Link>
               </li>
             </ul>
 
-            <div className="flex gap-4 mb-6">
-              <a href="#" className="hover:text-accent transition-colors" aria-label="Facebook">
-                <Facebook className="w-6 h-6" />
-              </a>
-              <a href="#" className="hover:text-accent transition-colors" aria-label="Instagram">
-                <Instagram className="w-6 h-6" />
-              </a>
-              <a href="#" className="hover:text-accent transition-colors" aria-label="LinkedIn">
-                <Linkedin className="w-6 h-6" />
-              </a>
-            </div>
-
-            <a href="/privacy-policy" className="text-sm hover:text-accent transition-colors">
+            <Link to="/privacy-policy" className="text-sm hover:text-accent transition-colors">
               Privacy Policy
-            </a>
+            </Link>
+
           </div>
         </div>
 

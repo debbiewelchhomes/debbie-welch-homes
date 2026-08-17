@@ -48,17 +48,17 @@ const Footer = () => {
             <h3 className="font-heading h-card mb-6">From the Blog</h3>
             <ul className="space-y-3 text-sm mb-8">
               <li>
-                <Link to="/blog" className="hover:text-accent transition-colors">
+                <Link to="/blog?q=downsizing" className="hover:text-accent transition-colors">
                   Downsizing Tips
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="hover:text-accent transition-colors">
+                <Link to="/blog?q=military" className="hover:text-accent transition-colors">
                   Military Relocation
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="hover:text-accent transition-colors">
+                <Link to="/blog?q=first-time" className="hover:text-accent transition-colors">
                   First-Time Buyers
                 </Link>
               </li>

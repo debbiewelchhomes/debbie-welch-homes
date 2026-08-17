@@ -7,19 +7,19 @@ const BufferSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="section-tight bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, y: 12 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 12 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           className="text-center"
         >
-          <p className="font-script text-3xl md:text-5xl text-secondary mb-6">
+          <p className="eyebrow" aria-hidden="true">
             You deserve to understand every step…
           </p>
-          <div className="w-32 h-px bg-secondary mx-auto"></div>
+          <div className="mx-auto mt-4 h-px w-24 bg-secondary/50" />
         </motion.div>
       </div>
     </section>

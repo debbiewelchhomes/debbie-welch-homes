@@ -8,37 +8,37 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Brand Colors - Debbie Welch Homes */
+    /* Debbie Welch Homes brand palette */
     --background: 0 0% 100%;
-    --foreground: 225 10% 24%;
+    --foreground: 0 0% 0%;
     
-    --primary: 225 10% 24%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 233 50% 9%; /* #0c0f24 */
+    --primary-foreground: 30 6% 93%; /* #eeedec */
     
-    --secondary: 200 12% 44%;
+    --secondary: 206 22% 37%; /* #4a6274 */
     --secondary-foreground: 0 0% 100%;
     
-    --accent: 200 12% 78%;
-    --accent-foreground: 225 10% 24%;
+    --accent: 185 8% 70%; /* #adb8b9 */
+    --accent-foreground: 233 50% 9%;
     
-    --muted: 30 15% 87%;
-    --muted-foreground: 225 10% 24%;
+    --muted: 40 7% 92%; /* #ebeae8 */
+    --muted-foreground: 225 21% 29%; /* #3b435b */
     
-    --warm-bg: 30 15% 87%;
-    --warm-bg-foreground: 225 10% 24%;
+    --warm-bg: 36 8% 87%; /* #e1dfdc */
+    --warm-bg-foreground: 0 0% 0%;
 
     --card: 0 0% 100%;
-    --card-foreground: 225 10% 24%;
+    --card-foreground: 0 0% 0%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 225 10% 24%;
+    --popover-foreground: 0 0% 0%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 72% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 200 12% 78%;
-    --input: 200 12% 78%;
-    --ring: 225 10% 24%;
+    --border: 186 8% 76%; /* #bcc5c6 */
+    --input: 186 8% 76%;
+    --ring: 206 22% 37%;
 
     --radius: 0.5rem;
     
@@ -48,22 +48,22 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 225 10% 24%;
-    --foreground: 0 0% 100%;
-    --primary: 0 0% 100%;
-    --primary-foreground: 225 10% 24%;
-    --secondary: 200 12% 44%;
+    --background: 233 50% 9%;
+    --foreground: 30 6% 93%;
+    --primary: 30 6% 93%;
+    --primary-foreground: 233 50% 9%;
+    --secondary: 206 13% 49%;
     --secondary-foreground: 0 0% 100%;
-    --accent: 200 12% 78%;
-    --accent-foreground: 225 10% 24%;
-    --muted: 225 10% 30%;
-    --muted-foreground: 200 12% 78%;
-    --warm-bg: 225 10% 20%;
-    --warm-bg-foreground: 0 0% 100%;
-    --card: 225 10% 20%;
-    --card-foreground: 0 0% 100%;
-    --border: 200 12% 44%;
-    --input: 200 12% 44%;
+    --accent: 186 8% 76%;
+    --accent-foreground: 233 50% 9%;
+    --muted: 234 14% 27%;
+    --muted-foreground: 186 8% 76%;
+    --warm-bg: 225 21% 29%;
+    --warm-bg-foreground: 30 6% 93%;
+    --card: 225 21% 29%;
+    --card-foreground: 30 6% 93%;
+    --border: 206 13% 49%;
+    --input: 206 13% 49%;
   }
 }
 

@@ -44,7 +44,7 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center justify-between w-full max-w-7xl mx-auto">
             {/* Left Navigation Group */}
-            <div className="flex items-center gap-8 flex-1 justify-end pr-8">
+            <div className="flex items-center gap-6 flex-1 justify-end pr-6 whitespace-nowrap">
               <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
@@ -106,7 +106,7 @@ const Navigation = () => {
             </Link>
 
             {/* Right Navigation Group */}
-            <div className="flex items-center gap-8 flex-1 justify-start pl-8">
+            <div className="flex items-center gap-6 flex-1 justify-start pl-6 whitespace-nowrap">
               <Link to="/blog" className="text-foreground hover:text-secondary transition-colors">
                 Blog
               </Link>

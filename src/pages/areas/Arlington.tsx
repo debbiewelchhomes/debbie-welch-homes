@@ -4,7 +4,7 @@ import SEO from "@/components/SEO";
 import { pageSEO } from "@/data/seoData";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/area-hero-arlington.png";
+import heroImage from "@/assets/area-hero-arlington.webp";
 
 const searchUrl =
   "https://debbiewelch.exprealty.com/index?advanced=1&areas%5B%5D=city%3AArlington%3Awa&baths=0&beds=0&display=Arlington&max=100000000&maxacres=50000&maxfootage=30000&min=0&minacres=0&minfootage=0&types%5B%5D=1&types%5B%5D=2&types%5B%5D=3";
@@ -21,15 +21,20 @@ const Arlington = () => {
       <main>
         {/* Hero */}
         <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+          <img
+            src={heroImage}
+            alt="Downtown Arlington storefronts and American flags in Arlington, Washington"
+            width={1672}
+            height={941}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 h-full w-full object-cover"
+            style={{ objectPosition: "center 55%" }}
+          />
           <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.15) 100%), url(${heroImage})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center 55%",
-            }}
-            role="img"
-            aria-label="Downtown Arlington streetscape with historic storefronts"
+            className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/15"
+            aria-hidden="true"
           />
           <div className="container mx-auto px-4 text-center section relative z-10">
             <p className="eyebrow mb-4" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}>

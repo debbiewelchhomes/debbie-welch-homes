@@ -23,14 +23,14 @@ const StanwoodCamano = () => {
         <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
           <img
             src={heroImage}
-            alt="Stanwood welcome sign in Stanwood, Washington"
+            alt="Hamilton landmark and mountain silhouette near Stanwood, Washington at sunset"
             width={1920}
             height={1080}
             loading="eager"
             fetchPriority="high"
             decoding="async"
             className="absolute inset-0 h-full w-full object-cover"
-            style={{ objectPosition: "center 10%" }}
+            style={{ objectPosition: "center 32%" }}
           />
           <div
             className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/15"

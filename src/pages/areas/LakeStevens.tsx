@@ -79,8 +79,8 @@ const LakeStevens = () => {
                 I lived in the Soper Hill area of northwest Lake Stevens for about ten years. I know the Monday morning
                 traffic, where the hidden parking is at the Farmer's Market, and which parks fill up first on a hot July
                 weekend. Lake Stevens has grown fast but held onto something real. The lake is central to summer life
-                here, the school district is the strongest in the county, and the commute is honest work. Great fit for
-                the right buyer.
+                here, and commute patterns can take planning. School district boundaries should be verified by exact
+                address. It can be a strong fit for buyers who value lake access and a more residential pace.
               </p>
             </motion.div>
           </div>
@@ -142,8 +142,8 @@ const LakeStevens = () => {
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>More house for the money.</strong> Median around $680-715K with established
-                        neighborhoods and room to spread out.
+                        <strong>More house for the money.</strong> Typical prices often fall around $680-715K, based on
+                        an August 2026 snapshot, with established neighborhoods and room to spread out.
                       </span>
                     </li>
                     <li className="flex gap-2">
@@ -299,3 +299,4 @@ const LakeStevens = () => {
 };
 
 export default LakeStevens;
+

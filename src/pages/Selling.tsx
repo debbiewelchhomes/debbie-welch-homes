@@ -14,7 +14,6 @@ import { useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { sendInquiry } from "@/lib/inquiry";
 import InquiryFallback from "@/components/InquiryFallback";
-import PageFAQ from "@/components/PageFAQ";
 
 const Selling = () => {
   const introRef = useRef(null);
@@ -139,6 +138,16 @@ const Selling = () => {
       question: "What if the inspection turns up issues?",
       answer:
         "It almost always turns up something. That's what inspections are for. The question is whether those findings are deal-breakers, negotiating points, or just normal wear and tear that buyers expect. I'll help you understand what you're actually looking at, talk through your options for responding, and negotiate on your behalf so you're not giving away more than you need to.",
+    },
+    {
+      question: "How do I know what my Snohomish County home is worth?",
+      answer:
+        "An online estimate is only a starting point. I prepare a personalized market analysis using relevant nearby sales along with condition, updates, location within the neighborhood, lot characteristics, views, and current buyer behavior.",
+    },
+    {
+      question: "Can you help me sell and buy another home at the same time?",
+      answer:
+        "Yes. We will compare approaches based on your finances, timing, comfort with risk, and the current market. Options may include selling first, buying first, requesting a contingency, negotiating possession timing, or arranging temporary housing.",
     },
   ];
 
@@ -487,6 +496,11 @@ const Selling = () => {
                   </AccordionItem>
                 ))}
               </Accordion>
+              <p className="mt-8 text-center">
+                <a href="/resources/faq" className="font-medium text-secondary hover:underline">
+                  Read more frequently asked questions
+                </a>
+              </p>
             </motion.div>
           </div>
         </section>
@@ -540,26 +554,7 @@ const Selling = () => {
               </div>
             </motion.div>
           </div>
-        </section>
-        <PageFAQ
-          title="Home Selling Questions"
-          intro="The best selling plan is specific to your property, priorities, timing, and local market."
-          items={[
-              {
-                question: "How do I know what my Snohomish County home is worth?",
-                answer: "An online estimate is only a starting point. I prepare a personalized market analysis using relevant nearby sales along with condition, updates, location within the neighborhood, lot characteristics, views, and current buyer behavior.",
-              },
-              {
-                question: "Do I need to renovate my home before selling?",
-                answer: "Not necessarily. Some improvements can make a home easier to market, while others may not return what they cost. I help you separate worthwhile preparation from unnecessary projects so you can focus your effort and budget where they are most likely to matter.",
-              },
-              {
-                question: "Can you help me sell and buy another home at the same time?",
-                answer: "Yes. We will compare approaches based on your finances, timing, comfort with risk, and the current market. Options may include selling first, buying first, requesting a contingency, negotiating possession timing, or arranging temporary housing.",
-              }
-          ]}
-        />
-      </main>
+        </section>      </main>
       <Footer />
     </div>
   );

@@ -20,14 +20,14 @@ const Marysville = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Living in Marysville, WA | Homes for Sale | Debbie Welch Homes"
-        description="Thinking about buying a home in Marysville, WA? A hometown local's honest take on the city, the Tulalip Tribes partnership, Whiskey Ridge schools, and what daily life actually looks like here."
+        title="Marysville Homes for Sale | Debbie Welch"
+        description="Considering Marysville? A practical guide to its neighborhoods, daily life, commute routes, and the details that matter for your move."
         canonical="/areas/marysville"
       />
       <Navigation />
       <main>
         {/* Hero */}
-        <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[58vh] lg:min-h-[62vh] flex items-center justify-center overflow-hidden">
           <img
             src={heroImage}
             alt="Red barn framed by cherry blossoms and evergreen trees in Marysville, Washington"
@@ -278,3 +278,4 @@ const Marysville = () => {
 };
 
 export default Marysville;
+

@@ -75,7 +75,7 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title={post.title}
+        title={post.seoTitle ?? post.title}
         description={post.metaDescription}
         canonical={`/blog/${post.slug}`}
         type="article"
@@ -144,3 +144,4 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
 };
 
 export default BlogPostTemplate;
+

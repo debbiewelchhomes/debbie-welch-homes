@@ -55,7 +55,7 @@ const EverettMukilteo = () => {
                 className="font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
                 style={{ textShadow: "0 1px 6px rgba(0,0,0,0.7)" }}
               >
-                Snohomish County's largest city is reinventing its waterfront and downtown - and Mukilteo has always
+                Snohomish County's largest city is reinventing its waterfront and downtown. Mukilteo has always
                 been one of the most beautiful spots on Puget Sound.
               </p>
             </motion.div>
@@ -77,11 +77,11 @@ const EverettMukilteo = () => {
               <h1 className="font-heading h-section text-primary mb-6">Everett & Mukilteo, WA</h1>
               <p className="text-foreground text-lg leading-relaxed">
                 These two communities sit side by side on the water but feel completely different. Everett is a real
-                city - layered, complex, with older neighborhoods that have deep roots and new energy coming into the
+                city: layered and complex, with older neighborhoods that have deep roots and new energy coming into the
                 downtown and waterfront. Mukilteo is smaller, quieter, and built around one of the most genuinely
                 beautiful stretches of Puget Sound shoreline in the county. Both are worth understanding in detail
-                before you buy, because the range within each - neighborhood to neighborhood, block to block in some
-                cases - is wider than almost anywhere else we serve.
+                before you buy, because the range within each can be wider than almost anywhere else we serve, sometimes
+                changing from neighborhood to neighborhood or even block to block.
               </p>
             </motion.div>
           </div>
@@ -106,14 +106,14 @@ const EverettMukilteo = () => {
                     North Everett, Bayside & Port Gardner
                   </h3>
                   <p>
-                    Where the momentum is right now. Colby Avenue downtown is in the middle of a real revitalization -
+                    Where the momentum is right now. Colby Avenue downtown is in the middle of a real revitalization,
                     new restaurants, new businesses, Main Street designation since 2021. The Port of Everett's
-                    Waterfront Place has become a genuine destination with Restaurant Row along the marina esplanade -
+                    Waterfront Place has become a genuine destination with Restaurant Row along the marina esplanade,
                     a cluster of restaurants and taprooms along the waterfront deck. The homes near Howarth Park along the bluffs are some of the most impressive in
-                    the county - craftsman and colonial revival architecture from the early 1900s, sweeping views of
+                    the county, with craftsman and colonial revival architecture from the early 1900s and sweeping views of
                     Puget Sound and the Olympic Mountains. A newer generation of buyers is snapping up these homes and
                     putting real work into them, and it shows. Forest Park is nearby: 197 acres of old-growth forest
-                    with trails and a swimming pool - one of those places locals love and visitors never find.
+                    with trails and a swimming pool. It is one of those places locals love and visitors rarely find.
                   </p>
                 </div>
 
@@ -128,15 +128,15 @@ const EverettMukilteo = () => {
                 <div>
                   <h3 className="font-heading text-xl font-bold text-primary mb-2">Silver Lake</h3>
                   <p>
-                    Everett's most suburban feel - family-friendly, parks, good schools, homes around $650-700K. Strong
-                    Boeing and commuter presence. Good entry point into the city.
+                    Everett's most suburban feel, with parks, a mix of established neighborhoods, and access to local
+                    schools and commuter routes. Housing prices vary by property type, condition, and location.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="font-heading text-xl font-bold text-primary mb-2">Boulevard Bluffs</h3>
                   <p>
-                    Some of the best views in the city - Puget Sound, the Olympics, Japanese Gulch Conservation Area
+                    Some of the best views in the city include Puget Sound, the Olympics, and Japanese Gulch Conservation Area
                     trails nearby, and highly rated Mukilteo Elementary in the school zone.
                   </p>
                 </div>
@@ -145,7 +145,7 @@ const EverettMukilteo = () => {
                   <h3 className="font-heading text-xl font-bold text-primary mb-2">Lowell & the Snohomish River</h3>
                   <p>
                     Quieter, more affordable, historic. The Lowell Riverfront Park trail runs along the river where the
-                    Snohomish meets the sloughs and wetlands of the delta. Water is always close in Everett - the river,
+                    Snohomish meets the sloughs and wetlands of the delta. Water is always close in Everett, whether it is the river,
                     Union Slough, Port Gardner Bay, Possession Sound. It shapes how the city feels in ways that are hard
                     to describe until you've spent time here.
                   </p>
@@ -154,9 +154,8 @@ const EverettMukilteo = () => {
                 <div>
                   <h3 className="font-heading text-xl font-bold text-primary mb-2">South Everett & Casino Road</h3>
                   <p>
-                    This is where we want to look carefully at specific streets and blocks before committing. The range
-                    here is wide - some solid neighborhoods, some that need more scrutiny. Homework matters more here
-                    than anywhere else in Everett.
+                    Housing, traffic, noise, and property conditions can vary by street. Review the specific property
+                    and surrounding block at different times of day before deciding whether it fits your priorities.
                   </p>
                 </div>
               </div>
@@ -179,67 +178,67 @@ const EverettMukilteo = () => {
               </h2>
               <div className="grid md:grid-cols-2 gap-10">
                 <div>
-                  <h3 className="font-heading text-xl font-bold text-primary mb-4">Why buyers choose it</h3>
+                  <h3 className="font-body text-2xl md:text-3xl font-semibold text-primary mb-5">Why Buyers Consider It</h3>
                   <ul className="space-y-3 text-foreground text-base">
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>Boeing</strong> - the largest building in the world by volume is here. Tens of thousands
+                        <strong>Boeing.</strong> The largest building in the world by volume is here. Tens of thousands
                         of direct and supply chain jobs in the county.
                       </span>
                     </li>
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>Naval Station Everett</strong> - opened 1994, one of the most modern naval bases in the
+                        <strong>Naval Station Everett.</strong> Opened in 1994, it is one of the most modern naval bases in the
                         US. Roughly 3,100 sailors homeported here, steady housing demand.
                       </span>
                     </li>
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>Waterfront revitalization momentum</strong> - Restaurant Row, Port Gardner Bay marina,
+                        <strong>Waterfront revitalization momentum.</strong> Restaurant Row, Port Gardner Bay marina,
                         new stadium coming downtown next to Angel of the Winds Arena.
                       </span>
                     </li>
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>Angel of the Winds Arena</strong> - Everett Silvertips WHL hockey, concerts, major
+                        <strong>Angel of the Winds Arena.</strong> Everett Silvertips WHL hockey, concerts, and major
                         events year-round.
                       </span>
                     </li>
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>Forest Park</strong> - 197 acres of old-growth forest inside the city limits. Trails,
+                        <strong>Forest Park.</strong> This is 197 acres of old-growth forest inside the city limits, with trails,
                         picnic areas, swimming pool.
                       </span>
                     </li>
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>Providence Regional Medical Center</strong> - major healthcare employer, expanded
+                        <strong>Providence Regional Medical Center.</strong> This major healthcare employer has expanded
                         significantly in 2025.
                       </span>
                     </li>
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>Most urban amenities</strong> in Snohomish County - food, entertainment, transit,
+                        <strong>Most urban amenities</strong> in Snohomish County, including food, entertainment, transit,
                         healthcare all in one city.
                       </span>
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-heading text-xl font-bold text-primary mb-4">What to think about first</h3>
+                  <h3 className="font-body text-2xl md:text-3xl font-semibold text-primary mb-5">What to Think About First</h3>
                   <ul className="space-y-3 text-foreground text-base">
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>South Everett and Casino Road</strong> - neighborhood quality varies significantly. Look
-                        carefully at specific streets before committing.
+                        <strong>South Everett and Casino Road.</strong> Housing, traffic, noise, and property conditions
+                        can vary by street. Review the specific property and surrounding block at different times of day.
                       </span>
                     </li>
                     <li className="flex gap-2">
@@ -252,7 +251,7 @@ const EverettMukilteo = () => {
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>Parts of downtown are still mid-transition</strong> - the revitalization is real but
+                        <strong>Parts of downtown are still mid-transition.</strong> The revitalization is real but
                         it's not finished.
                       </span>
                     </li>
@@ -285,7 +284,7 @@ const EverettMukilteo = () => {
               <div className="grid md:grid-cols-3 gap-6 text-center mb-10">
                 <div className="bg-background p-6 rounded-lg">
                   <p className="font-heading text-2xl font-bold text-secondary mb-1">113,000+</p>
-                  <p className="text-foreground text-sm">Everett population - largest city in Snohomish County</p>
+                  <p className="text-foreground text-sm">Everett population, the largest city in Snohomish County</p>
                 </div>
                 <div className="bg-background p-6 rounded-lg">
                   <p className="font-heading text-2xl font-bold text-secondary mb-1">~$565K</p>
@@ -299,26 +298,35 @@ const EverettMukilteo = () => {
 
               <h3 className="font-heading text-xl font-bold text-primary mb-3">Everett food & drink</h3>
               <p className="text-foreground text-base leading-relaxed mb-6">
-                The scene reflects the city's genuine diversity. Vietnamese, Mexican, Chinese, Filipino, Italian -
+                The scene reflects the city's genuine diversity. Vietnamese, Mexican, Chinese, Filipino, and Italian
                 immigrant-owned restaurants throughout the city make Everett one of the most interesting places to eat
                 in the county. Craft breweries and taprooms have taken hold alongside wine bars and cocktail bars
                 following the downtown revitalization energy. Tacos and Beer, at 1405 Hewitt Avenue in downtown
                 Everett, is a longtime local favorite. Nothing overpriced or pretentious.
               </p>
 
-              <h3 className="font-heading text-xl font-bold text-primary mb-3">Coming soon: Downtown stadium</h3>
+              <h3 className="font-heading text-xl font-bold text-primary mb-3">Planned Downtown Event Center</h3>
               <p className="text-foreground text-base leading-relaxed mb-6">
-                The city unanimously approved a new multipurpose stadium just east of Angel of the Winds Arena in late
-                2024 - groundbreaking targeted for early 2026. New home for the Everett AquaSox (Seattle Mariners High-A
-                affiliate, 40 years in Everett) and potentially professional soccer. Right next to Everett Station and
-                the future light rail terminus.
+                Everett is advancing a planned outdoor event center near Angel of the Winds Arena and Everett Station.
+                The city reported in July 2026 that design and property work were continuing, with construction
+                anticipated to begin in early fall 2026. Plans include a future home for the Everett AquaSox, soccer,
+                concerts, festivals, public gathering space, and a walking loop.
               </p>
 
-              <h3 className="font-heading text-xl font-bold text-primary mb-3">Who buys here</h3>
+              <a
+                href="https://www.everettwa.gov/outdoorec"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-secondary hover:underline font-medium text-sm mb-6"
+              >
+                View the City of Everett project updates →
+              </a>
+
+              <h3 className="font-heading text-xl font-bold text-primary mb-3">Housing and Location Fit</h3>
               <p className="text-foreground text-base leading-relaxed">
-                Boeing and aerospace workers, military families (Naval Station Everett), healthcare workers, buyers
-                wanting urban amenities without Seattle prices, remote workers needing transit access, and buyers who
-                want more city than the rest of Snohomish County offers.
+                Everett and Mukilteo offer a wide range of housing, from downtown condos and historic homes to suburban
+                neighborhoods and view properties. Buyers often compare proximity to Boeing, Naval Station Everett,
+                healthcare employers, transit, waterfront access, and I-5 when deciding which part of the area fits.
               </p>
             </motion.div>
           </div>
@@ -340,23 +348,23 @@ const EverettMukilteo = () => {
               <div className="text-foreground text-base leading-relaxed space-y-5">
                 <p>
                   Mukilteo is 21,000 people on a spectacular stretch of shoreline. The 1906 lighthouse at Lighthouse
-                  Park is on the National Register of Historic Places - the park itself has over 1,000 feet of
+                  Park is on the National Register of Historic Places. The park itself has over 1,000 feet of
                   sand-and-gravel beach, fire pits, picnic areas, a boat launch, and unobstructed views across
                   Possession Sound to Whidbey Island. You can watch ferries slide past, spot sea lions on the rocks, and
                   stay until the summer evenings stretch long. It genuinely doesn't get old.
                 </p>
                 <p>
-                  The Washington State Ferry to Clinton on Whidbey Island runs from the terminal right next door -
+                  The Washington State Ferry to Clinton on Whidbey Island runs from the terminal right next door,
                   commuter and recreational both. Ivar's Mukilteo Landing has been on the waterfront next to the ferry
                   dock since the 1930s: fresh Dungeness crab, fish and chips, outdoor deck, ferries sliding past the
                   window. Diamond Knot Brewery is nearby. The city has plans for a promenade connecting the entire
                   waterfront end to end.
                 </p>
                 <p>
-                  The Sounder commuter rail station connects directly to King Street Station in Seattle - a genuinely
+                  The Sounder commuter rail station connects directly to King Street Station in Seattle, a genuinely
                   good option if you're commuting south. Homes with water views command a premium. The Mukilteo School
                   District is strong. The community is tight-knit and quiet. For most errands you're heading into
-                  Everett - Mukilteo is small by design. For buyers who want Puget Sound waterfront at a price point
+                  Everett because Mukilteo is small by design. For buyers who want Puget Sound waterfront at a price point
                   below King County, it deserves a serious look.
                 </p>
               </div>
@@ -380,7 +388,7 @@ const EverettMukilteo = () => {
               </h2>
               <p className="text-foreground text-lg leading-relaxed mb-8">
                 Browse current listings or reach out and I'll put together a custom search by neighborhood. Knowing
-                which part of Everett matters - I'll help you focus on the right areas for your situation.
+                which part of Everett matters. I'll help you focus on the right areas for your situation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>

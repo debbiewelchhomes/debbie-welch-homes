@@ -70,7 +70,7 @@ const Downsizing = () => {
     }
 
     toast({
-      title: "Got it - thank you.",
+      title: "Got it. Thank you.",
       description: "Thanks for reaching out. I'll follow up soon to find a time that works for you.",
     });
     setFormData({ name: "", email: "", phone: "", currentHome: "", message: "", website: "" });
@@ -81,31 +81,31 @@ const Downsizing = () => {
       number: "01",
       title: "Start With a Real Conversation",
       description:
-        "Not a sales pitch - a conversation. We talk through what's prompting the question, what you want your next chapter to feel like, and whether now is actually the right time. Sometimes it is. Sometimes the answer is 'let's come back to this in six months.' Either way, you'll leave with more clarity than you came in with.",
+        "This is a conversation, not a sales pitch. We talk through what's prompting the question, what you want your next chapter to feel like, and whether now is actually the right time. Sometimes it is. Sometimes the answer is 'let's come back to this in six months.' Either way, you'll leave with more clarity than you came in with.",
     },
     {
       number: "02",
       title: "Understand What Your Home Is Worth",
       description:
-        "Before you can make a plan, you need real numbers. I'll walk through your home and give you an honest picture of current market value, what prep work would actually move the needle, and what you can skip. No pressure to list - just the information you need to make a good decision.",
+        "Before you can make a plan, you need real numbers. I'll walk through your home and give you an honest picture of current market value, what prep work would actually move the needle, and what you can skip. There is no pressure to list, just the information you need to make a good decision.",
     },
     {
       number: "03",
       title: "Build a Prep Plan You Can Actually Do",
       description:
-        "We'll prioritize what needs attention and what doesn't. I can connect you with stagers, organizers, cleaners, and contractors who understand the downsizing process - and for clients who need more hands-on help, I've done everything from donation runs to helping pack a POD. We meet you where you are.",
+        "We'll prioritize what needs attention and what doesn't. I can connect you with stagers, organizers, cleaners, and contractors who understand the downsizing process. For clients who need more hands-on help, I've done everything from donation runs to helping pack a POD. We meet you where you are.",
     },
     {
       number: "04",
       title: "List and Market Your Home Well",
       description:
-        "When you're ready, I'll position your home thoughtfully for the Snohomish County market - pricing strategy, professional photos, marketing that reaches the right buyers. You'll know exactly what's happening at every step, and I'll walk you through offers in plain language so you understand what you're actually agreeing to.",
+        "When you're ready, I'll position your home thoughtfully for the Snohomish County market with a pricing strategy, professional photos, and marketing that reaches the right buyers. You'll know exactly what's happening at every step, and I'll walk you through offers in plain language so you understand what you're actually agreeing to.",
     },
     {
       number: "05",
       title: "Coordinate the Transition",
       description:
-        "Selling and moving at the same time is a lot. We'll work through the logistics together - timing the sale with your next move, exploring rent-backs or extended closings when needed, and keeping things organized so nothing falls through the cracks. The goal is a landing that feels like a landing, not a scramble.",
+        "Selling and moving at the same time is a lot. We'll work through the logistics together by timing the sale with your next move, exploring rent-backs or extended closings when needed, and keeping things organized so nothing falls through the cracks. The goal is a landing that feels like a landing, not a scramble.",
     },
   ];
 
@@ -113,37 +113,37 @@ const Downsizing = () => {
     {
       question: "How do I know if it's actually the right time to downsize?",
       answer:
-        "Honest answer: there's rarely a perfect time. But some real signs worth paying attention to - the maintenance feels like more than you want to manage, you're paying for space you don't use, stairs are becoming a concern, or your monthly costs no longer match your priorities or income. We can talk through your specific situation and look at the numbers together. Sometimes the answer is 'yes, let's make a plan.' Sometimes it's 'you have more time than you think.' I'd rather tell you the truth than push you toward a move that doesn't make sense yet.",
+        "Honest answer: there's rarely a perfect time. Some real signs are worth paying attention to. The maintenance may feel like more than you want to manage, you may be paying for space you don't use, stairs may be becoming a concern, or your monthly costs may no longer match your priorities or income. We can talk through your specific situation and look at the numbers together. Sometimes the answer is 'yes, let's make a plan.' Sometimes it's 'you have more time than you think.' I'd rather tell you the truth than push you toward a move that doesn't make sense yet.",
     },
     {
       question: "Do I have to get rid of everything before I sell?",
       answer:
-        "No. And trying to do it all at once is one of the fastest ways to burn out and stall the whole process. Most people do better working through belongings in stages - a room or category at a time. I can connect you with organizers who specialize in working with downsizers and are genuinely good at the emotional side of letting go. You don't have to figure this part out alone.",
+        "No. Trying to do it all at once is one of the fastest ways to burn out and stall the whole process. Most people do better working through belongings in stages, one room or category at a time. I can connect you with organizers who specialize in working with downsizers and are genuinely good at the emotional side of letting go. You don't have to figure this part out alone.",
     },
     {
       question: "Should I buy first or sell first?",
       answer:
-        "It depends on your finances, your comfort with risk, and what you're moving into. Buying first gives you certainty about where you're going but can mean carrying two mortgages temporarily. Selling first gives you cash in hand but requires knowing where you'll land. We'll look at your specific numbers and timeline and talk through both options honestly - including some in-between approaches like rent-backs that can give you more breathing room.",
+        "It depends on your finances, your comfort with risk, and what you're moving into. Buying first gives you certainty about where you're going but can mean carrying two mortgages temporarily. Selling first gives you cash in hand but requires knowing where you'll land. We'll look at your specific numbers and timeline and talk through both options honestly, including approaches like rent-backs that can give you more breathing room.",
     },
     {
       question: "What kinds of homes make sense for downsizing?",
       answer:
-        "It varies a lot depending on what matters most to you. Many clients want single-level living, a smaller yard or no yard, and lower maintenance overall. Others want to stay in a neighborhood they know. Some are open to condos or townhomes; others aren't. We'll focus on homes that genuinely fit your life - not just something smaller on paper. I'll also ask about things like accessibility, proximity to family or medical care, and what you want to be able to do five or ten years from now.",
+        "It varies a lot depending on what matters most to you. Many clients want single-level living, a smaller yard or no yard, and lower maintenance overall. Others want to stay in a neighborhood they know. Some are open to condos or townhomes; others aren't. We'll focus on homes that genuinely fit your life, not just something smaller on paper. I'll also ask about things like accessibility, proximity to family or medical care, and what you want to be able to do five or ten years from now.",
     },
     {
       question: "My adult kids have opinions about all of this. Can you help with that?",
       answer:
-        "Yes - and you're not alone in navigating that dynamic. Downsizing decisions often involve family members who care deeply but may not all be on the same page. I'm happy to communicate with whoever needs to be in the loop, answer questions from adult children, and help everyone work from the same factual picture instead of assumptions. At the end of the day though, this is your home and your decision. My job is to support you.",
+        "Yes, and you're not alone in navigating that dynamic. Downsizing decisions often involve family members who care deeply but may not all be on the same page. I'm happy to communicate with whoever needs to be in the loop, answer questions from adult children, and help everyone work from the same factual picture instead of assumptions. At the end of the day though, this is your home and your decision. My job is to support you.",
     },
     {
       question: "What does it cost to talk with you?",
       answer:
-        "Nothing. An initial conversation is always free. If you decide you want to move forward, my commission is paid at closing - you don't pay anything out of pocket upfront. If you're not ready to sell, or it turns out this isn't the right move for you right now, that's completely okay. I'd rather be honest with you now than push you into something that doesn't fit.",
+        "Nothing. An initial conversation is always free. If you decide you want to move forward, my commission is paid at closing, so you don't pay anything out of pocket upfront. If you're not ready to sell, or it turns out this isn't the right move for you right now, that's completely okay. I'd rather be honest with you now than push you into something that doesn't fit.",
     },
     {
-      question: "What does the SRES designation mean?",
+      question: "What does the SRES® designation mean?",
       answer:
-        "The Seniors Real Estate Specialist (SRES) designation is specialized training for helping older adults and their families navigate real estate decisions. My role is to provide clear information, patience, and coordination while respecting that the timing and final decisions remain yours.",
+        "The Seniors Real Estate Specialist (SRES®) designation is specialized training for helping older adults and their families navigate real estate decisions. My role is to provide clear information, patience, and coordination while respecting that the timing and final decisions remain yours.",
     },
     {
       question: "How early should I begin planning a downsizing move?",
@@ -207,7 +207,7 @@ const Downsizing = () => {
               </h1>
 
               <p className="font-body text-lg md:text-xl text-primary max-w-3xl mx-auto">
-                You've taken care of this home for years. Maybe decades. And now something has shifted - the
+                You've taken care of this home for years. Maybe decades. And now something has shifted: the
                 maintenance, the space, the stairs, the cost, the season of life. Figuring out what comes next is a big
                 decision, and it deserves more than a sales pitch. I help Snohomish County homeowners think it through
                 clearly, plan it carefully, and move when the time is actually right for them.
@@ -240,7 +240,7 @@ const Downsizing = () => {
                   members with strong opinions and a timeline that feels impossible.
                 </p>
                 <p>
-                  The practical part - the selling, the pricing, the logistics - is actually the easier part. The harder
+                  The practical part, including the selling, pricing, and logistics, is actually the easier part. The harder
                   part is figuring out what you actually want, what you can realistically do, and how to make a decision
                   you'll feel good about a year from now. That's where we start. Not with a listing appointment. With a
                   real conversation.
@@ -253,7 +253,7 @@ const Downsizing = () => {
         <section className="py-10 bg-warm-bg border-y border-border">
           <div className="container mx-auto px-4 max-w-4xl">
             <p className="eyebrow mb-3">Specialized support for a significant transition…</p>
-            <h2 className="font-heading h-card text-primary mb-4">Seniors Real Estate Specialist® (SRES®)</h2>
+            <h2 className="font-heading h-card text-primary mb-4">Seniors Real Estate Specialist (SRES®)</h2>
             <p className="copy text-foreground">My SRES® credential reflects specialized training in the housing decisions that often affect older adults and their families. That includes timing, downsizing, accessibility, family communication, financial considerations, and coordinating a move that may involve decades of belongings. It does not replace legal, tax, medical, or financial advice, but it helps me recognize when those professionals should be part of the conversation.</p>
           </div>
         </section>
@@ -361,7 +361,7 @@ const Downsizing = () => {
               </h2>
 
               <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
-                Not sure where to begin? This guide walks through what to think about before you decide anything - the
+                Not sure where to begin? This guide walks through what to think about before you decide anything, including the
                 financial questions worth asking, how to approach the sorting and prep process without burning out, and
                 what to look for in your next home. Plain language, no fluff. A good starting point whether you're six
                 months out or two years away.
@@ -416,6 +416,7 @@ const Downsizing = () => {
                     <div>
                       <Input
                         type="text"
+                        aria-label="Your name"
                         placeholder="Your Name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -426,6 +427,7 @@ const Downsizing = () => {
                     <div>
                       <Input
                         type="email"
+                        aria-label="Your email"
                         placeholder="Your Email"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -436,6 +438,7 @@ const Downsizing = () => {
                     <div>
                       <Input
                         type="tel"
+                        aria-label="Phone number, optional"
                         placeholder="Phone Number (optional)"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -445,6 +448,7 @@ const Downsizing = () => {
                     <div>
                       <Input
                         type="text"
+                        aria-label="Current home location"
                         placeholder="Where is your home? (City or neighborhood)"
                         value={formData.currentHome}
                         onChange={(e) => setFormData({ ...formData, currentHome: e.target.value })}
@@ -453,7 +457,8 @@ const Downsizing = () => {
                     </div>
                     <div>
                       <Textarea
-                        placeholder="What's on your mind? Timeline, questions, what's prompting the conversation - whatever feels useful to share."
+                        aria-label="Downsizing consultation details"
+                        placeholder="What's on your mind? Share your timeline, questions, what is prompting the conversation, or whatever feels useful."
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         rows={5}

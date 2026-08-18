@@ -104,7 +104,7 @@ const About = () => {
                 <li className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                   <span className="text-foreground">
-                    Plain-language explanations - no jargon, no "trust me," no skipping the parts that matter.
+                    Plain-language explanations with no jargon, no "trust me," and no skipping the parts that matter.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -122,7 +122,7 @@ const About = () => {
                 <li className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                   <span className="text-foreground">
-                    Hands-on support for big transitions - I've helped clients with everything from dump and donation
+                    Hands-on support for big transitions. I've helped clients with everything from dump and donation
                     runs to staging coordination to just being a calm presence on a hard day.
                   </span>
                 </li>
@@ -154,33 +154,18 @@ const About = () => {
             </h2>
             <div className="space-y-5 text-foreground text-lg leading-relaxed">
               <p>
-                Before real estate, I spent 30 years in healthcare - medical coding, auditing, and education. My job was
+                Before real estate, I spent 30 years in healthcare, including medical coding, auditing, and education. My job was
                 to read documents other people skimmed, catch the detail that changed everything, and explain complex
                 information in plain language to people who were already overwhelmed. The clause on page 4 of a purchase
                 agreement that nobody reads? That's the one I flag.
               </p>
               <p>
-                My husband Todd is a retired Navy Veteran and Systems Engineer - so military families, PCS moves, and VA
+                My husband Todd is a retired Navy Veteran and Systems Engineer, so military families, PCS moves, and VA
                 loans are genuinely close to home for us. We know what it feels like to make big decisions on a tight
                 timeline with a lot of unknowns.
               </p>
             </div>
           </motion.div>
-        </div>
-      </section>
-
-      <section className="py-10 bg-background border-y border-border">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="eyebrow mb-3">For fellow agents…</p>
-            <h2 className="font-heading h-section text-primary mb-4">Considering a Career at eXp Realty?</h2>
-            <p className="text-foreground leading-relaxed mb-4">
-              If you are an agent who is curious about eXp Realty, I am happy to share my experience, answer practical questions, and help you decide whether it may fit your business.
-            </p>
-            <Link to="/about/exp-realty" className="text-secondary font-medium hover:underline">
-              Learn About Working With Me at eXp
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -244,7 +229,7 @@ const About = () => {
             >
               <h3 className="font-heading text-2xl font-bold text-primary mb-4">Lifelong Local</h3>
               <p className="text-foreground leading-relaxed">
-                Marysville, Lake Stevens, North Everett - that's my actual history here. When I talk about what a
+                Marysville, Lake Stevens, and North Everett. That's my actual history here. When I talk about what a
                 neighborhood feels like, it's because I've lived in it, not just sold in it.
               </p>
             </motion.div>
@@ -259,7 +244,7 @@ const About = () => {
             >
               <h3 className="font-heading text-2xl font-bold text-primary mb-4">Research Is My Love Language</h3>
               <p className="text-foreground leading-relaxed">
-                I go deep on things. Market trends, neighborhood data, local policies, ADU rules - if it's relevant to
+                I go deep on things. Market trends, neighborhood data, local policies, and ADU rules. If it's relevant to
                 your situation, I've probably already pulled it up. Checklists help me sleep at night.
               </p>
             </motion.div>
@@ -275,7 +260,7 @@ const About = () => {
               <h3 className="font-heading text-2xl font-bold text-primary mb-4">Ocean Person, Always</h3>
               <p className="text-foreground leading-relaxed">
                 Mountains are beautiful. But the water is where I exhale. Day trips to the coast, ferry rides, anything
-                near Puget Sound - that's my reset button.
+                near Puget Sound. That's my reset button.
               </p>
             </motion.div>
 
@@ -320,6 +305,21 @@ const About = () => {
         </div>
       </section>
 
+      <section className="py-10 bg-background border-y border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="eyebrow mb-3">For fellow agents…</p>
+            <h2 className="font-heading h-section text-primary mb-4">Considering a Career at eXp Realty?</h2>
+            <p className="text-foreground leading-relaxed mb-4">
+              If you are an agent who is curious about eXp Realty, I am happy to share my experience, answer practical questions, and help you decide whether it may fit your business.
+            </p>
+            <Link to="/about/exp-realty" className="text-secondary font-medium hover:underline">
+              Learn About Working With Me at eXp
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section bg-background">
         <div className="container mx-auto px-4">
@@ -336,7 +336,7 @@ const About = () => {
               Ready to Figure Out Your Next Move?
             </h2>
             <p className="text-foreground text-lg leading-relaxed mb-8">
-              Whether you're thinking about selling, buying, downsizing, or relocating to Snohomish County - we can
+              Whether you're thinking about selling, buying, downsizing, or relocating to Snohomish County, we can
               start with a simple conversation. No perfect plan required. Just tell me where you are and what's on your
               mind, and we'll go from there.
             </p>

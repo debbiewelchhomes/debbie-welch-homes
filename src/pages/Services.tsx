@@ -34,7 +34,7 @@ const Services = () => {
               backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${heroImage})`,
             }}
             role="img"
-            aria-label="Debbie Welch real estate services - Snohomish County"
+            aria-label="Debbie Welch real estate services in Snohomish County"
           />
 
           <div className="relative z-10 container mx-auto px-4 py-20 text-center">
@@ -53,7 +53,7 @@ const Services = () => {
               </h1>
 
               <p className="font-body text-lg md:text-xl text-primary max-w-3xl mx-auto">
-                Buying, selling, downsizing, relocating - whatever brought you here, the goal is the same. You deserve
+                Buying, selling, downsizing, or relocating, the goal is the same. You deserve
                 clear information, honest guidance, and someone in your corner who actually knows this county. Not a
                 sales pitch. A real plan.
               </p>
@@ -83,7 +83,7 @@ const Services = () => {
                 It's about the job that moved you here, the parent who needs to be closer, the stairs that aren't
                 working anymore, the PCS orders that gave you six weeks to figure everything out. I've been working with
                 Snohomish County buyers and sellers long enough to know that the best real estate advice starts with
-                understanding what's actually going on in someone's life - not just what they're looking for in a
+                understanding what's actually going on in someone's life, not just what they're looking for in a
                 listing.
               </p>
             </motion.div>
@@ -121,7 +121,7 @@ const Services = () => {
                 <div className="bg-background p-8 rounded-lg">
                   <h3 className="font-heading text-2xl font-bold text-primary mb-4">Honesty</h3>
                   <p className="text-foreground leading-relaxed">
-                    The real numbers, the real tradeoffs, and the real risks - even when the easy answer would be
+                    The real numbers, the real tradeoffs, and the real risks, even when the easy answer would be
                     "you're fine, just move forward." You deserve accurate information, not reassurance.
                   </p>
                 </div>

@@ -35,7 +35,7 @@ const ExpRealty = () => {
     {
       title: "Revenue Share",
       description:
-        "When agents you sponsor close transactions, eXp shares a portion of its company dollar with you - paid by eXp, not taken from your agents. It's optional, not required.",
+        "When agents you sponsor close transactions, eXp shares a portion of its company dollar with you. It is paid by eXp, not taken from your agents. It is optional, not required.",
     },
     {
       title: "Stock Awards",
@@ -45,7 +45,7 @@ const ExpRealty = () => {
     {
       title: "Healthcare Access",
       description:
-        "eXp offers group healthcare options through eXp Agent Healthcare - something most independent agents or small brokerages can't access.",
+        "eXp offers group healthcare options through eXp Agent Healthcare, something most independent agents or small brokerages cannot access.",
     },
     {
       title: "Training & Education",
@@ -55,7 +55,7 @@ const ExpRealty = () => {
     {
       title: "Cloud-Based Model",
       description:
-        "No required office. No geographic limitations. You work from where you work best - your home, a coffee shop, or anywhere with wifi.",
+        "No required office. No geographic limitations. You work from wherever you work best, whether that is your home, a coffee shop, or anywhere with Wi-Fi.",
     },
   ];
 
@@ -63,7 +63,7 @@ const ExpRealty = () => {
     <div className="min-h-screen">
       <SEO
         title="Work With Me at eXp Realty | Debbie Welch Homes"
-        description="Thinking about eXp Realty? Here's my honest story - why I joined, what Entourage offered that others didn't, and what it's actually been like as a Snohomish County broker."
+        description="Thinking about eXp Realty? Here is my honest story, why I joined, what Entourage offered that others did not, and what it has actually been like as a Snohomish County broker."
         canonical="/about/exp-realty"
       />
       <Navigation />
@@ -84,7 +84,7 @@ const ExpRealty = () => {
               </h1>
               <p className="text-foreground text-lg leading-relaxed mb-4">
                 This page isn't a recruiting pitch. I don't have a quota to hit and I'm not going to tell you eXp is
-                right for every agent, because it isn't. What I can do is tell you my honest story - how I got here,
+                right for every agent, because it isn't. What I can do is tell you my honest story: how I got here,
                 what I was looking for, and what it's actually been like.
               </p>
               <p className="text-foreground text-lg leading-relaxed">
@@ -115,9 +115,9 @@ const ExpRealty = () => {
                   different kind of support structure, I started researching my options seriously.
                 </p>
                 <p>
-                  What I kept coming back to was eXp - not because of the commission split or the stock program, but
+                  What I kept coming back to was eXp, not because of the commission split or the stock program, but
                   because of the agents I already knew who were there. I'm part of a nationwide women's real estate
-                  group, and several of the women leading it were eXp agents. I'd watched how they showed up - generous
+                  group, and several of the women leading it were eXp agents. I'd watched how they showed up: generous
                   with their knowledge, supportive of agents at every brokerage, not just their own. They weren't
                   recruiting. They were just being good agents and good people.
                 </p>
@@ -198,14 +198,14 @@ const ExpRealty = () => {
                   sponsor group shapes your day-to-day experience more than the brokerage itself does.
                 </p>
                 <p>
-                  Entourage is a group within eXp built around agents who want to actually work alongside each other -
+                  Entourage is a group within eXp built around agents who want to actually work alongside each other,
                   not just be names on the same roster. That means weekly coaching calls and Zoom meetings where agents
                   share what's working, what isn't, and what they're learning. It means a community that shows up when
                   you have a question, a hard transaction, or just need to talk through a situation with someone who's
                   been there.
                 </p>
                 <p>
-                  eXp also provides its own company-wide training through eXp University - live and on-demand sessions
+                  eXp also provides its own company-wide training through eXp University, with live and on-demand sessions
                   covering everything from contracts to technology to building your business. Entourage layers
                   additional support on top of that.
                 </p>
@@ -243,7 +243,7 @@ const ExpRealty = () => {
                 <p>
                   That matters a lot when a client needs to be referred out. When someone I've worked with in Snohomish
                   County is moving to Arizona, or Texas, or Germany, I don't just Google "top agent" in that market and
-                  hope for the best. I reach out to someone I know personally - someone whose approach I've seen, whose
+                  hope for the best. I reach out to someone I know personally, someone whose approach I've seen, whose
                   integrity I trust, who I'm confident will take care of my client the way I would.
                 </p>
                 <p>
@@ -272,11 +272,11 @@ const ExpRealty = () => {
               </h2>
               <p className="text-foreground text-lg leading-relaxed mb-4">
                 If you're researching eXp, thinking about making a change, or just want to understand what the cloud
-                brokerage model actually looks like in practice - I'm happy to talk through it. I'll tell you what I
+                brokerage model actually looks like in practice, I'm happy to talk through it. I'll tell you what I
                 know, what I don't, and what questions I'd be asking if I were in your position.
               </p>
               <p className="text-foreground text-lg leading-relaxed mb-10">
-                My goal isn't to recruit you. It's to help you make the right decision for your business - whatever that
+                My goal isn't to recruit you. It's to help you make the right decision for your business, whatever that
                 turns out to be.
               </p>
 

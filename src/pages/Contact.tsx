@@ -102,7 +102,7 @@ const Contact = () => {
       {/* Hero Script Line */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-background">
         <div className="container mx-auto px-4">
-          <p className="h-section text-center font-['Oooh_Baby'] text-[#6e808e]">
+          <p className="h-section text-center font-script text-[#6e808e]">
             Get in touch…
           </p>
         </div>

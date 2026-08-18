@@ -70,7 +70,7 @@ const Relocation = () => {
     }
 
     toast({
-      title: "Got it - thank you.",
+      title: "Got it. Thank you.",
       description: "Thanks for reaching out. I'll follow up soon to find a time that works for you.",
     });
     setFormData({ name: "", email: "", phone: "", currentLocation: "", message: "", website: "" });
@@ -81,31 +81,31 @@ const Relocation = () => {
       number: "01",
       title: "Get Oriented Before You Decide Anything",
       description:
-        "We start with a phone or Zoom conversation about your timeline, budget, and what matters most - commute, schools, neighborhood feel, space, access to the base. I'll give you an honest picture of what different parts of Snohomish County are actually like, not just what the listings show.",
+        "We start with a phone or Zoom conversation about your timeline, budget, and what matters most, such as commute, schools, neighborhood feel, space, and access to the base. I'll give you an honest picture of what different parts of Snohomish County are actually like, not just what the listings show.",
     },
     {
       number: "02",
       title: "Narrow Down the Right Areas",
       description:
-        "Snohomish County covers a lot of ground. Lake Stevens feels different from Marysville, which feels different from Everett, which feels different from Bothell. I'll send you maps, notes, and my honest take on each area so you can make a real comparison - not just guess from Google Street View.",
+        "Snohomish County covers a lot of ground. Lake Stevens feels different from Marysville, which feels different from Everett, which feels different from Bothell. I'll send you maps, notes, and my honest take on each area so you can make a real comparison instead of guessing from Google Street View.",
     },
     {
       number: "03",
       title: "Tour Homes Virtually or In Person",
       description:
-        "I do detailed video walkthroughs and live FaceTime tours - pointing out what you can't see in photos, what a neighborhood sounds like at 7am, what the street looks like when it rains. If you can visit, we'll tour in person. If you can't, I'll be your eyes and ears until you can.",
+        "I do detailed video walkthroughs and live FaceTime tours, pointing out what you can't see in photos, what a neighborhood sounds like at 7am, and what the street looks like when it rains. If you can visit, we'll tour in person. If you can't, I'll be your eyes and ears until you can.",
     },
     {
       number: "04",
       title: "Make a Smart, Confident Offer",
       description:
-        "When you're ready, we'll build an offer that fits your budget, your timeline, and the current market - without overextending you. I'll explain every term in plain language before you sign anything, and manage the contract-to-close process so you're not chasing down paperwork from across the country.",
+        "When you're ready, we'll build an offer that fits your budget, your timeline, and the current market without overextending you. I'll explain every term in plain language before you sign anything, and manage the contract-to-close process so you're not chasing down paperwork from across the country.",
     },
     {
       number: "05",
       title: "Land Well and Get Connected",
       description:
-        "Closing day isn't where my job ends. I'll follow up with local recommendations, connect you with people you'll actually need, and make sure you feel settled - not dropped. You moved here without knowing anyone. I want to help change that.",
+        "Closing day isn't where my job ends. I'll follow up with local recommendations, connect you with people you'll actually need, and make sure you feel settled instead of dropped. You moved here without knowing anyone. I want to help change that.",
     },
   ];
 
@@ -113,32 +113,32 @@ const Relocation = () => {
     {
       question: "What's it actually like to commute from Snohomish County to Seattle or the Eastside?",
       answer:
-        "Honest answer: it depends a lot on where you live, where you're going, and when you leave. I-5 between Everett and Seattle can be brutal during peak hours. Highway 9, 522, and 2 offer alternatives depending on your destination. We'll look at your specific commute route and talk through realistic drive times, park-and-ride options, and which neighborhoods give you the best balance of commute and livability. I won't sugarcoat it - some commutes are tough. But there are areas that work well, and I'll help you find them.",
+        "Honest answer: it depends a lot on where you live, where you're going, and when you leave. I-5 between Everett and Seattle can be brutal during peak hours. Highway 9, 522, and 2 offer alternatives depending on your destination. We'll look at your specific commute route and talk through realistic drive times, park-and-ride options, and which locations give you the best balance of commute and daily priorities. I won't sugarcoat it. Some commutes are tough, but there are areas that work well, and I'll help you compare them.",
     },
     {
       question: "Can I buy a home here without seeing it in person?",
       answer:
-        "Yes - several of my clients have done exactly that, including families buying from Germany and active duty service members who couldn't get here before their report date. It takes more preparation and clear communication, but it's very doable. I do detailed video walkthroughs, answer every question you have about condition and location, and we build in protective contingencies wherever possible. I won't let you commit to something I wouldn't feel good about if I were in your position.",
+        "Yes. Several of my clients have done exactly that, including buyers purchasing from Germany and active duty service members who couldn't get here before their report date. It takes more preparation and clear communication, but it's very doable. I do detailed video walkthroughs, answer every question you have about condition and location, and we build in protective contingencies wherever possible. I won't let you commit to something I wouldn't feel good about if I were in your position.",
     },
     {
       question: "How does a VA loan work in this market?",
       answer:
-        "VA loans are a strong financing tool and I'm comfortable working with them. The key is having a lender who actually knows VA loans - not just someone who offers them on a checklist. My preferred VA lender is Jared Paul at CrossCountry Mortgage. He's a Marine Veteran, a Marysville native, and knows this market and VA financing well. We'll get you pre-approved properly so your offer is competitive from the start.",
+        "VA loans are a strong financing tool and I'm comfortable working with them. The key is having a lender who actually knows VA loans, not just someone who offers them on a checklist. My preferred VA lender is Jared Paul at CrossCountry Mortgage. He's a Marine Veteran, a Marysville native, and knows this market and VA financing well. We'll get you pre-approved properly so your offer is competitive from the start.",
     },
     {
       question: "What if I need to sell a home in another state before I can buy here?",
       answer:
-        "You're not alone in that situation - it's actually very common with PCS moves. We'll coordinate timelines with your out-of-area agent and your lender, look at contingent offer options, and talk through temporary housing if there's a gap. It takes more planning but it's workable. The earlier we start talking, the more options we have.",
+        "You're not alone in that situation. It is common with PCS moves. We'll coordinate timelines with your out-of-area agent and your lender, look at contingent offer options, and talk through temporary housing if there's a gap. It takes more planning but it's workable. The earlier we start talking, the more options we have.",
     },
     {
       question: "How far in advance should I reach out?",
       answer:
-        "As early as you can. Ideally a few months before your report date or move date, and earlier if you also have a home to sell. That said, if you're working with a short timeline - which happens a lot with military orders - reach out anyway. I've helped people move quickly before and I know how to prioritize when time is tight.",
+        "As early as you can. Ideally a few months before your report date or move date, and earlier if you also have a home to sell. That said, if you're working with a short timeline, which happens often with military orders, reach out anyway. I've helped people move quickly before and I know how to prioritize when time is tight.",
     },
     {
       question: "Do you work with non-military relocations too?",
       answer:
-        "Yes. Military families are a specialty, but I work with all kinds of relocation clients - people moving here for work, moving closer to family, or starting fresh in the Pacific Northwest. The process is similar: you need someone on the ground who knows the area and can help you make good decisions from a distance. That's what I do.",
+        "Yes. Military moves are a specialty, but I work with all kinds of relocation clients, including people moving here for work, moving closer to family, or starting fresh in the Pacific Northwest. The process is similar: you need someone on the ground who knows the area and can help you make good decisions from a distance. That's what I do.",
     },
     {
       question: "Can you help with military PCS moves to Naval Station Everett?",
@@ -207,7 +207,7 @@ const Relocation = () => {
               </h1>
 
               <p className="font-body text-lg md:text-xl text-primary max-w-3xl mx-auto">
-                You got orders - or a job offer, or a life change - and now you need to figure out where to live in a
+                You got orders, a job offer, or a life change, and now you need to figure out where to live in a
                 county you may never have set foot in. That's a lot. I help military families and relocation clients
                 find the right home in the right area without having to piece it together from internet research alone.
                 I'll be your on-the-ground partner from the first conversation to the day you get your keys.
@@ -235,12 +235,12 @@ const Relocation = () => {
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  You're choosing a home, a neighborhood, a commute, schools, and proximity to the base - without being
+                  You're choosing a home, a neighborhood, a commute, schools, and proximity to the base without being
                   able to drive around on a Saturday and get a feel for things. Big financial decisions made from
                   listing photos and Google Maps.
                 </p>
                 <p>
-                  My husband Todd is a retired Navy Veteran. I understand what PCS timelines actually look like - the
+                  My husband Todd is a retired Navy Veteran. I understand what PCS timelines actually look like, including the
                   short notice, the hard deadlines, the pressure to decide fast. I've helped enough military families
                   buy in Snohomish County to know what questions to ask, what to watch out for, and what areas make
                   sense depending on where you're reporting.
@@ -323,13 +323,13 @@ const Relocation = () => {
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  Todd served in the Navy. I know what PCS season looks like - orders with six weeks notice, decisions
+                  Todd served in the Navy. I know what PCS season looks like, including orders with six weeks notice and decisions
                   before you've had time to think, pressure to get it right when you can't just look at a few more
                   houses this weekend. I hold the MRP designation and have done this enough times to make it work even
                   when the timeline is tight.
                 </p>
                 <p>
-                  For VA financing, I work closely with Jared Paul at CrossCountry Mortgage - a Marine Veteran and
+                  For VA financing, I work closely with Jared Paul at CrossCountry Mortgage, a Marine Veteran and
                   Marysville native who actually specializes in VA loans and Snohomish County. Getting pre-approved with
                   the right lender makes a real difference in how your offer is received. My goal: by the time you show
                   up with a moving truck, you should already feel like you know where you landed.
@@ -390,7 +390,7 @@ const Relocation = () => {
                 </h2>
                 <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
                   Whether you have a firm report date or you're still in the early research phase, let's talk. Share a
-                  few details below and I'll follow up to find a time that works - including evenings and weekends, and
+                  few details below and I'll follow up to find a time that works, including evenings and weekends, and
                   across time zones.
                 </p>
               </div>
@@ -413,6 +413,7 @@ const Relocation = () => {
                     <div>
                       <Input
                         type="text"
+                        aria-label="Your name"
                         placeholder="Your Name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -423,6 +424,7 @@ const Relocation = () => {
                     <div>
                       <Input
                         type="email"
+                        aria-label="Your email"
                         placeholder="Your Email"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -433,6 +435,7 @@ const Relocation = () => {
                     <div>
                       <Input
                         type="tel"
+                        aria-label="Phone number, optional"
                         placeholder="Phone Number (optional)"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -442,6 +445,7 @@ const Relocation = () => {
                     <div>
                       <Input
                         type="text"
+                        aria-label="Current location"
                         placeholder="Where are you coming from? (City, State, or Country)"
                         value={formData.currentLocation}
                         onChange={(e) => setFormData({ ...formData, currentLocation: e.target.value })}
@@ -450,7 +454,8 @@ const Relocation = () => {
                     </div>
                     <div>
                       <Textarea
-                        placeholder="Tell me about your situation - timeline, report date, budget, military or civilian, what you're looking for. Whatever is helpful."
+                        aria-label="Relocation consultation details"
+                        placeholder="Tell me about your timeline, report date, budget, whether your move is military or civilian, and what you're looking for. Whatever is helpful."
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         rows={5}

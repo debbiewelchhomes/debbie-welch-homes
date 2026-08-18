@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
     <div className="min-h-screen">
       <SEO
         title="Privacy Policy | Debbie Welch Homes"
-        description="Privacy Policy for debbiewelchhomes.com - how we collect, use, and protect your personal information."
+        description="Privacy Policy for debbiewelchhomes.com, including how we collect, use, and protect your personal information."
         canonical="/privacy-policy"
       />
       <Navigation />
@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
               <p className="text-lg leading-relaxed mt-6">
                 Debbie Welch is a licensed real estate broker affiliated with eXp Realty, LLC for brokerage, licensing,
                 and MLS compliance purposes. That affiliation does not change who is responsible for this Site or this
-                policy - we are. In the limited cases where information is shared with eXp Realty's platforms or tools
+                policy. We are. In the limited cases where information is shared with eXp Realty's platforms or tools
                 as part of providing real estate services, that sharing is described in Section 7 below.
               </p>
               <p className="text-lg leading-relaxed mt-6">
@@ -188,7 +188,7 @@ const PrivacyPolicy = () => {
                 <li>Respond to your inquiries and provide the real estate services you have requested</li>
                 <li>Set up and manage your communications with us, including property searches and showing requests</li>
                 <li>Send you property listings, market updates, and other information you have requested</li>
-                <li>Send promotional information about our services - you may opt out at any time</li>
+                <li>Send promotional information about our services. You may opt out at any time.</li>
                 <li>Improve and maintain this Site and our services</li>
                 <li>Detect fraud and protect the security of this Site</li>
                 <li>Comply with our legal and regulatory obligations as a licensed real estate broker</li>
@@ -203,7 +203,7 @@ const PrivacyPolicy = () => {
               <ul className="list-disc pl-6 mt-5 space-y-3 text-lg">
                 <li>
                   <strong>Service providers.</strong> We work with third-party service providers who assist us in
-                  delivering our services - this may include email service providers, contact and transaction management
+                  delivering our services. This may include email service providers, contact and transaction management
                   tools, and, where applicable, platforms provided through our brokerage affiliation with eXp Realty,
                   LLC. These providers are contractually required to use your information only for the purposes we
                   specify.

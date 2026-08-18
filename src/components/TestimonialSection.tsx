@@ -110,7 +110,7 @@ const TestimonialSection = () => {
                   What My Clients Are Saying
                 </h2>
                 <p className="copy text-foreground max-w-2xl mx-auto">
-                  Downsizers, military families, out-of-state sellers, first-time buyers - here's what working together
+                  Downsizers, military families, out-of-state sellers, and first-time buyers. Here's what working together
                   actually feels like.
                 </p>
               </div>

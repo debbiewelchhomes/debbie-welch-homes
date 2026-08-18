@@ -55,7 +55,7 @@ const Marysville = () => {
                 className="font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
                 style={{ textShadow: "0 1px 6px rgba(0,0,0,0.7)" }}
               >
-                My hometown - Snohomish County's strawberry city, still growing, still genuinely affordable for the
+                My hometown is Snohomish County's strawberry city, still growing and still genuinely affordable for the
                 right buyer.
               </p>
             </motion.div>
@@ -77,7 +77,7 @@ const Marysville = () => {
               <h1 className="font-heading h-section text-primary mb-6">Marysville, WA</h1>
               <p className="text-foreground text-lg leading-relaxed">
                 Marysville is where I grew up, so this one's personal. It's one of the larger cities in this part of the
-                county - second only to Everett until you head further south - pushing 78,000 people and still climbing.
+                county, second only to Everett until you head further south, with nearly 78,000 people and still climbing.
                 Growth has pushed outward at the edges, especially east toward Whiskey Ridge, while infill development
                 fills in closer to the established core. The older downtown still has real character if you know where
                 to look, and it's typically one of the more affordable places to buy in the county.
@@ -101,7 +101,7 @@ const Marysville = () => {
               </h2>
               <div className="grid md:grid-cols-2 gap-10">
                 <div>
-                  <h3 className="font-heading text-xl font-bold text-primary mb-4">Why buyers choose it</h3>
+                  <h3 className="font-body text-2xl md:text-3xl font-semibold text-primary mb-5">Why Buyers Consider It</h3>
                   <ul className="space-y-3 text-foreground text-base">
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
@@ -114,7 +114,7 @@ const Marysville = () => {
                       <span className="text-secondary font-bold">•</span>
                       <span>
                         <strong>Major Boeing commuter base.</strong> A large share of Marysville households commute to
-                        the Everett Boeing plant - affordability and easy I-5 access make it a popular choice for
+                        the Everett Boeing plant. Affordability and easy I-5 access make it a popular choice for
                         aerospace workers.
                       </span>
                     </li>
@@ -123,7 +123,7 @@ const Marysville = () => {
                       <span>
                         <strong>A real partnership with the Tulalip Tribes that goes beyond schools.</strong> The
                         Tulalip Tribes are the third-largest employer in Snohomish County, and the city and tribe
-                        jointly operate the Greater Marysville Tulalip Chamber of Commerce - the only chamber of
+                        jointly operate the Greater Marysville Tulalip Chamber of Commerce, the only chamber of
                         commerce in the country that's a joint venture between a city and a sovereign nation. That
                         relationship shows up in shared economic development and a level of collaboration that's
                         genuinely unusual.
@@ -136,7 +136,7 @@ const Marysville = () => {
                         This northwest growth area has added more than a thousand homes in recent years, and a
                         meaningful share of them fall within Lake Stevens School District boundaries rather than
                         Marysville's, even though they're inside Marysville city limits. If you want Lake Stevens
-                        schools without Lake Stevens prices, this is worth exploring - and worth confirming on any
+                        schools without Lake Stevens prices, this is worth exploring and confirming on any
                         specific home, since the boundary isn't always obvious from the address alone.
                       </span>
                     </li>
@@ -151,13 +151,13 @@ const Marysville = () => {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-heading text-xl font-bold text-primary mb-4">What to think about first</h3>
+                  <h3 className="font-body text-2xl md:text-3xl font-semibold text-primary mb-5">What to Think About First</h3>
                   <ul className="space-y-3 text-foreground text-base">
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
                         <strong>Growth has pushed outward fast,</strong> especially toward Whiskey Ridge, while infill
-                        development continues closer to the core - the feel of the city shifts depending on which part
+                        development continues closer to the core. The feel of the city shifts depending on which part
                         you're in.
                       </span>
                     </li>
@@ -166,7 +166,7 @@ const Marysville = () => {
                       <span>
                         <strong>If buying on the Tulalip Indian Reservation,</strong> confirm whether the land is deeded
                         or leased before you fall for a house. Some homes are on land leased from the Tulalip Tribes
-                        rather than owned outright, which affects financing, taxes, and resale - not every lender
+                        rather than owned outright, which affects financing, taxes, and resale. Not every lender
                         handles this, so it matters who you work with.
                       </span>
                     </li>
@@ -194,13 +194,13 @@ const Marysville = () => {
               <h3 className="font-heading text-xl font-bold text-primary mb-3">Shopping</h3>
               <p className="text-foreground text-base leading-relaxed mb-6">
                 Costco and Lakewood Crossing anchor the retail corridor along I-5, with Best Buy and dozens of other
-                stores and restaurants. Two Walmart Supercenters serve the city - one on the Tulalip Indian Reservation,
+                stores and restaurants. Two Walmart Supercenters serve the city, including one on the Tulalip Indian Reservation,
                 one near Whiskey Ridge. Cabela's and Seattle Premium Outlets are just minutes away.
               </p>
 
               <h3 className="font-heading text-xl font-bold text-primary mb-3">Entertainment</h3>
               <p className="text-foreground text-base leading-relaxed">
-                The Tulalip Resort Casino and Tulalip Amphitheater regularly bring in major touring concerts and shows -
+                The Tulalip Resort Casino and Tulalip Amphitheater regularly bring in major touring concerts and shows,
                 solid entertainment access without leaving the area. The Strawberry Festival every June is Marysville's
                 own signature event, alongside a summer Farmers Market downtown.
               </p>
@@ -208,7 +208,7 @@ const Marysville = () => {
           </div>
         </section>
 
-        {/* Who Buys Here */}
+        {/* Housing and Location Fit */}
         <section className="section bg-warm-bg">
           <div className="container mx-auto px-4 max-w-4xl">
             <motion.div
@@ -219,11 +219,13 @@ const Marysville = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
-                Who Buys Here
+                Housing and Location Fit
               </h2>
               <p className="text-foreground text-lg leading-relaxed text-center">
-                Boeing commuters, buyers prioritizing affordability and easy I-5 access, families wanting more house for
-                the money, and families specifically targeting Lake Stevens School District through Whiskey Ridge.
+                Marysville offers a range of established homes and newer construction with access to I-5, Highway 9,
+                and major employers. Buyers often compare price, commute time, lot size, and school boundaries,
+                especially in Whiskey Ridge and Soper Hill where some addresses are served by Lake Stevens School
+                District.
               </p>
             </motion.div>
           </div>
@@ -244,7 +246,7 @@ const Marysville = () => {
                 Homes for Sale in Marysville
               </h2>
               <p className="text-foreground text-lg leading-relaxed mb-8">
-                Browse current listings or reach out and I'll put together a custom search. This is my hometown - I know
+                Browse current listings or reach out and I'll put together a custom search. This is my hometown. I know
                 it well enough to tell you exactly which areas and school boundaries fit what you're looking for.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

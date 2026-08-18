@@ -67,7 +67,7 @@ const Buying = () => {
     }
 
     toast({
-      title: "Got it - thank you.",
+      title: "Got it. Thank you.",
       description: "Thanks for reaching out. I'll follow up soon to get your search set up.",
     });
     setFormData({ name: "", email: "", phone: "", message: "", website: "" });
@@ -78,7 +78,7 @@ const Buying = () => {
       number: "01",
       title: "Get Clear on What You Actually Want",
       description:
-        "Before we look at a single listing, we talk. What does the right home actually look like for your life right now - and two or five years from now? Budget, location, commute, schools, yard, stairs, layout. I ask the questions most people forget to ask themselves until they're standing in a house they don't love.",
+        "Before we look at a single listing, we talk. What does the right home actually look like for your life right now and two or five years from now? Budget, location, commute, schools, yard, stairs, layout. I ask the questions most people forget to ask themselves until they're standing in a house they don't love.",
     },
     {
       number: "02",
@@ -90,19 +90,19 @@ const Buying = () => {
       number: "03",
       title: "Search Smart, Tour Well",
       description:
-        "We'll focus on the Snohomish County areas that actually fit your criteria - Lake Stevens, Everett, Marysville, Snohomish, Arlington, Bothell, wherever makes sense. When we tour homes, I'll tell you what I see - the good, the things to think about, and the things that would make me pause. Not just listing-photo enthusiasm.",
+        "We'll focus on the Snohomish County areas that actually fit your criteria, whether that is Lake Stevens, Everett, Marysville, Snohomish, Arlington, Bothell, or somewhere else. When we tour homes, I'll tell you what I see: the good, the things to think about, and the things that would make me pause. Not just listing-photo enthusiasm.",
     },
     {
       number: "04",
       title: "Make a Competitive, Thoughtful Offer",
       description:
-        "When you find the right home, we'll build an offer that's grounded in data - recent sales, current competition, what the terms actually mean for your risk. I'll explain every part of the contract in plain language before you sign anything. No 'just trust me, this is standard.'",
+        "When you find the right home, we'll build an offer grounded in recent sales, current competition, and what the terms actually mean for your risk. I'll explain every part of the contract in plain language before you sign anything. No 'just trust me, this is standard.'",
     },
     {
       number: "05",
-      title: "From Contract to Keys - Without the Chaos",
+      title: "From Contract to Keys Without the Chaos",
       description:
-        "Once you're under contract, I manage the timeline - inspections, appraisals, deadlines, lender communication, escrow coordination. You'll always know what's happening and what's coming next.",
+        "Once you're under contract, I manage inspections, appraisals, deadlines, lender communication, and escrow coordination. You'll always know what's happening and what's coming next.",
     },
   ];
 
@@ -110,7 +110,7 @@ const Buying = () => {
     {
       question: "How competitive is the Snohomish County market right now for buyers?",
       answer:
-        "It varies a lot by price point and area. Some neighborhoods and price ranges still move fast with multiple offers; others give buyers more breathing room and room to negotiate. I'll walk you through current data for the specific areas you're considering before we start writing offers - so you know what you're walking into, not after the fact.",
+        "It varies a lot by price point and area. Some neighborhoods and price ranges still move fast with multiple offers; others give buyers more breathing room and room to negotiate. I'll walk you through current data for the specific areas you're considering before we start writing offers, so you know what you're walking into, not after the fact.",
     },
     {
       question: "How much do I actually need for a down payment?",
@@ -120,7 +120,7 @@ const Buying = () => {
     {
       question: "Do I need to sell my current home before I buy?",
       answer:
-        "Not necessarily. Some buyers sell first, some buy first, and others use contingent offers or bridge strategies. There's no universal right answer - it depends on your finances, your timeline, and how much risk you're comfortable with. We'll look at your specific situation and talk through the options honestly before you decide.",
+        "Not necessarily. Some buyers sell first, some buy first, and others use contingent offers or bridge strategies. There's no universal right answer. It depends on your finances, your timeline, and how much risk you're comfortable with. We'll look at your specific situation and talk through the options honestly before you decide.",
     },
     {
       question: "What are the costs beyond the down payment I should plan for?",
@@ -130,12 +130,12 @@ const Buying = () => {
     {
       question: "How long does buying a home usually take?",
       answer:
-        "Once you're under contract, most purchases in Snohomish County close in 30-45 days depending on financing. The search phase varies - some buyers find their home in a few weeks, others take a few months. It depends on inventory, your criteria, and the market. I'll help you set a realistic timeline so you can plan around it.",
+        "Once you're under contract, most purchases in Snohomish County close in 30 to 45 days depending on financing. The search phase varies. Some buyers find their home in a few weeks, while others take a few months. It depends on inventory, your criteria, and the market. I'll help you set a realistic timeline so you can plan around it.",
     },
     {
       question: "What if I find a home I love but something feels off?",
       answer:
-        "Tell me. That feeling is worth paying attention to. Sometimes it's something fixable - a cosmetic issue, a negotiable repair. Sometimes it's a real red flag. My job is to help you figure out which is which, not to keep the deal moving at all costs. I'd rather you walk away from the wrong house than close on it.",
+        "Tell me. That feeling is worth paying attention to. Sometimes it's something fixable, such as a cosmetic issue or a negotiable repair. Sometimes it's a real red flag. My job is to help you figure out which is which, not to keep the deal moving at all costs. I'd rather you walk away from the wrong house than close on it.",
     },
     {
       question: "Do you work with first-time homebuyers?",
@@ -235,7 +235,7 @@ const Buying = () => {
                   months after you move in. Most agents move you through those questions. I stop and explain them.
                 </p>
                 <p>
-                  I'm not trying to close a deal. I'm trying to help you buy the right home. There's a difference - and
+                  I'm not trying to close a deal. I'm trying to help you buy the right home. There's a difference, and
                   you'll feel it.
                 </p>
               </div>
@@ -313,7 +313,7 @@ const Buying = () => {
                   slow down.
                 </p>
                 <p>
-                  I'm a lifelong Snohomish County local - grew up in Marysville, lived in Lake Stevens for years,
+                  I'm a lifelong Snohomish County local. I grew up in Marysville, lived in Lake Stevens for years,
                   currently renovating in North Everett. When I tell you what a neighborhood is actually like, it's from
                   living here, not a market report. Ask me as many questions as you need.
                 </p>
@@ -341,7 +341,7 @@ const Buying = () => {
               </h2>
 
               <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
-                Covers what to know before you start your search - financing basics, how to read a listing, what
+                Covers what to know before you start your search, including financing basics, how to read a listing, what
                 inspections actually tell you, hidden costs to plan for, and how the Snohomish County market works.
                 Written for people who want real information, not a glossy brochure.
               </p>
@@ -378,7 +378,7 @@ const Buying = () => {
                 </h2>
                 <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
                   Tell me what you're looking for and I'll put together a custom search for the areas and price ranges
-                  that make sense for you. No spam, no pressure - just listings that are actually worth your time.
+                  that make sense for you. No spam and no pressure. Just listings that are actually worth your time.
                 </p>
               </div>
 
@@ -400,6 +400,7 @@ const Buying = () => {
                     <div>
                       <Input
                         type="text"
+                        aria-label="Your name"
                         placeholder="Your Name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -410,6 +411,7 @@ const Buying = () => {
                     <div>
                       <Input
                         type="email"
+                        aria-label="Your email"
                         placeholder="Your Email"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -420,6 +422,7 @@ const Buying = () => {
                     <div>
                       <Input
                         type="tel"
+                        aria-label="Phone number, optional"
                         placeholder="Phone Number (optional)"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -428,7 +431,8 @@ const Buying = () => {
                     </div>
                     <div>
                       <Textarea
-                        placeholder="What are you looking for? Budget, preferred areas, timeline, must-haves - whatever helps me point you in the right direction."
+                        aria-label="Property search details"
+                        placeholder="What are you looking for? Share your budget, preferred areas, timeline, must-haves, or whatever helps me point you in the right direction."
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         rows={5}

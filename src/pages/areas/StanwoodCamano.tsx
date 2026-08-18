@@ -30,7 +30,7 @@ const StanwoodCamano = () => {
             fetchPriority="high"
             decoding="async"
             className="absolute inset-0 h-full w-full object-cover"
-            style={{ objectPosition: "center 30%" }}
+            style={{ objectPosition: "center 10%" }}
           />
           <div
             className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/15"
@@ -78,7 +78,7 @@ const StanwoodCamano = () => {
             <h2 className="font-heading h-section text-primary mb-10 text-center">An Honest Look</h2>
             <div className="grid md:grid-cols-2 gap-10">
               <div>
-                <h3 className="font-heading text-xl font-bold text-primary mb-4">Why buyers consider it</h3>
+                <h3 className="font-body text-2xl md:text-3xl font-semibold text-primary mb-5">Why Buyers Consider It</h3>
                 <ul className="space-y-3 text-foreground text-base">
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>
@@ -99,7 +99,7 @@ const StanwoodCamano = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="font-heading text-xl font-bold text-primary mb-4">What to think about</h3>
+                <h3 className="font-body text-2xl md:text-3xl font-semibold text-primary mb-5">What to Think About</h3>
                 <ul className="space-y-3 text-foreground text-base">
                   <li className="flex gap-2">
                     <span className="text-secondary font-bold">•</span>

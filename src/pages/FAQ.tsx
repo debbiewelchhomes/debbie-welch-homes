@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "Do you help seniors who are downsizing or moving to a different type of housing?",
     answer:
-      "Yes. As a Seniors Real Estate Specialist (SRES), I help older adults and their families plan moves with patience, clear information, and respect for the decisions involved. We can work through timing, home preparation, belongings, trusted local resources, and the sale itself at a pace that feels manageable.",
+      "Yes. As a Seniors Real Estate Specialist (SRES®), I help older adults and their families plan moves with patience, clear information, and respect for the decisions involved. We can work through timing, home preparation, belongings, trusted local resources, and the sale itself at a pace that feels manageable.",
   },
   {
     question: "Can you help me buy and sell a home at the same time?",

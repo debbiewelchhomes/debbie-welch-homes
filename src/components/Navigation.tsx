@@ -34,7 +34,11 @@ const Navigation = () => {
   const resources = [
     { name: "Resource Library", href: "/resources" },
     { name: "Buyer & Seller Guides", href: "/resources#guides" },
-    { name: "Local Market Reports", href: "/resources#market-reports" },
+    {
+      name: "Local Market Reports",
+      href: "https://debbiewelch.exprealty.com/pages/market-reports",
+      external: true,
+    },
     { name: "Trusted Local Partners", href: "/resources/trusted-partners" },
     { name: "Frequently Asked Questions", href: "/resources/faq" },
     { name: "Mortgage Calculator", href: "https://debbiewelch.exprealty.com/resources/mortgage-calculator/", external: true },
@@ -60,7 +64,7 @@ const Navigation = () => {
                     Services
                   </Link>
                   <DropdownMenu>
-                    <DropdownMenuTrigger className="text-foreground hover:text-secondary transition-colors">
+                    <DropdownMenuTrigger aria-label="Open Services menu" className="text-foreground hover:text-secondary transition-colors">
                       <ChevronDown className="h-4 w-4" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="bg-background border-border z-50">

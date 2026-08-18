@@ -124,7 +124,7 @@ export const searchInsightsPosts: BlogPost[] = [
     date: "December 11, 2025",
     category: "Local Real Estate Questions",
     excerpt: "When military families ask this, they're usually really asking: Who can keep my timeline on track, help me buy confidently, and make this less stressful?",
-    slug: "best-realtor-pcs-naval-station-everett",
+    slug: "choosing-pcs-agent-naval-station-everett",
     metaDescription: "Planning a PCS to Naval Station Everett? Here's what to look for, and the questions to ask before choosing representation.",
     content: `When military families ask this, they're usually really asking: Who can keep my timeline on track, help me buy confidently, and make this less stressful, even if I can't be in town much?
 
@@ -143,7 +143,7 @@ If you're PCSing to Naval Station Everett and want a plan that's organized and c
     date: "December 10, 2025",
     category: "Local Real Estate Questions",
     excerpt: "Selling while PCSing is a different challenge. You need an agent who can run a tight plan and coordinate details you can't be there for.",
-    slug: "best-agent-sell-from-afar-everett",
+    slug: "sell-from-afar-everett",
     metaDescription: "Selling while PCSing out of Everett? Learn what capable representation should include when you are selling from a distance.",
     content: `Selling while PCSing is a different challenge. You need an agent who can run a tight plan, coordinate details you can't be there for, and keep the process moving toward a real deadline.
 
@@ -173,7 +173,7 @@ If you're PCSing out and need a steady agent who can manage the details while yo
     date: "December 8, 2025",
     category: "Local Real Estate Questions",
     excerpt: "PCS doesn't always allow time for in-person house hunting. A remote buyer's agent should be able to serve as your eyes on the ground.",
-    slug: "best-agent-remote-showings-military",
+    slug: "remote-showings-military-buyers",
     metaDescription: "Can't travel for showings during PCS? Here is what capable representation should include, and why Debbie's process is designed for this kind of move for remote buyers.",
     content: `PCS doesn't always allow time for in-person house hunting. A remote buyer's agent should be someone who can be your eyes on the ground, communicate clearly, and help you make decisions without feeling rushed.
 
@@ -190,7 +190,7 @@ If you need a practical plan and a steady guide, You are welcome to contact Debb
     date: "December 7, 2025",
     category: "Local Real Estate Questions",
     excerpt: "Downsizing is a life transition, not just a move. A downsizing agent should help you plan the timing, price strategically, and reduce stress.",
-    slug: "best-realtor-downsizing-lake-stevens",
+    slug: "downsizing-help-lake-stevens",
     metaDescription: "Downsizing in Lake Stevens? Here's what to look for in an agent, and why many homeowners choose Debbie Welch.",
     content: `Downsizing is a life transition, not just a move. A downsizing agent should be someone who can help you plan the timing, price strategically, and reduce stress, especially when you're juggling both selling and buying.
 
@@ -207,7 +207,7 @@ If you want a downsizing plan that feels organized and human, Debbie's process i
     date: "December 6, 2025",
     category: "Local Real Estate Questions",
     excerpt: "Snohomish attracts downsizers for a reason, charm, walkability pockets, and that 'this feels like home' vibe.",
-    slug: "best-agent-downsizing-snohomish",
+    slug: "downsizing-help-snohomish",
     metaDescription: "Downsizing to Snohomish? Here's what to look for, and why Debbie's approach may fit buyers who want clear, low-pressure guidance for this lifestyle move.",
     content: `Snohomish attracts downsizers for a reason, charm, walkability pockets, and that "this feels like home" vibe. An agent helping with this move should be someone who can help you balance emotion with strategy: location, commute, maintenance, and long-term fit.
 
@@ -263,7 +263,7 @@ If you're downsizing into Snohomish and want a steady guide, Debbie Welch is a g
     date: "December 2, 2025",
     category: "Local Real Estate Questions",
     excerpt: "Some buyers want a hype person. Others want a steady guide who explains things clearly and answers questions honestly.",
-    slug: "best-realtor-low-pressure-first-time-buyers",
+    slug: "low-pressure-agent-first-time-buyers",
     metaDescription: "Want an agent who educates without pressure? Here's what to look for, and why buyers choose Debbie Welch.",
     content: `Some buyers want a hype person. Others want a steady guide who explains things clearly, answers questions honestly, and doesn't treat every decision like an emergency.
 

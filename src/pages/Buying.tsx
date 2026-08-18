@@ -14,6 +14,7 @@ import { useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { sendInquiry } from "@/lib/inquiry";
 import InquiryFallback from "@/components/InquiryFallback";
+import PageFAQ from "@/components/PageFAQ";
 
 const Buying = () => {
   const introRef = useRef(null);
@@ -531,6 +532,24 @@ const Buying = () => {
             </motion.div>
           </div>
         </section>
+        <PageFAQ
+          title="Homebuying Questions"
+          intro="Good preparation makes it easier to recognize the right home and make decisions with confidence."
+          items={[
+              {
+                question: "Do you work with first-time homebuyers?",
+                answer: "Yes. I explain each step, help you understand the costs beyond the down payment, coordinate with your lender, and review the choices in an offer before you sign. Questions are expected, and you will not be rushed through them.",
+              },
+              {
+                question: "Can you help me purchase a home using a VA loan?",
+                answer: "Yes. I understand the real estate side of VA-financed purchases and work with lenders who are experienced with VA loans. Your lender advises you on eligibility and loan terms, while I help with the search, offer strategy, property considerations, inspections, and transaction coordination.",
+              },
+              {
+                question: "How should I choose between different Snohomish County communities?",
+                answer: "We can compare commute patterns, housing styles, price ranges, school-district boundaries, services, and the day-to-day feel of each area. City names alone do not tell the whole story, so I help you look at the details that affect how a location will work for you.",
+              }
+          ]}
+        />
       </main>
       <Footer />
     </div>

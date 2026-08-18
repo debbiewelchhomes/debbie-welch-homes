@@ -15,6 +15,7 @@ import { useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { sendInquiry } from "@/lib/inquiry";
 import InquiryFallback from "@/components/InquiryFallback";
+import PageFAQ from "@/components/PageFAQ";
 
 const Relocation = () => {
   const introRef = useRef(null);
@@ -553,6 +554,24 @@ const Relocation = () => {
             </motion.div>
           </div>
         </section>
+        <PageFAQ
+          title="Military PCS and Relocation Questions"
+          intro="PCS timelines and long-distance moves can create decisions that need clear, local answers."
+          items={[
+              {
+                question: "Can you help with military PCS moves to Naval Station Everett?",
+                answer: "Absolutely. I am a Military Relocation Professional (MRP) and a longtime Navy spouse. My husband is retired from the Navy, so I understand the timelines, uncertainty, and stress that can come with a PCS. I live just a couple of miles from Naval Station Everett and know the surrounding communities well.",
+              },
+              {
+                question: "What does the MRP designation mean?",
+                answer: "The Military Relocation Professional designation is specialized real estate training focused on the needs of military servicemembers and their families. It supports my practical experience as a Navy spouse and helps me coordinate the real estate side of PCS moves, VA-financed purchases, and relocations.",
+              },
+              {
+                question: "Which communities are convenient to Naval Station Everett?",
+                answer: "Everett provides the closest access, while Mukilteo, Marysville, Lake Stevens, Mill Creek, and other nearby communities may also fit depending on commute preferences, housing needs, schools, and budget. I help you compare the practical tradeoffs rather than assuming one location works for every household.",
+              }
+          ]}
+        />
       </main>
       <Footer />
     </div>

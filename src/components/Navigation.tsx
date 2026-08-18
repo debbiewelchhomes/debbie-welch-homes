@@ -50,7 +50,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="relative flex items-center justify-center h-24">
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center justify-between w-full max-w-7xl mx-auto">
+          <div className="hidden xl:flex items-center justify-between w-full max-w-7xl mx-auto">
             {/* Left Navigation Group */}
             <div className="flex items-center gap-6 flex-1 justify-end pr-6 whitespace-nowrap">
               <Link to="/" className="text-foreground hover:text-secondary transition-colors">
@@ -149,17 +149,17 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Header */}
-          <Link to="/" className="lg:hidden absolute left-0" onClick={() => setMobileMenuOpen(false)}>
+          <Link to="/" className="xl:hidden absolute left-0" onClick={() => setMobileMenuOpen(false)}>
             <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-11 w-auto" />
           </Link>
-          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="lg:hidden absolute right-0 p-2" aria-label="Toggle menu">
+          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="xl:hidden absolute right-0 p-2" aria-label="Toggle menu">
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-border">
+          <div className="xl:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
               <Link
                 to="/"
@@ -260,3 +260,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+

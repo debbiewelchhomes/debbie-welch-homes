@@ -20,11 +20,11 @@ const FreeResourceSection = () => {
         >
           <span className="eyebrow-caps">Free, No Obligation</span>
 
-          <h2 className="font-heading h-section mt-3 text-primary">
+          <h2 className="font-heading h-section mx-auto mt-3 max-w-[22ch] text-primary">
             A Market Report for Any Area in Snohomish County
           </h2>
 
-          <p className="copy measure mx-auto mt-4 text-left text-foreground md:text-center">
+          <p className="copy mx-auto mt-4 max-w-[56ch] text-left text-foreground md:text-center">
             Tell me the area you are watching and I will pull the current numbers: new listings,
             price reductions, days on market, and recent sales. Real data for your neighborhood,
             not national headlines.

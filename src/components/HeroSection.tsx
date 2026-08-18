@@ -33,11 +33,11 @@ const HeroSection = () => {
               Welcome home…
             </p>
 
-            <h1 className="font-heading h-display text-primary mb-4">
+            <h1 className="font-heading h-display mx-auto mb-4 max-w-[18ch] text-primary">
               Helping You Home in Snohomish County
             </h1>
 
-            <p className="copy-lead text-primary/90 mx-auto measure mb-6">
+            <p className="copy-lead mx-auto mb-6 max-w-[54ch] text-primary/90">
               I grew up here, I have owned homes here, and I have spent 45+ years watching this
               county change. You get honest guidance, a calm and organized plan, and someone who
               actually picks up the phone.

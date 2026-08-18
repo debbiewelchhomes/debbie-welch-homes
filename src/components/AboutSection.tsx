@@ -10,7 +10,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="section bg-warm-bg">
       <div className="container mx-auto px-4">
-        <div className="grid gap-10 md:grid-cols-[1fr_360px] md:items-center max-w-5xl mx-auto">
+        <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-[minmax(0,1.12fr)_minmax(280px,0.72fr)] md:items-center">
           <motion.div
             ref={ref}
             initial={{ opacity: 0, x: -24 }}
@@ -19,7 +19,7 @@ const AboutSection = () => {
             className="order-2 md:order-1"
           >
             <p className="eyebrow mb-4" aria-hidden="true">Hey there…</p>
-            <h2 className="font-heading h-section text-primary mb-6">I'm Debbie</h2>
+            <h2 className="font-heading h-section mb-6 max-w-[12ch] text-primary">I'm Debbie</h2>
             <div className="measure">
               <p className="copy text-foreground mb-4">
                 I grew up in Marysville, raised my family in Lake Stevens, and now live in North Everett. I have spent more than 45 years watching Snohomish County change, and I bring that local perspective to every move.
@@ -37,7 +37,7 @@ const AboutSection = () => {
             initial={{ opacity: 0, x: 24 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 24 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="order-1 md:order-2 mx-auto w-full max-w-[360px]"
+            className="order-1 mx-auto w-full max-w-[320px] md:order-2 md:translate-y-8"
           >
             <img
               alt="Debbie Welch, Snohomish County real estate broker"

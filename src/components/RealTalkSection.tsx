@@ -28,7 +28,7 @@ const RealTalkSection = () => {
             Real talk…
           </p>
 
-          <h2 className="font-heading h-section mb-6 text-center text-primary">
+          <h2 className="font-heading h-section mx-auto mb-6 max-w-[26ch] text-center text-primary">
             Real estate does not have to feel pushy, confusing, or rushed.
           </h2>
 

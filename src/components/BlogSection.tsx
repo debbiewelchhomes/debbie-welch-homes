@@ -21,8 +21,8 @@ const BlogSection = () => {
           className="text-center mb-12"
         >
           <p className="eyebrow mb-4" aria-hidden="true">Stay informed…</p>
-          <h2 className="font-heading h-section text-primary mb-6">From the Blog</h2>
-          <p className="copy text-foreground max-w-2xl mx-auto">
+          <h2 className="font-heading h-section mb-6 text-primary">From the Blog</h2>
+          <p className="copy mx-auto max-w-[56ch] text-foreground">
             Real talk on downsizing, buying, selling, and what is actually happening in the Snohomish County market. A few useful numbers included, because the numbers matter.
           </p>
         </motion.div>

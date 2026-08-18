@@ -11,7 +11,7 @@ const specialties = [
 
 const HeroSection = () => {
   return (
-    <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden">
+    <section className="relative flex min-h-[68vh] lg:min-h-[72vh] items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 parallax-section"
         style={{
@@ -21,7 +21,7 @@ const HeroSection = () => {
         aria-label="Snohomish County WA home exterior, Debbie Welch local real estate agent"
       />
 
-      <div className="relative z-10 container mx-auto flex min-h-[80vh] items-center justify-center px-4 pb-16 pt-32 md:pt-40">
+      <div className="relative z-10 container mx-auto flex min-h-[68vh] lg:min-h-[72vh] items-center justify-center px-4 pb-16 pt-32 md:pt-40">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -88,3 +88,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+

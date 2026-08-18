@@ -63,7 +63,7 @@ const ExpRealty = () => {
     <div className="min-h-screen">
       <SEO
         title="Work With Me at eXp Realty | Debbie Welch Homes"
-        description="Thinking about eXp Realty? Here is my honest story, why I joined, what Entourage offered that others did not, and what it has actually been like as a Snohomish County broker."
+        description="My honest eXp Realty story, why I joined, and what the Entourage community has meant for my business as a Snohomish County broker."
         canonical="/about/exp-realty"
       />
       <Navigation />
@@ -309,3 +309,4 @@ const ExpRealty = () => {
 };
 
 export default ExpRealty;
+

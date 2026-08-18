@@ -20,14 +20,14 @@ const EverettMukilteo = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Living in Everett & Mukilteo, WA | Homes for Sale | Debbie Welch Homes"
-        description="Thinking about buying in Everett or Mukilteo? An honest neighborhood-by-neighborhood breakdown of Snohomish County's largest city and one of Puget Sound's most beautiful waterfronts."
+        title="Everett & Mukilteo Homes for Sale | Debbie Welch"
+        description="Considering Everett or Mukilteo? Compare waterfront, city, and neighborhood life, plus the practical details that shape a move."
         canonical="/areas/everett-mukilteo"
       />
       <Navigation />
       <main>
         {/* Hero */}
-        <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[58vh] lg:min-h-[62vh] flex items-center justify-center overflow-hidden">
           <img
             src={heroImage}
             alt="Sailboats at the Everett marina on the Port Gardner waterfront in Everett, Washington"
@@ -296,6 +296,20 @@ const EverettMukilteo = () => {
                 </div>
               </div>
 
+              <p className="text-center text-sm text-muted-foreground mb-10">
+                Housing snapshot last reviewed August 2026. Prices and inventory change by neighborhood and property.
+                {" "}
+                <a
+                  href="https://debbiewelch.exprealty.com/pages/market-reports"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-secondary underline underline-offset-4 hover:text-primary"
+                >
+                  See the current market report
+                </a>
+                .
+              </p>
+
               <h3 className="font-heading text-xl font-bold text-primary mb-3">Everett food & drink</h3>
               <p className="text-foreground text-base leading-relaxed mb-6">
                 The scene reflects the city's genuine diversity. Vietnamese, Mexican, Chinese, Filipino, and Italian
@@ -419,3 +433,4 @@ const EverettMukilteo = () => {
 };
 
 export default EverettMukilteo;
+

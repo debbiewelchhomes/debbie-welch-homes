@@ -15,6 +15,7 @@ import { useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { sendInquiry } from "@/lib/inquiry";
 import InquiryFallback from "@/components/InquiryFallback";
+import PageFAQ from "@/components/PageFAQ";
 
 const Downsizing = () => {
   const introRef = useRef(null);
@@ -556,6 +557,24 @@ const Downsizing = () => {
             </motion.div>
           </div>
         </section>
+        <PageFAQ
+          title="Downsizing and Senior Move Questions"
+          intro="A later-life move often involves more than selling a house. Planning early can make the choices feel far more manageable."
+          items={[
+              {
+                question: "What does the SRES designation mean?",
+                answer: "The Seniors Real Estate Specialist (SRES) designation is specialized training for helping older adults and their families navigate real estate decisions. My role is to provide clear information, patience, and coordination while respecting that the timing and final decisions remain yours.",
+              },
+              {
+                question: "How early should I begin planning a downsizing move?",
+                answer: "Starting several months before you hope to move usually creates more choices and less pressure. We can begin with a conversation even if you are not ready to sell. Early planning helps separate immediate needs from decisions that can wait.",
+              },
+              {
+                question: "Do I need to update everything before selling an older home?",
+                answer: "Usually not. Some repairs or preparation may improve marketability, but a long renovation list is not automatically the best use of your time or money. I can help you identify what is important, what is optional, and what buyers may accept as-is.",
+              }
+          ]}
+        />
       </main>
       <Footer />
     </div>

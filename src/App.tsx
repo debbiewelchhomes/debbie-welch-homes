@@ -34,48 +34,57 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => {
+const AppRoutes = () => (
+  <>
+    <ScrollToTop />
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/services/buying" element={<Buying />} />
+      <Route path="/services/selling" element={<Selling />} />
+      <Route path="/services/relocation" element={<Relocation />} />
+      <Route path="/services/downsizing" element={<Downsizing />} />
+      <Route path="/listings" element={<Listings />} />
+      <Route path="/resources" element={<Resources />} />
+      <Route path="/resources/trusted-partners" element={<TrustedPartners />} />
+      <Route path="/resources/faq" element={<FAQ />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/:slug" element={<BlogPost />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/about/exp-realty" element={<ExpRealty />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/areas/snohomish-county" element={<SnohomishCounty />} />
+      <Route path="/areas/arlington" element={<Arlington />} />
+      <Route path="/areas/bothell-mill-creek" element={<BothellMillCreek />} />
+      <Route path="/areas/everett-mukilteo" element={<EverettMukilteo />} />
+      <Route path="/areas/lake-stevens" element={<LakeStevens />} />
+      <Route path="/areas/marysville" element={<Marysville />} />
+      <Route path="/areas/snohomish" element={<Snohomish />} />
+      <Route path="/areas/stanwood-camano" element={<StanwoodCamano />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </>
+);
+
+export const AppShell = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/services/buying" element={<Buying />} />
-            <Route path="/services/selling" element={<Selling />} />
-            <Route path="/services/relocation" element={<Relocation />} />
-            <Route path="/services/downsizing" element={<Downsizing />} />
-            <Route path="/listings" element={<Listings />} />
-            <Route path="/resources" element={<Resources />} />
-            <Route path="/resources/trusted-partners" element={<TrustedPartners />} />
-            <Route path="/resources/faq" element={<FAQ />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/about" element={<About />} />
-
-            <Route path="/about/exp-realty" element={<ExpRealty />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/areas/snohomish-county" element={<SnohomishCounty />} />
-            <Route path="/areas/arlington" element={<Arlington />} />
-            <Route path="/areas/bothell-mill-creek" element={<BothellMillCreek />} />
-            <Route path="/areas/everett-mukilteo" element={<EverettMukilteo />} />
-            <Route path="/areas/lake-stevens" element={<LakeStevens />} />
-            <Route path="/areas/marysville" element={<Marysville />} />
-            <Route path="/areas/snohomish" element={<Snohomish />} />
-            <Route path="/areas/stanwood-camano" element={<StanwoodCamano />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
+        <AppRoutes />
         <ChatButton />
       </TooltipProvider>
     </QueryClientProvider>
   );
 };
 
+const App = () => (
+  <BrowserRouter>
+    <AppShell />
+  </BrowserRouter>
+);
+
 export default App;
+

@@ -3,41 +3,43 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import ScrollToTop from "@/components/ScrollToTop";
 import ChatButton from "@/components/ChatButton";
 import Index from "./pages/Index";
-import Services from "./pages/Services";
-import Buying from "./pages/Buying";
-import Selling from "./pages/Selling";
-import Relocation from "./pages/Relocation";
-import Downsizing from "./pages/Downsizing";
-import Listings from "./pages/Listings";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import About from "./pages/About";
-import ExpRealty from "./pages/ExpRealty";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Resources from "./pages/Resources";
-import TrustedPartners from "./pages/TrustedPartners";
-import FAQ from "./pages/FAQ";
 
-import Contact from "./pages/Contact";
-import SnohomishCounty from "./pages/areas/SnohomishCounty";
-import Arlington from "./pages/areas/Arlington";
-import BothellMillCreek from "./pages/areas/BothellMillCreek";
-import EverettMukilteo from "./pages/areas/EverettMukilteo";
-import LakeStevens from "./pages/areas/LakeStevens";
-import Marysville from "./pages/areas/Marysville";
-import Snohomish from "./pages/areas/Snohomish";
-import StanwoodCamano from "./pages/areas/StanwoodCamano";
-import NotFound from "./pages/NotFound";
+const Services = lazy(() => import("./pages/Services"));
+const Buying = lazy(() => import("./pages/Buying"));
+const Selling = lazy(() => import("./pages/Selling"));
+const Relocation = lazy(() => import("./pages/Relocation"));
+const Downsizing = lazy(() => import("./pages/Downsizing"));
+const Listings = lazy(() => import("./pages/Listings"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
+const About = lazy(() => import("./pages/About"));
+const ExpRealty = lazy(() => import("./pages/ExpRealty"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const Resources = lazy(() => import("./pages/Resources"));
+const TrustedPartners = lazy(() => import("./pages/TrustedPartners"));
+const FAQ = lazy(() => import("./pages/FAQ"));
+const Contact = lazy(() => import("./pages/Contact"));
+const SnohomishCounty = lazy(() => import("./pages/areas/SnohomishCounty"));
+const Arlington = lazy(() => import("./pages/areas/Arlington"));
+const BothellMillCreek = lazy(() => import("./pages/areas/BothellMillCreek"));
+const EverettMukilteo = lazy(() => import("./pages/areas/EverettMukilteo"));
+const LakeStevens = lazy(() => import("./pages/areas/LakeStevens"));
+const Marysville = lazy(() => import("./pages/areas/Marysville"));
+const Snohomish = lazy(() => import("./pages/areas/Snohomish"));
+const StanwoodCamano = lazy(() => import("./pages/areas/StanwoodCamano"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
 const AppRoutes = () => (
   <>
     <ScrollToTop />
-    <Routes>
+    <Suspense fallback={<main className="min-h-screen bg-background" aria-label="Loading page" />}>
+      <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/services" element={<Services />} />
       <Route path="/services/buying" element={<Buying />} />
@@ -63,7 +65,8 @@ const AppRoutes = () => (
       <Route path="/areas/snohomish" element={<Snohomish />} />
       <Route path="/areas/stanwood-camano" element={<StanwoodCamano />} />
       <Route path="*" element={<NotFound />} />
-    </Routes>
+      </Routes>
+    </Suspense>
   </>
 );
 

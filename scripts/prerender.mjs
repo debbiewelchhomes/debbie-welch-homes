@@ -16,7 +16,7 @@ const renderHead = (helmet) => [
 ].join("\n");
 
 for (const route of routes) {
-  const { html, helmet } = render(route);
+  const { html, helmet } = await render(route);
   if (!helmet) throw new Error(`No page metadata was rendered for ${route}`);
   const withoutRouteMetadata = template
     .replace(/<title>[\s\S]*?<\/title>\s*/i, "")

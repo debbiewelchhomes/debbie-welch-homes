@@ -20,6 +20,7 @@ const coreRoutes = [
   "/services/downsizing",
   "/listings",
   "/resources",
+  "/past-sales",
   "/resources/trusted-partners",
   "/resources/faq",
   "/blog",

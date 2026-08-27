@@ -115,24 +115,6 @@ const Resources = () => {
           </div>
         </section>
 
-        <section className="section bg-background">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <Link to="/past-sales" className="group">
-              <Card className="border-border bg-card transition-shadow duration-300 group-hover:shadow-lg">
-                <CardContent className="p-8 md:p-10">
-                  <p className="eyebrow mb-3">A look at recent representation…</p>
-                  <h2 className="font-heading h-section text-primary mb-4">Past Sales Across Snohomish County</h2>
-                  <p className="copy text-foreground max-w-3xl mb-6">
-                    A selected sample of recent buyer and seller representation in the communities Debbie calls home.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-sm font-medium text-secondary">
-                    View Past Sales <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
-          </div>
-        </section>
 
         <section className="section bg-background">
           <div className="container mx-auto px-4 max-w-6xl">

@@ -14,7 +14,7 @@ const Selling = lazy(() => import("./pages/Selling"));
 const Relocation = lazy(() => import("./pages/Relocation"));
 const Downsizing = lazy(() => import("./pages/Downsizing"));
 const Listings = lazy(() => import("./pages/Listings"));
-const PastSales = lazy(() => import("./pages/PastSales"));
+
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 const About = lazy(() => import("./pages/About"));
@@ -48,7 +48,7 @@ const AppRoutes = () => (
       <Route path="/services/relocation" element={<Relocation />} />
       <Route path="/services/downsizing" element={<Downsizing />} />
       <Route path="/listings" element={<Listings />} />
-      <Route path="/past-sales" element={<PastSales />} />
+      
       <Route path="/resources" element={<Resources />} />
       <Route path="/resources/trusted-partners" element={<TrustedPartners />} />
       <Route path="/resources/faq" element={<FAQ />} />

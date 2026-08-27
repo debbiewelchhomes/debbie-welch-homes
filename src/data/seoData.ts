@@ -90,6 +90,10 @@ export const pageSEO = {
     title: "Property Listings | Debbie Welch Homes",
     description: "Browse Snohomish County property listings including Lake Stevens, Everett, Marysville, and surrounding areas."
   },
+  pastSales: {
+    title: "Past Sales in Snohomish County | Debbie Welch",
+    description: "A selected sample of recent buyer and seller representation across Snohomish County, including Marysville, Everett, and Lake Stevens."
+  },
   blog: {
     title: "Real Estate Blog | Debbie Welch Homes",
     description: "Insights, guides, and market updates for Snohomish County home buyers, sellers, and downsizers."

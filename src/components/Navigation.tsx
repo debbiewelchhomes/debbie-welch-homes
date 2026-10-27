@@ -140,7 +140,7 @@ const Navigation = () => {
                 Contact
               </Link>
 
-              <Button size="sm" className="bg-secondary text-white hover:bg-secondary/90" asChild>
+              <Button size="sm" className="shrink-0 whitespace-nowrap bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
                 <a href="https://cal.com/debbie.welch.homes" target="_blank" rel="noopener noreferrer">
                   Book a Free Consult
                 </a>
@@ -152,7 +152,7 @@ const Navigation = () => {
           <Link to="/" className="xl:hidden absolute left-0" onClick={() => setMobileMenuOpen(false)}>
             <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-11 w-auto" />
           </Link>
-          <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="xl:hidden absolute right-0" aria-label="Toggle menu" aria-expanded={mobileMenuOpen} aria-controls="mobile-navigation">
+          <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="xl:hidden absolute right-0 [&_svg]:size-6" aria-label="Toggle menu" aria-expanded={mobileMenuOpen} aria-controls="mobile-navigation">
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>

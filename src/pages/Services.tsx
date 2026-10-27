@@ -31,7 +31,7 @@ const Services = () => {
           <div
             className="absolute inset-0 parallax-section"
             style={{
-              backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(${heroImage})`,
+              backgroundImage: `linear-gradient(rgba(225, 223, 220, 0.35), rgba(225, 223, 220, 0.35)), url(${heroImage})`,
             }}
             role="img"
             aria-label="Debbie Welch real estate services in Snohomish County"

@@ -352,7 +352,24 @@ All colors MUST be HSL.
       padding: 2.5rem;
     }
   }
+
+  /* Welcome-section panel: same surface treatment as the service-choice cards. */
+  .hero-panel {
+    background: hsl(var(--card) / 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid hsl(var(--border) / 0.7);
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px hsl(var(--primary) / 0.06);
+    padding: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .hero-panel {
+      padding: 2.5rem;
+    }
+  }
 }
+
 
 /* Soft dark scrim sitting only behind the hero letters, so the photo itself stays clear. */
 .hero-text-scrim {

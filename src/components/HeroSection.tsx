@@ -25,7 +25,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="w-full max-w-3xl"
         >
-          <div className="text-backdrop text-center">
+          <div className="hero-panel text-center">
             <h1 className="font-heading mb-4 text-primary">
               <span className="eyebrow">
                 Welcome home...
@@ -41,9 +41,15 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Button size="lg" asChild>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground"
+                asChild
+              >
                 <Link to="/services">See How I Help</Link>
               </Button>
+
             </div>
 
             <p className="mt-6 text-sm text-primary/80">

@@ -128,15 +128,6 @@ All colors MUST be HSL.
     color: hsl(var(--foreground));
   }
 
-  .script-dots {
-    display: inline-block;
-    margin-left: -0.12em;
-    letter-spacing: 0;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 0.65em;
-    line-height: inherit;
-  }
-
   /* Preserve black dark text without changing the brand fill token. */
   .text-primary, .text-foreground { color: hsl(var(--foreground)); }
 

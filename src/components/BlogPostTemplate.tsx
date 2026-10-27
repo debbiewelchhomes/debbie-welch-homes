@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -13,7 +13,6 @@ interface BlogPostTemplateProps {
 }
 
 const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
-  const navigate = useNavigate();
   const publicationDate = blogPublicationDate(post.date);
 
   // Convert markdown-style bold to HTML
@@ -92,11 +91,10 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
             {/* Back Button */}
             <Button
               variant="ghost"
-              onClick={() => navigate("/blog")}
+              asChild
               className="mb-8 text-muted-foreground hover:text-foreground"
             >
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to Blog
+              <Link to="/blog"><ArrowLeft className="h-4 w-4 mr-2" />Back to Blog</Link>
             </Button>
 
             {/* Header */}
@@ -130,11 +128,10 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
             <div className="mt-12 pt-8 border-t border-border">
               <Button
                 variant="outline"
-                onClick={() => navigate("/blog")}
-                className="border-secondary text-secondary hover:bg-secondary hover:text-white"
+                asChild
+                className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground"
               >
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Back to All Articles
+                <Link to="/blog"><ArrowLeft className="h-4 w-4 mr-2" />Back to All Articles</Link>
               </Button>
             </div>
           </article>

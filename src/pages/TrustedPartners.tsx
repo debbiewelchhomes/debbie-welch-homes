@@ -63,7 +63,7 @@ const TrustedPartners = () => (
                     <h2 className="font-heading h-card text-primary mb-3">{partner.name}</h2>
                     <p className="copy text-foreground mb-5">{partner.description}</p>
                     <span className="inline-flex items-center gap-2 text-sm font-medium text-secondary">
-                      Visit Their Website <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                      {partner.href.includes("instagram.com/") ? "View Their Instagram" : "Visit Their Website"} <ExternalLink className="h-4 w-4" aria-hidden="true" />
                     </span>
                   </CardContent>
                 </Card>

@@ -146,9 +146,9 @@ const Relocation = () => {
         "Absolutely. I am a Military Relocation Professional (MRP) and a longtime Navy spouse. My husband is retired from the Navy, so I understand the timelines, uncertainty, and stress that can come with a PCS. I live just a couple of miles from Naval Station Everett and know the surrounding communities well.",
     },
     {
-      question: "What does the MRP designation mean?",
+      question: "What does the MRP certification mean?",
       answer:
-        "The Military Relocation Professional designation is specialized real estate training focused on the needs of military servicemembers and their families. It supports my practical experience as a Navy spouse and helps me coordinate the real estate side of PCS moves, VA-financed purchases, and relocations.",
+        "The Military Relocation Professional certification is specialized real estate training focused on the needs of military servicemembers and their families. It supports my practical experience as a Navy spouse and helps me coordinate the real estate side of PCS moves, VA-financed purchases, and relocations.",
     },
   ];
 
@@ -325,7 +325,7 @@ const Relocation = () => {
                 <p>
                   Todd served in the Navy. I know what PCS season looks like, including orders with six weeks notice and decisions
                   before you've had time to think, pressure to get it right when you can't just look at a few more
-                  houses this weekend. I hold the MRP designation and have done this enough times to make it work even
+                  houses this weekend. I hold the MRP certification and have done this enough times to make it work even
                   when the timeline is tight.
                 </p>
                 <p>

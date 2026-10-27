@@ -108,7 +108,9 @@ const Blog = () => {
                     </h2>
                     <p className="text-foreground leading-relaxed mb-6">{post.excerpt}</p>
                     <Button asChild>
-                      <Link to={`/blog/${post.slug}`}>Read More</Link>
+                      <Link to={`/blog/${post.slug}`}>
+                        Read More<span className="sr-only">: {post.title}</span>
+                      </Link>
                     </Button>
                   </div>
                 </article>

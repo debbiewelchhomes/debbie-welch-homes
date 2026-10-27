@@ -197,7 +197,7 @@ const Buying = () => {
               className="max-w-4xl mx-auto text-backdrop"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Finding your place…
+                Finding your place...
               </p>
 
               <h1 className="font-heading h-section text-primary mb-6">
@@ -225,7 +225,7 @@ const Buying = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Before the search…
+                Before the search...
               </p>
               <h2 className="font-heading h-section text-primary mb-8">The House Is Only Part of It</h2>
 
@@ -255,7 +255,7 @@ const Buying = () => {
               className="text-center mb-16"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Step by step…
+                Step by step...
               </p>
               <h2 className="font-heading h-section text-primary">
                 What the Process Actually Looks Like
@@ -300,7 +300,7 @@ const Buying = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                No rush, no pressure…
+                No rush, no pressure...
               </p>
 
               <h2 className="font-heading h-section text-primary mb-8">
@@ -334,7 +334,7 @@ const Buying = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Start here…
+                Start here...
               </p>
 
               <h2 className="font-heading h-section text-primary mb-8">
@@ -372,7 +372,7 @@ const Buying = () => {
             >
               <div className="text-center mb-12">
                 <p className="eyebrow mb-4" aria-hidden="true">
-                  Let's get started…
+                  Let's get started...
                 </p>
                 <h2 className="font-heading h-section text-primary mb-6">
                   Set Up a No-Obligation Property Search
@@ -469,7 +469,7 @@ const Buying = () => {
             >
               <div className="text-center mb-12">
                 <p className="eyebrow mb-4" aria-hidden="true">
-                  Things people ask…
+                  Things people ask...
                 </p>
                 <h2 className="font-heading h-section text-primary">
                   Buying Questions I Hear All the Time
@@ -513,7 +513,7 @@ const Buying = () => {
             >
               <div className="text-center mb-12">
                 <p className="eyebrow mb-4" aria-hidden="true">
-                  From buyer clients…
+                  From buyer clients...
                 </p>
                 <h2 className="font-heading h-section text-primary">
                   What My Buyer Clients Have to Say

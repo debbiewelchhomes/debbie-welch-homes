@@ -285,8 +285,9 @@ const EverettMukilteo = () => {
                   <a href="https://www.census.gov/quickfacts/everettcitywashington" target="_blank" rel="noopener noreferrer" className="mt-2 inline-block text-sm text-secondary underline underline-offset-4 hover:text-primary">Source: U.S. Census Bureau</a>
                 </div>
                 <div className="bg-background p-6 rounded-lg">
-                  <p className="font-heading text-2xl font-bold text-secondary mb-1">~$565K</p>
-                  <p className="text-foreground text-sm">Everett median home price (varies widely by neighborhood)</p>
+                  <p className="font-heading text-2xl font-bold text-secondary mb-1">$600K</p>
+                  <p className="text-foreground text-sm">Everett citywide median sold price, September 2026 (varies widely by neighborhood)</p>
+                  <a href="https://www.realtor.com/local/market/washington/snohomish-county/everett" target="_blank" rel="noopener noreferrer" className="mt-2 inline-block text-sm text-secondary underline underline-offset-4 hover:text-primary">Source: Realtor.com</a>
                 </div>
                 <div className="bg-background p-6 rounded-lg">
                   <p className="font-heading text-2xl font-bold text-secondary mb-1">3,100</p>

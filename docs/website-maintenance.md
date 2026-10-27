@@ -58,18 +58,14 @@ The two existing area snapshots have different numbers, measures, and contexts. 
 
 ## Quarterly market review, without guessing
 
-### October 27, 2026: authorized Realtor.com update, verification blocked
+### October 27, 2026: Realtor.com update, verified by Debbie
 
-Debbie authorized replacement snapshots from these exact original publisher pages:
+| City | Published figure | Reporting period | Exact source | Verified |
+| --- | --- | --- | --- | --- |
+| Lake Stevens | $675,000 citywide median **sold** price | September 2026 (Key indicators) | https://www.realtor.com/local/market/washington/snohomish-county/lake-stevens | October 27, 2026, by Debbie Welch directly on the publisher page |
+| Everett | $600,000 citywide median **sold** price | September 2026 (Key indicators) | https://www.realtor.com/local/market/washington/snohomish-county/everett | October 27, 2026, by Debbie Welch directly on the publisher page |
 
-| City | Requested value, not independently verified | Exact source |
-| --- | --- | --- |
-| Lake Stevens | $675,000 citywide median **sold** price, September 2026 | https://www.realtor.com/local/market/washington/snohomish-county/lake-stevens |
-| Everett | $600,000 citywide median **sold** price, September 2026 | https://www.realtor.com/local/market/washington/snohomish-county/everett |
-
-Direct retrieval returned HTTP 429 for both URLs. Browser retrieval returned an HTTP 200 regional-unavailability page, not the market statistics. Independent research also could not retrieve the requested data. Consequently, **neither website price nor the Lake Stevens range was updated**. The requested values above are an approval record, not verified statistics. The existing figures remain unresolved as described earlier in this guide.
-
-On successful verification, label each figure with Realtor.com, the citywide geography, median sold-price metric and September 2026 reporting period; add the exact city's source link. Do not call these current listing prices or compare them directly with the old August figures, whose methodologies are unconfirmed. Do not calculate trends. Replace the unsourced Lake Stevens range with neutral prose rather than another numerical metric, preserving unrelated local and Quick Facts entries.
+Automated retrieval was blocked (HTTP 429 / regional-unavailability page), so these rely on Debbie's direct verification. Both Quick Facts cards on the Lake Stevens and Everett/Mukilteo pages now show the figure, metric, citywide geography, period and a Realtor.com source link. The unsourced Lake Stevens "$680-715K" range was replaced with neutral prose and no number. No comparison or trend with earlier figures is stated, because the earlier methodologies are unconfirmed. Other facts on those pages were not changed.
 
 Review these dated snapshots **quarterly**, verifying the original publisher's reporting period, metric, geography and value each time. Record the source URL and actual verification date separately from the reporting period. Keep the last verified reporting period visible until a replacement is verified; never roll dates forward automatically. A blocked source leaves the update pending, not verified.
 

@@ -138,8 +138,8 @@ const LakeStevens = () => {
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>More house for the money.</strong> Typical prices often fall around $680-715K, based on
-                        an August 2026 snapshot, with established neighborhoods and room to spread out.
+                        <strong>More house for the money.</strong> Prices vary by neighborhood, home size and lot,
+                        with established neighborhoods and room to spread out.
                       </span>
                     </li>
                     <li className="flex gap-2">
@@ -214,8 +214,9 @@ const LakeStevens = () => {
                   <p className="text-foreground text-sm">District information and boundary tools available</p>
                 </div>
                 <div className="bg-warm-bg p-6 rounded-lg">
-                  <p className="font-heading text-2xl font-bold text-secondary mb-1">~$695K</p>
-                  <p className="text-foreground text-sm">Median home price</p>
+                  <p className="font-heading text-2xl font-bold text-secondary mb-1">$675K</p>
+                  <p className="text-foreground text-sm">Citywide median sold price, September 2026</p>
+                  <a href="https://www.realtor.com/local/market/washington/snohomish-county/lake-stevens" target="_blank" rel="noopener noreferrer" className="mt-2 inline-block text-sm text-secondary underline underline-offset-4 hover:text-primary">Source: Realtor.com</a>
                 </div>
                 <div className="bg-warm-bg p-6 rounded-lg">
                   <p className="font-heading text-2xl font-bold text-secondary mb-1">4 parks</p>

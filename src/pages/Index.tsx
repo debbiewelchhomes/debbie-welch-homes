@@ -24,7 +24,7 @@ const Index = () => {
       />
       <Navigation />
 
-      <main>
+      <main className="home-font-preview">
         <HeroSection />
         <ServicesSection />
         <BufferSection />

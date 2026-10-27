@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Homepage-only font preview; Hurricane remains the site-wide script face. */
+@font-face {
+  font-family: 'Black Stones';
+  src: url('/__l5e/assets-v1/40e4840c-237c-47b1-9895-f7d915cbad98/black-stones.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
@@ -110,6 +119,11 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
+  .home-font-preview :is(.font-script, .button-script, .eyebrow) {
+    font-family: 'Black Stones', 'Hurricane', cursive;
+    font-weight: 400;
+  }
+
   .font-script {
     font-family: 'Hurricane', cursive;
     font-size: 1.8em;

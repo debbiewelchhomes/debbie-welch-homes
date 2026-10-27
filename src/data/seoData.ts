@@ -56,11 +56,11 @@ export const buildFaqSchema = (faqs: { question: string; answer: string }[]) => 
 export const pageSEO = {
   home: {
     title: "Debbie Welch Homes | Snohomish County Real Estate",
-    description: "Snohomish County real estate broker helping buyers, sellers, downsizers, and relocation clients with calm, organized guidance for your next move."
+    description: "Snohomish County real estate broker helping buyers, sellers, downsizers, and relocation clients with clear, organized guidance for your next move."
   },
   about: {
     title: "About Debbie Welch | Snohomish County Broker",
-    description: "Meet Debbie Welch, a full-service Snohomish County broker helping buyers, sellers, downsizers, and military families with calm guidance."
+    description: "Meet Debbie Welch, a full-service Snohomish County broker helping buyers, sellers, downsizers, and military families with clear, practical guidance."
   },
   contact: {
     title: "Contact Debbie Welch | Snohomish County Realtor",
@@ -72,11 +72,11 @@ export const pageSEO = {
   },
   buying: {
     title: "Buying a Home in Snohomish County | Debbie Welch",
-    description: "Calm, step-by-step guidance for home buyers in Snohomish County, from first-time buyers to VA loan and relocation clients."
+    description: "Clear, step-by-step guidance for home buyers in Snohomish County, from first-time buyers to VA loan and relocation clients."
   },
   selling: {
     title: "Selling Your Home in Snohomish County | Debbie Welch",
-    description: "Strategic home selling in Snohomish County with clear planning, honest pricing, and calm support through closing."
+    description: "Strategic home selling in Snohomish County with clear planning, honest pricing, and steady support through closing."
   },
   relocation: {
     title: "Relocation & PCS to Snohomish County | Debbie Welch",

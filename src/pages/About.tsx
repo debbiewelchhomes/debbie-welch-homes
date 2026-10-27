@@ -310,21 +310,21 @@ const About = () => {
       {/* Let's Talk + For Fellow Agents - side by side */}
       <section className="section bg-background border-y border-border">
         <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-10 md:gap-0 items-start">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-0 items-stretch">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
-              className="md:pr-10"
+              className="md:pr-10 flex h-full flex-col"
             >
 
               <p className="eyebrow eyebrow-col mb-4">Let's talk...</p>
               <h2 className="font-heading h-section-sm text-primary mb-5">
                 Ready to Figure Out Your Next Move?
               </h2>
-              <p className="copy-lead text-foreground mb-7">
+              <p className="copy-lead text-foreground mb-7 flex-1">
                 Whether you're thinking about selling, buying, downsizing, or relocating to Snohomish County, we can
                 start with a simple conversation. No perfect plan required. Just tell me where you are and what's on your
                 mind, and we'll go from there.
@@ -340,19 +340,19 @@ const About = () => {
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
               transition={{ duration: 0.6, delay: 0.15 }}
-              className="md:border-l md:border-border md:pl-10"
+              className="md:border-l md:border-border md:pl-10 flex h-full flex-col"
             >
               <p className="eyebrow eyebrow-col mb-4">For fellow agents...</p>
               <h2 className="font-heading h-section-sm text-primary mb-5">
                 Considering a Career at eXp Realty?
               </h2>
-              <p className="copy-lead text-foreground mb-5">
+              <p className="copy-lead text-foreground mb-7 flex-1">
                 If you are an agent who is curious about eXp Realty, I am happy to share my experience, answer practical
                 questions, and help you decide whether it may fit your business.
               </p>
-              <Link to="/about/exp-realty" className="text-secondary font-medium hover:underline">
-                Learn About Working With Me at eXp Realty
-              </Link>
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>
+                <Link to="/about/exp-realty">Learn About Working With Me at eXp Realty</Link>
+              </Button>
             </motion.div>
           </div>
         </div>

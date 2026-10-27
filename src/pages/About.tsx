@@ -307,47 +307,55 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-10 bg-background border-y border-border">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="eyebrow mb-3">For fellow agents...</p>
-            <h2 className="font-heading h-section text-primary mb-4">Considering a Career at eXp Realty?</h2>
-            <p className="text-foreground leading-relaxed mb-4">
-              If you are an agent who is curious about eXp Realty, I am happy to share my experience, answer practical questions, and help you decide whether it may fit your business.
-            </p>
-            <Link to="/about/exp-realty" className="text-secondary font-medium hover:underline">
-              Learn About Working With Me at eXp Realty
-            </Link>
+      {/* Let's Talk + For Fellow Agents - side by side */}
+      <section className="section bg-background border-y border-border">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-start">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeInUp}
+              transition={{ duration: 0.6 }}
+            >
+              <p className="eyebrow mb-4">Let's talk...</p>
+              <h2 className="font-heading h-section-sm text-primary mb-5">
+                Ready to Figure Out Your Next Move?
+              </h2>
+              <p className="copy-lead text-foreground mb-7">
+                Whether you're thinking about selling, buying, downsizing, or relocating to Snohomish County, we can
+                start with a simple conversation. No perfect plan required. Just tell me where you are and what's on your
+                mind, and we'll go from there.
+              </p>
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>
+                <Link to="/contact">Let's Have That Conversation</Link>
+              </Button>
+            </motion.div>
+
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeInUp}
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="md:border-l md:border-border md:pl-14"
+            >
+              <p className="eyebrow mb-4">For fellow agents...</p>
+              <h2 className="font-heading h-section-sm text-primary mb-5">
+                Considering a Career at eXp Realty?
+              </h2>
+              <p className="copy-lead text-foreground mb-5">
+                If you are an agent who is curious about eXp Realty, I am happy to share my experience, answer practical
+                questions, and help you decide whether it may fit your business.
+              </p>
+              <Link to="/about/exp-realty" className="text-secondary font-medium hover:underline">
+                Learn About Working With Me at eXp Realty
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section bg-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <p className="eyebrow mb-4">Let's talk...</p>
-            <h2 className="font-heading h-section text-primary mb-6">
-              Ready to Figure Out Your Next Move?
-            </h2>
-            <p className="text-foreground text-lg leading-relaxed mb-8">
-              Whether you're thinking about selling, buying, downsizing, or relocating to Snohomish County, we can
-              start with a simple conversation. No perfect plan required. Just tell me where you are and what's on your
-              mind, and we'll go from there.
-            </p>
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>
-              <Link to="/contact">Let's Have That Conversation</Link>
-            </Button>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Client Testimonials - shared carousel component */}
       <TestimonialSection />

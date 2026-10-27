@@ -1,8 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Pause, Play } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import Autoplay from "embla-carousel-autoplay";
 import testimonialBg from "@/assets/testimonial-bg.jpg";
 
@@ -70,6 +72,8 @@ const testimonials = [
 ];
 
 const TestimonialSection = () => {
+  const reducedMotion = useReducedMotion();
+  const [rotationPaused, setRotationPaused] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
@@ -79,8 +83,14 @@ const TestimonialSection = () => {
     Autoplay({
       delay: 7000,
       stopOnInteraction: true,
+      stopOnFocusIn: true,
+      stopOnMouseEnter: true,
     }),
   );
+
+  useEffect(() => {
+    if (reducedMotion || rotationPaused) autoplayPlugin.current.stop();
+  }, [reducedMotion, rotationPaused]);
 
   return (
     <section
@@ -101,7 +111,7 @@ const TestimonialSection = () => {
           className="max-w-5xl mx-auto"
         >
           <Card className="bg-white/95 backdrop-blur-sm border-border/70 shadow-md">
-            <CardContent className="p-8 md:p-12">
+            <CardContent className="p-4 sm:p-8 md:p-12">
               <div className="text-center mb-8">
                 <p className="eyebrow mb-4" aria-hidden="true">
                   In their own words…
@@ -117,13 +127,14 @@ const TestimonialSection = () => {
 
               <Carousel
                 opts={{ align: "center", loop: true }}
-                plugins={[autoplayPlugin.current]}
+                plugins={reducedMotion ? [] : [autoplayPlugin.current]}
+                aria-label="Client testimonials"
                 className="w-full max-w-4xl mx-auto"
               >
                 <CarouselContent>
                   {testimonials.map((testimonial, index) => (
                     <CarouselItem key={index}>
-                      <div className="p-6 md:p-8">
+                      <div className="px-2 py-6 sm:p-6 md:p-8">
                         <blockquote className="copy measure mx-auto text-foreground mb-6 italic">
                           "{testimonial.quote}"
                         </blockquote>
@@ -132,8 +143,19 @@ const TestimonialSection = () => {
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious className="left-0 md:-left-12" aria-label="Previous testimonial" />
-                <CarouselNext className="right-0 md:-right-12" aria-label="Next testimonial" />
+                <div className="mt-4 flex items-center justify-center gap-3">
+                  <CarouselPrevious className="static h-11 w-11 translate-y-0" aria-label="Previous testimonial" />
+                  {!reducedMotion && (
+                    <Button variant="outline" size="icon" className="h-11 w-11 rounded-full" aria-label={rotationPaused ? "Resume testimonial rotation" : "Pause testimonial rotation"} title={rotationPaused ? "Resume testimonial rotation" : "Pause testimonial rotation"} onClick={() => {
+                      if (rotationPaused) autoplayPlugin.current.play();
+                      else autoplayPlugin.current.stop();
+                      setRotationPaused(!rotationPaused);
+                    }}>
+                      {rotationPaused ? <Play aria-hidden="true" /> : <Pause aria-hidden="true" />}
+                    </Button>
+                  )}
+                  <CarouselNext className="static h-11 w-11 translate-y-0" aria-label="Next testimonial" />
+                </div>
               </Carousel>
             </CardContent>
           </Card>

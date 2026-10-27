@@ -4,12 +4,13 @@ import SEO from "@/components/SEO";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowRight, BarChart3, BookOpen, Calculator, ExternalLink, HelpCircle, Newspaper } from "lucide-react";
+import { resourceLinks } from "@/config/resourceLinks";
 
 const guideLinks = [
   {
     title: "Home Buyer Guide",
     description: "A practical overview of the buying process, from preparation and financing through closing.",
-    href: "https://debbiewelchhomes.myflodesk.com/home-buyer-guide",
+    href: resourceLinks.buyerGuide,
   },
   {
     title: "The Ultimate Seller Playbook",
@@ -78,7 +79,7 @@ const Resources = () => {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="grid md:grid-cols-2 gap-6">
               <a
-                href="https://debbiewelch.exprealty.com/pages/market-reports"
+                href={resourceLinks.marketReports}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group"

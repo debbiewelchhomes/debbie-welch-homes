@@ -14,6 +14,7 @@ import { useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { sendInquiry } from "@/lib/inquiry";
 import InquiryFallback from "@/components/InquiryFallback";
+import { resourceLinks } from "@/config/resourceLinks";
 
 const Buying = () => {
   const introRef = useRef(null);
@@ -348,7 +349,7 @@ const Buying = () => {
 
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6" asChild>
                 <a
-                  href="https://debbiewelchhomes.myflodesk.com/home-buyer-guide"
+                  href={resourceLinks.buyerGuide}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

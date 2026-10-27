@@ -7,6 +7,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/area-hero-everett-mukilteo.webp";
+import { resourceLinks } from "@/config/resourceLinks";
 
 const EverettMukilteo = () => {
   const ref = useRef(null);
@@ -300,7 +301,7 @@ const EverettMukilteo = () => {
                 Housing snapshot last reviewed August 2026. Prices and inventory change by neighborhood and property.
                 {" "}
                 <a
-                  href="https://debbiewelch.exprealty.com/pages/market-reports"
+                  href={resourceLinks.marketReports}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-secondary underline underline-offset-4 hover:text-primary"

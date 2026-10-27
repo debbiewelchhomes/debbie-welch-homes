@@ -11,6 +11,18 @@ This guide describes the current repository, not a new content-management system
 
 ## Where information currently lives
 
+### October 27, 2026 follow-up
+
+- The homepage's existing four service choices now follow the opening photo. No pathway cards or destinations were added.
+- Each service card and homepage About column reveals independently as it enters the screen. Vertical fades avoid the tablet overflow previously caused by horizontal entrance transforms. Photos are unchanged.
+- Areas and Resources menu triggers now have the same minimum touch-target size as the Services trigger.
+- Personalized-report offers now ask visitors to include their area/property type in the message; the same contact destination and form are retained.
+- Everett's population card now labels 113,567 as a July 1, 2025 estimate and cites Census QuickFacts. The research also found that value in public Census-derived Vintage 2025 datasets; direct Census retrieval in this sandbox was blocked, so independent source retrieval remains a limitation.
+- Everett's event-center forecast now reflects the City's [project timeline](https://www.everettwa.gov/3289/Project-timeline): construction expected in late 2026, not early fall. It remains a forecast, not a claim that construction started. The existing city-project link is unchanged.
+- Article display dates and publication days are unchanged. `src/lib/blogDate.ts` supplies valid ISO calendar dates to the existing article schema and time element; `src/lib/blogDate.test.js` covers date preservation and invalid input.
+
+**Unresolved, not silently updated:** The original Lake Stevens $680-715K / ~$695K and Everett ~$565K market sources and measurement periods remain unconfirmed. The exact 3,100-sailor count was not corroborated by current Navy information. The one-business-day response commitment and personalized-report fulfillment require Debbie's operational confirmation. Historical 2025 article dates alone do not justify rewriting their advice. No email was submitted and no backend configuration was changed.
+
 | Information | Current home | Maintenance note |
 | --- | --- | --- |
 | Lake Stevens housing figures | `src/pages/areas/LakeStevens.tsx`, pros/cons and Quick Facts | Existing copy says typical prices of $680-715K based on an August 2026 snapshot. Quick Facts separately shows ~$695K as median home price. No named source or source URL accompanies those numbers. Do not treat the two measures as interchangeable. |

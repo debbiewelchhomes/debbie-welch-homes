@@ -310,7 +310,7 @@ const About = () => {
       {/* Let's Talk + For Fellow Agents - side by side */}
       <section className="section bg-background border-y border-border">
         <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-start">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-0 items-start">
             <motion.div
               initial="hidden"
               whileInView="visible"

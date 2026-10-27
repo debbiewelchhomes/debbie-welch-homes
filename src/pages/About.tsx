@@ -34,7 +34,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
             <motion.div initial="hidden" animate="visible" variants={fadeInUp} transition={{ duration: 0.6 }}>
-              <p className="eyebrow mb-4">Hey there…</p>
+              <p className="eyebrow mb-4">Hey there...</p>
               <h1 className="font-heading h-section font-bold text-primary mb-6">
                 I'm Debbie. Snohomish County is my backyard, not just my market.
               </h1>
@@ -95,7 +95,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="order-1 md:order-2"
             >
-              <p className="eyebrow mb-4">What to expect…</p>
+              <p className="eyebrow mb-4">What to expect...</p>
               <h2 className="font-heading h-section text-primary mb-6">When We Work Together</h2>
               <p className="text-foreground text-lg leading-relaxed mb-6">
                 I'm a details person and a big-picture thinker. That means I'm watching the market and your stress level
@@ -149,7 +149,7 @@ const About = () => {
             variants={fadeInUp}
             transition={{ duration: 0.6 }}
           >
-            <p className="eyebrow mb-4 text-center">A little backstory…</p>
+            <p className="eyebrow mb-4 text-center">A little backstory...</p>
             <h2 className="font-heading h-section text-primary mb-8 text-center">
               Thirty Years Reading the Fine Print
             </h2>
@@ -294,7 +294,7 @@ const About = () => {
             variants={fadeInUp}
             transition={{ duration: 0.6 }}
           >
-            <p className="eyebrow mb-4">The people behind a smooth move…</p>
+            <p className="eyebrow mb-4">The people behind a smooth move...</p>
             <h2 className="font-heading h-section text-primary mb-6">My Trusted Local Partners</h2>
             <p className="copy-lead text-foreground max-w-3xl mx-auto mb-8">
               I may be your main point of contact, but every well-run transaction depends on skilled people behind the scenes. Meet the local professionals I trust to help keep financing, inspections, staging, photography, and the details moving smoothly.
@@ -309,7 +309,7 @@ const About = () => {
       <section className="py-10 bg-background border-y border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="eyebrow mb-3">For fellow agents…</p>
+            <p className="eyebrow mb-3">For fellow agents...</p>
             <h2 className="font-heading h-section text-primary mb-4">Considering a Career at eXp Realty?</h2>
             <p className="text-foreground leading-relaxed mb-4">
               If you are an agent who is curious about eXp Realty, I am happy to share my experience, answer practical questions, and help you decide whether it may fit your business.

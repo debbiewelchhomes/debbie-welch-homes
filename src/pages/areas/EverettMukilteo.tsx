@@ -48,7 +48,7 @@ const EverettMukilteo = () => {
                 Everett & Mukilteo
               </p>
               <p
-                className="font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+                className="photo-text-shadow font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
               >
                 Snohomish County's largest city is reinventing its waterfront and downtown. Mukilteo has always
                 been one of the most beautiful spots on Puget Sound.

@@ -47,7 +47,7 @@ const Marysville = () => {
                 Marysville
               </p>
               <p
-                className="font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+                className="photo-text-shadow font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
               >
                 My hometown is Snohomish County's strawberry city, still growing and still genuinely affordable for the
                 right buyer.

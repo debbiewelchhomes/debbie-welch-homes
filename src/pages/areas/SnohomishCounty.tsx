@@ -82,7 +82,7 @@ const SnohomishCounty = () => {
               Snohomish County
             </p>
             <p
-              className="font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+              className="photo-text-shadow font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
             >
               Start here if you are not sure which area fits, then work outward to the guides.
             </p>

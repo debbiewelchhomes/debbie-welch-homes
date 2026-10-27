@@ -5,7 +5,7 @@ This guide describes the current repository, not a new content-management system
 ## What this maintenance pass completed
 
 - The repeated buyer-guide and live market-report URLs now have one home: `src/config/resourceLinks.ts`. Navigation, the Resource Library, Buying, and Everett/Mukilteo use the same existing destinations. Link wording, new-tab behavior, and safety attributes are unchanged.
-- A small destination test lives at `src/config/resourceLinks.test.ts`.
+- A small destination test lives at `src/config/resourceLinks.test.js` and runs with the already available Bun tool, without adding dependencies.
 - No market numbers, dates, claims, images, FAQs, partner records, forms, or metadata were updated. No new public placeholders were added.
 - Past Sales remains a private, unlinked draft in `src/pages/PastSales.tsx`. It is absent from the router, public menus, and sitemap generation. The retained `pageSEO.pastSales` entry in `src/data/seoData.ts` alone does not create a public page.
 
@@ -73,7 +73,7 @@ Review the private preview on desktop and phone. Open each affected menu and but
 No dependency/service installation is needed for this maintenance pass. Use the installed project tools and existing scripts in a development or CI environment:
 
 ```sh
-bun test src/config/resourceLinks.test.ts
+bun test src/config/resourceLinks.test.js
 bun run lint
 bunx tsc --noEmit -p tsconfig.app.json
 bunx tsc --noEmit -p tsconfig.node.json

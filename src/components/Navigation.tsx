@@ -156,7 +156,7 @@ const Navigation = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div id="mobile-navigation" className="lg:hidden max-h-[calc(100dvh-6rem-1px)] overflow-y-auto overscroll-contain py-4 pb-24 border-t border-border [&_a]:flex [&_a]:min-h-11 [&_a]:items-center" onKeyDown={(event) => { if (event.key === "Escape") { setMobileMenuOpen(false); mobileMenuButton.current?.focus(); } }}>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-5">
               <Link
                 to="/"
                 onClick={() => setMobileMenuOpen(false)}

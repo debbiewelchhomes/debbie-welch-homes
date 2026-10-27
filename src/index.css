@@ -224,6 +224,23 @@ All colors MUST be HSL.
     text-wrap: balance;
   }
 
+  /* Small icon riding the first line of a large heading (.h-section). Because
+     the shared heading scale grows with the viewport, the nudge that keeps the
+     icon optically centered on that first line grows with it too. */
+  .icon-heading-lg {
+    flex: none;
+    margin-top: 0;
+  }
+  @media (min-width: 768px) {
+    .icon-heading-lg { margin-top: 0.125rem; }
+  }
+  @media (min-width: 1024px) {
+    .icon-heading-lg { margin-top: 0.25rem; }
+  }
+  @media (min-width: 1440px) {
+    .icon-heading-lg { margin-top: 0.375rem; }
+  }
+
   .h-card {
     font-size: 1.25rem;
     line-height: 1.25;

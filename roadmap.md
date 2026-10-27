@@ -1,6 +1,6 @@
 # Approved follow-up improvements
 
-- [ ] Verify Realtor.com September 2026 citywide median sold prices for Lake Stevens and Everett; blocked by HTTP 429 and regional-unavailability pages. No website prices or range changed; awaiting accessible publisher evidence.
+- [x] Verify Realtor.com September 2026 citywide median sold prices for Lake Stevens and Everett; publisher figures confirmed by Sam/ChatGPT web retrieval on October 27, 2026 and applied with labeled source links.
 - [x] Update the existing maintenance guide and preserve the full substantive review in repository documentation; deliver full findings with verification, revision and credit limitations.
 
 - [x] Review current content, all visitor journeys, SEO/accessibility, legal disclosures and primary-source claims after Debbie's edits.
@@ -28,3 +28,4 @@
 - [x] Widen the space between header items, make the dropdown arrow spacing uniform, restore "Search Homes" in the desktop header and phone menu, and trim the logo slightly so narrower laptops do not collide.
 - [x] Center the header links between the logo and the consult button at every width, remove the separator line before the button, and raise the header text one size; laptop item spacing eased so nothing collides.
 - [ ] Confirm original market sources/periods, exact Navy headcount and one-business-day/report-fulfillment commitments. Blocked on original sources and Debbie's operational confirmation; no substitute figures invented.
+- [ ] Add a non-military relocation box and a first-time buyer box to the homepage services section, which Debbie noted currently covers only buying, selling, downsizing and military PCS. Blocked on Debbie's wording and which destinations each box should point to.

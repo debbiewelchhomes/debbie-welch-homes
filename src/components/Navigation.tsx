@@ -56,9 +56,10 @@ const Navigation = () => {
             {/* Left Navigation Group */}
             <div className="flex items-center gap-4 xl:gap-6 2xl:gap-9 flex-1 justify-end pr-6 xl:pr-10 2xl:pr-14 whitespace-nowrap">
 
-              <Link to="/" className="text-foreground hover:text-secondary transition-colors">
+              <Link to="/" className="mr-3 xl:mr-5 text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
+
 
               {/* Services Dropdown */}
               <div className="relative group">
@@ -107,8 +108,9 @@ const Navigation = () => {
                 aria-label="Search Homes on the eXp Realty site"
                 className="text-foreground hover:text-secondary transition-colors"
               >
-                Search Homes
+                Search
               </a>
+
             </div>
 
             {/* Center Logo */}
@@ -141,7 +143,8 @@ const Navigation = () => {
                 About
               </Link>
 
-              <Button size="sm" className="shrink-0 whitespace-nowrap bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
+              <Button size="sm" className="shrink-0 whitespace-nowrap bg-secondary px-3.5 py-1.5 text-secondary-foreground hover:bg-secondary/90" asChild>
+
                 <a href="https://cal.com/debbie.welch.homes" target="_blank" rel="noopener noreferrer">
                   Book a Free Consult
                 </a>
@@ -211,8 +214,9 @@ const Navigation = () => {
                 aria-label="Search Homes on the eXp Realty site"
                 className="text-foreground hover:text-secondary transition-colors"
               >
-                Search Homes
+                Search
               </a>
+
 
               <div className="flex flex-col gap-2 pl-4">
                 <Link to="/resources" onClick={() => setMobileMenuOpen(false)} className="text-sm font-semibold text-muted-foreground hover:text-secondary transition-colors">

@@ -199,7 +199,7 @@ const Relocation = () => {
               className="max-w-4xl mx-auto text-backdrop"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Welcome to the PNW…
+                Welcome to the PNW...
               </p>
 
               <h1 className="font-heading h-section text-primary mb-6">
@@ -227,7 +227,7 @@ const Relocation = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Buying from a distance…
+                Buying from a distance...
               </p>
               <h2 className="font-heading h-section text-primary mb-8">
                 Buying From a Distance Is a Different Kind of Hard
@@ -252,7 +252,7 @@ const Relocation = () => {
 
         <section className="py-10 bg-warm-bg border-y border-border">
           <div className="container mx-auto px-4 max-w-4xl">
-            <p className="eyebrow mb-3">Military moves have their own moving parts…</p>
+            <p className="eyebrow mb-3">Military moves have their own moving parts...</p>
             <h2 className="font-heading h-card text-primary mb-4">Military Relocation Professional (MRP)</h2>
             <p className="copy text-foreground">My MRP credential reflects specialized training in the real estate needs of active-duty service members, Veterans, and military families. It supports the practical work around PCS timelines, VA financing, remote home searches, coordinating across time zones, and helping clients connect with professionals who understand military moves. As the wife of a retired Navy Veteran, I also understand that the logistics affect the whole family.</p>
           </div>
@@ -269,7 +269,7 @@ const Relocation = () => {
               className="text-center mb-16"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Before you pack a box…
+                Before you pack a box...
               </p>
               <h2 className="font-heading h-section text-primary">
                 What the Process Actually Looks Like
@@ -314,7 +314,7 @@ const Relocation = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Close to home…
+                Close to home...
               </p>
 
               <h2 className="font-heading h-section text-primary mb-8">
@@ -350,7 +350,7 @@ const Relocation = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Take it with you…
+                Take it with you...
               </p>
 
               <h2 className="font-heading h-section text-primary mb-8">
@@ -383,7 +383,7 @@ const Relocation = () => {
             >
               <div className="text-center mb-12">
                 <p className="eyebrow mb-4" aria-hidden="true">
-                  Let's connect…
+                  Let's connect...
                 </p>
                 <h2 className="font-heading h-section text-primary mb-6">
                   Request a Free Relocation Consult
@@ -491,7 +491,7 @@ const Relocation = () => {
             >
               <div className="text-center mb-12">
                 <p className="eyebrow mb-4" aria-hidden="true">
-                  Relocation questions…
+                  Relocation questions...
                 </p>
                 <h2 className="font-heading h-section text-primary">
                   Relocation Questions I Hear All the Time
@@ -535,7 +535,7 @@ const Relocation = () => {
             >
               <div className="text-center mb-12">
                 <p className="eyebrow mb-4" aria-hidden="true">
-                  From relocation clients…
+                  From relocation clients...
                 </p>
                 <h2 className="font-heading h-section text-primary">
                   What My Relocation Clients Have to Say

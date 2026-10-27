@@ -30,7 +30,7 @@ const HeroSection = () => {
               <span className="eyebrow">
                 Welcome home...
               </span>
-              <span className="h-display mx-auto block max-w-none text-secondary">Helping You Home in<br />Snohomish County</span>
+              <span className="h-display mx-auto block max-w-none text-secondary">Helping You Home<br />in Snohomish County</span>
             </h1>
 
 
@@ -54,8 +54,9 @@ const HeroSection = () => {
 
             <p className="mt-6 text-sm text-primary/80">
 
-              Serving Lake Stevens, Everett, Marysville, Arlington, Snohomish, Stanwood-Camano
-              Island, Bothell, Mill Creek, and Mukilteo.
+              Serving Lake Stevens, Everett, Marysville, Arlington, Snohomish,
+              <br />
+              Stanwood-Camano Island, Bothell, Mill Creek, and Mukilteo.
             </p>
           </div>
         </motion.div>

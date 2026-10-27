@@ -37,7 +37,7 @@ const StanwoodCamano = () => {
               Stanwood &amp; Camano Island
             </p>
             <p
-              className="photo-text-shadow font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+              className="photo-text-shadow font-heading text-xl md:text-2xl max-w-2xl mx-auto"
             >
               Where the Stillaguamish River meets the Salish Sea, and a bridge, not a ferry, carries you to the
               island.

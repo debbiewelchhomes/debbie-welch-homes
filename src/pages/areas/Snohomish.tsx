@@ -37,7 +37,7 @@ const Snohomish = () => {
               Snohomish
             </p>
             <p
-              className="photo-text-shadow font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+              className="photo-text-shadow font-heading text-xl md:text-2xl max-w-2xl mx-auto"
             >
               A river town founded in 1859, with a National Historic District downtown and farmland just past
               the edges.

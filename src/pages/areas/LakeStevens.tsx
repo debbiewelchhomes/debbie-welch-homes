@@ -47,7 +47,7 @@ const LakeStevens = () => {
                 Lake Stevens
               </p>
               <p
-                className="photo-text-shadow font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+                className="photo-text-shadow font-heading text-xl md:text-2xl max-w-2xl mx-auto"
               >
                 A real lake town with a real community, where you can weigh lake access, housing options, school
                 assignments, and commute routes against your own priorities.

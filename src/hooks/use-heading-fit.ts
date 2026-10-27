@@ -29,7 +29,7 @@ export function useHeadingFit() {
         const minSize = minimum * rootSize / 16;
         const available = parent.clientWidth - parseFloat(parentStyle.paddingLeft)
           - parseFloat(parentStyle.paddingRight);
-        const ownMaximum = parseFloat(style.maxWidth);
+        const ownMaximum = style.maxWidth.endsWith("px") ? parseFloat(style.maxWidth) : NaN;
         const width = Number.isFinite(ownMaximum) ? Math.min(available, ownMaximum) : available;
         if (width <= 0 || !Number.isFinite(maxSize) || !Number.isFinite(minSize)) return;
         context.font = `${style.fontWeight} ${maxSize}px ${style.fontFamily}`;

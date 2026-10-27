@@ -70,7 +70,7 @@ const EverettMukilteo = () => {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="eyebrow mb-4">Two very different places…</p>
+              <p className="eyebrow mb-4">Two very different places...</p>
               <h1 className="font-heading h-section text-primary mb-6">Everett & Mukilteo, WA</h1>
               <p className="text-foreground text-lg leading-relaxed">
                 These two communities sit side by side on the water but feel completely different. Everett is a real
@@ -94,7 +94,7 @@ const EverettMukilteo = () => {
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
             >
-              <p className="eyebrow mb-4">The honest breakdown…</p>
+              <p className="eyebrow mb-4">The honest breakdown...</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-8">Everett's Neighborhoods</h2>
 
               <div className="space-y-8 text-foreground text-base leading-relaxed">
@@ -354,7 +354,7 @@ const EverettMukilteo = () => {
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
             >
-              <p className="eyebrow mb-4">A town on the Sound…</p>
+              <p className="eyebrow mb-4">A town on the Sound...</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-8">Mukilteo</h2>
 
               <div className="text-foreground text-base leading-relaxed space-y-5">
@@ -394,7 +394,7 @@ const EverettMukilteo = () => {
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
             >
-              <p className="eyebrow mb-4">Ready to look…</p>
+              <p className="eyebrow mb-4">Ready to look...</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
                 Homes for Sale in Everett & Mukilteo
               </h2>

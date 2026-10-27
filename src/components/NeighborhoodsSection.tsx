@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -93,6 +94,16 @@ const NeighborhoodsSection = () => {
                 </Card>
               </Link>
             </motion.div>)}
+        </div>
+        <div className="mt-8 text-center">
+          <Button
+            variant="outline"
+            size="lg"
+            className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground"
+            asChild
+          >
+            <Link to="/areas/snohomish-county">Explore More Snohomish County Areas</Link>
+          </Button>
         </div>
       </div>
     </section>;

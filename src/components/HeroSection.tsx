@@ -30,8 +30,9 @@ const HeroSection = () => {
         >
           <div className="text-backdrop text-center">
             <p className="eyebrow" aria-hidden="true">
-              Welcome home…
+              Welcome home<span className="script-dots">…</span>
             </p>
+
 
             <h1 className="font-heading h-display mx-auto mb-4 max-w-[24ch] lg:max-w-[18ch] text-primary">
               Helping You Home in Snohomish County

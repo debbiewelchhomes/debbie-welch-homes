@@ -50,8 +50,9 @@ const ServicesSection = () => {
           className="mx-auto mb-12 max-w-2xl text-center"
         >
           <p className="eyebrow" aria-hidden="true">
-            When it's time…
+            When it's time<span className="script-dots">…</span>
           </p>
+
           <h2 className="font-heading h-section text-primary">Here's How We Can Work Together</h2>
         </motion.div>
 

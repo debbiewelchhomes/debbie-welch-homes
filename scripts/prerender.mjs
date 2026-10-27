@@ -3,8 +3,8 @@ import { dirname, join } from "node:path";
 
 const siteUrl = "https://debbie-welch-homes.lovable.app";
 const sitemap = await readFile("dist/sitemap.xml", "utf8");
-const routes = [...sitemap.matchAll(/<loc>https:\/\/debbiewelchhomes\.com([^<]*)<\/loc>/g)]
-  .map((match) => match[1] || "/");
+const routes = [...sitemap.matchAll(/<loc>([^<]*)<\/loc>/g)]
+  .map((match) => new URL(match[1]).pathname);
 const template = await readFile("dist/index.html", "utf8");
 const { render } = await import("../dist/server/entry-server.js");
 

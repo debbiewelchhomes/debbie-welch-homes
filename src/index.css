@@ -457,24 +457,15 @@ main > section:first-child:has(> img.absolute.inset-0)::after {
   pointer-events: none;
 }
 
-/* Area guide hero sentences over photography: the same letter-edge shadow the
-   featured-area names use, so no dark pad shows on pale-sky photos. */
+/* Area guide hero sentences over photography: dark text over the light warm
+   wash, matching the flat panels; no shadow needed over the pale backdrop. */
 .photo-text-shadow {
-  text-shadow:
-    0 0 1px rgb(12 14 20 / 0.85),
-    0 1px 2px rgb(12 14 20 / 0.75),
-    0 0 6px rgb(12 14 20 / 0.4),
-    0 2px 10px rgb(12 14 20 / 0.28);
+  color: hsl(var(--primary));
 }
 
-/* Area names over photography: a soft shadow hugging the letter edges only,
-   so no dark pad shows on pale-sky photos. */
+/* Area names over photography: the same dark text over the light wash. */
 .photo-name-shadow {
-  text-shadow:
-    0 0 1px rgb(12 14 20 / 0.9),
-    0 1px 2px rgb(12 14 20 / 0.8),
-    0 0 7px rgb(12 14 20 / 0.45),
-    0 2px 12px rgb(12 14 20 / 0.3);
+  color: hsl(var(--primary));
 }
 
 

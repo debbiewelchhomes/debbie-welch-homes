@@ -85,7 +85,7 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
         jsonLd={articleSchema}
       />
       <Navigation />
-      <main className="section bg-background pt-32 md:pt-40">
+      <main className="bg-background pt-32 pb-16 md:pt-40 md:pb-24">
         <div className="container mx-auto px-4">
           <article className="max-w-3xl mx-auto">
             {/* Back Button */}

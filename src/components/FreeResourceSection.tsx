@@ -16,7 +16,7 @@ const FreeResourceSection = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="mx-auto max-w-3xl text-backdrop text-center"
         >
-          <span className="eyebrow-caps">Free, No Obligation</span>
+          <span className="eyebrow">Free, no obligation...</span>
 
           <h2 className="font-heading h-section mx-auto mt-3 max-w-[22ch] text-primary">
             A Market Report for Any Area in Snohomish County

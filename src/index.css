@@ -399,25 +399,17 @@ All colors MUST be HSL.
   }
 }
 
-/* Tighter glow for the small area thumbnails: stays close to the name
-   instead of spreading across the photo. */
-.hero-text-scrim--tight::before {
-  inset: -0.4rem -0.8rem;
-  border-radius: 0.7rem;
-  background: radial-gradient(
-    ellipse at center,
-    rgb(20 22 32 / 0.68) 0%,
-    rgb(20 22 32 / 0.56) 60%,
-    rgb(20 22 32 / 0.16) 84%,
-    transparent 100%
-  );
+/* Area names over photography: a soft shadow hugging the letter edges only,
+   so no dark pad shows on pale-sky photos. */
+.photo-name-shadow {
+  text-shadow:
+    0 0 1px rgb(12 14 20 / 0.9),
+    0 1px 2px rgb(12 14 20 / 0.8),
+    0 0 7px rgb(12 14 20 / 0.45),
+    0 2px 12px rgb(12 14 20 / 0.3);
 }
 
-@media (min-width: 768px) {
-  .hero-text-scrim--tight::before {
-    inset: -0.55rem -1.1rem;
-  }
-}
+
 
 
 /* Keep script-style labels legible when they sit directly over area photography. */

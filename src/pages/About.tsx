@@ -340,7 +340,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.15 }}
               className="md:border-l md:border-border md:pl-14"
             >
-              <p className="eyebrow mb-4">For fellow agents...</p>
+              <p className="eyebrow eyebrow-col mb-4">For fellow agents...</p>
               <h2 className="font-heading h-section-sm text-primary mb-5">
                 Considering a Career at eXp Realty?
               </h2>

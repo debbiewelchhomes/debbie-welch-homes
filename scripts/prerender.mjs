@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 
-const siteUrl = "https://debbiewelchhomes.com";
+const siteUrl = "https://debbie-welch-homes.lovable.app";
 const sitemap = await readFile("dist/sitemap.xml", "utf8");
 const routes = [...sitemap.matchAll(/<loc>https:\/\/debbiewelchhomes\.com([^<]*)<\/loc>/g)]
   .map((match) => match[1] || "/");

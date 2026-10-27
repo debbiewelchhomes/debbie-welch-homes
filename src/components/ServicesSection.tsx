@@ -2,8 +2,18 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Home, DollarSign, Plane, TrendingDown } from "lucide-react";
+import type { ComponentType } from "react";
 
-const services = [
+type Service = {
+  icon: ComponentType<{ className?: string }>;
+  title: string;
+  titleSub?: string;
+  description: string;
+  cta: string;
+  href: string;
+};
+
+const services: Service[] = [
   {
     icon: Home,
     title: "Buying",
@@ -22,7 +32,8 @@ const services = [
   },
   {
     icon: TrendingDown,
-    title: "Senior Housing Transitions & Downsizing",
+    title: "Senior Housing",
+    titleSub: "Transitions & Downsizing",
     description:
       "If your current home no longer fits the season you are in, I will help you plan the move step by step, honoring both the practical and the emotional parts of letting go.",
     cta: "Downsizing & Life Transitions",
@@ -30,7 +41,8 @@ const services = [
   },
   {
     icon: Plane,
-    title: "Military PCS, Veterans & Relocation",
+    title: "Military & Veterans",
+    titleSub: "PCS & Relocation",
     description:
       "Moving for orders, work, or family, to or from Snohomish County? I coordinate around your report date or move date, share honest neighborhood insight, and keep things moving when you cannot be here in person.",
     cta: "Military PCS & Relocation",
@@ -72,7 +84,15 @@ const ServicesSection = () => {
                 <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-warm-bg">
                   <service.icon className="h-4 w-4 text-secondary" aria-hidden="true" />
                 </span>
-                <h3 className="font-heading h-card min-h-[3em] leading-normal text-primary">{service.title}</h3>
+                <h3 className="font-heading h-card min-h-[3em] leading-normal text-primary">
+                  {service.title}
+                  {service.titleSub && (
+                    <>
+                      <br />
+                      {service.titleSub}
+                    </>
+                  )}
+                </h3>
               </div>
               <p className="copy mb-6 text-foreground">{service.description}</p>
               <Button

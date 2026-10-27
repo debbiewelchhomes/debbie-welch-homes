@@ -44,7 +44,7 @@ const BrandPromiseSection = () => {
           className="mx-auto mb-12 max-w-5xl text-center"
         >
           <h2 className="font-heading text-primary">
-            <span className="eyebrow">Our working relationship<span className="script-dots">...</span></span>
+            <span className="eyebrow">Our working relationship...</span>
             <span className="h-section mx-auto block max-w-2xl text-secondary">What Working With Me Actually Looks Like</span>
           </h2>
         </motion.div>

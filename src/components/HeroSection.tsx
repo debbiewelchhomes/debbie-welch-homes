@@ -31,7 +31,7 @@ const HeroSection = () => {
           <div className="text-backdrop text-center">
             <h1 className="font-heading mb-4 text-primary">
               <span className="eyebrow">
-                Welcome home<span className="script-dots">...</span>
+                Welcome home...
               </span>
               <span className="h-display mx-auto block max-w-none text-secondary">Helping You Home in<br />Snohomish County</span>
             </h1>

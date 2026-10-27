@@ -3,7 +3,16 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Home, DollarSign, Plane, TrendingDown } from "lucide-react";
 
-const services = [
+type Service = {
+  icon: ComponentType<{ className?: string }>;
+  title: string;
+  titleSub?: string;
+  description: string;
+  cta: string;
+  href: string;
+};
+
+const services: Service[] = [
   {
     icon: Home,
     title: "Buying",

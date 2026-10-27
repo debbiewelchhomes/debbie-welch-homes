@@ -15,7 +15,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        script: ['Allura', 'cursive'],
+        script: ['Hurricane', 'cursive'],
         heading: ['Cormorant Garamond', 'serif'],
         body: ['Montserrat', 'sans-serif'],
       },

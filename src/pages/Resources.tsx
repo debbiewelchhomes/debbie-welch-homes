@@ -174,9 +174,11 @@ const Resources = () => {
             <Link to="/resources/faq" className="group">
               <Card className="border-border bg-card transition-shadow duration-300 group-hover:shadow-lg">
                 <CardContent className="p-8 md:p-10">
-                  <HelpCircle className="h-8 w-8 text-secondary mb-4" aria-hidden="true" />
                   <p className="eyebrow mb-3">Questions are part of the process...</p>
-                  <h2 className="font-heading h-section text-primary mb-4">Real Estate Frequently Asked Questions</h2>
+                  <div className="mb-4 flex items-start gap-3">
+                    <HelpCircle className="h-8 w-8 shrink-0 text-secondary" aria-hidden="true" />
+                    <h2 className="font-heading h-section text-primary">Real Estate Frequently Asked Questions</h2>
+                  </div>
                   <p className="copy text-foreground max-w-3xl mb-6">
                     Find straightforward answers about military PCS moves, VA-financed purchases, downsizing, buying and selling at the same time, preparing a home, and working together.
                   </p>

@@ -65,6 +65,7 @@ const BothellMillCreek = () => {
                 mix of older neighborhoods, newer infill, and a redeveloped downtown core.
               </p>
           </div>
+            </div>
         </section>
 
         {/* Balanced */}
@@ -115,6 +116,7 @@ const BothellMillCreek = () => {
                 </ul>
               </div>
           </div>
+            </div>
         </section>
 
         {/* Housing and location */}
@@ -143,6 +145,7 @@ const BothellMillCreek = () => {
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Check the parcel, not just the mailing address.</strong> County, school district, taxes, utilities, HOA rules, and commute routes can change within a short distance. For condos and townhomes, review the association budget, reserves, insurance, and meeting minutes before committing.</p></div>
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Make the location differences easy to understand.</strong> Clear information about schools, county, commuting options, nearby trails, association details, and recent improvements helps buyers compare your home accurately with properties carrying the same city name.</p></div>
           </div>
+            </div>
         </section>
 
         {/* Community */}

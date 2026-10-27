@@ -64,6 +64,7 @@ const Arlington = () => {
                 here than the city name does.
               </p>
           </div>
+            </div>
         </section>
 
         {/* Balanced */}
@@ -114,6 +115,7 @@ const Arlington = () => {
                 </ul>
               </div>
           </div>
+            </div>
         </section>
 
         {/* Housing and location */}
@@ -143,6 +145,7 @@ const Arlington = () => {
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Verify jurisdiction, utilities, and access early.</strong> Arlington addresses can represent in-city homes, newer development, or rural property. Wells, septic systems, private roads, airport proximity, and future land-use plans can matter as much as the house itself.</p></div>
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Gather rural-property records before listing.</strong> Septic documents, well information, surveys, easements, permits, and private-road agreements help buyers understand the property and reduce avoidable delays once you are under contract.</p></div>
           </div>
+            </div>
         </section>
 
         {/* Community */}

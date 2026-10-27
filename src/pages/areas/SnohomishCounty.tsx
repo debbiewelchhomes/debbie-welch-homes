@@ -107,6 +107,7 @@ const SnohomishCounty = () => {
                 areas are worth a closer look, then read the individual guide for each one.
               </p>
           </div>
+            </div>
         </section>
 
         {/* Comparison grid */}
@@ -128,6 +129,7 @@ const SnohomishCounty = () => {
                 </Link>
               ))}
           </div>
+            </div>
         </section>
 
         {/* Boundaries */}

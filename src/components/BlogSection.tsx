@@ -22,7 +22,7 @@ const BlogSection = () => {
         >
           <h2 className="font-heading mb-6 text-primary">
             <span className="eyebrow">Stay informed<span className="script-dots">…</span></span>
-            <span className="h-section block">From the Blog</span>
+            <span className="h-section block text-secondary">From the Blog</span>
           </h2>
 
           <p className="copy mx-auto max-w-[56ch] text-foreground">

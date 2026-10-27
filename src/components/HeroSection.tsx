@@ -33,7 +33,7 @@ const HeroSection = () => {
               <span className="eyebrow">
                 Welcome home<span className="script-dots">…</span>
               </span>
-              <span className="h-display mx-auto block max-w-[24ch] lg:max-w-[18ch]">Helping You Home in Snohomish County</span>
+              <span className="h-display mx-auto block max-w-[24ch] lg:max-w-[18ch] text-secondary">Helping You Home in Snohomish County</span>
             </h1>
 
 

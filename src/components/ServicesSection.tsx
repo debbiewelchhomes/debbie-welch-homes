@@ -53,7 +53,7 @@ const ServicesSection = () => {
             <span className="eyebrow">
               When it's time<span className="script-dots">…</span>
             </span>
-            <span className="h-section block">Here's How We Can Work Together</span>
+            <span className="h-section block text-secondary">Here's How We Can Work Together</span>
           </h2>
 
         </motion.div>

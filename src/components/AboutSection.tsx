@@ -16,7 +16,7 @@ const AboutSection = () => {
           >
             <h2 className="font-heading mb-6 text-primary">
               <span className="eyebrow">Hey there<span className="script-dots">…</span></span>
-              <span className="h-section block max-w-[12ch]">I'm Debbie</span>
+              <span className="h-section block max-w-[12ch] text-secondary">I'm Debbie</span>
             </h2>
 
 

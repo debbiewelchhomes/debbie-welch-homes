@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Home, DollarSign, Plane, TrendingDown } from "lucide-react";
+import type { ComponentType } from "react";
 
 type Service = {
   icon: ComponentType<{ className?: string }>;

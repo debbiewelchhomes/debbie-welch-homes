@@ -441,6 +441,22 @@ All colors MUST be HSL.
 
 
 
+/* Light semi-transparent wash over photos that carry text, matching the
+   scrolling picture panels (same token as .market-report-photo::after). */
+.photo-wash {
+  background: hsl(var(--photo-overlay));
+}
+
+/* Area guide heroes: the same light wash behind the place name and intro
+   sentence, applied over the full-bleed photo. */
+main > section:first-child:has(> img.absolute.inset-0)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: hsl(var(--photo-overlay));
+  pointer-events: none;
+}
+
 /* Area guide hero sentences over photography: the same letter-edge shadow the
    featured-area names use, so no dark pad shows on pale-sky photos. */
 .photo-text-shadow {

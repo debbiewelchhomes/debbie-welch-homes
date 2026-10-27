@@ -143,7 +143,7 @@ const Navigation = () => {
                 About
               </Link>
 
-              <Button size="sm" className="shrink-0 whitespace-nowrap bg-secondary px-3.5 py-1.5 text-secondary-foreground hover:bg-secondary/90" asChild>
+              <Button size="sm" className="shrink-0 whitespace-nowrap min-h-9 bg-secondary px-3.5 py-1.5 text-sm text-secondary-foreground hover:bg-secondary/90" asChild>
 
                 <a href="https://cal.com/debbie.welch.homes" target="_blank" rel="noopener noreferrer">
                   Book a Free Consult

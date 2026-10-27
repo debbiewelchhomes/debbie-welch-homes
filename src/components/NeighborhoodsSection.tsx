@@ -79,7 +79,7 @@ const NeighborhoodsSection = () => {
                     <div className="relative mb-4 h-36 overflow-hidden rounded-lg">
                       <img src={area.image} alt={area.altText} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
                       <div className="absolute inset-0 flex items-center justify-center px-3">
-                        <h3 className="hero-text-scrim relative z-0 font-heading h-card text-primary-foreground text-center whitespace-pre-line">
+                        <h3 className="hero-text-scrim hero-text-scrim--tight relative z-0 font-heading h-card text-primary-foreground text-center whitespace-pre-line">
 
 
                           {area.name}

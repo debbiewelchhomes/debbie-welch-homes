@@ -30,7 +30,7 @@ const services = [
   },
   {
     icon: Plane,
-    title: "Military PCS & Veterans",
+    title: "Military PCS, Veterans & Relocation",
     description:
       "Orders move fast. I coordinate around your report date, share honest neighborhood insight, and keep things moving when you cannot be here in person.",
     cta: "Military PCS & Relocation",

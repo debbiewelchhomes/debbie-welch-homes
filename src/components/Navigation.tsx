@@ -52,12 +52,12 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="relative flex items-center justify-between h-24">
           {/* Desktop Navigation: logo left, links center-right, consult button far right */}
-          <div className="hidden lg:flex items-center justify-between w-full max-w-7xl mx-auto text-sm xl:text-base">
+          <div className="hidden lg:flex items-center w-full max-w-7xl mx-auto text-base xl:text-lg">
             <Link to="/" className="flex-shrink-0" aria-label="Debbie Welch Homes home page">
               <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-9 xl:h-14 w-auto" />
             </Link>
 
-            <div className="flex items-center gap-6 xl:gap-9 whitespace-nowrap">
+            <div className="mx-auto flex items-center gap-6 xl:gap-9 whitespace-nowrap">
               <Link to="/" className="mr-2 xl:mr-4 text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
@@ -133,9 +133,9 @@ const Navigation = () => {
               <Link to="/about" className="text-foreground hover:text-secondary transition-colors">
                 About
               </Link>
+            </div>
 
-              <span aria-hidden="true" className="h-6 w-px bg-border ml-1 xl:ml-2" />
-              <Button size="sm" className="shrink-0 whitespace-nowrap min-h-9 bg-secondary px-3.5 py-1.5 text-sm text-secondary-foreground hover:bg-secondary/90" asChild>
+            <Button size="sm" className="shrink-0 whitespace-nowrap min-h-9 bg-secondary px-3.5 py-1.5 text-sm text-secondary-foreground hover:bg-secondary/90" asChild>
 
                 <a href="https://cal.com/debbie.welch.homes" target="_blank" rel="noopener noreferrer">
                   Book a Free Consult

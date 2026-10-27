@@ -17,17 +17,12 @@ const Listings = () => {
       <main>
         <section className="pt-36 pb-20 px-4">
           <div className="container mx-auto max-w-3xl text-center">
-            <p className="eyebrow mb-4">Past Sales</p>
+            <p className="eyebrow mb-4">Find your next home</p>
             <h1 className="font-heading h-section text-primary mb-6">
-              A Verified Past-Sales Portfolio Is Coming
+              Explore Current Snohomish County Homes
             </h1>
             <p className="font-body text-lg text-foreground/80 leading-relaxed mb-5">
-              I am preparing this page with accurate transaction details and photos from homes where I represented
-              the buyer or seller. I would rather share a smaller, verified portfolio than fill the page with generic
-              examples.
-            </p>
-            <p className="font-body text-base text-foreground/75 leading-relaxed mb-10">
-              In the meantime, you can browse current Snohomish County listings or contact me to talk about the kind
+              Browse current Snohomish County listings or contact me to talk about the kind
               of home, neighborhood, or move you are considering.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

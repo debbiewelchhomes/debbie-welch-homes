@@ -41,11 +41,11 @@ const BrandPromiseSection = () => {
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="mx-auto mb-12 max-w-2xl text-center"
+          className="mx-auto mb-12 max-w-5xl text-center"
         >
           <h2 className="font-heading text-primary">
             <span className="eyebrow">Our working relationship<span className="script-dots">...</span></span>
-            <span className="h-section block text-secondary">What Working With Me Actually Looks Like</span>
+            <span className="h-section mx-auto block max-w-2xl text-secondary">What Working With Me Actually Looks Like</span>
           </h2>
         </motion.div>
 

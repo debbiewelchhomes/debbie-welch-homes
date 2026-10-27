@@ -54,7 +54,7 @@ const HeroSection = () => {
 
             <p className="mt-6 text-sm text-primary/80">
 
-              Serving Lake Stevens, Everett, Marysville, Arlington, Snohomish, Stanwood, Camano
+              Serving Lake Stevens, Everett, Marysville, Arlington, Snohomish, Stanwood-Camano
               Island, Bothell, Mill Creek, and Mukilteo.
             </p>
           </div>

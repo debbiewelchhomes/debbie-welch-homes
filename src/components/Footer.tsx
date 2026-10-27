@@ -12,7 +12,7 @@ const Footer = () => {
               <p className="font-semibold">Debbie Welch, Realtor®, SRES®, MRP</p>
               <p>Debbie Welch Homes at eXp Realty</p>
               <p className="text-primary-foreground/80">
-                45+ year Snohomish County resident and local homeowner/investor
+                45+ year Snohomish County resident{"\n"}and local homeowner/investor
               </p>
               <p>Serving Snohomish County, Washington</p>
               <p className="pt-4">
@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="border-t border-primary-foreground/20 pt-5">
               <p className="eyebrow-caps text-primary-foreground/75 mb-2">For Real Estate Agents</p>
               <Link to="/about/exp-realty" className="text-sm font-semibold hover:text-accent transition-colors">
-                Learn About Working With Me at eXp
+                Working With Me at eXp Realty
               </Link>
             </div>
           </div>

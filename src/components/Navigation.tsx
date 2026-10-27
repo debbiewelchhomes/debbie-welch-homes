@@ -57,7 +57,7 @@ const Navigation = () => {
               <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-9 xl:h-14 w-auto" />
             </Link>
 
-            <div className="mx-auto flex items-center gap-6 xl:gap-9 whitespace-nowrap">
+            <div className="mx-auto flex items-center gap-5 xl:gap-9 whitespace-nowrap">
               <Link to="/" className="mr-2 xl:mr-4 text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>

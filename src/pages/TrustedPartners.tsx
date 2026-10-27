@@ -43,7 +43,7 @@ const TrustedPartners = () => (
       <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-warm-bg">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="eyebrow mb-4">Good people make a difference...</p>
+            <p className="eyebrow eyebrow-col mb-4">Good people make a difference...</p>
             <h1 className="font-heading h-section text-primary mb-6">Trusted Local Partners</h1>
             <p className="copy-lead text-foreground">
               I may be your main point of contact, but a successful move often takes a dependable team. These are professionals I trust to help keep preparation, financing, inspections, marketing, and the details around a transaction moving smoothly.

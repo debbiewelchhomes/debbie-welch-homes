@@ -54,11 +54,11 @@ const Navigation = () => {
           {/* Desktop Navigation: logo left, links center-right, consult button far right */}
           <div className="hidden lg:flex items-center justify-between w-full max-w-7xl mx-auto text-sm xl:text-base">
             <Link to="/" className="flex-shrink-0" aria-label="Debbie Welch Homes home page">
-              <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-10 xl:h-14 w-auto" />
+              <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-9 xl:h-14 w-auto" />
             </Link>
 
-            <div className="flex items-center gap-7 xl:gap-9 2xl:gap-11 whitespace-nowrap">
-              <Link to="/" className="mr-3 xl:mr-4 text-foreground hover:text-secondary transition-colors">
+            <div className="flex items-center gap-6 xl:gap-9 whitespace-nowrap">
+              <Link to="/" className="mr-2 xl:mr-4 text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
 

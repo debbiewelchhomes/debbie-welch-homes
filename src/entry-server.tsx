@@ -1,6 +1,6 @@
 import { renderToPipeableStream } from "react-dom/server";
 import { HelmetProvider, type HelmetServerState } from "react-helmet-async";
-import { StaticRouter } from "react-router-dom/server";
+import { StaticRouter } from "react-router-dom";
 import { Writable } from "node:stream";
 import { AppShell } from "./App";
 

@@ -124,6 +124,23 @@ All colors MUST be HSL.
     font-weight: 400;
   }
 
+  /* Homepage trial: the script accents read much larger. */
+  .home-font-preview .font-script {
+    font-size: 3.6em;
+  }
+  .home-font-preview .button-script {
+    font-size: 5.5rem;
+  }
+  .home-font-preview .eyebrow {
+    font-size: 4.25rem;
+  }
+  @media (min-width: 768px) {
+    .home-font-preview .eyebrow {
+      font-size: 5.75rem;
+    }
+  }
+
+
   .font-script {
     font-family: 'Hurricane', cursive;
     font-size: 1.8em;

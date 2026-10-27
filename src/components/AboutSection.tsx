@@ -28,7 +28,7 @@ const AboutSection = () => {
               height="1320"
               loading="lazy"
             />
-            <div className="md:text-justify md:[hyphens:auto]">
+            <div className="lg:text-justify lg:[hyphens:auto]">
               <p className="copy text-foreground mb-4">
                 I grew up in Marysville, raised my family in Lake Stevens, and now live in North Everett. I have spent more than 45 years watching Snohomish County change, and I bring that local perspective to every move.
               </p>

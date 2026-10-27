@@ -1,5 +1,7 @@
 # Approved follow-up improvements
 
+- [ ] Make shared script headings fit their available space, retain readable wrapping on small screens, and verify heading/icon alignment across the website without publishing.
+
 - [x] Place Featured Areas before Testimonials and the Market Report, add a county-guide button below the four featured areas, and verify the order and destination without publishing; browser click-through passed, five tests passed, preview build OK.
 
 - [x] Verify Realtor.com September 2026 citywide median sold prices for Lake Stevens and Everett; publisher figures confirmed by Sam/ChatGPT web retrieval on October 27, 2026 and applied with labeled source links.

@@ -29,14 +29,14 @@ const HeroSection = () => {
           className="w-full max-w-3xl"
         >
           <div className="text-backdrop text-center">
-            <p className="eyebrow" aria-hidden="true">
-              Welcome home<span className="script-dots">…</span>
-            </p>
-
-
-            <h1 className="font-heading h-display mx-auto mb-4 max-w-[24ch] lg:max-w-[18ch] text-primary">
-              Helping You Home in Snohomish County
+            <h1 className="font-heading mb-4 text-primary">
+              <span className="eyebrow">
+                Welcome home<span className="script-dots">…</span>
+              </span>
+              <span className="h-display mx-auto block max-w-[24ch] lg:max-w-[18ch] text-secondary">Helping You Home in Snohomish County</span>
             </h1>
+
+
 
             <p className="copy-lead mx-auto mb-6 max-w-[54ch] text-primary/90">
               I grew up here, I have owned homes here, and I have spent 45+ years watching this

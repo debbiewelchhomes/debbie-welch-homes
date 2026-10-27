@@ -147,9 +147,10 @@ All colors MUST be HSL.
   /* Black Stones draws the trailing ellipsis with wide side bearings, so it
      reads as a gap. Pull it back against the final letter. */
   .home-font-preview .script-dots {
-    margin-left: -0.32em;
+    margin-left: -0.12em;
     letter-spacing: 0;
   }
+
 
 
 

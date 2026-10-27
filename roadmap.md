@@ -33,4 +33,5 @@
 - [x] Remove the repeated 'See How I Can Help' divider band, keep that call-to-action in the hero only, and separate the market-report and testimonial photo panels so no two scrolling photo backgrounds touch; verified desktop and phone boundary captures.
 - [x] Turn the eXp Realty invitation in the About closing band into a button matching the conversation button, both sitting at the same vertical level; verified at five widths and by clicking through to the eXp page.
 - [x] Move each homepage services block's round icon onto its heading line and resize the blocks; shorten the eXp button label to "Learn More about eXp Realty" so it matches the conversation button at every width; verified at four widths, build OK, five tests pass.
+- [x] Give the two long homepage services headings a matching two-line shape ("Senior Housing / Transitions & Downsizing", "Military & Veterans / PCS & Relocation") with a set line break; verified at four widths, build OK, five tests pass.
 

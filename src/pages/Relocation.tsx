@@ -105,7 +105,7 @@ const Relocation = () => {
       number: "05",
       title: "Land Well and Get Connected",
       description:
-        "Closing day isn't where my job ends. I'll follow up with local recommendations, connect you with people you'll actually need, and make sure you feel settled instead of dropped. You moved here without knowing anyone. I want to help change that.",
+        "Closing day isn't where my job ends. I'll follow up with local recommendations, connect you with people you'll actually need, and help you get settled rather than disappear after closing. If you're new to the area, I want to help you find your footing.",
     },
   ];
 

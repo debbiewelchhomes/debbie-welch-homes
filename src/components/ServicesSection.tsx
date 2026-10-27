@@ -8,7 +8,7 @@ const services = [
     icon: Home,
     title: "Buying",
     description:
-      "In Lake Stevens, Everett, Marysville, Snohomish, or nearby, I will help you understand the numbers, compare neighborhoods, and write offers that make sense for your budget.",
+      "Whether it is your first home or your next one, in Lake Stevens, Everett, Marysville, Snohomish, or nearby, I will help you understand the numbers, compare neighborhoods, and write offers that make sense for your budget.",
     cta: "Explore Buying",
     href: "/services/buying",
   },
@@ -32,7 +32,7 @@ const services = [
     icon: Plane,
     title: "Military PCS, Veterans & Relocation",
     description:
-      "Orders move fast. I coordinate around your report date, share honest neighborhood insight, and keep things moving when you cannot be here in person.",
+      "Moving for orders, work, or family, to or from Snohomish County? I coordinate around your report date or move date, share honest neighborhood insight, and keep things moving when you cannot be here in person.",
     cta: "Military PCS & Relocation",
     href: "/services/relocation",
   },

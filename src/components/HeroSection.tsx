@@ -37,7 +37,7 @@ const HeroSection = () => {
 
             <p className="copy-lead mx-auto mb-6 max-w-[54ch] text-primary/90">
               I grew up here, I have owned homes here, and I have spent 45+ years watching this
-              area grow and change. You get honest guidance, a calm and organized plan, and someone who puts your best interests first.
+              area grow and change. You get honest guidance, a clear, organized plan, and someone who puts your best interests first.
             </p>
 
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">

@@ -133,12 +133,12 @@ const Downsizing = () => {
     {
       question: "My adult kids have opinions about all of this. Can you help with that?",
       answer:
-        "Yes, and you're not alone in navigating that dynamic. Downsizing decisions often involve family members who care deeply but may not all be on the same page. I'm happy to communicate with whoever needs to be in the loop, answer questions from adult children, and help everyone work from the same factual picture instead of assumptions. At the end of the day though, this is your home and your decision. My job is to support you.",
+        "Yes, and you're not alone in navigating that dynamic. Downsizing decisions often involve family members who care deeply but may not all be on the same page. With your permission, I'm happy to include the family members you choose, answer their questions, and help everyone work from the same factual picture instead of assumptions. At the end of the day though, this is your home and your decision. My job is to support you.",
     },
     {
       question: "What does it cost to talk with you?",
       answer:
-        "Nothing. An initial conversation is always free. If you decide you want to move forward, my commission is paid at closing, so you don't pay anything out of pocket upfront. If you're not ready to sell, or it turns out this isn't the right move for you right now, that's completely okay. I'd rather be honest with you now than push you into something that doesn't fit.",
+        "Nothing. The initial conversation is free and carries no obligation. If you decide to move forward, we'll review how compensation works and any preparation or third-party costs, such as repairs, cleaning, or moving help, before you commit. If you're not ready to sell, or it turns out this isn't the right move for you right now, that's completely okay. I'd rather be honest with you now than push you into something that doesn't fit.",
     },
     {
       question: "What does the SRES® designation mean?",
@@ -227,7 +227,7 @@ const Downsizing = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Real talk...
+                The bigger picture...
               </p>
               <h2 className="font-heading h-section text-primary mb-8">
                 Downsizing Is Rarely Just About the House
@@ -325,16 +325,16 @@ const Downsizing = () => {
                 <p>Most agents will help you list your home. I help you move your life. There's a difference.</p>
                 <p>
                   For clients who need it, I've helped coordinate donation runs, packed boxes, arranged junk hauling,
-                  managed staging logistics, and been the calm point of contact when everything feels like a lot. That's
+                  managed staging logistics, and been the steady point of contact when everything feels like a lot. That's
                   not a formal service with a fee attached. It's just what I do when someone needs it.
                 </p>
                 <p>
-                  I am careful with complex documents, I catch the details other people miss, and I explain things
+                  I am careful with complex documents, I look for the details that are easy to miss, and I explain things
                   clearly to people who are already stressed. I'll walk you through contracts in plain language, flag the clauses that matter, and make sure
                   you understand what you're agreeing to before you sign anything.
                 </p>
                 <p>
-                  You'll never feel rushed. You'll never feel judged for your stuff, your timeline, or your questions.
+                  I won't rush you, and I won't judge your stuff, your timeline, or your questions.
                   We move at the pace that makes sense for your actual life.
                 </p>
               </div>

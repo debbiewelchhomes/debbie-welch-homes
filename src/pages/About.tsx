@@ -42,8 +42,9 @@ const About = () => {
                 I grew up in Marysville. Lived in Lake Stevens for about ten years. Now I'm in the middle of a live-in
                 renovation in North Everett. This isn't a county I moved to or just happen to do work in for the real
                 estate market. It's home. My parents are here. Our children and their families are here. I've watched
-                the traffic patterns shift, the neighborhoods change, the school districts rise and fall. I know where
-                the hidden parking is at the Farmer's Market and which parts of town look different after dark.
+                the traffic patterns shift and the neighborhoods change. I know where the hidden parking is at the
+                Farmer's Market, and I bring that history to practical questions about routes, services, and how a
+                location works for your daily life.
               </p>
               <p className="text-foreground text-lg leading-relaxed">
                 That's the kind of local I am. And it's exactly the kind of broker I try to be.
@@ -124,7 +125,7 @@ const About = () => {
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                   <span className="text-foreground">
                     Hands-on support for big transitions. I've helped clients with everything from dump and donation
-                    runs to staging coordination to just being a calm presence on a hard day.
+                    runs to staging coordination to just being a steady presence on a hard day.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">

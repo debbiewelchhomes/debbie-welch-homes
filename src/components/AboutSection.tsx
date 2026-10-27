@@ -39,7 +39,7 @@ const AboutSection = () => {
                 That is the part I care about most. I slow things down just enough for you to understand the numbers, the tradeoffs, and the fine print. The details buried in the middle of a document are usually the ones that matter most. I explain them in plain language and keep the process organized, so you can make a decision you fully understand.
               </p>
               <p className="copy text-foreground mb-6">
-                My work is especially focused on downsizing, military PCS and VA clients, first-time buyers, and people relocating into or out of the county.
+                I help buyers and sellers across the county, including first-time buyers, with a particular focus on senior transitions and downsizing, military PCS moves and Veterans, and people relocating to or from Snohomish County.
               </p>
             </div>
             <div className="clear-both flex flex-col gap-4 pt-4 sm:flex-row sm:flex-wrap sm:items-center">

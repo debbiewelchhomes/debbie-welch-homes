@@ -26,7 +26,7 @@ const BlogSection = () => {
           </h2>
 
           <p className="copy mx-auto max-w-[56ch] text-foreground">
-            Real talk on downsizing, buying, selling, and what is actually happening in the Snohomish County market. A few useful numbers included, because the numbers matter.
+            Practical reading on downsizing, buying, selling, and what is actually happening in the Snohomish County market. A few useful numbers included, because the numbers matter.
           </p>
         </motion.div>
 

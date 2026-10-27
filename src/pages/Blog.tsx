@@ -61,8 +61,8 @@ const Blog = () => {
             </h1>
             <p className="text-base md:text-lg text-foreground leading-relaxed measure mx-auto">
               Browse articles about buying and selling in Snohomish County, downsizing, relocation, market updates,
-              and everyday homeownership. I'll be adding new posts that mix education, real-life examples, and calm,
-              clear guidance.
+              and everyday homeownership. I'll be adding new posts that mix education, real-life examples, and clear,
+              practical guidance.
             </p>
           </div>
 

@@ -106,8 +106,8 @@ const EverettMukilteo = () => {
                     Waterfront Place has become a genuine destination with Restaurant Row along the marina esplanade,
                     a cluster of restaurants and taprooms along the waterfront deck. The homes near Howarth Park along the bluffs are some of the most impressive in
                     the county, with craftsman and colonial revival architecture from the early 1900s and sweeping views of
-                    Puget Sound and the Olympic Mountains. A newer generation of buyers is snapping up these homes and
-                    putting real work into them, and it shows. Forest Park is nearby: 197 acres of old-growth forest
+                    Puget Sound and the Olympic Mountains. Many of these older homes have had real
+                    renovation work put into them, and it shows. Forest Park is nearby: 197 acres of old-growth forest
                     with trails and a swimming pool. It is one of those places locals love and visitors rarely find.
                   </p>
                 </div>
@@ -132,7 +132,7 @@ const EverettMukilteo = () => {
                   <h3 className="font-heading text-xl font-bold text-primary mb-2">Boulevard Bluffs</h3>
                   <p>
                     Some of the best views in the city include Puget Sound, the Olympics, and Japanese Gulch Conservation Area
-                    trails nearby, and highly rated Mukilteo Elementary in the school zone.
+                    trails nearby. If schools matter to you, confirm the assignment for the exact address directly with the district.
                   </p>
                 </div>
 
@@ -149,8 +149,8 @@ const EverettMukilteo = () => {
                 <div>
                   <h3 className="font-heading text-xl font-bold text-primary mb-2">South Everett & Casino Road</h3>
                   <p>
-                    Housing, traffic, noise, and property conditions can vary by street. Review the specific property
-                    and surrounding block at different times of day before deciding whether it fits your priorities.
+                    A broad, varied part of the city with a wide mix of housing types and access to I-5 and Highway 99.
+                    As anywhere in Everett, review the specific property and surrounding block at different times of day.
                   </p>
                 </div>
               </div>
@@ -232,8 +232,8 @@ const EverettMukilteo = () => {
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>South Everett and Casino Road.</strong> Housing, traffic, noise, and property conditions
-                        can vary by street. Review the specific property and surrounding block at different times of day.
+                        <strong>Street-by-street differences.</strong> Across Everett and Mukilteo, housing, traffic, noise,
+                        and property conditions can vary by street. Review the specific property and surrounding block at different times of day.
                       </span>
                     </li>
                     <li className="flex gap-2">
@@ -373,8 +373,8 @@ const EverettMukilteo = () => {
                 </p>
                 <p>
                   The Sounder commuter rail station connects directly to King Street Station in Seattle, a genuinely
-                  good option if you're commuting south. Homes with water views command a premium. The Mukilteo School
-                  District is strong. The community is tight-knit and quiet. For most errands you're heading into
+                  good option if you're commuting south. Homes with water views command a premium. If schools are part of
+                  your decision, review current district information and confirm the assignment for the exact address. The community is tight-knit and quiet. For most errands you're heading into
                   Everett because Mukilteo is small by design. For buyers who want Puget Sound waterfront at a price point
                   below King County, it deserves a serious look.
                 </p>
@@ -398,8 +398,8 @@ const EverettMukilteo = () => {
                 Homes for Sale in Everett & Mukilteo
               </h2>
               <p className="text-foreground text-lg leading-relaxed mb-8">
-                Browse current listings or reach out and I'll put together a custom search by neighborhood. Knowing
-                which part of Everett matters. I'll help you focus on the right areas for your situation.
+                Browse current listings or reach out and I'll put together a custom search by neighborhood. Which part of
+                Everett you choose shapes daily life, so I'll help you compare areas against your budget, commute, and property needs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>

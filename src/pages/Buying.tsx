@@ -85,7 +85,7 @@ const Buying = () => {
       number: "02",
       title: "Get Pre-Approved With the Right Lender",
       description:
-        "A pre-approval tells you what you can actually afford, what your monthly payment looks like in real numbers, and whether there's a loan program that fits your situation better than you realized. I'll connect you with trusted lenders who explain your options clearly.",
+        "A lender's pre-approval helps clarify a potential loan amount, an estimated payment, and whether there's a loan program that fits your situation better than you realized. We'll also talk about the monthly budget that feels comfortable for you, which may be less than the approval amount. I'll connect you with trusted lenders who explain your options clearly.",
     },
     {
       number: "03",
@@ -126,12 +126,12 @@ const Buying = () => {
     {
       question: "What are the costs beyond the down payment I should plan for?",
       answer:
-        "Good question to ask early. Plan for closing costs (typically 2-3% of the purchase price), inspection fees, a possible appraisal gap if the home doesn't appraise at purchase price, and move-in expenses like immediate repairs, utilities setup, and whatever the new place needs. I'll outline realistic numbers early so nothing blindsides you at the finish line.",
+        "Good question to ask early. Plan for closing costs (often a few percent of the purchase price; your lender's Loan Estimate shows the figures for your loan), inspection fees, a possible appraisal gap if the home doesn't appraise at purchase price, and move-in expenses like immediate repairs, utilities setup, and whatever the new place needs. I'll help you outline realistic numbers early so there are fewer surprises at the finish line.",
     },
     {
       question: "How long does buying a home usually take?",
       answer:
-        "Once you're under contract, most purchases in Snohomish County close in 30 to 45 days depending on financing. The search phase varies. Some buyers find their home in a few weeks, while others take a few months. It depends on inventory, your criteria, and the market. I'll help you set a realistic timeline so you can plan around it.",
+        "Once you're under contract, many purchases close in roughly 30 to 45 days, depending on financing and the contract terms. The search phase varies. Some buyers find their home in a few weeks, while others take a few months. It depends on inventory, your criteria, and the market. I'll help you set a realistic timeline so you can plan around it.",
     },
     {
       question: "What if I find a home I love but something feels off?",
@@ -231,9 +231,9 @@ const Buying = () => {
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  Buying a home is also about understanding what you can actually afford, what the inspection is really
+                  Buying a home is also about understanding what monthly payment you're comfortable with, what the inspection is really
                   telling you, what the contract terms mean, and whether the neighborhood is going to feel right six
-                  months after you move in. Most agents move you through those questions. I stop and explain them.
+                  months after you move in. I take the time to explain them.
                 </p>
                 <p>
                   I'm not trying to close a deal. I'm trying to help you buy the right home. There's a difference, and

@@ -239,8 +239,8 @@ const Selling = () => {
                   reassurances or a pitch to list immediately.
                 </p>
                 <p>
-                  I read complex documents carefully and explain them plainly to people who are under stress. You'll
-                  understand every offer, every contract term, every clause before you sign anything.
+                  I read complex documents carefully and explain them plainly to people who are under stress. We'll
+                  review each offer, the key contract terms, and your questions before you decide what to sign.
                 </p>
               </div>
             </motion.div>
@@ -312,13 +312,13 @@ const Selling = () => {
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  I'm not going to miss the clause on page 4 of a purchase agreement or let a buyer's inspection addendum slide by without explaining what you're
-                  giving up. The market moves the way it moves. What I control is how well your home is positioned and
+                  I review purchase terms and inspection requests carefully, flag the details that deserve attention,
+                  and explain how each choice may affect you. The market moves the way it moves. What I control is how well your home is positioned and
                   how clearly you understand your options at every step.
                 </p>
                 <p>
                   And if you need more than just an agent, whether you're sorting through decades of belongings,
-                  coordinating with out-of-state family, or just need a calm presence on a hard day, I show up for that
+                  coordinating with out-of-state family, or just need a steady presence on a hard day, I show up for that
                   too. That's not an add-on. It's just how I work.
                 </p>
               </div>

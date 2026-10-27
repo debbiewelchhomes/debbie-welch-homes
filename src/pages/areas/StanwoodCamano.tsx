@@ -129,7 +129,7 @@ const StanwoodCamano = () => {
               of questions about shoreline regulation, bank stability, drainage, and insurance.
             </p>
             <p className="text-base md:text-lg text-foreground leading-relaxed">
-              These are all workable. They simply take a slower, more document-driven process than a standard
+              Many of these questions can be worked through, though some findings may change your decision. They take a slower, more document-driven process than a standard
               in-city purchase, and it is far cheaper to ask the questions during inspection than after closing.
             </p>
           </div>

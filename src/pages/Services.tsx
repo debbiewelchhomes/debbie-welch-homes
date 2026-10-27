@@ -115,14 +115,14 @@ const Services = () => {
                   <h3 className="font-heading text-2xl font-bold text-primary mb-4">Clarity</h3>
                   <p className="text-foreground leading-relaxed">
                     Plain-language explanations at every step. No jargon, no skipping the parts that matter, no "just
-                    trust me." You'll always know what's happening and why.
+                    trust me." You'll know what's happening and why.
                   </p>
                 </div>
                 <div className="bg-background p-6 lg:p-8 rounded-lg">
                   <h3 className="font-heading text-2xl font-bold text-primary mb-4">Honesty</h3>
                   <p className="text-foreground leading-relaxed">
                     The real numbers, the real tradeoffs, and the real risks, even when the easy answer would be
-                    "you're fine, just move forward." You deserve accurate information, not reassurance.
+                    "you're fine, just move forward." You deserve accurate information and steady support, not empty reassurance.
                   </p>
                 </div>
                 <div className="bg-background p-6 lg:p-8 rounded-lg">

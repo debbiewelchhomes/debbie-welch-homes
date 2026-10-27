@@ -290,3 +290,9 @@ Credit tool reported **78** credits used earlier and **91** later in the Septemb
 **Still awaiting evidence/authorization:** original market periods and Navy headcount, personal/provider/credential claims, operational promises, legal review, broader copy proposals and future hosting decisions. These have not been silently resolved.
 
 Review approach used: SEO Review, supplemented by current-source content, browser, accessibility and original-source research.
+
+## 9. Editorial pass implemented (October 27, 2026)
+
+Approved review wording applied: neutral school/neighborhood wording (About, Lake Stevens, Everett/Mukilteo, Marysville, Stanwood/Camano); qualified pre-approval, closing-cost, timeline, contract and compensation language (Buying, Selling, Downsizing); permission-led family wording; inclusive relocation wording; VA Certificate of Eligibility / lender / appraisal roles (FAQ and two articles); first-time buyers named under Buying and relocation to or from the county named on the homepage; reduced "calm" and "real talk" repetition. Market statistics, sources, testimonials, legal text, routes, SEO metadata and forms unchanged.
+
+Still open for Debbie: one-business-day and "no spam" commitments, guide delivery format, credentials (MRP, SRES®), hands-on downsizing help examples, Buying percentages, eXp terms, the "Most agents will help you list your home" comparison line, "calm" in article titles/meta descriptions, and outbound relocation details on the Relocation page.

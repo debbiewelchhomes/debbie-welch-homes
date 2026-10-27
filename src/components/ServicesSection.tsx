@@ -22,7 +22,8 @@ const services = [
   },
   {
     icon: TrendingDown,
-    title: "Senior Housing Transitions & Downsizing",
+    title: "Senior Housing",
+    titleSub: "Transitions & Downsizing",
     description:
       "If your current home no longer fits the season you are in, I will help you plan the move step by step, honoring both the practical and the emotional parts of letting go.",
     cta: "Downsizing & Life Transitions",

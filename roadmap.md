@@ -1,6 +1,6 @@
-# Maintenance and reusable content
+# Focused website review
 
-- [x] Inventory market snapshots, sources, guides, partners, FAQs, and CTAs.
-- [x] Share only genuinely repeated destinations without altering behavior.
-- [x] Write an owner-friendly maintenance guide with accurate source paths and hosting caveats.
-- [x] Verify destination preservation, preview diagnostics, prerender availability, and report limitations.
+- [ ] Review representative visitor journeys, content accuracy and accessibility across four screen sizes.
+- [ ] Implement only confirmed modest frontend corrections; preserve photos, integrations, routes and hidden Past Sales.
+- [ ] Run relevant existing tests and inspect automatic validation plus browser evidence.
+- [ ] Report priority findings, changed files, recommendations and verification limitations.

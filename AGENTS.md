@@ -7,4 +7,4 @@
 - Render dropdown destination links with Radix's `asChild` so pointer and keyboard selection activate the same link; keep testimonial rotation optional and disabled under reduced motion.
 - Use src/config/resourceLinks.ts for the repeated buyer-guide and market-report destinations; keep unique guides and area-filtered searches local because their targets and behavior differ.
 - Use src/lib/blogDate.ts for machine-readable article publication dates while retaining the existing displayed dates; reject invalid input instead of inventing a date.
-- Scope trial accent fonts to the homepage main element through a global utility so shared navigation and other routes retain their established typography.
+- Keep page-main script accents on one shared responsive scale and use shared Button variants for action colors and hover states, so page-specific styling cannot drift; navigation retains body typography.

@@ -50,12 +50,14 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6">
-        <div className="relative flex items-center justify-center h-24">
-          {/* Desktop Navigation */}
+        <div className="relative flex items-center justify-between h-24">
+          {/* Desktop Navigation: logo left, links center-right, consult button far right */}
           <div className="hidden lg:flex items-center justify-between w-full max-w-7xl mx-auto text-sm xl:text-base">
-            {/* Left Navigation Group */}
-            <div className="flex items-center gap-4 xl:gap-6 2xl:gap-9 flex-1 justify-end pr-6 xl:pr-10 2xl:pr-14 whitespace-nowrap">
+            <Link to="/" className="flex-shrink-0" aria-label="Debbie Welch Homes home page">
+              <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-10 xl:h-14 w-auto" />
+            </Link>
 
+            <div className="flex items-center gap-4 xl:gap-6 2xl:gap-8 whitespace-nowrap">
               <Link to="/" className="mr-3 xl:mr-5 text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
@@ -111,17 +113,6 @@ const Navigation = () => {
                 Search
               </a>
 
-            </div>
-
-            {/* Center Logo */}
-            <Link to="/" className="flex-shrink-0 px-6 xl:px-10">
-
-              <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-10 xl:h-14 w-auto" />
-            </Link>
-
-            {/* Right Navigation Group */}
-            <div className="flex items-center gap-4 xl:gap-6 2xl:gap-9 flex-1 justify-start pl-6 xl:pl-10 2xl:pl-14 whitespace-nowrap">
-
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex min-h-11 min-w-11 items-center gap-1 text-foreground hover:text-secondary transition-colors">
                   Resources <ChevronDown className="h-4 w-4" />
@@ -143,6 +134,7 @@ const Navigation = () => {
                 About
               </Link>
 
+              <span aria-hidden="true" className="h-6 w-px bg-border ml-1 xl:ml-2" />
               <Button size="sm" className="shrink-0 whitespace-nowrap min-h-9 bg-secondary px-3.5 py-1.5 text-sm text-secondary-foreground hover:bg-secondary/90" asChild>
 
                 <a href="https://cal.com/debbie.welch.homes" target="_blank" rel="noopener noreferrer">

@@ -39,9 +39,6 @@ const AboutSection = () => {
               </p>
             </div>
             <div className="clear-both flex flex-col gap-4 pt-4 sm:flex-row sm:flex-wrap sm:items-center">
-              <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
-                <Link to="/services">See How I Can Help</Link>
-              </Button>
               <Button size="lg" variant="outline" asChild>
                 <Link to="/about">Read More About Me</Link>
               </Button>

@@ -1,22 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 import { Link } from "react-router-dom";
+import calmInterior from "@/assets/calm-interior.jpg";
 
 const FreeResourceSection = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="section bg-background">
-      <div className="container mx-auto px-4">
+    <section className="relative section overflow-hidden bg-background">
+      <div className="absolute inset-0 parallax-section market-report-photo" style={{ backgroundImage: `url(${calmInterior})` }} aria-hidden="true" />
+      <div className="relative container mx-auto px-4">
         <motion.div
-          ref={ref}
           initial={{ opacity: 0, y: 16 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: "some" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="mx-auto max-w-3xl rounded-xl border border-border/70 bg-warm-bg px-6 py-10 text-center md:px-10 md:py-12"
+          className="mx-auto max-w-3xl text-backdrop text-center"
         >
           <span className="eyebrow-caps">Free, No Obligation</span>
 
@@ -31,7 +29,7 @@ const FreeResourceSection = () => {
           </p>
 
           <div className="mt-8 flex justify-center">
-            <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90" asChild>
+            <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
               <Link to="/contact">Request My Market Report</Link>
             </Button>
           </div>

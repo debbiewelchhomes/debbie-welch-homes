@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const BufferSection = () => {
   const ref = useRef(null);
@@ -16,10 +18,9 @@ const BufferSection = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="text-center"
         >
-          <p className="eyebrow" aria-hidden="true">
-            You deserve to understand every step…
-          </p>
-          <div className="mx-auto mt-4 h-px w-24 bg-secondary/50" />
+          <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
+            <Link to="/services"><span className="button-script">See How I Can Help</span></Link>
+          </Button>
         </motion.div>
       </div>
     </section>

@@ -33,7 +33,7 @@ const HeroSection = () => {
               Welcome home…
             </p>
 
-            <h1 className="font-heading h-display mx-auto mb-4 max-w-[18ch] text-primary">
+            <h1 className="font-heading h-display mx-auto mb-4 max-w-[24ch] lg:max-w-[18ch] text-primary">
               Helping You Home in Snohomish County
             </h1>
 

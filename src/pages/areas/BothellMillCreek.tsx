@@ -216,6 +216,7 @@ const BothellMillCreek = () => {
         </section>
       </main>
       <Footer />
+      </div>
     </div>
   );
 };

@@ -206,6 +206,7 @@ const SnohomishCounty = () => {
         </section>
       </main>
       <Footer />
+      </div>
     </div>
   );
 };

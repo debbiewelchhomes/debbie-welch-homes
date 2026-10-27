@@ -216,6 +216,7 @@ const StanwoodCamano = () => {
         </section>
       </main>
       <Footer />
+      </div>
     </div>
   );
 };

@@ -211,6 +211,7 @@ const Snohomish = () => {
         </section>
       </main>
       <Footer />
+      </div>
     </div>
   );
 };

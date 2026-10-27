@@ -212,6 +212,7 @@ const Arlington = () => {
         </section>
       </main>
       <Footer />
+      </div>
     </div>
   );
 };

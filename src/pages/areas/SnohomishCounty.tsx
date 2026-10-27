@@ -106,8 +106,8 @@ const SnohomishCounty = () => {
                 This page is meant as a starting point rather than a full guide. Use it to narrow down which
                 areas are worth a closer look, then read the individual guide for each one.
               </p>
-          </div>
             </div>
+          </div>
         </section>
 
         {/* Comparison grid */}
@@ -128,8 +128,8 @@ const SnohomishCounty = () => {
                   </span>
                 </Link>
               ))}
-          </div>
             </div>
+          </div>
         </section>
 
         {/* Boundaries */}
@@ -202,11 +202,11 @@ const SnohomishCounty = () => {
               <Button size="lg" variant="outline" asChild>
                 <Link to="/contact">Ask Me Where to Start</Link>
               </Button>
+            </div>
           </div>
         </section>
       </main>
       <Footer />
-      </div>
     </div>
   );
 };

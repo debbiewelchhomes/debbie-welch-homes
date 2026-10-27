@@ -63,8 +63,8 @@ const StanwoodCamano = () => {
                 districts, and sometimes insurance. People often shop both in one afternoon, which is exactly
                 why it is worth being clear about which side of the water any given property sits on.
               </p>
-          </div>
             </div>
+          </div>
         </section>
 
         {/* Balanced */}
@@ -114,8 +114,8 @@ const StanwoodCamano = () => {
                   </li>
                 </ul>
               </div>
-          </div>
             </div>
+          </div>
         </section>
 
         {/* Housing and location */}
@@ -141,8 +141,8 @@ const StanwoodCamano = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Allow extra time for property-specific research.</strong> County jurisdiction, wells, septic systems, private roads, shared access, shoreline rules, drainage, bluff conditions, insurance, and travel time to daily services should all be understood before closing.</p></div>
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Prepare the records that explain how the property works.</strong> Well and septic documents, road agreements, surveys, permits, maintenance history, shoreline information, and insurance details can prevent a distinctive property from feeling unnecessarily complicated.</p></div>
-          </div>
             </div>
+          </div>
         </section>
 
         {/* Community */}
@@ -212,11 +212,11 @@ const StanwoodCamano = () => {
               <Button size="lg" variant="outline" asChild>
                 <Link to="/contact">Ask Me About Stanwood &amp; Camano</Link>
               </Button>
+            </div>
           </div>
         </section>
       </main>
       <Footer />
-      </div>
     </div>
   );
 };

@@ -62,8 +62,8 @@ const Snohomish = () => {
                 them. Services, permitting, utilities, and tax treatment can differ. When you send me a listing,
                 that is one of the first things I check.
               </p>
-          </div>
             </div>
+          </div>
         </section>
 
         {/* Balanced */}
@@ -113,8 +113,8 @@ const Snohomish = () => {
                   </li>
                 </ul>
               </div>
-          </div>
             </div>
+          </div>
         </section>
 
         {/* Housing and location */}
@@ -142,8 +142,8 @@ const Snohomish = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Plan for the age and setting of the property.</strong> Older systems, flood mapping, shoreline or river proximity, wells, septic systems, easements, and historic considerations all deserve address-specific review before an offer becomes firm.</p></div>
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Documentation helps buyers see character instead of uncertainty.</strong> Permits, repair records, system ages, utility information, flood insurance history when applicable, and details about thoughtful updates can make an older or rural property easier to evaluate.</p></div>
-          </div>
             </div>
+          </div>
         </section>
 
         {/* Community */}
@@ -207,11 +207,11 @@ const Snohomish = () => {
               <Button size="lg" variant="outline" asChild>
                 <Link to="/contact">Ask Me About Snohomish</Link>
               </Button>
+            </div>
           </div>
         </section>
       </main>
       <Footer />
-      </div>
     </div>
   );
 };

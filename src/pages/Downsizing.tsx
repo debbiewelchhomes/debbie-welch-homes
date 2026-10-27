@@ -199,7 +199,7 @@ const Downsizing = () => {
               className="max-w-4xl mx-auto text-backdrop"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                A new chapter…
+                A new chapter...
               </p>
 
               <h1 className="font-heading h-section text-primary mb-6">
@@ -227,7 +227,7 @@ const Downsizing = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Real talk…
+                Real talk...
               </p>
               <h2 className="font-heading h-section text-primary mb-8">
                 Downsizing Is Rarely Just About the House
@@ -252,7 +252,7 @@ const Downsizing = () => {
 
         <section className="py-10 bg-warm-bg border-y border-border">
           <div className="container mx-auto px-4 max-w-4xl">
-            <p className="eyebrow mb-3">Specialized support for a significant transition…</p>
+            <p className="eyebrow mb-3">Specialized support for a significant transition...</p>
             <h2 className="font-heading h-card text-primary mb-4">Seniors Real Estate Specialist (SRES®)</h2>
             <p className="copy text-foreground">My SRES® credential reflects specialized training in the housing decisions that often affect older adults and their families. That includes timing, downsizing, accessibility, family communication, financial considerations, and coordinating a move that may involve decades of belongings. It does not replace legal, tax, medical, or financial advice, but it helps me recognize when those professionals should be part of the conversation.</p>
           </div>
@@ -269,7 +269,7 @@ const Downsizing = () => {
               className="text-center mb-16"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                One step at a time…
+                One step at a time...
               </p>
               <h2 className="font-heading h-section text-primary">
                 What the Process Actually Looks Like
@@ -314,7 +314,7 @@ const Downsizing = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                What's different here…
+                What's different here...
               </p>
 
               <h2 className="font-heading h-section text-primary mb-8">
@@ -353,7 +353,7 @@ const Downsizing = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Take it with you…
+                Take it with you...
               </p>
 
               <h2 className="font-heading h-section text-primary mb-8">
@@ -386,7 +386,7 @@ const Downsizing = () => {
             >
               <div className="text-center mb-12">
                 <p className="eyebrow mb-4" aria-hidden="true">
-                  Let's talk it through…
+                  Let's talk it through...
                 </p>
                 <h2 className="font-heading h-section text-primary mb-6">
                   Request a Free Downsizing Consult
@@ -494,7 +494,7 @@ const Downsizing = () => {
             >
               <div className="text-center mb-12">
                 <p className="eyebrow mb-4" aria-hidden="true">
-                  Downsizing questions…
+                  Downsizing questions...
                 </p>
                 <h2 className="font-heading h-section text-primary">
                   Downsizing Questions I Hear All the Time
@@ -538,7 +538,7 @@ const Downsizing = () => {
             >
               <div className="text-center mb-12">
                 <p className="eyebrow mb-4" aria-hidden="true">
-                  From downsizing clients…
+                  From downsizing clients...
                 </p>
                 <h2 className="font-heading h-section text-primary">
                   What My Clients Have to Say

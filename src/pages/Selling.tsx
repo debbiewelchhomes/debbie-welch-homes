@@ -198,7 +198,7 @@ const Selling = () => {
               className="max-w-4xl mx-auto text-backdrop"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Time to sell…
+                Time to sell...
               </p>
 
               <h1 className="font-heading h-section text-primary mb-6">
@@ -226,7 +226,7 @@ const Selling = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Three questions first…
+                Three questions first...
               </p>
               <h2 className="font-heading h-section text-primary mb-8">
                 Most Sellers Have the Same Three Questions
@@ -258,7 +258,7 @@ const Selling = () => {
               className="text-center mb-16"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                From walkthrough to close…
+                From walkthrough to close...
               </p>
               <h2 className="font-heading h-section text-primary">
                 What the Process Actually Looks Like
@@ -303,7 +303,7 @@ const Selling = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                The fine print matters…
+                The fine print matters...
               </p>
 
               <h2 className="font-heading h-section text-primary mb-8">
@@ -337,7 +337,7 @@ const Selling = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Take it with you…
+                Take it with you...
               </p>
 
               <h2 className="font-heading h-section text-primary mb-8">
@@ -371,7 +371,7 @@ const Selling = () => {
             >
               <div className="text-center mb-12">
                 <p className="eyebrow mb-4" aria-hidden="true">
-                  Let's start with the numbers…
+                  Let's start with the numbers...
                 </p>
                 <h2 className="font-heading h-section text-primary mb-6">Request a Free Home Evaluation</h2>
                 <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
@@ -478,7 +478,7 @@ const Selling = () => {
             >
               <div className="text-center mb-12">
                 <p className="eyebrow mb-4" aria-hidden="true">
-                  Seller questions…
+                  Seller questions...
                 </p>
                 <h2 className="font-heading h-section text-primary">
                   Selling Questions I Hear All the Time
@@ -522,7 +522,7 @@ const Selling = () => {
             >
               <div className="text-center mb-12">
                 <p className="eyebrow mb-4" aria-hidden="true">
-                  From seller clients…
+                  From seller clients...
                 </p>
                 <h2 className="font-heading h-section text-primary">
                   What My Seller Clients Have to Say

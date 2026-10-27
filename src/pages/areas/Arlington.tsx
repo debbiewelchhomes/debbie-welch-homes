@@ -37,7 +37,7 @@ const Arlington = () => {
               Arlington
             </p>
             <p
-              className="photo-text-shadow font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+              className="photo-text-shadow font-heading text-xl md:text-2xl max-w-2xl mx-auto"
             >
               A traditional downtown, a working airport and industrial district, and rural edges that begin
               sooner than most buyers expect.

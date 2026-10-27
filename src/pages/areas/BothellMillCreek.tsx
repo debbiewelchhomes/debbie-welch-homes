@@ -37,7 +37,7 @@ const BothellMillCreek = () => {
               Bothell &amp; Mill Creek
             </p>
             <p
-              className="photo-text-shadow font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+              className="photo-text-shadow font-heading text-xl md:text-2xl max-w-2xl mx-auto"
             >
               The south end of the county, where county lines and school district lines do not follow the
               mailing address.

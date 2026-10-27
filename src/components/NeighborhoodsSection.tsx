@@ -81,7 +81,7 @@ const NeighborhoodsSection = () => {
                       <img src={area.image} alt={area.altText} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
                       <div className="photo-wash absolute inset-0" aria-hidden="true" />
                       <div className="absolute inset-0 flex items-center justify-center px-3">
-                        <h3 className="photo-name-shadow font-heading h-card text-primary-foreground text-center whitespace-pre-line">
+                        <h3 className="photo-name-shadow font-heading h-card text-center whitespace-pre-line">
 
 
                           {area.name}

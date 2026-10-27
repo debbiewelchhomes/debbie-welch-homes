@@ -52,9 +52,9 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="relative flex items-center justify-center h-24">
           {/* Desktop Navigation */}
-          <div className="hidden xl:flex items-center justify-between w-full max-w-7xl mx-auto">
+          <div className="hidden lg:flex items-center justify-between w-full max-w-7xl mx-auto text-sm xl:text-base">
             {/* Left Navigation Group */}
-            <div className="flex items-center gap-4 2xl:gap-6 flex-1 justify-end pr-4 2xl:pr-6 whitespace-nowrap">
+            <div className="flex items-center gap-2 xl:gap-4 2xl:gap-6 flex-1 justify-end pr-2 xl:pr-4 2xl:pr-6 whitespace-nowrap">
               <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
@@ -111,12 +111,12 @@ const Navigation = () => {
             </div>
 
             {/* Center Logo */}
-            <Link to="/" className="flex-shrink-0 px-4">
-              <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-14 w-auto" />
+            <Link to="/" className="flex-shrink-0 px-2 xl:px-4">
+              <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-10 xl:h-14 w-auto" />
             </Link>
 
             {/* Right Navigation Group */}
-            <div className="flex items-center gap-4 2xl:gap-6 flex-1 justify-start pl-4 2xl:pl-6 whitespace-nowrap">
+            <div className="flex items-center gap-2 xl:gap-4 2xl:gap-6 flex-1 justify-start pl-2 xl:pl-4 2xl:pl-6 whitespace-nowrap">
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex min-h-11 min-w-11 items-center gap-1 text-foreground hover:text-secondary transition-colors">
                   Resources <ChevronDown className="h-4 w-4" />
@@ -151,17 +151,17 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Header */}
-          <Link to="/" className="xl:hidden absolute left-0" onClick={() => setMobileMenuOpen(false)}>
+          <Link to="/" className="lg:hidden absolute left-0" onClick={() => setMobileMenuOpen(false)}>
             <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-11 w-auto" />
           </Link>
-          <Button ref={mobileMenuButton} variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="xl:hidden absolute right-0 min-h-11 min-w-11 [&_svg]:size-6" aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={mobileMenuOpen} aria-controls="mobile-navigation">
+          <Button ref={mobileMenuButton} variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="lg:hidden absolute right-0 min-h-11 min-w-11 [&_svg]:size-6" aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={mobileMenuOpen} aria-controls="mobile-navigation">
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div id="mobile-navigation" className="xl:hidden max-h-[calc(100dvh-6rem-1px)] overflow-y-auto overscroll-contain py-4 pb-24 border-t border-border [&_a]:flex [&_a]:min-h-11 [&_a]:items-center" onKeyDown={(event) => { if (event.key === "Escape") { setMobileMenuOpen(false); mobileMenuButton.current?.focus(); } }}>
+          <div id="mobile-navigation" className="lg:hidden max-h-[calc(100dvh-6rem-1px)] overflow-y-auto overscroll-contain py-4 pb-24 border-t border-border [&_a]:flex [&_a]:min-h-11 [&_a]:items-center" onKeyDown={(event) => { if (event.key === "Escape") { setMobileMenuOpen(false); mobileMenuButton.current?.focus(); } }}>
             <div className="flex flex-col gap-4">
               <Link
                 to="/"

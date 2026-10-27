@@ -1,6 +1,7 @@
 # Project conventions
 
 - Keep visual refinements in existing shared components and global layout utilities; retain route-specific content and the established SSR/prerender/SEO architecture to avoid duplicated page systems.
+- Keep Home and Services on the same shared Navigation; compact the existing desktop layout for laptop widths rather than adding a second header. Homepage About uses a floated portrait at wider widths so longer text can continue beneath it.
 - Reveal independently positioned content with its own viewport trigger; avoid a shared trigger that can stay offscreen on phones, and use vertical motion where horizontal transforms would overflow tablet layouts.
 - Keep button labels wrap-safe and mobile navigation independently scrollable so existing destinations remain usable on narrow or short screens.
 - Render dropdown destination links with Radix's `asChild` so pointer and keyboard selection activate the same link; keep testimonial rotation optional and disabled under reduced motion.

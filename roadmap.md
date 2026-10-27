@@ -1,5 +1,9 @@
 # Approved follow-up improvements
 
+- [ ] Combine homepage Real Talk into About, preserve portrait and support text wrapping beneath it.
+- [ ] Place the primary services CTA and refine the existing shared desktop/mobile navigation.
+- [ ] Verify layouts and interactions; recommend a suitable background-photo section without adding one unrequested.
+
 - [x] Move the existing service choices earlier without duplicating content or changing destinations.
 - [x] Research time-sensitive area figures, forecasts, blog advice and operational promises; update only verified claims.
 - [x] Repair confirmed frontend issues: independent service/About reveals, tablet overflow, menu targets, report-request wording and machine-readable blog dates.

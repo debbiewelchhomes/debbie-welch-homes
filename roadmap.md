@@ -1,5 +1,10 @@
 # Approved follow-up improvements
 
+- [x] Review current content, all visitor journeys, SEO/accessibility, legal disclosures and primary-source claims after Debbie's edits.
+- [x] Apply only confirmed simple reversible corrections; preserve facts, testimonials, forms, routes, external destinations and architecture.
+- [x] Run existing tests and full desktop/mobile browser checks; report production/typecheck verification limitations honestly. All 212 page-size checks passed; five tests passed. Fresh production/typecheck commands prohibited by environment, so not represented as verified.
+- [x] Deliver a detailed prioritized page/article inventory, before/after examples, migration considerations, current commit and credit evidence in the dated review report.
+
 - [x] Unify script sizing, Contact colors and primary button/hover treatments; verify the preview.
 - [x] Match Working Relationship and Market Report headings and tighten trailing script dots; verify the preview.
 - [x] Replace the public Listings Past Sales teaser with current-home search content; verify the preview.

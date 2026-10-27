@@ -43,9 +43,9 @@ const BrandPromiseSection = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="mx-auto mb-12 max-w-2xl text-center"
         >
-          <span className="eyebrow">Our working relationship...</span>
-          <h2 className="font-heading h-section mt-3 text-primary">
-            What Working With Me Actually Looks Like
+          <h2 className="font-heading text-primary">
+            <span className="eyebrow">Our working relationship<span className="script-dots">...</span></span>
+            <span className="h-section block text-secondary">What Working With Me Actually Looks Like</span>
           </h2>
         </motion.div>
 

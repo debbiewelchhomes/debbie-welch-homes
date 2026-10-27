@@ -115,7 +115,7 @@ const TestimonialSection = () => {
               <div className="text-center mb-8">
                 <h2 className="font-heading text-primary mb-6">
                   <span className="eyebrow">
-                    In their own words...
+                    In their own words<span className="script-dots">...</span>
                   </span>
                   <span className="h-section block text-secondary">What My Clients Are Saying</span>
                 </h2>

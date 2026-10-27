@@ -16,10 +16,9 @@ const FreeResourceSection = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="mx-auto max-w-3xl text-backdrop text-center"
         >
-          <span className="eyebrow">Free, no obligation...</span>
-
-          <h2 className="font-heading h-section mx-auto mt-3 max-w-[22ch] text-primary">
-            A Market Report for Any Area in Snohomish County
+          <h2 className="font-heading text-primary">
+            <span className="eyebrow">Free, no obligation<span className="script-dots">...</span></span>
+            <span className="h-section mx-auto block max-w-[22ch] text-secondary">A Market Report for Any Area in Snohomish County</span>
           </h2>
 
           <p className="copy mx-auto mt-4 max-w-[56ch] text-left text-foreground md:text-center">

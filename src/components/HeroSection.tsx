@@ -31,7 +31,7 @@ const HeroSection = () => {
           <div className="text-backdrop text-center">
             <h1 className="font-heading mb-4 text-primary">
               <span className="eyebrow">
-                Welcome home...
+                Welcome home<span className="script-dots">...</span>
               </span>
               <span className="h-display mx-auto block max-w-none text-secondary">Helping You Home in<br />Snohomish County</span>
             </h1>
@@ -57,7 +57,7 @@ const HeroSection = () => {
             </ul>
 
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90" asChild>
+              <Button size="lg" asChild>
                 <a
                   href="https://cal.com/debbie.welch.homes"
                   target="_blank"
@@ -69,7 +69,7 @@ const HeroSection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-secondary bg-transparent text-secondary hover:bg-secondary hover:text-white"
+                className="border-secondary bg-transparent text-secondary hover:bg-secondary hover:text-secondary-foreground"
                 asChild
               >
                 <Link to="/services">See How I Help</Link>

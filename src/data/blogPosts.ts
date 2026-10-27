@@ -17,7 +17,7 @@ export const mainBlogPosts: BlogPost[] = [
   {
     id: "main-1",
     title: "Should I Sell First or Buy First in Snohomish County?",
-    date: "October 1, 2025",
+    date: "October 20, 2026",
     category: "Buying",
     excerpt: "Selling first usually provides more financial certainty. Buying first can make the move easier, but it may require stronger financing and a careful backup plan. Here is how to compare the two paths without letting urgency make the decision for you.",
     slug: "sell-first-or-buy-first",
@@ -29,7 +29,7 @@ export const mainBlogPosts: BlogPost[] = [
   {
     id: "main-2",
     title: "A Practical Guide to Downsizing Your Home Without Losing Your Mind",
-    date: "September 28, 2025",
+    date: "October 6, 2026",
     category: "Downsizing",
     excerpt: "Downsizing involves far more than choosing a smaller house. A manageable plan separates the real-estate decisions from the belongings, timing, family communication, and practical details that can otherwise become overwhelming.",
     slug: "downsizing-guide",
@@ -41,7 +41,7 @@ export const mainBlogPosts: BlogPost[] = [
   {
     id: "main-3",
     title: "Relocating to Snohomish County: What I Tell My Military & Out-of-Area Buyers",
-    date: "September 15, 2025",
+    date: "September 22, 2026",
     category: "Relocation",
     excerpt: "A successful Snohomish County relocation starts with commute, budget, daily routines, property type, and school-boundary requirements, not a generic list of the most popular cities. This guide explains how to narrow the area from a distance.",
     slug: "relocating-guide",
@@ -53,7 +53,7 @@ export const mainBlogPosts: BlogPost[] = [
   {
     id: "main-4",
     title: "What Rising (or Falling) Rates Really Mean for Local Buyers",
-    date: "September 5, 2025",
+    date: "September 8, 2026",
     category: "Market Updates",
     excerpt: "Mortgage-rate headlines matter, but the useful question is how a particular rate changes your payment, purchasing range, and overall risk. Local inventory, competition, insurance, taxes, and future plans still need to be considered together.",
     slug: "interest-rates-impact",
@@ -70,7 +70,7 @@ export const searchInsightsPosts: BlogPost[] = [
   {
     id: "r01",
     title: "How Do I Plan a PCS Move to or from Naval Station Everett?",
-    date: "December 15, 2025",
+    date: "August 25, 2026",
     category: "Military & VA",
     excerpt: "A PCS move has fixed deadlines, changing information, and little room for missed steps. This guide explains how to coordinate housing, financing, remote showings, inspections, travel, and backup plans around Naval Station Everett.",
     slug: "pcs-military-relocation-naval-station-everett",
@@ -83,7 +83,7 @@ export const searchInsightsPosts: BlogPost[] = [
   {
     id: "r02",
     title: "How Do I Coordinate Selling and Buying During a Downsizing Move?",
-    date: "December 14, 2025",
+    date: "August 11, 2026",
     category: "Downsizing",
     excerpt: "The most difficult part of downsizing is often connecting the sale of the current home with the purchase of the next one. A clear sequence can reduce financial pressure, repeated moves, and last-minute decisions.",
     slug: "downsizing-sell-buy-snohomish-county",
@@ -96,7 +96,7 @@ export const searchInsightsPosts: BlogPost[] = [
   {
     id: "r03",
     title: "What Should First-Time Buyers Expect in Snohomish County?",
-    date: "December 13, 2025",
+    date: "July 28, 2026",
     category: "Buying",
     excerpt: "First-time buyers need a clear view of the entire process, including financing, property research, offers, inspections, appraisal, closing costs, and the first months of ownership.",
     slug: "first-time-home-buying-calm-guide",
@@ -109,7 +109,7 @@ export const searchInsightsPosts: BlogPost[] = [
   {
     id: "r04",
     title: "How Can I Buy or Sell in Snohomish County From Out of Area?",
-    date: "December 12, 2025",
+    date: "July 14, 2026",
     category: "Relocation",
     excerpt: "Remote real-estate decisions require better documentation, clearer communication, and dependable local coordination. This guide explains what can be handled remotely and where independent inspections still matter.",
     slug: "remote-out-of-area-buyers-sellers",
@@ -122,7 +122,7 @@ export const searchInsightsPosts: BlogPost[] = [
   {
     id: "bc01",
     title: "What Should I Look for in an Agent for a PCS to Naval Station Everett?",
-    date: "December 11, 2025",
+    date: "June 30, 2026",
     category: "Local Real Estate Questions",
     excerpt: "When military families ask this, they're usually really asking: Who can keep my timeline on track, help me buy confidently, and make this less stressful?",
     slug: "choosing-pcs-agent-naval-station-everett",
@@ -141,7 +141,7 @@ If you're PCSing to Naval Station Everett and want a plan that's organized and p
   {
     id: "bc02",
     title: "How Do I Sell My Everett-Area Home After I Have Already Moved?",
-    date: "December 10, 2025",
+    date: "June 16, 2026",
     category: "Local Real Estate Questions",
     excerpt: "Selling while PCSing is a different challenge. You need an agent who can run a tight plan and coordinate details you can't be there for.",
     slug: "sell-from-afar-everett",
@@ -158,7 +158,7 @@ If you're PCSing out and need a steady agent who can manage the details while yo
   {
     id: "bc03",
     title: "What Should VA Buyers Know Before Shopping Near Naval Station Everett?",
-    date: "December 9, 2025",
+    date: "June 2, 2026",
     category: "Military & VA",
     excerpt: "VA financing can be a strong home-buying option, but buyers still need to understand qualification, property condition, appraisal, inspections, closing costs, and the real commute to Naval Station Everett.",
     slug: "va-home-buyers-naval-station-everett",
@@ -171,7 +171,7 @@ If you're PCSing out and need a steady agent who can manage the details while yo
   {
     id: "bc04",
     title: "Can I Buy Near Naval Station Everett Without Traveling for Showings?",
-    date: "December 8, 2025",
+    date: "May 19, 2026",
     category: "Local Real Estate Questions",
     excerpt: "PCS doesn't always allow time for in-person house hunting. A remote buyer's agent should be able to serve as your eyes on the ground.",
     slug: "remote-showings-military-buyers",
@@ -188,7 +188,7 @@ If you need a practical plan and a steady guide, You are welcome to contact Debb
   {
     id: "bc05",
     title: "What Kind of Help Should I Expect When Downsizing in Lake Stevens?",
-    date: "December 7, 2025",
+    date: "May 5, 2026",
     category: "Local Real Estate Questions",
     excerpt: "Downsizing is a life transition, not just a move. A downsizing agent should help you plan the timing, price strategically, and reduce stress.",
     slug: "downsizing-help-lake-stevens",
@@ -205,7 +205,7 @@ If you want a downsizing plan that feels organized and human, Debbie's process i
   {
     id: "bc06",
     title: "Is Snohomish a Good Fit for My Downsizing Move?",
-    date: "December 6, 2025",
+    date: "April 21, 2026",
     category: "Local Real Estate Questions",
     excerpt: "Snohomish attracts downsizers for a reason, charm, walkability pockets, and that 'this feels like home' vibe.",
     slug: "downsizing-help-snohomish",
@@ -222,7 +222,7 @@ If you're downsizing into Snohomish and want a steady guide, Debbie Welch is a g
   {
     id: "bc07",
     title: "How Can I Help My Parents Downsize When I Live Out of Area?",
-    date: "December 5, 2025",
+    date: "April 7, 2026",
     category: "Downsizing",
     excerpt: "Helping a parent downsize from another city or state requires clear authority, respectful communication, dependable local help, and a plan that separates personal decisions from real-estate deadlines.",
     slug: "help-parents-downsize-out-of-area",
@@ -235,7 +235,7 @@ If you're downsizing into Snohomish and want a steady guide, Debbie Welch is a g
   {
     id: "bc08",
     title: "What Should First-Time Buyers Know About Buying a Home in Marysville?",
-    date: "December 4, 2025",
+    date: "March 24, 2026",
     category: "Buying",
     excerpt: "Marysville offers several housing styles and commuting options, but first-time buyers should examine school boundaries, traffic routes, property systems, insurance, association costs, and the full monthly payment by exact address.",
     slug: "first-time-home-buyers-marysville-wa",
@@ -248,7 +248,7 @@ If you're downsizing into Snohomish and want a steady guide, Debbie Welch is a g
   {
     id: "bc09",
     title: "How Can a First-Time Buyer Compete Without Giving Up Every Protection?",
-    date: "December 3, 2025",
+    date: "March 10, 2026",
     category: "Buying",
     excerpt: "A competitive offer does not have to mean accepting unlimited risk. Buyers can evaluate price, timing, financing, inspection, appraisal, earnest money, and seller priorities while keeping firm personal limits.",
     slug: "first-time-buyer-competitive-offer-protections",
@@ -261,7 +261,7 @@ If you're downsizing into Snohomish and want a steady guide, Debbie Welch is a g
   {
     id: "bc10",
     title: "How Do I Find a Buyer’s Agent Who Will Explain Things Without Pressuring Me?",
-    date: "December 2, 2025",
+    date: "February 24, 2026",
     category: "Local Real Estate Questions",
     excerpt: "Some buyers want a hype person. Others want a steady guide who explains things clearly and answers questions honestly.",
     slug: "low-pressure-agent-first-time-buyers",
@@ -278,7 +278,7 @@ If you want to feel informed (not sold to), Debbie Welch is a strong match.
   {
     id: "ls01",
     title: "PCS Realtor in Everett, WA (Naval Station Everett)",
-    date: "December 1, 2025",
+    date: "February 17, 2026",
     category: "Local Real Estate Questions",
     excerpt: "PCS moves are fast, and housing decisions come with real consequences. Everett is a practical home base for Naval Station Everett with a wide range of neighborhoods and price points.",
     slug: "pcs-realtor-everett-wa",
@@ -302,7 +302,7 @@ Debbie Welch of Debbie Welch Homes at eXp Realty helps military and Veteran fami
   {
     id: "ls02",
     title: "PCS Realtor in Marysville, WA (Naval Station Everett)",
-    date: "November 30, 2025",
+    date: "February 10, 2026",
     category: "Local Real Estate Questions",
     excerpt: "Marysville can be a great fit for PCS families who want a more suburban feel while staying within reach of Naval Station Everett.",
     slug: "pcs-realtor-marysville-wa",
@@ -324,7 +324,7 @@ Debbie Welch helps PCS buyers and sellers in Marysville with organized, practica
   {
     id: "ls03",
     title: "PCS Realtor in Lake Stevens, WA (Naval Station Everett)",
-    date: "November 29, 2025",
+    date: "February 3, 2026",
     category: "Local Real Estate Questions",
     excerpt: "Lake Stevens is popular for buyers who want a community feel, newer housing options in many areas, and a lifestyle that's a bit more 'breathing room.'",
     slug: "pcs-realtor-lake-stevens-wa",
@@ -346,7 +346,7 @@ Debbie Welch helps PCS clients evaluate whether Lake Stevens is the right fit, a
   {
     id: "ls04",
     title: "PCS Realtor in Snohomish, WA (Naval Station Everett)",
-    date: "November 28, 2025",
+    date: "January 27, 2026",
     category: "Local Real Estate Questions",
     excerpt: "Snohomish attracts buyers who want charm, community feel, and a more distinct 'small town' vibe, while still being within reach of Everett.",
     slug: "pcs-realtor-snohomish-wa",
@@ -368,7 +368,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
   {
     id: "ls05",
     title: "Downsizing Realtor in Everett, WA",
-    date: "November 27, 2025",
+    date: "January 20, 2026",
     category: "Local Real Estate Questions",
     excerpt: "Downsizing in Everett often means balancing practical needs with timing and emotions.",
     slug: "downsizing-realtor-everett-wa",
@@ -388,7 +388,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
   {
     id: "ls06",
     title: "Downsizing Realtor in Marysville, WA",
-    date: "November 26, 2025",
+    date: "January 13, 2026",
     category: "Local Real Estate Questions",
     excerpt: "Marysville downsizers often want a move that feels simpler, less upkeep, more comfort, and a home that fits the next stage of life.",
     slug: "downsizing-realtor-marysville-wa",
@@ -408,7 +408,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
   {
     id: "ls07",
     title: "Downsizing Realtor in Lake Stevens, WA",
-    date: "November 25, 2025",
+    date: "January 6, 2026",
     category: "Local Real Estate Questions",
     excerpt: "Downsizing in Lake Stevens can be a great move, but the process is smoother when selling and buying are planned together.",
     slug: "downsizing-realtor-lake-stevens-wa",
@@ -428,7 +428,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
   {
     id: "ls08",
     title: "Downsizing Realtor in Snohomish, WA",
-    date: "November 24, 2025",
+    date: "December 30, 2025",
     category: "Local Real Estate Questions",
     excerpt: "Snohomish downsizers often want lifestyle as much as layout, charm, community, and a home that feels like a fresh chapter.",
     slug: "downsizing-realtor-snohomish-wa",
@@ -448,7 +448,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
   {
     id: "ls09",
     title: "First-Time Home Buyer Realtor in Everett, WA",
-    date: "November 23, 2025",
+    date: "December 23, 2025",
     category: "Local Real Estate Questions",
     excerpt: "Buying your first home in Everett can feel like learning a new language.",
     slug: "first-time-home-buyer-realtor-everett-wa",
@@ -468,7 +468,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
   {
     id: "ls10",
     title: "First-Time Home Buyer Realtor in Marysville, WA",
-    date: "November 22, 2025",
+    date: "December 16, 2025",
     category: "Local Real Estate Questions",
     excerpt: "First-time buyers need clarity, not chaos.",
     slug: "first-time-home-buyer-realtor-marysville-wa",
@@ -488,7 +488,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
   {
     id: "ls11",
     title: "First-Time Home Buyer Realtor in Lake Stevens, WA",
-    date: "November 21, 2025",
+    date: "December 9, 2025",
     category: "Local Real Estate Questions",
     excerpt: "Lake Stevens can be a great place to buy your first home, but first-timers often need help sorting through options.",
     slug: "first-time-home-buyer-realtor-lake-stevens-wa",
@@ -508,7 +508,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
   {
     id: "ls12",
     title: "First-Time Home Buyer Realtor in Snohomish, WA",
-    date: "November 20, 2025",
+    date: "December 2, 2025",
     category: "Local Real Estate Questions",
     excerpt: "Snohomish is charming, and buying there as a first-timer can feel intimidating if you don't have a steady guide.",
     slug: "first-time-home-buyer-realtor-snohomish-wa",

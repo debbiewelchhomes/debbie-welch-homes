@@ -21,7 +21,7 @@ const BlogSection = () => {
           className="text-center mb-12"
         >
           <h2 className="font-heading mb-6 text-primary">
-            <span className="eyebrow">Stay informed<span className="script-dots">…</span></span>
+            <span className="eyebrow">Stay informed...</span>
             <span className="h-section block text-secondary">From the Blog</span>
           </h2>
 

@@ -51,7 +51,7 @@ const ServicesSection = () => {
         >
           <h2 className="font-heading text-primary">
             <span className="eyebrow">
-              When it's time<span className="script-dots">…</span>
+              When it's time...
             </span>
             <span className="h-section block text-secondary">Here's How We Can Work Together</span>
           </h2>

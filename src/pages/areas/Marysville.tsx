@@ -69,7 +69,7 @@ const Marysville = () => {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="eyebrow mb-4">My hometown…</p>
+              <p className="eyebrow mb-4">My hometown...</p>
               <h1 className="font-heading h-section text-primary mb-6">Marysville, WA</h1>
               <p className="text-foreground text-lg leading-relaxed">
                 Marysville is where I grew up, so this one's personal. It's one of the larger cities in this part of the
@@ -237,7 +237,7 @@ const Marysville = () => {
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
             >
-              <p className="eyebrow mb-4">Ready to look…</p>
+              <p className="eyebrow mb-4">Ready to look...</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
                 Homes for Sale in Marysville
               </h2>

@@ -53,7 +53,7 @@ const NeighborhoodsSection = () => {
         duration: 0.6
       }} className="text-center mb-12">
           <h2 className="font-heading text-primary">
-            <span className="eyebrow">Let me show you around...</span>
+            <span className="eyebrow">Let me show you around<span className="script-dots">...</span></span>
             <span className="h-section block text-secondary">Featured Areas</span>
           </h2>
 

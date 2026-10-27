@@ -103,7 +103,7 @@ const Contact = () => {
       {/* Hero Script Line */}
       <section className="pt-32 pb-4 md:pt-40 md:pb-8 bg-background">
         <div className="container mx-auto px-4">
-          <p className="h-section text-center font-script text-[#6e808e]">
+          <p className="eyebrow text-center">
             Get in touch…
           </p>
         </div>
@@ -112,38 +112,38 @@ const Contact = () => {
       {/* Main Contact Section */}
       <section className="py-12 md:py-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto bg-[#e1dfdc] rounded-lg p-8 md:p-12 shadow-sm">
+          <div className="max-w-3xl mx-auto bg-warm-bg rounded-lg p-8 md:p-12 shadow-sm">
             {/* Heading + Intro */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-['Cormorant_Garamond'] text-[#3c3e4f] mb-6 text-center">
+            <h1 className="h-display font-heading text-foreground mb-6 text-center">
               Let's Talk About Your Next Move
             </h1>
             
-            <p className="text-base md:text-lg font-['Montserrat'] text-foreground mb-8 text-center leading-relaxed">
+            <p className="text-base md:text-lg font-body text-foreground mb-8 text-center leading-relaxed">
               Whether you're thinking about buying, selling, downsizing, or relocating to Snohomish County, we can start with a simple conversation. Share a few details below about what you're hoping to do, and I'll follow up personally within one business day.
             </p>
 
             {/* Contact Details */}
-            <div className="mb-10 pb-8 border-b border-[#bcc5c6]">
-              <p className="text-sm font-['Montserrat'] font-semibold text-[#3c3e4f] mb-4">
+            <div className="mb-10 pb-8 border-b border-border">
+              <p className="text-sm font-body font-semibold text-foreground mb-4">
                 Reach me directly:
               </p>
               <div className="space-y-3">
                 <a 
                   href="tel:360-631-8148" 
-                  className="flex items-center gap-3 text-foreground hover:text-[#6e808e] transition-colors font-['Montserrat']"
+                  className="flex items-center gap-3 text-foreground hover:text-secondary transition-colors font-body"
                 >
-                  <Phone className="h-4 w-4 text-[#6e808e]" />
+                  <Phone className="h-4 w-4 text-secondary" />
                   <span>360-631-8148</span>
                 </a>
                 <a 
                   href="mailto:debbie@debbiewelchhomes.com" 
-                  className="flex items-center gap-3 text-foreground hover:text-[#6e808e] transition-colors font-['Montserrat']"
+                  className="flex items-center gap-3 text-foreground hover:text-secondary transition-colors font-body"
                 >
-                  <Mail className="h-4 w-4 text-[#6e808e]" />
+                  <Mail className="h-4 w-4 text-secondary" />
                   <span className="min-w-0 break-words">debbie@<wbr />debbiewelchhomes.com</span>
                 </a>
-                <div className="flex items-center gap-3 text-foreground font-['Montserrat']">
-                  <MapPin className="h-4 w-4 text-[#6e808e]" />
+                <div className="flex items-center gap-3 text-foreground font-body">
+                  <MapPin className="h-4 w-4 text-secondary" />
                   <span>Based in Snohomish County, WA</span>
                 </div>
               </div>
@@ -168,8 +168,8 @@ const Contact = () => {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="firstName" className="block text-sm font-['Montserrat'] font-medium text-[#3c3e4f] mb-2">
-                      First Name <span className="text-red-500">*</span>
+                    <label htmlFor="firstName" className="block text-sm font-body font-medium text-foreground mb-2">
+                      First Name <span className="text-destructive">*</span>
                     </label>
                     <Input
                       id="firstName"
@@ -177,11 +177,11 @@ const Contact = () => {
                       required
                       value={formData.firstName}
                       onChange={(e) => handleChange("firstName", e.target.value)}
-                      className="bg-background font-['Montserrat']"
+                      className="bg-background font-body"
                     />
                   </div>
                   <div>
-                    <label htmlFor="lastName" className="block text-sm font-['Montserrat'] font-medium text-[#3c3e4f] mb-2">
+                    <label htmlFor="lastName" className="block text-sm font-body font-medium text-foreground mb-2">
                       Last Name
                     </label>
                     <Input
@@ -189,15 +189,15 @@ const Contact = () => {
                       autoComplete="family-name"
                       value={formData.lastName}
                       onChange={(e) => handleChange("lastName", e.target.value)}
-                      className="bg-background font-['Montserrat']"
+                      className="bg-background font-body"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="email" className="block text-sm font-['Montserrat'] font-medium text-[#3c3e4f] mb-2">
-                      Email <span className="text-red-500">*</span>
+                    <label htmlFor="email" className="block text-sm font-body font-medium text-foreground mb-2">
+                      Email <span className="text-destructive">*</span>
                     </label>
                     <Input
                       id="email"
@@ -206,11 +206,11 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={(e) => handleChange("email", e.target.value)}
-                      className="bg-background font-['Montserrat']"
+                      className="bg-background font-body"
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-['Montserrat'] font-medium text-[#3c3e4f] mb-2">
+                    <label htmlFor="phone" className="block text-sm font-body font-medium text-foreground mb-2">
                       Phone
                     </label>
                     <Input
@@ -219,17 +219,17 @@ const Contact = () => {
                       autoComplete="tel"
                       value={formData.phone}
                       onChange={(e) => handleChange("phone", e.target.value)}
-                      className="bg-background font-['Montserrat']"
+                      className="bg-background font-body"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="lookingFor" className="block text-sm font-['Montserrat'] font-medium text-[#3c3e4f] mb-2">
+                  <label htmlFor="lookingFor" className="block text-sm font-body font-medium text-foreground mb-2">
                     What are you looking for?
                   </label>
                   <Select value={formData.lookingFor} onValueChange={(value) => handleChange("lookingFor", value)}>
-                    <SelectTrigger id="lookingFor" className="min-h-11 bg-background font-['Montserrat']">
+                    <SelectTrigger id="lookingFor" className="min-h-11 bg-background font-body">
                       <SelectValue placeholder="Select one..." />
                     </SelectTrigger>
                     <SelectContent>
@@ -243,8 +243,8 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-['Montserrat'] font-medium text-[#3c3e4f] mb-2">
-                    How can I help? <span className="text-red-500">*</span>
+                  <label htmlFor="message" className="block text-sm font-body font-medium text-foreground mb-2">
+                    How can I help? <span className="text-destructive">*</span>
                   </label>
                   <Textarea
                     id="message"
@@ -252,12 +252,12 @@ const Contact = () => {
                     rows={6}
                     value={formData.message}
                     onChange={(e) => handleChange("message", e.target.value)}
-                    className="bg-background font-['Montserrat']"
+                    className="bg-background font-body"
                     placeholder="Tell me a bit about what you're looking for..."
                   />
                 </div>
 
-                <p className="text-sm text-muted-foreground font-['Montserrat'] italic">
+                <p className="text-sm text-muted-foreground font-body italic">
                   I respect your time and inbox, no spam, ever.
                 </p>
 
@@ -265,7 +265,7 @@ const Contact = () => {
                   type="submit" 
                   disabled={isSubmitting}
                   aria-busy={isSubmitting}
-                  className="w-full md:w-auto px-8 py-6 text-base font-['Montserrat']"
+                  className="w-full md:w-auto px-8 py-6 text-base font-body"
                 >
                   {isSubmitting ? "Sending…" : "Submit"}
                 </Button>
@@ -274,10 +274,10 @@ const Contact = () => {
               </form>
             ) : (
               <div role="status" className="py-12 text-center">
-                <p className="text-xl font-['Montserrat'] text-[#3c3e4f] mb-2">
+                <p className="text-xl font-body text-foreground mb-2">
                   Thank you for reaching out!
                 </p>
-                <p className="text-base font-['Montserrat'] text-foreground">
+                <p className="text-base font-body text-foreground">
                   I'll be in touch within one business day.
                 </p>
               </div>
@@ -289,7 +289,7 @@ const Contact = () => {
       {/* Secondary Note */}
       <section className="py-8 md:py-12 bg-background">
         <div className="container mx-auto px-4">
-          <p className="text-center text-sm md:text-base font-['Montserrat'] text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-center text-sm md:text-base font-body text-muted-foreground max-w-2xl mx-auto">
             Prefer to skip the form? Email or call me directly using the details above and I will get back to you within one business day.
           </p>
         </div>

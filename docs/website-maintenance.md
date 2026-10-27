@@ -58,6 +58,21 @@ The two existing area snapshots have different numbers, measures, and contexts. 
 
 ## Quarterly market review, without guessing
 
+### October 27, 2026: authorized Realtor.com update, verification blocked
+
+Debbie authorized replacement snapshots from these exact original publisher pages:
+
+| City | Requested value, not independently verified | Exact source |
+| --- | --- | --- |
+| Lake Stevens | $675,000 citywide median **sold** price, September 2026 | https://www.realtor.com/local/market/washington/snohomish-county/lake-stevens |
+| Everett | $600,000 citywide median **sold** price, September 2026 | https://www.realtor.com/local/market/washington/snohomish-county/everett |
+
+Direct retrieval returned HTTP 429 for both URLs. Browser retrieval returned an HTTP 200 regional-unavailability page, not the market statistics. Independent research also could not retrieve the requested data. Consequently, **neither website price nor the Lake Stevens range was updated**. The requested values above are an approval record, not verified statistics. The existing figures remain unresolved as described earlier in this guide.
+
+On successful verification, label each figure with Realtor.com, the citywide geography, median sold-price metric and September 2026 reporting period; add the exact city's source link. Do not call these current listing prices or compare them directly with the old August figures, whose methodologies are unconfirmed. Do not calculate trends. Replace the unsourced Lake Stevens range with neutral prose rather than another numerical metric, preserving unrelated local and Quick Facts entries.
+
+Review these dated snapshots **quarterly**, verifying the original publisher's reporting period, metric, geography and value each time. Record the source URL and actual verification date separately from the reporting period. Keep the last verified reporting period visible until a replacement is verified; never roll dates forward automatically. A blocked source leaves the update pending, not verified.
+
 1. Ask Debbie to supply the approved report or original source for the specific community and property types. Record the exact reporting period, metric definition, geography, value, publisher, source URL, and review date.
 2. Keep an internal record of the report or citation before editing. A review date is different from the period the data measures. Median sale price, typical asking-price range, average price, and estimate are different metrics.
 3. Search the repository for the existing amount and date. For Lake Stevens, review both the $680-715K paragraph and the ~$695K Quick Facts value. For Everett, review the ~$565K card and its August 2026 note together.

@@ -1,5 +1,8 @@
 # Approved follow-up improvements
 
+- [ ] Verify Realtor.com September 2026 citywide median sold prices for Lake Stevens and Everett; blocked by HTTP 429 and regional-unavailability pages. No website prices or range changed; awaiting accessible publisher evidence.
+- [x] Update the existing maintenance guide and preserve the full substantive review in repository documentation; deliver full findings with verification, revision and credit limitations.
+
 - [x] Review current content, all visitor journeys, SEO/accessibility, legal disclosures and primary-source claims after Debbie's edits.
 - [x] Apply only confirmed simple reversible corrections; preserve facts, testimonials, forms, routes, external destinations and architecture.
 - [x] Run existing tests and full desktop/mobile browser checks; report production/typecheck verification limitations honestly. All 212 page-size checks passed; five tests passed. Fresh production/typecheck commands prohibited by environment, so not represented as verified.

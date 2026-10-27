@@ -130,9 +130,10 @@ All colors MUST be HSL.
   }
   .home-font-preview .button-script {
     font-size: 5.5rem;
-    /* Script ascenders and descenders need air inside the button. */
-    padding: 0.9rem 0.3rem 1.15rem;
+    /* Script ascenders and descenders need air inside the button, weighted low. */
+    padding: 0.4rem 0.3rem 1.8rem;
   }
+
 
   .home-font-preview .eyebrow {
     font-size: 4.25rem;

@@ -52,7 +52,7 @@ const NeighborhoodsSection = () => {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-12">
-          <p className="eyebrow mb-4" aria-hidden="true">Let me show you around…</p>
+          <p className="eyebrow mb-4" aria-hidden="true">Let me show you around<span className="script-dots">…</span></p>
           <h2 className="font-heading h-section text-primary">Featured Areas</h2>
         </motion.div>
 

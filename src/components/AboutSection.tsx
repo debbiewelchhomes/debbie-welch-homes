@@ -14,7 +14,7 @@ const AboutSection = () => {
             transition={{ duration: 0.6 }}
             className="flow-root"
           >
-            <p className="eyebrow mb-4" aria-hidden="true">Hey there…</p>
+            <p className="eyebrow mb-4" aria-hidden="true">Hey there<span className="script-dots">…</span></p>
             <h2 className="font-heading h-section mb-6 max-w-[12ch] text-primary">I'm Debbie</h2>
             <img
               alt="Debbie Welch, Snohomish County real estate broker"

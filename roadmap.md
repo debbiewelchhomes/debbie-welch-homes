@@ -28,8 +28,9 @@
 - [x] Widen the space between header items, make the dropdown arrow spacing uniform, restore "Search Homes" in the desktop header and phone menu, and trim the logo slightly so narrower laptops do not collide.
 - [x] Center the header links between the logo and the consult button at every width, remove the separator line before the button, and raise the header text one size; laptop item spacing eased so nothing collides.
 - [ ] Confirm original market sources/periods, exact Navy headcount and one-business-day/report-fulfillment commitments. Blocked on original sources and Debbie's operational confirmation; no substitute figures invented.
-- [ ] Add a non-military relocation box and a first-time buyer box to the homepage services section, which Debbie noted currently covers only buying, selling, downsizing and military PCS. Blocked on Debbie's wording and which destinations each box should point to.
+- [ ] Add a non-military relocation box and a first-time buyer box to the homepage services section, which Debbie noted currently covers only buying, selling, downsizing and military PCS; new boxes should match the current block style (round icon on the heading line). Blocked on Debbie's wording and which destinations each box should point to.
 
 - [x] Remove the repeated 'See How I Can Help' divider band, keep that call-to-action in the hero only, and separate the market-report and testimonial photo panels so no two scrolling photo backgrounds touch; verified desktop and phone boundary captures.
 - [x] Turn the eXp Realty invitation in the About closing band into a button matching the conversation button, both sitting at the same vertical level; verified at five widths and by clicking through to the eXp page.
+- [x] Move each homepage services block's round icon onto its heading line and resize the blocks; shorten the eXp button label to "Learn More about eXp Realty" so it matches the conversation button at every width; verified at four widths, build OK, five tests pass.
 

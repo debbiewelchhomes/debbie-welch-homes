@@ -54,23 +54,23 @@ const Navigation = () => {
           {/* Desktop Navigation: logo left, links center-right, consult button far right */}
           <div className="hidden lg:flex items-center justify-between w-full max-w-7xl mx-auto text-sm xl:text-base">
             <Link to="/" className="flex-shrink-0" aria-label="Debbie Welch Homes home page">
-              <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-10 xl:h-14 w-auto" />
+              <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-9 xl:h-14 w-auto" />
             </Link>
 
-            <div className="flex items-center gap-4 xl:gap-6 2xl:gap-8 whitespace-nowrap">
-              <Link to="/" className="mr-3 xl:mr-5 text-foreground hover:text-secondary transition-colors">
+            <div className="flex items-center gap-6 xl:gap-9 whitespace-nowrap">
+              <Link to="/" className="mr-2 xl:mr-4 text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
 
 
               {/* Services Dropdown */}
               <div className="relative group">
-                <div className="flex items-center gap-1">
+                <div className="flex items-center">
                   <Link to="/services" className="text-foreground hover:text-secondary transition-colors">
                     Services
                   </Link>
                   <DropdownMenu>
-                    <DropdownMenuTrigger aria-label="Open Services menu" className="flex min-h-11 min-w-11 items-center justify-center text-foreground hover:text-secondary transition-colors">
+                    <DropdownMenuTrigger aria-label="Open Services menu" className="flex min-h-11 items-center justify-center px-1 text-foreground hover:text-secondary transition-colors">
                       <ChevronDown className="h-4 w-4" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="bg-background border-border z-50">
@@ -110,7 +110,7 @@ const Navigation = () => {
                 aria-label="Search Homes on the eXp Realty site"
                 className="text-foreground hover:text-secondary transition-colors"
               >
-                Search
+                Search Homes
               </a>
 
               <DropdownMenu>
@@ -156,7 +156,7 @@ const Navigation = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div id="mobile-navigation" className="lg:hidden max-h-[calc(100dvh-6rem-1px)] overflow-y-auto overscroll-contain py-4 pb-24 border-t border-border [&_a]:flex [&_a]:min-h-11 [&_a]:items-center" onKeyDown={(event) => { if (event.key === "Escape") { setMobileMenuOpen(false); mobileMenuButton.current?.focus(); } }}>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-5">
               <Link
                 to="/"
                 onClick={() => setMobileMenuOpen(false)}
@@ -206,7 +206,7 @@ const Navigation = () => {
                 aria-label="Search Homes on the eXp Realty site"
                 className="text-foreground hover:text-secondary transition-colors"
               >
-                Search
+                Search Homes
               </a>
 
 

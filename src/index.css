@@ -111,9 +111,10 @@ All colors MUST be HSL.
 
 @layer utilities {
   .font-script {
-    font-family: 'Allura', cursive;
-    font-size: 1.15em;
-    line-height: 1.6;
+    font-family: 'Hurricane', cursive;
+    /* Hurricane's lowercase is small and slender, so it runs larger than Allura */
+    font-size: 1.4em;
+    line-height: 1.5;
     color: hsl(var(--secondary));
   }
   
@@ -170,10 +171,10 @@ All colors MUST be HSL.
   }
 
   .button-script {
-    font-family: 'Allura', cursive;
-    font-size: 1.75rem;
+    font-family: 'Hurricane', cursive;
+    font-size: 2.25rem;
     font-weight: 400;
-    line-height: 1.25;
+    line-height: 1.15;
     color: inherit;
   }
 
@@ -233,15 +234,15 @@ All colors MUST be HSL.
 
   /* Eyebrow / script accent label */
   .eyebrow {
-    font-family: 'Allura', cursive;
+    font-family: 'Hurricane', cursive;
     color: hsl(var(--secondary));
-    font-size: 1.375rem;
-    line-height: 1.4;
+    font-size: 1.625rem;
+    line-height: 1.35;
     display: block;
     margin-bottom: 0.5rem;
   }
   @media (min-width: 768px) {
-    .eyebrow { font-size: 1.875rem; }
+    .eyebrow { font-size: 2.25rem; }
   }
   .eyebrow-caps {
     font-family: 'Montserrat', sans-serif;

@@ -31,4 +31,5 @@
 - [ ] Add a non-military relocation box and a first-time buyer box to the homepage services section, which Debbie noted currently covers only buying, selling, downsizing and military PCS. Blocked on Debbie's wording and which destinations each box should point to.
 
 - [x] Remove the repeated 'See How I Can Help' divider band, keep that call-to-action in the hero only, and separate the market-report and testimonial photo panels so no two scrolling photo backgrounds touch; verified desktop and phone boundary captures.
+- [x] Turn the eXp Realty invitation in the About closing band into a button matching the conversation button, both sitting at the same vertical level; verified at five widths and by clicking through to the eXp page.
 

@@ -1,6 +1,6 @@
-# Visual and mobile refinement
+# Maintenance and reusable content
 
-- [x] Inspect representative homepage, services, areas, blog, FAQ, and resources at four widths.
-- [x] Apply coordinated layout-only improvements and assess the four service pathways.
-- [x] Verify mobile navigation, keyboard access, reduced motion, image framing, and preview diagnostics.
-- [x] Report changes, verification evidence, current commit, and unavailable checks.
+- [x] Inventory market snapshots, sources, guides, partners, FAQs, and CTAs.
+- [x] Share only genuinely repeated destinations without altering behavior.
+- [x] Write an owner-friendly maintenance guide with accurate source paths and hosting caveats.
+- [x] Verify destination preservation, preview diagnostics, prerender availability, and report limitations.

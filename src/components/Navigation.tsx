@@ -9,6 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import logo from "@/assets/logo-horizontal.png";
+import { resourceLinks } from "@/config/resourceLinks";
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,7 +37,7 @@ const Navigation = () => {
     { name: "Buyer & Seller Guides", href: "/resources#guides" },
     {
       name: "Local Market Reports",
-      href: "https://debbiewelch.exprealty.com/pages/market-reports",
+      href: resourceLinks.marketReports,
       external: true,
     },
     { name: "Trusted Local Partners", href: "/resources/trusted-partners" },

@@ -6,7 +6,6 @@ import { useEffect, useRef, useState } from "react";
 import { Pause, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Autoplay from "embla-carousel-autoplay";
-import testimonialBg from "@/assets/testimonial-bg.jpg";
 
 const testimonials = [
   {
@@ -93,15 +92,8 @@ const TestimonialSection = () => {
   }, [reducedMotion, rotationPaused]);
 
   return (
-    <section
-      className="relative section overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${testimonialBg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-      }}
-    >
+    <section className="relative section overflow-hidden bg-warm-bg">
+
       <div className="relative z-10 container mx-auto px-4">
         <motion.div
           ref={ref}

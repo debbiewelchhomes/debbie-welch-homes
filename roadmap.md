@@ -29,3 +29,6 @@
 - [x] Center the header links between the logo and the consult button at every width, remove the separator line before the button, and raise the header text one size; laptop item spacing eased so nothing collides.
 - [ ] Confirm original market sources/periods, exact Navy headcount and one-business-day/report-fulfillment commitments. Blocked on original sources and Debbie's operational confirmation; no substitute figures invented.
 - [ ] Add a non-military relocation box and a first-time buyer box to the homepage services section, which Debbie noted currently covers only buying, selling, downsizing and military PCS. Blocked on Debbie's wording and which destinations each box should point to.
+
+- [x] Remove the repeated 'See How I Can Help' divider band, keep that call-to-action in the hero only, and separate the market-report and testimonial photo panels so no two scrolling photo backgrounds touch; verified desktop and phone boundary captures.
+

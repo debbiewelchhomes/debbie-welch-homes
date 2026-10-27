@@ -34,7 +34,7 @@ const BrandPromiseSection = () => {
   ];
 
   return (
-    <section className="section bg-background">
+    <section className="section bg-warm-bg">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
@@ -59,7 +59,7 @@ const BrandPromiseSection = () => {
               className="card-surface h-full"
             >
               <div className="mb-3 flex items-center gap-3">
-                <span className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-warm-bg">
+                <span className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-background">
                   <promise.icon className="h-5 w-5 text-secondary" aria-hidden="true" />
                 </span>
                 <h3 className="font-heading h-card text-primary">{promise.title}</h3>

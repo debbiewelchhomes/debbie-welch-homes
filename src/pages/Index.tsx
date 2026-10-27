@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 
 import HeroSection from "@/components/HeroSection";
-import BufferSection from "@/components/BufferSection";
 import BrandPromiseSection from "@/components/BrandPromiseSection";
 import FreeResourceSection from "@/components/FreeResourceSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -27,7 +26,6 @@ const Index = () => {
       <main className="home-font-preview">
         <HeroSection />
         <ServicesSection />
-        <BufferSection />
         <AboutSection />
         <BrandPromiseSection />
         <FreeResourceSection />

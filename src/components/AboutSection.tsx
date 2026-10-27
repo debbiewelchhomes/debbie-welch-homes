@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="section bg-warm-bg">
+    <section id="about" className="section bg-background">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-4xl flow-root">
           <motion.div

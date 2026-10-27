@@ -52,14 +52,14 @@ const Blog = () => {
     <div className="min-h-screen">
       <SEO title={pageSEO.blog.title} description={pageSEO.blog.description} canonical="/blog" />
       <Navigation />
-      <main className="section bg-background">
+      <main className="bg-background pt-32 pb-16 md:pt-40 md:pb-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="max-w-4xl mx-auto text-center mb-10 md:mb-12">
             <p className="eyebrow mb-4">Check these out…</p>
             <h1 className="font-heading h-section font-bold text-primary mb-6">
               Real Estate Tips, Local Stories &amp; Market Insights
             </h1>
-            <p className="text-base md:text-lg text-foreground leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground leading-relaxed measure mx-auto">
               Browse articles about buying and selling in Snohomish County, downsizing, relocation, market updates,
               and everyday homeownership. I'll be adding new posts that mix education, real-life examples, and calm,
               clear guidance.
@@ -79,8 +79,8 @@ const Blog = () => {
             </div>
           )}
 
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-2 space-y-12">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-[minmax(0,2fr)_minmax(260px,1fr)] gap-8 xl:gap-12">
+            <div className="min-w-0 space-y-8 md:space-y-12">
               {filteredMainPosts.map((post) => (
                 <article key={post.id} className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow">
                   <div className="aspect-[16/9] bg-warm-bg overflow-hidden">
@@ -125,7 +125,7 @@ const Blog = () => {
               )}
             </div>
 
-            <aside className="lg:col-span-1 space-y-8">
+            <aside className="min-w-0 space-y-8">
               <div className="bg-card rounded-lg border border-border p-6">
                 <h2 className="font-heading text-xl font-bold text-primary mb-4">Search</h2>
                 <form className="flex gap-2" onSubmit={submitSearch}>
@@ -135,7 +135,7 @@ const Blog = () => {
                     onChange={(event) => setSearchInput(event.target.value)}
                     placeholder="Search articles..."
                     aria-label="Search blog articles"
-                    className="flex-1"
+                    className="min-w-0 flex-1"
                   />
                   <Button type="submit" size="icon" variant="secondary">
                     <Search className="h-4 w-4" />

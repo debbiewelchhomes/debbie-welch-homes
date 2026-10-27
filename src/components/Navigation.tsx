@@ -52,7 +52,7 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden xl:flex items-center justify-between w-full max-w-7xl mx-auto">
             {/* Left Navigation Group */}
-            <div className="flex items-center gap-6 flex-1 justify-end pr-6 whitespace-nowrap">
+            <div className="flex items-center gap-4 2xl:gap-6 flex-1 justify-end pr-4 2xl:pr-6 whitespace-nowrap">
               <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
@@ -114,7 +114,7 @@ const Navigation = () => {
             </Link>
 
             {/* Right Navigation Group */}
-            <div className="flex items-center gap-6 flex-1 justify-start pl-6 whitespace-nowrap">
+            <div className="flex items-center gap-4 2xl:gap-6 flex-1 justify-start pl-4 2xl:pl-6 whitespace-nowrap">
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-secondary transition-colors">
                   Resources <ChevronDown className="h-4 w-4" />
@@ -140,7 +140,7 @@ const Navigation = () => {
                 Contact
               </Link>
 
-              <Button size="sm" className="bg-secondary text-white hover:bg-secondary/90" asChild>
+              <Button size="sm" className="shrink-0 whitespace-nowrap bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
                 <a href="https://cal.com/debbie.welch.homes" target="_blank" rel="noopener noreferrer">
                   Book a Free Consult
                 </a>
@@ -152,14 +152,14 @@ const Navigation = () => {
           <Link to="/" className="xl:hidden absolute left-0" onClick={() => setMobileMenuOpen(false)}>
             <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-11 w-auto" />
           </Link>
-          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="xl:hidden absolute right-0 p-2" aria-label="Toggle menu">
+          <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="xl:hidden absolute right-0 [&_svg]:size-6" aria-label="Toggle menu" aria-expanded={mobileMenuOpen} aria-controls="mobile-navigation">
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          </Button>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="xl:hidden py-4 border-t border-border">
+          <div id="mobile-navigation" className="xl:hidden max-h-[calc(100dvh-6rem-1px)] overflow-y-auto overscroll-contain py-4 pb-24 border-t border-border" onKeyDown={(event) => { if (event.key === "Escape") setMobileMenuOpen(false); }}>
             <div className="flex flex-col gap-4">
               <Link
                 to="/"

@@ -52,7 +52,7 @@ const Services = () => {
                 Real Estate Services in Snohomish County
               </h1>
 
-              <p className="font-body text-lg md:text-xl text-primary max-w-3xl mx-auto">
+              <p className="font-body text-lg md:text-xl text-primary measure-narrow mx-auto">
                 Buying, selling, downsizing, or relocating, the goal is the same. You deserve
                 clear information, honest guidance, and someone in your corner who actually knows this county. Not a
                 sales pitch. A real plan.
@@ -79,7 +79,7 @@ const Services = () => {
                 Real Estate Is Rarely Just About the House
               </h2>
 
-              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed">
+              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed measure mx-auto">
                 It's about the job that moved you here, the parent who needs to be closer, the stairs that aren't
                 working anymore, the PCS orders that gave you six weeks to figure everything out. I've been working with
                 Snohomish County buyers and sellers long enough to know that the best real estate advice starts with
@@ -110,22 +110,22 @@ const Services = () => {
                 </h2>
               </div>
 
-              <div className="grid md:grid-cols-3 gap-8 text-center">
-                <div className="bg-background p-8 rounded-lg">
+              <div className="grid lg:grid-cols-3 gap-6 text-center">
+                <div className="bg-background p-6 lg:p-8 rounded-lg">
                   <h3 className="font-heading text-2xl font-bold text-primary mb-4">Clarity</h3>
                   <p className="text-foreground leading-relaxed">
                     Plain-language explanations at every step. No jargon, no skipping the parts that matter, no "just
                     trust me." You'll always know what's happening and why.
                   </p>
                 </div>
-                <div className="bg-background p-8 rounded-lg">
+                <div className="bg-background p-6 lg:p-8 rounded-lg">
                   <h3 className="font-heading text-2xl font-bold text-primary mb-4">Honesty</h3>
                   <p className="text-foreground leading-relaxed">
                     The real numbers, the real tradeoffs, and the real risks, even when the easy answer would be
                     "you're fine, just move forward." You deserve accurate information, not reassurance.
                   </p>
                 </div>
-                <div className="bg-background p-8 rounded-lg">
+                <div className="bg-background p-6 lg:p-8 rounded-lg">
                   <h3 className="font-heading text-2xl font-bold text-primary mb-4">Follow-Through</h3>
                   <p className="text-foreground leading-relaxed">
                     Proactive updates, organized timelines, and a steady presence from first conversation to closing
@@ -154,7 +154,7 @@ const Services = () => {
                 What they've said…
               </p>
 
-              <blockquote className="font-body text-xl md:text-2xl text-primary leading-relaxed mb-8 italic">
+              <blockquote className="font-body text-xl md:text-2xl text-primary leading-relaxed measure mx-auto mb-8 italic">
                 "Debbie always exceeded my expectations - whether it was anticipating problems before they arose,
                 expertly reacting to unusual situations, or just being the kind, friendly person she is. Her
                 zealousness, competence, foresight, and above-and-beyond research are a rarity these days."
@@ -183,7 +183,7 @@ const Services = () => {
                 Not Sure Where to Start?
               </h2>
 
-              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
+              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed measure mx-auto mb-10">
                 That's actually a fine place to begin. Tell me what's going on in your life and what's prompting the
                 question, and we'll figure out together whether now is the right time, what your options are, and what a
                 realistic next step might look like.

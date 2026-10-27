@@ -99,11 +99,11 @@ const FAQ = () => (
           <div className="space-y-4">
             {faqs.map((item, index) => (
               <details key={item.question} className="group rounded-xl border border-border bg-card">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-5 px-6 py-5 font-medium text-primary focus-visible:outline-none">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 md:px-6 py-5 font-medium text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-2 rounded-xl">
                   <span className="font-body text-base md:text-lg">{item.question}</span>
                   <ChevronDown className="h-5 w-5 flex-none text-secondary transition-transform group-open:rotate-180" aria-hidden="true" />
                 </summary>
-                <div className="px-6 pb-6">
+                <div className="px-5 md:px-6 pb-6">
                   <p className="copy text-foreground">{item.answer}</p>
                 </div>
               </details>

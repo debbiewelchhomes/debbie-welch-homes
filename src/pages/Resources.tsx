@@ -56,14 +56,14 @@ const Resources = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid lg:grid-cols-3 gap-6">
               {guideLinks.map((guide) => (
                 <a key={guide.title} href={guide.href} target="_blank" rel="noopener noreferrer" className="group">
                   <Card className="h-full border-border bg-card transition-shadow duration-300 group-hover:shadow-lg">
-                    <CardContent className="p-7">
+                    <CardContent className="flex h-full flex-col p-6 lg:p-8">
                       <h3 className="font-heading h-card text-primary mb-3">{guide.title}</h3>
                       <p className="copy text-foreground mb-6">{guide.description}</p>
-                      <span className="inline-flex items-center gap-2 text-sm font-medium text-secondary">
+                      <span className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-secondary">
                         Get Yours Here <ExternalLink className="h-4 w-4" aria-hidden="true" />
                       </span>
                     </CardContent>

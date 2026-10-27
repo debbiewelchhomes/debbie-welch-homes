@@ -27,7 +27,7 @@ const BlogSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+        <div className="grid lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
           {posts.map((post, index) => (
             <motion.div
               key={post.slug}
@@ -35,15 +35,15 @@ const BlogSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Link to={`/blog/${post.slug}`} className="group">
-                <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-border bg-card cursor-pointer overflow-hidden">
+              <Link to={`/blog/${post.slug}`} className="group block h-full">
+                <Card className="flex h-full flex-col hover:shadow-lg transition-shadow duration-300 border-border bg-card cursor-pointer overflow-hidden">
                   {post.image && (
-                    <img src={post.image} alt={post.imageAlt || post.title} className="h-44 w-full object-cover" loading="lazy" />
+                    <img src={post.image} alt={post.imageAlt || post.title} className="aspect-video w-full object-cover" loading="lazy" />
                   )}
-                  <CardContent className="p-6">
+                  <CardContent className="flex flex-1 flex-col p-6">
                     <h3 className="font-heading h-card mb-3 text-primary">{post.title}</h3>
                     <p className="copy text-foreground mb-4">{post.excerpt}</p>
-                    <Button variant="link" className="text-secondary p-0">Read More →</Button>
+                    <span className="mt-auto inline-flex min-h-11 items-center text-sm font-medium text-secondary">Read More →</span>
                   </CardContent>
                 </Card>
               </Link>

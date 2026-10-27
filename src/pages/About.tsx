@@ -315,7 +315,7 @@ const About = () => {
               If you are an agent who is curious about eXp Realty, I am happy to share my experience, answer practical questions, and help you decide whether it may fit your business.
             </p>
             <Link to="/about/exp-realty" className="text-secondary font-medium hover:underline">
-              Learn About Working With Me at eXp
+              Learn About Working With Me at eXp Realty
             </Link>
           </div>
         </div>
@@ -332,7 +332,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <p className="eyebrow mb-4">Let's talk…</p>
+            <p className="eyebrow mb-4">Let's talk...</p>
             <h2 className="font-heading h-section text-primary mb-6">
               Ready to Figure Out Your Next Move?
             </h2>

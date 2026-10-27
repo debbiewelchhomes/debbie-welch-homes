@@ -11,7 +11,7 @@ const specialties = [
 
 const HeroSection = () => {
   return (
-    <section className="relative flex min-h-[68vh] lg:min-h-[72vh] items-center justify-center overflow-hidden">
+    <section className="home-hero relative flex min-h-[68vh] lg:min-h-[72vh] items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 parallax-section"
         style={{
@@ -45,10 +45,10 @@ const HeroSection = () => {
 
             <ul className="mb-8 flex flex-wrap justify-center gap-2">
               {specialties.map((item) => (
-                <li key={item.label}>
+                <li key={item.label} className="max-w-full">
                   <Link
                     to={item.to}
-                    className="block rounded-full border border-secondary/40 bg-white/70 px-4 py-1.5 text-sm text-primary transition-colors hover:border-secondary hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+                    className="flex min-h-11 items-center justify-center rounded-full border border-secondary/40 bg-background/70 px-4 py-2 text-sm text-balance text-primary transition-colors hover:border-secondary hover:bg-background focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
                   >
                     {item.label}
                   </Link>

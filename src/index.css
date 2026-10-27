@@ -83,7 +83,8 @@ All colors MUST be HSL.
   /* Tighten Montserrat body text spacing */
   p, .prose p {
     line-height: 1.6;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
+    text-wrap: pretty;
   }
 }
 
@@ -119,7 +120,7 @@ All colors MUST be HSL.
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     line-height: 1.15;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
   }
   
   .font-body {
@@ -132,12 +133,13 @@ All colors MUST be HSL.
   .h-card {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
   }
   
   h1, h2, h3 {
     line-height: 1.15;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
+    text-wrap: balance;
   }
 
   /* ---- DWH design system ---------------------------------------- */
@@ -168,19 +170,29 @@ All colors MUST be HSL.
 
   /* Responsive heading scale */
   .h-display {
-    font-size: clamp(2.25rem, 5vw, 3.75rem);
+    font-size: 2.25rem;
     line-height: 1.1;
     text-wrap: balance;
   }
   .h-section {
-    font-size: clamp(1.875rem, 3.4vw, 2.75rem);
+    font-size: 1.875rem;
     line-height: 1.15;
     text-wrap: balance;
   }
   .h-card {
-    font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+    font-size: 1.25rem;
     line-height: 1.25;
     text-wrap: balance;
+  }
+
+  @media (min-width: 768px) {
+    .h-display { font-size: 3rem; }
+    .h-section { font-size: 2.5rem; }
+  }
+  @media (min-width: 1024px) {
+    .h-display { font-size: 3.75rem; }
+    .h-section { font-size: 2.75rem; }
+    .h-card { font-size: 1.5rem; }
   }
 
   /* Body copy scale */
@@ -207,10 +219,13 @@ All colors MUST be HSL.
   .eyebrow {
     font-family: 'Allura', cursive;
     color: hsl(var(--secondary));
-    font-size: clamp(1.375rem, 2.2vw, 1.875rem);
+    font-size: 1.375rem;
     line-height: 1.4;
     display: block;
     margin-bottom: 0.5rem;
+  }
+  @media (min-width: 768px) {
+    .eyebrow { font-size: 1.875rem; }
   }
   .eyebrow-caps {
     font-family: 'Montserrat', sans-serif;
@@ -245,6 +260,28 @@ All colors MUST be HSL.
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  /* Keep internal photo headers clear of the fixed site navigation. */
+  main > section:first-child:has(.parallax-section):not(.home-hero),
+  main > section:first-child:has(> img.absolute.inset-0) {
+    padding-top: 6rem;
+  }
+
+  main > section:first-child:has(> img.absolute.inset-0) .font-heading {
+    max-width: 54ch;
+    text-wrap: balance;
+  }
+
+  /* Allow existing CTA groups to wrap before labels become crowded. */
+  main .flex.sm\:flex-row {
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 640px) and (max-width: 1023px) {
+    main > section:first-child:has(> img.absolute.inset-0) {
+      min-height: 32rem;
+    }
   }
   
   @media (max-width: 768px) {
@@ -316,6 +353,14 @@ main a[href*="debbiewelch.exprealty.com/index"]::after {
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
+  }
+  .parallax-section,
+  section[style*="background-attachment"] {
+    background-attachment: scroll !important;
+  }
+  main [style*="opacity"] {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
 

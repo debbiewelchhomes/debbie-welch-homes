@@ -152,14 +152,14 @@ const Navigation = () => {
           <Link to="/" className="xl:hidden absolute left-0" onClick={() => setMobileMenuOpen(false)}>
             <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-11 w-auto" />
           </Link>
-          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="xl:hidden absolute right-0 p-2" aria-label="Toggle menu">
+          <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="xl:hidden absolute right-0" aria-label="Toggle menu" aria-expanded={mobileMenuOpen} aria-controls="mobile-navigation">
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          </Button>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="xl:hidden py-4 border-t border-border">
+          <div id="mobile-navigation" className="xl:hidden max-h-[calc(100dvh-6rem-1px)] overflow-y-auto overscroll-contain py-4 pb-24 border-t border-border" onKeyDown={(event) => { if (event.key === "Escape") setMobileMenuOpen(false); }}>
             <div className="flex flex-col gap-4">
               <Link
                 to="/"

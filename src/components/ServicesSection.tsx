@@ -67,16 +67,16 @@ const ServicesSection = () => {
               initial={{ opacity: 0, y: 16 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
               transition={{ duration: 0.4, delay: Math.min(index, 3) * 0.06, ease: "easeOut" }}
-              className="card-surface flex h-full flex-col"
+              className="card-surface flex h-full min-w-0 flex-col"
             >
               <span className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-warm-bg">
                 <service.icon className="h-5 w-5 text-secondary" aria-hidden="true" />
               </span>
-              <h3 className="font-heading h-card mb-3 text-primary">{service.title}</h3>
+              <h3 className="font-heading h-card mb-3 min-h-[2.5em] text-primary">{service.title}</h3>
               <p className="copy mb-6 text-foreground">{service.description}</p>
               <Button
                 variant="outline"
-                className="mt-auto self-start border-secondary text-secondary hover:bg-secondary hover:text-white"
+                className="mt-auto w-full sm:w-auto self-start border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground"
                 asChild
               >
                 <Link to={service.href}>{service.cta}</Link>

@@ -23,6 +23,17 @@ This guide describes the current repository, not a new content-management system
 
 **Unresolved, not silently updated:** The original Lake Stevens $680-715K / ~$695K and Everett ~$565K market sources and measurement periods remain unconfirmed. The exact 3,100-sailor count was not corroborated by current Navy information. The one-business-day response commitment and personalized-report fulfillment require Debbie's operational confirmation. Historical 2025 article dates alone do not justify rewriting their advice. No email was submitted and no backend configuration was changed.
 
+#### Follow-up verification and changed files
+
+- **High priority fixed:** The service choices appear earlier exactly once. Each card now appears when it enters the phone viewport instead of depending on an offscreen section heading.
+- **Medium priority fixed:** Homepage About entrance motion no longer adds eight pixels of tablet overflow. No text, portrait, dimensions or crop were changed.
+- **Small corrections completed:** Menu target sizing, report-request wording, dated population attribution, event-center forecast and valid machine-readable blog dates.
+- **Tests:** `bun test src/config/resourceLinks.test.js src/lib/blogDate.test.js`: 5 passed, 0 failed. An initial attempt to use Node's test runner was inappropriate for the existing Bun tests; rerunning with Bun passed without changing those tests.
+- **Browser:** Homepage, Everett/Mukilteo, Resources and Blog checked at 390, 768, 1100 and 1440 pixels, including reduced-motion mode. All 16 final page/width checks had no horizontal overflow. Service-to-Buying journeys passed at all four widths; desktop Areas keyboard selection opened Everett/Mukilteo. Reviewed screenshots show visible phone service cards and readable Everett facts. No browser runtime errors or inquiry-function requests were observed.
+- **Article check:** The military relocation article still displays December 15, 2025; its `datetime` and Article `datePublished` now both read `2025-12-15`. Past Sales resolves to the not-found page.
+- **Validation limitation:** Automatic preview diagnostics reported `build OK`. Separate TypeScript and production/prerender commands were not run under the current environment's validation restrictions. Existing `dist` artifacts from 07:16 UTC predate these edits and are not fresh production evidence. External GitHub-main synchronization and task-specific credit usage were not independently verified. No publication, deployment, backend changes, purchases or dependencies were added.
+- **Files:** `src/pages/Index.tsx`, `src/components/ServicesSection.tsx`, `src/components/AboutSection.tsx`, `src/components/Navigation.tsx`, `src/components/FreeResourceSection.tsx`, `src/pages/Resources.tsx`, `src/pages/areas/EverettMukilteo.tsx`, `src/components/BlogPostTemplate.tsx`, `src/lib/blogDate.ts`, `src/lib/blogDate.test.js`, `AGENTS.md`, `roadmap.md`, and this guide.
+
 | Information | Current home | Maintenance note |
 | --- | --- | --- |
 | Lake Stevens housing figures | `src/pages/areas/LakeStevens.tsx`, pros/cons and Quick Facts | Existing copy says typical prices of $680-715K based on an August 2026 snapshot. Quick Facts separately shows ~$695K as median home price. No named source or source URL accompanies those numbers. Do not treat the two measures as interchangeable. |

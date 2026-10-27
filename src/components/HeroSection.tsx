@@ -18,7 +18,7 @@ const HeroSection = () => {
           backgroundImage: `linear-gradient(rgba(225, 223, 220, 0.35), rgba(225, 223, 220, 0.35)), url(${heroImage})`,
         }}
         role="img"
-        aria-label="Snohomish County WA home exterior, Debbie Welch local real estate agent"
+        aria-label="Home exterior with illuminated windows and evergreen trees"
       />
 
       <div className="relative z-10 container mx-auto flex min-h-[68vh] lg:min-h-[72vh] items-center justify-center px-4 pb-16 pt-32 md:pt-40">

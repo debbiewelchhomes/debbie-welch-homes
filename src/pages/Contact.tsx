@@ -98,9 +98,10 @@ const Contact = () => {
         jsonLd={realEstateAgentSchema}
       />
       <Navigation />
+      <main>
       
       {/* Hero Script Line */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-background">
+      <section className="pt-32 pb-4 md:pt-40 md:pb-8 bg-background">
         <div className="container mx-auto px-4">
           <p className="h-section text-center font-script text-[#6e808e]">
             Get in touch…
@@ -139,7 +140,7 @@ const Contact = () => {
                   className="flex items-center gap-3 text-foreground hover:text-[#6e808e] transition-colors font-['Montserrat']"
                 >
                   <Mail className="h-4 w-4 text-[#6e808e]" />
-                  <span>debbie@debbiewelchhomes.com</span>
+                  <span className="min-w-0 break-words">debbie@debbiewelchhomes.com</span>
                 </a>
                 <div className="flex items-center gap-3 text-foreground font-['Montserrat']">
                   <MapPin className="h-4 w-4 text-[#6e808e]" />
@@ -172,6 +173,7 @@ const Contact = () => {
                     </label>
                     <Input
                       id="firstName"
+                      autoComplete="given-name"
                       required
                       value={formData.firstName}
                       onChange={(e) => handleChange("firstName", e.target.value)}
@@ -184,6 +186,7 @@ const Contact = () => {
                     </label>
                     <Input
                       id="lastName"
+                      autoComplete="family-name"
                       value={formData.lastName}
                       onChange={(e) => handleChange("lastName", e.target.value)}
                       className="bg-background font-['Montserrat']"
@@ -199,6 +202,7 @@ const Contact = () => {
                     <Input
                       id="email"
                       type="email"
+                      autoComplete="email"
                       required
                       value={formData.email}
                       onChange={(e) => handleChange("email", e.target.value)}
@@ -212,6 +216,7 @@ const Contact = () => {
                     <Input
                       id="phone"
                       type="tel"
+                      autoComplete="tel"
                       value={formData.phone}
                       onChange={(e) => handleChange("phone", e.target.value)}
                       className="bg-background font-['Montserrat']"
@@ -224,7 +229,7 @@ const Contact = () => {
                     What are you looking for?
                   </label>
                   <Select value={formData.lookingFor} onValueChange={(value) => handleChange("lookingFor", value)}>
-                    <SelectTrigger className="bg-background font-['Montserrat']">
+                    <SelectTrigger id="lookingFor" className="min-h-11 bg-background font-['Montserrat']">
                       <SelectValue placeholder="Select one..." />
                     </SelectTrigger>
                     <SelectContent>
@@ -268,7 +273,7 @@ const Contact = () => {
                 <InquiryFallback />
               </form>
             ) : (
-              <div className="py-12 text-center">
+              <div role="status" className="py-12 text-center">
                 <p className="text-xl font-['Montserrat'] text-[#3c3e4f] mb-2">
                   Thank you for reaching out!
                 </p>
@@ -289,7 +294,7 @@ const Contact = () => {
           </p>
         </div>
       </section>
-
+      </main>
       <Footer />
     </div>
   );

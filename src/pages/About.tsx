@@ -27,6 +27,7 @@ const About = () => {
         jsonLd={realEstateAgentSchema}
       />
       <Navigation />
+      <main>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 md:pt-40 md:pb-32 bg-warm-bg">
@@ -349,7 +350,7 @@ const About = () => {
 
       {/* Client Testimonials - shared carousel component */}
       <TestimonialSection />
-
+      </main>
       <Footer />
     </div>
   );

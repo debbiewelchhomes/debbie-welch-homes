@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -13,6 +13,7 @@ import { resourceLinks } from "@/config/resourceLinks";
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const mobileMenuButton = useRef<HTMLButtonElement>(null);
 
   const services = [
     { name: "Buying", href: "/services/buying" },
@@ -65,12 +66,12 @@ const Navigation = () => {
                     Services
                   </Link>
                   <DropdownMenu>
-                    <DropdownMenuTrigger aria-label="Open Services menu" className="text-foreground hover:text-secondary transition-colors">
+                    <DropdownMenuTrigger aria-label="Open Services menu" className="flex min-h-11 min-w-11 items-center justify-center text-foreground hover:text-secondary transition-colors">
                       <ChevronDown className="h-4 w-4" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="bg-background border-border z-50">
                       {services.map((service) => (
-                        <DropdownMenuItem key={service.name}>
+                        <DropdownMenuItem key={service.name} asChild>
                           <Link to={service.href} className="w-full">
                             {service.name}
                           </Link>
@@ -88,7 +89,7 @@ const Navigation = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-background border-border max-h-96 overflow-y-auto">
                   {areas.map((area) => (
-                    <DropdownMenuItem key={area.name}>
+                    <DropdownMenuItem key={area.name} asChild>
                       <Link to={area.href} className="w-full">
                         {area.name}
                       </Link>
@@ -122,7 +123,7 @@ const Navigation = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-background border-border z-50">
                   {resources.map((resource) => (
-                    <DropdownMenuItem key={resource.name}>
+                    <DropdownMenuItem key={resource.name} asChild>
                       {resource.external ? (
                         <a href={resource.href} target="_blank" rel="noopener noreferrer" className="w-full">{resource.name}</a>
                       ) : (
@@ -153,14 +154,14 @@ const Navigation = () => {
           <Link to="/" className="xl:hidden absolute left-0" onClick={() => setMobileMenuOpen(false)}>
             <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-11 w-auto" />
           </Link>
-          <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="xl:hidden absolute right-0 [&_svg]:size-6" aria-label="Toggle menu" aria-expanded={mobileMenuOpen} aria-controls="mobile-navigation">
+          <Button ref={mobileMenuButton} variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="xl:hidden absolute right-0 min-h-11 min-w-11 [&_svg]:size-6" aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={mobileMenuOpen} aria-controls="mobile-navigation">
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div id="mobile-navigation" className="xl:hidden max-h-[calc(100dvh-6rem-1px)] overflow-y-auto overscroll-contain py-4 pb-24 border-t border-border" onKeyDown={(event) => { if (event.key === "Escape") setMobileMenuOpen(false); }}>
+          <div id="mobile-navigation" className="xl:hidden max-h-[calc(100dvh-6rem-1px)] overflow-y-auto overscroll-contain py-4 pb-24 border-t border-border [&_a]:flex [&_a]:min-h-11 [&_a]:items-center" onKeyDown={(event) => { if (event.key === "Escape") { setMobileMenuOpen(false); mobileMenuButton.current?.focus(); } }}>
             <div className="flex flex-col gap-4">
               <Link
                 to="/"

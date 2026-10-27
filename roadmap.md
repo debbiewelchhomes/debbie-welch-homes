@@ -1,9 +1,9 @@
 # Approved follow-up improvements
 
-- [ ] Unify script sizing, Contact colors and primary button/hover treatments; verify the preview.
-- [ ] Match Working Relationship and Market Report headings and tighten trailing script dots; verify the preview.
-- [ ] Replace the public Listings Past Sales teaser with current-home search content; verify the preview.
-- [ ] Repeat all-page visual/link checks and existing tests without publishing or submitting forms.
+- [x] Unify script sizing, Contact colors and primary button/hover treatments; verify the preview.
+- [x] Match Working Relationship and Market Report headings and tighten trailing script dots; verify the preview.
+- [x] Replace the public Listings Past Sales teaser with current-home search content; verify the preview.
+- [x] Repeat all-page visual/link checks and existing tests without publishing or submitting forms. All 159 page-size checks and five tests passed; 34 internal destinations resolve. Seventeen external destinations block automated access and remain unverified, not confirmed dead.
 
 - [x] Move the former Real Talk photo behind the market report, retain its overlay/backdrop and scrolling behavior.
 - [x] Move the blue services CTA into the divider, remove its old phrase/line and preview Allura lettering.

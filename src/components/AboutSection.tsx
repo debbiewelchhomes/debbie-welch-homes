@@ -22,13 +22,13 @@ const AboutSection = () => {
 
             <img
               alt="Debbie Welch, Snohomish County real estate broker"
-              className="mx-auto mb-8 w-full max-w-[320px] rounded-lg shadow-md md:float-right md:ml-10 md:mb-6 md:w-[280px] lg:w-[320px]"
+              className="mx-auto mb-8 w-full max-w-[416px] rounded-lg shadow-md md:float-right md:ml-10 md:mb-6 md:w-[364px] lg:w-[416px]"
               src="/images/debbie-welch-homepage.webp"
               width="1100"
               height="1320"
               loading="lazy"
             />
-            <div>
+            <div className="lg:text-justify lg:[hyphens:auto]">
               <p className="copy text-foreground mb-4">
                 I grew up in Marysville, raised my family in Lake Stevens, and now live in North Everett. I have spent more than 45 years watching Snohomish County change, and I bring that local perspective to every move.
               </p>

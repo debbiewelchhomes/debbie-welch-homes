@@ -8,3 +8,4 @@
 - Use src/config/resourceLinks.ts for the repeated buyer-guide and market-report destinations; keep unique guides and area-filtered searches local because their targets and behavior differ.
 - Use src/lib/blogDate.ts for machine-readable article publication dates while retaining the existing displayed dates; reject invalid input instead of inventing a date.
 - Keep page-main script accents on one shared responsive scale and use shared Button variants for action colors and hover states, so page-specific styling cannot drift; navigation retains body typography.
+- Never remove JSX elements with broad shell text substitutions that can also delete unrelated closing tags; make targeted, element-specific edits and confirm each edited file still parses and renders before moving on.

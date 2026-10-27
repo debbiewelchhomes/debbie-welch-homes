@@ -1,5 +1,9 @@
 # Approved follow-up improvements
 
+- [x] Move the former Real Talk photo behind the market report, retain its overlay/backdrop and scrolling behavior.
+- [x] Move the blue services CTA into the divider, remove its old phrase/line and preview Allura lettering.
+- [x] Verify matched top/bottom homepage spacing, four screen widths, reduced motion, destinations and five passing tests; preview build OK.
+
 - [x] Combine homepage Real Talk into About, preserve portrait and support text wrapping beneath it.
 - [x] Place the primary services CTA and refine the existing shared desktop/mobile navigation.
 - [x] Verify six widths, services journeys, five tests and preview build OK. Recommend the existing market-report section for a future photo background; no extra background section added.

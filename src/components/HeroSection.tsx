@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 
+
+
 const HeroSection = () => {
   return (
     <section className="home-hero relative flex min-h-[68vh] lg:min-h-[72vh] items-center justify-center overflow-hidden">
@@ -44,8 +46,8 @@ const HeroSection = () => {
               </Button>
             </div>
 
-
             <p className="mt-6 text-sm text-primary/80">
+
               Serving Lake Stevens, Everett, Marysville, Arlington, Snohomish, Stanwood, Camano
               Island, Bothell, Mill Creek, and Mukilteo.
             </p>

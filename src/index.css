@@ -126,7 +126,7 @@ All colors MUST be HSL.
 
   /* Homepage trial: the script accents read much larger. */
   .home-font-preview .font-script {
-    font-size: 3.6em;
+    font-size: 5.4em;
   }
   .home-font-preview .button-script {
     font-size: 5.5rem;
@@ -136,11 +136,11 @@ All colors MUST be HSL.
 
 
   .home-font-preview .eyebrow {
-    font-size: 4.25rem;
+    font-size: 6.375rem;
   }
   @media (min-width: 768px) {
     .home-font-preview .eyebrow {
-      font-size: 5.75rem;
+      font-size: 8.625rem;
     }
   }
 
@@ -156,6 +156,9 @@ All colors MUST be HSL.
   .home-font-preview .eyebrow {
     color: hsl(var(--primary));
   }
+
+  /* Dark text reads as true black site-wide; brand fills stay unchanged. */
+  .text-primary, .text-foreground { color: #000000; }
 
 
 

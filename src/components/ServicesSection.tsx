@@ -5,22 +5,6 @@ import { Home, DollarSign, Plane, TrendingDown } from "lucide-react";
 
 const services = [
   {
-    icon: TrendingDown,
-    title: "Senior Housing Transitions & Downsizing",
-    description:
-      "If your current home no longer fits the season you are in, I will help you plan the move step by step, honoring both the practical and the emotional parts of letting go.",
-    cta: "Downsizing & Life Transitions",
-    href: "/services/downsizing",
-  },
-  {
-    icon: Plane,
-    title: "Military PCS & Veterans",
-    description:
-      "Orders move fast. I coordinate around your report date, share honest neighborhood insight, and keep things moving when you cannot be here in person.",
-    cta: "Military PCS & Relocation",
-    href: "/services/relocation",
-  },
-  {
     icon: Home,
     title: "Buying",
     description:
@@ -35,6 +19,22 @@ const services = [
       "Pricing, home prep, marketing, and negotiation, handled with a clear plan so you know what is happening at each stage of the sale.",
     cta: "Explore Selling",
     href: "/services/selling",
+  },
+  {
+    icon: TrendingDown,
+    title: "Senior Housing Transitions & Downsizing",
+    description:
+      "If your current home no longer fits the season you are in, I will help you plan the move step by step, honoring both the practical and the emotional parts of letting go.",
+    cta: "Downsizing & Life Transitions",
+    href: "/services/downsizing",
+  },
+  {
+    icon: Plane,
+    title: "Military PCS & Veterans",
+    description:
+      "Orders move fast. I coordinate around your report date, share honest neighborhood insight, and keep things moving when you cannot be here in person.",
+    cta: "Military PCS & Relocation",
+    href: "/services/relocation",
   },
 ];
 

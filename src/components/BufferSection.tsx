@@ -19,7 +19,7 @@ const BufferSection = () => {
           className="text-center"
         >
           <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
-            <Link to="/services"><span className="button-script">See How I Can Help</span></Link>
+            <Link to="/services">See How I Can Help</Link>
           </Button>
         </motion.div>
       </div>

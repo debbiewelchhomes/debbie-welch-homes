@@ -40,7 +40,8 @@ const services: Service[] = [
   },
   {
     icon: Plane,
-    title: "Military PCS, Veterans & Relocation",
+    title: "Military & Veterans",
+    titleSub: "PCS & Relocation",
     description:
       "Moving for orders, work, or family, to or from Snohomish County? I coordinate around your report date or move date, share honest neighborhood insight, and keep things moving when you cannot be here in person.",
     cta: "Military PCS & Relocation",

@@ -42,6 +42,7 @@ All colors MUST be HSL.
 
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
+    --area-panel-surface: 0 0% 100% / 0.78;
 
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 0%;
@@ -80,6 +81,7 @@ All colors MUST be HSL.
     --warm-bg-foreground: 30 6% 93%;
     --card: 225 21% 29%;
     --card-foreground: 30 6% 93%;
+    --area-panel-surface: 225 21% 29% / 0.78;
     --border: 206 13% 49%;
     --input: 206 13% 49%;
   }
@@ -449,23 +451,27 @@ All colors MUST be HSL.
   background: hsl(var(--photo-wash));
 }
 
-/* Area guide heroes: the place name and intro sentence sit in the same frosted
-   card the homepage welcome panel uses, over the static photo (no wash). */
+/* Compact translucent area panels; script leading is tuned to the visible
+   Black Stones lettering, not its oversized font line box. */
 main > section:first-child:has(> img.absolute.inset-0) > .container {
-  width: min(100% - 2rem, 46rem);
+  width: min(100% - 2rem, 44rem);
   margin-left: auto;
   margin-right: auto;
-  background: hsl(var(--card) / 0.92);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: hsl(var(--area-panel-surface));
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border: 1px solid hsl(var(--border) / 0.7);
   border-radius: 1rem;
   box-shadow: 0 4px 24px hsl(var(--primary) / 0.06);
-  padding: 1.5rem;
+  padding: 1.25rem 1.25rem 1.5rem;
+}
+main > section:first-child:has(> img.absolute.inset-0) > .container .eyebrow {
+  line-height: 0.85;
+  margin-bottom: 0.75rem;
 }
 @media (min-width: 768px) {
   main > section:first-child:has(> img.absolute.inset-0) > .container {
-    padding: 2.5rem 3rem;
+    padding: 1.5rem 2rem 1.75rem;
   }
 }
 

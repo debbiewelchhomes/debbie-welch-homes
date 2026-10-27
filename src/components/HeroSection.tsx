@@ -47,7 +47,7 @@ const HeroSection = () => {
                 className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground"
                 asChild
               >
-                <Link to="/services">See How I Help</Link>
+                <Link to="/services">See How I Can Help</Link>
               </Button>
 
             </div>

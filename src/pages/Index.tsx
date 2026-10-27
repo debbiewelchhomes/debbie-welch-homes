@@ -19,6 +19,8 @@ const Index = () => {
         title={pageSEO.home.title}
         description={pageSEO.home.description}
         canonical="/"
+        image="/images/og-home.jpg"
+        imageAlt="Debbie Welch Homes, Snohomish County real estate"
         jsonLd={realEstateAgentSchema}
       />
       <Navigation />

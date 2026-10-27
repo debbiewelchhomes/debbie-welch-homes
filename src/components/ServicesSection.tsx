@@ -68,10 +68,12 @@ const ServicesSection = () => {
               transition={{ duration: 0.4, delay: Math.min(index, 3) * 0.06, ease: "easeOut" }}
               className="card-surface flex h-full min-w-0 flex-col"
             >
-              <span className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-warm-bg">
-                <service.icon className="h-5 w-5 text-secondary" aria-hidden="true" />
-              </span>
-              <h3 className="font-heading h-card mb-3 min-h-[2.5em] text-primary">{service.title}</h3>
+              <div className="mb-3 flex items-start gap-3">
+                <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-warm-bg">
+                  <service.icon className="h-4 w-4 text-secondary" aria-hidden="true" />
+                </span>
+                <h3 className="font-heading h-card min-h-[3em] leading-normal text-primary">{service.title}</h3>
+              </div>
               <p className="copy mb-6 text-foreground">{service.description}</p>
               <Button
                 variant="outline"

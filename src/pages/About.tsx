@@ -351,7 +351,7 @@ const About = () => {
                 questions, and help you decide whether it may fit your business.
               </p>
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>
-                <Link to="/about/exp-realty">Learn About Working With Me at eXp Realty</Link>
+                <Link to="/about/exp-realty">Learn More about eXp Realty</Link>
               </Button>
             </motion.div>
           </div>

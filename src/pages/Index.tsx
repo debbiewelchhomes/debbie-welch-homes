@@ -27,10 +27,10 @@ const Index = () => {
       <main className="home-font-preview">
         <HeroSection />
         <ServicesSection />
-        <BufferSection />
         <AboutSection />
         <BrandPromiseSection />
         <FreeResourceSection />
+        <BufferSection />
         <TestimonialSection />
         <NeighborhoodsSection />
         <BlogSection />

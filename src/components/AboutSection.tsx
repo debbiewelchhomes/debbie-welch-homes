@@ -6,44 +6,46 @@ const AboutSection = () => {
   return (
     <section id="about" className="section bg-warm-bg">
       <div className="container mx-auto px-4">
-        <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-[minmax(0,1.12fr)_minmax(280px,0.72fr)] md:items-center">
+        <div className="mx-auto max-w-4xl flow-root">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: "some" }}
             transition={{ duration: 0.6 }}
-            className="order-2 md:order-1"
+            className="flow-root"
           >
             <p className="eyebrow mb-4" aria-hidden="true">Hey there…</p>
             <h2 className="font-heading h-section mb-6 max-w-[12ch] text-primary">I'm Debbie</h2>
-            <div className="measure">
-              <p className="copy text-foreground mb-4">
-                I grew up in Marysville, raised my family in Lake Stevens, and now live in North Everett. I have spent more than 45 years watching Snohomish County change, and I bring that local perspective to every move.
-              </p>
-              <p className="copy text-foreground mb-6">
-                I read the fine print, explain the tradeoffs in plain language, and keep the process organized. My work is especially focused on downsizing, military PCS and VA clients, first-time buyers, and people relocating into or out of the county.
-              </p>
-            </div>
-            <Button size="lg" variant="outline" asChild>
-              <Link to="/about">Read More About Me</Link>
-            </Button>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: "some" }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="order-1 mx-auto w-full max-w-[320px] md:order-2 md:translate-y-8"
-          >
             <img
               alt="Debbie Welch, Snohomish County real estate broker"
-              className="rounded-lg shadow-md w-full object-cover"
+              className="mx-auto mb-8 w-full max-w-[320px] rounded-lg shadow-md md:float-right md:ml-10 md:mb-6 md:w-[280px] lg:w-[320px]"
               src="/images/debbie-welch-homepage.webp"
               width="1100"
               height="1320"
               loading="lazy"
             />
+            <div>
+              <p className="copy text-foreground mb-4">
+                I grew up in Marysville, raised my family in Lake Stevens, and now live in North Everett. I have spent more than 45 years watching Snohomish County change, and I bring that local perspective to every move.
+              </p>
+              <p className="copy text-foreground mb-4">
+                Real estate does not have to feel pushy, confusing, or rushed. A lot of people come to me expecting the process to feel overwhelming. It can be, if no one takes the time to explain what is actually happening.
+              </p>
+              <p className="copy text-foreground mb-4">
+                That is the part I care about most. I slow things down just enough for you to understand the numbers, the tradeoffs, and the fine print. The details buried in the middle of a document are usually the ones that matter most. I explain them in plain language and keep the process organized, so you can make a decision you fully understand.
+              </p>
+              <p className="copy text-foreground mb-6">
+                My work is especially focused on downsizing, military PCS and VA clients, first-time buyers, and people relocating into or out of the county.
+              </p>
+            </div>
+            <div className="clear-both flex flex-col gap-4 pt-4 sm:flex-row sm:flex-wrap sm:items-center">
+              <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
+                <Link to="/services">See How I Can Help</Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link to="/about">Read More About Me</Link>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </div>

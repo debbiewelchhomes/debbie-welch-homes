@@ -40,8 +40,7 @@ const HeroSection = () => {
 
             <p className="copy-lead mx-auto mb-6 max-w-[54ch] text-primary/90">
               I grew up here, I have owned homes here, and I have spent 45+ years watching this
-              county change. You get honest guidance, a calm and organized plan, and someone who
-              actually picks up the phone.
+              area grow and change. You get honest guidance, a calm and organized plan, and someone who puts your best interests first.
             </p>
 
             <ul className="mb-8 flex flex-wrap justify-center gap-2">

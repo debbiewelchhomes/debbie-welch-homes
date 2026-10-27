@@ -317,7 +317,9 @@ const About = () => {
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
+              className="md:pr-10"
             >
+
               <p className="eyebrow eyebrow-col mb-4">Let's talk...</p>
               <h2 className="font-heading h-section-sm text-primary mb-5">
                 Ready to Figure Out Your Next Move?
@@ -338,7 +340,7 @@ const About = () => {
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
               transition={{ duration: 0.6, delay: 0.15 }}
-              className="md:border-l md:border-border md:pl-14"
+              className="md:border-l md:border-border md:pl-10"
             >
               <p className="eyebrow eyebrow-col mb-4">For fellow agents...</p>
               <h2 className="font-heading h-section-sm text-primary mb-5">

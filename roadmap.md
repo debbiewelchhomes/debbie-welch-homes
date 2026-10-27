@@ -13,4 +13,5 @@
 - [x] Repair confirmed frontend issues: independent service/About reveals, tablet overflow, menu targets, report-request wording and machine-readable blog dates.
 - [x] Run relevant tests and browser checks; inspect automatic preview validation and document production/prerender, sync and credit limitations.
 - [x] Widen the space between header items, make the dropdown arrow spacing uniform, restore "Search Homes" in the desktop header and phone menu, and trim the logo slightly so narrower laptops do not collide.
+- [x] Center the header links between the logo and the consult button at every width, remove the separator line before the button, and raise the header text one size; laptop item spacing eased so nothing collides.
 - [ ] Confirm original market sources/periods, exact Navy headcount and one-business-day/report-fulfillment commitments. Blocked on original sources and Debbie's operational confirmation; no substitute figures invented.

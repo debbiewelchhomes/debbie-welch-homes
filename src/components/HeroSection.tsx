@@ -3,11 +3,8 @@ import heroImage from "@/assets/hero-home.jpg";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const specialties = [
-  { label: "Senior Housing Transitions & Downsizing", to: "/services/downsizing" },
-  { label: "Military PCS & Veterans", to: "/services/relocation" },
-  { label: "Relocation to and from Snohomish County", to: "/services/relocation" },
-];
+
+
 
 const HeroSection = () => {
   return (
@@ -43,40 +40,14 @@ const HeroSection = () => {
               area grow and change. You get honest guidance, a calm and organized plan, and someone who puts your best interests first.
             </p>
 
-            <ul className="mb-8 flex flex-wrap justify-center gap-2">
-              {specialties.map((item) => (
-                <li key={item.label} className="max-w-full">
-                  <Link
-                    to={item.to}
-                    className="flex min-h-11 items-center justify-center rounded-full border border-secondary/40 bg-background/70 px-4 py-2 text-sm text-balance text-primary transition-colors hover:border-secondary hover:bg-background focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Button size="lg" asChild>
-                <a
-                  href="https://cal.com/debbie.welch.homes"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Book a Free Consult
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-secondary bg-transparent text-secondary hover:bg-secondary hover:text-secondary-foreground"
-                asChild
-              >
                 <Link to="/services">See How I Help</Link>
               </Button>
             </div>
 
             <p className="mt-6 text-sm text-primary/80">
+
               Serving Lake Stevens, Everett, Marysville, Arlington, Snohomish, Stanwood, Camano
               Island, Bothell, Mill Creek, and Mukilteo.
             </p>

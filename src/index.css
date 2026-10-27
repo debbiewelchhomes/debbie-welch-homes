@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Homepage-only font preview; Hurricane remains the site-wide script face. */
+/* Shared page accent face; navigation and buttons retain body typography. */
 @font-face {
   font-family: 'Black Stones';
   src: url('/__l5e/assets-v1/40e4840c-237c-47b1-9895-f7d915cbad98/black-stones.otf') format('opentype');
@@ -51,6 +51,7 @@ All colors MUST be HSL.
     --ring: 206 22% 37%;
 
     --radius: 0.5rem;
+    --script-size: 3.5rem;
     
     /* Custom transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -122,54 +123,29 @@ All colors MUST be HSL.
   main :is(.font-script, .button-script, .eyebrow) {
     font-family: 'Black Stones', 'Hurricane', cursive;
     font-weight: 400;
+    font-size: var(--script-size);
+    line-height: 1.35;
+    color: hsl(var(--foreground));
   }
 
-  /* Homepage trial: the script accents read much larger. */
-  main .font-script {
-    font-size: 5.4em;
-  }
-  main .button-script {
-    font-size: clamp(3rem, 1.75rem + 4.5vw, 5.5rem);
-    /* Script ascenders and descenders need air inside the button, weighted low. */
-    padding: 0.4rem 0.3rem 1.8rem;
-  }
-
-
-  /* Fluid: scales with screen width between a phone floor and desktop ceiling. */
-  main .eyebrow {
-    font-size: clamp(3.5rem, 2rem + 6.5vw, 8.625rem);
-  }
-
-  /* Black Stones draws the trailing ellipsis with wide side bearings, so it
-     reads as a gap. Pull it back against the final letter. */
-  main .script-dots {
+  .script-dots {
+    display: inline-block;
     margin-left: -0.12em;
     letter-spacing: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.65em;
+    line-height: inherit;
   }
 
-  /* The script line now reads as the section title, so it carries the brand's
-     darkest tone while the serif line beneath it supports in the softer tone. */
-  main .eyebrow {
-    color: #000000;
-  }
-
-  /* Dark text reads as true black site-wide; brand fills stay unchanged. */
-  .text-primary, .text-foreground { color: #000000; }
-
-
-
-
-
+  /* Preserve black dark text without changing the brand fill token. */
+  .text-primary, .text-foreground { color: hsl(var(--foreground)); }
 
   .font-script {
     font-family: 'Hurricane', cursive;
-    font-size: 1.8em;
-
-
-    line-height: 1.5;
-    color: hsl(var(--secondary));
+    line-height: 1.35;
+    color: hsl(var(--foreground));
   }
-  
+
   .font-heading {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
@@ -280,6 +256,17 @@ All colors MUST be HSL.
   }
   .text-pretty {
     text-wrap: pretty;
+  }
+
+  /* Bounded shared accent sizes; wrapping, not viewport font scaling, handles long lines. */
+  @media (min-width: 640px) {
+    :root { --script-size: 5rem; }
+  }
+  @media (min-width: 1024px) {
+    :root { --script-size: 7.2rem; }
+  }
+  @media (min-width: 1440px) {
+    :root { --script-size: 8.625rem; }
   }
 
   /* Eyebrow / script accent label */

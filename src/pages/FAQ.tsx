@@ -85,7 +85,7 @@ const FAQ = () => (
       <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-warm-bg">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="eyebrow mb-4">Straight answers for your next move…</p>
+            <p className="eyebrow mb-4">Straight answers for your next move...</p>
             <h1 className="font-heading h-section text-primary mb-6">Frequently Asked Questions</h1>
             <p className="copy-lead text-foreground">
               Real estate decisions bring up a lot of questions. These are some of the ones I hear most often from buyers, sellers, downsizers, and military families in Snohomish County.

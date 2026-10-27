@@ -55,7 +55,7 @@ const Blog = () => {
       <main className="bg-background pt-32 pb-16 md:pt-40 md:pb-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-10 md:mb-12">
-            <p className="eyebrow mb-4">Check these out…</p>
+            <p className="eyebrow mb-4">Check these out...</p>
             <h1 className="font-heading h-section font-bold text-primary mb-6">
               Real Estate Tips, Local Stories &amp; Market Insights
             </h1>

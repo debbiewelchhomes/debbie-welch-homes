@@ -1,6 +1,6 @@
 # Approved follow-up improvements
 
-- [ ] Make shared script headings fit their available space, retain readable wrapping on small screens, and verify heading/icon alignment across the website without publishing.
+- [x] Make shared script headings fit their available space, retain readable wrapping on small screens, and verify heading/icon alignment across the website without publishing; all 53 pages passed phone/laptop checks, 15 representative pages passed six-width checks, icons align within 1px, nine tests pass, preview build OK.
 
 - [x] Place Featured Areas before Testimonials and the Market Report, add a county-guide button below the four featured areas, and verify the order and destination without publishing; browser click-through passed, five tests passed, preview build OK.
 

@@ -13,7 +13,7 @@ const RealTalkSection = () => {
     <section
       className="relative section overflow-hidden parallax-section"
       style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(${calmInterior})`,
+        backgroundImage: `linear-gradient(rgba(225, 223, 220, 0.35), rgba(225, 223, 220, 0.35)), url(${calmInterior})`,
       }}
     >
       <div className="relative z-10 container mx-auto px-4">

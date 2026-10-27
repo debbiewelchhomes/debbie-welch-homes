@@ -112,8 +112,8 @@ All colors MUST be HSL.
 @layer utilities {
   .font-script {
     font-family: 'Hurricane', cursive;
-    /* Hurricane's lowercase is small and slender, so it runs larger than Allura */
-    font-size: 1.6em;
+    font-size: 1.8em;
+
 
     line-height: 1.5;
     color: hsl(var(--secondary));
@@ -173,7 +173,8 @@ All colors MUST be HSL.
 
   .button-script {
     font-family: 'Hurricane', cursive;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+
 
     font-weight: 400;
     line-height: 1.15;
@@ -238,14 +239,15 @@ All colors MUST be HSL.
   .eyebrow {
     font-family: 'Hurricane', cursive;
     color: hsl(var(--secondary));
-    font-size: 1.875rem;
+    font-size: 2.125rem;
+
 
     line-height: 1.35;
     display: block;
     margin-bottom: 0.5rem;
   }
   @media (min-width: 768px) {
-    .eyebrow { font-size: 2.5rem; }
+    .eyebrow { font-size: 2.875rem; }
   }
   .eyebrow-caps {
     font-family: 'Montserrat', sans-serif;

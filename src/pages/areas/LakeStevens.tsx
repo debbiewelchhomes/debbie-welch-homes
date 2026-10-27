@@ -49,8 +49,8 @@ const LakeStevens = () => {
               <p
                 className="photo-text-shadow font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
               >
-                A real lake town with a real community and schools that make buyers drive an extra twenty minutes
-                without blinking.
+                A real lake town with a real community, where you can weigh lake access, housing options, school
+                assignments, and commute routes against your own priorities.
               </p>
             </motion.div>
           </div>
@@ -170,8 +170,8 @@ const LakeStevens = () => {
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>It's grown fast.</strong> The western corridor feels suburban. If walkability is
-                        important, this probably isn't your place.
+                        <strong>It's grown fast.</strong> The western corridor feels suburban. If walking to daily
+                        errands matters to you, we'll check each address against the places you actually need to reach.
                       </span>
                     </li>
                     <li className="flex gap-2">

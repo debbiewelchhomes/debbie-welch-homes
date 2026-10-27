@@ -44,7 +44,7 @@ const faqs = [
   {
     question: "Can you help me use a VA loan to buy a home?",
     answer:
-      "Yes. I understand the real estate side of VA-financed purchases and work with lenders who are experienced with VA loans. Your lender will advise you on eligibility and loan terms, while I help with the home search, offer strategy, property considerations, inspections, and transaction coordination.",
+      "Yes. I understand the real estate side of VA-financed purchases and work with lenders who are experienced with VA loans. VA benefit eligibility is confirmed through a Certificate of Eligibility, and your lender handles underwriting and explains loan terms, while I help with the home search, offer strategy, property considerations, inspections, and transaction coordination.",
   },
   {
     question: "What happens during a free consultation?",

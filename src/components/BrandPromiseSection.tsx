@@ -15,7 +15,7 @@ const BrandPromiseSection = () => {
     },
     {
       icon: ListChecks,
-      title: "Calm, Organized Process",
+      title: "Clear, Organized Process",
       description:
         "Clear timelines, practical checklists, and defined next steps keep the process moving without unnecessary surprises.",
     },

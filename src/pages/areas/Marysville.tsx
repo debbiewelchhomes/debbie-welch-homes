@@ -100,8 +100,8 @@ const Marysville = () => {
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>Typically more affordable</strong> than Lake Stevens or Everett at a comparable size,
-                        with direct I-5 access for the easiest commute in this part of the county.
+                        <strong>Can cost less</strong> than a comparable home in Lake Stevens or Everett, depending on the
+                        property and location, with direct I-5 access that can simplify north-south commutes.
                       </span>
                     </li>
                     <li className="flex gap-2">

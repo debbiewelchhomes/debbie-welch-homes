@@ -41,7 +41,6 @@ const EverettMukilteo = () => {
             style={{ objectPosition: "center 35%" }}
           />
           <div className="container mx-auto px-4 text-center section relative z-10">
-            <div className="hero-text-scrim mx-auto max-w-3xl px-6 py-6">
             <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
               <p
                 className="eyebrow mb-4"
@@ -49,13 +48,12 @@ const EverettMukilteo = () => {
                 Everett & Mukilteo
               </p>
               <p
-                className="font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+                className="photo-text-shadow font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
               >
                 Snohomish County's largest city is reinventing its waterfront and downtown. Mukilteo has always
                 been one of the most beautiful spots on Puget Sound.
               </p>
             </motion.div>
-            </div>
           </div>
         </section>
 

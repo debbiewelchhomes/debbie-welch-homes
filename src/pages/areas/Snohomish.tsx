@@ -33,17 +33,15 @@ const Snohomish = () => {
             style={{ objectPosition: "center 60%" }}
           />
           <div className="container mx-auto px-4 text-center section relative z-10">
-            <div className="hero-text-scrim mx-auto max-w-3xl px-6 py-6">
             <p className="eyebrow mb-4">
               Snohomish
             </p>
             <p
-              className="font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+              className="photo-text-shadow font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
             >
               A river town founded in 1859, with a National Historic District downtown and farmland just past
               the edges.
             </p>
-            </div>
           </div>
         </section>
 

@@ -78,16 +78,14 @@ const SnohomishCounty = () => {
             style={{ objectPosition: "center 55%" }}
           />
           <div className="container mx-auto px-4 text-center section relative z-10">
-            <div className="hero-text-scrim mx-auto max-w-3xl px-6 py-6">
             <p className="eyebrow mb-4">
               Snohomish County
             </p>
             <p
-              className="font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
+              className="photo-text-shadow font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
             >
               Start here if you are not sure which area fits, then work outward to the guides.
             </p>
-            </div>
           </div>
         </section>
 

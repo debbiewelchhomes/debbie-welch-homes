@@ -69,7 +69,7 @@ const LakeStevens = () => {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <p className="eyebrow mb-4">I know this town…</p>
+              <p className="eyebrow mb-4">I know this town...</p>
               <h1 className="font-heading h-section text-primary mb-6">Lake Stevens, WA</h1>
               <p className="text-foreground text-lg leading-relaxed">
                 I lived in the Soper Hill area of northwest Lake Stevens for about ten years. I know the Monday morning
@@ -258,7 +258,7 @@ const LakeStevens = () => {
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
             >
-              <p className="eyebrow mb-4">Ready to look…</p>
+              <p className="eyebrow mb-4">Ready to look...</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
                 Homes for Sale in Lake Stevens
               </h2>

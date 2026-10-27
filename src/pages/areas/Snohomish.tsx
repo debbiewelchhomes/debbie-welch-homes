@@ -33,7 +33,6 @@ const Snohomish = () => {
             style={{ objectPosition: "center 60%" }}
           />
           <div className="container mx-auto px-4 text-center section relative z-10">
-            <div className="hero-text-scrim mx-auto max-w-3xl px-6 py-6">
             <p className="eyebrow mb-4">
               Snohomish
             </p>
@@ -43,7 +42,6 @@ const Snohomish = () => {
               A river town founded in 1859, with a National Historic District downtown and farmland just past
               the edges.
             </p>
-            </div>
           </div>
         </section>
 
@@ -64,7 +62,6 @@ const Snohomish = () => {
                 them. Services, permitting, utilities, and tax treatment can differ. When you send me a listing,
                 that is one of the first things I check.
               </p>
-            </div>
           </div>
         </section>
 
@@ -115,7 +112,6 @@ const Snohomish = () => {
                   </li>
                 </ul>
               </div>
-            </div>
           </div>
         </section>
 
@@ -144,7 +140,6 @@ const Snohomish = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Plan for the age and setting of the property.</strong> Older systems, flood mapping, shoreline or river proximity, wells, septic systems, easements, and historic considerations all deserve address-specific review before an offer becomes firm.</p></div>
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Documentation helps buyers see character instead of uncertainty.</strong> Permits, repair records, system ages, utility information, flood insurance history when applicable, and details about thoughtful updates can make an older or rural property easier to evaluate.</p></div>
-            </div>
           </div>
         </section>
 
@@ -209,7 +204,6 @@ const Snohomish = () => {
               <Button size="lg" variant="outline" asChild>
                 <Link to="/contact">Ask Me About Snohomish</Link>
               </Button>
-            </div>
           </div>
         </section>
       </main>

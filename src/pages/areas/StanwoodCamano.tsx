@@ -33,7 +33,6 @@ const StanwoodCamano = () => {
             style={{ objectPosition: "center 32%" }}
           />
           <div className="container mx-auto px-4 text-center section relative z-10">
-            <div className="hero-text-scrim mx-auto max-w-3xl px-6 py-6">
             <p className="eyebrow mb-4">
               Stanwood &amp; Camano Island
             </p>
@@ -43,7 +42,6 @@ const StanwoodCamano = () => {
               Where the Stillaguamish River meets the Salish Sea, and a bridge, not a ferry, carries you to the
               island.
             </p>
-            </div>
           </div>
         </section>
 
@@ -65,7 +63,6 @@ const StanwoodCamano = () => {
                 districts, and sometimes insurance. People often shop both in one afternoon, which is exactly
                 why it is worth being clear about which side of the water any given property sits on.
               </p>
-            </div>
           </div>
         </section>
 
@@ -116,7 +113,6 @@ const StanwoodCamano = () => {
                   </li>
                 </ul>
               </div>
-            </div>
           </div>
         </section>
 
@@ -143,7 +139,6 @@ const StanwoodCamano = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Allow extra time for property-specific research.</strong> County jurisdiction, wells, septic systems, private roads, shared access, shoreline rules, drainage, bluff conditions, insurance, and travel time to daily services should all be understood before closing.</p></div>
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Prepare the records that explain how the property works.</strong> Well and septic documents, road agreements, surveys, permits, maintenance history, shoreline information, and insurance details can prevent a distinctive property from feeling unnecessarily complicated.</p></div>
-            </div>
           </div>
         </section>
 
@@ -214,7 +209,6 @@ const StanwoodCamano = () => {
               <Button size="lg" variant="outline" asChild>
                 <Link to="/contact">Ask Me About Stanwood &amp; Camano</Link>
               </Button>
-            </div>
           </div>
         </section>
       </main>

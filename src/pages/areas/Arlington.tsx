@@ -33,7 +33,6 @@ const Arlington = () => {
             style={{ objectPosition: "center 55%" }}
           />
           <div className="container mx-auto px-4 text-center section relative z-10">
-            <div className="hero-text-scrim mx-auto max-w-3xl px-6 py-6">
             <p className="eyebrow mb-4">
               Arlington
             </p>
@@ -43,7 +42,6 @@ const Arlington = () => {
               A traditional downtown, a working airport and industrial district, and rural edges that begin
               sooner than most buyers expect.
             </p>
-            </div>
           </div>
         </section>
 
@@ -65,7 +63,6 @@ const Arlington = () => {
                 neighborhoods. None of that is good or bad on its own. It just means the address matters more
                 here than the city name does.
               </p>
-            </div>
           </div>
         </section>
 
@@ -116,7 +113,6 @@ const Arlington = () => {
                   </li>
                 </ul>
               </div>
-            </div>
           </div>
         </section>
 
@@ -146,7 +142,6 @@ const Arlington = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Verify jurisdiction, utilities, and access early.</strong> Arlington addresses can represent in-city homes, newer development, or rural property. Wells, septic systems, private roads, airport proximity, and future land-use plans can matter as much as the house itself.</p></div>
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Gather rural-property records before listing.</strong> Septic documents, well information, surveys, easements, permits, and private-road agreements help buyers understand the property and reduce avoidable delays once you are under contract.</p></div>
-            </div>
           </div>
         </section>
 
@@ -210,7 +205,6 @@ const Arlington = () => {
               <Button size="lg" variant="outline" asChild>
                 <Link to="/contact">Ask Me About Arlington</Link>
               </Button>
-            </div>
           </div>
         </section>
       </main>

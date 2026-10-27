@@ -78,7 +78,6 @@ const SnohomishCounty = () => {
             style={{ objectPosition: "center 55%" }}
           />
           <div className="container mx-auto px-4 text-center section relative z-10">
-            <div className="hero-text-scrim mx-auto max-w-3xl px-6 py-6">
             <p className="eyebrow mb-4">
               Snohomish County
             </p>
@@ -87,7 +86,6 @@ const SnohomishCounty = () => {
             >
               Start here if you are not sure which area fits, then work outward to the guides.
             </p>
-            </div>
           </div>
         </section>
 
@@ -108,7 +106,6 @@ const SnohomishCounty = () => {
                 This page is meant as a starting point rather than a full guide. Use it to narrow down which
                 areas are worth a closer look, then read the individual guide for each one.
               </p>
-            </div>
           </div>
         </section>
 
@@ -130,7 +127,6 @@ const SnohomishCounty = () => {
                   </span>
                 </Link>
               ))}
-            </div>
           </div>
         </section>
 
@@ -204,7 +200,6 @@ const SnohomishCounty = () => {
               <Button size="lg" variant="outline" asChild>
                 <Link to="/contact">Ask Me Where to Start</Link>
               </Button>
-            </div>
           </div>
         </section>
       </main>

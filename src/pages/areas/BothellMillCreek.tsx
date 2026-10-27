@@ -33,7 +33,6 @@ const BothellMillCreek = () => {
             style={{ objectPosition: "center 35%" }}
           />
           <div className="container mx-auto px-4 text-center section relative z-10">
-            <div className="hero-text-scrim mx-auto max-w-3xl px-6 py-6">
             <p className="eyebrow mb-4">
               Bothell &amp; Mill Creek
             </p>
@@ -43,7 +42,6 @@ const BothellMillCreek = () => {
               The south end of the county, where county lines and school district lines do not follow the
               mailing address.
             </p>
-            </div>
           </div>
         </section>
 
@@ -66,7 +64,6 @@ const BothellMillCreek = () => {
                 comparing the two, you are usually comparing a planned, cohesive feel against Bothell's wider
                 mix of older neighborhoods, newer infill, and a redeveloped downtown core.
               </p>
-            </div>
           </div>
         </section>
 
@@ -117,7 +114,6 @@ const BothellMillCreek = () => {
                   </li>
                 </ul>
               </div>
-            </div>
           </div>
         </section>
 
@@ -146,7 +142,6 @@ const BothellMillCreek = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Check the parcel, not just the mailing address.</strong> County, school district, taxes, utilities, HOA rules, and commute routes can change within a short distance. For condos and townhomes, review the association budget, reserves, insurance, and meeting minutes before committing.</p></div>
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Make the location differences easy to understand.</strong> Clear information about schools, county, commuting options, nearby trails, association details, and recent improvements helps buyers compare your home accurately with properties carrying the same city name.</p></div>
-            </div>
           </div>
         </section>
 
@@ -214,7 +209,6 @@ const BothellMillCreek = () => {
               <Button size="lg" variant="outline" asChild>
                 <Link to="/contact">Ask Me About Bothell &amp; Mill Creek</Link>
               </Button>
-            </div>
           </div>
         </section>
       </main>

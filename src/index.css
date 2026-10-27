@@ -373,30 +373,14 @@ All colors MUST be HSL.
 
 
 
-/* Soft dark scrim sitting only behind the hero letters, so the photo itself stays clear. */
-.hero-text-scrim {
-  position: relative;
-}
-
-.hero-text-scrim::before {
-  content: "";
-  position: absolute;
-  inset: -1.25rem -0.75rem;
-  z-index: -1;
-  pointer-events: none;
-  border-radius: 1.5rem;
-  background: radial-gradient(
-    ellipse at center,
-    rgb(20 22 32 / 0.62) 0%,
-    rgb(20 22 32 / 0.38) 55%,
-    transparent 80%
-  );
-}
-
-@media (min-width: 768px) {
-  .hero-text-scrim::before {
-    inset: -2.25rem -3.5rem;
-  }
+/* Area guide hero sentences over photography: the same letter-edge shadow the
+   featured-area names use, so no dark pad shows on pale-sky photos. */
+.photo-text-shadow {
+  text-shadow:
+    0 0 1px rgb(12 14 20 / 0.85),
+    0 1px 2px rgb(12 14 20 / 0.75),
+    0 0 6px rgb(12 14 20 / 0.4),
+    0 2px 10px rgb(12 14 20 / 0.28);
 }
 
 /* Area names over photography: a soft shadow hugging the letter edges only,

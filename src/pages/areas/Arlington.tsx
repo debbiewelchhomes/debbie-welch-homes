@@ -34,7 +34,7 @@ const Arlington = () => {
           />
           <div className="container mx-auto px-4 text-center section relative z-10">
             <div className="hero-text-scrim mx-auto max-w-3xl px-6 py-6">
-            <p className="eyebrow mb-4" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}>
+            <p className="eyebrow mb-4">
               Arlington
             </p>
             <p

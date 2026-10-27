@@ -64,27 +64,20 @@ const Navigation = () => {
 
 
               {/* Services Dropdown */}
-              <div className="relative group">
-                <div className="flex items-center">
-                  <Link to="/services" className="text-foreground hover:text-secondary transition-colors">
-                    Services
-                  </Link>
-                  <DropdownMenu>
-                    <DropdownMenuTrigger aria-label="Open Services menu" className="flex min-h-11 items-center justify-center px-1 text-foreground hover:text-secondary transition-colors">
-                      <ChevronDown className="h-4 w-4" />
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent className="bg-background border-border z-50">
-                      {services.map((service) => (
-                        <DropdownMenuItem key={service.name} asChild>
-                          <Link to={service.href} className="w-full">
-                            {service.name}
-                          </Link>
-                        </DropdownMenuItem>
-                      ))}
-                    </DropdownMenuContent>
-                  </DropdownMenu>
-                </div>
-              </div>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="flex min-h-11 min-w-11 items-center gap-1 text-foreground hover:text-secondary transition-colors">
+                  Services <ChevronDown className="h-4 w-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="bg-background border-border z-50">
+                  {services.map((service) => (
+                    <DropdownMenuItem key={service.name} asChild>
+                      <Link to={service.href} className="w-full">
+                        {service.name}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
 
               {/* Areas Dropdown */}
               <DropdownMenu>

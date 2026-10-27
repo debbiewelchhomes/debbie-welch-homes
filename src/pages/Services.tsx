@@ -45,7 +45,7 @@ const Services = () => {
               className="max-w-4xl mx-auto text-backdrop"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                How I can help…
+                How I can help...
               </p>
 
               <h1 className="font-heading h-section text-primary mb-6">
@@ -72,7 +72,7 @@ const Services = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                Here's the thing…
+                Here's the thing...
               </p>
 
               <h2 className="font-heading h-section text-primary mb-8">
@@ -102,7 +102,7 @@ const Services = () => {
             >
               <div className="text-center mb-12">
                 <p className="eyebrow mb-4" aria-hidden="true">
-                  What you can count on…
+                  What you can count on...
                 </p>
 
                 <h2 className="font-heading h-section text-primary mb-8">
@@ -151,7 +151,7 @@ const Services = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                What they've said…
+                What they've said...
               </p>
 
               <blockquote className="font-body text-xl md:text-2xl text-primary leading-relaxed measure mx-auto mb-8 italic">
@@ -176,7 +176,7 @@ const Services = () => {
               className="max-w-4xl mx-auto text-center"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                No pressure, just a conversation…
+                No pressure, just a conversation...
               </p>
 
               <h2 className="font-heading h-section text-primary mb-8">

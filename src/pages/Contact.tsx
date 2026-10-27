@@ -140,7 +140,7 @@ const Contact = () => {
                   className="flex items-center gap-3 text-foreground hover:text-[#6e808e] transition-colors font-['Montserrat']"
                 >
                   <Mail className="h-4 w-4 text-[#6e808e]" />
-                  <span className="min-w-0 break-words">debbie@debbiewelchhomes.com</span>
+                  <span className="min-w-0 break-words">debbie@<wbr />debbiewelchhomes.com</span>
                 </a>
                 <div className="flex items-center gap-3 text-foreground font-['Montserrat']">
                   <MapPin className="h-4 w-4 text-[#6e808e]" />

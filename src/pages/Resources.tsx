@@ -50,8 +50,10 @@ const Resources = () => {
         <section id="guides" className="section bg-background scroll-mt-28">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="max-w-3xl mb-10">
-              <BookOpen className="h-8 w-8 text-secondary mb-4" aria-hidden="true" />
-              <h2 className="font-heading h-section text-primary mb-4">Buyer & Seller Guides</h2>
+              <div className="mb-4 flex items-center gap-3">
+                <BookOpen className="h-8 w-8 shrink-0 text-secondary" aria-hidden="true" />
+                <h2 className="font-heading h-section text-primary">Buyer & Seller Guides</h2>
+              </div>
               <p className="copy text-foreground">
                 Downloadable planning help for buying, preparing a home, and selling with fewer surprises.
               </p>
@@ -86,8 +88,10 @@ const Resources = () => {
               >
                 <Card className="h-full border-border bg-background transition-shadow duration-300 group-hover:shadow-lg">
                   <CardContent className="p-8">
-                    <BarChart3 className="h-8 w-8 text-secondary mb-4" aria-hidden="true" />
-                    <h2 className="font-heading h-card text-primary mb-3">Local Market Reports</h2>
+                    <div className="mb-3 flex items-start gap-3">
+                      <BarChart3 className="h-8 w-8 shrink-0 text-secondary" aria-hidden="true" />
+                      <h2 className="font-heading h-card text-primary">Local Market Reports</h2>
+                    </div>
                     <p className="copy text-foreground mb-6">
                       Review current trends, recent sales, active listings, and days on market for communities across Snohomish County.
                     </p>
@@ -101,8 +105,10 @@ const Resources = () => {
               <Link to="/contact" className="group">
                 <Card className="h-full border-border bg-background transition-shadow duration-300 group-hover:shadow-lg">
                   <CardContent className="p-8">
-                    <BarChart3 className="h-8 w-8 text-secondary mb-4" aria-hidden="true" />
-                    <h2 className="font-heading h-card text-primary mb-3">Request a Personalized Report</h2>
+                    <div className="mb-3 flex items-start gap-3">
+                      <BarChart3 className="h-8 w-8 shrink-0 text-secondary" aria-hidden="true" />
+                      <h2 className="font-heading h-card text-primary">Request a Personalized Report</h2>
+                    </div>
                     <p className="copy text-foreground mb-6">
                       Citywide statistics can be too broad. Include your neighborhood, price range, or property type in your message to request a tailored report.
                     </p>
@@ -128,8 +134,10 @@ const Resources = () => {
               >
                 <Card className="h-full border-border bg-card transition-shadow duration-300 group-hover:shadow-lg">
                   <CardContent className="p-8">
-                    <Calculator className="h-8 w-8 text-secondary mb-4" aria-hidden="true" />
-                    <h2 className="font-heading h-card text-primary mb-3">Mortgage Calculator</h2>
+                    <div className="mb-3 flex items-start gap-3">
+                      <Calculator className="h-8 w-8 shrink-0 text-secondary" aria-hidden="true" />
+                      <h2 className="font-heading h-card text-primary">Mortgage Calculator</h2>
+                    </div>
                     <p className="copy text-foreground mb-6">
                       Estimate a monthly principal and interest payment. Taxes, insurance, HOA dues, and loan costs may change the final amount.
                     </p>
@@ -143,8 +151,10 @@ const Resources = () => {
               <Link to="/blog" className="group">
                 <Card className="h-full border-border bg-card transition-shadow duration-300 group-hover:shadow-lg">
                   <CardContent className="p-8">
-                    <Newspaper className="h-8 w-8 text-secondary mb-4" aria-hidden="true" />
-                    <h2 className="font-heading h-card text-primary mb-3">Local Real Estate Blog</h2>
+                    <div className="mb-3 flex items-start gap-3">
+                      <Newspaper className="h-8 w-8 shrink-0 text-secondary" aria-hidden="true" />
+                      <h2 className="font-heading h-card text-primary">Local Real Estate Blog</h2>
+                    </div>
                     <p className="copy text-foreground mb-6">
                       Read practical articles about buying, selling, downsizing, military moves, and living in Snohomish County.
                     </p>

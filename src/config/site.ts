@@ -1,4 +1,4 @@
-export const DEFAULT_SITE_URL = "https://debbiewelchhomes.com";
+export const DEFAULT_SITE_URL = "https://debbie-welch-homes.lovable.app";
 
 const configuredSiteUrl = import.meta.env.VITE_SITE_URL?.trim();
 

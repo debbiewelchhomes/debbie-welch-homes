@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://debbiewelchhomes.com/sitemap.xml
+Sitemap: https://debbie-welch-homes.lovable.app/sitemap.xml

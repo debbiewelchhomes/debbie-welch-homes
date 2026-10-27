@@ -133,12 +133,18 @@ All colors MUST be HSL.
     font-family: 'Black Stones', 'Hurricane', cursive;
     font-weight: 400;
     font-size: var(--script-fit-size, var(--script-size));
-    line-height: 1.35;
+    /* Black Stones ink occupies far less than its default line box. Keep
+       comfortable leading for wrapped letters without oversized blank space. */
+    line-height: 0.95;
     color: hsl(var(--foreground));
     max-width: 100%;
     text-wrap: balance;
     overflow-wrap: anywhere;
     letter-spacing: 0;
+  }
+
+  main .eyebrow {
+    margin-bottom: 0.875rem;
   }
 
   /* Preserve black dark text without changing the brand fill token. */

@@ -1,6 +1,6 @@
 # Approved follow-up improvements
 
-- [ ] Review visible script spacing across every public page and article at laptop and phone widths; tighten shared leading and verify no clipped or overlapping lettering without publishing.
+- [x] Review visible script spacing across every public page and article at laptop and phone widths; shared script leading tightened, following gaps balanced, 106 page checks passed with no overlaps or overflow, representative captures visually reviewed, nine tests passed and preview build OK; nothing published.
 
 - [x] Make shared script headings fit their available space, retain readable wrapping on small screens, and verify heading/icon alignment across the website without publishing; all 53 pages passed phone/laptop checks, 15 representative pages passed six-width checks, icons align within 1px, nine tests pass, preview build OK.
 

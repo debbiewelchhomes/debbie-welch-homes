@@ -217,6 +217,13 @@ All colors MUST be HSL.
     line-height: 1.15;
     text-wrap: balance;
   }
+  /* Same scale, tuned for headings that sit in half-width columns. */
+  .h-section-sm {
+    font-size: clamp(1.45rem, 1.1rem + 1.05vw, 2.1rem);
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+
   .h-card {
     font-size: 1.25rem;
     line-height: 1.25;

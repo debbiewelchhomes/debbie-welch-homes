@@ -36,6 +36,9 @@ All colors MUST be HSL.
     --warm-bg: 36 8% 87%; /* #e1dfdc */
     --warm-bg-foreground: 0 0% 0%;
     --photo-overlay: 36 8% 87% / 0.35;
+    /* Wash for photos that carry text directly on them (area guide heroes,
+       featured-area tiles) — firmer than the scrolling-panel overlay. */
+    --photo-wash: 36 8% 87% / 0.5;
 
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
@@ -441,19 +444,18 @@ All colors MUST be HSL.
 
 
 
-/* Light semi-transparent wash over photos that carry text, matching the
-   scrolling picture panels (same token as .market-report-photo::after). */
+/* Light semi-transparent wash over photos that carry text directly on them. */
 .photo-wash {
-  background: hsl(var(--photo-overlay));
+  background: hsl(var(--photo-wash));
 }
 
-/* Area guide heroes: the same light wash behind the place name and intro
+/* Area guide heroes: the same wash behind the place name and intro
    sentence, applied over the full-bleed photo. */
 main > section:first-child:has(> img.absolute.inset-0)::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: hsl(var(--photo-overlay));
+  background: hsl(var(--photo-wash));
   pointer-events: none;
 }
 

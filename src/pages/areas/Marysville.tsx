@@ -74,7 +74,7 @@ const Marysville = () => {
                 county, second only to Everett until you head further south, with nearly 78,000 people and still climbing.
                 Growth has pushed outward at the edges, especially east toward Whiskey Ridge, while infill development
                 fills in closer to the established core. The older downtown still has real character if you know where
-                to look, and it's typically one of the more affordable places to buy in the county.
+                to look. Prices vary by home, location, and current market conditions.
               </p>
             </motion.div>
           </div>
@@ -100,15 +100,16 @@ const Marysville = () => {
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>Can cost less</strong> than a comparable home in Lake Stevens or Everett, depending on the
-                        property and location, with direct I-5 access that can simplify north-south commutes.
+                        <strong>A range of housing and price points.</strong> Prices vary by home, location, and market
+                        conditions. I-5 runs along the city's west side, so depending on the address, it can simplify
+                        north-south commutes.
                       </span>
                     </li>
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
                         <strong>Major Boeing commuter base.</strong> A large share of Marysville households commute to
-                        the Everett Boeing plant. Affordability and easy I-5 access make it a popular choice for
+                        the Everett Boeing plant. I-5 access makes it a popular choice for
                         aerospace workers.
                       </span>
                     </li>
@@ -129,9 +130,8 @@ const Marysville = () => {
                         <strong>Whiskey Ridge is worth serious attention if school district matters to you.</strong>{" "}
                         This northwest growth area has added more than a thousand homes in recent years, and a
                         meaningful share of them fall within Lake Stevens School District boundaries rather than
-                        Marysville's, even though they're inside Marysville city limits. If you want Lake Stevens
-                        schools without Lake Stevens prices, this is worth exploring and confirming on any
-                        specific home, since the boundary isn't always obvious from the address alone.
+                        Marysville's, even though they're inside Marysville city limits. If district assignment is part of your
+                        decision, confirm it directly with the district for any specific home, since the boundary isn't always obvious from the address alone.
                       </span>
                     </li>
                     <li className="flex gap-2">

@@ -28,12 +28,12 @@ export const mainBlogPosts: BlogPost[] = [
   },
   {
     id: "main-2",
-    title: "A Calm Guide to Downsizing Your Home Without Losing Your Mind",
+    title: "A Practical Guide to Downsizing Your Home Without Losing Your Mind",
     date: "September 28, 2025",
     category: "Downsizing",
     excerpt: "Downsizing involves far more than choosing a smaller house. A manageable plan separates the real-estate decisions from the belongings, timing, family communication, and practical details that can otherwise become overwhelming.",
     slug: "downsizing-guide",
-    metaDescription: "A calm, practical Snohomish County downsizing guide covering timing, belongings, home preparation, housing choices, and family coordination.",
+    metaDescription: "A practical Snohomish County downsizing guide covering timing, belongings, home preparation, housing choices, and family coordination.",
     image: "/blog/downsizing-guide-inclusive.webp",
     imageAlt: "Black older homeowner and her adult daughter calmly sorting meaningful belongings during a downsizing move",
     content: "Downsizing is often described as moving into a smaller home, but square footage is only one part of it. You may also be sorting through years of belongings, deciding what the next stage should look like, coordinating with family, and preparing a home that carries a great deal of history.\n\nTrying to solve every part at once is usually what makes the process feel impossible. A better approach is to separate the decisions and work through them in a sensible order.\n\n**Start with the life you want, not the things you own**\n\nBefore choosing a neighborhood or floor plan, think about what you want everyday life to require from you.\n\n- How much exterior maintenance do you want?\n- Are stairs comfortable now, and are they likely to remain so?\n- Do you want to be closer to family, medical care, shopping, or community activities?\n- Would a condominium or homeowners association simplify life, or would its rules and monthly dues feel restrictive?\n- Do you need space for guests, hobbies, pets, or a caregiver?\n- Is staying in the same community important?\n\nA smaller home is not automatically less expensive or easier. Compare property taxes, insurance, utilities, association dues, maintenance, and possible renovation costs, not just the purchase price.\n\n**Give yourself more time than you think you need**\n\nIf possible, begin planning months before you expect to move. Early planning creates room for thoughtful decisions and prevents every weekend from becoming an emergency sorting session.\n\nChoose one small, low-emotion area first: a linen closet, utility drawer, or pantry. Do not begin with family photographs or sentimental keepsakes. The purpose of the first few sessions is to establish a routine, not prove how much you can discard.\n\nUse clear categories:\n\n- Keep and move\n- Give to family or friends\n- Donate\n- Sell\n- Recycle or dispose\n- Decide later\n\nKeep the “decide later” category limited to one defined area. Otherwise it quietly becomes the whole house.\n\n**Measure the next home before choosing what goes**\n\nA floor plan and room measurements make decisions concrete. If the next dining area seats four, you can evaluate the current table against a real space instead of an imagined future.\n\nPhotographs can preserve the story of meaningful belongings that will not make the move. For family pieces, ask relatives early and give them a deadline. It is easier to coordinate pickups before the listing and moving schedule becomes busy.\n\n**Decide how much preparation the current home needs**\n\nNot every home needs a major renovation before selling. The useful question is which work improves marketability, reduces buyer concern, or prevents the home from showing poorly compared with similar properties.\n\nCommon priorities include:\n\n- Correcting active leaks, safety concerns, or obvious deferred maintenance\n- Removing excess furniture and personal items\n- Improving lighting and basic cleanliness\n- Touching up visibly damaged paint or trim\n- Making the entry and exterior feel cared for\n\nLarge projects deserve a cost-versus-benefit discussion. Spending more does not guarantee recovering more, and construction can delay the move.\n\n**Connect the sale plan to the next-home plan**\n\nThe timing question is often the most stressful part. You may sell first, buy first, make a contingent offer, arrange temporary housing, or negotiate possession after closing. Each path changes the financial requirements and the amount of moving involved.\n\nBefore choosing, discuss the options with both your lender and your real-estate agent. Ask what happens if the sale or purchase takes longer than expected. The backup plan matters just as much as the ideal plan.\n\n**When family is involved**\n\nDownsizing decisions still belong to the homeowner. Family members can be helpful by taking on defined jobs, researching movers, arranging donations, scanning photographs, or managing a shared schedule, without turning the process into a debate over every possession.\n\nIf you are helping a parent from out of the area, establish one point person and one shared list. Too many separate conversations can create confusion and make the homeowner feel as though decisions are being made around them.\n\n**A calmer order of operations**\n\n- Clarify the desired lifestyle and housing requirements.\n- Review finances and likely sale proceeds.\n- Identify possible next-home areas and property types.\n- Begin sorting in small, scheduled sessions.\n- Evaluate necessary home preparation.\n- Choose the sale-and-purchase timeline.\n- Line up moving, donation, storage, and support services.\n- Leave room in the schedule for the unexpected.\n\nDownsizing can carry relief, grief, excitement, and uncertainty at the same time. That does not mean the plan is going badly. It means the move represents a real transition. A clear sequence, realistic timeline, and permission to make decisions gradually can keep that transition manageable."
@@ -328,7 +328,7 @@ Debbie Welch helps PCS buyers and sellers in Marysville with organized, practica
     category: "Local Real Estate Questions",
     excerpt: "Lake Stevens is popular for buyers who want a community feel, newer housing options in many areas, and a lifestyle that's a bit more 'breathing room.'",
     slug: "pcs-realtor-lake-stevens-wa",
-    metaDescription: "PCSing to Naval Station Everett? Debbie Welch helps military and Veteran families buy or sell in Lake Stevens with calm guidance and strong local insight.",
+    metaDescription: "PCSing to Naval Station Everett? Debbie Welch helps military and Veteran families buy or sell in Lake Stevens with clear guidance and local insight.",
     content: `Lake Stevens is popular for buyers who want a community feel, newer housing options in many areas, and a lifestyle that's a bit more "breathing room." For PCS families, it can be a strong option depending on commute preferences and budget.
 
 Debbie Welch helps PCS clients evaluate whether Lake Stevens is the right fit, and if it is, she helps them move quickly and confidently with a clear plan.
@@ -350,7 +350,7 @@ Debbie Welch helps PCS clients evaluate whether Lake Stevens is the right fit, a
     category: "Local Real Estate Questions",
     excerpt: "Snohomish attracts buyers who want charm, community feel, and a more distinct 'small town' vibe, while still being within reach of Everett.",
     slug: "pcs-realtor-snohomish-wa",
-    metaDescription: "PCSing to Naval Station Everett? Debbie Welch helps military and Veteran families buy or sell in Snohomish with clear guidance and calm support.",
+    metaDescription: "PCSing to Naval Station Everett? Debbie Welch helps military and Veteran families buy or sell in Snohomish with clear guidance and organized support.",
     content: `Snohomish attracts buyers who want charm, community feel, and a more distinct "small town" vibe, while still being within reach of Everett. For PCS families, the right Snohomish fit depends on commute tolerance, lifestyle priorities, and inventory at the time of your search.
 
 Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confident decisions without pressure.
@@ -372,7 +372,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     category: "Local Real Estate Questions",
     excerpt: "Downsizing in Everett often means balancing practical needs with timing and emotions.",
     slug: "downsizing-realtor-everett-wa",
-    metaDescription: "Downsizing in Everett? Debbie Welch helps homeowners sell and buy with a clear plan, calm guidance, and smart local strategy.",
+    metaDescription: "Downsizing in Everett? Debbie Welch helps homeowners sell and buy with a clear plan, honest guidance, and local strategy.",
     content: `Downsizing in Everett often means balancing practical needs (one-level living, proximity to services, easier maintenance) with timing and emotions. Debbie Welch helps downsizers build a plan that connects selling and buying so the move feels manageable.
 
 **What downsizers appreciate about Debbie:**
@@ -412,7 +412,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     category: "Local Real Estate Questions",
     excerpt: "Downsizing in Lake Stevens can be a great move, but the process is smoother when selling and buying are planned together.",
     slug: "downsizing-realtor-lake-stevens-wa",
-    metaDescription: "Downsizing in Lake Stevens? Debbie Welch helps homeowners sell and buy with clear strategy, calm support, and step-by-step planning.",
+    metaDescription: "Downsizing in Lake Stevens? Debbie Welch helps homeowners sell and buy with clear strategy and step-by-step planning.",
     content: `Downsizing in Lake Stevens can be a great move, but the process is smoother when selling and buying are planned together. Debbie Welch helps clients make confident decisions with a clear roadmap and warm, realistic guidance.
 
 **Downsizing support includes:**
@@ -432,7 +432,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     category: "Local Real Estate Questions",
     excerpt: "Snohomish downsizers often want lifestyle as much as layout, charm, community, and a home that feels like a fresh chapter.",
     slug: "downsizing-realtor-snohomish-wa",
-    metaDescription: "Downsizing in Snohomish? Debbie Welch helps homeowners sell and buy with calm planning, smart strategy, and a human-first approach.",
+    metaDescription: "Downsizing in Snohomish? Debbie Welch helps homeowners sell and buy with practical planning, local strategy, and a human-first approach.",
     content: `Snohomish downsizers often want lifestyle as much as layout, charm, community, and a home that feels like a fresh chapter. Debbie Welch helps clients downsize with a plan that's organized and emotionally respectful.
 
 **Downsizing support includes:**
@@ -452,7 +452,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     category: "Local Real Estate Questions",
     excerpt: "Buying your first home in Everett can feel like learning a new language.",
     slug: "first-time-home-buyer-realtor-everett-wa",
-    metaDescription: "First-time buyer in Everett? Debbie Welch offers calm, step-by-step support so you can buy with confidence and clarity.",
+    metaDescription: "First-time buyer in Everett? Debbie Welch offers patient, step-by-step support so you can buy with confidence and clarity.",
     content: `Buying your first home in Everett can feel like learning a new language. Debbie Welch helps first-time buyers understand the process, compete wisely, and make decisions without pressure.
 
 **First-time support includes:**
@@ -512,7 +512,7 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     category: "Local Real Estate Questions",
     excerpt: "Snohomish is charming, and buying there as a first-timer can feel intimidating if you don't have a steady guide.",
     slug: "first-time-home-buyer-realtor-snohomish-wa",
-    metaDescription: "First-time buyer in Snohomish? Debbie Welch provides calm guidance, clear education, and local insight so you can buy with confidence.",
+    metaDescription: "First-time buyer in Snohomish? Debbie Welch provides clear education, practical guidance, and local insight so you can buy with confidence.",
     content: `Snohomish is charming, and buying there as a first-timer can feel intimidating if you don't have a steady guide. Debbie Welch helps first-time buyers understand the process, evaluate the lifestyle fit, and make confident decisions without pressure.
 
 **First-time support includes:**

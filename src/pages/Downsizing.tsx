@@ -322,7 +322,7 @@ const Downsizing = () => {
               </h2>
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
-                <p>Most agents will help you list your home. I help you move your life. There's a difference.</p>
+                <p>Selling the house is only one piece. I also help you plan the move around it: the timing, the belongings, and the next place you'll call home.</p>
                 <p>
                   For clients who need it, I've helped coordinate donation runs, packed boxes, arranged junk hauling,
                   managed staging logistics, and been the steady point of contact when everything feels like a lot. That's

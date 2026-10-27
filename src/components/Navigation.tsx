@@ -52,7 +52,7 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden xl:flex items-center justify-between w-full max-w-7xl mx-auto">
             {/* Left Navigation Group */}
-            <div className="flex items-center gap-6 flex-1 justify-end pr-6 whitespace-nowrap">
+            <div className="flex items-center gap-4 2xl:gap-6 flex-1 justify-end pr-4 2xl:pr-6 whitespace-nowrap">
               <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
@@ -114,7 +114,7 @@ const Navigation = () => {
             </Link>
 
             {/* Right Navigation Group */}
-            <div className="flex items-center gap-6 flex-1 justify-start pl-6 whitespace-nowrap">
+            <div className="flex items-center gap-4 2xl:gap-6 flex-1 justify-start pl-4 2xl:pl-6 whitespace-nowrap">
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-secondary transition-colors">
                   Resources <ChevronDown className="h-4 w-4" />

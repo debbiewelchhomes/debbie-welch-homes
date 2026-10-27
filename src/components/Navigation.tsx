@@ -54,7 +54,8 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center justify-between w-full max-w-7xl mx-auto text-sm xl:text-base">
             {/* Left Navigation Group */}
-            <div className="flex items-center gap-2 xl:gap-4 2xl:gap-6 flex-1 justify-end pr-2 xl:pr-4 2xl:pr-6 whitespace-nowrap">
+            <div className="flex items-center gap-4 xl:gap-6 2xl:gap-9 flex-1 justify-end pr-6 xl:pr-10 2xl:pr-14 whitespace-nowrap">
+
               <Link to="/" className="text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
@@ -111,12 +112,14 @@ const Navigation = () => {
             </div>
 
             {/* Center Logo */}
-            <Link to="/" className="flex-shrink-0 px-2 xl:px-4">
+            <Link to="/" className="flex-shrink-0 px-6 xl:px-10">
+
               <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-10 xl:h-14 w-auto" />
             </Link>
 
             {/* Right Navigation Group */}
-            <div className="flex items-center gap-2 xl:gap-4 2xl:gap-6 flex-1 justify-start pl-2 xl:pl-4 2xl:pl-6 whitespace-nowrap">
+            <div className="flex items-center gap-4 xl:gap-6 2xl:gap-9 flex-1 justify-start pl-6 xl:pl-10 2xl:pl-14 whitespace-nowrap">
+
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex min-h-11 min-w-11 items-center gap-1 text-foreground hover:text-secondary transition-colors">
                   Resources <ChevronDown className="h-4 w-4" />
@@ -136,10 +139,6 @@ const Navigation = () => {
 
               <Link to="/about" className="text-foreground hover:text-secondary transition-colors">
                 About
-              </Link>
-
-              <Link to="/contact" className="text-foreground hover:text-secondary transition-colors">
-                Contact
               </Link>
 
               <Button size="sm" className="shrink-0 whitespace-nowrap bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
@@ -238,14 +237,6 @@ const Navigation = () => {
                 className="text-foreground hover:text-secondary transition-colors"
               >
                 About
-              </Link>
-
-              <Link
-                to="/contact"
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-foreground hover:text-secondary transition-colors"
-              >
-                Contact
               </Link>
 
               <Button className="mt-2 bg-secondary text-white hover:bg-secondary/90" asChild>

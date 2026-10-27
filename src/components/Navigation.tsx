@@ -57,20 +57,20 @@ const Navigation = () => {
               <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-10 xl:h-14 w-auto" />
             </Link>
 
-            <div className="flex items-center gap-4 xl:gap-6 2xl:gap-8 whitespace-nowrap">
-              <Link to="/" className="mr-3 xl:mr-5 text-foreground hover:text-secondary transition-colors">
+            <div className="flex items-center gap-7 xl:gap-9 2xl:gap-11 whitespace-nowrap">
+              <Link to="/" className="mr-3 xl:mr-4 text-foreground hover:text-secondary transition-colors">
                 Home
               </Link>
 
 
               {/* Services Dropdown */}
               <div className="relative group">
-                <div className="flex items-center gap-1">
+                <div className="flex items-center">
                   <Link to="/services" className="text-foreground hover:text-secondary transition-colors">
                     Services
                   </Link>
                   <DropdownMenu>
-                    <DropdownMenuTrigger aria-label="Open Services menu" className="flex min-h-11 min-w-11 items-center justify-center text-foreground hover:text-secondary transition-colors">
+                    <DropdownMenuTrigger aria-label="Open Services menu" className="flex min-h-11 items-center justify-center px-1 text-foreground hover:text-secondary transition-colors">
                       <ChevronDown className="h-4 w-4" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="bg-background border-border z-50">
@@ -110,7 +110,7 @@ const Navigation = () => {
                 aria-label="Search Homes on the eXp Realty site"
                 className="text-foreground hover:text-secondary transition-colors"
               >
-                Search
+                Search Homes
               </a>
 
               <DropdownMenu>
@@ -206,7 +206,7 @@ const Navigation = () => {
                 aria-label="Search Homes on the eXp Realty site"
                 className="text-foreground hover:text-secondary transition-colors"
               >
-                Search
+                Search Homes
               </a>
 
 

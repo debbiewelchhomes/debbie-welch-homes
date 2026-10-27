@@ -113,13 +113,13 @@ const TestimonialSection = () => {
           <Card className="bg-white/95 backdrop-blur-sm border-border/70 shadow-md">
             <CardContent className="p-4 sm:p-8 md:p-12">
               <div className="text-center mb-8">
-                <p className="eyebrow mb-4" aria-hidden="true">
-                  In their own words<span className="script-dots">…</span>
-                </p>
-
-                <h2 className="font-heading h-section text-primary mb-6">
-                  What My Clients Are Saying
+                <h2 className="font-heading text-primary mb-6">
+                  <span className="eyebrow">
+                    In their own words<span className="script-dots">…</span>
+                  </span>
+                  <span className="h-section block">What My Clients Are Saying</span>
                 </h2>
+
                 <p className="copy text-foreground max-w-2xl mx-auto">
                   Downsizers, military families, out-of-state sellers, and first-time buyers. Here's what working together
                   actually feels like.

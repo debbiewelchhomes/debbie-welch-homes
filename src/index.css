@@ -281,6 +281,18 @@ All colors MUST be HSL.
   @media (min-width: 768px) {
     .eyebrow { font-size: 2.875rem; }
   }
+  /* Script accent sized for half-width columns, so the phrase stays on one line
+     and the headings in a side-by-side pair line up. */
+  @media (min-width: 768px) {
+    .eyebrow-col { --script-size: 3.25rem; }
+  }
+  @media (min-width: 1024px) {
+    .eyebrow-col { --script-size: 4.75rem; }
+  }
+  @media (min-width: 1440px) {
+    .eyebrow-col { --script-size: 5.5rem; }
+  }
+
   .eyebrow-caps {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.75rem;

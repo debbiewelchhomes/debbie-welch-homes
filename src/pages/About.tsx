@@ -318,7 +318,7 @@ const About = () => {
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
             >
-              <p className="eyebrow mb-4">Let's talk...</p>
+              <p className="eyebrow eyebrow-col mb-4">Let's talk...</p>
               <h2 className="font-heading h-section-sm text-primary mb-5">
                 Ready to Figure Out Your Next Move?
               </h2>

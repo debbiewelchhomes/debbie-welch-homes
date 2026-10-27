@@ -38,7 +38,7 @@ const Resources = () => {
         <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-warm-bg">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <p className="eyebrow mb-4">Helpful, practical information…</p>
+              <p className="eyebrow mb-4">Helpful, practical information...</p>
               <h1 className="font-heading h-section text-primary mb-6">Real Estate Resource Library</h1>
               <p className="copy text-foreground mx-auto">
                 Start with the information that matches your next move. These guides and tools are here to help you understand your options before you are asked to make a decision.
@@ -165,7 +165,7 @@ const Resources = () => {
               <Card className="border-border bg-card transition-shadow duration-300 group-hover:shadow-lg">
                 <CardContent className="p-8 md:p-10">
                   <HelpCircle className="h-8 w-8 text-secondary mb-4" aria-hidden="true" />
-                  <p className="eyebrow mb-3">Questions are part of the process…</p>
+                  <p className="eyebrow mb-3">Questions are part of the process...</p>
                   <h2 className="font-heading h-section text-primary mb-4">Real Estate Frequently Asked Questions</h2>
                   <p className="copy text-foreground max-w-3xl mb-6">
                     Find straightforward answers about military PCS moves, VA-financed purchases, downsizing, buying and selling at the same time, preparing a home, and working together.
@@ -184,7 +184,7 @@ const Resources = () => {
             <Link to="/resources/trusted-partners" className="group">
               <Card className="border-border bg-background transition-shadow duration-300 group-hover:shadow-lg">
                 <CardContent className="p-8 md:p-10">
-                  <p className="eyebrow mb-3">The people behind a smooth move…</p>
+                  <p className="eyebrow mb-3">The people behind a smooth move...</p>
                   <h2 className="font-heading h-section text-primary mb-4">Trusted Local Partners</h2>
                   <p className="copy text-foreground max-w-3xl mb-6">
                     Meet the lenders, inspectors, stagers, and real estate media professionals I trust to help keep each part of a transaction organized and moving forward.

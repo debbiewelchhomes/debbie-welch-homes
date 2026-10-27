@@ -52,6 +52,10 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
     --script-size: 3.5rem;
+    --script-min-size: 2.75rem;
+    --heading-section-size: 1.75rem;
+    --heading-column-size: 1.45rem;
+    --heading-display-size: 2rem;
     
     /* Custom transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,9 +127,13 @@ All colors MUST be HSL.
   main :is(.font-script, .button-script, .eyebrow) {
     font-family: 'Black Stones', 'Hurricane', cursive;
     font-weight: 400;
-    font-size: var(--script-size);
+    font-size: var(--script-fit-size, var(--script-size));
     line-height: 1.35;
     color: hsl(var(--foreground));
+    max-width: 100%;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+    letter-spacing: 0;
   }
 
   /* Preserve black dark text without changing the brand fill token. */
@@ -208,37 +216,41 @@ All colors MUST be HSL.
 
   /* Responsive heading scale */
   .h-display {
-    font-size: clamp(2rem, 1.25rem + 2.6vw, 3.75rem);
+    font-size: var(--heading-display-size);
     line-height: 1.1;
     text-wrap: balance;
   }
   .h-section {
-    font-size: clamp(1.75rem, 1.3rem + 1.4vw, 2.75rem);
+    font-size: var(--heading-section-size);
     line-height: 1.15;
     text-wrap: balance;
   }
   /* Same scale, tuned for headings that sit in half-width columns. */
   .h-section-sm {
-    font-size: clamp(1.45rem, 1.1rem + 1.05vw, 2.1rem);
+    font-size: var(--heading-column-size);
     line-height: 1.2;
     text-wrap: balance;
   }
 
-  /* Small icon riding the first line of a large heading (.h-section). Because
-     the shared heading scale grows with the viewport, the nudge that keeps the
-     icon optically centered on that first line grows with it too. */
-  .icon-heading-lg {
+  /* A first-line icon follows the actual heading line height, including future headings. */
+  .heading-with-icon,
+  main .flex:has(> svg + :is(h1, h2, h3)) {
+    align-items: flex-start;
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
+  main .flex:has(> svg + .h-section) {
+    font-size: var(--heading-section-size);
+    line-height: 1.15;
+  }
+  main .flex:has(> svg + .h-section-sm) {
+    font-size: var(--heading-column-size);
+    line-height: 1.2;
+  }
+  .heading-with-icon > svg,
+  main .flex:has(> svg + :is(h1, h2, h3)) > svg {
     flex: none;
-    margin-top: 0;
-  }
-  @media (min-width: 768px) {
-    .icon-heading-lg { margin-top: 0.125rem; }
-  }
-  @media (min-width: 1024px) {
-    .icon-heading-lg { margin-top: 0.25rem; }
-  }
-  @media (min-width: 1440px) {
-    .icon-heading-lg { margin-top: 0.375rem; }
+    margin-top: max(0px, calc(0.5lh - 1rem));
   }
 
   .h-card {
@@ -251,6 +263,7 @@ All colors MUST be HSL.
   }
   @media (min-width: 1024px) {
     .h-card { font-size: 1.5rem; }
+    main .flex:has(> svg + .h-card) { font-size: 1.5rem; }
   }
 
   /* Body copy scale */
@@ -277,11 +290,29 @@ All colors MUST be HSL.
   @media (min-width: 640px) {
     :root { --script-size: 5rem; }
   }
+  @media (min-width: 768px) {
+    :root {
+      --heading-display-size: 3rem;
+      --heading-section-size: 2rem;
+      --heading-column-size: 1.75rem;
+    }
+  }
   @media (min-width: 1024px) {
-    :root { --script-size: 7.2rem; }
+    :root {
+      --script-size: 7.2rem;
+      --script-min-size: 2.9rem;
+      --heading-display-size: 3.5rem;
+      --heading-section-size: 2.25rem;
+      --heading-column-size: 2rem;
+    }
   }
   @media (min-width: 1440px) {
-    :root { --script-size: 8.625rem; }
+    :root {
+      --script-size: 8.625rem;
+      --heading-display-size: 3.75rem;
+      --heading-section-size: 2.75rem;
+      --heading-column-size: 2.1rem;
+    }
   }
 
   /* Eyebrow / script accent label */

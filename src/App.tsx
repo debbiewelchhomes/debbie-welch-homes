@@ -7,6 +7,7 @@ import { lazy, Suspense } from "react";
 import ScrollToTop from "@/components/ScrollToTop";
 import ChatButton from "@/components/ChatButton";
 import Index from "./pages/Index";
+import { useHeadingFit } from "@/hooks/use-heading-fit";
 
 const Services = lazy(() => import("./pages/Services"));
 const Buying = lazy(() => import("./pages/Buying"));
@@ -73,6 +74,7 @@ const AppRoutes = () => (
 );
 
 export const AppShell = () => {
+  useHeadingFit();
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>

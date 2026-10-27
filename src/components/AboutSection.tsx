@@ -1,20 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
   return (
     <section id="about" className="section bg-warm-bg">
       <div className="container mx-auto px-4">
         <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-[minmax(0,1.12fr)_minmax(280px,0.72fr)] md:items-center">
           <motion.div
-            ref={ref}
-            initial={{ opacity: 0, x: -24 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -24 }}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: "some" }}
             transition={{ duration: 0.6 }}
             className="order-2 md:order-1"
           >
@@ -34,8 +30,9 @@ const AboutSection = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 24 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 24 }}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: "some" }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="order-1 mx-auto w-full max-w-[320px] md:order-2 md:translate-y-8"
           >

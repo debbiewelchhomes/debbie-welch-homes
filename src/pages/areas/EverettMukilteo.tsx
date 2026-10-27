@@ -280,8 +280,9 @@ const EverettMukilteo = () => {
 
               <div className="grid md:grid-cols-3 gap-6 text-center mb-10">
                 <div className="bg-background p-6 rounded-lg">
-                  <p className="font-heading text-2xl font-bold text-secondary mb-1">113,000+</p>
-                  <p className="text-foreground text-sm">Everett population, the largest city in Snohomish County</p>
+                  <p className="font-heading text-2xl font-bold text-secondary mb-1">113,567</p>
+                  <p className="text-foreground text-sm">Everett population estimate, July 1, 2025</p>
+                  <a href="https://www.census.gov/quickfacts/everettcitywashington" target="_blank" rel="noopener noreferrer" className="mt-2 inline-block text-sm text-secondary underline underline-offset-4 hover:text-primary">Source: U.S. Census Bureau</a>
                 </div>
                 <div className="bg-background p-6 rounded-lg">
                   <p className="font-heading text-2xl font-bold text-secondary mb-1">~$565K</p>
@@ -319,9 +320,9 @@ const EverettMukilteo = () => {
               <h3 className="font-heading text-xl font-bold text-primary mb-3">Planned Downtown Event Center</h3>
               <p className="text-foreground text-base leading-relaxed mb-6">
                 Everett is advancing a planned outdoor event center near Angel of the Winds Arena and Everett Station.
-                The city reported in July 2026 that design and property work were continuing, with construction
-                anticipated to begin in early fall 2026. Plans include a future home for the Everett AquaSox, soccer,
-                concerts, festivals, public gathering space, and a walking loop.
+                The City's project timeline places remaining funding, construction-contract, and property actions
+                in fall 2026, with construction expected to start in late 2026. Schedules may change. Plans include
+                a future home for the Everett AquaSox, soccer, concerts, festivals, public gathering space, and a walking loop.
               </p>
 
               <a

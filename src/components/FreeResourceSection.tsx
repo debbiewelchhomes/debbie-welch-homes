@@ -25,7 +25,7 @@ const FreeResourceSection = () => {
           </h2>
 
           <p className="copy mx-auto mt-4 max-w-[56ch] text-left text-foreground md:text-center">
-            Tell me the area you are watching and I will pull the current numbers: new listings,
+            Include the area and property type in your message and I will pull the current numbers: new listings,
             price reductions, days on market, and recent sales. Real data for your neighborhood,
             not national headlines.
           </p>

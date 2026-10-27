@@ -104,7 +104,7 @@ const Resources = () => {
                     <BarChart3 className="h-8 w-8 text-secondary mb-4" aria-hidden="true" />
                     <h2 className="font-heading h-card text-primary mb-3">Request a Personalized Report</h2>
                     <p className="copy text-foreground mb-6">
-                      Citywide statistics can be too broad. Ask for a report tailored to your neighborhood, price range, or property type.
+                      Citywide statistics can be too broad. Include your neighborhood, price range, or property type in your message to request a tailored report.
                     </p>
                     <span className="inline-flex items-center gap-2 text-sm font-medium text-secondary">
                       Request My Report <ArrowRight className="h-4 w-4" aria-hidden="true" />

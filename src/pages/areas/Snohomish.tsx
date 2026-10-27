@@ -32,21 +32,18 @@ const Snohomish = () => {
             className="absolute inset-0 h-full w-full object-cover"
             style={{ objectPosition: "center 60%" }}
           />
-          <div
-            className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/15"
-            aria-hidden="true"
-          />
           <div className="container mx-auto px-4 text-center section relative z-10">
-            <p className="eyebrow mb-4" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}>
+            <div className="hero-text-scrim mx-auto max-w-3xl px-6 py-6">
+            <p className="eyebrow mb-4">
               Snohomish
             </p>
             <p
               className="font-heading text-xl md:text-2xl text-white max-w-2xl mx-auto"
-              style={{ textShadow: "0 1px 6px rgba(0,0,0,0.7)" }}
             >
               A river town founded in 1859, with a National Historic District downtown and farmland just past
               the edges.
             </p>
+            </div>
           </div>
         </section>
 

@@ -49,11 +49,13 @@ const ServicesSection = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="mx-auto mb-12 max-w-2xl text-center"
         >
-          <p className="eyebrow" aria-hidden="true">
-            When it's time<span className="script-dots">…</span>
-          </p>
+          <h2 className="font-heading text-primary">
+            <span className="eyebrow">
+              When it's time<span className="script-dots">…</span>
+            </span>
+            <span className="h-section block">Here's How We Can Work Together</span>
+          </h2>
 
-          <h2 className="font-heading h-section text-primary">Here's How We Can Work Together</h2>
         </motion.div>
 
         <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">

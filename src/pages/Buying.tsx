@@ -379,7 +379,7 @@ const Buying = () => {
                 </h2>
                 <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
                   Tell me what you're looking for and I'll put together a custom search for the areas and price ranges
-                  that make sense for you. No spam and no pressure. Just listings that are actually worth your time.
+                  that make sense for you. No pressure, just listings that are actually worth your time.
                 </p>
               </div>
 

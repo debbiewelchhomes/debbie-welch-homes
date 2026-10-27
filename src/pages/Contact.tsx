@@ -258,7 +258,7 @@ const Contact = () => {
                 </div>
 
                 <p className="text-sm text-muted-foreground font-body italic">
-                  I respect your time and inbox, no spam, ever.
+                  I respect your time and your inbox.
                 </p>
 
                 <Button 

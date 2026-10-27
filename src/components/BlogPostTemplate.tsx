@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { BlogPost } from "@/data/blogPosts";
 import { absoluteUrl } from "@/config/site";
+import { blogPublicationDate } from "@/lib/blogDate";
 
 interface BlogPostTemplateProps {
   post: BlogPost;
@@ -13,6 +14,7 @@ interface BlogPostTemplateProps {
 
 const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
   const navigate = useNavigate();
+  const publicationDate = blogPublicationDate(post.date);
 
   // Convert markdown-style bold to HTML
   const formatContent = (content: string) => {
@@ -61,7 +63,7 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
     "@type": "Article",
     headline: post.title,
     description: post.metaDescription,
-    datePublished: post.date,
+    ...(publicationDate ? { datePublished: publicationDate } : {}),
     author: {
       "@type": "Person",
       name: "Debbie Welch",
@@ -100,7 +102,7 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
             {/* Header */}
             <header className="mb-12">
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-4">
-                <time dateTime={post.date}>{post.date}</time>
+                <time dateTime={publicationDate}>{post.date}</time>
                 <span className="text-secondary">•</span>
                 <span className="text-secondary font-medium">{post.category}</span>
               </div>

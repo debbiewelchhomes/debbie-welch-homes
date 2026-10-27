@@ -84,7 +84,7 @@ const Navigation = () => {
 
               {/* Areas Dropdown */}
               <DropdownMenu>
-                <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-secondary transition-colors">
+                <DropdownMenuTrigger className="flex min-h-11 min-w-11 items-center gap-1 text-foreground hover:text-secondary transition-colors">
                   Areas <ChevronDown className="h-4 w-4" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-background border-border max-h-96 overflow-y-auto">
@@ -118,7 +118,7 @@ const Navigation = () => {
             {/* Right Navigation Group */}
             <div className="flex items-center gap-4 2xl:gap-6 flex-1 justify-start pl-4 2xl:pl-6 whitespace-nowrap">
               <DropdownMenu>
-                <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-secondary transition-colors">
+                <DropdownMenuTrigger className="flex min-h-11 min-w-11 items-center gap-1 text-foreground hover:text-secondary transition-colors">
                   Resources <ChevronDown className="h-4 w-4" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-background border-border z-50">

@@ -1,6 +1,7 @@
-# Focused website review
+# Approved follow-up improvements
 
-- [x] Review representative visitor journeys, content accuracy and accessibility across four screen sizes.
-- [x] Implement only confirmed modest frontend corrections; preserve photos, integrations, routes and hidden Past Sales.
-- [x] Run relevant existing tests and inspect automatic validation plus browser evidence.
-- [x] Report priority findings, changed files, recommendations and verification limitations. Separate production/prerender and TypeScript commands were not run because this environment reserves validation for the automatic harness; existing rendered output predates these changes. GitHub remote synchronization and task-specific credits remain unverified.
+- [x] Move the existing service choices earlier without duplicating content or changing destinations.
+- [x] Research time-sensitive area figures, forecasts, blog advice and operational promises; update only verified claims.
+- [x] Repair confirmed frontend issues: independent service/About reveals, tablet overflow, menu targets, report-request wording and machine-readable blog dates.
+- [x] Run relevant tests and browser checks; inspect automatic preview validation and document production/prerender, sync and credit limitations.
+- [ ] Confirm original market sources/periods, exact Navy headcount and one-business-day/report-fulfillment commitments. Blocked on original sources and Debbie's operational confirmation; no substitute figures invented.

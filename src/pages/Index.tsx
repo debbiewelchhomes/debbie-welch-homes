@@ -27,12 +27,12 @@ const Index = () => {
 
       <main>
         <HeroSection />
+        <ServicesSection />
         <BufferSection />
         <RealTalkSection />
         <AboutSection />
         <BrandPromiseSection />
         <FreeResourceSection />
-        <ServicesSection />
         <TestimonialSection />
         <NeighborhoodsSection />
         <BlogSection />

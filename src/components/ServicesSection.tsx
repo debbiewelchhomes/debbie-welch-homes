@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 import { Home, DollarSign, Plane, TrendingDown } from "lucide-react";
 
 const services = [
@@ -41,16 +39,13 @@ const services = [
 ];
 
 const ServicesSection = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
   return (
     <section id="services" className="section bg-warm-bg">
       <div className="container mx-auto px-4">
         <motion.div
-          ref={ref}
           initial={{ opacity: 0, y: 16 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: "some" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="mx-auto mb-12 max-w-2xl text-center"
         >
@@ -65,7 +60,8 @@ const ServicesSection = () => {
             <motion.div
               key={service.title}
               initial={{ opacity: 0, y: 16 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: "some" }}
               transition={{ duration: 0.4, delay: Math.min(index, 3) * 0.06, ease: "easeOut" }}
               className="card-surface flex h-full min-w-0 flex-col"
             >

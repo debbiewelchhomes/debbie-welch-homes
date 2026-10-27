@@ -140,8 +140,7 @@ const Navigation = () => {
                 <a href="https://cal.com/debbie.welch.homes" target="_blank" rel="noopener noreferrer">
                   Book a Free Consult
                 </a>
-              </Button>
-            </div>
+            </Button>
           </div>
 
           {/* Mobile Header */}

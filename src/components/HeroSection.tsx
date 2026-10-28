@@ -18,7 +18,7 @@ const HeroSection = () => {
         aria-label="Home exterior with illuminated windows and evergreen trees"
       />
 
-      <div className="relative z-10 container mx-auto flex min-h-[68vh] lg:min-h-[72vh] items-center justify-center px-4 pb-16 pt-28 md:pt-40">
+      <div className="relative z-10 container mx-auto flex min-h-[68vh] lg:min-h-[72vh] items-center justify-center px-4 pb-16 pt-[6.5rem] md:pt-40">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -26,7 +26,7 @@ const HeroSection = () => {
           className="w-full max-w-3xl"
         >
           <div className="hero-panel text-center">
-            <h1 className="font-heading mb-4 text-primary">
+            <h1 className="font-heading mb-3 md:mb-4 text-primary">
               <span className="eyebrow">
                 Welcome home...
               </span>
@@ -51,7 +51,7 @@ const HeroSection = () => {
 
             </div>
 
-            <p className="mt-4 md:mt-6 text-sm text-primary/80">
+            <p className="mt-4 md:mt-6 text-[0.8125rem] leading-snug sm:text-sm sm:leading-normal text-primary/80">
 
               Serving Lake Stevens, Everett, Marysville, Arlington, Snohomish,
               <br />

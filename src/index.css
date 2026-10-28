@@ -561,3 +561,8 @@ main a[href*="debbiewelch.exprealty.com/index"]::after {
   }
 }
 
+
+/* Keep the floating chat bubble from covering the last lines of the page on phones. */
+@media (max-width: 767px) {
+  footer { padding-bottom: 6rem; }
+}

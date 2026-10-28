@@ -487,9 +487,15 @@ main > section:first-child:has(> img.absolute.inset-0) > .container .eyebrow {
   color: hsl(var(--primary));
 }
 
-/* Area names over photography: the same dark text over the light wash. */
+/* Area names over photography: dark text with a soft light glow hugging the
+   letter strokes, so dark branches/wires crossing behind the letters don't
+   break them up. Glow is warm light (matching the wash) and fades in layers. */
 .photo-name-shadow {
   color: hsl(var(--primary));
+  text-shadow:
+    0 0 2px hsl(36 8% 95% / 0.9),
+    0 0 5px hsl(36 8% 93% / 0.75),
+    0 0 10px hsl(36 8% 91% / 0.5);
 }
 
 

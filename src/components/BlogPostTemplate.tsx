@@ -7,6 +7,7 @@ import { ArrowLeft } from "lucide-react";
 import { BlogPost } from "@/data/blogPosts";
 import { absoluteUrl } from "@/config/site";
 import { blogPublicationDate } from "@/lib/blogDate";
+import { getVisibleRelatedPosts } from "@/data/visibleBlogReading";
 
 interface BlogPostTemplateProps {
   post: BlogPost;
@@ -14,6 +15,7 @@ interface BlogPostTemplateProps {
 
 const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
   const publicationDate = blogPublicationDate(post.date);
+  const relatedPosts = getVisibleRelatedPosts(post.slug);
 
   // Convert markdown-style bold to HTML
   const formatContent = (content: string) => {
@@ -125,6 +127,20 @@ const BlogPostTemplate = ({ post }: BlogPostTemplateProps) => {
             </div>
 
             {/* Back to Blog */}
+            {relatedPosts.length > 0 && (
+              <nav aria-label="Related articles" className="mt-8">
+                <h2 className="font-heading h-card text-primary mb-4">Related Reading</h2>
+                <ul className="space-y-3">
+                  {relatedPosts.map((related) => (
+                    <li key={related.slug}>
+                      <Link to={`/blog/${related.slug}`} className="text-secondary underline underline-offset-4 hover:text-primary">
+                        {related.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            )}
             <div className="mt-12 pt-8 border-t border-border">
               <Button
                 variant="outline"

@@ -139,6 +139,13 @@ The email integration was inspected only to document it; no backend or form chan
 
 ## What still needs verification for independent hosting
 
+### Future work reminder, October 28, 2026: no action authorized
+
+- After Debbie approves the finished site, review and update the existing eXp/BoldTrail companion separately, with her approval of the wording and links. No companion account or content was changed in this editorial pass.
+- Plan an independently hosted custom-domain move only after obtaining explicit consent for the host, domain, timing, costs, and each required change. Preserve existing email DNS records (including MX, SPF, DKIM, and DMARC); do not replace the DNS zone wholesale.
+- Inventory old and new URLs and plan redirects, canonical URLs, robots rules, sitemap, configured site URL, OpenGraph and schema URLs together. Preserve article routes, indexing choices, and the hidden Past Sales state. Review Search Console property verification, access, and sitemap submission for the chosen final address, with separately approved publishing if needed.
+- This is a planning reminder only. No migration, publication, deployment, DNS, external account, integration, or mail change is authorized by it.
+
 These are recommendations and unresolved checks, not completed setup or permission to deploy:
 
 1. Confirm the actual GitHub repository/main synchronization and reproducible build environment. A local commit SHA alone does not prove the external repository is synced.

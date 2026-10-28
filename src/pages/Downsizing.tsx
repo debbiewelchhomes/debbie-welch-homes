@@ -81,39 +81,39 @@ const Downsizing = () => {
       number: "01",
       title: "Start With a Real Conversation",
       description:
-        "This is a conversation, not a sales pitch. We talk through what's prompting the question, what you want your next chapter to feel like, and whether now is actually the right time. Sometimes it is. Sometimes the answer is 'let's come back to this in six months.' Either way, you'll leave with more clarity than you came in with.",
+        "We talk about what is prompting the move, what you want daily life to look like, and whether now is the right time. You may be ready to make a plan, or you may want to revisit the question later.",
     },
     {
       number: "02",
       title: "Understand What Your Home Is Worth",
       description:
-        "Before you can make a plan, you need real numbers. I'll walk through your home and give you an honest picture of current market value, what prep work would actually move the needle, and what you can skip. There is no pressure to list, just the information you need to make a good decision.",
+        "Before you can make a plan, you need real numbers. I'll walk through your home and prepare a market analysis and discuss which preparation may help, what it could cost, and what can wait.",
     },
     {
       number: "03",
-      title: "Build a Prep Plan You Can Actually Do",
+      title: "Build a Prep Plan That Fits",
       description:
-        "We'll prioritize what needs attention and what doesn't. I can connect you with stagers, organizers, cleaners, and contractors who understand the downsizing process. For clients who need more hands-on help, I've done everything from donation runs to helping pack a POD. We meet you where you are.",
+        "We'll prioritize what needs attention and what doesn't. I can connect you with stagers, organizers, cleaners, and contractors who understand the downsizing process. In past moves, I've helped with donation runs and packing a POD. Those are individual examples; we discuss the support and any third-party costs for your move before making arrangements.",
     },
     {
       number: "04",
       title: "List and Market Your Home Well",
       description:
-        "When you're ready, I'll position your home thoughtfully for the Snohomish County market with a pricing strategy, professional photos, and marketing that reaches the right buyers. You'll know exactly what's happening at every step, and I'll walk you through offers in plain language so you understand what you're actually agreeing to.",
+        "When you're ready, I'll position your home thoughtfully for the Snohomish County market with a pricing strategy, professional photos, and marketing that reaches the right buyers. We'll review offers, key terms, and your questions in plain language.",
     },
     {
       number: "05",
       title: "Coordinate the Transition",
       description:
-        "Selling and moving at the same time is a lot. We'll work through the logistics together by timing the sale with your next move, exploring rent-backs or extended closings when needed, and keeping things organized so nothing falls through the cracks. The goal is a landing that feels like a landing, not a scramble.",
+        "Selling and moving at the same time is a lot. We'll work through the logistics together by timing the sale with your next move, exploring rent-backs or extended closings when needed, and tracking deadlines and planning for possible gaps between the sale and your next home.",
     },
   ];
 
   const faqs = [
     {
-      question: "How do I know if it's actually the right time to downsize?",
+      question: "How do I know if it's the right time to downsize?",
       answer:
-        "Honest answer: there's rarely a perfect time. Some real signs are worth paying attention to. The maintenance may feel like more than you want to manage, you may be paying for space you don't use, stairs may be becoming a concern, or your monthly costs may no longer match your priorities or income. We can talk through your specific situation and look at the numbers together. Sometimes the answer is 'yes, let's make a plan.' Sometimes it's 'you have more time than you think.' I'd rather tell you the truth than push you toward a move that doesn't make sense yet.",
+        "There's rarely a perfect time. Some real signs are worth paying attention to. The maintenance may feel like more than you want to manage, you may be paying for space you don't use, stairs may be becoming a concern, or your monthly costs may no longer match your priorities or income. We can talk through your specific situation and look at the numbers together. Sometimes the answer is 'yes, let's make a plan.' Sometimes it's 'you have more time than you think.' The choice depends on what works for your life now.",
     },
     {
       question: "Do I have to get rid of everything before I sell?",
@@ -123,7 +123,7 @@ const Downsizing = () => {
     {
       question: "Should I buy first or sell first?",
       answer:
-        "It depends on your finances, your comfort with risk, and what you're moving into. Buying first gives you certainty about where you're going but can mean carrying two mortgages temporarily. Selling first gives you cash in hand but requires knowing where you'll land. We'll look at your specific numbers and timeline and talk through both options honestly, including approaches like rent-backs that can give you more breathing room.",
+        "It depends on your finances, your comfort with risk, and what you're moving into. Buying first gives you certainty about where you're going but can mean carrying two mortgages temporarily. Selling first gives you cash in hand but requires knowing where you'll land. We'll look at your specific numbers and timeline and talk through both options, including approaches like rent-backs that can give you more breathing room.",
     },
     {
       question: "What kinds of homes make sense for downsizing?",
@@ -138,7 +138,7 @@ const Downsizing = () => {
     {
       question: "What does it cost to talk with you?",
       answer:
-        "Nothing. The initial conversation is free and carries no obligation. If you decide to move forward, we'll review how compensation works and any preparation or third-party costs, such as repairs, cleaning, or moving help, before you commit. If you're not ready to sell, or it turns out this isn't the right move for you right now, that's completely okay. I'd rather be honest with you now than push you into something that doesn't fit.",
+        "Nothing. The initial conversation is free and carries no obligation. If you decide to move forward, we'll review how compensation works and any preparation or third-party costs, such as repairs, cleaning, or moving help, before you commit. If you're not ready to sell, or it turns out this isn't the right move for you right now, that's completely okay. We can revisit the conversation when your circumstances change.",
     },
     {
       question: "What does the SRES® designation mean?",
@@ -209,8 +209,8 @@ const Downsizing = () => {
               <p className="font-body text-lg md:text-xl text-primary max-w-3xl mx-auto">
                 You've taken care of this home for years. Maybe decades. And now something has shifted: the
                 maintenance, the space, the stairs, the cost, the season of life. Figuring out what comes next is a big
-                decision, and it deserves more than a sales pitch. I help Snohomish County homeowners think it through
-                clearly, plan it carefully, and move when the time is actually right for them.
+                decision, and it deserves time and thoughtful planning. I help Snohomish County homeowners consider their options
+                and work through the next steps when they are ready.
               </p>
             </motion.div>
           </div>
@@ -240,10 +240,9 @@ const Downsizing = () => {
                   members with strong opinions and a timeline that feels impossible.
                 </p>
                 <p>
-                  The practical part, including the selling, pricing, and logistics, is actually the easier part. The harder
-                  part is figuring out what you actually want, what you can realistically do, and how to make a decision
-                  you'll feel good about a year from now. That's where we start. Not with a listing appointment. With a
-                  real conversation.
+                  For some people, sorting belongings is the hardest part. For others, it is the finances, the logistics,
+                  or deciding where to go next. We start with what feels difficult for you and what support would help,
+                  then build the plan around that.
                 </p>
               </div>
             </motion.div>
@@ -272,7 +271,7 @@ const Downsizing = () => {
                 One step at a time...
               </p>
               <h2 className="font-heading h-section text-primary">
-                What the Process Actually Looks Like
+                Planning Your Downsizing Move
               </h2>
             </motion.div>
 
@@ -314,28 +313,28 @@ const Downsizing = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                What's different here...
+                Support for your move...
               </p>
 
               <h2 className="font-heading h-section text-primary mb-8">
-                I Show Up. All the Way.
+                A Plan for More Than the Sale
               </h2>
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>Selling the house is only one piece. I also help you plan the move around it: the timing, the belongings, and the next place you'll call home.</p>
                 <p>
                   For clients who need it, I've helped coordinate donation runs, packed boxes, arranged junk hauling,
-                  managed staging logistics, and been the steady point of contact when everything feels like a lot. That's
-                  not a formal service with a fee attached. It's just what I do when someone needs it.
+                  managed staging logistics, and been a point of contact during a difficult transition. These are examples
+                  from past moves, not guaranteed included services. We agree on responsibilities and any outside costs for your situation.
                 </p>
                 <p>
                   I am careful with complex documents, I look for the details that are easy to miss, and I explain things
-                  clearly to people who are already stressed. I'll walk you through contracts in plain language, flag the clauses that matter, and make sure
-                  you understand what you're agreeing to before you sign anything.
+                  clearly to people who are already stressed. I'll walk you through contracts in plain language, flag the clauses that matter, and answer
+                  your questions before you decide what to sign.
                 </p>
                 <p>
                   I won't rush you, and I won't judge your stuff, your timeline, or your questions.
-                  We move at the pace that makes sense for your actual life.
+                  We move at the pace that makes sense for your life.
                 </p>
               </div>
             </motion.div>
@@ -363,7 +362,7 @@ const Downsizing = () => {
               <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
                 Not sure where to begin? This guide walks through what to think about before you decide anything, including the
                 financial questions worth asking, how to approach the sorting and prep process without burning out, and
-                what to look for in your next home. Plain language, no fluff. A good starting point whether you're six
+                what to look for in your next home. A practical reference to return to as you plan. A good starting point whether you're six
                 months out or two years away.
               </p>
 
@@ -392,7 +391,7 @@ const Downsizing = () => {
                   Request a Free Downsizing Consult
                 </h2>
                 <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
-                  No pressure, no obligation. Just a conversation about where you are, what you're thinking about, and
+                  A free, no-obligation conversation about where you are, what you're thinking about, and
                   whether this is the right time to make a move. Share a few details below and I'll follow up to find a
                   time that works.
                 </p>

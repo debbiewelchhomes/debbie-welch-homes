@@ -30,13 +30,13 @@ const AboutSection = () => {
             />
             <div className="lg:text-justify lg:[hyphens:auto]">
               <p className="copy text-foreground mb-4">
-                I grew up in Marysville, raised my family in Lake Stevens, and now live in North Everett. I have spent more than 45 years watching Snohomish County change, and I bring that local perspective to every move.
+                I'm a Snohomish County real estate broker, a lifelong floor-plan enthusiast, and currently in the middle of a live-in renovation in North Everett.
               </p>
               <p className="copy text-foreground mb-4">
-                Real estate does not have to feel pushy, confusing, or rushed. A lot of people come to me expecting the process to feel overwhelming. It can be, if no one takes the time to explain what is actually happening.
+                I like helping people work through the details: what a home will cost, how the timing could work, and which questions need answers before a decision.
               </p>
               <p className="copy text-foreground mb-4">
-                That is the part I care about most. I slow things down just enough for you to understand the numbers, the tradeoffs, and the fine print. The details buried in the middle of a document are usually the ones that matter most. I explain them in plain language and keep the process organized, so you can make a decision you fully understand.
+                My 30 years in healthcare, including coding, auditing, and education, taught me to read carefully and explain complex information. Those habits are part of how I work today.
               </p>
               <p className="copy text-foreground mb-6">
                 I help buyers and sellers across the county, including first-time buyers, with a particular focus on senior transitions and downsizing, military PCS moves and Veterans, and people relocating to or from Snohomish County.

@@ -36,8 +36,7 @@ const HeroSection = () => {
 
 
             <p className="copy-lead mx-auto mb-6 max-w-[54ch] text-primary/90">
-              I grew up here, I have owned homes here, and I have spent 45+ years watching this
-              area grow and change. You get honest guidance, a clear, organized plan, and someone who puts your best interests first.
+              I grew up in Marysville, lived and raised my family in Lake Stevens, and now call Everett home. After more than 45 years in Snohomish County, I know how much the right home and location can matter to everyday life. I’m here to help you understand your options and make a plan that works for you.
             </p>
 
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">

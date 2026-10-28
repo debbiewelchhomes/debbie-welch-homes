@@ -78,15 +78,15 @@ const Selling = () => {
   const sellingSteps = [
     {
       number: "01",
-      title: "Start With an Honest Conversation",
+      title: "Start With Your Goals",
       description:
-        "We walk through your home together, in person or virtually, and talk about your goals, your timeline, and what's prompting the move. I'll tell you what I see, what I think will matter to buyers, and what we can realistically expect from the current Snohomish County market. No sugarcoating.",
+        "We walk through your home together, in person or virtually, and talk about your goals, your timeline, and what's prompting the move. I'll tell you what I see, what I think will matter to buyers, and what we can realistically expect from the current Snohomish County market. We use that conversation to set priorities.",
     },
     {
       number: "02",
       title: "Build a Prep Plan That Fits Your Reality",
       description:
-        "Not every home needs a full renovation before listing. Some need a deep clean and better photos. Some need one or two targeted updates. I'll tell you exactly what's worth doing and what you can skip based on your price point, your timeline, and what buyers in your area actually care about. I can also connect you with trusted stagers, cleaners, and contractors when needed.",
+        "Not every home needs a full renovation before listing. Some need a deep clean and better photos. Some need one or two targeted updates. We weigh possible improvements against their cost, your timeline, and comparable homes in your area. I can also connect you with trusted stagers, cleaners, and contractors when needed.",
     },
     {
       number: "03",
@@ -98,13 +98,13 @@ const Selling = () => {
       number: "04",
       title: "Market, Show, and Field Offers",
       description:
-        "Professional photos, a well-written listing, and targeted marketing help reach the right buyers. I'll manage showings and agent communication, then walk you through each offer in plain language, including the price, terms, contingencies, and fine print. You'll understand what you're actually agreeing to before you respond to anything.",
+        "Professional photos, a well-written listing, and targeted marketing help reach the right buyers. I'll manage showings and agent communication, then walk you through each offer in plain language, including price, financing, contingencies, and timing. We review the choices and your questions before you respond.",
     },
     {
       number: "05",
-      title: "From Contract to Close Without the Scramble",
+      title: "From Contract to Close",
       description:
-        "Once you're under contract, I manage inspections, appraisal, repair negotiations, lender deadlines, and escrow coordination. You'll always know what's happening, what's coming next, and what I need from you. No last-minute surprises.",
+        "Once you're under contract, I coordinate deadlines, repair negotiations, and communication with the inspection, lending, and escrow teams. We work through updates and changes as they arise.",
     },
   ];
 
@@ -112,32 +112,32 @@ const Selling = () => {
     {
       question: "When is the best time to sell my home?",
       answer:
-        "There are seasonal patterns in Snohomish County. Spring and early summer tend to bring more buyers, but inventory is also higher. The honest answer is that the best time to sell is when it makes sense for your life and when the current data supports it. We'll look at what's actually happening in your specific neighborhood and price range so you can make a decision based on real information, not general market headlines.",
+        "There are seasonal patterns in Snohomish County. Spring and early summer tend to bring more buyers, but inventory is also higher. The best time to sell is when it makes sense for your life and when the current data supports it. We'll look at what's happening in your specific neighborhood and price range so you can make a decision based on real information, not general market headlines.",
     },
     {
       question: "How do we decide on a listing price?",
       answer:
-        "We look at recent comparable sales, meaning homes similar to yours that have actually closed, not just listed. We also factor in current competition, your home's condition and specific features, and your goals for timing. Pricing too high can cost you as much as pricing too low. I'll walk you through the data and explain the reasoning behind any price I recommend, so you feel confident in the strategy.",
+        "We look at recent comparable sales, meaning homes similar to yours that have closed, not just listed. We also factor in current competition, your home's condition and specific features, and your goals for timing. Pricing too high can cost you as much as pricing too low. I'll walk you through the data and explain the reasoning behind any price I recommend, so you feel confident in the strategy.",
     },
     {
       question: "Do I have to do a lot of updates before listing?",
       answer:
-        "Not necessarily. I'll tell you honestly which updates are worth it and which aren't. Some homes need a deep clean, declutter, and better staging. Others benefit from one or two targeted repairs. A few genuinely need more work to compete. I'll give you a prioritized list based on likely return and your capacity, not a generic renovation checklist.",
+        "Not necessarily. We'll weigh the likely benefit and cost of possible updates. Some homes need a deep clean, declutter, and better staging. Others benefit from one or two targeted repairs. A few genuinely need more work to compete. I'll give you a prioritized list based on likely return and your capacity, not a generic renovation checklist.",
     },
     {
       question: "What should I expect during showings?",
       answer:
-        "We'll set a showing schedule that works as well as possible with your real life, including work, kids, pets, and everything else. I'll give you clear, simple guidelines for how ready the house needs to be for each showing, and we'll make a practical plan together. You won't be scrambling every time someone wants to see it.",
+        "We'll set a showing schedule that works as well as possible with your real life, including work, kids, pets, and everything else. I'll give you clear, simple guidelines for how ready the house needs to be for each showing, and we'll make a practical plan together. Planning ahead can make showing requests easier to manage.",
     },
     {
       question: "How long will it take to sell?",
       answer:
-        "It depends on your price point, location, condition, and what the market is doing. I'll pull days-on-market data for comparable homes so you have a realistic range going in. It will not be a guess or a promise, just an honest picture. Some homes move in days; others take a few weeks. We'll plan accordingly.",
+        "It depends on your price point, location, condition, and what the market is doing. I'll pull days-on-market data for comparable homes so you have a realistic range going in. It will not be a guess or a promise, an estimate based on comparable sales. Some homes move in days; others take a few weeks. We'll plan accordingly.",
     },
     {
       question: "What if the inspection turns up issues?",
       answer:
-        "It almost always turns up something. That's what inspections are for. The question is whether those findings are deal-breakers, negotiating points, or just normal wear and tear that buyers expect. I'll help you understand what you're actually looking at, talk through your options for responding, and negotiate on your behalf so you're not giving away more than you need to.",
+        "It almost always turns up something. That's what inspections are for. The question is whether those findings are deal-breakers, negotiating points, or just normal wear and tear that buyers expect. I'll help you understand the findings, talk through your options for responding, and negotiate on your behalf with your priorities in mind.",
     },
     {
       question: "How do I know what my Snohomish County home is worth?",
@@ -208,8 +208,7 @@ const Selling = () => {
               <p className="font-body text-lg md:text-xl text-primary max-w-3xl mx-auto">
                 Selling a home you've lived in and cared for is not a small thing. It's a financial decision and an
                 emotional one, often happening at the same time as whatever comes next. I help Snohomish County sellers
-                get their homes ready, priced right, and sold well without the chaos, the pressure, or the surprises
-                that should have been mentioned earlier.
+                plan preparation, review pricing, and work through offers and the steps toward closing.
               </p>
             </motion.div>
           </div>
@@ -234,9 +233,8 @@ const Selling = () => {
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  What's my home actually worth right now? What do I need to do to get it ready? And how do I time this
-                  so I'm not caught between two moves with nowhere to land? Those deserve straight answers, not vague
-                  reassurances or a pitch to list immediately.
+                  What might my home sell for? What should I do to prepare it? How do I coordinate the sale with my next
+                  move? We start with those questions and the details of your situation.
                 </p>
                 <p>
                   I read complex documents carefully and explain them plainly to people who are under stress. We'll
@@ -261,7 +259,7 @@ const Selling = () => {
                 From walkthrough to close...
               </p>
               <h2 className="font-heading h-section text-primary">
-                What the Process Actually Looks Like
+                The Steps in Your Sale
               </h2>
             </motion.div>
 
@@ -303,7 +301,7 @@ const Selling = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                The fine print matters...
+                The details matter...
               </p>
 
               <h2 className="font-heading h-section text-primary mb-8">
@@ -317,9 +315,8 @@ const Selling = () => {
                   how clearly you understand your options at every step.
                 </p>
                 <p>
-                  And if you need more than just an agent, whether you're sorting through decades of belongings,
-                  coordinating with out-of-state family, or just need a steady presence on a hard day, I show up for that
-                  too. That's not an add-on. It's just how I work.
+                  If your sale also involves decades of belongings or out-of-state family, we can discuss who will handle
+                  each task, what help you need, and any costs before making the preparation plan.
                 </p>
               </div>
             </motion.div>
@@ -346,8 +343,8 @@ const Selling = () => {
 
               <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
                 Covers what to do and what to skip when preparing your home for the Snohomish County market.
-                Includes pricing strategy basics, what buyers actually notice during showings, how to read an offer, and
-                what to expect from inspection to close. Straightforward, practical, no fluff.
+                Includes pricing strategy basics, what buyers notice during showings, how to read an offer, and
+                what to expect from inspection to close. A practical reference for planning your sale.
               </p>
 
               <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
@@ -377,7 +374,7 @@ const Selling = () => {
                 <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
                   Wondering what your home could realistically sell for right now? Share a few details below and I'll
                   put together a thoughtful evaluation based on your home, recent sales, and current market conditions.
-                  No obligation, no pressure to list.
+                  This is a market analysis, not an appraisal, and there is no obligation to list.
                 </p>
               </div>
 

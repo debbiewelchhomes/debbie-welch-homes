@@ -21,7 +21,7 @@ const LakeStevens = () => {
     <div className="min-h-screen">
       <SEO
         title="Living in Lake Stevens, WA | Homes for Sale | Debbie Welch Homes"
-        description="Thinking about buying a home in Lake Stevens, WA? A lifelong local's honest take on the lake, the schools, the commute, and what daily life actually looks like here."
+        description="Thinking about buying a home in Lake Stevens, WA? A local guide to lake access, housing, school-assignment checks, and commute routes for everyday life."
         canonical="/areas/lake-stevens"
       />
       <Navigation />
@@ -91,7 +91,7 @@ const LakeStevens = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-10 text-center">
-                The Honest Pros and Cons
+                Lake Access, Housing & Everyday Tradeoffs
               </h2>
               <div className="grid md:grid-cols-2 gap-10">
                 <div>
@@ -128,15 +128,13 @@ const LakeStevens = () => {
                       <span className="text-secondary font-bold">•</span>
                       <span>
                         <strong>Some neighborhoods carry their own private lake access through the HOA.</strong> This is
-                        separate from the four public parks. It isn't something you'll find by browsing listings. It is
-                        the kind of detail that comes from knowing the city's micro-neighborhoods, not just the big
-                        picture.
+                        separate from the four public parks. Confirm any access rights, rules, and dues in the association documents for the specific property.
                       </span>
                     </li>
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>More house for the money.</strong> Prices vary by neighborhood, home size and lot,
+                        <strong>Housing choices and lot sizes.</strong> Prices vary by neighborhood, home size and lot,
                         with established neighborhoods and room to spread out.
                       </span>
                     </li>
@@ -152,7 +150,7 @@ const LakeStevens = () => {
                       <span className="text-secondary font-bold">•</span>
                       <span>
                         <strong>Real community events.</strong> Aquafest, holiday markets, and the Farmer's Market are
-                        community events where people actually show up.
+                        part of the local calendar.
                       </span>
                     </li>
                   </ul>
@@ -184,8 +182,7 @@ const LakeStevens = () => {
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>Further from I-5</strong> than Marysville or Everett. The beauty-and-price tradeoff is
-                        real, but so is the distance.
+                        <strong>Further from I-5</strong> than Marysville or Everett. Consider the route from each home to the destinations you use.
                       </span>
                     </li>
                   </ul>
@@ -262,8 +259,7 @@ const LakeStevens = () => {
                 Homes for Sale in Lake Stevens
               </h2>
               <p className="text-foreground text-lg leading-relaxed mb-8">
-                Browse current listings or reach out and I'll put together a custom search. I know the neighborhoods
-                well enough to tell you which ones to look at first.
+                Browse current listings or reach out and I'll put together a custom search. We can narrow the options using your budget, commute, and property needs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>

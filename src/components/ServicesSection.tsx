@@ -44,7 +44,7 @@ const services: Service[] = [
     title: "Military & Veterans",
     titleSub: "PCS & Relocation",
     description:
-      "Moving for orders, work, or family, to or from Snohomish County? I coordinate around your report date or move date, share honest neighborhood insight, and keep things moving when you cannot be here in person.",
+      "Relocating for work or family, or moving on military PCS orders? We start with your move date, budget, and housing needs. PCS planning also considers report dates and military timelines. This pathway covers moves to or from Snohomish County.",
     cta: "Military PCS & Relocation",
     href: "/services/relocation",
   },

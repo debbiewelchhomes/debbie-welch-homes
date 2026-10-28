@@ -77,9 +77,9 @@ const Buying = () => {
   const buyingSteps = [
     {
       number: "01",
-      title: "Get Clear on What You Actually Want",
+      title: "Start With What Matters to You",
       description:
-        "Before we look at a single listing, we talk. What does the right home actually look like for your life right now and two or five years from now? Budget, location, commute, schools, yard, stairs, layout. I ask the questions most people forget to ask themselves until they're standing in a house they don't love.",
+        "Before touring, we talk about your life now and what may change over the next few years. Budget, commute, yard, stairs, layout, and the services you use all help shape the search. If school assignment matters to you, confirm it with the district for the exact address.",
     },
     {
       number: "02",
@@ -91,19 +91,19 @@ const Buying = () => {
       number: "03",
       title: "Search Smart, Tour Well",
       description:
-        "We'll focus on the Snohomish County areas that actually fit your criteria, whether that is Lake Stevens, Everett, Marysville, Snohomish, Arlington, Bothell, or somewhere else. When we tour homes, I'll tell you what I see: the good, the things to think about, and the things that would make me pause. Not just listing-photo enthusiasm.",
+        "We'll focus on the Snohomish County areas that fit your criteria, whether that is Lake Stevens, Everett, Marysville, Snohomish, Arlington, Bothell, or somewhere else. When we tour homes, I'll tell you what I see: the good, the things to think about, and the things that would make me pause. We can then decide what needs further investigation.",
     },
     {
       number: "04",
       title: "Make a Competitive, Thoughtful Offer",
       description:
-        "When you find the right home, we'll build an offer grounded in recent sales, current competition, and what the terms actually mean for your risk. I'll explain every part of the contract in plain language before you sign anything. No 'just trust me, this is standard.'",
+        "When you find the right home, we'll build an offer grounded in recent sales, current competition, and how the terms affect your risk. We'll review key contract terms and your questions before you decide what to sign.",
     },
     {
       number: "05",
-      title: "From Contract to Keys Without the Chaos",
+      title: "From Contract to Keys",
       description:
-        "Once you're under contract, I manage inspections, appraisals, deadlines, lender communication, and escrow coordination. You'll always know what's happening and what's coming next.",
+        "Once you're under contract, I coordinate the real estate deadlines and communicate with your lender, inspectors, and escrow team. We review updates and the decisions that need your attention.",
     },
   ];
 
@@ -114,14 +114,14 @@ const Buying = () => {
         "It varies a lot by price point and area. Some neighborhoods and price ranges still move fast with multiple offers; others give buyers more breathing room and room to negotiate. I'll walk you through current data for the specific areas you're considering before we start writing offers, so you know what you're walking into, not after the fact.",
     },
     {
-      question: "How much do I actually need for a down payment?",
+      question: "How much should I plan for a down payment?",
       answer:
         "Less than most people think, depending on your loan type and financial picture. Conventional loans can go as low as 3-5% down. FHA is 3.5%. VA loans for qualified Veterans require zero down. Your ideal down payment depends on your goals, your monthly comfort level, and what your lender recommends for your situation. I'll connect you with someone who will explain this clearly so we can search with real numbers.",
     },
     {
       question: "Do I need to sell my current home before I buy?",
       answer:
-        "Not necessarily. Some buyers sell first, some buy first, and others use contingent offers or bridge strategies. There's no universal right answer. It depends on your finances, your timeline, and how much risk you're comfortable with. We'll look at your specific situation and talk through the options honestly before you decide.",
+        "Not necessarily. Some buyers sell first, some buy first, and others use contingent offers or bridge strategies. There's no universal right answer. It depends on your finances, your timeline, and how much risk you're comfortable with. We'll look at your specific situation and talk through the options before you decide.",
     },
     {
       question: "What are the costs beyond the down payment I should plan for?",
@@ -146,7 +146,7 @@ const Buying = () => {
     {
       question: "How should I choose between different Snohomish County communities?",
       answer:
-        "We can compare commute patterns, housing styles, price ranges, school-district boundaries, services, and the day-to-day feel of each area. City names alone do not tell the whole story, so I help you look at the details that affect how a location will work for you.",
+        "We can compare commute routes, housing styles, price ranges, services, and the features you tell me matter to daily life. For school information, confirm current assignment with the district using the exact address. We look at property-specific details rather than relying on a city name.",
     },
   ];
 
@@ -205,10 +205,9 @@ const Buying = () => {
               </h1>
 
               <p className="font-body text-lg md:text-xl text-primary max-w-3xl mx-auto">
-                Buying a home is one of the biggest financial decisions most people make. It deserves more than a rushed
-                search and a stack of paperwork you don't fully understand. I help buyers in Lake Stevens, Everett,
-                Marysville, Snohomish, Arlington, and surrounding communities move through the process with clear
-                information, honest guidance, and someone in their corner who actually gives a damn about the outcome.
+                Buying a home brings together your finances, daily routines, and plans for the years ahead. I help buyers
+                in Lake Stevens, Everett, Marysville, Snohomish, Arlington, and surrounding communities compare homes,
+                understand the costs, and work through the decisions along the way.
               </p>
             </motion.div>
           </div>
@@ -236,8 +235,7 @@ const Buying = () => {
                   months after you move in. I take the time to explain them.
                 </p>
                 <p>
-                  I'm not trying to close a deal. I'm trying to help you buy the right home. There's a difference, and
-                  you'll feel it.
+                  We start with what matters to you, then use that list to evaluate each home and the tradeoffs it brings.
                 </p>
               </div>
             </motion.div>
@@ -258,7 +256,7 @@ const Buying = () => {
                 Step by step...
               </p>
               <h2 className="font-heading h-section text-primary">
-                What the Process Actually Looks Like
+                Your Home-Buying Steps
               </h2>
             </motion.div>
 
@@ -300,23 +298,22 @@ const Buying = () => {
               className="max-w-4xl mx-auto"
             >
               <p className="eyebrow mb-4" aria-hidden="true">
-                No rush, no pressure...
+                Room for your questions...
               </p>
 
               <h2 className="font-heading h-section text-primary mb-8">
-                I'm Not in a Hurry. You Shouldn't Be Either.
+                Answers to Your Questions
               </h2>
 
               <div className="font-body text-lg md:text-xl text-foreground leading-relaxed space-y-5">
                 <p>
-                  I'm not going to push you toward a home because the market is "moving fast." If a house isn't right,
-                  I'll tell you. If a contract term concerns me, I'll flag it. If you need to slow down and think, we
-                  slow down.
+                  If a home's condition or a contract term raises a question, we talk it through. We also look at the
+                  deadlines involved, so you can decide what needs more research and whether to proceed.
                 </p>
                 <p>
                   I'm a lifelong Snohomish County local. I grew up in Marysville, lived in Lake Stevens for years,
-                  currently renovating in North Everett. When I tell you what a neighborhood is actually like, it's from
-                  living here, not a market report. Ask me as many questions as you need.
+                  currently renovating in North Everett. I can share local context alongside the market data and
+                  property records. Ask me as many questions as you need.
                 </p>
               </div>
             </motion.div>
@@ -343,8 +340,8 @@ const Buying = () => {
 
               <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
                 Covers what to know before you start your search, including financing basics, how to read a listing, what
-                inspections actually tell you, hidden costs to plan for, and how the Snohomish County market works.
-                Written for people who want real information, not a glossy brochure.
+                inspections can tell you, additional costs to plan for, and how the Snohomish County market works.
+                A reference to revisit as questions come up.
               </p>
 
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6" asChild>
@@ -379,7 +376,7 @@ const Buying = () => {
                 </h2>
                 <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
                   Tell me what you're looking for and I'll put together a custom search for the areas and price ranges
-                  that make sense for you. No pressure, just listings that are actually worth your time.
+                  that make sense for you. We can refine the search as you learn what works for you.
                 </p>
               </div>
 

@@ -429,8 +429,8 @@ All colors MUST be HSL.
     background: hsl(var(--warm-panel-surface));
     backdrop-filter: blur(var(--panel-blur));
     -webkit-backdrop-filter: blur(var(--panel-blur));
-
     border-radius: 1rem;
+
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
     padding: 1.5rem;
   }
@@ -475,8 +475,8 @@ main > section:first-child:has(> img.absolute.inset-0) > .container {
   background: hsl(var(--area-panel-surface));
   backdrop-filter: blur(var(--panel-blur));
   -webkit-backdrop-filter: blur(var(--panel-blur));
-
   border: 1px solid hsl(var(--border) / 0.7);
+
   border-radius: 1rem;
   box-shadow: 0 4px 24px hsl(var(--primary) / 0.06);
   padding: 1.25rem 1.25rem 1.5rem;

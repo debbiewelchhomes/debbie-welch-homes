@@ -72,14 +72,28 @@ const About = () => {
       {/* What to Expect Section - comes first so visitor knows what they're getting */}
       <section className="section bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto">
+            {/* Accent and heading sit on the right margin, above the photo */}
             <motion.div
               ref={ref}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
-              className="order-2 md:order-1"
+              className="mb-10 text-right"
+            >
+              <p className="eyebrow mb-4">What to expect...</p>
+              <h2 className="font-heading h-section text-primary">When We Work Together</h2>
+            </motion.div>
+
+            {/* Photo and body copy form one block, both starting on the same line */}
+            <div className="grid md:grid-cols-2 gap-12 items-start">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeInUp}
+              transition={{ duration: 0.6 }}
             >
               <img
                 src="/images/debbie-welch-working.webp"
@@ -94,10 +108,7 @@ const About = () => {
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="order-1 md:order-2"
             >
-              <p className="eyebrow mb-4">What to expect...</p>
-              <h2 className="font-heading h-section text-primary mb-6">When We Work Together</h2>
               <p className="text-foreground text-lg leading-relaxed mb-6">
                 I'm a details person and a big-picture thinker. That means I'm watching the market and your stress level
                 at the same time. Here's what working together actually looks like:
@@ -136,6 +147,7 @@ const About = () => {
                 </li>
               </ul>
             </motion.div>
+            </div>
           </div>
         </div>
       </section>

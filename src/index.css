@@ -38,11 +38,11 @@ All colors MUST be HSL.
     --photo-overlay: 36 8% 87% / 0.35;
     /* Wash for photos that carry text directly on them (area guide heroes,
        featured-area tiles) — firmer than the scrolling-panel overlay. */
-    --photo-wash: 36 8% 87% / 0.5;
+    --photo-wash: 36 8% 87% / 0.58;
 
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
-    --area-panel-surface: 0 0% 100% / 0.78;
+    --area-panel-surface: 0 0% 100% / 0.7;
 
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 0%;
@@ -81,7 +81,7 @@ All colors MUST be HSL.
     --warm-bg-foreground: 30 6% 93%;
     --card: 225 21% 29%;
     --card-foreground: 30 6% 93%;
-    --area-panel-surface: 225 21% 29% / 0.78;
+    --area-panel-surface: 225 21% 29% / 0.7;
     --border: 206 13% 49%;
     --input: 206 13% 49%;
   }

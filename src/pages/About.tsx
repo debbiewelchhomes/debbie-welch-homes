@@ -40,14 +40,14 @@ const About = () => {
               </h1>
               <p className="text-foreground text-lg leading-relaxed mb-4">
                 I grew up in Marysville. Lived in Lake Stevens for about ten years. Now I'm in the middle of a live-in
-                renovation in North Everett. This isn't a county I moved to or just happen to do work in for the real
+                renovation in North Everett. This isn't an area I recently moved to or just happen to do work in for the real
                 estate market. It's home. My parents are here. Our children and their families are here. I've watched
                 the traffic patterns shift and the neighborhoods change. I know where the hidden parking is at the
                 Farmer's Market, and I bring that history to practical questions about routes, services, and how a
                 location works for your daily life.
               </p>
               <p className="text-foreground text-lg leading-relaxed">
-                That's the kind of local I am. And it's exactly the kind of broker I try to be.
+                That's the kind of local I am. I love to share what I know and it's exactly the kind of broker I strive to be.
               </p>
             </motion.div>
 
@@ -158,12 +158,12 @@ const About = () => {
               <p>
                 Before real estate, I spent 30 years in healthcare, including medical coding, auditing, and education. My job was
                 to read documents other people skimmed, catch the detail that changed everything, and explain complex
-                information in plain language to people who were already overwhelmed. The clause on page 4 of a purchase
+                information in plain language to people who were already overwhelmed. That clause on page 4 of a purchase
                 agreement that nobody reads? That's the one I flag.
               </p>
               <p>
                 My husband Todd is a retired Navy Veteran and Systems Engineer, so military families, PCS moves, and VA
-                loans are genuinely close to home for us. We know what it feels like to make big decisions on a tight
+                loans are genuinely close to home for us. So literally that we currently live about 2 miles from Naval Station Everett. We know what it feels like to make big decisions on a tight
                 timeline with a lot of unknowns.
               </p>
             </div>
@@ -216,8 +216,7 @@ const About = () => {
             >
               <h3 className="font-heading text-2xl font-bold text-primary mb-4">The Most Important People</h3>
               <p className="text-foreground leading-relaxed">
-                Todd, my husband and best person. Our blended family of six adult kids and three grandbabies. Cooper the Goldendoodle, who has
-                very strong opinions about when it's walk time. And an iced sweet tea, always.
+                Todd, my husband and partner in life. Our blended family of six adult kids and three grandbabies. Our parents. Our amazing circle of friends. Cooper the Goldendoodle, who has very strong opinions about when he deserves his next treat.
               </p>
             </motion.div>
 
@@ -295,7 +294,7 @@ const About = () => {
             variants={fadeInUp}
             transition={{ duration: 0.6 }}
           >
-            <p className="eyebrow mb-4">The people behind a smooth move...</p>
+            <p className="eyebrow mb-4">The people behind a smooth transaction...</p>
             <h2 className="font-heading h-section text-primary mb-6">My Trusted Local Partners</h2>
             <p className="copy-lead text-foreground max-w-3xl mx-auto mb-8">
               I may be your main point of contact, but every well-run transaction depends on skilled people behind the scenes. Meet the local professionals I trust to help keep financing, inspections, staging, photography, and the details moving smoothly.
@@ -347,8 +346,7 @@ const About = () => {
                 Considering a Career at eXp Realty?
               </h2>
               <p className="copy-lead text-foreground mb-7 flex-1">
-                If you are an agent who is curious about eXp Realty, I am happy to share my experience, answer practical
-                questions, and help you decide whether it may fit your business.
+                If you are an agent who is curious about eXp Realty, I am happy to share my experience, answer questions, and help you decide whether it may fit your business.
               </p>
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>
                 <Link to="/about/exp-realty">Learn More about eXp Realty</Link>

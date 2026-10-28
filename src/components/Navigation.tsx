@@ -227,6 +227,14 @@ const Navigation = () => {
                 About
               </Link>
 
+              <Link
+                to="/contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-foreground hover:text-secondary transition-colors"
+              >
+                Contact
+              </Link>
+
               <Button className="mt-2 bg-secondary text-white hover:bg-secondary/90" asChild>
                 <a href="https://cal.com/debbie.welch.homes" target="_blank" rel="noopener noreferrer">
                   Book a Free Consult

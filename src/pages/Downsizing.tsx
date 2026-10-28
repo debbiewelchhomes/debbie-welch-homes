@@ -373,14 +373,21 @@ const Downsizing = () => {
               </p>
 
               <Button size="lg" asChild className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-                <Link to="/contact">Ask Me for the Downsizing Guide</Link>
+                <a
+                  href="#consult-request"
+                  onClick={() =>
+                    setFormData((d) => ({ ...d, message: d.message || "I'd like a copy of the Downsizing Guide, please." }))
+                  }
+                >
+                  Ask Me for the Downsizing Guide
+                </a>
               </Button>
             </motion.div>
           </div>
         </section>
 
         {/* Downsizing Consult Form */}
-        <section className="section bg-background">
+        <section id="consult-request" className="section bg-background scroll-mt-28">
           <div className="container mx-auto px-4">
             <motion.div
               ref={formRef}

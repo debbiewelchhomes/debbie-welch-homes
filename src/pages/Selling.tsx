@@ -460,7 +460,7 @@ const Selling = () => {
                       aria-busy={isSubmitting}
                       className="w-full bg-secondary hover:bg-secondary/90 text-white text-lg"
                     >
-                      {isSubmitting ? "Sending…" : "Request My Home Evaluation"}
+                      {isSubmitting ? "Sending…" : <><span className="sm:hidden">Request My Evaluation</span><span className="hidden sm:inline">Request My Home Evaluation</span></>}
                     </Button>
                     <InquiryFallback />
                   </form>

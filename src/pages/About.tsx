@@ -40,8 +40,7 @@ const About = () => {
               </h1>
               <p className="text-foreground text-lg leading-relaxed mb-4">
                 I grew up in Marysville. Lived in Lake Stevens for about ten years. Now I'm in the middle of a live-in
-                renovation in North Everett. This isn't an area I recently moved to or just happen to do work in for the real
-                estate market. It's home. My parents are here. Our children and their families are here. I've watched
+                renovation in North Everett. This is home. My parents are here. Our children and their families are here. I've watched
                 the traffic patterns shift and the neighborhoods change. I know where the hidden parking is at the
                 Farmer's Market, and I bring that history to practical questions about routes, services, and how a
                 location works for your daily life.
@@ -112,32 +111,32 @@ const About = () => {
             >
               <p className="text-foreground text-lg leading-relaxed mb-6">
                 I'm a details person and a big-picture thinker. That means I'm watching the market and your stress level
-                at the same time. Here's what working together actually looks like:
+                at the same time. Here's how that shapes my work:
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                   <span className="text-foreground">
-                    Plain-language explanations with no jargon, no "trust me," and no skipping the parts that matter.
+                    Plain-language explanations of the numbers, documents, and decisions in front of you.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                   <span className="text-foreground">
-                    Proactive communication. You will not be left wondering what's happening or waiting for a callback.
+                    Updates about deadlines, next steps, and changes, with time to talk through your questions.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                   <span className="text-foreground">
-                    Honest pros and cons, even when the easy answer would be "you're fine, just sign here."
+                    Discussion of the benefits, drawbacks, and uncertainties before you decide.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                   <span className="text-foreground">
-                    Hands-on support for big transitions. I've helped clients with everything from dump and donation
-                    runs to staging coordination to just being a steady presence on a hard day.
+                    Past hands-on help has included dump and donation runs, packing, and staging coordination.
+                    Those are examples of individual moves, not a standard package. We discuss the help your situation needs and any third-party costs.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -165,18 +164,17 @@ const About = () => {
           >
             <p className="eyebrow mb-4 text-center">A little backstory...</p>
             <h2 className="font-heading h-section text-primary mb-8 text-center">
-              Thirty Years Reading the Fine Print
+              What Healthcare Taught Me
             </h2>
             <div className="space-y-5 text-foreground text-lg leading-relaxed">
               <p>
-                Before real estate, I spent 30 years in healthcare, including medical coding, auditing, and education. My job was
-                to read documents other people skimmed, catch the detail that changed everything, and explain complex
-                information in plain language to people who were already overwhelmed. That clause on page 4 of a purchase
-                agreement that nobody reads? That's the one I flag.
+                Before real estate, I spent 30 years in healthcare, including medical coding, auditing, and education. That work taught me
+                to read carefully, notice details, and explain complex information in plain language. I bring those habits
+                to real estate, reviewing documents and helping you identify questions that need a closer look.
               </p>
               <p>
                 My husband Todd is a retired Navy Veteran and Systems Engineer, so military families, PCS moves, and VA
-                loans are genuinely close to home for us. So literally that we currently live about 2 miles from Naval Station Everett. We know what it feels like to make big decisions on a tight
+                loans are close to home for us. We currently live about 2 miles from Naval Station Everett. We know what it feels like to make big decisions on a tight
                 timeline with a lot of unknowns.
               </p>
             </div>
@@ -243,8 +241,8 @@ const About = () => {
             >
               <h3 className="font-heading text-2xl font-bold text-primary mb-4">Lifelong Local</h3>
               <p className="text-foreground leading-relaxed">
-                Marysville, Lake Stevens, and North Everett. That's my actual history here. When I talk about what a
-                neighborhood feels like, it's because I've lived in it, not just sold in it.
+                Marysville, Lake Stevens, and North Everett. Those places are part of my history. I bring that experience
+                to conversations about everyday life here.
               </p>
             </motion.div>
 
@@ -258,8 +256,8 @@ const About = () => {
             >
               <h3 className="font-heading text-2xl font-bold text-primary mb-4">Research Is My Love Language</h3>
               <p className="text-foreground leading-relaxed">
-                I go deep on things. Market trends, neighborhood data, local policies, and ADU rules. If it's relevant to
-                your situation, I've probably already pulled it up. Checklists help me sleep at night.
+                I go deep on things. Market trends, neighborhood data, local policies, and ADU rules. I enjoy digging into the questions that matter to
+                your situation. Checklists help me sleep at night.
               </p>
             </motion.div>
 

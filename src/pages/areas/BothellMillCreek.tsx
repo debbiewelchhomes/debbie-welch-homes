@@ -71,7 +71,7 @@ const BothellMillCreek = () => {
         {/* Balanced */}
         <section className="section bg-warm-bg">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="font-heading h-section text-primary mb-10 text-center">An Honest Look</h2>
+            <h2 className="font-heading h-section text-primary mb-10 text-center">Two Communities, Different Property Details</h2>
             <div className="grid md:grid-cols-2 gap-10">
               <div>
                 <h3 className="font-body text-2xl md:text-3xl font-semibold text-primary mb-5">Why Buyers Consider It</h3>
@@ -122,7 +122,7 @@ const BothellMillCreek = () => {
         {/* Housing and location */}
         <section className="section bg-background">
           <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="font-heading h-section text-primary mb-6">Housing and Location Considerations</h2>
+            <h2 className="font-heading h-section text-primary mb-6">County Lines, Associations & Housing Choices</h2>
             <p className="text-base md:text-lg text-foreground leading-relaxed mb-4">
               Because Bothell spans a county boundary and includes both older neighborhoods and newer infill,
               the same search can return very different properties. Some are inside city limits, some are in
@@ -140,7 +140,7 @@ const BothellMillCreek = () => {
 
         <section className="section bg-background">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="font-heading h-section text-primary mb-8 text-center">Practical Notes for Buyers and Sellers</h2>
+            <h2 className="font-heading h-section text-primary mb-8 text-center">Planning a Bothell or Mill Creek Move</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Check the parcel, not just the mailing address.</strong> County, school district, taxes, utilities, HOA rules, and commute routes can change within a short distance. For condos and townhomes, review the association budget, reserves, insurance, and meeting minutes before committing.</p></div>
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Make the location differences easy to understand.</strong> Clear information about schools, county, commuting options, nearby trails, association details, and recent improvements helps buyers compare your home accurately with properties carrying the same city name.</p></div>

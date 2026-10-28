@@ -9,27 +9,27 @@ const BrandPromiseSection = () => {
   const promises = [
     {
       icon: Shield,
-      title: "Clarity Over Pressure",
+      title: "Answers to Your Questions",
       description:
-        "I explain the reasoning, tradeoffs, and fine print in plain language so you can make decisions with confidence.",
+        "We talk through costs, choices, and contract terms in plain language.",
     },
     {
       icon: ListChecks,
       title: "Clear, Organized Process",
       description:
-        "Clear timelines, practical checklists, and defined next steps keep the process moving without unnecessary surprises.",
+        "Timelines and checklists help us keep track of deadlines and next steps.",
     },
     {
       icon: MapPin,
       title: "Local Insight",
       description:
-        "More than 45 years in Snohomish County gives me context that an online report cannot provide.",
+        "My local experience helps put commute routes, services, and housing choices in context.",
     },
     {
       icon: MessageCircle,
-      title: "Honest, Steady Communication",
+      title: "Communication Along the Way",
       description:
-        "You will know what is happening, what comes next, and what I honestly recommend for your situation.",
+        "We discuss updates, questions, and changes as your move takes shape.",
     },
   ];
 
@@ -45,7 +45,7 @@ const BrandPromiseSection = () => {
         >
           <h2 className="font-heading text-primary">
             <span className="eyebrow">Our working relationship...</span>
-            <span className="h-section mx-auto block max-w-2xl text-secondary">What Working With Me Actually Looks Like</span>
+            <span className="h-section mx-auto block max-w-2xl text-secondary">What You Can Expect</span>
           </h2>
         </motion.div>
 

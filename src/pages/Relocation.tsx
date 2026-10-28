@@ -81,54 +81,54 @@ const Relocation = () => {
       number: "01",
       title: "Get Oriented Before You Decide Anything",
       description:
-        "We start with a phone or Zoom conversation about your timeline, budget, and what matters most, such as commute, schools, neighborhood feel, space, and access to the base. I'll give you an honest picture of what different parts of Snohomish County are actually like, not just what the listings show.",
+        "We start with a phone or Zoom conversation about your timeline, budget, and what matters most, such as commute, space, services, and access to the base if relevant. We compare locations using your priorities and verify school assignment with the district for any specific home.",
     },
     {
       number: "02",
-      title: "Narrow Down the Right Areas",
+      title: "Compare Areas Against Your Priorities",
       description:
-        "Snohomish County covers a lot of ground. Lake Stevens feels different from Marysville, which feels different from Everett, which feels different from Bothell. I'll send you maps, notes, and my honest take on each area so you can make a real comparison instead of guessing from Google Street View.",
+        "Snohomish County covers a lot of ground. Lake Stevens feels different from Marysville, which feels different from Everett, which feels different from Bothell. Maps, property information, and local context help us compare housing, routes, and services.",
     },
     {
       number: "03",
       title: "Tour Homes Virtually or In Person",
       description:
-        "I do detailed video walkthroughs and live FaceTime tours, pointing out what you can't see in photos, what a neighborhood sounds like at 7am, and what the street looks like when it rains. If you can visit, we'll tour in person. If you can't, I'll be your eyes and ears until you can.",
+        "I offer video walkthroughs and live FaceTime tours to show layout, visible condition, and surroundings beyond the listing photos. We discuss what can be observed and what still needs a professional inspection. If you can visit, we can tour in person.",
     },
     {
       number: "04",
       title: "Make a Smart, Confident Offer",
       description:
-        "When you're ready, we'll build an offer that fits your budget, your timeline, and the current market without overextending you. I'll explain every term in plain language before you sign anything, and manage the contract-to-close process so you're not chasing down paperwork from across the country.",
+        "When you're ready, we'll build an offer that fits your budget, your timeline, and the current market and your comfort with risk. We review key terms and your questions before you sign, then coordinate the real estate deadlines with your lender and escrow team.",
     },
     {
       number: "05",
       title: "Land Well and Get Connected",
       description:
-        "Closing day isn't where my job ends. I'll follow up with local recommendations, connect you with people you'll actually need, and help you get settled rather than disappear after closing. If you're new to the area, I want to help you find your footing.",
+        "As you settle in, you can ask me about local services and recommendations. We can discuss the contacts or information that would be useful for your situation.",
     },
   ];
 
   const faqs = [
     {
-      question: "What's it actually like to commute from Snohomish County to Seattle or the Eastside?",
+      question: "What's it like to commute from Snohomish County to Seattle or the Eastside?",
       answer:
-        "Honest answer: it depends a lot on where you live, where you're going, and when you leave. I-5 between Everett and Seattle can be brutal during peak hours. Highway 9, 522, and 2 offer alternatives depending on your destination. We'll look at your specific commute route and talk through realistic drive times, park-and-ride options, and which locations give you the best balance of commute and daily priorities. I won't sugarcoat it. Some commutes are tough, but there are areas that work well, and I'll help you compare them.",
+        "It depends a lot on where you live, where you're going, and when you leave. I-5 between Everett and Seattle can be brutal during peak hours. Highway 9, 522, and 2 offer alternatives depending on your destination. We'll look at your specific commute route and talk through realistic drive times, park-and-ride options, and which locations give you the best balance of commute and daily priorities. Test the route during the hours you expect to travel before relying on a drive-time estimate.",
     },
     {
       question: "Can I buy a home here without seeing it in person?",
       answer:
-        "Yes. Several of my clients have done exactly that, including buyers purchasing from Germany and active duty service members who couldn't get here before their report date. It takes more preparation and clear communication, but it's very doable. I do detailed video walkthroughs, answer every question you have about condition and location, and we build in protective contingencies wherever possible. I won't let you commit to something I wouldn't feel good about if I were in your position.",
+        "Yes. Several of my clients have done exactly that, including buyers purchasing from Germany and active duty service members who couldn't get here before their report date. It takes more preparation and clear communication, but it's very doable. Video walkthroughs and property records help you ask better questions. Professional inspections still matter, and we discuss the protections available under the proposed contract before you decide.",
     },
     {
       question: "How does a VA loan work in this market?",
       answer:
-        "VA loans are a strong financing tool and I'm comfortable working with them. The key is having a lender who actually knows VA loans, not just someone who offers them on a checklist. My preferred VA lender is Jared Paul at CrossCountry Mortgage. He's a Marine Veteran, a Marysville native, and knows this market and VA financing well. We'll get you pre-approved properly so your offer is competitive from the start.",
+        "VA loans are a strong financing tool and I'm comfortable working with them. A VA-experienced lender can explain eligibility, underwriting, and the costs for your situation. My preferred VA lender is Jared Paul at CrossCountry Mortgage. He's a Marine Veteran, a Marysville native, and knows this market and VA financing well. Your lender handles pre-approval and explains the financing requirements; I help you evaluate the property and offer terms.",
     },
     {
       question: "What if I need to sell a home in another state before I can buy here?",
       answer:
-        "You're not alone in that situation. It is common with PCS moves. We'll coordinate timelines with your out-of-area agent and your lender, look at contingent offer options, and talk through temporary housing if there's a gap. It takes more planning but it's workable. The earlier we start talking, the more options we have.",
+        "You're not alone in that situation. It is common with PCS moves. We'll coordinate timelines with your out-of-area agent and your lender, look at contingent offer options, and talk through temporary housing if there's a gap. The available options depend on both transactions and your financing. The earlier we start talking, the more options we have.",
     },
     {
       question: "How far in advance should I reach out?",
@@ -138,7 +138,7 @@ const Relocation = () => {
     {
       question: "Do you work with non-military relocations too?",
       answer:
-        "Yes. Military moves are a specialty, but I work with all kinds of relocation clients, including people moving here for work, moving closer to family, or starting fresh in the Pacific Northwest. The process is similar: you need someone on the ground who knows the area and can help you make good decisions from a distance. That's what I do.",
+        "Yes. Civilian relocation may involve work, family, or another change; military PCS moves also involve orders and report dates. For a move into Snohomish County, we compare housing, budget, and daily routines. If you are leaving the county, we discuss the local sale and how it fits your next move. Support outside the area depends on the professionals involved.",
     },
     {
       question: "Can you help with military PCS moves to Naval Station Everett?",
@@ -203,14 +203,13 @@ const Relocation = () => {
               </p>
 
               <h1 className="font-heading h-section text-primary mb-6">
-                Military PCS & Relocation to Snohomish County
+                Military PCS & Relocation to or from Snohomish County
               </h1>
 
               <p className="font-body text-lg md:text-xl text-primary max-w-3xl mx-auto">
-                You got orders, a job offer, or a life change, and now you need to figure out where to live in a
-                county you may never have set foot in. That's a lot. I help military families and relocation clients
-                find the right home in the right area without having to piece it together from internet research alone.
-                I'll be your on-the-ground partner from the first conversation to the day you get your keys.
+                A move for work or family starts with your housing needs and timeline. A military PCS adds orders and
+                a report date to that planning. I help buyers moving into Snohomish County compare homes and locations,
+                and sellers leaving the area plan the local sale around their next move.
               </p>
             </motion.div>
           </div>
@@ -240,7 +239,7 @@ const Relocation = () => {
                   listing photos and Google Maps.
                 </p>
                 <p>
-                  My husband Todd is a retired Navy Veteran. I understand what PCS timelines actually look like, including the
+                  My husband Todd is a retired Navy Veteran. I understand what PCS timelines look like, including the
                   short notice, the hard deadlines, the pressure to decide fast. I've helped enough military families
                   buy in Snohomish County to know what questions to ask, what to watch out for, and what areas make
                   sense depending on where you're reporting.
@@ -272,7 +271,7 @@ const Relocation = () => {
                 Before you pack a box...
               </p>
               <h2 className="font-heading h-section text-primary">
-                What the Process Actually Looks Like
+                Planning a Home Purchase From Out of Area
               </h2>
             </motion.div>
 
@@ -325,17 +324,22 @@ const Relocation = () => {
                 <p>
                   Todd served in the Navy. I know what PCS season looks like, including orders with six weeks notice and decisions
                   before you've had time to think, pressure to get it right when you can't just look at a few more
-                  houses this weekend. I hold the MRP certification and have done this enough times to make it work even
-                  when the timeline is tight.
+                  houses this weekend. I hold the MRP certification and help clients identify priorities and backup options when
+                  the timeline is tight.
                 </p>
                 <p>
                   For VA financing, I work closely with Jared Paul at CrossCountry Mortgage, a Marine Veteran and
-                  Marysville native who actually specializes in VA loans and Snohomish County. Getting pre-approved with
-                  the right lender makes a real difference in how your offer is received. My goal: by the time you show
-                  up with a moving truck, you should already feel like you know where you landed.
+                  Marysville native who specializes in VA loans and Snohomish County. Your lender explains
+                  qualification and loan costs. I help you compare homes and contract choices using that information.
                 </p>
               </div>
             </motion.div>
+            <p className="mt-8 text-center text-foreground">
+              Further reading: {" "}
+              <Link to="/blog/relocating-guide" className="text-secondary underline underline-offset-4 hover:text-primary">
+                Relocating to Snohomish County: What I Tell My Military &amp; Out-of-Area Buyers
+              </Link>
+            </p>
           </div>
         </section>
 
@@ -359,9 +363,8 @@ const Relocation = () => {
 
               <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
                 Built specifically for military families and out-of-area buyers coming to Snohomish County. Covers
-                neighborhoods near Naval Station Everett, current BAH rates, how VA loans work in this market, commute
-                realities, school districts, and what to know about buying from a distance. Plain language, honest take,
-                no fluff.
+                neighborhoods near Naval Station Everett, BAH questions to confirm with current official guidance, how VA loans work in this market, commute
+                realities, school districts, and what to know about buying from a distance. A starting point for the questions specific to your move.
               </p>
 
               <Button size="lg" asChild className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
@@ -390,8 +393,7 @@ const Relocation = () => {
                 </h2>
                 <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-4">
                   Whether you have a firm report date or you're still in the early research phase, let's talk. Share a
-                  few details below and I'll follow up to find a time that works, including evenings and weekends, and
-                  across time zones.
+                  few details below and I'll follow up so we can compare schedules and time zones.
                 </p>
               </div>
 

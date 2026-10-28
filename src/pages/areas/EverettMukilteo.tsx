@@ -50,8 +50,7 @@ const EverettMukilteo = () => {
               <p
                 className="photo-text-shadow font-heading text-xl md:text-2xl max-w-2xl mx-auto"
               >
-                Snohomish County's largest city is reinventing its waterfront and downtown. Mukilteo has always
-                been one of the most beautiful spots on Puget Sound.
+                Snohomish County's largest city is reinventing its waterfront and downtown. Mukilteo brings a shoreline setting, lighthouse park, and ferry connections on Puget Sound.
               </p>
             </motion.div>
           </div>
@@ -92,7 +91,7 @@ const EverettMukilteo = () => {
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
             >
-              <p className="eyebrow mb-4">The honest breakdown...</p>
+              <p className="eyebrow mb-4">A closer look at Everett...</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-8">Everett's Neighborhoods</h2>
 
               <div className="space-y-8 text-foreground text-base leading-relaxed">
@@ -139,7 +138,7 @@ const EverettMukilteo = () => {
                 <div>
                   <h3 className="font-heading text-xl font-bold text-primary mb-2">Lowell & the Snohomish River</h3>
                   <p>
-                    Quieter, more affordable, historic. The Lowell Riverfront Park trail runs along the river where the
+                    Historic homes and a riverfront setting. The Lowell Riverfront Park trail runs along the river where the
                     Snohomish meets the sloughs and wetlands of the delta. Water is always close in Everett, whether it is the river,
                     Union Slough, Port Gardner Bay, Possession Sound. It shapes how the city feels in ways that are hard
                     to describe until you've spent time here.
@@ -169,7 +168,7 @@ const EverettMukilteo = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-10 text-center">
-                The Honest Pros and Cons
+                Waterfront Life & Practical Considerations
               </h2>
               <div className="grid md:grid-cols-2 gap-10">
                 <div>
@@ -253,8 +252,8 @@ const EverettMukilteo = () => {
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>Mukilteo view homes</strong> command a significant premium. Budget accordingly if
-                        waterfront is the goal.
+                        <strong>Mukilteo view homes</strong> vary in price by view, condition, location, and property type. Compare
+                        individual listings with your budget.
                       </span>
                     </li>
                   </ul>
@@ -310,10 +309,9 @@ const EverettMukilteo = () => {
               <h3 className="font-heading text-xl font-bold text-primary mb-3">Everett food & drink</h3>
               <p className="text-foreground text-base leading-relaxed mb-6">
                 The scene reflects the city's genuine diversity. Vietnamese, Mexican, Chinese, Filipino, and Italian
-                immigrant-owned restaurants throughout the city make Everett one of the most interesting places to eat
-                in the county. Craft breweries and taprooms have taken hold alongside wine bars and cocktail bars
+                restaurants are among the choices throughout the city. Craft breweries and taprooms have taken hold alongside wine bars and cocktail bars
                 following the downtown revitalization energy. Tacos and Beer, at 1405 Hewitt Avenue in downtown
-                Everett, is a longtime local favorite. Nothing overpriced or pretentious.
+                Everett, is a longtime local favorite. 
               </p>
 
               <h3 className="font-heading text-xl font-bold text-primary mb-3">Planned Downtown Event Center</h3>
@@ -373,13 +371,18 @@ const EverettMukilteo = () => {
                 </p>
                 <p>
                   The Sounder commuter rail station connects directly to King Street Station in Seattle, a genuinely
-                  good option if you're commuting south. Homes with water views command a premium. If schools are part of
+                  good option if you're commuting south. Prices vary by view, condition, and location. If schools are part of
                   your decision, review current district information and confirm the assignment for the exact address. The community is tight-knit and quiet. For most errands you're heading into
-                  Everett because Mukilteo is small by design. For buyers who want Puget Sound waterfront at a price point
-                  below King County, it deserves a serious look.
+                  Everett because Mukilteo is small by design. If shoreline access matters to you, compare the specific homes, routes, and services that fit your routine.
                 </p>
               </div>
             </motion.div>
+            <p className="mt-8 text-center text-foreground">
+              Further reading: {" "}
+              <Link to="/blog/va-home-buyers-naval-station-everett" className="text-secondary underline underline-offset-4 hover:text-primary">
+                What Should VA Buyers Know Before Shopping Near Naval Station Everett?
+              </Link>
+            </p>
           </div>
         </section>
 

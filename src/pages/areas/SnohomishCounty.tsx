@@ -20,7 +20,7 @@ const areas = [
     name: "Everett & Mukilteo",
     path: "/areas/everett-mukilteo",
     blurb:
-      "The county's urban core plus a waterfront neighbor. The widest range of housing ages, price points, and city services in one place.",
+      "The county's urban core plus a waterfront neighbor. A varied mix of housing ages, price points, and city services.",
   },
   {
     name: "Marysville",
@@ -146,8 +146,8 @@ const SnohomishCounty = () => {
               with different services and permitting.
             </p>
             <p className="text-base md:text-lg text-foreground leading-relaxed">
-              This is not a warning meant to worry you. It is simply the reason I verify these details for the
-              specific parcel, every time, rather than relying on what the listing headline says.
+              We check the relevant records for the specific parcel, and confirm information with the district,
+              jurisdiction, or service provider rather than relying on the listing headline alone.
             </p>
           </div>
         </section>
@@ -182,6 +182,12 @@ const SnohomishCounty = () => {
                 <span><strong>Seller documentation.</strong> Permits, repair history, utility details, HOA records, and well or septic information can make a property easier to evaluate and help prevent closing delays.</span>
               </li>
             </ul>
+            <p className="mt-8 text-center text-foreground">
+              Further reading: {" "}
+              <Link to="/blog/relocating-guide" className="text-secondary underline underline-offset-4 hover:text-primary">
+                Relocating to Snohomish County: What I Tell My Military &amp; Out-of-Area Buyers
+              </Link>
+            </p>
           </div>
         </section>
 

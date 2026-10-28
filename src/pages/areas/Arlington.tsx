@@ -70,7 +70,7 @@ const Arlington = () => {
         {/* Balanced */}
         <section className="section bg-warm-bg">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="font-heading h-section text-primary mb-10 text-center">An Honest Look</h2>
+            <h2 className="font-heading h-section text-primary mb-10 text-center">Downtown, Smokey Point & Rural Edges</h2>
             <div className="grid md:grid-cols-2 gap-10">
               <div>
                 <h3 className="font-body text-2xl md:text-3xl font-semibold text-primary mb-5">Why Buyers Consider It</h3>
@@ -121,7 +121,7 @@ const Arlington = () => {
         {/* Housing and location */}
         <section className="section bg-background">
           <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="font-heading h-section text-primary mb-6">Housing and Location Considerations</h2>
+            <h2 className="font-heading h-section text-primary mb-6">In-Town Homes and Rural Property</h2>
             <p className="text-base md:text-lg text-foreground leading-relaxed mb-4">
               In-town Arlington tends toward established homes on smaller, platted lots with city water and
               sewer. Newer growth areas, particularly near Smokey Point, bring more recent construction and, in
@@ -140,7 +140,7 @@ const Arlington = () => {
 
         <section className="section bg-background">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="font-heading h-section text-primary mb-8 text-center">Practical Notes for Buyers and Sellers</h2>
+            <h2 className="font-heading h-section text-primary mb-8 text-center">Preparing to Buy or Sell in Arlington</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Verify jurisdiction, utilities, and access early.</strong> Arlington addresses can represent in-city homes, newer development, or rural property. Wells, septic systems, private roads, airport proximity, and future land-use plans can matter as much as the house itself.</p></div>
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Gather rural-property records before listing.</strong> Septic documents, well information, surveys, easements, permits, and private-road agreements help buyers understand the property and reduce avoidable delays once you are under contract.</p></div>
@@ -151,7 +151,7 @@ const Arlington = () => {
         {/* Community */}
         <section className="section bg-warm-bg">
           <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="font-heading h-section text-primary mb-6">Parks, Trails, and Everyday Life</h2>
+            <h2 className="font-heading h-section text-primary mb-6">Trails, Parks & Downtown Stops</h2>
             <p className="text-base md:text-lg text-foreground leading-relaxed">
               The Centennial Trail runs through the area and is a genuine daily-use amenity for walking, running,
               and cycling. The Airport Trail adds a shorter local loop, and Centennial Park along with the city's

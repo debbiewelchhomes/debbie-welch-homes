@@ -69,7 +69,7 @@ const Snohomish = () => {
         {/* Balanced */}
         <section className="section bg-warm-bg">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="font-heading h-section text-primary mb-10 text-center">An Honest Look</h2>
+            <h2 className="font-heading h-section text-primary mb-10 text-center">Historic Character & Property Questions</h2>
             <div className="grid md:grid-cols-2 gap-10">
               <div>
                 <h3 className="font-body text-2xl md:text-3xl font-semibold text-primary mb-5">Why Buyers Consider It</h3>
@@ -120,7 +120,7 @@ const Snohomish = () => {
         {/* Housing and location */}
         <section className="section bg-background">
           <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="font-heading h-section text-primary mb-6">Housing and Location Considerations</h2>
+            <h2 className="font-heading h-section text-primary mb-6">Older Homes, Acreage & City Limits</h2>
             <p className="text-base md:text-lg text-foreground leading-relaxed mb-4">
               Housing here ranges from older in-town homes on established streets, to newer subdivisions, to
               rural parcels with acreage. With the older stock, it is worth budgeting time for a thorough
@@ -130,15 +130,14 @@ const Snohomish = () => {
             </p>
             <p className="text-base md:text-lg text-foreground leading-relaxed">
               Outside the city, well and septic systems, private roads, easements, and land-use designations
-              come into play. Near the rivers, elevation and flood mapping matter. These are all answerable
-              questions. They just need to be answered for the specific parcel rather than the general area.
+              come into play. Near the rivers, elevation and flood mapping matter. Research these questions for the specific parcel; some findings may affect whether the property fits your plans.
             </p>
           </div>
         </section>
 
         <section className="section bg-background">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="font-heading h-section text-primary mb-8 text-center">Practical Notes for Buyers and Sellers</h2>
+            <h2 className="font-heading h-section text-primary mb-8 text-center">Preparing an Older or Rural Home</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Plan for the age and setting of the property.</strong> Older systems, flood mapping, shoreline or river proximity, wells, septic systems, easements, and historic considerations all deserve address-specific review before an offer becomes firm.</p></div>
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Documentation helps buyers see character instead of uncertainty.</strong> Permits, repair records, system ages, utility information, flood insurance history when applicable, and details about thoughtful updates can make an older or rural property easier to evaluate.</p></div>

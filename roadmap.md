@@ -1,5 +1,8 @@
 # Approved follow-up improvements
 
+- [x] Complete approved current-page editorial pass and exact hero biography; seven pictured posts refined, 18 unlisted articles unchanged, eight service/area links and eight related-post links verified.
+- [x] Record consent-gated eXp/BoldTrail companion and independent-hosting reminders; 54 desktop/phone checks, 11 tests, automatic preview build OK; exact change report and revision/credit limitations recorded.
+
 - [x] Review visible script spacing across every public page and article at laptop and phone widths; shared script leading tightened, following gaps balanced, 106 page checks passed with no overlaps or overflow, representative captures visually reviewed, nine tests passed and preview build OK; nothing published.
 
 - [x] Make shared script headings fit their available space, retain readable wrapping on small screens, and verify heading/icon alignment across the website without publishing; all 53 pages passed phone/laptop checks, 15 representative pages passed six-width checks, icons align within 1px, nine tests pass, preview build OK.
@@ -33,7 +36,7 @@
 - [x] Run relevant tests and browser checks; inspect automatic preview validation and document production/prerender, sync and credit limitations.
 - [x] Widen the space between header items, make the dropdown arrow spacing uniform, restore "Search Homes" in the desktop header and phone menu, and trim the logo slightly so narrower laptops do not collide.
 - [x] Center the header links between the logo and the consult button at every width, remove the separator line before the button, and raise the header text one size; laptop item spacing eased so nothing collides.
-- [ ] Confirm original market sources/periods, exact Navy headcount and one-business-day/report-fulfillment commitments. Blocked on original sources and Debbie's operational confirmation; no substitute figures invented.
+- [ ] Confirm exact Navy headcount and report-fulfillment commitments. Blocked on original sources and Debbie's operational confirmation; no substitute figures invented. The approved market sources/periods are recorded above, and Debbie confirmed the one-business-day response commitment.
 - [ ] Add a non-military relocation box and a first-time buyer box to the homepage services section, which Debbie noted currently covers only buying, selling, downsizing and military PCS; new boxes should match the current block style (round icon on the heading line). Blocked on Debbie's wording and which destinations each box should point to.
 
 - [x] Remove the repeated 'See How I Can Help' divider band, keep that call-to-action in the hero only, and separate the market-report and testimonial photo panels so no two scrolling photo backgrounds touch; verified desktop and phone boundary captures.

@@ -156,3 +156,29 @@ These are recommendations and unresolved checks, not completed setup or permissi
 6. Confirm font loading, image permissions/privacy, social metadata, Search Console verification, and existing external-link/tracking behavior on the actual host. Local source inspection cannot establish external account settings.
 
 Do not publish, change domains/DNS, or reconnect integrations merely to complete this checklist. Those require separate authorization.
+## Handoff snapshot, October 28, 2026
+
+Factual state at handoff. Items marked *unverified* were not checked from this environment.
+
+**Commands** (from `package.json`; there is no `test` script):
+- `bun install`, then `bun run dev` (Vite dev server)
+- `bun test` — runs the 4 test files (11 tests passed at handoff)
+- `bun run lint`, `bun run build` (client build + SSR build + `scripts/prerender.mjs`)
+
+**Code revision:** the last saved Lovable revision before this handoff pass was `3b18308`; see the project's version history for the revision that contains this note. GitHub sync: *unverified* — the project's git remote is Lovable's managed storage, and no external GitHub connection was confirmed from this environment.
+
+**Service dependencies (as found in source):**
+- Lovable Cloud (managed backend) hosting the `send-contact-email` function, which sends inquiries through Resend. Secrets `RESEND_API_KEY` and optional `RESEND_FROM` live in Lovable Project Settings → Secrets; values are not recorded here.
+- Jivo chat widget, loaded by `src/components/ChatButton.tsx` from code.jivosite.com. Its appearance and position are controlled in the Jivo account (*not changed*). The Messenger link noted in project memory was not re-verified in this pass.
+- Cal.com booking (`https://cal.com/debbie.welch.homes`, header "Book a Free Consult").
+- Flodesk guide pages (`debbiewelchhomes.myflodesk.com`) on Resources.
+- eXp (`debbiewelch.exprealty.com`) for home search, market reports and mortgage calculator.
+- Heyzine flipbook for the Seller Guide: link returned HTTP 200 with an "Online Flipbook" page; that the contents are the correct guide is *unverified*.
+
+**Not portable or tied to accounts:** the Lovable Cloud backend and its secrets, the Resend sender-domain setup, the Jivo widget ID and settings, the Google Search Console verification tag (issued for the lovable.app address), and the third-party pages above. Images under `src/assets` travel with the code; their usage rights are *unverified*.
+
+**Open decisions:** confirm real inbox delivery for form submissions (no test sent); confirm the privacy-policy wording matches the actual Jivo, Resend and Cal.com data handling; confirm reuse rights for Realtor.com figures before republishing them; confirm whether Jivo and Messenger should both remain.
+
+**Future custom-domain move (requires Debbie's consent; not started):** connect the domain, keeping existing mail DNS records (MX, SPF, DKIM, DMARC); add redirects from the lovable.app address; update `DEFAULT_SITE_URL` and `scripts/prerender.mjs` together so canonical tags, sitemap, robots.txt, OpenGraph and schema URLs agree; add the email function's allowed origin; then verify the new property in Search Console and submit its sitemap.
+
+**Phone layout note:** the homepage welcome box was tightened on phones so the Jivo bubble clears the "Serving…" line at 375×812 and larger. On shorter phones (for example 360×780) the bubble still overlaps the last line of that box when the page first loads; fully clearing it would need a bigger layout change or a Jivo position setting.

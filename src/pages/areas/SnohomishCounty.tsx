@@ -182,6 +182,12 @@ const SnohomishCounty = () => {
                 <span><strong>Seller documentation.</strong> Permits, repair history, utility details, HOA records, and well or septic information can make a property easier to evaluate and help prevent closing delays.</span>
               </li>
             </ul>
+            <p className="mt-8 text-center text-foreground">
+              Further reading: {" "}
+              <Link to="/blog/relocating-guide" className="text-secondary underline underline-offset-4 hover:text-primary">
+                Relocating to Snohomish County: What I Tell My Military &amp; Out-of-Area Buyers
+              </Link>
+            </p>
           </div>
         </section>
 

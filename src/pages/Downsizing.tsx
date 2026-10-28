@@ -338,6 +338,12 @@ const Downsizing = () => {
                 </p>
               </div>
             </motion.div>
+            <p className="mt-8 text-center text-foreground">
+              Further reading: {" "}
+              <Link to="/blog/downsizing-guide" className="text-secondary underline underline-offset-4 hover:text-primary">
+                A Practical Guide to Downsizing Your Home Without Losing Your Mind
+              </Link>
+            </p>
           </div>
         </section>
 

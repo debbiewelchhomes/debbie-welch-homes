@@ -222,6 +222,12 @@ const Marysville = () => {
                 District.
               </p>
             </motion.div>
+            <p className="mt-8 text-center text-foreground">
+              Further reading: {" "}
+              <Link to="/blog/first-time-home-buyers-marysville-wa" className="text-secondary underline underline-offset-4 hover:text-primary">
+                What Should First-Time Buyers Know About Buying a Home in Marysville?
+              </Link>
+            </p>
           </div>
         </section>
 

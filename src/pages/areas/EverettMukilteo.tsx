@@ -377,6 +377,12 @@ const EverettMukilteo = () => {
                 </p>
               </div>
             </motion.div>
+            <p className="mt-8 text-center text-foreground">
+              Further reading: {" "}
+              <Link to="/blog/va-home-buyers-naval-station-everett" className="text-secondary underline underline-offset-4 hover:text-primary">
+                What Should VA Buyers Know Before Shopping Near Naval Station Everett?
+              </Link>
+            </p>
           </div>
         </section>
 

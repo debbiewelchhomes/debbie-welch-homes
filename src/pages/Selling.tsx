@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -242,6 +243,12 @@ const Selling = () => {
                 </p>
               </div>
             </motion.div>
+            <p className="mt-8 text-center text-foreground">
+              Further reading: {" "}
+              <Link to="/blog/sell-first-or-buy-first" className="text-secondary underline underline-offset-4 hover:text-primary">
+                Should I Sell First or Buy First in Snohomish County?
+              </Link>
+            </p>
           </div>
         </section>
 

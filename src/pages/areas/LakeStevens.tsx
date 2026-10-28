@@ -241,6 +241,12 @@ const LakeStevens = () => {
                 Lake Stevens School District →
               </a>
             </motion.div>
+            <p className="mt-8 text-center text-foreground">
+              Further reading: {" "}
+              <Link to="/blog/downsizing-sell-buy-snohomish-county" className="text-secondary underline underline-offset-4 hover:text-primary">
+                How Do I Coordinate Selling and Buying During a Downsizing Move?
+              </Link>
+            </p>
           </div>
         </section>
 

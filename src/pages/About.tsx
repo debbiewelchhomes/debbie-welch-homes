@@ -73,32 +73,33 @@ const About = () => {
       <section className="section bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
-            {/* Accent and heading sit on the right margin, above the photo */}
+            {/* Accent and heading sit on the left margin, above the photo */}
             <motion.div
               ref={ref}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
-              className="mb-10 text-right"
+              className="mb-10 text-left"
             >
               <p className="eyebrow mb-4">What to expect...</p>
               <h2 className="font-heading h-section text-primary">When We Work Together</h2>
             </motion.div>
 
-            {/* Photo and body copy form one block, both starting on the same line */}
-            <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Photo and body copy form one block: same height, same top line */}
+            <div className="grid md:grid-cols-2 gap-12 items-stretch">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
               transition={{ duration: 0.6 }}
+              className="md:h-full"
             >
               <img
                 src="/images/debbie-welch-working.webp"
                 alt="Debbie Welch working at her laptop"
-                className="rounded-lg shadow-xl w-full object-cover"
+                className="rounded-lg shadow-xl w-full h-full object-cover"
               />
             </motion.div>
 

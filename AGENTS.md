@@ -12,3 +12,4 @@
 - Never remove JSX elements with broad shell text substitutions that can also delete unrelated closing tags; make targeted, element-specific edits and confirm each edited file still parses and renders before moving on.
 - Keep area-photo text panels in the shared global selector; calibrate script leading against rendered glyphs and verify every area at laptop and phone widths so font metrics do not create oversized or off-center boxes.
 - Drive every frosted panel that sits over a photo (`.text-backdrop`, the area guide hero panel, the welcome panel) from the shared `--panel-transparency` and `--panel-blur` tokens so photo boxes stay identical site-wide; retune those two values instead of adding page-specific opacity or blur.
+- Never list git remotes or print git config URLs; they embed Lovable-managed storage credentials. Record revisions with log-only commands such as `git log -1 --format=%h`.

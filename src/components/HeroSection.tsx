@@ -18,7 +18,7 @@ const HeroSection = () => {
         aria-label="Home exterior with illuminated windows and evergreen trees"
       />
 
-      <div className="relative z-10 container mx-auto flex min-h-[68vh] lg:min-h-[72vh] items-center justify-center px-4 pb-16 pt-32 md:pt-40">
+      <div className="relative z-10 container mx-auto flex min-h-[68vh] lg:min-h-[72vh] items-center justify-center px-4 pb-16 pt-28 md:pt-40">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -35,7 +35,7 @@ const HeroSection = () => {
 
 
 
-            <p className="copy-lead mx-auto mb-6 max-w-[54ch] text-primary/90">
+            <p className="copy-lead mx-auto mb-5 md:mb-6 max-w-[54ch] text-primary/90">
               I grew up in Marysville, lived and raised my family in Lake Stevens, and now call Everett home. After more than 45 years in Snohomish County, I know how much the right home and location can matter to everyday life. I’m here to help you understand your options and make a plan that works for you.
             </p>
 
@@ -51,7 +51,7 @@ const HeroSection = () => {
 
             </div>
 
-            <p className="mt-6 text-sm text-primary/80">
+            <p className="mt-4 md:mt-6 text-sm text-primary/80">
 
               Serving Lake Stevens, Everett, Marysville, Arlington, Snohomish,
               <br />

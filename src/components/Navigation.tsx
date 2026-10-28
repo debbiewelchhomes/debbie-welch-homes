@@ -19,7 +19,7 @@ const Navigation = () => {
     { name: "Buying", href: "/services/buying" },
     { name: "Selling", href: "/services/selling" },
     { name: "Downsizing & Life Transitions", href: "/services/downsizing" },
-    { name: "Military PCS & Relocation", href: "/services/relocation" },
+    { name: "Relocation & Military PCS", href: "/services/relocation" },
   ];
 
   const areas = [

@@ -59,8 +59,8 @@ const StanwoodCamano = () => {
               </p>
               <p className="text-base md:text-lg text-foreground leading-relaxed">
                 The most important practical distinction is jurisdictional. Stanwood is in Snohomish County.
-                Camano Island is in Island County. That single line changes taxes, services, permitting, school
-                districts, and sometimes insurance. People often shop both in one afternoon, which is exactly
+                Camano Island is in Island County. County jurisdiction affects taxes, services, and permitting. School assignment and insurance
+                need separate checks for the exact property. People often shop both in one afternoon, which is exactly
                 why it is worth being clear about which side of the water any given property sits on.
               </p>
             </div>
@@ -70,7 +70,7 @@ const StanwoodCamano = () => {
         {/* Balanced */}
         <section className="section bg-warm-bg">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="font-heading h-section text-primary mb-10 text-center">An Honest Look</h2>
+            <h2 className="font-heading h-section text-primary mb-10 text-center">Mainland and Island Living</h2>
             <div className="grid md:grid-cols-2 gap-10">
               <div>
                 <h3 className="font-body text-2xl md:text-3xl font-semibold text-primary mb-5">Why Buyers Consider It</h3>
@@ -121,7 +121,7 @@ const StanwoodCamano = () => {
         {/* Housing and location */}
         <section className="section bg-background">
           <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="font-heading h-section text-primary mb-6">Housing and Location Considerations</h2>
+            <h2 className="font-heading h-section text-primary mb-6">Waterfront, Rural & In-Town Properties</h2>
             <p className="text-base md:text-lg text-foreground leading-relaxed mb-4">
               In Stanwood, you will find in-town homes with city utilities alongside rural and agricultural
               parcels just outside. On Camano Island, many properties rely on wells and septic systems, and
@@ -130,14 +130,14 @@ const StanwoodCamano = () => {
             </p>
             <p className="text-base md:text-lg text-foreground leading-relaxed">
               Many of these questions can be worked through, though some findings may change your decision. They take a slower, more document-driven process than a standard
-              in-city purchase, and it is far cheaper to ask the questions during inspection than after closing.
+              in-city purchase, and it helps to understand the findings and possible costs before committing.
             </p>
           </div>
         </section>
 
         <section className="section bg-background">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="font-heading h-section text-primary mb-8 text-center">Practical Notes for Buyers and Sellers</h2>
+            <h2 className="font-heading h-section text-primary mb-8 text-center">Records to Gather and Questions to Ask</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Buyers</h3><p className="copy text-foreground"><strong>Allow extra time for property-specific research.</strong> County jurisdiction, wells, septic systems, private roads, shared access, shoreline rules, drainage, bluff conditions, insurance, and travel time to daily services should all be understood before closing.</p></div>
               <div className="card-surface"><h3 className="font-heading h-card text-primary mb-3">For Sellers</h3><p className="copy text-foreground"><strong>Prepare the records that explain how the property works.</strong> Well and septic documents, road agreements, surveys, permits, maintenance history, shoreline information, and insurance details can prevent a distinctive property from feeling unnecessarily complicated.</p></div>
@@ -166,8 +166,8 @@ const StanwoodCamano = () => {
               <li className="flex gap-2">
                 <span className="text-secondary font-bold">•</span>
                 <span>
-                  Confirm school assignment with the correct district for the exact address, which differs
-                  across the two counties.
+                  Confirm school assignment directly with the district for the exact address; county lines do not
+                  establish school boundaries.
                 </span>
               </li>
               <li className="flex gap-2">

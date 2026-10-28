@@ -49,8 +49,8 @@ const Marysville = () => {
               <p
                 className="photo-text-shadow font-heading text-xl md:text-2xl max-w-2xl mx-auto"
               >
-                My hometown is Snohomish County's strawberry city, still growing and still genuinely affordable for the
-                right buyer.
+                My hometown is Snohomish County's strawberry city, with established neighborhoods, newer homes, and
+                local parks. Prices vary by home, location, and market conditions.
               </p>
             </motion.div>
           </div>
@@ -91,7 +91,7 @@ const Marysville = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-10 text-center">
-                The Honest Pros and Cons
+                Housing, Parks & Getting Around
               </h2>
               <div className="grid md:grid-cols-2 gap-10">
                 <div>
@@ -127,7 +127,7 @@ const Marysville = () => {
                     <li className="flex gap-2">
                       <span className="text-secondary font-bold">•</span>
                       <span>
-                        <strong>Whiskey Ridge is worth serious attention if school district matters to you.</strong>{" "}
+                        <strong>Check school assignment by address in Whiskey Ridge.</strong>{" "}
                         This northwest growth area has added more than a thousand homes in recent years, and a
                         meaningful share of them fall within Lake Stevens School District boundaries rather than
                         Marysville's, even though they're inside Marysville city limits. If district assignment is part of your
@@ -213,7 +213,7 @@ const Marysville = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
-                Housing and Location Fit
+                Matching a Marysville Home to Your Routine
               </h2>
               <p className="text-foreground text-lg leading-relaxed text-center">
                 Marysville offers a range of established homes and newer construction with access to I-5, Highway 9,
@@ -240,8 +240,8 @@ const Marysville = () => {
                 Homes for Sale in Marysville
               </h2>
               <p className="text-foreground text-lg leading-relaxed mb-8">
-                Browse current listings or reach out and I'll put together a custom search. This is my hometown. I know
-                it well enough to tell you exactly which areas and school boundaries fit what you're looking for.
+                Browse current listings or reach out and I'll put together a custom search. This is my hometown, and I can help you compare homes using your budget,
+                commute, and property needs. Confirm school assignment directly with the district.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8" asChild>

@@ -373,12 +373,7 @@ const Downsizing = () => {
               </p>
 
               <Button size="lg" asChild className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-                <a
-                  href="#consult-request"
-                  onClick={() =>
-                    setFormData((d) => ({ ...d, message: d.message || "I'd like a copy of the Downsizing Guide, please." }))
-                  }
-                >
+                <a href="https://debbiewelchhomes.myflodesk.com/thinking-about-downsizing">
                   Ask Me for the Downsizing Guide
                 </a>
               </Button>

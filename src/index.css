@@ -551,3 +551,9 @@ main a[href*="debbiewelch.exprealty.com/index"]::after {
   }
 }
 
+
+@media (max-width: 767px) {
+  .home-hero-image {
+    background-image: linear-gradient(rgba(225, 223, 220, 0.35), rgba(225, 223, 220, 0.35)), var(--mobile-hero-image) !important;
+  }
+}

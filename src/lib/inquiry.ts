@@ -1,5 +1,3 @@
-import { supabase } from "@/integrations/supabase/client";
-
 export const CONTACT_EMAIL = "debbie@debbiewelchhomes.com";
 export const CONTACT_PHONE = "360-631-8148";
 export const CONTACT_PHONE_HREF = "tel:360-631-8148";
@@ -30,41 +28,39 @@ const GENERIC_ERROR =
   ".";
 
 /**
- * Sends a website inquiry through the send-contact-email edge function.
- * Returns ok only when the email provider accepted the message.
+ * Save an inquiry to Netlify Forms. A successful response means Netlify
+ * accepted the submission; notification delivery is configured separately.
  */
 export async function sendInquiry(payload: InquiryPayload): Promise<InquiryResult> {
-  const fields: Record<string, string> = {};
-  for (const [label, value] of Object.entries(payload.fields ?? {})) {
-    const trimmed = typeof value === "string" ? value.trim() : "";
-    if (trimmed) fields[label] = trimmed;
-  }
+  const details = Object.entries(payload.fields ?? {})
+    .map(([label, value]) => [label, typeof value === "string" ? value.trim() : ""] as const)
+    .filter(([, value]) => value)
+    .map(([label, value]) => `${label}: ${value}`)
+    .join("\n\n");
+
+  const body = new URLSearchParams({
+    "form-name": "website-inquiry",
+    name: payload.name?.trim() ?? "",
+    email: payload.email.trim(),
+    phone: payload.phone?.trim() ?? "",
+    "inquiry-type": payload.formName,
+    message: details,
+    "bot-field": payload.website ?? "",
+  });
 
   try {
-    const { data, error } = await supabase.functions.invoke("send-contact-email", {
-      body: {
-        formName: payload.formName,
-        name: payload.name?.trim() ?? "",
-        email: payload.email.trim(),
-        phone: payload.phone?.trim() ?? "",
-        website: payload.website ?? "",
-        fields,
-      },
+    const response = await fetch("/__forms.html", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: body.toString(),
     });
-
-    if (error) {
-      console.error("Inquiry send failed:", error);
+    if (!response.ok) {
+      console.error("Inquiry submission failed:", response.status);
       return { ok: false, error: GENERIC_ERROR };
     }
-
-    if (!data || data.success !== true) {
-      console.error("Inquiry send rejected:", data);
-      return { ok: false, error: GENERIC_ERROR };
-    }
-
     return { ok: true };
   } catch (err) {
-    console.error("Inquiry send threw:", err);
+    console.error("Inquiry submission failed:", err);
     return { ok: false, error: GENERIC_ERROR };
   }
 }

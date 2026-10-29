@@ -355,7 +355,7 @@ const Selling = () => {
               </p>
 
               <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-                <a href="https://heyzine.com/flip-book/0f267477d7.html" target="_blank" rel="noopener noreferrer">
+                <a href="https://debbiewelchhomes.myflodesk.com/ultimate-seller-playbook" target="_blank" rel="noopener noreferrer">
                   Get the Seller Guide
                 </a>
               </Button>

@@ -7,14 +7,20 @@ import { Helmet } from "react-helmet-async";
 
 
 
+const mobileHero = `/.netlify/images?url=${encodeURIComponent(heroImage)}&w=1080&q=75`;
+
 const HeroSection = () => {
   return (
     <section className="home-hero relative flex min-h-[68vh] lg:min-h-[72vh] items-center justify-center overflow-hidden">
-      <Helmet><link rel="preload" as="image" href={heroImage} fetchPriority="high" /></Helmet>
+      <Helmet>
+        <link rel="preload" as="image" href={mobileHero} media="(max-width: 767px)" fetchPriority="high" />
+        <link rel="preload" as="image" href={heroImage} media="(min-width: 768px)" fetchPriority="high" />
+      </Helmet>
       <div
-        className="absolute inset-0 parallax-section"
+        className="absolute inset-0 parallax-section home-hero-image"
         style={{
           backgroundImage: `linear-gradient(rgba(225, 223, 220, 0.35), rgba(225, 223, 220, 0.35)), url(${heroImage})`,
+          ["--mobile-hero-image" as string]: `url("${mobileHero}")`,
         }}
         role="img"
         aria-label="Home exterior with illuminated windows and evergreen trees"

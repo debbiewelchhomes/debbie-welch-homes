@@ -23,7 +23,9 @@ const AboutSection = () => {
             <img
               alt="Debbie Welch, Snohomish County real estate broker"
               className="mx-auto mb-8 w-full max-w-[416px] rounded-lg shadow-md md:float-right md:ml-10 md:mb-6 md:w-[364px] lg:w-[416px]"
-              src="/images/debbie-welch-homepage.webp"
+              src="/.netlify/images?url=%2Fimages%2Fdebbie-welch-homepage.webp&w=832&q=75"
+              srcSet={[416, 832, 1100].map((w) => `/.netlify/images?url=%2Fimages%2Fdebbie-welch-homepage.webp&w=${w}&q=75 ${w}w`).join(", ")}
+              sizes="(min-width: 1024px) 416px, (min-width: 768px) 364px, 90vw"
               width="1100"
               height="1320"
               loading="lazy"

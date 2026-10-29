@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-home.jpg";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -9,6 +10,7 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <section className="home-hero relative flex min-h-[68vh] lg:min-h-[72vh] items-center justify-center overflow-hidden">
+      <Helmet><link rel="preload" as="image" href={heroImage} fetchPriority="high" /></Helmet>
       <div
         className="absolute inset-0 parallax-section"
         style={{

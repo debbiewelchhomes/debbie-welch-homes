@@ -1,4 +1,4 @@
-export const DEFAULT_SITE_URL = "https://debbiewelchhomes.com";
+export const DEFAULT_SITE_URL = "https://www.debbiewelchhomes.com";
 
 const configuredSiteUrl = import.meta.env.VITE_SITE_URL?.trim();
 

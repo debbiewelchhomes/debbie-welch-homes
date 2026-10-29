@@ -78,7 +78,7 @@ const NeighborhoodsSection = () => {
                 <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-border bg-card group cursor-pointer">
                   <CardContent className="p-6">
                     <div className="relative mb-4 h-36 overflow-hidden rounded-lg">
-                      <img src={area.image} alt={area.altText} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+                      <img src={`/.netlify/images?url=${encodeURIComponent(area.image)}&w=768&q=75`} srcSet={[384, 768, 1152].map((w) => `/.netlify/images?url=${encodeURIComponent(area.image)}&w=${w}&q=75 ${w}w`).join(", ")} sizes="(min-width: 1024px) 256px, (min-width: 640px) 45vw, 90vw" alt={area.altText} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" width="768" height="432" />
                       <div className="photo-wash absolute inset-0" aria-hidden="true" />
                       <div className="absolute inset-0 flex items-center justify-center px-3">
                         <h3 className="photo-name-shadow font-heading h-card text-center whitespace-pre-line">

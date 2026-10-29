@@ -3,14 +3,6 @@
 @tailwind utilities;
 
 /* Shared page accent face; navigation and buttons retain body typography. */
-@font-face {
-  font-family: 'Black Stones';
-  src: url('/__l5e/assets-v1/40e4840c-237c-47b1-9895-f7d915cbad98/black-stones.otf') format('opentype');
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
@@ -61,8 +53,8 @@ All colors MUST be HSL.
     --ring: 206 22% 37%;
 
     --radius: 0.5rem;
-    --script-size: 3.5rem;
-    --script-min-size: 2.75rem;
+    --script-size: 2.75rem;
+    --script-min-size: 2.1rem;
     --heading-section-size: 1.75rem;
     --heading-column-size: 1.45rem;
     --heading-display-size: 2rem;
@@ -138,11 +130,10 @@ All colors MUST be HSL.
 
 @layer utilities {
   main :is(.font-script, .button-script, .eyebrow) {
-    font-family: 'Black Stones', 'Hurricane', cursive;
+    font-family: 'Hurricane', cursive;
     font-weight: 400;
     font-size: var(--script-fit-size, var(--script-size));
-    /* Black Stones ink occupies far less than its default line box. Keep
-       comfortable leading for wrapped letters without oversized blank space. */
+    /* Keep comfortable leading for wrapped script accents. */
     line-height: 0.95;
     color: hsl(var(--foreground));
     max-width: 100%;
@@ -307,7 +298,7 @@ All colors MUST be HSL.
 
   /* Bounded shared accent sizes; wrapping, not viewport font scaling, handles long lines. */
   @media (min-width: 640px) {
-    :root { --script-size: 5rem; }
+    :root { --script-size: 4rem; }
   }
   @media (min-width: 768px) {
     :root {
@@ -318,8 +309,8 @@ All colors MUST be HSL.
   }
   @media (min-width: 1024px) {
     :root {
-      --script-size: 7.2rem;
-      --script-min-size: 2.9rem;
+      --script-size: 5.75rem;
+      --script-min-size: 2.25rem;
       --heading-display-size: 3.5rem;
       --heading-section-size: 2.25rem;
       --heading-column-size: 2rem;
@@ -327,7 +318,7 @@ All colors MUST be HSL.
   }
   @media (min-width: 1440px) {
     :root {
-      --script-size: 8.625rem;
+      --script-size: 6.9rem;
       --heading-display-size: 3.75rem;
       --heading-section-size: 2.75rem;
       --heading-column-size: 2.1rem;
@@ -351,13 +342,13 @@ All colors MUST be HSL.
   /* Script accent sized for half-width columns, so the phrase stays on one line
      and the headings in a side-by-side pair line up. */
   @media (min-width: 768px) {
-    .eyebrow-col { --script-size: 2.9rem; }
+    .eyebrow-col { --script-size: 2.3rem; }
   }
   @media (min-width: 1024px) {
-    .eyebrow-col { --script-size: 4.5rem; }
+    .eyebrow-col { --script-size: 3.6rem; }
   }
   @media (min-width: 1440px) {
-    .eyebrow-col { --script-size: 4.75rem; }
+    .eyebrow-col { --script-size: 3.8rem; }
   }
 
 
@@ -466,8 +457,7 @@ All colors MUST be HSL.
   background: hsl(var(--photo-wash));
 }
 
-/* Compact translucent area panels; script leading is tuned to the visible
-   Black Stones lettering, not its oversized font line box. */
+/* Compact translucent area panels for headings over photographs. */
 main > section:first-child:has(> img.absolute.inset-0) > .container {
   width: min(100% - 2rem, 44rem);
   margin-left: auto;

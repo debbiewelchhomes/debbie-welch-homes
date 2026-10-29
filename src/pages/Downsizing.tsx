@@ -372,9 +372,9 @@ const Downsizing = () => {
                 months out or two years away.
               </p>
 
-              <Button size="lg" asChild className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-                <a href="https://debbiewelchhomes.myflodesk.com/thinking-about-downsizing">
-                  Ask Me for the Downsizing Guide
+              <Button size="lg" asChild className="bg-secondary hover:bg-secondary/90 text-white text-base sm:text-lg px-4 sm:px-8 py-6 whitespace-nowrap max-w-full">
+                <a href="https://debbiewelchhomes.myflodesk.com/thinking-about-downsizing" target="_blank" rel="noopener noreferrer">
+                  Get Your Downsizing Guide Here
                 </a>
               </Button>
             </motion.div>

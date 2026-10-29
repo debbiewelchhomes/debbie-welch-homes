@@ -50,7 +50,7 @@ const Footer = () => {
               <Link to="/contact">Contact Debbie</Link>
             </Button>
             <div className="border-t border-primary-foreground/20 pt-5">
-              <p className="eyebrow-caps text-primary-foreground mb-2">For Real Estate Agents</p>
+              <p className="eyebrow-caps !text-primary-foreground mb-2">For Real Estate Agents</p>
               <Link to="/about/exp-realty" className="text-sm font-semibold hover:text-accent transition-colors">
                 Working With Me at eXp Realty
               </Link>

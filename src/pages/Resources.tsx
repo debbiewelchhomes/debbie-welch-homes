@@ -20,7 +20,7 @@ const guideLinks = [
   {
     title: "Prepare Your Home for Sale",
     description: "A focused guide to deciding what to repair, update, clean, and organize before listing.",
-    href: "https://drive.google.com/file/d/1cyQ1KeMIX3R6JIuz84sVdIpIMPHdrckV/view?usp=drivesdk",
+    href: "https://debbiewelchhomes.myflodesk.com/how-to-prep-your-home-for-sale",
   },
 ];
 

@@ -53,8 +53,8 @@ All colors MUST be HSL.
     --ring: 206 22% 37%;
 
     --radius: 0.5rem;
-    --script-size: 2.75rem;
-    --script-min-size: 2.1rem;
+    --script-size: 2.25rem;
+    --script-min-size: 1.5rem;
     --heading-section-size: 1.75rem;
     --heading-column-size: 1.45rem;
     --heading-display-size: 2rem;
@@ -298,7 +298,7 @@ All colors MUST be HSL.
 
   /* Bounded shared accent sizes; wrapping, not viewport font scaling, handles long lines. */
   @media (min-width: 640px) {
-    :root { --script-size: 4rem; }
+    :root { --script-size: 3rem; }
   }
   @media (min-width: 768px) {
     :root {
@@ -309,8 +309,8 @@ All colors MUST be HSL.
   }
   @media (min-width: 1024px) {
     :root {
-      --script-size: 5.75rem;
-      --script-min-size: 2.25rem;
+      --script-size: 4rem;
+      --script-min-size: 1.75rem;
       --heading-display-size: 3.5rem;
       --heading-section-size: 2.25rem;
       --heading-column-size: 2rem;
@@ -318,7 +318,7 @@ All colors MUST be HSL.
   }
   @media (min-width: 1440px) {
     :root {
-      --script-size: 6.9rem;
+      --script-size: 4.75rem;
       --heading-display-size: 3.75rem;
       --heading-section-size: 2.75rem;
       --heading-column-size: 2.1rem;
@@ -342,13 +342,13 @@ All colors MUST be HSL.
   /* Script accent sized for half-width columns, so the phrase stays on one line
      and the headings in a side-by-side pair line up. */
   @media (min-width: 768px) {
-    .eyebrow-col { --script-size: 2.3rem; }
+    .eyebrow-col { --script-size: 1.9rem; }
   }
   @media (min-width: 1024px) {
-    .eyebrow-col { --script-size: 3.6rem; }
+    .eyebrow-col { --script-size: 2.7rem; }
   }
   @media (min-width: 1440px) {
-    .eyebrow-col { --script-size: 3.8rem; }
+    .eyebrow-col { --script-size: 2.9rem; }
   }
 
 

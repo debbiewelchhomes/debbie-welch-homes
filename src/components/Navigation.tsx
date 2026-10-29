@@ -54,7 +54,7 @@ const Navigation = () => {
           {/* Desktop Navigation: logo left, links center-right, consult button far right */}
           <div className="hidden lg:flex items-center w-full max-w-7xl mx-auto text-base xl:text-lg">
             <Link to="/" className="flex-shrink-0" aria-label="Debbie Welch Homes home page">
-              <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-9 xl:h-14 w-auto" />
+              <img src={`/.netlify/images?url=${encodeURIComponent(logo)}&w=720&q=85`} alt="Debbie Welch Homes at eXp Realty" className="h-9 xl:h-14 w-auto" />
             </Link>
 
             <div className="mx-auto flex items-center gap-5 xl:gap-9 whitespace-nowrap">
@@ -138,7 +138,7 @@ const Navigation = () => {
 
           {/* Mobile Header */}
           <Link to="/" className="lg:hidden absolute left-0" onClick={() => setMobileMenuOpen(false)}>
-            <img src={logo} alt="Debbie Welch Homes at eXp Realty" className="h-11 w-auto" />
+            <img src={`/.netlify/images?url=${encodeURIComponent(logo)}&w=720&q=85`} alt="Debbie Welch Homes at eXp Realty" className="h-11 w-auto" />
           </Link>
           <Button ref={mobileMenuButton} variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="lg:hidden absolute right-0 min-h-11 min-w-11 [&_svg]:size-6" aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={mobileMenuOpen} aria-controls="mobile-navigation">
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

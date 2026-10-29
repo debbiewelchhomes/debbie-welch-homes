@@ -361,22 +361,13 @@ const Relocation = () => {
                 The Snohomish County PCS & Relocation Guide
               </h2>
 
-              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-10">
-                Built specifically for military families and out-of-area buyers coming to Snohomish County. Covers
-                neighborhoods near Naval Station Everett, BAH questions to confirm with current official guidance, how VA loans work in this market, commute
-                realities, school districts, and what to know about buying from a distance. A starting point for the questions specific to your move.
+              <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-6">
+                I'm putting together a guide for military families and out-of-area buyers moving to Snohomish County.
+                It will cover local communities, questions to ask about VA loans and housing allowances, commutes,
+                schools, and buying from a distance.
               </p>
 
-              <Button size="lg" asChild className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6">
-                <a
-                  href="#consult-request"
-                  onClick={() =>
-                    setFormData((d) => ({ ...d, message: d.message || "I'd like a copy of the Relocation Guide, please." }))
-                  }
-                >
-                  Ask Me for the Relocation Guide
-                </a>
-              </Button>
+              <p className="font-body text-lg font-semibold text-foreground">Coming soon</p>
             </motion.div>
           </div>
         </section>

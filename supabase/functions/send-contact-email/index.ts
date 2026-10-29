@@ -148,7 +148,7 @@ const handler = async (req: Request): Promise<Response> => {
     if (body.lookingFor) fields.unshift(["Looking For", String(body.lookingFor)]);
     if (body.message) fields.push(["Message", String(body.message)]);
 
-    if (!name || !email || fields.length === 0) {
+    if (!name || !email) {
       return new Response(
         JSON.stringify({ success: false, error: "Missing required fields" }),
         { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } },

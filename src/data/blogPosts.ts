@@ -373,16 +373,23 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     excerpt: "Downsizing in Everett often means balancing practical needs with timing and emotions.",
     slug: "downsizing-realtor-everett-wa",
     metaDescription: "Downsizing in Everett? Debbie Welch helps homeowners sell and buy with a clear plan, honest guidance, and local strategy.",
-    content: `Downsizing in Everett often means balancing practical needs (one-level living, proximity to services, easier maintenance) with timing and emotions. Debbie Welch helps downsizers build a plan that connects selling and buying so the move feels manageable.
+    content: `Downsizing in Everett does not have to mean leaving the city or choosing the smallest home. Start with the routines you want to keep, the work you want to hand off, and the support you may need over time.
 
-**What downsizers appreciate about Debbie:**
+**Compare the home and the day-to-day location**
 
-- Clear timeline planning (sell + buy coordination)
-- Clear guidance and honest expectations
-- Market strategy tailored to your neighborhood
-- Help simplifying prep steps and logistics
+Everett offers a mix of older homes, condominiums, townhomes, and other housing. A home that looks manageable online may still have entry stairs, a steep driveway, limited parking, or a bedroom and laundry on different levels. Visit the actual property and consider how you would move through it every day.
 
-**Contact:** debbie@debbiewelchhomes.com | 360-631-8148`
+If being close to family, medical appointments, shopping, transit, or the waterfront matters, compare specific routes and travel times at the times you normally use them. Neighborhoods and individual blocks differ.
+
+**Look beyond the purchase price**
+
+For a condo or association-managed home, review dues, what they cover, governing documents, financial information, maintenance responsibilities, and any rental or pet restrictions that matter to you. Ask qualified professionals to help evaluate the property and any accessibility changes.
+
+**Make a plan for the home you own**
+
+I can prepare a local market analysis, talk through preparation and timing, and help coordinate the sale with your next move. If family members are helping from elsewhere, I can include them with your permission. We will agree on the support and any outside costs before making arrangements.
+
+To talk about an Everett move, contact Debbie Welch at debbie@debbiewelchhomes.com or 360-631-8148.`
   },
   // LS06, Downsizing Marysville
   {
@@ -393,16 +400,21 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     excerpt: "Marysville downsizers often want a move that feels simpler, less upkeep, more comfort, and a home that fits the next stage of life.",
     slug: "downsizing-realtor-marysville-wa",
     metaDescription: "Downsizing in Marysville? Debbie Welch helps homeowners sell and buy with clear planning, patient guidance, and local market insight.",
-    content: `Marysville downsizers often want a move that feels simpler, less upkeep, more comfort, and a home that fits the next stage of life. Debbie Welch supports downsizers with patient, organized guidance and a strategy built around your timeline.
+    content: `If you are considering downsizing in Marysville, the first question is not necessarily how much square footage to give up. It is what you want your next home and daily life to make easier.
 
-**Downsizing support includes:**
+**Start with the places and routines that matter**
 
-- Coordinating the sell + buy plan
-- Pricing and prep strategy for your neighborhood
-- Clear communication and practical next steps
-- Vendor referrals and logistics support when needed
+Think about how often you visit family, shop, attend appointments, or travel along the I-5 and State Route 9 corridors. Marysville includes established neighborhoods and areas with different routes and amenities, so compare the specific location and drive at the times you expect to travel.
 
-**Contact:** debbie@debbiewelchhomes.com | 360-631-8148`
+**Check the details that affect daily life**
+
+A smaller house is not automatically lower maintenance. Walk the entry, stairs, laundry route, yard, garage, and parking. If you are considering a condo or another association-managed home, review the dues, rules, finances, and who is responsible for exterior maintenance.
+
+**Plan the sale and move together**
+
+Before deciding whether to buy or sell first, consider your budget, loan options, timeline, and where you would stay if the dates do not line up. A market analysis can help you understand a possible sale price, but the amount available after selling depends on your mortgage balance, expenses, and other factors.
+
+I grew up in Marysville and help homeowners compare their options, prioritize preparation, and plan a transition that fits their situation. Contact Debbie Welch at debbie@debbiewelchhomes.com or 360-631-8148.`
   },
   // LS07, Downsizing Lake Stevens
   {
@@ -413,16 +425,21 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     excerpt: "Downsizing in Lake Stevens can be a great move, but the process is smoother when selling and buying are planned together.",
     slug: "downsizing-realtor-lake-stevens-wa",
     metaDescription: "Downsizing in Lake Stevens? Debbie Welch helps homeowners sell and buy with clear strategy and step-by-step planning.",
-    content: `Downsizing in Lake Stevens can be a great move, but the process is smoother when selling and buying are planned together. Debbie Welch helps clients make confident decisions with a clear roadmap and warm, realistic guidance.
+    content: `A downsizing move in Lake Stevens can mean staying close to the people and places you know while finding a home with less upkeep. The right next step depends on your routines and budget, not just the size of the floor plan.
 
-**Downsizing support includes:**
+**Compare the full cost of your next home**
 
-- Timing strategy for the transition
-- Prep guidance that focuses on what buyers actually notice
-- Negotiation support that protects your goals
-- A steady process without pressure
+Look at the purchase price alongside property taxes, insurance, utilities, maintenance, and any association dues. If a community has an HOA, review its rules, financial information, and what it does and does not maintain. Ask your lender and financial or tax professionals how a move may affect your situation.
 
-**Contact:** debbie@debbiewelchhomes.com | 360-631-8148`
+**Test the daily routine**
+
+Visit a home at different times and consider entry steps, laundry location, yard care, parking, and access to the routes you regularly use. Lake Stevens locations can involve different approaches to the lake, Highway 9, and US 2, so check the actual route and travel time for your own schedule.
+
+**Work backward from your preferred move**
+
+We can review your current home's likely market position, discuss which preparation is worth considering, and map the timing of a sale and purchase. If sorting or move logistics feel overwhelming, I can help identify local resources and coordinate agreed-upon support.
+
+I have lived in Lake Stevens and have helped clients navigate transitions there. To start a conversation, contact Debbie Welch at debbie@debbiewelchhomes.com or 360-631-8148.`
   },
   // LS08, Downsizing Snohomish
   {
@@ -433,16 +450,19 @@ Debbie Welch helps PCS buyers compare Snohomish to nearby options and make confi
     excerpt: "Snohomish downsizers often want lifestyle as much as layout, charm, community, and a home that feels like a fresh chapter.",
     slug: "downsizing-realtor-snohomish-wa",
     metaDescription: "Downsizing in Snohomish? Debbie Welch helps homeowners sell and buy with practical planning, local strategy, and a human-first approach.",
-    content: `Snohomish downsizers often want lifestyle as much as layout, charm, community, and a home that feels like a fresh chapter. Debbie Welch helps clients downsize with a plan that's organized and emotionally respectful.
+    content: `Downsizing in the Snohomish area can mean a smaller home, a different kind of property, or simply less responsibility. Start by deciding which parts of your daily life you want to keep and what you would like to change.
 
-**Downsizing support includes:**
+**Look closely at the property, not just the address**
 
-- Sell + buy coordination
-- Local pricing and market strategy
-- Clear communication and steady guidance
-- Practical help simplifying the move
+A Snohomish mailing address does not by itself tell you whether a property is inside city limits or in unincorporated Snohomish County. Confirm the jurisdiction and ask the appropriate agencies about any rules or services important to your plans.
 
-**Contact:** debbie@debbiewelchhomes.com | 360-631-8148`
+Older homes, rural properties, condos, and newer homes can each bring different maintenance questions. Depending on the property, consider stairs, drainage, yard work, parking, wells, septic systems, and association responsibilities. Use qualified inspectors and service providers to evaluate the details that apply.
+
+**Plan your transition around your next step**
+
+Compare housing and living costs, identify family or professional support you want involved, and think through whether you need to sell before buying. We can review your home's market position and develop a preparation and timing plan without assuming that a move must happen immediately.
+
+I help Snohomish-area homeowners work through the real estate decisions and connect with resources for the parts of a move that need additional help. Contact Debbie Welch at debbie@debbiewelchhomes.com or 360-631-8148.`
   },
   // LS09, First-Time Everett
   {

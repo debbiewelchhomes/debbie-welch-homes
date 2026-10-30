@@ -347,6 +347,20 @@ const Downsizing = () => {
           </div>
         </section>
 
+        <section className="section bg-warm-bg">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="font-heading h-section text-primary mb-6">Helping a Parent From Out of Town?</h2>
+            <p className="font-body text-lg md:text-xl text-foreground leading-relaxed mb-6">
+              Coordinating a move from another city or state can leave you wondering who can help locally and where to
+              begin. With your parent's permission, I can include the family members they choose, help coordinate
+              agreed-upon details, and keep everyone informed.
+            </p>
+            <Link to="/blog/help-parents-downsize-out-of-area" className="text-secondary font-medium underline underline-offset-4 hover:text-primary">
+              Read: Helping a Parent Downsize From Out of Area
+            </Link>
+          </div>
+        </section>
+
         {/* Must-Have Guide Section */}
         <section className="section bg-warm-bg">
           <div className="container mx-auto px-4">

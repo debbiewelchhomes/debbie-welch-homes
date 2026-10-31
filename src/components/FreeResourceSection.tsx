@@ -18,7 +18,7 @@ const FreeResourceSection = () => {
           className="mx-auto max-w-3xl text-backdrop text-center"
         >
           <h2 className="font-heading text-primary">
-            <span className="eyebrow">Market report...</span>
+            <span className="eyebrow">Market reports...</span>
             <span className="h-section-sm mx-auto block max-w-none text-secondary">for Snohomish County &amp; Surrounding Communities</span>
           </h2>
 

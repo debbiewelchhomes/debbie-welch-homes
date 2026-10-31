@@ -43,6 +43,7 @@ const Selling = () => {
     website: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -69,10 +70,7 @@ const Selling = () => {
       return;
     }
 
-    toast({
-      title: "Got it. Thank you.",
-      description: "Thanks for reaching out. I'll follow up soon with your home evaluation.",
-    });
+    setSubmitted(true);
     setFormData({ name: "", email: "", phone: "", address: "", message: "", website: "" });
   };
 
@@ -387,6 +385,7 @@ const Selling = () => {
 
               <Card className="border-border bg-card">
                 <CardContent className="p-8">
+                  {!submitted ? (
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="absolute -left-[9999px]" aria-hidden="true">
                       <label htmlFor="website-hp">Website</label>
@@ -464,6 +463,12 @@ const Selling = () => {
                     </Button>
                     <InquiryFallback />
                   </form>
+                  ) : (
+                    <div role="status" className="py-12 text-center">
+                      <p className="text-xl font-body text-foreground mb-2">Thank you for reaching out!</p>
+                      <p className="text-base font-body text-foreground">I’ll be in touch within one business day.</p>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>

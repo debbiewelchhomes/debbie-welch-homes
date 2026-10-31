@@ -1,7 +1,5 @@
 import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -35,7 +33,6 @@ const Snohomish = lazy(() => import("./pages/areas/Snohomish"));
 const StanwoodCamano = lazy(() => import("./pages/areas/StanwoodCamano"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
-const queryClient = new QueryClient();
 
 const AppRoutes = () => (
   <>
@@ -76,14 +73,11 @@ const AppRoutes = () => (
 export const AppShell = () => {
   useHeadingFit();
   return (
-    <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        <Sonner />
         <AppRoutes />
         <ChatButton />
       </TooltipProvider>
-    </QueryClientProvider>
   );
 };
 
